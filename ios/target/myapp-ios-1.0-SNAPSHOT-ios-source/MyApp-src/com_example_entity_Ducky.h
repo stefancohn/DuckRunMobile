@@ -1,0 +1,186 @@
+#ifndef __COM_EXAMPLE_ENTITY_DUCKY__
+#define __COM_EXAMPLE_ENTITY_DUCKY__
+
+#include "cn1_globals.h"
+#include "com_example_entity_Entity.h"
+extern struct clazz class__com_example_entity_Ducky;
+extern void __INIT_VTABLE_com_example_entity_Ducky(CODENAME_ONE_THREAD_STATE, void** vtable);
+extern void __STATIC_INITIALIZER_com_example_entity_Ducky(CODENAME_ONE_THREAD_STATE);
+extern void __FINALIZER_com_example_entity_Ducky(CODENAME_ONE_THREAD_STATE, JAVA_OBJECT objToDelete);
+extern void __GC_MARK_com_example_entity_Ducky(CODENAME_ONE_THREAD_STATE, JAVA_OBJECT objToMark, JAVA_BOOLEAN force);
+extern JAVA_OBJECT __NEW_com_example_entity_Ducky(CODENAME_ONE_THREAD_STATE);
+
+JAVA_VOID com_example_entity_Ducky___CLINIT____(CODENAME_ONE_THREAD_STATE);
+
+JAVA_VOID com_example_entity_Ducky___INIT_____int_int_int_int(CODENAME_ONE_THREAD_STATE, JAVA_OBJECT  __cn1ThisObject, JAVA_INT __cn1Arg1, JAVA_INT __cn1Arg2, JAVA_INT __cn1Arg3, JAVA_INT __cn1Arg4);
+
+JAVA_VOID com_example_entity_Ducky_defaultDucky__(CODENAME_ONE_THREAD_STATE, JAVA_OBJECT  __cn1ThisObject);
+
+JAVA_VOID com_example_entity_Ducky_initiateLevelData___int_2ARRAY(CODENAME_ONE_THREAD_STATE, JAVA_OBJECT  __cn1ThisObject, JAVA_OBJECT __cn1Arg1);
+
+JAVA_VOID com_example_entity_Ducky_loadAni__(CODENAME_ONE_THREAD_STATE, JAVA_OBJECT  __cn1ThisObject);
+
+JAVA_VOID com_example_entity_Ducky_setAni__(CODENAME_ONE_THREAD_STATE, JAVA_OBJECT  __cn1ThisObject);
+
+JAVA_VOID com_example_entity_Ducky_updateAni__(CODENAME_ONE_THREAD_STATE, JAVA_OBJECT  __cn1ThisObject);
+
+JAVA_VOID com_example_entity_Ducky_actionsToTakeWhenDuckyDies__(CODENAME_ONE_THREAD_STATE, JAVA_OBJECT  __cn1ThisObject);
+
+JAVA_VOID com_example_entity_Ducky_duckyMovementAndHitbox__(CODENAME_ONE_THREAD_STATE, JAVA_OBJECT  __cn1ThisObject);
+
+JAVA_VOID com_example_entity_Ducky_jump__(CODENAME_ONE_THREAD_STATE, JAVA_OBJECT  __cn1ThisObject);
+
+JAVA_VOID com_example_entity_Ducky_xOffsetForConstantMove___int(CODENAME_ONE_THREAD_STATE, JAVA_OBJECT  __cn1ThisObject, JAVA_INT __cn1Arg1);
+
+JAVA_VOID com_example_entity_Ducky_duckyDead__(CODENAME_ONE_THREAD_STATE, JAVA_OBJECT  __cn1ThisObject);
+
+JAVA_VOID com_example_entity_Ducky_setIsDead___java_lang_Boolean(CODENAME_ONE_THREAD_STATE, JAVA_OBJECT  __cn1ThisObject, JAVA_OBJECT __cn1Arg1);
+
+JAVA_VOID com_example_entity_Ducky_update__(CODENAME_ONE_THREAD_STATE, JAVA_OBJECT  __cn1ThisObject);
+
+JAVA_VOID com_example_entity_Ducky_draw___com_codename1_ui_Graphics_int(CODENAME_ONE_THREAD_STATE, JAVA_OBJECT  __cn1ThisObject, JAVA_OBJECT __cn1Arg1, JAVA_INT __cn1Arg2);
+
+JAVA_VOID com_example_entity_Ducky_resetDir__(CODENAME_ONE_THREAD_STATE, JAVA_OBJECT  __cn1ThisObject);
+
+JAVA_VOID com_example_entity_Ducky_initializeHitbox___int_int_int_int(CODENAME_ONE_THREAD_STATE, JAVA_OBJECT  __cn1ThisObject, JAVA_INT __cn1Arg1, JAVA_INT __cn1Arg2, JAVA_INT __cn1Arg3, JAVA_INT __cn1Arg4);
+
+JAVA_VOID com_example_entity_Ducky_drawHitbox___java_awt_Graphics(CODENAME_ONE_THREAD_STATE, JAVA_OBJECT  __cn1ThisObject, JAVA_OBJECT __cn1Arg1);
+
+JAVA_OBJECT com_example_entity_Ducky_getHitbox___R_com_example_util_Rectangle(CODENAME_ONE_THREAD_STATE, JAVA_OBJECT  __cn1ThisObject);
+
+JAVA_INT com_example_entity_Ducky_getXPosHitbox___R_int(CODENAME_ONE_THREAD_STATE, JAVA_OBJECT  __cn1ThisObject);
+
+JAVA_VOID com_example_entity_Ducky_updateHitboxSide___int(CODENAME_ONE_THREAD_STATE, JAVA_OBJECT  __cn1ThisObject, JAVA_INT __cn1Arg1);
+
+JAVA_VOID com_example_entity_Ducky___INIT____(CODENAME_ONE_THREAD_STATE, JAVA_OBJECT  __cn1ThisObject);
+
+JAVA_BOOLEAN com_example_entity_Ducky_equals___java_lang_Object_R_boolean(CODENAME_ONE_THREAD_STATE, JAVA_OBJECT  __cn1ThisObject, JAVA_OBJECT __cn1Arg1);
+
+JAVA_OBJECT com_example_entity_Ducky_getClass___R_java_lang_Class(CODENAME_ONE_THREAD_STATE, JAVA_OBJECT  __cn1ThisObject);
+
+JAVA_INT com_example_entity_Ducky_hashCode___R_int(CODENAME_ONE_THREAD_STATE, JAVA_OBJECT  __cn1ThisObject);
+
+JAVA_VOID com_example_entity_Ducky_notify__(CODENAME_ONE_THREAD_STATE, JAVA_OBJECT  __cn1ThisObject);
+
+JAVA_VOID com_example_entity_Ducky_notifyAll__(CODENAME_ONE_THREAD_STATE, JAVA_OBJECT  __cn1ThisObject);
+
+JAVA_OBJECT com_example_entity_Ducky_toString___R_java_lang_String(CODENAME_ONE_THREAD_STATE, JAVA_OBJECT  __cn1ThisObject);
+
+JAVA_VOID com_example_entity_Ducky_wait__(CODENAME_ONE_THREAD_STATE, JAVA_OBJECT  __cn1ThisObject);
+
+JAVA_VOID com_example_entity_Ducky_wait___long(CODENAME_ONE_THREAD_STATE, JAVA_OBJECT  __cn1ThisObject, JAVA_LONG __cn1Arg1);
+
+JAVA_VOID com_example_entity_Ducky_wait___long_int(CODENAME_ONE_THREAD_STATE, JAVA_OBJECT  __cn1ThisObject, JAVA_LONG __cn1Arg1, JAVA_INT __cn1Arg2);
+
+JAVA_OBJECT com_example_entity_Ducky_clone___R_java_lang_Object(CODENAME_ONE_THREAD_STATE, JAVA_OBJECT  __cn1ThisObject);
+
+JAVA_VOID virtual_com_example_entity_Ducky_initializeHitbox___int_int_int_int(CODENAME_ONE_THREAD_STATE, JAVA_OBJECT  __cn1ThisObject, JAVA_INT __cn1Arg1, JAVA_INT __cn1Arg2, JAVA_INT __cn1Arg3, JAVA_INT __cn1Arg4);
+
+JAVA_VOID virtual_com_example_entity_Ducky_updateHitboxSide___int(CODENAME_ONE_THREAD_STATE, JAVA_OBJECT  __cn1ThisObject, JAVA_INT __cn1Arg1);
+#define virtual_com_example_entity_Ducky_defaultDucky__ com_example_entity_Ducky_defaultDucky__
+#define virtual_com_example_entity_Ducky_initiateLevelData___int_2ARRAY com_example_entity_Ducky_initiateLevelData___int_2ARRAY
+#define virtual_com_example_entity_Ducky_actionsToTakeWhenDuckyDies__ com_example_entity_Ducky_actionsToTakeWhenDuckyDies__
+#define virtual_com_example_entity_Ducky_xOffsetForConstantMove___int com_example_entity_Ducky_xOffsetForConstantMove___int
+#define virtual_com_example_entity_Ducky_duckyDead__ com_example_entity_Ducky_duckyDead__
+#define virtual_com_example_entity_Ducky_setIsDead___java_lang_Boolean com_example_entity_Ducky_setIsDead___java_lang_Boolean
+#define virtual_com_example_entity_Ducky_update__ com_example_entity_Ducky_update__
+#define virtual_com_example_entity_Ducky_draw___com_codename1_ui_Graphics_int com_example_entity_Ducky_draw___com_codename1_ui_Graphics_int
+extern JAVA_INT get_static_com_example_entity_Ducky_duckDimensionsIdle();
+extern JAVA_INT STATIC_FIELD_com_example_entity_Ducky_duckDimensionsIdle;
+extern void set_static_com_example_entity_Ducky_duckDimensionsIdle(CODENAME_ONE_THREAD_STATE, JAVA_INT v);
+extern JAVA_INT get_static_com_example_entity_Ducky_duckDimensionsSide();
+extern JAVA_INT STATIC_FIELD_com_example_entity_Ducky_duckDimensionsSide;
+extern void set_static_com_example_entity_Ducky_duckDimensionsSide(CODENAME_ONE_THREAD_STATE, JAVA_INT v);
+extern JAVA_OBJECT get_static_com_example_entity_Ducky_kh();
+extern JAVA_OBJECT STATIC_FIELD_com_example_entity_Ducky_kh;
+extern void set_static_com_example_entity_Ducky_kh(CODENAME_ONE_THREAD_STATE, JAVA_OBJECT v);
+JAVA_OBJECT get_field_com_example_entity_Ducky_duckSprite(JAVA_OBJECT t);
+void set_field_com_example_entity_Ducky_duckSprite(CODENAME_ONE_THREAD_STATE, JAVA_OBJECT __cn1Val, JAVA_OBJECT __cn1T);
+JAVA_OBJECT get_field_com_example_entity_Ducky_duckAni(JAVA_OBJECT t);
+void set_field_com_example_entity_Ducky_duckAni(CODENAME_ONE_THREAD_STATE, JAVA_OBJECT __cn1Val, JAVA_OBJECT __cn1T);
+JAVA_INT get_field_com_example_entity_Ducky_spriteLoop(JAVA_OBJECT t);
+void set_field_com_example_entity_Ducky_spriteLoop(CODENAME_ONE_THREAD_STATE, JAVA_INT __cn1Val, JAVA_OBJECT __cn1T);
+JAVA_INT get_field_com_example_entity_Ducky_spriteRow(JAVA_OBJECT t);
+void set_field_com_example_entity_Ducky_spriteRow(CODENAME_ONE_THREAD_STATE, JAVA_INT __cn1Val, JAVA_OBJECT __cn1T);
+JAVA_INT get_field_com_example_entity_Ducky_spriteCol(JAVA_OBJECT t);
+void set_field_com_example_entity_Ducky_spriteCol(CODENAME_ONE_THREAD_STATE, JAVA_INT __cn1Val, JAVA_OBJECT __cn1T);
+JAVA_INT get_field_com_example_entity_Ducky_aniTick(JAVA_OBJECT t);
+void set_field_com_example_entity_Ducky_aniTick(CODENAME_ONE_THREAD_STATE, JAVA_INT __cn1Val, JAVA_OBJECT __cn1T);
+JAVA_INT get_field_com_example_entity_Ducky_aniSpeed(JAVA_OBJECT t);
+void set_field_com_example_entity_Ducky_aniSpeed(CODENAME_ONE_THREAD_STATE, JAVA_INT __cn1Val, JAVA_OBJECT __cn1T);
+JAVA_OBJECT get_field_com_example_entity_Ducky_direction(JAVA_OBJECT t);
+void set_field_com_example_entity_Ducky_direction(CODENAME_ONE_THREAD_STATE, JAVA_OBJECT __cn1Val, JAVA_OBJECT __cn1T);
+JAVA_OBJECT get_field_com_example_entity_Ducky_isAttacking(JAVA_OBJECT t);
+void set_field_com_example_entity_Ducky_isAttacking(CODENAME_ONE_THREAD_STATE, JAVA_OBJECT __cn1Val, JAVA_OBJECT __cn1T);
+JAVA_OBJECT get_field_com_example_entity_Ducky_isAttackingLeft(JAVA_OBJECT t);
+void set_field_com_example_entity_Ducky_isAttackingLeft(CODENAME_ONE_THREAD_STATE, JAVA_OBJECT __cn1Val, JAVA_OBJECT __cn1T);
+JAVA_OBJECT get_field_com_example_entity_Ducky_attackingSound(JAVA_OBJECT t);
+void set_field_com_example_entity_Ducky_attackingSound(CODENAME_ONE_THREAD_STATE, JAVA_OBJECT __cn1Val, JAVA_OBJECT __cn1T);
+JAVA_OBJECT get_field_com_example_entity_Ducky_isDead(JAVA_OBJECT t);
+void set_field_com_example_entity_Ducky_isDead(CODENAME_ONE_THREAD_STATE, JAVA_OBJECT __cn1Val, JAVA_OBJECT __cn1T);
+JAVA_OBJECT get_field_com_example_entity_Ducky_jump(JAVA_OBJECT t);
+void set_field_com_example_entity_Ducky_jump(CODENAME_ONE_THREAD_STATE, JAVA_OBJECT __cn1Val, JAVA_OBJECT __cn1T);
+JAVA_OBJECT get_field_com_example_entity_Ducky_inAir(JAVA_OBJECT t);
+void set_field_com_example_entity_Ducky_inAir(CODENAME_ONE_THREAD_STATE, JAVA_OBJECT __cn1Val, JAVA_OBJECT __cn1T);
+JAVA_OBJECT get_field_com_example_entity_Ducky_airWallCollision(JAVA_OBJECT t);
+void set_field_com_example_entity_Ducky_airWallCollision(CODENAME_ONE_THREAD_STATE, JAVA_OBJECT __cn1Val, JAVA_OBJECT __cn1T);
+JAVA_INT get_field_com_example_entity_Ducky_airSpeed(JAVA_OBJECT t);
+void set_field_com_example_entity_Ducky_airSpeed(CODENAME_ONE_THREAD_STATE, JAVA_INT __cn1Val, JAVA_OBJECT __cn1T);
+JAVA_INT get_field_com_example_entity_Ducky_jumpHeight(JAVA_OBJECT t);
+void set_field_com_example_entity_Ducky_jumpHeight(CODENAME_ONE_THREAD_STATE, JAVA_INT __cn1Val, JAVA_OBJECT __cn1T);
+JAVA_DOUBLE get_field_com_example_entity_Ducky_friction(JAVA_OBJECT t);
+void set_field_com_example_entity_Ducky_friction(CODENAME_ONE_THREAD_STATE, JAVA_DOUBLE __cn1Val, JAVA_OBJECT __cn1T);
+JAVA_INT get_field_com_example_entity_Ducky_yPosBeforeJump(JAVA_OBJECT t);
+void set_field_com_example_entity_Ducky_yPosBeforeJump(CODENAME_ONE_THREAD_STATE, JAVA_INT __cn1Val, JAVA_OBJECT __cn1T);
+JAVA_OBJECT get_field_com_example_entity_Ducky_levelData(JAVA_OBJECT t);
+void set_field_com_example_entity_Ducky_levelData(CODENAME_ONE_THREAD_STATE, JAVA_OBJECT __cn1Val, JAVA_OBJECT __cn1T);
+JAVA_INT get_field_com_example_entity_Ducky_x(JAVA_OBJECT t);
+void set_field_com_example_entity_Ducky_x(CODENAME_ONE_THREAD_STATE, JAVA_INT __cn1Val, JAVA_OBJECT __cn1T);
+JAVA_INT get_field_com_example_entity_Ducky_y(JAVA_OBJECT t);
+void set_field_com_example_entity_Ducky_y(CODENAME_ONE_THREAD_STATE, JAVA_INT __cn1Val, JAVA_OBJECT __cn1T);
+JAVA_INT get_field_com_example_entity_Ducky_width(JAVA_OBJECT t);
+void set_field_com_example_entity_Ducky_width(CODENAME_ONE_THREAD_STATE, JAVA_INT __cn1Val, JAVA_OBJECT __cn1T);
+JAVA_INT get_field_com_example_entity_Ducky_height(JAVA_OBJECT t);
+void set_field_com_example_entity_Ducky_height(CODENAME_ONE_THREAD_STATE, JAVA_INT __cn1Val, JAVA_OBJECT __cn1T);
+JAVA_OBJECT get_field_com_example_entity_Ducky_hitbox(JAVA_OBJECT t);
+void set_field_com_example_entity_Ducky_hitbox(CODENAME_ONE_THREAD_STATE, JAVA_OBJECT __cn1Val, JAVA_OBJECT __cn1T);
+
+
+struct obj__com_example_entity_Ducky {
+    DEBUG_GC_VARIABLES
+    struct clazz *__codenameOneParentClsReference;
+    int __codenameOneReferenceCount;
+    void* __codenameOneThreadData;
+    int __codenameOneGcMark;
+    void* __ownerThread;
+    int __heapPosition;
+    JAVA_INT com_example_entity_Entity_x;
+    JAVA_INT com_example_entity_Entity_y;
+    JAVA_INT com_example_entity_Entity_width;
+    JAVA_INT com_example_entity_Entity_height;
+    JAVA_OBJECT com_example_entity_Entity_hitbox;
+    JAVA_OBJECT com_example_entity_Ducky_duckSprite;
+    JAVA_OBJECT com_example_entity_Ducky_duckAni;
+    JAVA_INT com_example_entity_Ducky_spriteLoop;
+    JAVA_INT com_example_entity_Ducky_spriteRow;
+    JAVA_INT com_example_entity_Ducky_spriteCol;
+    JAVA_INT com_example_entity_Ducky_aniTick;
+    JAVA_INT com_example_entity_Ducky_aniSpeed;
+    JAVA_OBJECT com_example_entity_Ducky_direction;
+    JAVA_OBJECT com_example_entity_Ducky_isAttacking;
+    JAVA_OBJECT com_example_entity_Ducky_isAttackingLeft;
+    JAVA_OBJECT com_example_entity_Ducky_attackingSound;
+    JAVA_OBJECT com_example_entity_Ducky_isDead;
+    JAVA_OBJECT com_example_entity_Ducky_jump;
+    JAVA_OBJECT com_example_entity_Ducky_inAir;
+    JAVA_OBJECT com_example_entity_Ducky_airWallCollision;
+    JAVA_INT com_example_entity_Ducky_airSpeed;
+    JAVA_INT com_example_entity_Ducky_jumpHeight;
+    JAVA_DOUBLE com_example_entity_Ducky_friction;
+    JAVA_INT com_example_entity_Ducky_yPosBeforeJump;
+    JAVA_OBJECT com_example_entity_Ducky_levelData;
+};
+
+
+
+#endif //__COM_EXAMPLE_ENTITY_DUCKY__

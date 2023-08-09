@@ -1,0 +1,94 @@
+#ifndef __COM_EXAMPLE_UI_DEATHSCENEOVERLAY__
+#define __COM_EXAMPLE_UI_DEATHSCENEOVERLAY__
+
+#include "cn1_globals.h"
+#include "java_lang_Object.h"
+extern struct clazz class__com_example_ui_DeathSceneOverlay;
+extern void __INIT_VTABLE_com_example_ui_DeathSceneOverlay(CODENAME_ONE_THREAD_STATE, void** vtable);
+extern void __STATIC_INITIALIZER_com_example_ui_DeathSceneOverlay(CODENAME_ONE_THREAD_STATE);
+extern void __FINALIZER_com_example_ui_DeathSceneOverlay(CODENAME_ONE_THREAD_STATE, JAVA_OBJECT objToDelete);
+extern void __GC_MARK_com_example_ui_DeathSceneOverlay(CODENAME_ONE_THREAD_STATE, JAVA_OBJECT objToMark, JAVA_BOOLEAN force);
+extern JAVA_OBJECT __NEW_com_example_ui_DeathSceneOverlay(CODENAME_ONE_THREAD_STATE);
+extern JAVA_OBJECT __NEW_INSTANCE_com_example_ui_DeathSceneOverlay(CODENAME_ONE_THREAD_STATE);
+
+JAVA_VOID com_example_ui_DeathSceneOverlay___INIT____(CODENAME_ONE_THREAD_STATE, JAVA_OBJECT  __cn1ThisObject);
+
+JAVA_VOID com_example_ui_DeathSceneOverlay_loadButtons__(CODENAME_ONE_THREAD_STATE, JAVA_OBJECT  __cn1ThisObject);
+
+JAVA_VOID com_example_ui_DeathSceneOverlay_touchMovement___int_int(CODENAME_ONE_THREAD_STATE, JAVA_OBJECT  __cn1ThisObject, JAVA_INT __cn1Arg1, JAVA_INT __cn1Arg2);
+
+JAVA_VOID com_example_ui_DeathSceneOverlay_releaseMovement___int_int(CODENAME_ONE_THREAD_STATE, JAVA_OBJECT  __cn1ThisObject, JAVA_INT __cn1Arg1, JAVA_INT __cn1Arg2);
+
+JAVA_VOID com_example_ui_DeathSceneOverlay_update__(CODENAME_ONE_THREAD_STATE, JAVA_OBJECT  __cn1ThisObject);
+
+JAVA_VOID com_example_ui_DeathSceneOverlay_draw___com_codename1_ui_Graphics(CODENAME_ONE_THREAD_STATE, JAVA_OBJECT  __cn1ThisObject, JAVA_OBJECT __cn1Arg1);
+
+JAVA_BOOLEAN com_example_ui_DeathSceneOverlay_equals___java_lang_Object_R_boolean(CODENAME_ONE_THREAD_STATE, JAVA_OBJECT  __cn1ThisObject, JAVA_OBJECT __cn1Arg1);
+
+JAVA_OBJECT com_example_ui_DeathSceneOverlay_getClass___R_java_lang_Class(CODENAME_ONE_THREAD_STATE, JAVA_OBJECT  __cn1ThisObject);
+
+JAVA_INT com_example_ui_DeathSceneOverlay_hashCode___R_int(CODENAME_ONE_THREAD_STATE, JAVA_OBJECT  __cn1ThisObject);
+
+JAVA_VOID com_example_ui_DeathSceneOverlay_notify__(CODENAME_ONE_THREAD_STATE, JAVA_OBJECT  __cn1ThisObject);
+
+JAVA_VOID com_example_ui_DeathSceneOverlay_notifyAll__(CODENAME_ONE_THREAD_STATE, JAVA_OBJECT  __cn1ThisObject);
+
+JAVA_OBJECT com_example_ui_DeathSceneOverlay_toString___R_java_lang_String(CODENAME_ONE_THREAD_STATE, JAVA_OBJECT  __cn1ThisObject);
+
+JAVA_VOID com_example_ui_DeathSceneOverlay_wait__(CODENAME_ONE_THREAD_STATE, JAVA_OBJECT  __cn1ThisObject);
+
+JAVA_VOID com_example_ui_DeathSceneOverlay_wait___long(CODENAME_ONE_THREAD_STATE, JAVA_OBJECT  __cn1ThisObject, JAVA_LONG __cn1Arg1);
+
+JAVA_VOID com_example_ui_DeathSceneOverlay_wait___long_int(CODENAME_ONE_THREAD_STATE, JAVA_OBJECT  __cn1ThisObject, JAVA_LONG __cn1Arg1, JAVA_INT __cn1Arg2);
+
+JAVA_OBJECT com_example_ui_DeathSceneOverlay_clone___R_java_lang_Object(CODENAME_ONE_THREAD_STATE, JAVA_OBJECT  __cn1ThisObject);
+#define virtual_com_example_ui_DeathSceneOverlay_loadButtons__ com_example_ui_DeathSceneOverlay_loadButtons__
+#define virtual_com_example_ui_DeathSceneOverlay_touchMovement___int_int com_example_ui_DeathSceneOverlay_touchMovement___int_int
+#define virtual_com_example_ui_DeathSceneOverlay_releaseMovement___int_int com_example_ui_DeathSceneOverlay_releaseMovement___int_int
+#define virtual_com_example_ui_DeathSceneOverlay_update__ com_example_ui_DeathSceneOverlay_update__
+#define virtual_com_example_ui_DeathSceneOverlay_draw___com_codename1_ui_Graphics com_example_ui_DeathSceneOverlay_draw___com_codename1_ui_Graphics
+JAVA_OBJECT get_field_com_example_ui_DeathSceneOverlay_deathSceneButtons(JAVA_OBJECT t);
+void set_field_com_example_ui_DeathSceneOverlay_deathSceneButtons(CODENAME_ONE_THREAD_STATE, JAVA_OBJECT __cn1Val, JAVA_OBJECT __cn1T);
+JAVA_INT get_field_com_example_ui_DeathSceneOverlay_buttonWidth(JAVA_OBJECT t);
+void set_field_com_example_ui_DeathSceneOverlay_buttonWidth(CODENAME_ONE_THREAD_STATE, JAVA_INT __cn1Val, JAVA_OBJECT __cn1T);
+JAVA_INT get_field_com_example_ui_DeathSceneOverlay_buttonHeight(JAVA_OBJECT t);
+void set_field_com_example_ui_DeathSceneOverlay_buttonHeight(CODENAME_ONE_THREAD_STATE, JAVA_INT __cn1Val, JAVA_OBJECT __cn1T);
+JAVA_INT get_field_com_example_ui_DeathSceneOverlay_buttonPlacementX(JAVA_OBJECT t);
+void set_field_com_example_ui_DeathSceneOverlay_buttonPlacementX(CODENAME_ONE_THREAD_STATE, JAVA_INT __cn1Val, JAVA_OBJECT __cn1T);
+JAVA_INT get_field_com_example_ui_DeathSceneOverlay_playAgainY(JAVA_OBJECT t);
+void set_field_com_example_ui_DeathSceneOverlay_playAgainY(CODENAME_ONE_THREAD_STATE, JAVA_INT __cn1Val, JAVA_OBJECT __cn1T);
+JAVA_INT get_field_com_example_ui_DeathSceneOverlay_playAgainButtonSprite(JAVA_OBJECT t);
+void set_field_com_example_ui_DeathSceneOverlay_playAgainButtonSprite(CODENAME_ONE_THREAD_STATE, JAVA_INT __cn1Val, JAVA_OBJECT __cn1T);
+JAVA_OBJECT get_field_com_example_ui_DeathSceneOverlay_playButtonPressed(JAVA_OBJECT t);
+void set_field_com_example_ui_DeathSceneOverlay_playButtonPressed(CODENAME_ONE_THREAD_STATE, JAVA_OBJECT __cn1Val, JAVA_OBJECT __cn1T);
+JAVA_INT get_field_com_example_ui_DeathSceneOverlay_hsX(JAVA_OBJECT t);
+void set_field_com_example_ui_DeathSceneOverlay_hsX(CODENAME_ONE_THREAD_STATE, JAVA_INT __cn1Val, JAVA_OBJECT __cn1T);
+JAVA_INT get_field_com_example_ui_DeathSceneOverlay_hsY(JAVA_OBJECT t);
+void set_field_com_example_ui_DeathSceneOverlay_hsY(CODENAME_ONE_THREAD_STATE, JAVA_INT __cn1Val, JAVA_OBJECT __cn1T);
+JAVA_OBJECT get_field_com_example_ui_DeathSceneOverlay_volumeButton(JAVA_OBJECT t);
+void set_field_com_example_ui_DeathSceneOverlay_volumeButton(CODENAME_ONE_THREAD_STATE, JAVA_OBJECT __cn1Val, JAVA_OBJECT __cn1T);
+
+
+struct obj__com_example_ui_DeathSceneOverlay {
+    DEBUG_GC_VARIABLES
+    struct clazz *__codenameOneParentClsReference;
+    int __codenameOneReferenceCount;
+    void* __codenameOneThreadData;
+    int __codenameOneGcMark;
+    void* __ownerThread;
+    int __heapPosition;
+    JAVA_OBJECT com_example_ui_DeathSceneOverlay_deathSceneButtons;
+    JAVA_INT com_example_ui_DeathSceneOverlay_buttonWidth;
+    JAVA_INT com_example_ui_DeathSceneOverlay_buttonHeight;
+    JAVA_INT com_example_ui_DeathSceneOverlay_buttonPlacementX;
+    JAVA_INT com_example_ui_DeathSceneOverlay_playAgainY;
+    JAVA_INT com_example_ui_DeathSceneOverlay_playAgainButtonSprite;
+    JAVA_OBJECT com_example_ui_DeathSceneOverlay_playButtonPressed;
+    JAVA_INT com_example_ui_DeathSceneOverlay_hsX;
+    JAVA_INT com_example_ui_DeathSceneOverlay_hsY;
+    JAVA_OBJECT com_example_ui_DeathSceneOverlay_volumeButton;
+};
+
+
+
+#endif //__COM_EXAMPLE_UI_DEATHSCENEOVERLAY__

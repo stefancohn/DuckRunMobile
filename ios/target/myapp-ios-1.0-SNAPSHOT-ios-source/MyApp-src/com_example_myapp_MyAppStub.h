@@ -1,0 +1,86 @@
+#ifndef __COM_EXAMPLE_MYAPP_MYAPPSTUB__
+#define __COM_EXAMPLE_MYAPP_MYAPPSTUB__
+
+#include "cn1_globals.h"
+#include "com_codename1_impl_ios_Lifecycle.h"
+#include "java_lang_Runnable.h"
+extern struct clazz class__com_example_myapp_MyAppStub;
+extern void __INIT_VTABLE_com_example_myapp_MyAppStub(CODENAME_ONE_THREAD_STATE, void** vtable);
+extern void __STATIC_INITIALIZER_com_example_myapp_MyAppStub(CODENAME_ONE_THREAD_STATE);
+extern void __FINALIZER_com_example_myapp_MyAppStub(CODENAME_ONE_THREAD_STATE, JAVA_OBJECT objToDelete);
+extern void __GC_MARK_com_example_myapp_MyAppStub(CODENAME_ONE_THREAD_STATE, JAVA_OBJECT objToMark, JAVA_BOOLEAN force);
+extern JAVA_OBJECT __NEW_com_example_myapp_MyAppStub(CODENAME_ONE_THREAD_STATE);
+extern JAVA_OBJECT __NEW_INSTANCE_com_example_myapp_MyAppStub(CODENAME_ONE_THREAD_STATE);
+
+JAVA_VOID com_example_myapp_MyAppStub___INIT____(CODENAME_ONE_THREAD_STATE, JAVA_OBJECT  __cn1ThisObject);
+
+JAVA_OBJECT com_example_myapp_MyAppStub_d___java_lang_String_R_java_lang_String(CODENAME_ONE_THREAD_STATE, JAVA_OBJECT  __cn1ThisObject, JAVA_OBJECT __cn1Arg1);
+
+JAVA_VOID com_example_myapp_MyAppStub_run__(CODENAME_ONE_THREAD_STATE, JAVA_OBJECT  __cn1ThisObject);
+
+JAVA_VOID com_example_myapp_MyAppStub_applicationDidEnterBackground__(CODENAME_ONE_THREAD_STATE, JAVA_OBJECT  __cn1ThisObject);
+
+JAVA_VOID com_example_myapp_MyAppStub_applicationWillEnterForeground__(CODENAME_ONE_THREAD_STATE, JAVA_OBJECT  __cn1ThisObject);
+
+JAVA_VOID com_example_myapp_MyAppStub_applicationDidBecomeActive__(CODENAME_ONE_THREAD_STATE, JAVA_OBJECT  __cn1ThisObject);
+
+JAVA_BOOLEAN com_example_myapp_MyAppStub_shouldApplicationHandleURL___java_lang_String_java_lang_String_R_boolean(CODENAME_ONE_THREAD_STATE, JAVA_OBJECT  __cn1ThisObject, JAVA_OBJECT __cn1Arg1, JAVA_OBJECT __cn1Arg2);
+
+JAVA_VOID com_example_myapp_MyAppStub_applicationWillTerminate__(CODENAME_ONE_THREAD_STATE, JAVA_OBJECT  __cn1ThisObject);
+
+JAVA_VOID com_example_myapp_MyAppStub_main___java_lang_String_1ARRAY(CODENAME_ONE_THREAD_STATE, JAVA_OBJECT __cn1Arg1);
+
+JAVA_OBJECT com_example_myapp_MyAppStub_access$000___com_example_myapp_MyAppStub_R_com_example_myapp_MyApp(CODENAME_ONE_THREAD_STATE, JAVA_OBJECT __cn1Arg1);
+
+JAVA_VOID com_example_myapp_MyAppStub_applicationWillResignActive__(CODENAME_ONE_THREAD_STATE, JAVA_OBJECT  __cn1ThisObject);
+
+JAVA_VOID com_example_myapp_MyAppStub_headphonesConnected__(CODENAME_ONE_THREAD_STATE, JAVA_OBJECT  __cn1ThisObject);
+
+JAVA_VOID com_example_myapp_MyAppStub_headphonesDisconnected__(CODENAME_ONE_THREAD_STATE, JAVA_OBJECT  __cn1ThisObject);
+
+JAVA_BOOLEAN com_example_myapp_MyAppStub_equals___java_lang_Object_R_boolean(CODENAME_ONE_THREAD_STATE, JAVA_OBJECT  __cn1ThisObject, JAVA_OBJECT __cn1Arg1);
+
+JAVA_OBJECT com_example_myapp_MyAppStub_getClass___R_java_lang_Class(CODENAME_ONE_THREAD_STATE, JAVA_OBJECT  __cn1ThisObject);
+
+JAVA_INT com_example_myapp_MyAppStub_hashCode___R_int(CODENAME_ONE_THREAD_STATE, JAVA_OBJECT  __cn1ThisObject);
+
+JAVA_VOID com_example_myapp_MyAppStub_notify__(CODENAME_ONE_THREAD_STATE, JAVA_OBJECT  __cn1ThisObject);
+
+JAVA_VOID com_example_myapp_MyAppStub_notifyAll__(CODENAME_ONE_THREAD_STATE, JAVA_OBJECT  __cn1ThisObject);
+
+JAVA_OBJECT com_example_myapp_MyAppStub_toString___R_java_lang_String(CODENAME_ONE_THREAD_STATE, JAVA_OBJECT  __cn1ThisObject);
+
+JAVA_VOID com_example_myapp_MyAppStub_wait__(CODENAME_ONE_THREAD_STATE, JAVA_OBJECT  __cn1ThisObject);
+
+JAVA_VOID com_example_myapp_MyAppStub_wait___long(CODENAME_ONE_THREAD_STATE, JAVA_OBJECT  __cn1ThisObject, JAVA_LONG __cn1Arg1);
+
+JAVA_VOID com_example_myapp_MyAppStub_wait___long_int(CODENAME_ONE_THREAD_STATE, JAVA_OBJECT  __cn1ThisObject, JAVA_LONG __cn1Arg1, JAVA_INT __cn1Arg2);
+
+JAVA_OBJECT com_example_myapp_MyAppStub_clone___R_java_lang_Object(CODENAME_ONE_THREAD_STATE, JAVA_OBJECT  __cn1ThisObject);
+extern JAVA_OBJECT get_static_com_example_myapp_MyAppStub_PACKAGE_NAME();
+extern JAVA_OBJECT get_static_com_example_myapp_MyAppStub_APPLICATION_VERSION();
+extern JAVA_OBJECT get_static_com_example_myapp_MyAppStub_APPLICATION_NAME();
+JAVA_OBJECT get_field_com_example_myapp_MyAppStub_i(JAVA_OBJECT t);
+void set_field_com_example_myapp_MyAppStub_i(CODENAME_ONE_THREAD_STATE, JAVA_OBJECT __cn1Val, JAVA_OBJECT __cn1T);
+JAVA_BOOLEAN get_field_com_example_myapp_MyAppStub_initialized(JAVA_OBJECT t);
+void set_field_com_example_myapp_MyAppStub_initialized(CODENAME_ONE_THREAD_STATE, JAVA_BOOLEAN __cn1Val, JAVA_OBJECT __cn1T);
+JAVA_BOOLEAN get_field_com_example_myapp_MyAppStub_stopped(JAVA_OBJECT t);
+void set_field_com_example_myapp_MyAppStub_stopped(CODENAME_ONE_THREAD_STATE, JAVA_BOOLEAN __cn1Val, JAVA_OBJECT __cn1T);
+
+
+struct obj__com_example_myapp_MyAppStub {
+    DEBUG_GC_VARIABLES
+    struct clazz *__codenameOneParentClsReference;
+    int __codenameOneReferenceCount;
+    void* __codenameOneThreadData;
+    int __codenameOneGcMark;
+    void* __ownerThread;
+    int __heapPosition;
+    JAVA_OBJECT com_example_myapp_MyAppStub_i;
+    JAVA_BOOLEAN com_example_myapp_MyAppStub_initialized;
+    JAVA_BOOLEAN com_example_myapp_MyAppStub_stopped;
+};
+
+
+
+#endif //__COM_EXAMPLE_MYAPP_MYAPPSTUB__

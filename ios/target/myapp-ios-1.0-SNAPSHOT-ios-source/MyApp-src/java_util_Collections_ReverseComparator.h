@@ -1,0 +1,59 @@
+#ifndef __JAVA_UTIL_COLLECTIONS_REVERSECOMPARATOR__
+#define __JAVA_UTIL_COLLECTIONS_REVERSECOMPARATOR__
+
+#include "cn1_globals.h"
+#include "java_lang_Object.h"
+#include "java_util_Comparator.h"
+extern struct clazz class__java_util_Collections_ReverseComparator;
+extern void __INIT_VTABLE_java_util_Collections_ReverseComparator(CODENAME_ONE_THREAD_STATE, void** vtable);
+extern void __STATIC_INITIALIZER_java_util_Collections_ReverseComparator(CODENAME_ONE_THREAD_STATE);
+extern void __FINALIZER_java_util_Collections_ReverseComparator(CODENAME_ONE_THREAD_STATE, JAVA_OBJECT objToDelete);
+extern void __GC_MARK_java_util_Collections_ReverseComparator(CODENAME_ONE_THREAD_STATE, JAVA_OBJECT objToMark, JAVA_BOOLEAN force);
+extern JAVA_OBJECT __NEW_java_util_Collections_ReverseComparator(CODENAME_ONE_THREAD_STATE);
+extern JAVA_OBJECT __NEW_INSTANCE_java_util_Collections_ReverseComparator(CODENAME_ONE_THREAD_STATE);
+
+JAVA_VOID java_util_Collections_ReverseComparator___INIT____(CODENAME_ONE_THREAD_STATE, JAVA_OBJECT  __cn1ThisObject);
+
+JAVA_INT java_util_Collections_ReverseComparator_compare___java_lang_Object_java_lang_Object_R_int(CODENAME_ONE_THREAD_STATE, JAVA_OBJECT  __cn1ThisObject, JAVA_OBJECT __cn1Arg1, JAVA_OBJECT __cn1Arg2);
+
+JAVA_OBJECT java_util_Collections_ReverseComparator_access$300___R_java_util_Collections_ReverseComparator(CODENAME_ONE_THREAD_STATE);
+
+JAVA_VOID java_util_Collections_ReverseComparator___CLINIT____(CODENAME_ONE_THREAD_STATE);
+
+JAVA_BOOLEAN java_util_Collections_ReverseComparator_equals___java_lang_Object_R_boolean(CODENAME_ONE_THREAD_STATE, JAVA_OBJECT  __cn1ThisObject, JAVA_OBJECT __cn1Arg1);
+
+JAVA_OBJECT java_util_Collections_ReverseComparator_getClass___R_java_lang_Class(CODENAME_ONE_THREAD_STATE, JAVA_OBJECT  __cn1ThisObject);
+
+JAVA_INT java_util_Collections_ReverseComparator_hashCode___R_int(CODENAME_ONE_THREAD_STATE, JAVA_OBJECT  __cn1ThisObject);
+
+JAVA_VOID java_util_Collections_ReverseComparator_notify__(CODENAME_ONE_THREAD_STATE, JAVA_OBJECT  __cn1ThisObject);
+
+JAVA_VOID java_util_Collections_ReverseComparator_notifyAll__(CODENAME_ONE_THREAD_STATE, JAVA_OBJECT  __cn1ThisObject);
+
+JAVA_OBJECT java_util_Collections_ReverseComparator_toString___R_java_lang_String(CODENAME_ONE_THREAD_STATE, JAVA_OBJECT  __cn1ThisObject);
+
+JAVA_VOID java_util_Collections_ReverseComparator_wait__(CODENAME_ONE_THREAD_STATE, JAVA_OBJECT  __cn1ThisObject);
+
+JAVA_VOID java_util_Collections_ReverseComparator_wait___long(CODENAME_ONE_THREAD_STATE, JAVA_OBJECT  __cn1ThisObject, JAVA_LONG __cn1Arg1);
+
+JAVA_VOID java_util_Collections_ReverseComparator_wait___long_int(CODENAME_ONE_THREAD_STATE, JAVA_OBJECT  __cn1ThisObject, JAVA_LONG __cn1Arg1, JAVA_INT __cn1Arg2);
+
+JAVA_OBJECT java_util_Collections_ReverseComparator_clone___R_java_lang_Object(CODENAME_ONE_THREAD_STATE, JAVA_OBJECT  __cn1ThisObject);
+extern JAVA_OBJECT get_static_java_util_Collections_ReverseComparator_INSTANCE();
+extern JAVA_OBJECT STATIC_FIELD_java_util_Collections_ReverseComparator_INSTANCE;
+extern void set_static_java_util_Collections_ReverseComparator_INSTANCE(CODENAME_ONE_THREAD_STATE, JAVA_OBJECT v);
+
+
+struct obj__java_util_Collections_ReverseComparator {
+    DEBUG_GC_VARIABLES
+    struct clazz *__codenameOneParentClsReference;
+    int __codenameOneReferenceCount;
+    void* __codenameOneThreadData;
+    int __codenameOneGcMark;
+    void* __ownerThread;
+    int __heapPosition;
+};
+
+
+
+#endif //__JAVA_UTIL_COLLECTIONS_REVERSECOMPARATOR__
