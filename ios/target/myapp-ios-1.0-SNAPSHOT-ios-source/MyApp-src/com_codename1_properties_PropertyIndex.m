@@ -611,20 +611,20 @@ JAVA_VOID com_codename1_properties_PropertyIndex_populateFromMap___java_util_Map
     locals[1].type = CN1_TYPE_OBJECT;
     locals[2].data.o = __cn1Arg2;
     locals[2].type = CN1_TYPE_OBJECT;
-    int restoreToL833835362cn1_class_id_java_lang_InstantiationException1;
-    int tryBlockOffsetL833835362cn1_class_id_java_lang_InstantiationException1;
-    DEFINE_CATCH_BLOCK(catch_L833835362cn1_class_id_java_lang_InstantiationException1, label_L1008674385, restoreToL833835362cn1_class_id_java_lang_InstantiationException1);
-    int restoreToL833835362cn1_class_id_java_lang_IllegalAccessException2;
-    int tryBlockOffsetL833835362cn1_class_id_java_lang_IllegalAccessException2;
-    DEFINE_CATCH_BLOCK(catch_L833835362cn1_class_id_java_lang_IllegalAccessException2, label_L1558825448, restoreToL833835362cn1_class_id_java_lang_IllegalAccessException2);
+    int restoreToL226385033cn1_class_id_java_lang_InstantiationException1;
+    int tryBlockOffsetL226385033cn1_class_id_java_lang_InstantiationException1;
+    DEFINE_CATCH_BLOCK(catch_L226385033cn1_class_id_java_lang_InstantiationException1, label_L1008674385, restoreToL226385033cn1_class_id_java_lang_InstantiationException1);
+    int restoreToL226385033cn1_class_id_java_lang_IllegalAccessException2;
+    int tryBlockOffsetL226385033cn1_class_id_java_lang_IllegalAccessException2;
+    DEFINE_CATCH_BLOCK(catch_L226385033cn1_class_id_java_lang_IllegalAccessException2, label_L1558825448, restoreToL226385033cn1_class_id_java_lang_IllegalAccessException2);
 
-label_L833835362:
- tryBlockOffsetL833835362cn1_class_id_java_lang_IllegalAccessException2 = threadStateData->tryBlockOffset;
-    BEGIN_TRY(cn1_class_id_java_lang_IllegalAccessException, catch_L833835362cn1_class_id_java_lang_IllegalAccessException2);
-    restoreToL833835362cn1_class_id_java_lang_IllegalAccessException2 = threadStateData->threadObjectStackOffset;
- tryBlockOffsetL833835362cn1_class_id_java_lang_InstantiationException1 = threadStateData->tryBlockOffset;
-    BEGIN_TRY(cn1_class_id_java_lang_InstantiationException, catch_L833835362cn1_class_id_java_lang_InstantiationException1);
-    restoreToL833835362cn1_class_id_java_lang_InstantiationException1 = threadStateData->threadObjectStackOffset;
+label_L226385033:
+ tryBlockOffsetL226385033cn1_class_id_java_lang_IllegalAccessException2 = threadStateData->tryBlockOffset;
+    BEGIN_TRY(cn1_class_id_java_lang_IllegalAccessException, catch_L226385033cn1_class_id_java_lang_IllegalAccessException2);
+    restoreToL226385033cn1_class_id_java_lang_IllegalAccessException2 = threadStateData->threadObjectStackOffset;
+ tryBlockOffsetL226385033cn1_class_id_java_lang_InstantiationException1 = threadStateData->tryBlockOffset;
+    BEGIN_TRY(cn1_class_id_java_lang_InstantiationException, catch_L226385033cn1_class_id_java_lang_InstantiationException1);
+    restoreToL226385033cn1_class_id_java_lang_InstantiationException1 = threadStateData->threadObjectStackOffset;
 
     __CN1_DEBUG_INFO(312);
     /* VarOp.assignFrom */ locals[3].data.o = virtual_com_codename1_properties_PropertyIndex_iterator___R_java_util_Iterator(threadStateData, __cn1ThisObject);locals[3].type=CN1_TYPE_OBJECT;

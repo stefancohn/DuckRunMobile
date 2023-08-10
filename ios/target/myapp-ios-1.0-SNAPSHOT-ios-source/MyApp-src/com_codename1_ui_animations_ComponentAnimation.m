@@ -133,9 +133,9 @@ JAVA_VOID com_codename1_ui_animations_ComponentAnimation_updateState__(CODENAME_
 
 JAVA_VOID com_codename1_ui_animations_ComponentAnimation_updateAnimationState__(CODENAME_ONE_THREAD_STATE, JAVA_OBJECT  __cn1ThisObject) {
     DEFINE_INSTANCE_METHOD_STACK(2, 3, 0, 2789, 2797);
-    locals[0].data.o = __cn1ThisObject; locals[0].type = CN1_TYPE_OBJECT;     int restoreToL12389026501;
-    int tryBlockOffsetL12389026501;
-    DEFINE_CATCH_BLOCK(catch_L12389026501, label_L1820750521, restoreToL12389026501);
+    locals[0].data.o = __cn1ThisObject; locals[0].type = CN1_TYPE_OBJECT;     int restoreToL110827077901;
+    int tryBlockOffsetL110827077901;
+    DEFINE_CATCH_BLOCK(catch_L110827077901, label_L1820750521, restoreToL110827077901);
     int restoreToL182075052102;
     int tryBlockOffsetL182075052102;
     DEFINE_CATCH_BLOCK(catch_L182075052102, label_L1820750521, restoreToL182075052102);
@@ -155,10 +155,10 @@ JAVA_VOID com_codename1_ui_animations_ComponentAnimation_updateAnimationState__(
     BC_ASTORE(1);
     monitorEnter(threadStateData, POP_OBJ());
 
-label_L123890265:
- tryBlockOffsetL12389026501 = threadStateData->tryBlockOffset;
-    BEGIN_TRY(0, catch_L12389026501);
-    restoreToL12389026501 = threadStateData->threadObjectStackOffset;
+label_L1108270779:
+ tryBlockOffsetL110827077901 = threadStateData->tryBlockOffset;
+    BEGIN_TRY(0, catch_L110827077901);
+    restoreToL110827077901 = threadStateData->threadObjectStackOffset;
 
     __CN1_DEBUG_INFO(106);
     virtual_java_lang_Object_notify__(threadStateData, get_field_com_codename1_ui_animations_ComponentAnimation_notifyLock(__cn1ThisObject)); 
@@ -166,7 +166,7 @@ label_L123890265:
     BC_ALOAD(1);
     monitorExit(threadStateData, POP_OBJ());
 
-label_L867014408:
+label_L1487557209:
 END_TRY(1);    JUMP_TO(label_L857396971, 0);
 
 label_L1820750521:
@@ -178,7 +178,7 @@ label_L1820750521:
     BC_ALOAD(1);
     monitorExit(threadStateData, POP_OBJ());
 
-label_L304868623:
+label_L365855651:
 END_TRY(1);    BC_ALOAD(2);
     throwException(threadStateData, POP_OBJ());
 

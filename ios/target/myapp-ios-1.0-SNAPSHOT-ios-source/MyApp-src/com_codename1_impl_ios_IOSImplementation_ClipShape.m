@@ -560,15 +560,15 @@ JAVA_BOOLEAN com_codename1_impl_ios_IOSImplementation_ClipShape_equals___com_cod
     locals[1].type = CN1_TYPE_OBJECT;
     locals[2].data.o = __cn1Arg2;
     locals[2].type = CN1_TYPE_OBJECT;
-    int restoreToL110135848401;
-    int tryBlockOffsetL110135848401;
-    DEFINE_CATCH_BLOCK(catch_L110135848401, label_L2006842965, restoreToL110135848401);
+    int restoreToL184004689001;
+    int tryBlockOffsetL184004689001;
+    DEFINE_CATCH_BLOCK(catch_L184004689001, label_L2006842965, restoreToL184004689001);
     int restoreToL200684296502;
     int tryBlockOffsetL200684296502;
     DEFINE_CATCH_BLOCK(catch_L200684296502, label_L2006842965, restoreToL200684296502);
-    int restoreToL40143397603;
-    int tryBlockOffsetL40143397603;
-    DEFINE_CATCH_BLOCK(catch_L40143397603, label_L842422776, restoreToL40143397603);
+    int restoreToL26847360503;
+    int tryBlockOffsetL26847360503;
+    DEFINE_CATCH_BLOCK(catch_L26847360503, label_L842422776, restoreToL26847360503);
     int restoreToL84242277604;
     int tryBlockOffsetL84242277604;
     DEFINE_CATCH_BLOCK(catch_L84242277604, label_L842422776, restoreToL84242277604);
@@ -577,17 +577,17 @@ JAVA_BOOLEAN com_codename1_impl_ios_IOSImplementation_ClipShape_equals___com_cod
     if (virtual_com_codename1_ui_Transform_isIdentity___R_boolean(threadStateData, locals[2].data.o)!=0) /* IFNE CustomJump */ JUMP_TO(label_L289711450, 0);
     __CN1_DEBUG_INFO(9274);
     /* VarOp.assignFrom */ locals[3].data.o = com_codename1_ui_geom_GeneralPath_createFromPool___R_com_codename1_ui_geom_GeneralPath(threadStateData);locals[3].type=CN1_TYPE_OBJECT;
-label_L1101358484:
- tryBlockOffsetL110135848401 = threadStateData->tryBlockOffset;
-    BEGIN_TRY(0, catch_L110135848401);
-    restoreToL110135848401 = threadStateData->threadObjectStackOffset;
+label_L1840046890:
+ tryBlockOffsetL184004689001 = threadStateData->tryBlockOffset;
+    BEGIN_TRY(0, catch_L184004689001);
+    restoreToL184004689001 = threadStateData->threadObjectStackOffset;
 
     __CN1_DEBUG_INFO(9276);
     /* CustomInvoke */virtual_com_codename1_ui_geom_GeneralPath_setShape___com_codename1_ui_geom_Shape_com_codename1_ui_Transform(threadStateData, locals[3].data.o, locals[1].data.o, locals[2].data.o); 
     __CN1_DEBUG_INFO(9277);
     /* VarOp.assignFrom */ ilocals_4_ = /* CustomInvoke */virtual_com_codename1_impl_ios_IOSImplementation_ClipShape_equals___com_codename1_ui_geom_Shape_com_codename1_ui_Transform_R_boolean(threadStateData, __cn1ThisObject, locals[3].data.o, JAVA_NULL /* ACONST_NULL */);
 
-label_L1260026681:
+label_L1009678979:
 END_TRY(1);    __CN1_DEBUG_INFO(9279);
     /* CustomInvoke */com_codename1_ui_geom_GeneralPath_recycle___com_codename1_ui_geom_GeneralPath(threadStateData, locals[3].data.o); 
     __CN1_DEBUG_INFO(9277);
@@ -605,7 +605,7 @@ label_L2006842965:
     __CN1_DEBUG_INFO(9279);
     BC_ASTORE(5);
 
-label_L148629391:
+label_L70253243:
 END_TRY(1);    /* CustomInvoke */com_codename1_ui_geom_GeneralPath_recycle___com_codename1_ui_geom_GeneralPath(threadStateData, locals[3].data.o); 
     __CN1_DEBUG_INFO(9280);
     BC_ALOAD(5);
@@ -686,17 +686,17 @@ label_L1466413743:
 label_L2002097394:
     __CN1_DEBUG_INFO(9305);
     /* VarOp.assignFrom */ locals[3].data.o = com_codename1_ui_geom_GeneralPath_createFromPool___R_com_codename1_ui_geom_GeneralPath(threadStateData);locals[3].type=CN1_TYPE_OBJECT;
-label_L401433976:
- tryBlockOffsetL40143397603 = threadStateData->tryBlockOffset;
-    BEGIN_TRY(0, catch_L40143397603);
-    restoreToL40143397603 = threadStateData->threadObjectStackOffset;
+label_L268473605:
+ tryBlockOffsetL26847360503 = threadStateData->tryBlockOffset;
+    BEGIN_TRY(0, catch_L26847360503);
+    restoreToL26847360503 = threadStateData->threadObjectStackOffset;
 
     __CN1_DEBUG_INFO(9307);
     /* CustomInvoke */virtual_com_codename1_ui_geom_GeneralPath_setShape___com_codename1_ui_geom_Shape_com_codename1_ui_Transform(threadStateData, locals[3].data.o, locals[1].data.o, JAVA_NULL /* ACONST_NULL */); 
     __CN1_DEBUG_INFO(9308);
     /* VarOp.assignFrom */ ilocals_4_ = /* CustomInvoke */virtual_com_codename1_impl_ios_IOSImplementation_ClipShape_equals___com_codename1_ui_geom_Shape_com_codename1_ui_Transform_R_boolean(threadStateData, __cn1ThisObject, locals[3].data.o, JAVA_NULL /* ACONST_NULL */);
 
-label_L55665213:
+label_L148629391:
 END_TRY(1);    __CN1_DEBUG_INFO(9310);
     /* CustomInvoke */com_codename1_ui_geom_GeneralPath_recycle___com_codename1_ui_geom_GeneralPath(threadStateData, locals[3].data.o); 
     __CN1_DEBUG_INFO(9308);
@@ -714,7 +714,7 @@ label_L842422776:
     __CN1_DEBUG_INFO(9310);
     BC_ASTORE(6);
 
-label_L231601971:
+label_L689543022:
 END_TRY(1);    /* CustomInvoke */com_codename1_ui_geom_GeneralPath_recycle___com_codename1_ui_geom_GeneralPath(threadStateData, locals[3].data.o); 
     __CN1_DEBUG_INFO(9311);
     BC_ALOAD(6);

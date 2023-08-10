@@ -97,9 +97,9 @@ JAVA_VOID com_codename1_ui_Toolbar_16_scrollChanged___int_int_int_int(CODENAME_O
     ilocals_2_ = __cn1Arg2;
     ilocals_3_ = __cn1Arg3;
     ilocals_4_ = __cn1Arg4;
-    int restoreToL188461410601;
-    int tryBlockOffsetL188461410601;
-    DEFINE_CATCH_BLOCK(catch_L188461410601, label_L798639105, restoreToL188461410601);
+    int restoreToL20386822301;
+    int tryBlockOffsetL20386822301;
+    DEFINE_CATCH_BLOCK(catch_L20386822301, label_L798639105, restoreToL20386822301);
     int restoreToL152930510502;
     int tryBlockOffsetL152930510502;
     DEFINE_CATCH_BLOCK(catch_L152930510502, label_L798639105, restoreToL152930510502);
@@ -118,10 +118,10 @@ label_L1189496672:
     __CN1_DEBUG_INFO(2365);
     /* CustomInvoke */com_codename1_ui_Toolbar_access$502___com_codename1_ui_Toolbar_boolean_R_boolean(threadStateData, get_field_com_codename1_ui_Toolbar_16_this_0(__cn1ThisObject), 1 /* ICONST_1 */); 
 
-label_L1884614106:
- tryBlockOffsetL188461410601 = threadStateData->tryBlockOffset;
-    BEGIN_TRY(0, catch_L188461410601);
-    restoreToL188461410601 = threadStateData->threadObjectStackOffset;
+label_L203868223:
+ tryBlockOffsetL20386822301 = threadStateData->tryBlockOffset;
+    BEGIN_TRY(0, catch_L20386822301);
+    restoreToL20386822301 = threadStateData->threadObjectStackOffset;
 
     __CN1_DEBUG_INFO(2367);
     /* VarOp.assignFrom */ ilocals_5_=(ilocals_2_ - ilocals_4_);
@@ -235,7 +235,7 @@ label_L798639105:
     __CN1_DEBUG_INFO(2395);
     BC_ASTORE(9);
 
-label_L311004791:
+label_L1794085350:
 END_TRY(1);    /* CustomInvoke */com_codename1_ui_Toolbar_access$502___com_codename1_ui_Toolbar_boolean_R_boolean(threadStateData, get_field_com_codename1_ui_Toolbar_16_this_0(__cn1ThisObject), 0 /* ICONST_0 */); 
     __CN1_DEBUG_INFO(2396);
     BC_ALOAD(9);

@@ -609,9 +609,9 @@ label_L1466662004:
 JAVA_OBJECT com_codename1_ui_SideMenuBar_createOpenButton___R_com_codename1_ui_Button(CODENAME_ONE_THREAD_STATE, JAVA_OBJECT  __cn1ThisObject) {
     volatile JAVA_FLOAT flocals_4_ = 0; /* v4 */
     DEFINE_INSTANCE_METHOD_STACK(3, 6, 0, 6961, 6965);
-    locals[0].data.o = __cn1ThisObject; locals[0].type = CN1_TYPE_OBJECT;     int restoreToL1509401749cn1_class_id_java_lang_Throwable1;
-    int tryBlockOffsetL1509401749cn1_class_id_java_lang_Throwable1;
-    DEFINE_CATCH_BLOCK(catch_L1509401749cn1_class_id_java_lang_Throwable1, label_L568221863, restoreToL1509401749cn1_class_id_java_lang_Throwable1);
+    locals[0].data.o = __cn1ThisObject; locals[0].type = CN1_TYPE_OBJECT;     int restoreToL627921408cn1_class_id_java_lang_Throwable1;
+    int tryBlockOffsetL627921408cn1_class_id_java_lang_Throwable1;
+    DEFINE_CATCH_BLOCK(catch_L627921408cn1_class_id_java_lang_Throwable1, label_L568221863, restoreToL627921408cn1_class_id_java_lang_Throwable1);
     __CN1_DEBUG_INFO(224);
     PUSH_POINTER(__NEW_com_codename1_ui_Button(threadStateData)); /* NEW */
     BC_DUP(); /* DUP */
@@ -631,10 +631,10 @@ label_L1938377818:
     __CN1_DEBUG_INFO(231);
     /* VarOp.assignFrom */     flocals_4_ = 4.5;
 
-label_L1509401749:
- tryBlockOffsetL1509401749cn1_class_id_java_lang_Throwable1 = threadStateData->tryBlockOffset;
-    BEGIN_TRY(cn1_class_id_java_lang_Throwable, catch_L1509401749cn1_class_id_java_lang_Throwable1);
-    restoreToL1509401749cn1_class_id_java_lang_Throwable1 = threadStateData->threadObjectStackOffset;
+label_L627921408:
+ tryBlockOffsetL627921408cn1_class_id_java_lang_Throwable1 = threadStateData->tryBlockOffset;
+    BEGIN_TRY(cn1_class_id_java_lang_Throwable, catch_L627921408cn1_class_id_java_lang_Throwable1);
+    restoreToL627921408cn1_class_id_java_lang_Throwable1 = threadStateData->threadObjectStackOffset;
 
     __CN1_DEBUG_INFO(233);
     /* CustomInvoke */{ JAVA_OBJECT tmpResult = virtual_com_codename1_ui_plaf_UIManager_getThemeConstant___java_lang_String_java_lang_String_R_java_lang_String(threadStateData, locals[2].data.o, STRING_FROM_CONSTANT_POOL_OFFSET(6968), STRING_FROM_CONSTANT_POOL_OFFSET(6969));
@@ -643,7 +643,7 @@ label_L1509401749:
     SP[-1].data.f = tmpResult; SP[-1].type = CN1_TYPE_FLOAT; }
     BC_FSTORE(4);
 
-label_L373620985:
+label_L1853950031:
 END_TRY(1);    __CN1_DEBUG_INFO(236);
     JUMP_TO(label_L2057104863, 0);
 

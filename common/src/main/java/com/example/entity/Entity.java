@@ -1,7 +1,6 @@
 package com.example.entity;
-import java.awt.Color;
-import java.awt.Graphics;
 
+import com.codename1.ui.Graphics;
 import com.example.util.Rectangle;
 
 public abstract class Entity {
@@ -27,7 +26,7 @@ public abstract class Entity {
     }
 
     public void drawHitbox(Graphics g) {
-        g.setColor(Color.RED);
+        g.setColor(255);
         g.drawRect(hitbox.x, hitbox.y, hitbox.width, hitbox.height);
     }
 

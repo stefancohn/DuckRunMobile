@@ -486,17 +486,17 @@ JAVA_OBJECT com_codename1_ui_Image_applyMaskAutoScale___java_lang_Object_R_com_c
     DEFINE_INSTANCE_METHOD_STACK(3, 4, 0, 1554, 1571);
     locals[0].data.o = __cn1ThisObject; locals[0].type = CN1_TYPE_OBJECT;     locals[1].data.o = __cn1Arg1;
     locals[1].type = CN1_TYPE_OBJECT;
-    int restoreToL1268928880cn1_class_id_java_lang_Throwable1;
-    int tryBlockOffsetL1268928880cn1_class_id_java_lang_Throwable1;
-    DEFINE_CATCH_BLOCK(catch_L1268928880cn1_class_id_java_lang_Throwable1, label_L1947666055, restoreToL1268928880cn1_class_id_java_lang_Throwable1);
+    int restoreToL1286426995cn1_class_id_java_lang_Throwable1;
+    int tryBlockOffsetL1286426995cn1_class_id_java_lang_Throwable1;
+    DEFINE_CATCH_BLOCK(catch_L1286426995cn1_class_id_java_lang_Throwable1, label_L1947666055, restoreToL1286426995cn1_class_id_java_lang_Throwable1);
     int restoreToL1033304734cn1_class_id_java_lang_Throwable2;
     int tryBlockOffsetL1033304734cn1_class_id_java_lang_Throwable2;
     DEFINE_CATCH_BLOCK(catch_L1033304734cn1_class_id_java_lang_Throwable2, label_L1947666055, restoreToL1033304734cn1_class_id_java_lang_Throwable2);
 
-label_L1268928880:
- tryBlockOffsetL1268928880cn1_class_id_java_lang_Throwable1 = threadStateData->tryBlockOffset;
-    BEGIN_TRY(cn1_class_id_java_lang_Throwable, catch_L1268928880cn1_class_id_java_lang_Throwable1);
-    restoreToL1268928880cn1_class_id_java_lang_Throwable1 = threadStateData->threadObjectStackOffset;
+label_L1286426995:
+ tryBlockOffsetL1286426995cn1_class_id_java_lang_Throwable1 = threadStateData->tryBlockOffset;
+    BEGIN_TRY(cn1_class_id_java_lang_Throwable, catch_L1286426995cn1_class_id_java_lang_Throwable1);
+    restoreToL1286426995cn1_class_id_java_lang_Throwable1 = threadStateData->threadObjectStackOffset;
 
     __CN1_DEBUG_INFO(308);
     /* VarOp.assignFrom */ ilocals_2_ = virtual_com_codename1_ui_IndexedImage_getWidth___R_int(threadStateData, locals[1].data.o);
@@ -513,7 +513,7 @@ label_L1760622380:
     /* CustomInvoke */{ JAVA_OBJECT tmpResult = virtual_com_codename1_ui_Image_applyMask___java_lang_Object_R_com_codename1_ui_Image(threadStateData, SP[-1].data.o, locals[1].data.o);
     SP[-1].data.o = tmpResult; SP[-1].type = CN1_TYPE_OBJECT; }
 
-label_L1839376318:
+label_L446142450:
 END_TRY(1);    releaseForReturnInException(threadStateData, cn1LocalsBeginInThread, methodBlockOffset); 
     return POP_OBJ();
 
@@ -526,7 +526,7 @@ label_L1033304734:
     /* CustomInvoke */{ JAVA_OBJECT tmpResult = virtual_com_codename1_ui_Image_applyMask___java_lang_Object_R_com_codename1_ui_Image(threadStateData, __cn1ThisObject, locals[1].data.o);
     PUSH_OBJ(tmpResult); }
 
-label_L1087801047:
+label_L1839376318:
 END_TRY(1);    releaseForReturnInException(threadStateData, cn1LocalsBeginInThread, methodBlockOffset); 
     return POP_OBJ();
 
@@ -990,14 +990,14 @@ JAVA_OBJECT com_codename1_ui_Image_createImage___java_lang_String_R_com_codename
     DEFINE_METHOD_STACK(4, 2, 0, 1554, 290);
     locals[0].data.o = __cn1Arg1;
     locals[0].type = CN1_TYPE_OBJECT;
-    int restoreToL403194774cn1_class_id_java_lang_OutOfMemoryError1;
-    int tryBlockOffsetL403194774cn1_class_id_java_lang_OutOfMemoryError1;
-    DEFINE_CATCH_BLOCK(catch_L403194774cn1_class_id_java_lang_OutOfMemoryError1, label_L734230775, restoreToL403194774cn1_class_id_java_lang_OutOfMemoryError1);
+    int restoreToL1746317629cn1_class_id_java_lang_OutOfMemoryError1;
+    int tryBlockOffsetL1746317629cn1_class_id_java_lang_OutOfMemoryError1;
+    DEFINE_CATCH_BLOCK(catch_L1746317629cn1_class_id_java_lang_OutOfMemoryError1, label_L734230775, restoreToL1746317629cn1_class_id_java_lang_OutOfMemoryError1);
 
-label_L403194774:
- tryBlockOffsetL403194774cn1_class_id_java_lang_OutOfMemoryError1 = threadStateData->tryBlockOffset;
-    BEGIN_TRY(cn1_class_id_java_lang_OutOfMemoryError, catch_L403194774cn1_class_id_java_lang_OutOfMemoryError1);
-    restoreToL403194774cn1_class_id_java_lang_OutOfMemoryError1 = threadStateData->threadObjectStackOffset;
+label_L1746317629:
+ tryBlockOffsetL1746317629cn1_class_id_java_lang_OutOfMemoryError1 = threadStateData->tryBlockOffset;
+    BEGIN_TRY(cn1_class_id_java_lang_OutOfMemoryError, catch_L1746317629cn1_class_id_java_lang_OutOfMemoryError1);
+    restoreToL1746317629cn1_class_id_java_lang_OutOfMemoryError1 = threadStateData->threadObjectStackOffset;
 
     __CN1_DEBUG_INFO(531);
     PUSH_POINTER(__NEW_com_codename1_ui_Image(threadStateData)); /* NEW */
@@ -1006,7 +1006,7 @@ label_L403194774:
     PUSH_OBJ(tmpResult); }
     com_codename1_ui_Image___INIT_____java_lang_Object(threadStateData, SP[-2].data.o, SP[-1].data.o);     SP-= 2;
 
-label_L1170904819:
+label_L1883187632:
 END_TRY(1);    releaseForReturnInException(threadStateData, cn1LocalsBeginInThread, methodBlockOffset); 
     return POP_OBJ();
 
@@ -1046,14 +1046,14 @@ JAVA_OBJECT com_codename1_ui_Image_createImage___java_io_InputStream_R_com_coden
     DEFINE_METHOD_STACK(4, 2, 0, 1554, 290);
     locals[0].data.o = __cn1Arg1;
     locals[0].type = CN1_TYPE_OBJECT;
-    int restoreToL423162803cn1_class_id_java_lang_OutOfMemoryError1;
-    int tryBlockOffsetL423162803cn1_class_id_java_lang_OutOfMemoryError1;
-    DEFINE_CATCH_BLOCK(catch_L423162803cn1_class_id_java_lang_OutOfMemoryError1, label_L646757254, restoreToL423162803cn1_class_id_java_lang_OutOfMemoryError1);
+    int restoreToL1908178206cn1_class_id_java_lang_OutOfMemoryError1;
+    int tryBlockOffsetL1908178206cn1_class_id_java_lang_OutOfMemoryError1;
+    DEFINE_CATCH_BLOCK(catch_L1908178206cn1_class_id_java_lang_OutOfMemoryError1, label_L646757254, restoreToL1908178206cn1_class_id_java_lang_OutOfMemoryError1);
 
-label_L423162803:
- tryBlockOffsetL423162803cn1_class_id_java_lang_OutOfMemoryError1 = threadStateData->tryBlockOffset;
-    BEGIN_TRY(cn1_class_id_java_lang_OutOfMemoryError, catch_L423162803cn1_class_id_java_lang_OutOfMemoryError1);
-    restoreToL423162803cn1_class_id_java_lang_OutOfMemoryError1 = threadStateData->threadObjectStackOffset;
+label_L1908178206:
+ tryBlockOffsetL1908178206cn1_class_id_java_lang_OutOfMemoryError1 = threadStateData->tryBlockOffset;
+    BEGIN_TRY(cn1_class_id_java_lang_OutOfMemoryError, catch_L1908178206cn1_class_id_java_lang_OutOfMemoryError1);
+    restoreToL1908178206cn1_class_id_java_lang_OutOfMemoryError1 = threadStateData->threadObjectStackOffset;
 
     __CN1_DEBUG_INFO(564);
     PUSH_POINTER(__NEW_com_codename1_ui_Image(threadStateData)); /* NEW */
@@ -1062,7 +1062,7 @@ label_L423162803:
     PUSH_OBJ(tmpResult); }
     com_codename1_ui_Image___INIT_____java_lang_Object(threadStateData, SP[-2].data.o, SP[-1].data.o);     SP-= 2;
 
-label_L201210119:
+label_L1615855828:
 END_TRY(1);    releaseForReturnInException(threadStateData, cn1LocalsBeginInThread, methodBlockOffset); 
     return POP_OBJ();
 
@@ -1092,14 +1092,14 @@ JAVA_OBJECT com_codename1_ui_Image_createImage___int_1ARRAY_int_int_R_com_codena
     locals[0].type = CN1_TYPE_OBJECT;
     ilocals_1_ = __cn1Arg2;
     ilocals_2_ = __cn1Arg3;
-    int restoreToL124298494cn1_class_id_java_lang_OutOfMemoryError1;
-    int tryBlockOffsetL124298494cn1_class_id_java_lang_OutOfMemoryError1;
-    DEFINE_CATCH_BLOCK(catch_L124298494cn1_class_id_java_lang_OutOfMemoryError1, label_L284660111, restoreToL124298494cn1_class_id_java_lang_OutOfMemoryError1);
+    int restoreToL1808322060cn1_class_id_java_lang_OutOfMemoryError1;
+    int tryBlockOffsetL1808322060cn1_class_id_java_lang_OutOfMemoryError1;
+    DEFINE_CATCH_BLOCK(catch_L1808322060cn1_class_id_java_lang_OutOfMemoryError1, label_L284660111, restoreToL1808322060cn1_class_id_java_lang_OutOfMemoryError1);
 
-label_L124298494:
- tryBlockOffsetL124298494cn1_class_id_java_lang_OutOfMemoryError1 = threadStateData->tryBlockOffset;
-    BEGIN_TRY(cn1_class_id_java_lang_OutOfMemoryError, catch_L124298494cn1_class_id_java_lang_OutOfMemoryError1);
-    restoreToL124298494cn1_class_id_java_lang_OutOfMemoryError1 = threadStateData->threadObjectStackOffset;
+label_L1808322060:
+ tryBlockOffsetL1808322060cn1_class_id_java_lang_OutOfMemoryError1 = threadStateData->tryBlockOffset;
+    BEGIN_TRY(cn1_class_id_java_lang_OutOfMemoryError, catch_L1808322060cn1_class_id_java_lang_OutOfMemoryError1);
+    restoreToL1808322060cn1_class_id_java_lang_OutOfMemoryError1 = threadStateData->threadObjectStackOffset;
 
     __CN1_DEBUG_INFO(585);
     PUSH_POINTER(__NEW_com_codename1_ui_Image(threadStateData)); /* NEW */
@@ -1111,7 +1111,7 @@ label_L124298494:
     __CN1_DEBUG_INFO(586);
     BC_ALOAD(3);
 
-label_L721269425:
+label_L593450751:
 END_TRY(1);    releaseForReturnInException(threadStateData, cn1LocalsBeginInThread, methodBlockOffset); 
     return POP_OBJ();
 
@@ -1165,14 +1165,14 @@ JAVA_OBJECT com_codename1_ui_Image_createImage___int_int_int_R_com_codename1_ui_
     ilocals_0_ = __cn1Arg1;
     ilocals_1_ = __cn1Arg2;
     ilocals_2_ = __cn1Arg3;
-    int restoreToL847666229cn1_class_id_java_lang_OutOfMemoryError1;
-    int tryBlockOffsetL847666229cn1_class_id_java_lang_OutOfMemoryError1;
-    DEFINE_CATCH_BLOCK(catch_L847666229cn1_class_id_java_lang_OutOfMemoryError1, label_L1691678663, restoreToL847666229cn1_class_id_java_lang_OutOfMemoryError1);
+    int restoreToL992237918cn1_class_id_java_lang_OutOfMemoryError1;
+    int tryBlockOffsetL992237918cn1_class_id_java_lang_OutOfMemoryError1;
+    DEFINE_CATCH_BLOCK(catch_L992237918cn1_class_id_java_lang_OutOfMemoryError1, label_L1691678663, restoreToL992237918cn1_class_id_java_lang_OutOfMemoryError1);
 
-label_L847666229:
- tryBlockOffsetL847666229cn1_class_id_java_lang_OutOfMemoryError1 = threadStateData->tryBlockOffset;
-    BEGIN_TRY(cn1_class_id_java_lang_OutOfMemoryError, catch_L847666229cn1_class_id_java_lang_OutOfMemoryError1);
-    restoreToL847666229cn1_class_id_java_lang_OutOfMemoryError1 = threadStateData->threadObjectStackOffset;
+label_L992237918:
+ tryBlockOffsetL992237918cn1_class_id_java_lang_OutOfMemoryError1 = threadStateData->tryBlockOffset;
+    BEGIN_TRY(cn1_class_id_java_lang_OutOfMemoryError, catch_L992237918cn1_class_id_java_lang_OutOfMemoryError1);
+    restoreToL992237918cn1_class_id_java_lang_OutOfMemoryError1 = threadStateData->threadObjectStackOffset;
 
     __CN1_DEBUG_INFO(639);
     PUSH_POINTER(__NEW_com_codename1_ui_Image(threadStateData)); /* NEW */
@@ -1181,7 +1181,7 @@ label_L847666229:
     PUSH_OBJ(tmpResult); }
     com_codename1_ui_Image___INIT_____java_lang_Object(threadStateData, SP[-2].data.o, SP[-1].data.o);     SP-= 2;
 
-label_L728829330:
+label_L266912553:
 END_TRY(1);    releaseForReturnInException(threadStateData, cn1LocalsBeginInThread, methodBlockOffset); 
     return POP_OBJ();
 
@@ -1211,14 +1211,14 @@ JAVA_OBJECT com_codename1_ui_Image_createImage___byte_1ARRAY_int_int_R_com_coden
     locals[0].type = CN1_TYPE_OBJECT;
     ilocals_1_ = __cn1Arg2;
     ilocals_2_ = __cn1Arg3;
-    int restoreToL1905079199cn1_class_id_java_lang_OutOfMemoryError1;
-    int tryBlockOffsetL1905079199cn1_class_id_java_lang_OutOfMemoryError1;
-    DEFINE_CATCH_BLOCK(catch_L1905079199cn1_class_id_java_lang_OutOfMemoryError1, label_L1423978346, restoreToL1905079199cn1_class_id_java_lang_OutOfMemoryError1);
+    int restoreToL1657365086cn1_class_id_java_lang_OutOfMemoryError1;
+    int tryBlockOffsetL1657365086cn1_class_id_java_lang_OutOfMemoryError1;
+    DEFINE_CATCH_BLOCK(catch_L1657365086cn1_class_id_java_lang_OutOfMemoryError1, label_L1423978346, restoreToL1657365086cn1_class_id_java_lang_OutOfMemoryError1);
 
-label_L1905079199:
- tryBlockOffsetL1905079199cn1_class_id_java_lang_OutOfMemoryError1 = threadStateData->tryBlockOffset;
-    BEGIN_TRY(cn1_class_id_java_lang_OutOfMemoryError, catch_L1905079199cn1_class_id_java_lang_OutOfMemoryError1);
-    restoreToL1905079199cn1_class_id_java_lang_OutOfMemoryError1 = threadStateData->threadObjectStackOffset;
+label_L1657365086:
+ tryBlockOffsetL1657365086cn1_class_id_java_lang_OutOfMemoryError1 = threadStateData->tryBlockOffset;
+    BEGIN_TRY(cn1_class_id_java_lang_OutOfMemoryError, catch_L1657365086cn1_class_id_java_lang_OutOfMemoryError1);
+    restoreToL1657365086cn1_class_id_java_lang_OutOfMemoryError1 = threadStateData->threadObjectStackOffset;
 
     __CN1_DEBUG_INFO(661);
     /* VarOp.assignFrom */ locals[3].data.o = /* CustomInvoke */virtual_com_codename1_impl_CodenameOneImplementation_createImage___byte_1ARRAY_int_int_R_java_lang_Object(threadStateData, get_static_com_codename1_ui_Display_impl(threadStateData), locals[0].data.o, ilocals_1_, ilocals_2_);locals[3].type=CN1_TYPE_OBJECT;    __CN1_DEBUG_INFO(662);
@@ -1244,7 +1244,7 @@ label_L401862395:
     BC_DUP(); /* DUP */
     /* CustomInvoke */com_codename1_ui_Image___INIT_____java_lang_Object(threadStateData, SP[-1].data.o, locals[3].data.o);     SP -= 1;
 
-label_L1493132386:
+label_L1381249101:
 END_TRY(1);    releaseForReturnInException(threadStateData, cn1LocalsBeginInThread, methodBlockOffset); 
     return POP_OBJ();
 
@@ -1719,9 +1719,9 @@ JAVA_OBJECT com_codename1_ui_Image_scaledImpl___int_int_R_com_codename1_ui_Image
     DEFINE_INSTANCE_METHOD_STACK(5, 6, 0, 1554, 1588);
     locals[0].data.o = __cn1ThisObject; locals[0].type = CN1_TYPE_OBJECT;     ilocals_1_ = __cn1Arg1;
     ilocals_2_ = __cn1Arg2;
-    int restoreToL558649835cn1_class_id_java_io_IOException1;
-    int tryBlockOffsetL558649835cn1_class_id_java_io_IOException1;
-    DEFINE_CATCH_BLOCK(catch_L558649835cn1_class_id_java_io_IOException1, label_L2058569241, restoreToL558649835cn1_class_id_java_io_IOException1);
+    int restoreToL184351843cn1_class_id_java_io_IOException1;
+    int tryBlockOffsetL184351843cn1_class_id_java_io_IOException1;
+    DEFINE_CATCH_BLOCK(catch_L184351843cn1_class_id_java_io_IOException1, label_L2058569241, restoreToL184351843cn1_class_id_java_io_IOException1);
     __CN1_DEBUG_INFO(952);
     if (ilocals_1_!=-1 /* ICONST_M1 */) /* IF_ICMPNE CustomJump */ JUMP_TO(label_L182639397, 0);
     __CN1_DEBUG_INFO(953);
@@ -1759,14 +1759,14 @@ label_L2063355321:
     __CN1_DEBUG_INFO(964);
     if (get_field_com_codename1_ui_Image_svgData(__cn1ThisObject)==JAVA_NULL) /* IFNULL CustomJump */ JUMP_TO(label_L438263665, 0);
 
-label_L558649835:
- tryBlockOffsetL558649835cn1_class_id_java_io_IOException1 = threadStateData->tryBlockOffset;
-    BEGIN_TRY(cn1_class_id_java_io_IOException, catch_L558649835cn1_class_id_java_io_IOException1);
-    restoreToL558649835cn1_class_id_java_io_IOException1 = threadStateData->threadObjectStackOffset;
+label_L184351843:
+ tryBlockOffsetL184351843cn1_class_id_java_io_IOException1 = threadStateData->tryBlockOffset;
+    BEGIN_TRY(cn1_class_id_java_io_IOException, catch_L184351843cn1_class_id_java_io_IOException1);
+    restoreToL184351843cn1_class_id_java_io_IOException1 = threadStateData->threadObjectStackOffset;
 
     __CN1_DEBUG_INFO(966);
     /* VarOp.assignFrom */ locals[4].data.o = /* CustomInvoke */com_codename1_ui_Image_createSVG___java_lang_String_boolean_byte_1ARRAY_R_com_codename1_ui_Image(threadStateData, get_field_com_codename1_ui_Image_svgBaseURL(__cn1ThisObject), get_field_com_codename1_ui_Image_animated(__cn1ThisObject), get_field_com_codename1_ui_Image_svgData(__cn1ThisObject));locals[4].type=CN1_TYPE_OBJECT;
-label_L1287564869:
+label_L383719398:
 END_TRY(1);    __CN1_DEBUG_INFO(969);
     JUMP_TO(label_L104367332, 0);
 

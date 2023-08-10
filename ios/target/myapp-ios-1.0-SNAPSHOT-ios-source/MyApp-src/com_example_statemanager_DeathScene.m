@@ -56,20 +56,20 @@ com_example_statemanager_DeathScene___INIT____(threadStateData, o);
 
 JAVA_VOID com_example_statemanager_DeathScene___INIT____(CODENAME_ONE_THREAD_STATE, JAVA_OBJECT  __cn1ThisObject) {
     DEFINE_INSTANCE_METHOD_STACK(2, 1, 0, 10325, 205);
-    locals[0].data.o = __cn1ThisObject; locals[0].type = CN1_TYPE_OBJECT;     __CN1_DEBUG_INFO(14);
+    locals[0].data.o = __cn1ThisObject; locals[0].type = CN1_TYPE_OBJECT;     __CN1_DEBUG_INFO(13);
     com_example_statemanager_Scene___INIT____(threadStateData, __cn1ThisObject); 
-    __CN1_DEBUG_INFO(12);
+    __CN1_DEBUG_INFO(11);
     BC_ALOAD(0);
     /* CustomInvoke */PUSH_OBJ(com_example_util_LoadSave_getSpriteAtlas___java_lang_String_R_com_codename1_ui_Image(threadStateData, STRING_FROM_CONSTANT_POOL_OFFSET(10326)));
     set_field_com_example_statemanager_DeathScene_background(threadStateData, PEEK_OBJ(1), PEEK_OBJ(2));
     POP_MANY(2);
-    __CN1_DEBUG_INFO(15);
+    __CN1_DEBUG_INFO(14);
     PUSH_POINTER(__NEW_com_example_ui_DeathSceneOverlay(threadStateData)); /* NEW */
     BC_DUP(); /* DUP */
     com_example_ui_DeathSceneOverlay___INIT____(threadStateData, SP[-1].data.o);     SP -= 1;
     set_static_com_example_statemanager_DeathScene_deathOverlay(threadStateData, PEEK_OBJ(1));
     SP--;
-    __CN1_DEBUG_INFO(16);
+    __CN1_DEBUG_INFO(15);
     releaseForReturn(threadStateData, cn1LocalsBeginInThread); 
     return;
 }
@@ -77,9 +77,9 @@ JAVA_VOID com_example_statemanager_DeathScene___INIT____(CODENAME_ONE_THREAD_STA
 
 JAVA_VOID com_example_statemanager_DeathScene_update__(CODENAME_ONE_THREAD_STATE, JAVA_OBJECT  __cn1ThisObject) {
     DEFINE_INSTANCE_METHOD_STACK(1, 1, 0, 10325, 2519);
-    locals[0].data.o = __cn1ThisObject; locals[0].type = CN1_TYPE_OBJECT;     __CN1_DEBUG_INFO(20);
+    locals[0].data.o = __cn1ThisObject; locals[0].type = CN1_TYPE_OBJECT;     __CN1_DEBUG_INFO(19);
     virtual_com_example_ui_DeathSceneOverlay_update__(threadStateData, get_static_com_example_statemanager_DeathScene_deathOverlay(threadStateData)); 
-    __CN1_DEBUG_INFO(21);
+    __CN1_DEBUG_INFO(20);
     releaseForReturn(threadStateData, cn1LocalsBeginInThread); 
     return;
 }
@@ -89,11 +89,11 @@ JAVA_VOID com_example_statemanager_DeathScene_draw___com_codename1_ui_Graphics(C
     DEFINE_INSTANCE_METHOD_STACK(6, 2, 0, 10325, 5493);
     locals[0].data.o = __cn1ThisObject; locals[0].type = CN1_TYPE_OBJECT;     locals[1].data.o = __cn1Arg1;
     locals[1].type = CN1_TYPE_OBJECT;
-    __CN1_DEBUG_INFO(24);
+    __CN1_DEBUG_INFO(23);
     /* CustomInvoke */virtual_com_codename1_ui_Graphics_drawImage___com_codename1_ui_Image_int_int_int_int(threadStateData, locals[1].data.o, get_field_com_example_statemanager_DeathScene_background(__cn1ThisObject), 0 /* ICONST_0 */, 0 /* ICONST_0 */, get_static_com_example_myapp_MyApp_DEVICE_WIDTH(threadStateData), get_static_com_example_myapp_MyApp_DEVICE_HEIGHT(threadStateData)); 
-    __CN1_DEBUG_INFO(25);
+    __CN1_DEBUG_INFO(24);
     /* CustomInvoke */virtual_com_example_ui_DeathSceneOverlay_draw___com_codename1_ui_Graphics(threadStateData, get_static_com_example_statemanager_DeathScene_deathOverlay(threadStateData), locals[1].data.o); 
-    __CN1_DEBUG_INFO(26);
+    __CN1_DEBUG_INFO(25);
     releaseForReturn(threadStateData, cn1LocalsBeginInThread); 
     return;
 }

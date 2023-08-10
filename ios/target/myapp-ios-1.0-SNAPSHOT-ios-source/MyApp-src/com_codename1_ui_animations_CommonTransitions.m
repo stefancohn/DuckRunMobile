@@ -1726,9 +1726,9 @@ JAVA_VOID com_codename1_ui_animations_CommonTransitions_paint___com_codename1_ui
     DEFINE_INSTANCE_METHOD_STACK(6, 17, 0, 5436, 2359);
     locals[0].data.o = __cn1ThisObject; locals[0].type = CN1_TYPE_OBJECT;     locals[1].data.o = __cn1Arg1;
     locals[1].type = CN1_TYPE_OBJECT;
-    int restoreToL1639578017cn1_class_id_java_lang_Throwable1;
-    int tryBlockOffsetL1639578017cn1_class_id_java_lang_Throwable1;
-    DEFINE_CATCH_BLOCK(catch_L1639578017cn1_class_id_java_lang_Throwable1, label_L24333082, restoreToL1639578017cn1_class_id_java_lang_Throwable1);
+    int restoreToL535001108cn1_class_id_java_lang_Throwable1;
+    int tryBlockOffsetL535001108cn1_class_id_java_lang_Throwable1;
+    DEFINE_CATCH_BLOCK(catch_L535001108cn1_class_id_java_lang_Throwable1, label_L24333082, restoreToL535001108cn1_class_id_java_lang_Throwable1);
     int restoreToL299115261cn1_class_id_java_lang_Throwable2;
     int tryBlockOffsetL299115261cn1_class_id_java_lang_Throwable2;
     DEFINE_CATCH_BLOCK(catch_L299115261cn1_class_id_java_lang_Throwable2, label_L24333082, restoreToL299115261cn1_class_id_java_lang_Throwable2);
@@ -1754,10 +1754,10 @@ JAVA_VOID com_codename1_ui_animations_CommonTransitions_paint___com_codename1_ui
     int tryBlockOffsetL1772262616cn1_class_id_java_lang_Throwable9;
     DEFINE_CATCH_BLOCK(catch_L1772262616cn1_class_id_java_lang_Throwable9, label_L24333082, restoreToL1772262616cn1_class_id_java_lang_Throwable9);
 
-label_L1639578017:
- tryBlockOffsetL1639578017cn1_class_id_java_lang_Throwable1 = threadStateData->tryBlockOffset;
-    BEGIN_TRY(cn1_class_id_java_lang_Throwable, catch_L1639578017cn1_class_id_java_lang_Throwable1);
-    restoreToL1639578017cn1_class_id_java_lang_Throwable1 = threadStateData->threadObjectStackOffset;
+label_L535001108:
+ tryBlockOffsetL535001108cn1_class_id_java_lang_Throwable1 = threadStateData->tryBlockOffset;
+    BEGIN_TRY(cn1_class_id_java_lang_Throwable, catch_L535001108cn1_class_id_java_lang_Throwable1);
+    restoreToL535001108cn1_class_id_java_lang_Throwable1 = threadStateData->threadObjectStackOffset;
 
     __CN1_DEBUG_INFO(690);
     PUSH_INT(get_field_com_codename1_ui_animations_CommonTransitions_transitionType(__cn1ThisObject));
@@ -1791,7 +1791,7 @@ label_L1802242940:
     __CN1_DEBUG_INFO(700);
     /* CustomInvoke */virtual_com_codename1_ui_animations_CommonTransitions_paintInterformContainers___com_codename1_ui_Graphics(threadStateData, __cn1ThisObject, locals[1].data.o); 
 
-label_L1704857178:
+label_L265525793:
 END_TRY(1);    __CN1_DEBUG_INFO(701);
     releaseForReturnInException(threadStateData, cn1LocalsBeginInThread, methodBlockOffset); 
     return;
@@ -1823,7 +1823,7 @@ label_L1897978534:
     __CN1_DEBUG_INFO(711);
     /* CustomInvoke */virtual_com_codename1_ui_animations_CommonTransitions_paintInterformContainers___com_codename1_ui_Graphics(threadStateData, __cn1ThisObject, locals[1].data.o); 
 
-label_L439139906:
+label_L1704857178:
 END_TRY(1);    __CN1_DEBUG_INFO(713);
     releaseForReturnInException(threadStateData, cn1LocalsBeginInThread, methodBlockOffset); 
     return;
@@ -1849,7 +1849,7 @@ label_L1736949057:
     __CN1_DEBUG_INFO(721);
     /* CustomInvoke */virtual_com_codename1_ui_animations_CommonTransitions_paintInterformContainers___com_codename1_ui_Graphics(threadStateData, __cn1ThisObject, locals[1].data.o); 
 
-label_L2147280639:
+label_L257269635:
 END_TRY(1);    __CN1_DEBUG_INFO(722);
     releaseForReturnInException(threadStateData, cn1LocalsBeginInThread, methodBlockOffset); 
     return;
@@ -1866,7 +1866,7 @@ label_L830804464:
     __CN1_DEBUG_INFO(726);
     /* CustomInvoke */virtual_com_codename1_ui_animations_CommonTransitions_paintInterformContainers___com_codename1_ui_Graphics(threadStateData, __cn1ThisObject, locals[1].data.o); 
 
-label_L590212761:
+label_L2147280639:
 END_TRY(1);    __CN1_DEBUG_INFO(727);
     releaseForReturnInException(threadStateData, cn1LocalsBeginInThread, methodBlockOffset); 
     return;
@@ -1897,7 +1897,7 @@ label_L1398164044:
     __CN1_DEBUG_INFO(733);
     /* CustomInvoke */virtual_com_codename1_ui_animations_CommonTransitions_paintInterformContainers___com_codename1_ui_Graphics(threadStateData, __cn1ThisObject, locals[1].data.o); 
 
-label_L2017103556:
+label_L590212761:
 END_TRY(1);    __CN1_DEBUG_INFO(734);
     releaseForReturnInException(threadStateData, cn1LocalsBeginInThread, methodBlockOffset); 
     return;
@@ -1925,7 +1925,7 @@ label_L1153624232:
     __CN1_DEBUG_INFO(745);
     /* CustomInvoke */virtual_com_codename1_ui_animations_CommonTransitions_paintInterformContainers___com_codename1_ui_Graphics(threadStateData, __cn1ThisObject, locals[1].data.o); 
 
-label_L415456371:
+label_L2120427827:
 END_TRY(1);    __CN1_DEBUG_INFO(746);
     releaseForReturnInException(threadStateData, cn1LocalsBeginInThread, methodBlockOffset); 
     return;
@@ -2138,7 +2138,7 @@ label_L1027310894:
     __CN1_DEBUG_INFO(788);
     /* CustomInvoke */com_codename1_ui_animations_CommonTransitions_paintShiftFadeHierarchy___com_codename1_ui_Container_int_com_codename1_ui_Graphics_boolean(threadStateData, __cn1ThisObject, locals[7].data.o, ilocals_8_, locals[1].data.o, 1 /* ICONST_1 */); 
 
-label_L61732893:
+label_L187882474:
 END_TRY(1);    __CN1_DEBUG_INFO(790);
     releaseForReturnInException(threadStateData, cn1LocalsBeginInThread, methodBlockOffset); 
     return;
@@ -2247,7 +2247,7 @@ label_L1233113908:
     __CN1_DEBUG_INFO(821);
     /* CustomInvoke */virtual_com_codename1_ui_Graphics_setAlpha___int(threadStateData, locals[1].data.o, ilocals_4_); 
 
-label_L1535970431:
+label_L409352869:
 END_TRY(1);    __CN1_DEBUG_INFO(822);
     releaseForReturnInException(threadStateData, cn1LocalsBeginInThread, methodBlockOffset); 
     return;

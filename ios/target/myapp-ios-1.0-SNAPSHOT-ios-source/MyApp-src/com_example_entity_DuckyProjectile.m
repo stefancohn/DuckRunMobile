@@ -279,8 +279,8 @@ com_example_entity_Entity_initializeHitbox___int_int_int_int(threadStateData, __
 }
 
 
-JAVA_VOID com_example_entity_DuckyProjectile_drawHitbox___java_awt_Graphics(CODENAME_ONE_THREAD_STATE, JAVA_OBJECT  __cn1ThisObject, JAVA_OBJECT __cn1Arg1) {
-com_example_entity_Entity_drawHitbox___java_awt_Graphics(threadStateData, __cn1ThisObject, __cn1Arg1);
+JAVA_VOID com_example_entity_DuckyProjectile_drawHitbox___com_codename1_ui_Graphics(CODENAME_ONE_THREAD_STATE, JAVA_OBJECT  __cn1ThisObject, JAVA_OBJECT __cn1Arg1) {
+com_example_entity_Entity_drawHitbox___com_codename1_ui_Graphics(threadStateData, __cn1ThisObject, __cn1Arg1);
 }
 
 

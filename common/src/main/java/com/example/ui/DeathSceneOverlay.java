@@ -60,11 +60,11 @@ public class DeathSceneOverlay {
     }
 
     public void update() {
-        Game.game.getVolumeButton().update();
+        //Game.game.getVolumeButton().update();
     }
     public void draw(Graphics g) {
         g.drawImage(deathSceneButtons[0][playAgainButtonSprite], buttonPlacementX, playAgainY, buttonWidth, buttonHeight); //draw play again button
-        Game.game.getVolumeButton().draw(g); //draw volume button
+        //Game.game.getVolumeButton().draw(g); //draw volume button
 
         //draw highscores
         Font defaultFont = Font.createSystemFont(Font.FACE_MONOSPACE, Font.STYLE_PLAIN, Font.SIZE_LARGE);

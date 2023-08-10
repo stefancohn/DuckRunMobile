@@ -81,9 +81,9 @@ JAVA_VOID com_codename1_util_AsyncResource_2___INIT_____com_codename1_util_Async
 
 JAVA_VOID com_codename1_util_AsyncResource_2_run__(CODENAME_ONE_THREAD_STATE, JAVA_OBJECT  __cn1ThisObject) {
     DEFINE_INSTANCE_METHOD_STACK(9, 3, 0, 7249, 207);
-    locals[0].data.o = __cn1ThisObject; locals[0].type = CN1_TYPE_OBJECT;     int restoreToL39770870501;
-    int tryBlockOffsetL39770870501;
-    DEFINE_CATCH_BLOCK(catch_L39770870501, label_L1319869164, restoreToL39770870501);
+    locals[0].data.o = __cn1ThisObject; locals[0].type = CN1_TYPE_OBJECT;     int restoreToL126977903501;
+    int tryBlockOffsetL126977903501;
+    DEFINE_CATCH_BLOCK(catch_L126977903501, label_L1319869164, restoreToL126977903501);
     int restoreToL131986916402;
     int tryBlockOffsetL131986916402;
     DEFINE_CATCH_BLOCK(catch_L131986916402, label_L1319869164, restoreToL131986916402);
@@ -93,10 +93,10 @@ JAVA_VOID com_codename1_util_AsyncResource_2_run__(CODENAME_ONE_THREAD_STATE, JA
     BC_ASTORE(1);
     monitorEnter(threadStateData, POP_OBJ());
 
-label_L397708705:
- tryBlockOffsetL39770870501 = threadStateData->tryBlockOffset;
-    BEGIN_TRY(0, catch_L39770870501);
-    restoreToL39770870501 = threadStateData->threadObjectStackOffset;
+label_L1269779035:
+ tryBlockOffsetL126977903501 = threadStateData->tryBlockOffset;
+    BEGIN_TRY(0, catch_L126977903501);
+    restoreToL126977903501 = threadStateData->threadObjectStackOffset;
 
     __CN1_DEBUG_INFO(156);
     if (get_field_com_codename1_util_AsyncResource_2_val_timeout(__cn1ThisObject)<=0) /* IFLE CustomJump */ JUMP_TO(label_L1514521112, 1);
@@ -125,7 +125,7 @@ label_L745471715:
     BC_ALOAD(1);
     monitorExit(threadStateData, POP_OBJ());
 
-label_L653844638:
+label_L1501022601:
 END_TRY(1);    JUMP_TO(label_L1470899050, 0);
 
 label_L1319869164:
@@ -137,7 +137,7 @@ label_L1319869164:
     BC_ALOAD(1);
     monitorExit(threadStateData, POP_OBJ());
 
-label_L1957947378:
+label_L653844638:
 END_TRY(1);    BC_ALOAD(2);
     throwException(threadStateData, POP_OBJ());
 

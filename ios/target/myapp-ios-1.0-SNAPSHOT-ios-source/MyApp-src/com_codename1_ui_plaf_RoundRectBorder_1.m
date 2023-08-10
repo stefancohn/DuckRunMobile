@@ -232,9 +232,9 @@ JAVA_VOID com_codename1_ui_plaf_RoundRectBorder_1_paint___com_codename1_ui_Graph
     DEFINE_INSTANCE_METHOD_STACK(8, 13, 0, 5871, 2359);
     locals[0].data.o = __cn1ThisObject; locals[0].type = CN1_TYPE_OBJECT;     locals[1].data.o = __cn1Arg1;
     locals[1].type = CN1_TYPE_OBJECT;
-    int restoreToL159260032101;
-    int tryBlockOffsetL159260032101;
-    DEFINE_CATCH_BLOCK(catch_L159260032101, label_L1262092760, restoreToL159260032101);
+    int restoreToL195069425201;
+    int tryBlockOffsetL195069425201;
+    DEFINE_CATCH_BLOCK(catch_L195069425201, label_L1262092760, restoreToL195069425201);
     int restoreToL200156837402;
     int tryBlockOffsetL200156837402;
     DEFINE_CATCH_BLOCK(catch_L200156837402, label_L1262092760, restoreToL200156837402);
@@ -244,10 +244,10 @@ JAVA_VOID com_codename1_ui_plaf_RoundRectBorder_1_paint___com_codename1_ui_Graph
     __CN1_DEBUG_INFO(571);
     /* CustomInvoke */com_codename1_ui_Component_paint___com_codename1_ui_Graphics(threadStateData, __cn1ThisObject, locals[1].data.o); 
 
-label_L1592600321:
- tryBlockOffsetL159260032101 = threadStateData->tryBlockOffset;
-    BEGIN_TRY(0, catch_L159260032101);
-    restoreToL159260032101 = threadStateData->threadObjectStackOffset;
+label_L1950694252:
+ tryBlockOffsetL195069425201 = threadStateData->tryBlockOffset;
+    BEGIN_TRY(0, catch_L195069425201);
+    restoreToL195069425201 = threadStateData->threadObjectStackOffset;
 
     __CN1_DEBUG_INFO(573);
     /* CustomInvoke */virtual_com_codename1_ui_Graphics_translate___int_int(threadStateData, locals[1].data.o, virtual_com_codename1_ui_plaf_RoundRectBorder_1_getX___R_int(threadStateData, __cn1ThisObject), virtual_com_codename1_ui_plaf_RoundRectBorder_1_getY___R_int(threadStateData, __cn1ThisObject)); 
@@ -471,7 +471,7 @@ label_L1990828041:
     PUSH_OBJ(tmpResult); }
     /* CustomInvoke */virtual_com_codename1_ui_plaf_Style_setBorder___com_codename1_ui_plaf_Border(threadStateData, SP[-1].data.o, get_field_com_codename1_ui_plaf_RoundRectBorder_1_this_0(__cn1ThisObject));     SP -= 1;
 
-label_L2105880970:
+label_L118336015:
 END_TRY(1);    __CN1_DEBUG_INFO(632);
     BC_ALOAD(1);
     { JAVA_INT tmpResult = virtual_com_codename1_ui_plaf_RoundRectBorder_1_getX___R_int(threadStateData, __cn1ThisObject);
@@ -493,7 +493,7 @@ label_L1262092760:
     __CN1_DEBUG_INFO(632);
     BC_ASTORE(12);
 
-label_L13049212:
+label_L1515916820:
 END_TRY(1);    BC_ALOAD(1);
     { JAVA_INT tmpResult = virtual_com_codename1_ui_plaf_RoundRectBorder_1_getX___R_int(threadStateData, __cn1ThisObject);
     PUSH_INT(tmpResult); }

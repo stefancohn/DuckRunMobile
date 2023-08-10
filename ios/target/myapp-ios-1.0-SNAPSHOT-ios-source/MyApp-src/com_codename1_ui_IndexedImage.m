@@ -813,14 +813,14 @@ JAVA_OBJECT com_codename1_ui_IndexedImage_toByteArray___R_byte_1ARRAY(CODENAME_O
     volatile JAVA_INT ilocals_3_ = 0; /* v3 */
     volatile JAVA_INT ilocals_4_ = 0; /* v4 */
     DEFINE_INSTANCE_METHOD_STACK(3, 5, 0, 9171, 305);
-    locals[0].data.o = __cn1ThisObject; locals[0].type = CN1_TYPE_OBJECT;     int restoreToL622318745cn1_class_id_java_io_IOException1;
-    int tryBlockOffsetL622318745cn1_class_id_java_io_IOException1;
-    DEFINE_CATCH_BLOCK(catch_L622318745cn1_class_id_java_io_IOException1, label_L356308667, restoreToL622318745cn1_class_id_java_io_IOException1);
+    locals[0].data.o = __cn1ThisObject; locals[0].type = CN1_TYPE_OBJECT;     int restoreToL1457809297cn1_class_id_java_io_IOException1;
+    int tryBlockOffsetL1457809297cn1_class_id_java_io_IOException1;
+    DEFINE_CATCH_BLOCK(catch_L1457809297cn1_class_id_java_io_IOException1, label_L356308667, restoreToL1457809297cn1_class_id_java_io_IOException1);
 
-label_L622318745:
- tryBlockOffsetL622318745cn1_class_id_java_io_IOException1 = threadStateData->tryBlockOffset;
-    BEGIN_TRY(cn1_class_id_java_io_IOException, catch_L622318745cn1_class_id_java_io_IOException1);
-    restoreToL622318745cn1_class_id_java_io_IOException1 = threadStateData->threadObjectStackOffset;
+label_L1457809297:
+ tryBlockOffsetL1457809297cn1_class_id_java_io_IOException1 = threadStateData->tryBlockOffset;
+    BEGIN_TRY(cn1_class_id_java_io_IOException, catch_L1457809297cn1_class_id_java_io_IOException1);
+    restoreToL1457809297cn1_class_id_java_io_IOException1 = threadStateData->threadObjectStackOffset;
 
     __CN1_DEBUG_INFO(422);
     PUSH_POINTER(__NEW_java_io_ByteArrayOutputStream(threadStateData)); /* NEW */
@@ -860,7 +860,7 @@ label_L1641565704:
     { JAVA_OBJECT tmpResult = virtual_java_io_ByteArrayOutputStream_toByteArray___R_byte_1ARRAY(threadStateData, locals[1].data.o);
     PUSH_OBJ(tmpResult); }
 
-label_L1354426181:
+label_L850515329:
 END_TRY(1);    releaseForReturnInException(threadStateData, cn1LocalsBeginInThread, methodBlockOffset); 
     return POP_OBJ();
 

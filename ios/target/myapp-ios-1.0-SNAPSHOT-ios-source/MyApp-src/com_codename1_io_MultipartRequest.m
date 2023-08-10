@@ -389,15 +389,15 @@ JAVA_LONG com_codename1_io_MultipartRequest_calculateContentLength___R_long(CODE
     volatile JAVA_LONG llocals_4_ = 0; /* v4 */
     volatile JAVA_LONG llocals_6_ = 0; /* v6 */
     DEFINE_INSTANCE_METHOD_STACK(6, 23, 0, 8564, 8572);
-    locals[0].data.o = __cn1ThisObject; locals[0].type = CN1_TYPE_OBJECT;     int restoreToL1717033318cn1_class_id_java_io_UnsupportedEncodingException1;
-    int tryBlockOffsetL1717033318cn1_class_id_java_io_UnsupportedEncodingException1;
-    DEFINE_CATCH_BLOCK(catch_L1717033318cn1_class_id_java_io_UnsupportedEncodingException1, label_L1300216352, restoreToL1717033318cn1_class_id_java_io_UnsupportedEncodingException1);
-    int restoreToL1790980194cn1_class_id_java_io_UnsupportedEncodingException2;
-    int tryBlockOffsetL1790980194cn1_class_id_java_io_UnsupportedEncodingException2;
-    DEFINE_CATCH_BLOCK(catch_L1790980194cn1_class_id_java_io_UnsupportedEncodingException2, label_L288043672, restoreToL1790980194cn1_class_id_java_io_UnsupportedEncodingException2);
-    int restoreToL1007053670cn1_class_id_java_io_UnsupportedEncodingException3;
-    int tryBlockOffsetL1007053670cn1_class_id_java_io_UnsupportedEncodingException3;
-    DEFINE_CATCH_BLOCK(catch_L1007053670cn1_class_id_java_io_UnsupportedEncodingException3, label_L1372771126, restoreToL1007053670cn1_class_id_java_io_UnsupportedEncodingException3);
+    locals[0].data.o = __cn1ThisObject; locals[0].type = CN1_TYPE_OBJECT;     int restoreToL1221421089cn1_class_id_java_io_UnsupportedEncodingException1;
+    int tryBlockOffsetL1221421089cn1_class_id_java_io_UnsupportedEncodingException1;
+    DEFINE_CATCH_BLOCK(catch_L1221421089cn1_class_id_java_io_UnsupportedEncodingException1, label_L1300216352, restoreToL1221421089cn1_class_id_java_io_UnsupportedEncodingException1);
+    int restoreToL1517556400cn1_class_id_java_io_UnsupportedEncodingException2;
+    int tryBlockOffsetL1517556400cn1_class_id_java_io_UnsupportedEncodingException2;
+    DEFINE_CATCH_BLOCK(catch_L1517556400cn1_class_id_java_io_UnsupportedEncodingException2, label_L288043672, restoreToL1517556400cn1_class_id_java_io_UnsupportedEncodingException2);
+    int restoreToL1664237457cn1_class_id_java_io_UnsupportedEncodingException3;
+    int tryBlockOffsetL1664237457cn1_class_id_java_io_UnsupportedEncodingException3;
+    DEFINE_CATCH_BLOCK(catch_L1664237457cn1_class_id_java_io_UnsupportedEncodingException3, label_L1372771126, restoreToL1664237457cn1_class_id_java_io_UnsupportedEncodingException3);
     __CN1_DEBUG_INFO(237);
     /* VarOp.assignFrom */     llocals_1_ = 0 /* LCONST_0 */; 
     __CN1_DEBUG_INFO(238);
@@ -474,10 +474,10 @@ label_L1347111575:
     __CN1_DEBUG_INFO(255);
     if (/* CustomInvoke */virtual_java_util_Vector_contains___java_lang_Object_R_boolean(threadStateData, get_field_com_codename1_io_MultipartRequest_ignoreEncoding(__cn1ThisObject), locals[16].data.o)==0) /* IFEQ CustomJump */ JUMP_TO(label_L1910857288, 0);
 
-label_L1717033318:
- tryBlockOffsetL1717033318cn1_class_id_java_io_UnsupportedEncodingException1 = threadStateData->tryBlockOffset;
-    BEGIN_TRY(cn1_class_id_java_io_UnsupportedEncodingException, catch_L1717033318cn1_class_id_java_io_UnsupportedEncodingException1);
-    restoreToL1717033318cn1_class_id_java_io_UnsupportedEncodingException1 = threadStateData->threadObjectStackOffset;
+label_L1221421089:
+ tryBlockOffsetL1221421089cn1_class_id_java_io_UnsupportedEncodingException1 = threadStateData->tryBlockOffset;
+    BEGIN_TRY(cn1_class_id_java_io_UnsupportedEncodingException, catch_L1221421089cn1_class_id_java_io_UnsupportedEncodingException1);
+    restoreToL1221421089cn1_class_id_java_io_UnsupportedEncodingException1 = threadStateData->threadObjectStackOffset;
 
     __CN1_DEBUG_INFO(257);
     BC_LLOAD(1);
@@ -496,7 +496,7 @@ label_L1717033318:
     SP--; SP[-1].data.l = SP[-1].data.l + (*SP).data.l; /* LADD */
     BC_LSTORE(1);
 
-label_L1173891565:
+label_L690143122:
 END_TRY(1);    __CN1_DEBUG_INFO(260);
     JUMP_TO(label_L912877601, 0);
 
@@ -570,10 +570,10 @@ locals[21].type=CN1_TYPE_OBJECT;    __CN1_DEBUG_INFO(271);
     __CN1_DEBUG_INFO(273);
     if (/* CustomInvoke */virtual_java_util_Vector_contains___java_lang_Object_R_boolean(threadStateData, get_field_com_codename1_io_MultipartRequest_ignoreEncoding(__cn1ThisObject), locals[16].data.o)==0) /* IFEQ CustomJump */ JUMP_TO(label_L1342423316, 0);
 
-label_L1790980194:
- tryBlockOffsetL1790980194cn1_class_id_java_io_UnsupportedEncodingException2 = threadStateData->tryBlockOffset;
-    BEGIN_TRY(cn1_class_id_java_io_UnsupportedEncodingException, catch_L1790980194cn1_class_id_java_io_UnsupportedEncodingException2);
-    restoreToL1790980194cn1_class_id_java_io_UnsupportedEncodingException2 = threadStateData->threadObjectStackOffset;
+label_L1517556400:
+ tryBlockOffsetL1517556400cn1_class_id_java_io_UnsupportedEncodingException2 = threadStateData->tryBlockOffset;
+    BEGIN_TRY(cn1_class_id_java_io_UnsupportedEncodingException, catch_L1517556400cn1_class_id_java_io_UnsupportedEncodingException2);
+    restoreToL1517556400cn1_class_id_java_io_UnsupportedEncodingException2 = threadStateData->threadObjectStackOffset;
 
     __CN1_DEBUG_INFO(275);
     BC_LLOAD(1);
@@ -592,7 +592,7 @@ label_L1790980194:
     SP--; SP[-1].data.l = SP[-1].data.l + (*SP).data.l; /* LADD */
     BC_LSTORE(1);
 
-label_L274423320:
+label_L960798591:
 END_TRY(1);    __CN1_DEBUG_INFO(278);
     JUMP_TO(label_L115653836, 0);
 
@@ -659,10 +659,10 @@ label_L1989843834:
     SP--; SP[-1].data.l = SP[-1].data.l + (*SP).data.l; /* LADD */
     BC_LSTORE(1);
 
-label_L1007053670:
- tryBlockOffsetL1007053670cn1_class_id_java_io_UnsupportedEncodingException3 = threadStateData->tryBlockOffset;
-    BEGIN_TRY(cn1_class_id_java_io_UnsupportedEncodingException, catch_L1007053670cn1_class_id_java_io_UnsupportedEncodingException3);
-    restoreToL1007053670cn1_class_id_java_io_UnsupportedEncodingException3 = threadStateData->threadObjectStackOffset;
+label_L1664237457:
+ tryBlockOffsetL1664237457cn1_class_id_java_io_UnsupportedEncodingException3 = threadStateData->tryBlockOffset;
+    BEGIN_TRY(cn1_class_id_java_io_UnsupportedEncodingException, catch_L1664237457cn1_class_id_java_io_UnsupportedEncodingException3);
+    restoreToL1664237457cn1_class_id_java_io_UnsupportedEncodingException3 = threadStateData->threadObjectStackOffset;
 
     __CN1_DEBUG_INFO(291);
     BC_LLOAD(1);
@@ -681,7 +681,7 @@ label_L1007053670:
     SP--; SP[-1].data.l = SP[-1].data.l + (*SP).data.l; /* LADD */
     BC_LSTORE(1);
 
-label_L1320814016:
+label_L2145388720:
 END_TRY(1);    __CN1_DEBUG_INFO(294);
     JUMP_TO(label_L1936362218, 0);
 

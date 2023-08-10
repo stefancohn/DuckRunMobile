@@ -375,7 +375,7 @@ JAVA_VOID com_example_entity_Ducky___INIT_____int_int_int_int(CODENAME_ONE_THREA
     __CN1_DEBUG_INFO(40);
     set_field_com_example_entity_Ducky_friction(threadStateData, 0.1, __cn1ThisObject);
     __CN1_DEBUG_INFO(47);
-    /* CustomInvoke */virtual_com_example_entity_Ducky_initializeHitbox___int_int_int_int(threadStateData, __cn1ThisObject, ilocals_1_, ilocals_2_, ilocals_3_, ilocals_4_); 
+    /* CustomInvoke */virtual_com_example_entity_Ducky_initializeHitbox___int_int_int_int(threadStateData, __cn1ThisObject, (ilocals_1_ - 5 /* ICONST_5 */), ilocals_2_, ilocals_3_, ilocals_4_); 
     __CN1_DEBUG_INFO(48);
     BC_ALOAD(0);
     /* CustomInvoke */PUSH_OBJ(com_example_util_LoadSave_getSpriteAtlas___java_lang_String_R_com_codename1_ui_Image(threadStateData, STRING_FROM_CONSTANT_POOL_OFFSET(38)));
@@ -1300,8 +1300,8 @@ com_example_entity_Entity_initializeHitbox___int_int_int_int(threadStateData, __
 }
 
 
-JAVA_VOID com_example_entity_Ducky_drawHitbox___java_awt_Graphics(CODENAME_ONE_THREAD_STATE, JAVA_OBJECT  __cn1ThisObject, JAVA_OBJECT __cn1Arg1) {
-com_example_entity_Entity_drawHitbox___java_awt_Graphics(threadStateData, __cn1ThisObject, __cn1Arg1);
+JAVA_VOID com_example_entity_Ducky_drawHitbox___com_codename1_ui_Graphics(CODENAME_ONE_THREAD_STATE, JAVA_OBJECT  __cn1ThisObject, JAVA_OBJECT __cn1Arg1) {
+com_example_entity_Entity_drawHitbox___com_codename1_ui_Graphics(threadStateData, __cn1ThisObject, __cn1Arg1);
 }
 
 

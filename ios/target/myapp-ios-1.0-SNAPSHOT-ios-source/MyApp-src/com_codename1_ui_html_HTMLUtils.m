@@ -99,9 +99,9 @@ JAVA_OBJECT com_codename1_ui_html_HTMLUtils_convertCharEntity___java_lang_String
     ilocals_1_ = __cn1Arg2;
     locals[2].data.o = __cn1Arg3;
     locals[2].type = CN1_TYPE_OBJECT;
-    int restoreToL1197282785cn1_class_id_java_lang_NumberFormatException1;
-    int tryBlockOffsetL1197282785cn1_class_id_java_lang_NumberFormatException1;
-    DEFINE_CATCH_BLOCK(catch_L1197282785cn1_class_id_java_lang_NumberFormatException1, label_L1007264592, restoreToL1197282785cn1_class_id_java_lang_NumberFormatException1);
+    int restoreToL1969012937cn1_class_id_java_lang_NumberFormatException1;
+    int tryBlockOffsetL1969012937cn1_class_id_java_lang_NumberFormatException1;
+    DEFINE_CATCH_BLOCK(catch_L1969012937cn1_class_id_java_lang_NumberFormatException1, label_L1007264592, restoreToL1969012937cn1_class_id_java_lang_NumberFormatException1);
     int restoreToL1101149296cn1_class_id_java_lang_NumberFormatException2;
     int tryBlockOffsetL1101149296cn1_class_id_java_lang_NumberFormatException2;
     DEFINE_CATCH_BLOCK(catch_L1101149296cn1_class_id_java_lang_NumberFormatException2, label_L1495931010, restoreToL1101149296cn1_class_id_java_lang_NumberFormatException2);
@@ -112,10 +112,10 @@ JAVA_OBJECT com_codename1_ui_html_HTMLUtils_convertCharEntity___java_lang_String
     __CN1_DEBUG_INFO(114);
     if (/* CustomInvoke */virtual_java_lang_String_startsWith___java_lang_String_R_boolean(threadStateData, locals[0].data.o, STRING_FROM_CONSTANT_POOL_OFFSET(7837))==0) /* IFEQ CustomJump */ JUMP_TO(label_L1101149296, 0);
 
-label_L1197282785:
- tryBlockOffsetL1197282785cn1_class_id_java_lang_NumberFormatException1 = threadStateData->tryBlockOffset;
-    BEGIN_TRY(cn1_class_id_java_lang_NumberFormatException, catch_L1197282785cn1_class_id_java_lang_NumberFormatException1);
-    restoreToL1197282785cn1_class_id_java_lang_NumberFormatException1 = threadStateData->threadObjectStackOffset;
+label_L1969012937:
+ tryBlockOffsetL1969012937cn1_class_id_java_lang_NumberFormatException1 = threadStateData->tryBlockOffset;
+    BEGIN_TRY(cn1_class_id_java_lang_NumberFormatException, catch_L1969012937cn1_class_id_java_lang_NumberFormatException1);
+    restoreToL1969012937cn1_class_id_java_lang_NumberFormatException1 = threadStateData->threadObjectStackOffset;
 
     __CN1_DEBUG_INFO(116);
     /* CustomInvoke */{ JAVA_OBJECT tmpResult = virtual_java_lang_String_substring___int_R_java_lang_String(threadStateData, locals[0].data.o, 2 /* ICONST_2 */);
@@ -126,7 +126,7 @@ label_L1197282785:
     SP[-1].data.i = tmpResult; SP[-1].type = CN1_TYPE_INT; }
     BC_ISTORE(3);
 
-label_L1419038539:
+label_L2035805891:
 END_TRY(1);    __CN1_DEBUG_INFO(119);
     JUMP_TO(label_L817896503, 0);
 
@@ -148,7 +148,7 @@ label_L1101149296:
     SP[-1].data.i = tmpResult; SP[-1].type = CN1_TYPE_INT; }
     BC_ISTORE(3);
 
-label_L1265957736:
+label_L309527276:
 END_TRY(1);    __CN1_DEBUG_INFO(125);
     JUMP_TO(label_L817896503, 0);
 

@@ -409,9 +409,9 @@ JAVA_VOID com_codename1_ui_plaf_CSSBorder_BorderImage_paint___com_codename1_ui_G
 
 JAVA_OBJECT com_codename1_ui_plaf_CSSBorder_BorderImage_image___R_com_codename1_ui_Image(CODENAME_ONE_THREAD_STATE, JAVA_OBJECT  __cn1ThisObject) {
     DEFINE_INSTANCE_METHOD_STACK(4, 2, 0, 5757, 5759);
-    locals[0].data.o = __cn1ThisObject; locals[0].type = CN1_TYPE_OBJECT;     int restoreToL1010652159cn1_class_id_java_io_IOException1;
-    int tryBlockOffsetL1010652159cn1_class_id_java_io_IOException1;
-    DEFINE_CATCH_BLOCK(catch_L1010652159cn1_class_id_java_io_IOException1, label_L312233241, restoreToL1010652159cn1_class_id_java_io_IOException1);
+    locals[0].data.o = __cn1ThisObject; locals[0].type = CN1_TYPE_OBJECT;     int restoreToL1687353443cn1_class_id_java_io_IOException1;
+    int tryBlockOffsetL1687353443cn1_class_id_java_io_IOException1;
+    DEFINE_CATCH_BLOCK(catch_L1687353443cn1_class_id_java_io_IOException1, label_L312233241, restoreToL1687353443cn1_class_id_java_io_IOException1);
     __CN1_DEBUG_INFO(1233);
     if (get_field_com_codename1_ui_plaf_CSSBorder_BorderImage_image(__cn1ThisObject)!=JAVA_NULL) /* IFNONNULL CustomJump */ JUMP_TO(label_L293669143, 0);
     __CN1_DEBUG_INFO(1234);
@@ -424,10 +424,10 @@ JAVA_OBJECT com_codename1_ui_plaf_CSSBorder_BorderImage_image___R_com_codename1_
     __CN1_DEBUG_INFO(1235);
     if (get_field_com_codename1_ui_plaf_CSSBorder_BorderImage_image(__cn1ThisObject)!=JAVA_NULL) /* IFNONNULL CustomJump */ JUMP_TO(label_L293669143, 0);
 
-label_L1010652159:
- tryBlockOffsetL1010652159cn1_class_id_java_io_IOException1 = threadStateData->tryBlockOffset;
-    BEGIN_TRY(cn1_class_id_java_io_IOException, catch_L1010652159cn1_class_id_java_io_IOException1);
-    restoreToL1010652159cn1_class_id_java_io_IOException1 = threadStateData->threadObjectStackOffset;
+label_L1687353443:
+ tryBlockOffsetL1687353443cn1_class_id_java_io_IOException1 = threadStateData->tryBlockOffset;
+    BEGIN_TRY(cn1_class_id_java_io_IOException, catch_L1687353443cn1_class_id_java_io_IOException1);
+    restoreToL1687353443cn1_class_id_java_io_IOException1 = threadStateData->threadObjectStackOffset;
 
     __CN1_DEBUG_INFO(1237);
     BC_ALOAD(0);
@@ -445,7 +445,7 @@ label_L1010652159:
     set_field_com_codename1_ui_plaf_CSSBorder_BorderImage_image(threadStateData, PEEK_OBJ(1), PEEK_OBJ(2));
     POP_MANY(2);
 
-label_L1335883259:
+label_L558776993:
 END_TRY(1);    __CN1_DEBUG_INFO(1241);
     JUMP_TO(label_L293669143, 0);
 

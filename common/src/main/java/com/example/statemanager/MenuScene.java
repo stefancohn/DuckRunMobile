@@ -16,7 +16,7 @@ public class MenuScene extends Scene{
     @Override
     public void draw(Graphics g) {
         menuSceneOverlay.draw(g);
-        Game.game.getVolumeButton().draw(g); //draw volumebutton
+        //Game.game.getVolumeButton().draw(g); //draw volumebutton
     }
     
 }

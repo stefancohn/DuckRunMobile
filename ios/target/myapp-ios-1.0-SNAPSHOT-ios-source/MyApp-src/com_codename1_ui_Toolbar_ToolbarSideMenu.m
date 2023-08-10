@@ -435,9 +435,9 @@ JAVA_VOID com_codename1_ui_Toolbar_ToolbarSideMenu_installRightCommands__(CODENA
     volatile JAVA_FLOAT flocals_3_ = 0; /* v3 */
     volatile JAVA_INT ilocals_7_ = 0; /* v7 */
     DEFINE_INSTANCE_METHOD_STACK(7, 9, 0, 7198, 6974);
-    locals[0].data.o = __cn1ThisObject; locals[0].type = CN1_TYPE_OBJECT;     int restoreToL617765955cn1_class_id_java_lang_Throwable1;
-    int tryBlockOffsetL617765955cn1_class_id_java_lang_Throwable1;
-    DEFINE_CATCH_BLOCK(catch_L617765955cn1_class_id_java_lang_Throwable1, label_L2130606983, restoreToL617765955cn1_class_id_java_lang_Throwable1);
+    locals[0].data.o = __cn1ThisObject; locals[0].type = CN1_TYPE_OBJECT;     int restoreToL58333888cn1_class_id_java_lang_Throwable1;
+    int tryBlockOffsetL58333888cn1_class_id_java_lang_Throwable1;
+    DEFINE_CATCH_BLOCK(catch_L58333888cn1_class_id_java_lang_Throwable1, label_L2130606983, restoreToL58333888cn1_class_id_java_lang_Throwable1);
     __CN1_DEBUG_INFO(2611);
     com_codename1_ui_SideMenuBar_installRightCommands__(threadStateData, __cn1ThisObject); 
     __CN1_DEBUG_INFO(2612);
@@ -453,10 +453,10 @@ JAVA_VOID com_codename1_ui_Toolbar_ToolbarSideMenu_installRightCommands__(CODENA
     __CN1_DEBUG_INFO(2616);
     /* VarOp.assignFrom */     flocals_3_ = 4.5;
 
-label_L617765955:
- tryBlockOffsetL617765955cn1_class_id_java_lang_Throwable1 = threadStateData->tryBlockOffset;
-    BEGIN_TRY(cn1_class_id_java_lang_Throwable, catch_L617765955cn1_class_id_java_lang_Throwable1);
-    restoreToL617765955cn1_class_id_java_lang_Throwable1 = threadStateData->threadObjectStackOffset;
+label_L58333888:
+ tryBlockOffsetL58333888cn1_class_id_java_lang_Throwable1 = threadStateData->tryBlockOffset;
+    BEGIN_TRY(cn1_class_id_java_lang_Throwable, catch_L58333888cn1_class_id_java_lang_Throwable1);
+    restoreToL58333888cn1_class_id_java_lang_Throwable1 = threadStateData->threadObjectStackOffset;
 
     __CN1_DEBUG_INFO(2618);
     /* CustomInvoke */{ JAVA_OBJECT tmpResult = virtual_com_codename1_ui_plaf_UIManager_getThemeConstant___java_lang_String_java_lang_String_R_java_lang_String(threadStateData, locals[1].data.o, STRING_FROM_CONSTANT_POOL_OFFSET(7199), STRING_FROM_CONSTANT_POOL_OFFSET(6969));
@@ -465,7 +465,7 @@ label_L617765955:
     SP[-1].data.f = tmpResult; SP[-1].type = CN1_TYPE_FLOAT; }
     BC_FSTORE(3);
 
-label_L1999502851:
+label_L1633613383:
 END_TRY(1);    __CN1_DEBUG_INFO(2621);
     JUMP_TO(label_L2091439256, 0);
 

@@ -255,11 +255,11 @@ JAVA_VOID com_example_statemanager_PlayingScene___INIT_____com_example_entity_Du
 
 
 JAVA_VOID com_example_statemanager_PlayingScene_constantScreenMove__(CODENAME_ONE_THREAD_STATE, JAVA_OBJECT  __cn1ThisObject) {
-    DEFINE_INSTANCE_METHOD_STACK(3, 1, 0, 10241, 10242);
+    DEFINE_INSTANCE_METHOD_STACK(4, 1, 0, 10241, 10242);
     locals[0].data.o = __cn1ThisObject; locals[0].type = CN1_TYPE_OBJECT;     __CN1_DEBUG_INFO(44);
     set_field_com_example_statemanager_PlayingScene_timerForConstantScreenMoveMethod(threadStateData, (get_field_com_example_statemanager_PlayingScene_timerForConstantScreenMoveMethod(__cn1ThisObject) + 1 /* ICONST_1 */), __cn1ThisObject);
     __CN1_DEBUG_INFO(45);
-    if (((JAVA_INT)get_static_com_example_statemanager_PlayingScene_gameScore(threadStateData))<=2 /* ICONST_2 */) /* IF_ICMPLE CustomJump */ goto label_L1709578324;
+    if (CN1_CMP_EXPR(get_static_com_example_statemanager_PlayingScene_gameScore(threadStateData), 1.4)<=0) /* IFLE CustomJump */ goto label_L1709578324;
     __CN1_DEBUG_INFO(46);
     virtual_com_example_statemanager_PlayingScene_constantScreenMoveMethod__(threadStateData, __cn1ThisObject); 
     __CN1_DEBUG_INFO(47);

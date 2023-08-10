@@ -1654,9 +1654,9 @@ JAVA_VOID com_codename1_ui_plaf_LookAndFeel_refreshTheme___boolean(CODENAME_ONE_
     volatile JAVA_INT ilocals_12_ = 0; /* v12 */
     DEFINE_INSTANCE_METHOD_STACK(7, 14, 0, 3894, 2677);
     locals[0].data.o = __cn1ThisObject; locals[0].type = CN1_TYPE_OBJECT;     ilocals_1_ = __cn1Arg1;
-    int restoreToL1788704020cn1_class_id_java_lang_NumberFormatException1;
-    int tryBlockOffsetL1788704020cn1_class_id_java_lang_NumberFormatException1;
-    DEFINE_CATCH_BLOCK(catch_L1788704020cn1_class_id_java_lang_NumberFormatException1, label_L432914967, restoreToL1788704020cn1_class_id_java_lang_NumberFormatException1);
+    int restoreToL1174487443cn1_class_id_java_lang_NumberFormatException1;
+    int tryBlockOffsetL1174487443cn1_class_id_java_lang_NumberFormatException1;
+    DEFINE_CATCH_BLOCK(catch_L1174487443cn1_class_id_java_lang_NumberFormatException1, label_L432914967, restoreToL1174487443cn1_class_id_java_lang_NumberFormatException1);
     __CN1_DEBUG_INFO(934);
     set_field_com_codename1_ui_plaf_LookAndFeel_fadeScrollTop(threadStateData, JAVA_NULL /* ACONST_NULL */, __cn1ThisObject);
     __CN1_DEBUG_INFO(935);
@@ -1707,10 +1707,10 @@ label_L1599248355:
     __CN1_DEBUG_INFO(953);
     /* CustomInvoke */com_codename1_ui_InputComponent_setMultiLineErrorMessage___boolean(threadStateData, /* CustomInvoke */virtual_com_codename1_ui_plaf_UIManager_isThemeConstant___java_lang_String_boolean_R_boolean(threadStateData, get_field_com_codename1_ui_plaf_LookAndFeel_manager(__cn1ThisObject), STRING_FROM_CONSTANT_POOL_OFFSET(3965), 0 /* ICONST_0 */)); 
 
-label_L1788704020:
- tryBlockOffsetL1788704020cn1_class_id_java_lang_NumberFormatException1 = threadStateData->tryBlockOffset;
-    BEGIN_TRY(cn1_class_id_java_lang_NumberFormatException, catch_L1788704020cn1_class_id_java_lang_NumberFormatException1);
-    restoreToL1788704020cn1_class_id_java_lang_NumberFormatException1 = threadStateData->threadObjectStackOffset;
+label_L1174487443:
+ tryBlockOffsetL1174487443cn1_class_id_java_lang_NumberFormatException1 = threadStateData->tryBlockOffset;
+    BEGIN_TRY(cn1_class_id_java_lang_NumberFormatException, catch_L1174487443cn1_class_id_java_lang_NumberFormatException1);
+    restoreToL1174487443cn1_class_id_java_lang_NumberFormatException1 = threadStateData->threadObjectStackOffset;
 
     __CN1_DEBUG_INFO(956);
     BC_ALOAD(0);

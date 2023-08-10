@@ -54,18 +54,18 @@ JAVA_OBJECT com_codename1_ui_spinner_TimeSpinner3D_2_format___java_lang_String_R
     DEFINE_INSTANCE_METHOD_STACK(6, 4, 0, 10149, 907);
     locals[0].data.o = __cn1ThisObject; locals[0].type = CN1_TYPE_OBJECT;     locals[1].data.o = __cn1Arg1;
     locals[1].type = CN1_TYPE_OBJECT;
-    int restoreToL1777038015cn1_class_id_java_lang_Throwable1;
-    int tryBlockOffsetL1777038015cn1_class_id_java_lang_Throwable1;
-    DEFINE_CATCH_BLOCK(catch_L1777038015cn1_class_id_java_lang_Throwable1, label_L1954745715, restoreToL1777038015cn1_class_id_java_lang_Throwable1);
+    int restoreToL1605786426cn1_class_id_java_lang_Throwable1;
+    int tryBlockOffsetL1605786426cn1_class_id_java_lang_Throwable1;
+    DEFINE_CATCH_BLOCK(catch_L1605786426cn1_class_id_java_lang_Throwable1, label_L1954745715, restoreToL1605786426cn1_class_id_java_lang_Throwable1);
     __CN1_DEBUG_INFO(101);
     if (locals[1].data.o==JAVA_NULL) /* IFNULL CustomJump */ JUMP_TO(label_L405273678, 0);
     __CN1_DEBUG_INFO(102);
     /* VarOp.assignFrom */ locals[2].type=CN1_TYPE_INVALID;    locals[2].data.o = JAVA_NULL /* ACONST_NULL */; 
 locals[2].type=CN1_TYPE_OBJECT;
-label_L1777038015:
- tryBlockOffsetL1777038015cn1_class_id_java_lang_Throwable1 = threadStateData->tryBlockOffset;
-    BEGIN_TRY(cn1_class_id_java_lang_Throwable, catch_L1777038015cn1_class_id_java_lang_Throwable1);
-    restoreToL1777038015cn1_class_id_java_lang_Throwable1 = threadStateData->threadObjectStackOffset;
+label_L1605786426:
+ tryBlockOffsetL1605786426cn1_class_id_java_lang_Throwable1 = threadStateData->tryBlockOffset;
+    BEGIN_TRY(cn1_class_id_java_lang_Throwable, catch_L1605786426cn1_class_id_java_lang_Throwable1);
+    restoreToL1605786426cn1_class_id_java_lang_Throwable1 = threadStateData->threadObjectStackOffset;
 
     __CN1_DEBUG_INFO(104);
     PUSH_POINTER(__NEW_java_lang_Integer(threadStateData)); /* NEW */
@@ -78,7 +78,7 @@ label_L1777038015:
     java_lang_Integer___INIT_____int(threadStateData, SP[-2].data.o, SP[-1].data.i);     SP-= 2;
     BC_ASTORE(2);
 
-label_L82418483:
+label_L1424538129:
 END_TRY(1);    __CN1_DEBUG_INFO(107);
     JUMP_TO(label_L1279369591, 0);
 

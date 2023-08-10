@@ -73,14 +73,14 @@ JAVA_VOID com_codename1_impl_CodenameOneImplementation_4___INIT_____com_codename
 
 JAVA_VOID com_codename1_impl_CodenameOneImplementation_4_run__(CODENAME_ONE_THREAD_STATE, JAVA_OBJECT  __cn1ThisObject) {
     DEFINE_INSTANCE_METHOD_STACK(3, 2, 0, 8882, 207);
-    locals[0].data.o = __cn1ThisObject; locals[0].type = CN1_TYPE_OBJECT;     int restoreToL236918758cn1_class_id_java_io_IOException1;
-    int tryBlockOffsetL236918758cn1_class_id_java_io_IOException1;
-    DEFINE_CATCH_BLOCK(catch_L236918758cn1_class_id_java_io_IOException1, label_L1132369181, restoreToL236918758cn1_class_id_java_io_IOException1);
+    locals[0].data.o = __cn1ThisObject; locals[0].type = CN1_TYPE_OBJECT;     int restoreToL811813182cn1_class_id_java_io_IOException1;
+    int tryBlockOffsetL811813182cn1_class_id_java_io_IOException1;
+    DEFINE_CATCH_BLOCK(catch_L811813182cn1_class_id_java_io_IOException1, label_L1132369181, restoreToL811813182cn1_class_id_java_io_IOException1);
 
-label_L236918758:
- tryBlockOffsetL236918758cn1_class_id_java_io_IOException1 = threadStateData->tryBlockOffset;
-    BEGIN_TRY(cn1_class_id_java_io_IOException, catch_L236918758cn1_class_id_java_io_IOException1);
-    restoreToL236918758cn1_class_id_java_io_IOException1 = threadStateData->threadObjectStackOffset;
+label_L811813182:
+ tryBlockOffsetL811813182cn1_class_id_java_io_IOException1 = threadStateData->tryBlockOffset;
+    BEGIN_TRY(cn1_class_id_java_io_IOException, catch_L811813182cn1_class_id_java_io_IOException1);
+    restoreToL811813182cn1_class_id_java_io_IOException1 = threadStateData->threadObjectStackOffset;
 
     __CN1_DEBUG_INFO(3974);
     PUSH_POINTER(get_field_com_codename1_impl_CodenameOneImplementation_4_val_out(__cn1ThisObject));
@@ -88,7 +88,7 @@ label_L236918758:
     PUSH_OBJ(tmpResult); }
     virtual_com_codename1_util_AsyncResource_complete___java_lang_Object(threadStateData, SP[-2].data.o, SP[-1].data.o);     SP-= 2;
 
-label_L614438306:
+label_L962085191:
 END_TRY(1);    __CN1_DEBUG_INFO(3977);
     JUMP_TO(label_L2008229299, 0);
 

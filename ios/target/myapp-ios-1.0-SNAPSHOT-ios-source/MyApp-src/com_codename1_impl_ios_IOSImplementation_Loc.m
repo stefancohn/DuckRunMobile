@@ -170,19 +170,19 @@ label_L1908999587:
 
 JAVA_OBJECT com_codename1_impl_ios_IOSImplementation_Loc_getBackgroundLocationListenerInstance___R_com_codename1_location_LocationListener(CODENAME_ONE_THREAD_STATE, JAVA_OBJECT  __cn1ThisObject) {
     DEFINE_INSTANCE_METHOD_STACK(3, 3, 0, 9485, 9486);
-    locals[0].data.o = __cn1ThisObject; locals[0].type = CN1_TYPE_OBJECT;     int restoreToL467631316cn1_class_id_java_lang_Throwable1;
-    int tryBlockOffsetL467631316cn1_class_id_java_lang_Throwable1;
-    DEFINE_CATCH_BLOCK(catch_L467631316cn1_class_id_java_lang_Throwable1, label_L816804727, restoreToL467631316cn1_class_id_java_lang_Throwable1);
+    locals[0].data.o = __cn1ThisObject; locals[0].type = CN1_TYPE_OBJECT;     int restoreToL643101866cn1_class_id_java_lang_Throwable1;
+    int tryBlockOffsetL643101866cn1_class_id_java_lang_Throwable1;
+    DEFINE_CATCH_BLOCK(catch_L643101866cn1_class_id_java_lang_Throwable1, label_L816804727, restoreToL643101866cn1_class_id_java_lang_Throwable1);
     __CN1_DEBUG_INFO(2684);
     if (get_field_com_codename1_impl_ios_IOSImplementation_Loc_backgroundLocationListenerInstance(__cn1ThisObject)!=JAVA_NULL) /* IFNONNULL CustomJump */ JUMP_TO(label_L1738561265, 0);
     __CN1_DEBUG_INFO(2685);
     /* VarOp.assignFrom */ locals[1].data.o = virtual_com_codename1_impl_ios_IOSImplementation_Loc_getBackgroundLocationListener___R_java_lang_Class(threadStateData, __cn1ThisObject);locals[1].type=CN1_TYPE_OBJECT;    __CN1_DEBUG_INFO(2686);
     if (locals[1].data.o==JAVA_NULL) /* IFNULL CustomJump */ JUMP_TO(label_L1738561265, 0);
 
-label_L467631316:
- tryBlockOffsetL467631316cn1_class_id_java_lang_Throwable1 = threadStateData->tryBlockOffset;
-    BEGIN_TRY(cn1_class_id_java_lang_Throwable, catch_L467631316cn1_class_id_java_lang_Throwable1);
-    restoreToL467631316cn1_class_id_java_lang_Throwable1 = threadStateData->threadObjectStackOffset;
+label_L643101866:
+ tryBlockOffsetL643101866cn1_class_id_java_lang_Throwable1 = threadStateData->tryBlockOffset;
+    BEGIN_TRY(cn1_class_id_java_lang_Throwable, catch_L643101866cn1_class_id_java_lang_Throwable1);
+    restoreToL643101866cn1_class_id_java_lang_Throwable1 = threadStateData->threadObjectStackOffset;
 
     __CN1_DEBUG_INFO(2688);
     BC_ALOAD(0);
@@ -191,7 +191,7 @@ label_L467631316:
     set_field_com_codename1_impl_ios_IOSImplementation_Loc_backgroundLocationListenerInstance(threadStateData, PEEK_OBJ(1), PEEK_OBJ(2));
     POP_MANY(2);
 
-label_L447691425:
+label_L1745797042:
 END_TRY(1);    __CN1_DEBUG_INFO(2692);
     JUMP_TO(label_L1738561265, 0);
 
@@ -220,9 +220,9 @@ label_L1738561265:
 
 JAVA_OBJECT com_codename1_impl_ios_IOSImplementation_Loc_getBackgroundLocationListener___R_java_lang_Class(CODENAME_ONE_THREAD_STATE, JAVA_OBJECT  __cn1ThisObject) {
     DEFINE_INSTANCE_METHOD_STACK(3, 4, 0, 9485, 9001);
-    locals[0].data.o = __cn1ThisObject; locals[0].type = CN1_TYPE_OBJECT;     int restoreToL228520483cn1_class_id_java_lang_Throwable1;
-    int tryBlockOffsetL228520483cn1_class_id_java_lang_Throwable1;
-    DEFINE_CATCH_BLOCK(catch_L228520483cn1_class_id_java_lang_Throwable1, label_L497786326, restoreToL228520483cn1_class_id_java_lang_Throwable1);
+    locals[0].data.o = __cn1ThisObject; locals[0].type = CN1_TYPE_OBJECT;     int restoreToL713760359cn1_class_id_java_lang_Throwable1;
+    int tryBlockOffsetL713760359cn1_class_id_java_lang_Throwable1;
+    DEFINE_CATCH_BLOCK(catch_L713760359cn1_class_id_java_lang_Throwable1, label_L497786326, restoreToL713760359cn1_class_id_java_lang_Throwable1);
     __CN1_DEBUG_INFO(2700);
     /* VarOp.assignFrom */ locals[1].data.o = com_codename1_location_LocationManager_getBackgroundLocationListener___R_java_lang_Class(threadStateData, __cn1ThisObject);locals[1].type=CN1_TYPE_OBJECT;    __CN1_DEBUG_INFO(2701);
     if (locals[1].data.o!=JAVA_NULL) /* IFNONNULL CustomJump */ JUMP_TO(label_L611739613, 0);
@@ -235,16 +235,16 @@ JAVA_OBJECT com_codename1_impl_ios_IOSImplementation_Loc_getBackgroundLocationLi
     if(POP_INT() != 0) /* IFNE */ JUMP_TO(label_L611739613, 0);
     __CN1_DEBUG_INFO(2702);
     /* VarOp.assignFrom */ locals[2].data.o = /* CustomInvoke */com_codename1_io_Preferences_get___java_lang_String_java_lang_String_R_java_lang_String(threadStateData, STRING_FROM_CONSTANT_POOL_OFFSET(48), STRING_FROM_CONSTANT_POOL_OFFSET(223));locals[2].type=CN1_TYPE_OBJECT;
-label_L228520483:
- tryBlockOffsetL228520483cn1_class_id_java_lang_Throwable1 = threadStateData->tryBlockOffset;
-    BEGIN_TRY(cn1_class_id_java_lang_Throwable, catch_L228520483cn1_class_id_java_lang_Throwable1);
-    restoreToL228520483cn1_class_id_java_lang_Throwable1 = threadStateData->threadObjectStackOffset;
+label_L713760359:
+ tryBlockOffsetL713760359cn1_class_id_java_lang_Throwable1 = threadStateData->tryBlockOffset;
+    BEGIN_TRY(cn1_class_id_java_lang_Throwable, catch_L713760359cn1_class_id_java_lang_Throwable1);
+    restoreToL713760359cn1_class_id_java_lang_Throwable1 = threadStateData->threadObjectStackOffset;
 
     __CN1_DEBUG_INFO(2704);
     /* VarOp.assignFrom */ locals[3].data.o = /* CustomInvoke */java_lang_Class_forName___java_lang_String_R_java_lang_Class(threadStateData, locals[2].data.o);locals[3].type=CN1_TYPE_OBJECT;    __CN1_DEBUG_INFO(2705);
     /* CustomInvoke */com_codename1_location_LocationManager_setBackgroundLocationListener___java_lang_Class(threadStateData, __cn1ThisObject, locals[3].data.o); 
 
-label_L2132065745:
+label_L585714930:
 END_TRY(1);    __CN1_DEBUG_INFO(2706);
     JUMP_TO(label_L611739613, 0);
 
@@ -568,9 +568,9 @@ JAVA_OBJECT com_codename1_impl_ios_IOSImplementation_Loc_getGeofenceListener___j
     DEFINE_INSTANCE_METHOD_STACK(2, 4, 0, 9485, 9495);
     locals[0].data.o = __cn1ThisObject; locals[0].type = CN1_TYPE_OBJECT;     locals[1].data.o = __cn1Arg1;
     locals[1].type = CN1_TYPE_OBJECT;
-    int restoreToL476305710cn1_class_id_java_lang_Throwable1;
-    int tryBlockOffsetL476305710cn1_class_id_java_lang_Throwable1;
-    DEFINE_CATCH_BLOCK(catch_L476305710cn1_class_id_java_lang_Throwable1, label_L1502882632, restoreToL476305710cn1_class_id_java_lang_Throwable1);
+    int restoreToL1367226395cn1_class_id_java_lang_Throwable1;
+    int tryBlockOffsetL1367226395cn1_class_id_java_lang_Throwable1;
+    DEFINE_CATCH_BLOCK(catch_L1367226395cn1_class_id_java_lang_Throwable1, label_L1502882632, restoreToL1367226395cn1_class_id_java_lang_Throwable1);
     int restoreToL1217089772cn1_class_id_java_lang_Throwable2;
     int tryBlockOffsetL1217089772cn1_class_id_java_lang_Throwable2;
     DEFINE_CATCH_BLOCK(catch_L1217089772cn1_class_id_java_lang_Throwable2, label_L1502882632, restoreToL1217089772cn1_class_id_java_lang_Throwable2);
@@ -583,10 +583,10 @@ JAVA_OBJECT com_codename1_impl_ios_IOSImplementation_Loc_getGeofenceListener___j
     __CN1_DEBUG_INFO(2827);
     /* VarOp.assignFrom */ locals[2].type=CN1_TYPE_INVALID;    locals[2].data.o = JAVA_NULL /* ACONST_NULL */; 
 locals[2].type=CN1_TYPE_OBJECT;
-label_L476305710:
- tryBlockOffsetL476305710cn1_class_id_java_lang_Throwable1 = threadStateData->tryBlockOffset;
-    BEGIN_TRY(cn1_class_id_java_lang_Throwable, catch_L476305710cn1_class_id_java_lang_Throwable1);
-    restoreToL476305710cn1_class_id_java_lang_Throwable1 = threadStateData->threadObjectStackOffset;
+label_L1367226395:
+ tryBlockOffsetL1367226395cn1_class_id_java_lang_Throwable1 = threadStateData->tryBlockOffset;
+    BEGIN_TRY(cn1_class_id_java_lang_Throwable, catch_L1367226395cn1_class_id_java_lang_Throwable1);
+    restoreToL1367226395cn1_class_id_java_lang_Throwable1 = threadStateData->threadObjectStackOffset;
 
     __CN1_DEBUG_INFO(2829);
     /* CustomInvoke */{ JAVA_OBJECT tmpResult = virtual_java_util_Map_get___java_lang_Object_R_java_lang_Object(threadStateData, get_field_com_codename1_impl_ios_IOSImplementation_Loc_geofenceListeners(__cn1ThisObject), locals[1].data.o);
@@ -599,7 +599,7 @@ label_L476305710:
     __CN1_DEBUG_INFO(2831);
     PUSH_POINTER(JAVA_NULL); /* ACONST_NULL */
 
-label_L1023251545:
+label_L1635300287:
 END_TRY(1);    releaseForReturnInException(threadStateData, cn1LocalsBeginInThread, methodBlockOffset); 
     return POP_OBJ();
 
@@ -612,7 +612,7 @@ label_L1217089772:
     { JAVA_OBJECT tmpResult = virtual_java_lang_Class_newInstance___R_java_lang_Object(threadStateData, locals[2].data.o);
     PUSH_OBJ(tmpResult); }
 
-label_L1740185801:
+label_L1286757203:
 END_TRY(1);    releaseForReturnInException(threadStateData, cn1LocalsBeginInThread, methodBlockOffset); 
     return POP_OBJ();
 

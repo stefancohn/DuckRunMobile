@@ -70,9 +70,9 @@ JAVA_VOID com_codename1_impl_ios_IOSImplementation_21_1___INIT_____com_codename1
 
 JAVA_VOID com_codename1_impl_ios_IOSImplementation_21_1_run__(CODENAME_ONE_THREAD_STATE, JAVA_OBJECT  __cn1ThisObject) {
     DEFINE_INSTANCE_METHOD_STACK(3, 3, 0, 9511, 207);
-    locals[0].data.o = __cn1ThisObject; locals[0].type = CN1_TYPE_OBJECT;     int restoreToL153067068101;
-    int tryBlockOffsetL153067068101;
-    DEFINE_CATCH_BLOCK(catch_L153067068101, label_L1011104118, restoreToL153067068101);
+    locals[0].data.o = __cn1ThisObject; locals[0].type = CN1_TYPE_OBJECT;     int restoreToL11266939801;
+    int tryBlockOffsetL11266939801;
+    DEFINE_CATCH_BLOCK(catch_L11266939801, label_L1011104118, restoreToL11266939801);
     int restoreToL101110411802;
     int tryBlockOffsetL101110411802;
     DEFINE_CATCH_BLOCK(catch_L101110411802, label_L1011104118, restoreToL101110411802);
@@ -84,10 +84,10 @@ JAVA_VOID com_codename1_impl_ios_IOSImplementation_21_1_run__(CODENAME_ONE_THREA
     BC_ASTORE(1);
     monitorEnter(threadStateData, POP_OBJ());
 
-label_L1530670681:
- tryBlockOffsetL153067068101 = threadStateData->tryBlockOffset;
-    BEGIN_TRY(0, catch_L153067068101);
-    restoreToL153067068101 = threadStateData->threadObjectStackOffset;
+label_L112669398:
+ tryBlockOffsetL11266939801 = threadStateData->tryBlockOffset;
+    BEGIN_TRY(0, catch_L11266939801);
+    restoreToL11266939801 = threadStateData->threadObjectStackOffset;
 
     __CN1_DEBUG_INFO(6205);
     virtual_java_lang_Object_notifyAll__(threadStateData, get_field_com_codename1_impl_ios_IOSImplementation_21_1_val_lock(__cn1ThisObject)); 
@@ -95,7 +95,7 @@ label_L1530670681:
     BC_ALOAD(1);
     monitorExit(threadStateData, POP_OBJ());
 
-label_L1688376938:
+label_L1982858054:
 END_TRY(1);    JUMP_TO(label_L1046009438, 0);
 
 label_L1011104118:
@@ -107,7 +107,7 @@ label_L1011104118:
     BC_ALOAD(1);
     monitorExit(threadStateData, POP_OBJ());
 
-label_L912906156:
+label_L310281099:
 END_TRY(1);    BC_ALOAD(2);
     throwException(threadStateData, POP_OBJ());
 

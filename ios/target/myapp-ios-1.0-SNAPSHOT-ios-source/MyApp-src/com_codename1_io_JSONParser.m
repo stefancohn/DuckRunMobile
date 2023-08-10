@@ -321,18 +321,18 @@ JAVA_VOID com_codename1_io_JSONParser_parse___java_io_Reader_com_codename1_io_JS
     locals[0].type = CN1_TYPE_OBJECT;
     locals[1].data.o = __cn1Arg2;
     locals[1].type = CN1_TYPE_OBJECT;
-    int restoreToL421004803cn1_class_id_java_lang_NumberFormatException1;
-    int tryBlockOffsetL421004803cn1_class_id_java_lang_NumberFormatException1;
-    DEFINE_CATCH_BLOCK(catch_L421004803cn1_class_id_java_lang_NumberFormatException1, label_L467921234, restoreToL421004803cn1_class_id_java_lang_NumberFormatException1);
-    int restoreToL993576454cn1_class_id_java_lang_NumberFormatException2;
-    int tryBlockOffsetL993576454cn1_class_id_java_lang_NumberFormatException2;
-    DEFINE_CATCH_BLOCK(catch_L993576454cn1_class_id_java_lang_NumberFormatException2, label_L135832852, restoreToL993576454cn1_class_id_java_lang_NumberFormatException2);
-    int restoreToL414796038cn1_class_id_java_lang_NumberFormatException3;
-    int tryBlockOffsetL414796038cn1_class_id_java_lang_NumberFormatException3;
-    DEFINE_CATCH_BLOCK(catch_L414796038cn1_class_id_java_lang_NumberFormatException3, label_L1879362884, restoreToL414796038cn1_class_id_java_lang_NumberFormatException3);
-    int restoreToL1514923903cn1_class_id_java_lang_NumberFormatException4;
-    int tryBlockOffsetL1514923903cn1_class_id_java_lang_NumberFormatException4;
-    DEFINE_CATCH_BLOCK(catch_L1514923903cn1_class_id_java_lang_NumberFormatException4, label_L1230904017, restoreToL1514923903cn1_class_id_java_lang_NumberFormatException4);
+    int restoreToL1450198098cn1_class_id_java_lang_NumberFormatException1;
+    int tryBlockOffsetL1450198098cn1_class_id_java_lang_NumberFormatException1;
+    DEFINE_CATCH_BLOCK(catch_L1450198098cn1_class_id_java_lang_NumberFormatException1, label_L467921234, restoreToL1450198098cn1_class_id_java_lang_NumberFormatException1);
+    int restoreToL250980756cn1_class_id_java_lang_NumberFormatException2;
+    int tryBlockOffsetL250980756cn1_class_id_java_lang_NumberFormatException2;
+    DEFINE_CATCH_BLOCK(catch_L250980756cn1_class_id_java_lang_NumberFormatException2, label_L135832852, restoreToL250980756cn1_class_id_java_lang_NumberFormatException2);
+    int restoreToL861974910cn1_class_id_java_lang_NumberFormatException3;
+    int tryBlockOffsetL861974910cn1_class_id_java_lang_NumberFormatException3;
+    DEFINE_CATCH_BLOCK(catch_L861974910cn1_class_id_java_lang_NumberFormatException3, label_L1879362884, restoreToL861974910cn1_class_id_java_lang_NumberFormatException3);
+    int restoreToL978469219cn1_class_id_java_lang_NumberFormatException4;
+    int tryBlockOffsetL978469219cn1_class_id_java_lang_NumberFormatException4;
+    DEFINE_CATCH_BLOCK(catch_L978469219cn1_class_id_java_lang_NumberFormatException4, label_L1230904017, restoreToL978469219cn1_class_id_java_lang_NumberFormatException4);
     int restoreToL1115434134cn1_class_id_java_lang_Exception5;
     int tryBlockOffsetL1115434134cn1_class_id_java_lang_Exception5;
     DEFINE_CATCH_BLOCK(catch_L1115434134cn1_class_id_java_lang_Exception5, label_L1299436497, restoreToL1115434134cn1_class_id_java_lang_Exception5);
@@ -381,7 +381,7 @@ label_L1115434134:
     __CN1_DEBUG_INFO(279);
     if (ilocals_10_>=0) /* IFGE CustomJump */ JUMP_TO(label_L1454795974, 0);
 
-label_L1463127603:
+label_L1611644151:
 END_TRY(1);    __CN1_DEBUG_INFO(280);
     releaseForReturnInException(threadStateData, cn1LocalsBeginInThread, methodBlockOffset); 
     return;
@@ -493,17 +493,17 @@ label_L2050964420:
     SP[-1].data.o = tmpResult; SP[-1].type = CN1_TYPE_OBJECT; }
     BC_ASTORE(13);
 
-label_L421004803:
- tryBlockOffsetL421004803cn1_class_id_java_lang_NumberFormatException1 = threadStateData->tryBlockOffset;
-    BEGIN_TRY(cn1_class_id_java_lang_NumberFormatException, catch_L421004803cn1_class_id_java_lang_NumberFormatException1);
-    restoreToL421004803cn1_class_id_java_lang_NumberFormatException1 = threadStateData->threadObjectStackOffset;
+label_L1450198098:
+ tryBlockOffsetL1450198098cn1_class_id_java_lang_NumberFormatException1 = threadStateData->tryBlockOffset;
+    BEGIN_TRY(cn1_class_id_java_lang_NumberFormatException, catch_L1450198098cn1_class_id_java_lang_NumberFormatException1);
+    restoreToL1450198098cn1_class_id_java_lang_NumberFormatException1 = threadStateData->threadObjectStackOffset;
 
     __CN1_DEBUG_INFO(309);
     /* CustomInvoke */PUSH_INT(java_lang_Integer_parseInt___java_lang_String_int_R_int(threadStateData, locals[13].data.o, 16));
     SP[-1].data.i = (SP[-1].data.i & 0xffff); /* I2C */
     BC_ISTORE(11);
 
-label_L1293849510:
+label_L491316999:
 END_TRY(1);    __CN1_DEBUG_INFO(314);
     JUMP_TO(label_L152834486, 1);
 
@@ -964,10 +964,10 @@ label_L1477200907:
     __CN1_DEBUG_INFO(414);
     if (virtual_java_lang_StringBuilder_length___R_int(threadStateData, locals[6].data.o)<=0) /* IFLE CustomJump */ JUMP_TO(label_L1817055696, 1);
 
-label_L993576454:
- tryBlockOffsetL993576454cn1_class_id_java_lang_NumberFormatException2 = threadStateData->tryBlockOffset;
-    BEGIN_TRY(cn1_class_id_java_lang_NumberFormatException, catch_L993576454cn1_class_id_java_lang_NumberFormatException2);
-    restoreToL993576454cn1_class_id_java_lang_NumberFormatException2 = threadStateData->threadObjectStackOffset;
+label_L250980756:
+ tryBlockOffsetL250980756cn1_class_id_java_lang_NumberFormatException2 = threadStateData->tryBlockOffset;
+    BEGIN_TRY(cn1_class_id_java_lang_NumberFormatException, catch_L250980756cn1_class_id_java_lang_NumberFormatException2);
+    restoreToL250980756cn1_class_id_java_lang_NumberFormatException2 = threadStateData->threadObjectStackOffset;
 
     __CN1_DEBUG_INFO(416);
     /* VarOp.assignFrom */ locals[22].data.o = virtual_java_lang_StringBuilder_toString___R_java_lang_String(threadStateData, locals[6].data.o);locals[22].type=CN1_TYPE_OBJECT;    __CN1_DEBUG_INFO(417);
@@ -1034,10 +1034,10 @@ label_L893765907:
     __CN1_DEBUG_INFO(448);
     if (virtual_java_lang_StringBuilder_length___R_int(threadStateData, locals[6].data.o)<=0) /* IFLE CustomJump */ JUMP_TO(label_L583057596, 1);
 
-label_L414796038:
- tryBlockOffsetL414796038cn1_class_id_java_lang_NumberFormatException3 = threadStateData->tryBlockOffset;
-    BEGIN_TRY(cn1_class_id_java_lang_NumberFormatException, catch_L414796038cn1_class_id_java_lang_NumberFormatException3);
-    restoreToL414796038cn1_class_id_java_lang_NumberFormatException3 = threadStateData->threadObjectStackOffset;
+label_L861974910:
+ tryBlockOffsetL861974910cn1_class_id_java_lang_NumberFormatException3 = threadStateData->tryBlockOffset;
+    BEGIN_TRY(cn1_class_id_java_lang_NumberFormatException, catch_L861974910cn1_class_id_java_lang_NumberFormatException3);
+    restoreToL861974910cn1_class_id_java_lang_NumberFormatException3 = threadStateData->threadObjectStackOffset;
 
     __CN1_DEBUG_INFO(450);
     /* VarOp.assignFrom */ locals[22].data.o = virtual_java_lang_StringBuilder_toString___R_java_lang_String(threadStateData, locals[6].data.o);locals[22].type=CN1_TYPE_OBJECT;    __CN1_DEBUG_INFO(451);
@@ -1102,10 +1102,10 @@ label_L1772106148:
     __CN1_DEBUG_INFO(486);
     if (virtual_java_lang_StringBuilder_length___R_int(threadStateData, locals[6].data.o)<=0) /* IFLE CustomJump */ JUMP_TO(label_L1218188770, 1);
 
-label_L1514923903:
- tryBlockOffsetL1514923903cn1_class_id_java_lang_NumberFormatException4 = threadStateData->tryBlockOffset;
-    BEGIN_TRY(cn1_class_id_java_lang_NumberFormatException, catch_L1514923903cn1_class_id_java_lang_NumberFormatException4);
-    restoreToL1514923903cn1_class_id_java_lang_NumberFormatException4 = threadStateData->threadObjectStackOffset;
+label_L978469219:
+ tryBlockOffsetL978469219cn1_class_id_java_lang_NumberFormatException4 = threadStateData->tryBlockOffset;
+    BEGIN_TRY(cn1_class_id_java_lang_NumberFormatException, catch_L978469219cn1_class_id_java_lang_NumberFormatException4);
+    restoreToL978469219cn1_class_id_java_lang_NumberFormatException4 = threadStateData->threadObjectStackOffset;
 
     __CN1_DEBUG_INFO(488);
     /* VarOp.assignFrom */ locals[22].data.o = virtual_java_lang_StringBuilder_toString___R_java_lang_String(threadStateData, locals[6].data.o);locals[22].type=CN1_TYPE_OBJECT;    __CN1_DEBUG_INFO(489);

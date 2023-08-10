@@ -215,19 +215,19 @@ JAVA_OBJECT com_codename1_xml_XMLParser_convertCharEntity___java_lang_String_R_j
     DEFINE_INSTANCE_METHOD_STACK(7, 3, 0, 7782, 7788);
     locals[0].data.o = __cn1ThisObject; locals[0].type = CN1_TYPE_OBJECT;     locals[1].data.o = __cn1Arg1;
     locals[1].type = CN1_TYPE_OBJECT;
-    int restoreToL434703855cn1_class_id_java_lang_IllegalArgumentException1;
-    int tryBlockOffsetL434703855cn1_class_id_java_lang_IllegalArgumentException1;
-    DEFINE_CATCH_BLOCK(catch_L434703855cn1_class_id_java_lang_IllegalArgumentException1, label_L1293905436, restoreToL434703855cn1_class_id_java_lang_IllegalArgumentException1);
+    int restoreToL1545816470cn1_class_id_java_lang_IllegalArgumentException1;
+    int tryBlockOffsetL1545816470cn1_class_id_java_lang_IllegalArgumentException1;
+    DEFINE_CATCH_BLOCK(catch_L1545816470cn1_class_id_java_lang_IllegalArgumentException1, label_L1293905436, restoreToL1545816470cn1_class_id_java_lang_IllegalArgumentException1);
 
-label_L434703855:
- tryBlockOffsetL434703855cn1_class_id_java_lang_IllegalArgumentException1 = threadStateData->tryBlockOffset;
-    BEGIN_TRY(cn1_class_id_java_lang_IllegalArgumentException, catch_L434703855cn1_class_id_java_lang_IllegalArgumentException1);
-    restoreToL434703855cn1_class_id_java_lang_IllegalArgumentException1 = threadStateData->threadObjectStackOffset;
+label_L1545816470:
+ tryBlockOffsetL1545816470cn1_class_id_java_lang_IllegalArgumentException1 = threadStateData->tryBlockOffset;
+    BEGIN_TRY(cn1_class_id_java_lang_IllegalArgumentException, catch_L1545816470cn1_class_id_java_lang_IllegalArgumentException1);
+    restoreToL1545816470cn1_class_id_java_lang_IllegalArgumentException1 = threadStateData->threadObjectStackOffset;
 
     __CN1_DEBUG_INFO(229);
     /* CustomInvoke */PUSH_OBJ(com_codename1_ui_html_HTMLUtils_convertCharEntity___java_lang_String_boolean_java_util_Hashtable_R_java_lang_String(threadStateData, locals[1].data.o, 0 /* ICONST_0 */, get_field_com_codename1_xml_XMLParser_userDefinedCharEntities(__cn1ThisObject)));
 
-label_L1598068925:
+label_L1686961913:
 END_TRY(1);    releaseForReturnInException(threadStateData, cn1LocalsBeginInThread, methodBlockOffset); 
     return POP_OBJ();
 
@@ -272,9 +272,9 @@ JAVA_OBJECT com_codename1_xml_XMLParser_parse___java_io_Reader_R_com_codename1_x
     DEFINE_INSTANCE_METHOD_STACK(7, 6, 0, 7782, 1074);
     locals[0].data.o = __cn1ThisObject; locals[0].type = CN1_TYPE_OBJECT;     locals[1].data.o = __cn1Arg1;
     locals[1].type = CN1_TYPE_OBJECT;
-    int restoreToL1022200690cn1_class_id_java_io_IOException1;
-    int tryBlockOffsetL1022200690cn1_class_id_java_io_IOException1;
-    DEFINE_CATCH_BLOCK(catch_L1022200690cn1_class_id_java_io_IOException1, label_L875678495, restoreToL1022200690cn1_class_id_java_io_IOException1);
+    int restoreToL1547226778cn1_class_id_java_io_IOException1;
+    int tryBlockOffsetL1547226778cn1_class_id_java_io_IOException1;
+    DEFINE_CATCH_BLOCK(catch_L1547226778cn1_class_id_java_io_IOException1, label_L875678495, restoreToL1547226778cn1_class_id_java_io_IOException1);
     __CN1_DEBUG_INFO(274);
     set_static_com_codename1_xml_XMLParser_buffOffset(threadStateData, 0 /* ICONST_0 */);
     __CN1_DEBUG_INFO(275);
@@ -283,15 +283,15 @@ JAVA_OBJECT com_codename1_xml_XMLParser_parse___java_io_Reader_R_com_codename1_x
     set_field_com_codename1_xml_XMLParser_eventParser(threadStateData, 0 /* ICONST_0 */, __cn1ThisObject);
     __CN1_DEBUG_INFO(277);
     /* VarOp.assignFrom */ locals[2].data.o = /* CustomInvoke */virtual_com_codename1_xml_XMLParser_createNewElement___java_lang_String_R_com_codename1_xml_Element(threadStateData, __cn1ThisObject, STRING_FROM_CONSTANT_POOL_OFFSET(7642));locals[2].type=CN1_TYPE_OBJECT;
-label_L1022200690:
- tryBlockOffsetL1022200690cn1_class_id_java_io_IOException1 = threadStateData->tryBlockOffset;
-    BEGIN_TRY(cn1_class_id_java_io_IOException, catch_L1022200690cn1_class_id_java_io_IOException1);
-    restoreToL1022200690cn1_class_id_java_io_IOException1 = threadStateData->threadObjectStackOffset;
+label_L1547226778:
+ tryBlockOffsetL1547226778cn1_class_id_java_io_IOException1 = threadStateData->tryBlockOffset;
+    BEGIN_TRY(cn1_class_id_java_io_IOException, catch_L1547226778cn1_class_id_java_io_IOException1);
+    restoreToL1547226778cn1_class_id_java_io_IOException1 = threadStateData->threadObjectStackOffset;
 
     __CN1_DEBUG_INFO(279);
     /* CustomInvoke */virtual_com_codename1_xml_XMLParser_parseTagContent___com_codename1_xml_Element_java_io_Reader(threadStateData, __cn1ThisObject, locals[2].data.o, locals[1].data.o); 
 
-label_L649846379:
+label_L912557855:
 END_TRY(1);    __CN1_DEBUG_INFO(282);
     JUMP_TO(label_L1120531149, 0);
 

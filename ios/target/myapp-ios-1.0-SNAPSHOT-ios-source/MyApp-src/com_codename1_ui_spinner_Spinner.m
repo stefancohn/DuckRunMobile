@@ -999,7 +999,7 @@ label_L1746150957:
     /* VarOp.assignFrom */ locals[3].data.o = virtual_com_codename1_ui_TextField_getText___R_java_lang_String(threadStateData, get_field_com_codename1_ui_spinner_Spinner_quickType(__cn1ThisObject));locals[3].type=CN1_TYPE_OBJECT;    __CN1_DEBUG_INFO(376);
     if (virtual_java_lang_String_length___R_int(threadStateData, locals[3].data.o)!=0) /* IFNE CustomJump */ JUMP_TO(label_L1974062116, 0);
 
-label_L1420934890:
+label_L1466963910:
 END_TRY(1);    __CN1_DEBUG_INFO(377);
     releaseForReturnInException(threadStateData, cn1LocalsBeginInThread, methodBlockOffset); 
     return;
@@ -1060,7 +1060,7 @@ label_L2105379089:
     PUSH_INT(24);
     SP-=2; if((*SP).data.i <= SP[1].data.i) /* IF_ICMPLE */ JUMP_TO(label_L1175368310, 0);
 
-label_L374817457:
+label_L190930973:
 END_TRY(1);    __CN1_DEBUG_INFO(394);
     releaseForReturnInException(threadStateData, cn1LocalsBeginInThread, methodBlockOffset); 
     return;
@@ -1077,7 +1077,7 @@ label_L2113133067:
     PUSH_INT(12);
     SP-=2; if((*SP).data.i <= SP[1].data.i) /* IF_ICMPLE */ JUMP_TO(label_L1175368310, 0);
 
-label_L424689146:
+label_L1512973579:
 END_TRY(1);    __CN1_DEBUG_INFO(398);
     releaseForReturnInException(threadStateData, cn1LocalsBeginInThread, methodBlockOffset); 
     return;
@@ -1096,7 +1096,7 @@ label_L1826091905:
     PUSH_INT(59);
     SP-=2; if((*SP).data.i <= SP[1].data.i) /* IF_ICMPLE */ JUMP_TO(label_L1175368310, 0);
 
-label_L855463334:
+label_L1867883491:
 END_TRY(1);    __CN1_DEBUG_INFO(405);
     releaseForReturnInException(threadStateData, cn1LocalsBeginInThread, methodBlockOffset); 
     return;
@@ -1115,7 +1115,7 @@ label_L1342061890:
     PUSH_INT(59);
     SP-=2; if((*SP).data.i <= SP[1].data.i) /* IF_ICMPLE */ JUMP_TO(label_L1175368310, 0);
 
-label_L625046082:
+label_L424689146:
 END_TRY(1);    __CN1_DEBUG_INFO(411);
     releaseForReturnInException(threadStateData, cn1LocalsBeginInThread, methodBlockOffset); 
     return;
@@ -1426,7 +1426,7 @@ label_L736431034:
     __CN1_DEBUG_INFO(507);
     /* CustomInvoke */virtual_com_codename1_ui_spinner_Spinner_setSelectedIndex___int(threadStateData, __cn1ThisObject, ilocals_5_); 
 
-label_L2087548497:
+label_L1308365909:
 END_TRY(1);    __CN1_DEBUG_INFO(508);
     releaseForReturnInException(threadStateData, cn1LocalsBeginInThread, methodBlockOffset); 
     return;

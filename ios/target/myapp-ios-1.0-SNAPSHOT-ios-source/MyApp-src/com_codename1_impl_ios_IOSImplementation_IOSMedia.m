@@ -218,9 +218,9 @@ JAVA_VOID com_codename1_impl_ios_IOSImplementation_IOSMedia___INIT_____com_coden
     locals[3].type = CN1_TYPE_OBJECT;
     locals[4].data.o = __cn1Arg4;
     locals[4].type = CN1_TYPE_OBJECT;
-    int restoreToL138330288cn1_class_id_java_io_IOException1;
-    int tryBlockOffsetL138330288cn1_class_id_java_io_IOException1;
-    DEFINE_CATCH_BLOCK(catch_L138330288cn1_class_id_java_io_IOException1, label_L102318785, restoreToL138330288cn1_class_id_java_io_IOException1);
+    int restoreToL1919292887cn1_class_id_java_io_IOException1;
+    int tryBlockOffsetL1919292887cn1_class_id_java_io_IOException1;
+    DEFINE_CATCH_BLOCK(catch_L1919292887cn1_class_id_java_io_IOException1, label_L102318785, restoreToL1919292887cn1_class_id_java_io_IOException1);
     __CN1_DEBUG_INFO(3630);
     set_field_com_codename1_impl_ios_IOSImplementation_IOSMedia_this_0(threadStateData, locals[1].data.o, __cn1ThisObject);
     com_codename1_media_AbstractMedia___INIT____(threadStateData, __cn1ThisObject); 
@@ -260,10 +260,10 @@ label_L1655242052:
     __CN1_DEBUG_INFO(3649);
     if (get_field_com_codename1_impl_ios_IOSImplementation_IOSMedia_isVideo(__cn1ThisObject)!=0) /* IFNE CustomJump */ JUMP_TO(label_L778806426, 0);
 
-label_L138330288:
- tryBlockOffsetL138330288cn1_class_id_java_io_IOException1 = threadStateData->tryBlockOffset;
-    BEGIN_TRY(cn1_class_id_java_io_IOException, catch_L138330288cn1_class_id_java_io_IOException1);
-    restoreToL138330288cn1_class_id_java_io_IOException1 = threadStateData->threadObjectStackOffset;
+label_L1919292887:
+ tryBlockOffsetL1919292887cn1_class_id_java_io_IOException1 = threadStateData->tryBlockOffset;
+    BEGIN_TRY(cn1_class_id_java_io_IOException, catch_L1919292887cn1_class_id_java_io_IOException1);
+    restoreToL1919292887cn1_class_id_java_io_IOException1 = threadStateData->threadObjectStackOffset;
 
     __CN1_DEBUG_INFO(3651);
     BC_ALOAD(0);
@@ -277,7 +277,7 @@ label_L138330288:
     __CN1_DEBUG_INFO(3652);
     /* CustomInvoke */virtual_com_codename1_impl_ios_IOSNative_retainPeer___long(threadStateData, get_static_com_codename1_impl_ios_IOSImplementation_nativeInstance(threadStateData), get_field_com_codename1_impl_ios_IOSImplementation_IOSMedia_moviePlayerPeer(__cn1ThisObject)); 
 
-label_L1253356749:
+label_L1174605053:
 END_TRY(1);    __CN1_DEBUG_INFO(3660);
     JUMP_TO(label_L778806426, 0);
 
@@ -348,9 +348,9 @@ JAVA_VOID com_codename1_impl_ios_IOSImplementation_IOSMedia_addCompletionHandler
     DEFINE_INSTANCE_METHOD_STACK(3, 4, 0, 9650, 491);
     locals[0].data.o = __cn1ThisObject; locals[0].type = CN1_TYPE_OBJECT;     locals[1].data.o = __cn1Arg1;
     locals[1].type = CN1_TYPE_OBJECT;
-    int restoreToL60450039201;
-    int tryBlockOffsetL60450039201;
-    DEFINE_CATCH_BLOCK(catch_L60450039201, label_L1795468466, restoreToL60450039201);
+    int restoreToL207709834801;
+    int tryBlockOffsetL207709834801;
+    DEFINE_CATCH_BLOCK(catch_L207709834801, label_L1795468466, restoreToL207709834801);
     int restoreToL179546846602;
     int tryBlockOffsetL179546846602;
     DEFINE_CATCH_BLOCK(catch_L179546846602, label_L1795468466, restoreToL179546846602);
@@ -359,10 +359,10 @@ JAVA_VOID com_codename1_impl_ios_IOSImplementation_IOSMedia_addCompletionHandler
     /* VarOp.assignFrom */ locals[2].type=CN1_TYPE_INVALID;    locals[2].data.o = __cn1ThisObject;
 locals[2].type=CN1_TYPE_OBJECT;    monitorEnter(threadStateData, POP_OBJ());
 
-label_L604500392:
- tryBlockOffsetL60450039201 = threadStateData->tryBlockOffset;
-    BEGIN_TRY(0, catch_L60450039201);
-    restoreToL60450039201 = threadStateData->threadObjectStackOffset;
+label_L2077098348:
+ tryBlockOffsetL207709834801 = threadStateData->tryBlockOffset;
+    BEGIN_TRY(0, catch_L207709834801);
+    restoreToL207709834801 = threadStateData->threadObjectStackOffset;
 
     __CN1_DEBUG_INFO(3698);
     if (get_field_com_codename1_impl_ios_IOSImplementation_IOSMedia_completionHandlers(__cn1ThisObject)!=JAVA_NULL) /* IFNONNULL CustomJump */ JUMP_TO(label_L406358588, 1);
@@ -381,7 +381,7 @@ label_L406358588:
     BC_ALOAD(2);
     monitorExit(threadStateData, POP_OBJ());
 
-label_L801718565:
+label_L1233161537:
 END_TRY(1);    JUMP_TO(label_L486759395, 0);
 
 label_L1795468466:
@@ -393,7 +393,7 @@ label_L1795468466:
     BC_ALOAD(2);
     monitorExit(threadStateData, POP_OBJ());
 
-label_L1948069338:
+label_L1651391256:
 END_TRY(1);    BC_ALOAD(3);
     throwException(threadStateData, POP_OBJ());
 
@@ -408,9 +408,9 @@ JAVA_VOID com_codename1_impl_ios_IOSImplementation_IOSMedia_removeCompletionHand
     DEFINE_INSTANCE_METHOD_STACK(2, 4, 0, 9650, 492);
     locals[0].data.o = __cn1ThisObject; locals[0].type = CN1_TYPE_OBJECT;     locals[1].data.o = __cn1Arg1;
     locals[1].type = CN1_TYPE_OBJECT;
-    int restoreToL54853438801;
-    int tryBlockOffsetL54853438801;
-    DEFINE_CATCH_BLOCK(catch_L54853438801, label_L1247866422, restoreToL54853438801);
+    int restoreToL28891716901;
+    int tryBlockOffsetL28891716901;
+    DEFINE_CATCH_BLOCK(catch_L28891716901, label_L1247866422, restoreToL28891716901);
     int restoreToL124786642202;
     int tryBlockOffsetL124786642202;
     DEFINE_CATCH_BLOCK(catch_L124786642202, label_L1247866422, restoreToL124786642202);
@@ -421,10 +421,10 @@ JAVA_VOID com_codename1_impl_ios_IOSImplementation_IOSMedia_removeCompletionHand
     /* VarOp.assignFrom */ locals[2].type=CN1_TYPE_INVALID;    locals[2].data.o = __cn1ThisObject;
 locals[2].type=CN1_TYPE_OBJECT;    monitorEnter(threadStateData, POP_OBJ());
 
-label_L548534388:
- tryBlockOffsetL54853438801 = threadStateData->tryBlockOffset;
-    BEGIN_TRY(0, catch_L54853438801);
-    restoreToL54853438801 = threadStateData->threadObjectStackOffset;
+label_L288917169:
+ tryBlockOffsetL28891716901 = threadStateData->tryBlockOffset;
+    BEGIN_TRY(0, catch_L28891716901);
+    restoreToL28891716901 = threadStateData->threadObjectStackOffset;
 
     __CN1_DEBUG_INFO(3709);
     /* CustomInvoke */virtual_java_util_List_remove___java_lang_Object_R_boolean(threadStateData, get_field_com_codename1_impl_ios_IOSImplementation_IOSMedia_completionHandlers(__cn1ThisObject), locals[1].data.o); 
@@ -432,7 +432,7 @@ label_L548534388:
     BC_ALOAD(2);
     monitorExit(threadStateData, POP_OBJ());
 
-label_L1969876957:
+label_L1948069338:
 END_TRY(1);    JUMP_TO(label_L80722676, 0);
 
 label_L1247866422:
@@ -444,7 +444,7 @@ label_L1247866422:
     BC_ALOAD(2);
     monitorExit(threadStateData, POP_OBJ());
 
-label_L1495154270:
+label_L1745317719:
 END_TRY(1);    BC_ALOAD(3);
     throwException(threadStateData, POP_OBJ());
 

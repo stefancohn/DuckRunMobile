@@ -6,7 +6,6 @@
 #include "com_example_myapp_Game.h"
 #include "com_example_myapp_MyApp.h"
 #include "com_example_ui_DeathSceneOverlay.h"
-#include "com_example_ui_VolumeButton.h"
 #include "com_example_util_Bounds.h"
 #include "com_example_util_LoadSave.h"
 #include "com_example_util_SaveScores.h"
@@ -251,13 +250,6 @@ label_L1667534569:
 
 
 JAVA_VOID com_example_ui_DeathSceneOverlay_update__(CODENAME_ONE_THREAD_STATE, JAVA_OBJECT  __cn1ThisObject) {
-    DEFINE_INSTANCE_METHOD_STACK(1, 1, 0, 10327, 2519);
-    locals[0].data.o = __cn1ThisObject; locals[0].type = CN1_TYPE_OBJECT;     __CN1_DEBUG_INFO(63);
-    { JAVA_OBJECT tmpResult = virtual_com_example_myapp_Game_getVolumeButton___R_com_example_ui_VolumeButton(threadStateData, get_static_com_example_myapp_Game_game(threadStateData));
-    PUSH_OBJ(tmpResult); }
-    virtual_com_example_ui_VolumeButton_update__(threadStateData, SP[-1].data.o);     SP -= 1;
-    __CN1_DEBUG_INFO(64);
-    releaseForReturn(threadStateData, cn1LocalsBeginInThread); 
     return;
 }
 
@@ -269,10 +261,6 @@ JAVA_VOID com_example_ui_DeathSceneOverlay_draw___com_codename1_ui_Graphics(CODE
     locals[1].type = CN1_TYPE_OBJECT;
     __CN1_DEBUG_INFO(66);
     /* CustomInvoke */virtual_com_codename1_ui_Graphics_drawImage___com_codename1_ui_Image_int_int_int_int(threadStateData, locals[1].data.o, CN1_ARRAY_ELEMENT_OBJECT(CN1_ARRAY_ELEMENT_OBJECT(get_field_com_example_ui_DeathSceneOverlay_deathSceneButtons(__cn1ThisObject), 0 /* ICONST_0 */), get_field_com_example_ui_DeathSceneOverlay_playAgainButtonSprite(__cn1ThisObject)), get_field_com_example_ui_DeathSceneOverlay_buttonPlacementX(__cn1ThisObject), get_field_com_example_ui_DeathSceneOverlay_playAgainY(__cn1ThisObject), get_field_com_example_ui_DeathSceneOverlay_buttonWidth(__cn1ThisObject), get_field_com_example_ui_DeathSceneOverlay_buttonHeight(__cn1ThisObject)); 
-    __CN1_DEBUG_INFO(67);
-    { JAVA_OBJECT tmpResult = virtual_com_example_myapp_Game_getVolumeButton___R_com_example_ui_VolumeButton(threadStateData, get_static_com_example_myapp_Game_game(threadStateData));
-    PUSH_OBJ(tmpResult); }
-    /* CustomInvoke */virtual_com_example_ui_VolumeButton_draw___com_codename1_ui_Graphics(threadStateData, SP[-1].data.o, locals[1].data.o);     SP -= 1;
     __CN1_DEBUG_INFO(70);
     /* VarOp.assignFrom */ locals[2].data.o = /* CustomInvoke */com_codename1_ui_Font_createSystemFont___int_int_int_R_com_codename1_ui_Font(threadStateData, 32, 0 /* ICONST_0 */, 16);locals[2].type=CN1_TYPE_OBJECT;    __CN1_DEBUG_INFO(71);
     /* CustomInvoke */virtual_com_codename1_ui_Graphics_setFont___com_codename1_ui_Font(threadStateData, locals[1].data.o, locals[2].data.o); 

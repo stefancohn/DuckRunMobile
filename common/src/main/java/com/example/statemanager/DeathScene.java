@@ -3,7 +3,6 @@ import com.codename1.ui.Image;
 import com.codename1.ui.Graphics;
 import com.example.myapp.MyApp;
 import com.example.ui.DeathSceneOverlay;
-import com.example.util.Constants;
 import com.example.util.LoadSave;
 
 public class DeathScene extends Scene {

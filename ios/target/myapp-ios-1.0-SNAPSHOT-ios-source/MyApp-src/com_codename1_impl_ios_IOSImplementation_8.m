@@ -165,9 +165,9 @@ JAVA_VOID com_codename1_impl_ios_IOSImplementation_8_run__(CODENAME_ONE_THREAD_S
     volatile JAVA_INT ilocals_10_ = 0; /* v10 */
     volatile JAVA_INT ilocals_11_ = 0; /* v11 */
     DEFINE_INSTANCE_METHOD_STACK(26, 12, 0, 9632, 207);
-    locals[0].data.o = __cn1ThisObject; locals[0].type = CN1_TYPE_OBJECT;     int restoreToL207172262601;
-    int tryBlockOffsetL207172262601;
-    DEFINE_CATCH_BLOCK(catch_L207172262601, label_L1472036907, restoreToL207172262601);
+    locals[0].data.o = __cn1ThisObject; locals[0].type = CN1_TYPE_OBJECT;     int restoreToL27854987501;
+    int tryBlockOffsetL27854987501;
+    DEFINE_CATCH_BLOCK(catch_L27854987501, label_L1472036907, restoreToL27854987501);
     int restoreToL147203690702;
     int tryBlockOffsetL147203690702;
     DEFINE_CATCH_BLOCK(catch_L147203690702, label_L1472036907, restoreToL147203690702);
@@ -225,15 +225,15 @@ label_L1555793073:
     __CN1_DEBUG_INFO(906);
     /* CustomInvoke */com_codename1_impl_ios_IOSImplementation_access$308___com_codename1_impl_ios_IOSImplementation_R_int(threadStateData, get_field_com_codename1_impl_ios_IOSImplementation_8_this_0(__cn1ThisObject)); 
 
-label_L2071722626:
- tryBlockOffsetL207172262601 = threadStateData->tryBlockOffset;
-    BEGIN_TRY(0, catch_L207172262601);
-    restoreToL207172262601 = threadStateData->threadObjectStackOffset;
+label_L278549875:
+ tryBlockOffsetL27854987501 = threadStateData->tryBlockOffset;
+    BEGIN_TRY(0, catch_L27854987501);
+    restoreToL27854987501 = threadStateData->threadObjectStackOffset;
 
     __CN1_DEBUG_INFO(908);
     virtual_com_codename1_ui_Component_requestFocus__(threadStateData, get_field_com_codename1_impl_ios_IOSImplementation_8_val_cmp(__cn1ThisObject)); 
 
-label_L956832083:
+label_L1243071766:
 END_TRY(1);    __CN1_DEBUG_INFO(910);
     /* CustomInvoke */com_codename1_impl_ios_IOSImplementation_access$310___com_codename1_impl_ios_IOSImplementation_R_int(threadStateData, get_field_com_codename1_impl_ios_IOSImplementation_8_this_0(__cn1ThisObject)); 
     __CN1_DEBUG_INFO(911);
@@ -247,7 +247,7 @@ label_L1472036907:
     __CN1_DEBUG_INFO(910);
     BC_ASTORE(11);
 
-label_L1317342824:
+label_L2010974921:
 END_TRY(1);    /* CustomInvoke */com_codename1_impl_ios_IOSImplementation_access$310___com_codename1_impl_ios_IOSImplementation_R_int(threadStateData, get_field_com_codename1_impl_ios_IOSImplementation_8_this_0(__cn1ThisObject)); 
     __CN1_DEBUG_INFO(911);
     BC_ALOAD(11);

@@ -879,7 +879,7 @@ label_L230266757:
     SP[-1].data.o = tmpResult; SP[-1].type = CN1_TYPE_OBJECT; }
     SP--; /* POP */
 
-label_L598709333:
+label_L1153524965:
 END_TRY(1);    __CN1_DEBUG_INFO(427);
     JUMP_TO(label_L1886478937, 1);
 
@@ -1736,9 +1736,9 @@ JAVA_VOID com_codename1_ui_BrowserComponent_fireWebEvent___java_lang_String_com_
     locals[1].type = CN1_TYPE_OBJECT;
     locals[2].data.o = __cn1Arg2;
     locals[2].type = CN1_TYPE_OBJECT;
-    int restoreToL204586354401;
-    int tryBlockOffsetL204586354401;
-    DEFINE_CATCH_BLOCK(catch_L204586354401, label_L875761527, restoreToL204586354401);
+    int restoreToL183227109601;
+    int tryBlockOffsetL183227109601;
+    DEFINE_CATCH_BLOCK(catch_L183227109601, label_L875761527, restoreToL183227109601);
     int restoreToL87576152702;
     int tryBlockOffsetL87576152702;
     DEFINE_CATCH_BLOCK(catch_L87576152702, label_L875761527, restoreToL87576152702);
@@ -1750,10 +1750,10 @@ JAVA_VOID com_codename1_ui_BrowserComponent_fireWebEvent___java_lang_String_com_
     BC_ASTORE(3);
     monitorEnter(threadStateData, POP_OBJ());
 
-label_L2045863544:
- tryBlockOffsetL204586354401 = threadStateData->tryBlockOffset;
-    BEGIN_TRY(0, catch_L204586354401);
-    restoreToL204586354401 = threadStateData->threadObjectStackOffset;
+label_L1832271096:
+ tryBlockOffsetL183227109601 = threadStateData->tryBlockOffset;
+    BEGIN_TRY(0, catch_L183227109601);
+    restoreToL183227109601 = threadStateData->threadObjectStackOffset;
 
     __CN1_DEBUG_INFO(1079);
     set_field_com_codename1_ui_BrowserComponent_ready(threadStateData, 1 /* ICONST_1 */, __cn1ThisObject);
@@ -1763,7 +1763,7 @@ label_L2045863544:
     BC_ALOAD(3);
     monitorExit(threadStateData, POP_OBJ());
 
-label_L637293634:
+label_L800986099:
 END_TRY(1);    JUMP_TO(label_L320923274, 0);
 
 label_L875761527:
@@ -1775,7 +1775,7 @@ label_L875761527:
     BC_ALOAD(3);
     monitorExit(threadStateData, POP_OBJ());
 
-label_L405230465:
+label_L1077225979:
 END_TRY(1);    BC_ALOAD(4);
     throwException(threadStateData, POP_OBJ());
 

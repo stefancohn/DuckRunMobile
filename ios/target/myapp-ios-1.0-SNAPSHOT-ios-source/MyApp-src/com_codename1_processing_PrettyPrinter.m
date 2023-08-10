@@ -440,7 +440,7 @@ label_L294593670:
     __CN1_DEBUG_INFO(217);
     /* CustomInvoke */PUSH_OBJ(com_codename1_processing_PrettyPrinter_quote___java_lang_String_R_java_lang_String(threadStateData, locals[0].data.o));
 
-label_L189347726:
+label_L1556367309:
 END_TRY(1);    releaseForReturnInException(threadStateData, cn1LocalsBeginInThread, methodBlockOffset); 
     return POP_OBJ();
 

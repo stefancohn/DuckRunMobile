@@ -1199,9 +1199,9 @@ JAVA_VOID com_codename1_ui_plaf_RoundRectBorder_paintBorderBackground___com_code
     locals[1].type = CN1_TYPE_OBJECT;
     locals[2].data.o = __cn1Arg2;
     locals[2].type = CN1_TYPE_OBJECT;
-    int restoreToL71350204601;
-    int tryBlockOffsetL71350204601;
-    DEFINE_CATCH_BLOCK(catch_L71350204601, label_L93981118, restoreToL71350204601);
+    int restoreToL71231417001;
+    int tryBlockOffsetL71231417001;
+    DEFINE_CATCH_BLOCK(catch_L71231417001, label_L93981118, restoreToL71231417001);
     int restoreToL72292997002;
     int tryBlockOffsetL72292997002;
     DEFINE_CATCH_BLOCK(catch_L72292997002, label_L93981118, restoreToL72292997002);
@@ -1498,10 +1498,10 @@ label_L1155169971:
     __CN1_DEBUG_INFO(783);
     /* CustomInvoke */virtual_com_codename1_ui_Graphics_setAntiAliased___boolean(threadStateData, locals[1].data.o, 1 /* ICONST_1 */); 
 
-label_L713502046:
- tryBlockOffsetL71350204601 = threadStateData->tryBlockOffset;
-    BEGIN_TRY(0, catch_L71350204601);
-    restoreToL71350204601 = threadStateData->threadObjectStackOffset;
+label_L712314170:
+ tryBlockOffsetL71231417001 = threadStateData->tryBlockOffset;
+    BEGIN_TRY(0, catch_L71231417001);
+    restoreToL71231417001 = threadStateData->threadObjectStackOffset;
 
     __CN1_DEBUG_INFO(785);
     if (get_field_com_codename1_ui_plaf_RoundRectBorder_shadowOpacity(__cn1ThisObject)!=0) /* IFNE CustomJump */ JUMP_TO(label_L722929970, 0);
@@ -1609,7 +1609,7 @@ label_L722929970:
     __CN1_DEBUG_INFO(822);
     /* CustomInvoke */virtual_com_codename1_ui_Graphics_drawImage___com_codename1_ui_Image_int_int(threadStateData, locals[1].data.o, locals[8].data.o, ilocals_5_, ilocals_6_); 
 
-label_L1455998846:
+label_L258119721:
 END_TRY(1);    __CN1_DEBUG_INFO(845);
     /* CustomInvoke */virtual_com_codename1_ui_Graphics_setAntiAliased___boolean(threadStateData, locals[1].data.o, ilocals_7_); 
     __CN1_DEBUG_INFO(823);
@@ -1677,7 +1677,7 @@ label_L93981118:
     __CN1_DEBUG_INFO(845);
     BC_ASTORE(13);
 
-label_L507352189:
+label_L1102977431:
 END_TRY(1);    /* CustomInvoke */virtual_com_codename1_ui_Graphics_setAntiAliased___boolean(threadStateData, locals[1].data.o, ilocals_7_); 
     __CN1_DEBUG_INFO(846);
     BC_ALOAD(13);

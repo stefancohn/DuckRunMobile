@@ -116,9 +116,9 @@ JAVA_OBJECT __NEW_com_codename1_media_AudioBuffer(CODENAME_ONE_THREAD_STATE) {
 
 JAVA_INT com_codename1_media_AudioBuffer_retain___R_int(CODENAME_ONE_THREAD_STATE, JAVA_OBJECT  __cn1ThisObject) {
     DEFINE_INSTANCE_METHOD_STACK(3, 3, 0, 8619, 224);
-    locals[0].data.o = __cn1ThisObject; locals[0].type = CN1_TYPE_OBJECT;     int restoreToL121116157301;
-    int tryBlockOffsetL121116157301;
-    DEFINE_CATCH_BLOCK(catch_L121116157301, label_L2009641590, restoreToL121116157301);
+    locals[0].data.o = __cn1ThisObject; locals[0].type = CN1_TYPE_OBJECT;     int restoreToL5244015401;
+    int tryBlockOffsetL5244015401;
+    DEFINE_CATCH_BLOCK(catch_L5244015401, label_L2009641590, restoreToL5244015401);
     int restoreToL200964159002;
     int tryBlockOffsetL200964159002;
     DEFINE_CATCH_BLOCK(catch_L200964159002, label_L2009641590, restoreToL200964159002);
@@ -128,10 +128,10 @@ JAVA_INT com_codename1_media_AudioBuffer_retain___R_int(CODENAME_ONE_THREAD_STAT
     BC_ASTORE(1);
     monitorEnter(threadStateData, POP_OBJ());
 
-label_L1211161573:
- tryBlockOffsetL121116157301 = threadStateData->tryBlockOffset;
-    BEGIN_TRY(0, catch_L121116157301);
-    restoreToL121116157301 = threadStateData->threadObjectStackOffset;
+label_L52440154:
+ tryBlockOffsetL5244015401 = threadStateData->tryBlockOffset;
+    BEGIN_TRY(0, catch_L5244015401);
+    restoreToL5244015401 = threadStateData->threadObjectStackOffset;
 
     __CN1_DEBUG_INFO(40);
     set_field_com_codename1_media_AudioBuffer_refCounter(threadStateData, (get_field_com_codename1_media_AudioBuffer_refCounter(__cn1ThisObject) + 1 /* ICONST_1 */), __cn1ThisObject);
@@ -140,7 +140,7 @@ label_L1211161573:
     BC_ALOAD(1);
     monitorExit(threadStateData, POP_OBJ());
 
-label_L1248885829:
+label_L1014881069:
 END_TRY(1);    releaseForReturnInException(threadStateData, cn1LocalsBeginInThread, methodBlockOffset); return SP[-1].data.i;
 
 label_L2009641590:
@@ -153,7 +153,7 @@ label_L2009641590:
     BC_ALOAD(1);
     monitorExit(threadStateData, POP_OBJ());
 
-label_L228236406:
+label_L1248885829:
 END_TRY(1);    BC_ALOAD(2);
     throwException(threadStateData, POP_OBJ());
     return 0;
@@ -162,9 +162,9 @@ END_TRY(1);    BC_ALOAD(2);
 
 JAVA_INT com_codename1_media_AudioBuffer_release___R_int(CODENAME_ONE_THREAD_STATE, JAVA_OBJECT  __cn1ThisObject) {
     DEFINE_INSTANCE_METHOD_STACK(3, 3, 0, 8619, 225);
-    locals[0].data.o = __cn1ThisObject; locals[0].type = CN1_TYPE_OBJECT;     int restoreToL187853083501;
-    int tryBlockOffsetL187853083501;
-    DEFINE_CATCH_BLOCK(catch_L187853083501, label_L929508007, restoreToL187853083501);
+    locals[0].data.o = __cn1ThisObject; locals[0].type = CN1_TYPE_OBJECT;     int restoreToL112797901501;
+    int tryBlockOffsetL112797901501;
+    DEFINE_CATCH_BLOCK(catch_L112797901501, label_L929508007, restoreToL112797901501);
     int restoreToL92950800702;
     int tryBlockOffsetL92950800702;
     DEFINE_CATCH_BLOCK(catch_L92950800702, label_L929508007, restoreToL92950800702);
@@ -174,10 +174,10 @@ JAVA_INT com_codename1_media_AudioBuffer_release___R_int(CODENAME_ONE_THREAD_STA
     BC_ASTORE(1);
     monitorEnter(threadStateData, POP_OBJ());
 
-label_L1878530835:
- tryBlockOffsetL187853083501 = threadStateData->tryBlockOffset;
-    BEGIN_TRY(0, catch_L187853083501);
-    restoreToL187853083501 = threadStateData->threadObjectStackOffset;
+label_L1127979015:
+ tryBlockOffsetL112797901501 = threadStateData->tryBlockOffset;
+    BEGIN_TRY(0, catch_L112797901501);
+    restoreToL112797901501 = threadStateData->threadObjectStackOffset;
 
     __CN1_DEBUG_INFO(46);
     set_field_com_codename1_media_AudioBuffer_refCounter(threadStateData, (get_field_com_codename1_media_AudioBuffer_refCounter(__cn1ThisObject) - 1 /* ICONST_1 */), __cn1ThisObject);
@@ -186,7 +186,7 @@ label_L1878530835:
     BC_ALOAD(1);
     monitorExit(threadStateData, POP_OBJ());
 
-label_L1880907083:
+label_L228236406:
 END_TRY(1);    releaseForReturnInException(threadStateData, cn1LocalsBeginInThread, methodBlockOffset); return SP[-1].data.i;
 
 label_L929508007:
@@ -199,7 +199,7 @@ label_L929508007:
     BC_ALOAD(1);
     monitorExit(threadStateData, POP_OBJ());
 
-label_L1222793319:
+label_L1880907083:
 END_TRY(1);    BC_ALOAD(2);
     throwException(threadStateData, POP_OBJ());
     return 0;
@@ -369,16 +369,16 @@ JAVA_INT com_codename1_media_AudioBuffer_getMaxSize___R_int(CODENAME_ONE_THREAD_
 
 JAVA_VOID com_codename1_media_AudioBuffer_fireFrameReceived__(CODENAME_ONE_THREAD_STATE, JAVA_OBJECT  __cn1ThisObject) {
     DEFINE_INSTANCE_METHOD_STACK(2, 5, 0, 8619, 8627);
-    locals[0].data.o = __cn1ThisObject; locals[0].type = CN1_TYPE_OBJECT;     int restoreToL191923702101;
-    int tryBlockOffsetL191923702101;
-    DEFINE_CATCH_BLOCK(catch_L191923702101, label_L1142462359, restoreToL191923702101);
+    locals[0].data.o = __cn1ThisObject; locals[0].type = CN1_TYPE_OBJECT;     int restoreToL26851648101;
+    int tryBlockOffsetL26851648101;
+    DEFINE_CATCH_BLOCK(catch_L26851648101, label_L1142462359, restoreToL26851648101);
     __CN1_DEBUG_INFO(198);
     set_field_com_codename1_media_AudioBuffer_inFireFrame(threadStateData, 1 /* ICONST_1 */, __cn1ThisObject);
 
-label_L1919237021:
- tryBlockOffsetL191923702101 = threadStateData->tryBlockOffset;
-    BEGIN_TRY(0, catch_L191923702101);
-    restoreToL191923702101 = threadStateData->threadObjectStackOffset;
+label_L268516481:
+ tryBlockOffsetL26851648101 = threadStateData->tryBlockOffset;
+    BEGIN_TRY(0, catch_L26851648101);
+    restoreToL26851648101 = threadStateData->threadObjectStackOffset;
 
     __CN1_DEBUG_INFO(201);
     /* VarOp.assignFrom */ locals[1].data.o = virtual_java_util_ArrayList_iterator___R_java_util_Iterator(threadStateData, get_field_com_codename1_media_AudioBuffer_callbacks(__cn1ThisObject));locals[1].type=CN1_TYPE_OBJECT;

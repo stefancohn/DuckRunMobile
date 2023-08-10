@@ -625,9 +625,9 @@ JAVA_VOID com_codename1_ui_spinner_Picker_stopEditing___java_lang_Runnable(CODEN
     DEFINE_INSTANCE_METHOD_STACK(2, 4, 0, 9741, 1380);
     locals[0].data.o = __cn1ThisObject; locals[0].type = CN1_TYPE_OBJECT;     locals[1].data.o = __cn1Arg1;
     locals[1].type = CN1_TYPE_OBJECT;
-    int restoreToL1301792983cn1_class_id_java_lang_Throwable1;
-    int tryBlockOffsetL1301792983cn1_class_id_java_lang_Throwable1;
-    DEFINE_CATCH_BLOCK(catch_L1301792983cn1_class_id_java_lang_Throwable1, label_L33281504, restoreToL1301792983cn1_class_id_java_lang_Throwable1);
+    int restoreToL1510916429cn1_class_id_java_lang_Throwable1;
+    int tryBlockOffsetL1510916429cn1_class_id_java_lang_Throwable1;
+    DEFINE_CATCH_BLOCK(catch_L1510916429cn1_class_id_java_lang_Throwable1, label_L33281504, restoreToL1510916429cn1_class_id_java_lang_Throwable1);
     __CN1_DEBUG_INFO(874);
     set_field_com_codename1_ui_spinner_Picker_stopEditingCallback(threadStateData, locals[1].data.o, __cn1ThisObject);
     __CN1_DEBUG_INFO(875);
@@ -639,15 +639,15 @@ JAVA_VOID com_codename1_ui_spinner_Picker_stopEditing___java_lang_Runnable(CODEN
     PUSH_POINTER(get_field_com_codename1_ui_spinner_Picker_currentInput(__cn1ThisObject));
     SP-=2; if((*SP).data.o != SP[1].data.o) /* IF_ACMPNE */ JUMP_TO(label_L852633168, 0);
 
-label_L1301792983:
- tryBlockOffsetL1301792983cn1_class_id_java_lang_Throwable1 = threadStateData->tryBlockOffset;
-    BEGIN_TRY(cn1_class_id_java_lang_Throwable, catch_L1301792983cn1_class_id_java_lang_Throwable1);
-    restoreToL1301792983cn1_class_id_java_lang_Throwable1 = threadStateData->threadObjectStackOffset;
+label_L1510916429:
+ tryBlockOffsetL1510916429cn1_class_id_java_lang_Throwable1 = threadStateData->tryBlockOffset;
+    BEGIN_TRY(cn1_class_id_java_lang_Throwable, catch_L1510916429cn1_class_id_java_lang_Throwable1);
+    restoreToL1510916429cn1_class_id_java_lang_Throwable1 = threadStateData->threadObjectStackOffset;
 
     __CN1_DEBUG_INFO(879);
     /* CustomInvoke */virtual_com_codename1_ui_Form_setCurrentInputDevice___com_codename1_ui_VirtualInputDevice(threadStateData, locals[2].data.o, JAVA_NULL /* ACONST_NULL */); 
 
-label_L1639935105:
+label_L1919484678:
 END_TRY(1);    __CN1_DEBUG_INFO(882);
     JUMP_TO(label_L852633168, 0);
 
@@ -1039,7 +1039,7 @@ label_L381149258:
     __CN1_DEBUG_INFO(1137);
     set_field_com_codename1_ui_spinner_Picker_currentInput(threadStateData, locals[4].data.o, __cn1ThisObject);
 
-label_L271924203:
+label_L440903150:
 END_TRY(1);    __CN1_DEBUG_INFO(1143);
     JUMP_TO(label_L1052803745, 0);
 

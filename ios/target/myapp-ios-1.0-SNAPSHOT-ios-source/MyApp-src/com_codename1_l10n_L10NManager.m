@@ -174,21 +174,21 @@ JAVA_OBJECT com_codename1_l10n_L10NManager_getLongMonthName___java_util_Date_R_j
     DEFINE_INSTANCE_METHOD_STACK(2, 5, 0, 6566, 6570);
     locals[0].data.o = __cn1ThisObject; locals[0].type = CN1_TYPE_OBJECT;     locals[1].data.o = __cn1Arg1;
     locals[1].type = CN1_TYPE_OBJECT;
-    int restoreToL876953501cn1_class_id_com_codename1_l10n_ParseException1;
-    int tryBlockOffsetL876953501cn1_class_id_com_codename1_l10n_ParseException1;
-    DEFINE_CATCH_BLOCK(catch_L876953501cn1_class_id_com_codename1_l10n_ParseException1, label_L1491597616, restoreToL876953501cn1_class_id_com_codename1_l10n_ParseException1);
+    int restoreToL268561891cn1_class_id_com_codename1_l10n_ParseException1;
+    int tryBlockOffsetL268561891cn1_class_id_com_codename1_l10n_ParseException1;
+    DEFINE_CATCH_BLOCK(catch_L268561891cn1_class_id_com_codename1_l10n_ParseException1, label_L1491597616, restoreToL268561891cn1_class_id_com_codename1_l10n_ParseException1);
     __CN1_DEBUG_INFO(118);
     /* VarOp.assignFrom */ locals[2].data.o = /* CustomInvoke */virtual_com_codename1_l10n_L10NManager_formatDateLongStyle___java_util_Date_R_java_lang_String(threadStateData, __cn1ThisObject, locals[1].data.o);locals[2].type=CN1_TYPE_OBJECT;
-label_L876953501:
- tryBlockOffsetL876953501cn1_class_id_com_codename1_l10n_ParseException1 = threadStateData->tryBlockOffset;
-    BEGIN_TRY(cn1_class_id_com_codename1_l10n_ParseException, catch_L876953501cn1_class_id_com_codename1_l10n_ParseException1);
-    restoreToL876953501cn1_class_id_com_codename1_l10n_ParseException1 = threadStateData->threadObjectStackOffset;
+label_L268561891:
+ tryBlockOffsetL268561891cn1_class_id_com_codename1_l10n_ParseException1 = threadStateData->tryBlockOffset;
+    BEGIN_TRY(cn1_class_id_com_codename1_l10n_ParseException, catch_L268561891cn1_class_id_com_codename1_l10n_ParseException1);
+    restoreToL268561891cn1_class_id_com_codename1_l10n_ParseException1 = threadStateData->threadObjectStackOffset;
 
     __CN1_DEBUG_INFO(120);
     /* CustomInvoke */{ JAVA_OBJECT tmpResult = com_codename1_l10n_L10NManager_extractMonthName___java_lang_String_R_java_lang_String(threadStateData, __cn1ThisObject, locals[2].data.o);
     PUSH_OBJ(tmpResult); }
 
-label_L733262339:
+label_L1130508577:
 END_TRY(1);    releaseForReturnInException(threadStateData, cn1LocalsBeginInThread, methodBlockOffset); 
     return POP_OBJ();
 

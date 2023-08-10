@@ -133,9 +133,9 @@ JAVA_OBJECT com_codename1_l10n_DateFormat_format___java_lang_Object_java_lang_St
     locals[1].type = CN1_TYPE_OBJECT;
     locals[2].data.o = __cn1Arg2;
     locals[2].type = CN1_TYPE_OBJECT;
-    int restoreToL1579621546cn1_class_id_com_codename1_l10n_ParseException1;
-    int tryBlockOffsetL1579621546cn1_class_id_com_codename1_l10n_ParseException1;
-    DEFINE_CATCH_BLOCK(catch_L1579621546cn1_class_id_com_codename1_l10n_ParseException1, label_L1392535885, restoreToL1579621546cn1_class_id_com_codename1_l10n_ParseException1);
+    int restoreToL96070981cn1_class_id_com_codename1_l10n_ParseException1;
+    int tryBlockOffsetL96070981cn1_class_id_com_codename1_l10n_ParseException1;
+    DEFINE_CATCH_BLOCK(catch_L96070981cn1_class_id_com_codename1_l10n_ParseException1, label_L1392535885, restoreToL96070981cn1_class_id_com_codename1_l10n_ParseException1);
     __CN1_DEBUG_INFO(100);
     BC_ALOAD(1);
     BC_INSTANCEOF(cn1_class_id_java_lang_Long);
@@ -163,14 +163,14 @@ label_L628131102:
     BC_INSTANCEOF(cn1_class_id_java_lang_String);
     if(POP_INT() == 0) /* IFEQ */ JUMP_TO(label_L108889619, 0);
 
-label_L1579621546:
- tryBlockOffsetL1579621546cn1_class_id_com_codename1_l10n_ParseException1 = threadStateData->tryBlockOffset;
-    BEGIN_TRY(cn1_class_id_com_codename1_l10n_ParseException, catch_L1579621546cn1_class_id_com_codename1_l10n_ParseException1);
-    restoreToL1579621546cn1_class_id_com_codename1_l10n_ParseException1 = threadStateData->threadObjectStackOffset;
+label_L96070981:
+ tryBlockOffsetL96070981cn1_class_id_com_codename1_l10n_ParseException1 = threadStateData->tryBlockOffset;
+    BEGIN_TRY(cn1_class_id_com_codename1_l10n_ParseException, catch_L96070981cn1_class_id_com_codename1_l10n_ParseException1);
+    restoreToL96070981cn1_class_id_com_codename1_l10n_ParseException1 = threadStateData->threadObjectStackOffset;
 
     __CN1_DEBUG_INFO(108);
     /* VarOp.assignFrom */ locals[3].data.o = /* CustomInvoke */virtual_com_codename1_l10n_DateFormat_parse___java_lang_String_R_java_util_Date(threadStateData, __cn1ThisObject, locals[1].data.o);locals[3].type=CN1_TYPE_OBJECT;
-label_L347996654:
+label_L662943441:
 END_TRY(1);    __CN1_DEBUG_INFO(111);
     JUMP_TO(label_L108889619, 0);
 

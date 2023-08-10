@@ -49,14 +49,14 @@ JAVA_VOID com_example_audio_AudioPlayer_playAudio___java_lang_String(CODENAME_ON
     DEFINE_INSTANCE_METHOD_STACK(4, 3, 0, 10206, 9240);
     locals[0].data.o = __cn1ThisObject; locals[0].type = CN1_TYPE_OBJECT;     locals[1].data.o = __cn1Arg1;
     locals[1].type = CN1_TYPE_OBJECT;
-    int restoreToL1176410929cn1_class_id_java_io_IOException1;
-    int tryBlockOffsetL1176410929cn1_class_id_java_io_IOException1;
-    DEFINE_CATCH_BLOCK(catch_L1176410929cn1_class_id_java_io_IOException1, label_L1228798862, restoreToL1176410929cn1_class_id_java_io_IOException1);
+    int restoreToL314259046cn1_class_id_java_io_IOException1;
+    int tryBlockOffsetL314259046cn1_class_id_java_io_IOException1;
+    DEFINE_CATCH_BLOCK(catch_L314259046cn1_class_id_java_io_IOException1, label_L1228798862, restoreToL314259046cn1_class_id_java_io_IOException1);
 
-label_L1176410929:
- tryBlockOffsetL1176410929cn1_class_id_java_io_IOException1 = threadStateData->tryBlockOffset;
-    BEGIN_TRY(cn1_class_id_java_io_IOException, catch_L1176410929cn1_class_id_java_io_IOException1);
-    restoreToL1176410929cn1_class_id_java_io_IOException1 = threadStateData->threadObjectStackOffset;
+label_L314259046:
+ tryBlockOffsetL314259046cn1_class_id_java_io_IOException1 = threadStateData->tryBlockOffset;
+    BEGIN_TRY(cn1_class_id_java_io_IOException, catch_L314259046cn1_class_id_java_io_IOException1);
+    restoreToL314259046cn1_class_id_java_io_IOException1 = threadStateData->threadObjectStackOffset;
 
     __CN1_DEBUG_INFO(11);
     PUSH_OBJ(com_codename1_ui_Display_getInstance___R_com_codename1_ui_Display(threadStateData));
@@ -77,7 +77,7 @@ label_L1176410929:
     __CN1_DEBUG_INFO(14);
     virtual_com_codename1_media_Media_play__(threadStateData, locals[2].data.o); 
 
-label_L224238994:
+label_L415413446:
 END_TRY(1);    __CN1_DEBUG_INFO(15);
     JUMP_TO(label_L1562764987, 0);
 

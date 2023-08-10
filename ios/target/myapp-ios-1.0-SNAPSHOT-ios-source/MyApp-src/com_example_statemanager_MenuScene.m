@@ -85,10 +85,6 @@ JAVA_VOID com_example_statemanager_MenuScene_draw___com_codename1_ui_Graphics(CO
     locals[1].type = CN1_TYPE_OBJECT;
     __CN1_DEBUG_INFO(18);
     /* CustomInvoke */virtual_com_example_ui_MenuSceneOverlay_draw___com_codename1_ui_Graphics(threadStateData, get_static_com_example_statemanager_MenuScene_menuSceneOverlay(threadStateData), locals[1].data.o); 
-    __CN1_DEBUG_INFO(19);
-    { JAVA_OBJECT tmpResult = virtual_com_example_myapp_Game_getVolumeButton___R_com_example_ui_VolumeButton(threadStateData, get_static_com_example_myapp_Game_game(threadStateData));
-    PUSH_OBJ(tmpResult); }
-    /* CustomInvoke */virtual_com_example_ui_VolumeButton_draw___com_codename1_ui_Graphics(threadStateData, SP[-1].data.o, locals[1].data.o);     SP -= 1;
     __CN1_DEBUG_INFO(20);
     releaseForReturn(threadStateData, cn1LocalsBeginInThread); 
     return;

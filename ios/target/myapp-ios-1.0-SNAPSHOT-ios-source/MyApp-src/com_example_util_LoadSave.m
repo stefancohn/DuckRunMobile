@@ -67,41 +67,41 @@ JAVA_OBJECT com_example_util_LoadSave_getSpriteAtlas___java_lang_String_R_com_co
     DEFINE_METHOD_STACK(4, 5, 0, 10272, 10273);
     locals[0].data.o = __cn1Arg1;
     locals[0].type = CN1_TYPE_OBJECT;
-    int restoreToL62586808401;
-    int tryBlockOffsetL62586808401;
-    DEFINE_CATCH_BLOCK(catch_L62586808401, label_L1119242936, restoreToL62586808401);
-    int restoreToL109918503202;
-    int tryBlockOffsetL109918503202;
-    DEFINE_CATCH_BLOCK(catch_L109918503202, label_L2123914473, restoreToL109918503202);
-    int restoreToL199934876cn1_class_id_java_io_IOException3;
-    int tryBlockOffsetL199934876cn1_class_id_java_io_IOException3;
-    DEFINE_CATCH_BLOCK(catch_L199934876cn1_class_id_java_io_IOException3, label_L708443754, restoreToL199934876cn1_class_id_java_io_IOException3);
+    int restoreToL46347367601;
+    int tryBlockOffsetL46347367601;
+    DEFINE_CATCH_BLOCK(catch_L46347367601, label_L1119242936, restoreToL46347367601);
+    int restoreToL47742533502;
+    int tryBlockOffsetL47742533502;
+    DEFINE_CATCH_BLOCK(catch_L47742533502, label_L2123914473, restoreToL47742533502);
+    int restoreToL120537650cn1_class_id_java_io_IOException3;
+    int tryBlockOffsetL120537650cn1_class_id_java_io_IOException3;
+    DEFINE_CATCH_BLOCK(catch_L120537650cn1_class_id_java_io_IOException3, label_L708443754, restoreToL120537650cn1_class_id_java_io_IOException3);
     __CN1_DEBUG_INFO(19);
     /* VarOp.assignFrom */ locals[1].type=CN1_TYPE_INVALID;    locals[1].data.o = JAVA_NULL /* ACONST_NULL */; 
 locals[1].type=CN1_TYPE_OBJECT;
-label_L199934876:
- tryBlockOffsetL199934876cn1_class_id_java_io_IOException3 = threadStateData->tryBlockOffset;
-    BEGIN_TRY(cn1_class_id_java_io_IOException, catch_L199934876cn1_class_id_java_io_IOException3);
-    restoreToL199934876cn1_class_id_java_io_IOException3 = threadStateData->threadObjectStackOffset;
+label_L120537650:
+ tryBlockOffsetL120537650cn1_class_id_java_io_IOException3 = threadStateData->tryBlockOffset;
+    BEGIN_TRY(cn1_class_id_java_io_IOException, catch_L120537650cn1_class_id_java_io_IOException3);
+    restoreToL120537650cn1_class_id_java_io_IOException3 = threadStateData->threadObjectStackOffset;
 
     __CN1_DEBUG_INFO(20);
     /* VarOp.assignFrom */ locals[2].type=CN1_TYPE_INVALID;    locals[2].data.o = JAVA_NULL /* ACONST_NULL */; 
 locals[2].type=CN1_TYPE_OBJECT;    /* VarOp.assignFrom */ locals[3].type=CN1_TYPE_INVALID;    locals[3].data.o = JAVA_NULL /* ACONST_NULL */; 
 locals[3].type=CN1_TYPE_OBJECT;
-label_L1099185032:
- tryBlockOffsetL109918503202 = threadStateData->tryBlockOffset;
-    BEGIN_TRY(0, catch_L109918503202);
-    restoreToL109918503202 = threadStateData->threadObjectStackOffset;
+label_L477425335:
+ tryBlockOffsetL47742533502 = threadStateData->tryBlockOffset;
+    BEGIN_TRY(0, catch_L47742533502);
+    restoreToL47742533502 = threadStateData->threadObjectStackOffset;
 
     /* VarOp.assignFrom */ locals[4].data.o = /* CustomInvoke */com_codename1_ui_CN_getResourceAsStream___java_lang_String_R_java_io_InputStream(threadStateData, locals[0].data.o);locals[4].type=CN1_TYPE_OBJECT;
-label_L625868084:
- tryBlockOffsetL62586808401 = threadStateData->tryBlockOffset;
-    BEGIN_TRY(0, catch_L62586808401);
-    restoreToL62586808401 = threadStateData->threadObjectStackOffset;
+label_L463473676:
+ tryBlockOffsetL46347367601 = threadStateData->tryBlockOffset;
+    BEGIN_TRY(0, catch_L46347367601);
+    restoreToL46347367601 = threadStateData->threadObjectStackOffset;
 
     __CN1_DEBUG_INFO(21);
     /* VarOp.assignFrom */ locals[1].data.o = /* CustomInvoke */com_codename1_ui_Image_createImage___java_io_InputStream_R_com_codename1_ui_Image(threadStateData, locals[4].data.o);locals[1].type=CN1_TYPE_OBJECT;
-label_L120537650:
+label_L976594834:
 END_TRY(1);    __CN1_DEBUG_INFO(22);
     if (locals[4].data.o==JAVA_NULL) /* IFNULL CustomJump */ JUMP_TO(label_L1091234211, 0);
     virtual_java_io_InputStream_close__(threadStateData, locals[4].data.o); 

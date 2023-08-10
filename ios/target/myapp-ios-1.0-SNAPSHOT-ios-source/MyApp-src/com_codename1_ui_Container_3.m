@@ -112,16 +112,16 @@ JAVA_BOOLEAN com_codename1_ui_Container_3_isInProgress___R_boolean(CODENAME_ONE_
 
 JAVA_VOID com_codename1_ui_Container_3_updateState__(CODENAME_ONE_THREAD_STATE, JAVA_OBJECT  __cn1ThisObject) {
     DEFINE_INSTANCE_METHOD_STACK(4, 2, 0, 3423, 2796);
-    locals[0].data.o = __cn1ThisObject; locals[0].type = CN1_TYPE_OBJECT;     int restoreToL203176851901;
-    int tryBlockOffsetL203176851901;
-    DEFINE_CATCH_BLOCK(catch_L203176851901, label_L525551643, restoreToL203176851901);
+    locals[0].data.o = __cn1ThisObject; locals[0].type = CN1_TYPE_OBJECT;     int restoreToL197510647501;
+    int tryBlockOffsetL197510647501;
+    DEFINE_CATCH_BLOCK(catch_L197510647501, label_L525551643, restoreToL197510647501);
     __CN1_DEBUG_INFO(951);
     if (get_field_com_codename1_ui_Container_3_alreadyAdded(__cn1ThisObject)!=0) /* IFNE CustomJump */ JUMP_TO(label_L801996095, 0);
 
-label_L2031768519:
- tryBlockOffsetL203176851901 = threadStateData->tryBlockOffset;
-    BEGIN_TRY(0, catch_L203176851901);
-    restoreToL203176851901 = threadStateData->threadObjectStackOffset;
+label_L1975106475:
+ tryBlockOffsetL197510647501 = threadStateData->tryBlockOffset;
+    BEGIN_TRY(0, catch_L197510647501);
+    restoreToL197510647501 = threadStateData->threadObjectStackOffset;
 
     __CN1_DEBUG_INFO(953);
     set_field_com_codename1_ui_Container_3_alreadyAdded(threadStateData, 1 /* ICONST_1 */, __cn1ThisObject);
@@ -137,7 +137,7 @@ label_L669501311:
     __CN1_DEBUG_INFO(958);
     /* CustomInvoke */virtual_com_codename1_ui_Container_insertComponentAtImpl___int_com_codename1_ui_Component(threadStateData, get_field_com_codename1_ui_Container_3_this_0(__cn1ThisObject), get_field_com_codename1_ui_Container_3_val_index(__cn1ThisObject), get_field_com_codename1_ui_Container_3_val_cmp(__cn1ThisObject)); 
 
-label_L1103551404:
+label_L2055388805:
 END_TRY(1);    __CN1_DEBUG_INFO(960);
     /* CustomInvoke */PUSH_OBJ(com_codename1_ui_Container_access$200___com_codename1_ui_Container_R_java_util_ArrayList(threadStateData, get_field_com_codename1_ui_Container_3_this_0(__cn1ThisObject)));
     /* CustomInvoke */virtual_java_util_ArrayList_remove___java_lang_Object_R_boolean(threadStateData, SP[-1].data.o, get_field_com_codename1_ui_Container_3_val_insertion(__cn1ThisObject));     SP -= 1;

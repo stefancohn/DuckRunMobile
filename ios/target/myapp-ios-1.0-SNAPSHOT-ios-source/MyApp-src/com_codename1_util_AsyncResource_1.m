@@ -63,9 +63,9 @@ JAVA_VOID com_codename1_util_AsyncResource_1_update___java_util_Observable_java_
     locals[1].type = CN1_TYPE_OBJECT;
     locals[2].data.o = __cn1Arg2;
     locals[2].type = CN1_TYPE_OBJECT;
-    int restoreToL94950633001;
-    int tryBlockOffsetL94950633001;
-    DEFINE_CATCH_BLOCK(catch_L94950633001, label_L27632888, restoreToL94950633001);
+    int restoreToL190127060201;
+    int tryBlockOffsetL190127060201;
+    DEFINE_CATCH_BLOCK(catch_L190127060201, label_L27632888, restoreToL190127060201);
     int restoreToL2763288802;
     int tryBlockOffsetL2763288802;
     DEFINE_CATCH_BLOCK(catch_L2763288802, label_L27632888, restoreToL2763288802);
@@ -79,10 +79,10 @@ JAVA_VOID com_codename1_util_AsyncResource_1_update___java_util_Observable_java_
     BC_ASTORE(3);
     monitorEnter(threadStateData, POP_OBJ());
 
-label_L949506330:
- tryBlockOffsetL94950633001 = threadStateData->tryBlockOffset;
-    BEGIN_TRY(0, catch_L94950633001);
-    restoreToL94950633001 = threadStateData->threadObjectStackOffset;
+label_L1901270602:
+ tryBlockOffsetL190127060201 = threadStateData->tryBlockOffset;
+    BEGIN_TRY(0, catch_L190127060201);
+    restoreToL190127060201 = threadStateData->threadObjectStackOffset;
 
     __CN1_DEBUG_INFO(143);
     virtual_java_lang_Object_notify__(threadStateData, get_field_com_codename1_util_AsyncResource_1_val_complete(__cn1ThisObject)); 
@@ -90,7 +90,7 @@ label_L949506330:
     BC_ALOAD(3);
     monitorExit(threadStateData, POP_OBJ());
 
-label_L1368449285:
+label_L1465861273:
 END_TRY(1);    JUMP_TO(label_L1402120747, 0);
 
 label_L27632888:
@@ -102,7 +102,7 @@ label_L27632888:
     BC_ALOAD(3);
     monitorExit(threadStateData, POP_OBJ());
 
-label_L1041764081:
+label_L1582789771:
 END_TRY(1);    BC_ALOAD(4);
     throwException(threadStateData, POP_OBJ());
 

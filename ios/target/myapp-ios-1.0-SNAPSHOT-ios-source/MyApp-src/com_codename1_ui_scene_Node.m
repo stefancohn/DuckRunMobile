@@ -961,18 +961,18 @@ JAVA_BOOLEAN com_codename1_ui_scene_Node_contains___int_int_R_boolean(CODENAME_O
     DEFINE_INSTANCE_METHOD_STACK(3, 6, 0, 10026, 908);
     locals[0].data.o = __cn1ThisObject; locals[0].type = CN1_TYPE_OBJECT;     ilocals_1_ = __cn1Arg1;
     ilocals_2_ = __cn1Arg2;
-    int restoreToL87066431001;
-    int tryBlockOffsetL87066431001;
-    DEFINE_CATCH_BLOCK(catch_L87066431001, label_L419394876, restoreToL87066431001);
+    int restoreToL15531751401;
+    int tryBlockOffsetL15531751401;
+    DEFINE_CATCH_BLOCK(catch_L15531751401, label_L419394876, restoreToL15531751401);
     int restoreToL41939487602;
     int tryBlockOffsetL41939487602;
     DEFINE_CATCH_BLOCK(catch_L41939487602, label_L419394876, restoreToL41939487602);
     __CN1_DEBUG_INFO(433);
     /* VarOp.assignFrom */ locals[3].data.o = com_codename1_ui_geom_GeneralPath_createFromPool___R_com_codename1_ui_geom_GeneralPath(threadStateData);locals[3].type=CN1_TYPE_OBJECT;
-label_L870664310:
- tryBlockOffsetL87066431001 = threadStateData->tryBlockOffset;
-    BEGIN_TRY(0, catch_L87066431001);
-    restoreToL87066431001 = threadStateData->threadObjectStackOffset;
+label_L155317514:
+ tryBlockOffsetL15531751401 = threadStateData->tryBlockOffset;
+    BEGIN_TRY(0, catch_L15531751401);
+    restoreToL15531751401 = threadStateData->threadObjectStackOffset;
 
     __CN1_DEBUG_INFO(435);
     BC_ALOAD(3);
@@ -984,7 +984,7 @@ label_L870664310:
     __CN1_DEBUG_INFO(436);
     /* VarOp.assignFrom */ ilocals_4_ = /* CustomInvoke */virtual_com_codename1_ui_geom_GeneralPath_contains___int_int_R_boolean(threadStateData, locals[3].data.o, ilocals_1_, ilocals_2_);
 
-label_L898241189:
+label_L1783906680:
 END_TRY(1);    __CN1_DEBUG_INFO(438);
     /* CustomInvoke */com_codename1_ui_geom_GeneralPath_recycle___com_codename1_ui_geom_GeneralPath(threadStateData, locals[3].data.o); 
     __CN1_DEBUG_INFO(436);
@@ -1002,7 +1002,7 @@ label_L419394876:
     __CN1_DEBUG_INFO(438);
     BC_ASTORE(5);
 
-label_L648108451:
+label_L898241189:
 END_TRY(1);    /* CustomInvoke */com_codename1_ui_geom_GeneralPath_recycle___com_codename1_ui_geom_GeneralPath(threadStateData, locals[3].data.o); 
     __CN1_DEBUG_INFO(439);
     BC_ALOAD(5);
@@ -1072,9 +1072,9 @@ JAVA_VOID com_codename1_ui_scene_Node_render___com_codename1_ui_Graphics(CODENAM
     DEFINE_INSTANCE_METHOD_STACK(8, 10, 0, 10026, 10054);
     locals[0].data.o = __cn1ThisObject; locals[0].type = CN1_TYPE_OBJECT;     locals[1].data.o = __cn1Arg1;
     locals[1].type = CN1_TYPE_OBJECT;
-    int restoreToL59790659301;
-    int tryBlockOffsetL59790659301;
-    DEFINE_CATCH_BLOCK(catch_L59790659301, label_L812448650, restoreToL59790659301);
+    int restoreToL160452888401;
+    int tryBlockOffsetL160452888401;
+    DEFINE_CATCH_BLOCK(catch_L160452888401, label_L812448650, restoreToL160452888401);
     int restoreToL81244865002;
     int tryBlockOffsetL81244865002;
     DEFINE_CATCH_BLOCK(catch_L81244865002, label_L812448650, restoreToL81244865002);
@@ -1161,10 +1161,10 @@ label_L780435057:
     __CN1_DEBUG_INFO(486);
     /* CustomInvoke */virtual_com_codename1_ui_Graphics_setAlpha___int(threadStateData, locals[1].data.o, ilocals_5_); 
 
-label_L597906593:
- tryBlockOffsetL59790659301 = threadStateData->tryBlockOffset;
-    BEGIN_TRY(0, catch_L59790659301);
-    restoreToL59790659301 = threadStateData->threadObjectStackOffset;
+label_L1604528884:
+ tryBlockOffsetL160452888401 = threadStateData->tryBlockOffset;
+    BEGIN_TRY(0, catch_L160452888401);
+    restoreToL160452888401 = threadStateData->threadObjectStackOffset;
 
     __CN1_DEBUG_INFO(489);
     if (get_field_com_codename1_ui_scene_Node_renderer(__cn1ThisObject)==JAVA_NULL) /* IFNULL CustomJump */ JUMP_TO(label_L2036555904, 1);
@@ -1196,7 +1196,7 @@ label_L2036555904:
     __CN1_DEBUG_INFO(515);
     /* CustomInvoke */virtual_com_codename1_ui_scene_Node_renderChildren___com_codename1_ui_Graphics(threadStateData, __cn1ThisObject, locals[1].data.o); 
 
-label_L1695628971:
+label_L1174964078:
 END_TRY(1);    __CN1_DEBUG_INFO(517);
     /* CustomInvoke */virtual_com_codename1_ui_Graphics_setAlpha___int(threadStateData, locals[1].data.o, ilocals_4_); 
     __CN1_DEBUG_INFO(518);
@@ -1212,7 +1212,7 @@ label_L812448650:
     __CN1_DEBUG_INFO(517);
     BC_ASTORE(9);
 
-label_L889049552:
+label_L1259016880:
 END_TRY(1);    /* CustomInvoke */virtual_com_codename1_ui_Graphics_setAlpha___int(threadStateData, locals[1].data.o, ilocals_4_); 
     __CN1_DEBUG_INFO(518);
     /* CustomInvoke */virtual_com_codename1_ui_Graphics_setTransform___com_codename1_ui_Transform(threadStateData, locals[1].data.o, locals[2].data.o); 

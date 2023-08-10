@@ -142,23 +142,23 @@ label_L1138845999:
 
 JAVA_VOID com_codename1_ui_Display_DebugRunnable_run__(CODENAME_ONE_THREAD_STATE, JAVA_OBJECT  __cn1ThisObject) {
     DEFINE_INSTANCE_METHOD_STACK(2, 2, 0, 9197, 207);
-    locals[0].data.o = __cn1ThisObject; locals[0].type = CN1_TYPE_OBJECT;     int restoreToL796568322cn1_class_id_java_lang_RuntimeException1;
-    int tryBlockOffsetL796568322cn1_class_id_java_lang_RuntimeException1;
-    DEFINE_CATCH_BLOCK(catch_L796568322cn1_class_id_java_lang_RuntimeException1, label_L668929853, restoreToL796568322cn1_class_id_java_lang_RuntimeException1);
+    locals[0].data.o = __cn1ThisObject; locals[0].type = CN1_TYPE_OBJECT;     int restoreToL21897563cn1_class_id_java_lang_RuntimeException1;
+    int tryBlockOffsetL21897563cn1_class_id_java_lang_RuntimeException1;
+    DEFINE_CATCH_BLOCK(catch_L21897563cn1_class_id_java_lang_RuntimeException1, label_L668929853, restoreToL21897563cn1_class_id_java_lang_RuntimeException1);
     __CN1_DEBUG_INFO(846);
     if (get_field_com_codename1_ui_Display_DebugRunnable_exceptionWrapper(__cn1ThisObject)==JAVA_NULL) /* IFNULL CustomJump */ JUMP_TO(label_L204844842, 0);
 
-label_L796568322:
- tryBlockOffsetL796568322cn1_class_id_java_lang_RuntimeException1 = threadStateData->tryBlockOffset;
-    BEGIN_TRY(cn1_class_id_java_lang_RuntimeException, catch_L796568322cn1_class_id_java_lang_RuntimeException1);
-    restoreToL796568322cn1_class_id_java_lang_RuntimeException1 = threadStateData->threadObjectStackOffset;
+label_L21897563:
+ tryBlockOffsetL21897563cn1_class_id_java_lang_RuntimeException1 = threadStateData->tryBlockOffset;
+    BEGIN_TRY(cn1_class_id_java_lang_RuntimeException, catch_L21897563cn1_class_id_java_lang_RuntimeException1);
+    restoreToL21897563cn1_class_id_java_lang_RuntimeException1 = threadStateData->threadObjectStackOffset;
 
     __CN1_DEBUG_INFO(848);
     /* CustomInvoke */com_codename1_ui_Display_access$002___com_codename1_ui_Display_com_codename1_ui_Display_DebugRunnable_R_com_codename1_ui_Display_DebugRunnable(threadStateData, get_field_com_codename1_ui_Display_DebugRunnable_this_0(__cn1ThisObject), __cn1ThisObject); 
     __CN1_DEBUG_INFO(849);
     virtual_java_lang_Runnable_run__(threadStateData, get_field_com_codename1_ui_Display_DebugRunnable_internal(__cn1ThisObject)); 
 
-label_L1607336783:
+label_L352926996:
 END_TRY(1);    __CN1_DEBUG_INFO(852);
     JUMP_TO(label_L1146423186, 0);
 

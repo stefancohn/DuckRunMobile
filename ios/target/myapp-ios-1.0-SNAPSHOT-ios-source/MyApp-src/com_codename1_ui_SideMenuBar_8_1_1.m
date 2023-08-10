@@ -51,9 +51,9 @@ JAVA_VOID com_codename1_ui_SideMenuBar_8_1_1___INIT_____com_codename1_ui_SideMen
 
 JAVA_VOID com_codename1_ui_SideMenuBar_8_1_1_run__(CODENAME_ONE_THREAD_STATE, JAVA_OBJECT  __cn1ThisObject) {
     DEFINE_INSTANCE_METHOD_STACK(2, 2, 0, 7036, 207);
-    locals[0].data.o = __cn1ThisObject; locals[0].type = CN1_TYPE_OBJECT;     int restoreToL1820021131cn1_class_id_java_lang_Exception1;
-    int tryBlockOffsetL1820021131cn1_class_id_java_lang_Exception1;
-    DEFINE_CATCH_BLOCK(catch_L1820021131cn1_class_id_java_lang_Exception1, label_L221402392, restoreToL1820021131cn1_class_id_java_lang_Exception1);
+    locals[0].data.o = __cn1ThisObject; locals[0].type = CN1_TYPE_OBJECT;     int restoreToL89236047cn1_class_id_java_lang_Exception1;
+    int tryBlockOffsetL89236047cn1_class_id_java_lang_Exception1;
+    DEFINE_CATCH_BLOCK(catch_L89236047cn1_class_id_java_lang_Exception1, label_L221402392, restoreToL89236047cn1_class_id_java_lang_Exception1);
 
 label_L573819584:
     __CN1_DEBUG_INFO(1170);
@@ -63,15 +63,15 @@ label_L573819584:
     /* CustomInvoke */PUSH_OBJ(com_codename1_ui_SideMenuBar_access$000___com_codename1_ui_SideMenuBar_R_com_codename1_ui_Form(threadStateData, get_field_com_codename1_ui_SideMenuBar_8_this_0(get_field_com_codename1_ui_SideMenuBar_8_1_this_1(get_field_com_codename1_ui_SideMenuBar_8_1_1_this_2(__cn1ThisObject)))));
     SP-=2; if((*SP).data.o == SP[1].data.o) /* IF_ACMPEQ */ JUMP_TO(label_L994581493, 0);
 
-label_L1820021131:
- tryBlockOffsetL1820021131cn1_class_id_java_lang_Exception1 = threadStateData->tryBlockOffset;
-    BEGIN_TRY(cn1_class_id_java_lang_Exception, catch_L1820021131cn1_class_id_java_lang_Exception1);
-    restoreToL1820021131cn1_class_id_java_lang_Exception1 = threadStateData->threadObjectStackOffset;
+label_L89236047:
+ tryBlockOffsetL89236047cn1_class_id_java_lang_Exception1 = threadStateData->tryBlockOffset;
+    BEGIN_TRY(cn1_class_id_java_lang_Exception, catch_L89236047cn1_class_id_java_lang_Exception1);
+    restoreToL89236047cn1_class_id_java_lang_Exception1 = threadStateData->threadObjectStackOffset;
 
     __CN1_DEBUG_INFO(1172);
     /* CustomInvoke */java_lang_Thread_sleep___long(threadStateData, 40LL); 
 
-label_L1680917905:
+label_L1930135443:
 END_TRY(1);    __CN1_DEBUG_INFO(1174);
     JUMP_TO(label_L573819584, 0);
 

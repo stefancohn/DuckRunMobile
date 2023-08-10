@@ -181,9 +181,9 @@ JAVA_VOID com_codename1_ui_plaf_CSSBorder_BoxShadow_paint___com_codename1_ui_Gra
     locals[2].type = CN1_TYPE_OBJECT;
     locals[3].data.o = __cn1Arg3;
     locals[3].type = CN1_TYPE_OBJECT;
-    int restoreToL26048618801;
-    int tryBlockOffsetL26048618801;
-    DEFINE_CATCH_BLOCK(catch_L26048618801, label_L1982591789, restoreToL26048618801);
+    int restoreToL140344268401;
+    int tryBlockOffsetL140344268401;
+    DEFINE_CATCH_BLOCK(catch_L140344268401, label_L1982591789, restoreToL140344268401);
     int restoreToL198259178902;
     int tryBlockOffsetL198259178902;
     DEFINE_CATCH_BLOCK(catch_L198259178902, label_L1982591789, restoreToL198259178902);
@@ -197,10 +197,10 @@ JAVA_VOID com_codename1_ui_plaf_CSSBorder_BoxShadow_paint___com_codename1_ui_Gra
     /* CustomInvoke */com_codename1_ui_plaf_CSSBorder_access$400___com_codename1_ui_plaf_CSSBorder_com_codename1_ui_Graphics_com_codename1_ui_plaf_CSSBorder_Color(threadStateData, get_field_com_codename1_ui_plaf_CSSBorder_BoxShadow_this_0(__cn1ThisObject), locals[1].data.o, get_field_com_codename1_ui_plaf_CSSBorder_BoxShadow_color(__cn1ThisObject)); 
     __CN1_DEBUG_INFO(596);
     /* VarOp.assignFrom */ locals[7].data.o = com_codename1_ui_geom_GeneralPath_createFromPool___R_com_codename1_ui_geom_GeneralPath(threadStateData);locals[7].type=CN1_TYPE_OBJECT;
-label_L260486188:
- tryBlockOffsetL26048618801 = threadStateData->tryBlockOffset;
-    BEGIN_TRY(0, catch_L26048618801);
-    restoreToL26048618801 = threadStateData->threadObjectStackOffset;
+label_L1403442684:
+ tryBlockOffsetL140344268401 = threadStateData->tryBlockOffset;
+    BEGIN_TRY(0, catch_L140344268401);
+    restoreToL140344268401 = threadStateData->threadObjectStackOffset;
 
     __CN1_DEBUG_INFO(598);
     /* CustomInvoke */com_codename1_ui_plaf_CSSBorder_access$500___com_codename1_ui_plaf_CSSBorder_com_codename1_ui_geom_GeneralPath_double_double_double_double_R_com_codename1_ui_geom_GeneralPath(threadStateData, get_field_com_codename1_ui_plaf_CSSBorder_BoxShadow_this_0(__cn1ThisObject), locals[7].data.o, virtual_com_codename1_ui_geom_Rectangle2D_getX___R_double(threadStateData, locals[3].data.o), virtual_com_codename1_ui_geom_Rectangle2D_getY___R_double(threadStateData, locals[3].data.o), virtual_com_codename1_ui_geom_Rectangle2D_getWidth___R_double(threadStateData, locals[3].data.o), virtual_com_codename1_ui_geom_Rectangle2D_getHeight___R_double(threadStateData, locals[3].data.o)); 
@@ -211,7 +211,7 @@ label_L260486188:
     __CN1_DEBUG_INFO(600);
     /* CustomInvoke */virtual_com_codename1_ui_Graphics_fillShape___com_codename1_ui_geom_Shape(threadStateData, locals[1].data.o, locals[7].data.o); 
 
-label_L1785366805:
+label_L1068004739:
 END_TRY(1);    __CN1_DEBUG_INFO(603);
     /* CustomInvoke */com_codename1_ui_geom_GeneralPath_recycle___com_codename1_ui_geom_GeneralPath(threadStateData, locals[7].data.o); 
     __CN1_DEBUG_INFO(604);
@@ -231,7 +231,7 @@ label_L1982591789:
     __CN1_DEBUG_INFO(603);
     BC_ASTORE(8);
 
-label_L217212459:
+label_L485859751:
 END_TRY(1);    /* CustomInvoke */com_codename1_ui_geom_GeneralPath_recycle___com_codename1_ui_geom_GeneralPath(threadStateData, locals[7].data.o); 
     __CN1_DEBUG_INFO(604);
     /* CustomInvoke */virtual_com_codename1_ui_Graphics_setAlpha___int(threadStateData, locals[1].data.o, ilocals_4_); 

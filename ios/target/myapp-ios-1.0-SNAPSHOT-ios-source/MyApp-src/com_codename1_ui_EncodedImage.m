@@ -308,7 +308,7 @@ label_L1842102517:
     __CN1_DEBUG_INFO(171);
     BC_ALOAD(5);
 
-label_L642783891:
+label_L192232101:
 END_TRY(1);    releaseForReturnInException(threadStateData, cn1LocalsBeginInThread, methodBlockOffset); 
     return POP_OBJ();
 
@@ -414,7 +414,7 @@ label_L74735260:
     __CN1_DEBUG_INFO(219);
     BC_ALOAD(8);
 
-label_L2000661224:
+label_L710476622:
 END_TRY(1);    releaseForReturnInException(threadStateData, cn1LocalsBeginInThread, methodBlockOffset); 
     return POP_OBJ();
 
@@ -760,7 +760,7 @@ locals[3].type=CN1_TYPE_OBJECT;    __CN1_DEBUG_INFO(371);
     PUSH_OBJ(tmpResult); }
     virtual_com_codename1_impl_CodenameOneImplementation_setImageName___java_lang_Object_java_lang_String(threadStateData, SP[-3].data.o, SP[-2].data.o, SP[-1].data.o);     SP-= 3;
 
-label_L51289896:
+label_L1526782252:
 END_TRY(1);    __CN1_DEBUG_INFO(375);
     JUMP_TO(label_L294649085, 0);
 
@@ -1308,7 +1308,7 @@ label_L1961667779:
     __CN1_DEBUG_INFO(636);
     BC_ALOAD(6);
 
-label_L100446755:
+label_L2130300932:
 END_TRY(1);    releaseForReturnInException(threadStateData, cn1LocalsBeginInThread, methodBlockOffset); 
     return POP_OBJ();
 

@@ -78,9 +78,9 @@ JAVA_VOID com_codename1_impl_ios_IOSImplementation_11___INIT_____boolean_int_jav
 
 JAVA_VOID com_codename1_impl_ios_IOSImplementation_11_run__(CODENAME_ONE_THREAD_STATE, JAVA_OBJECT  __cn1ThisObject) {
     DEFINE_INSTANCE_METHOD_STACK(3, 4, 0, 9481, 207);
-    locals[0].data.o = __cn1ThisObject; locals[0].type = CN1_TYPE_OBJECT;     int restoreToL92190563901;
-    int tryBlockOffsetL92190563901;
-    DEFINE_CATCH_BLOCK(catch_L92190563901, label_L1799424291, restoreToL92190563901);
+    locals[0].data.o = __cn1ThisObject; locals[0].type = CN1_TYPE_OBJECT;     int restoreToL205040923201;
+    int tryBlockOffsetL205040923201;
+    DEFINE_CATCH_BLOCK(catch_L205040923201, label_L1799424291, restoreToL205040923201);
     int restoreToL179942429102;
     int tryBlockOffsetL179942429102;
     DEFINE_CATCH_BLOCK(catch_L179942429102, label_L1799424291, restoreToL179942429102);
@@ -108,10 +108,10 @@ label_L1835316563:
     BC_ASTORE(1);
     monitorEnter(threadStateData, POP_OBJ());
 
-label_L921905639:
- tryBlockOffsetL92190563901 = threadStateData->tryBlockOffset;
-    BEGIN_TRY(0, catch_L92190563901);
-    restoreToL92190563901 = threadStateData->threadObjectStackOffset;
+label_L2050409232:
+ tryBlockOffsetL205040923201 = threadStateData->tryBlockOffset;
+    BEGIN_TRY(0, catch_L205040923201);
+    restoreToL205040923201 = threadStateData->threadObjectStackOffset;
 
     __CN1_DEBUG_INFO(991);
     /* CustomInvoke */PUSH_OBJ(com_codename1_impl_ios_IOSImplementation_access$200___com_codename1_impl_ios_IOSImplementation_R_com_codename1_ui_TextArea(threadStateData, get_static_com_codename1_impl_ios_IOSImplementation_instance(threadStateData)));
@@ -156,7 +156,7 @@ label_L1857007886:
     BC_ALOAD(1);
     monitorExit(threadStateData, POP_OBJ());
 
-label_L2047951466:
+label_L1226529753:
 END_TRY(1);    JUMP_TO(label_L648630181, 0);
 
 label_L1799424291:
@@ -168,7 +168,7 @@ label_L1799424291:
     BC_ALOAD(1);
     monitorExit(threadStateData, POP_OBJ());
 
-label_L354419506:
+label_L1160360550:
 END_TRY(1);    BC_ALOAD(3);
     throwException(threadStateData, POP_OBJ());
 

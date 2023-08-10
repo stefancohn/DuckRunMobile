@@ -54,21 +54,21 @@ JAVA_VOID com_codename1_io_NetworkManager_1_run__(CODENAME_ONE_THREAD_STATE, JAV
     volatile JAVA_INT ilocals_3_ = 0; /* v3 */
     volatile JAVA_INT ilocals_5_ = 0; /* v5 */
     DEFINE_INSTANCE_METHOD_STACK(3, 7, 0, 3222, 207);
-    locals[0].data.o = __cn1ThisObject; locals[0].type = CN1_TYPE_OBJECT;     int restoreToL1906019406cn1_class_id_java_lang_InterruptedException1;
-    int tryBlockOffsetL1906019406cn1_class_id_java_lang_InterruptedException1;
-    DEFINE_CATCH_BLOCK(catch_L1906019406cn1_class_id_java_lang_InterruptedException1, label_L954764819, restoreToL1906019406cn1_class_id_java_lang_InterruptedException1);
-    int restoreToL1717355893cn1_class_id_java_lang_InterruptedException2;
-    int tryBlockOffsetL1717355893cn1_class_id_java_lang_InterruptedException2;
-    DEFINE_CATCH_BLOCK(catch_L1717355893cn1_class_id_java_lang_InterruptedException2, label_L980552419, restoreToL1717355893cn1_class_id_java_lang_InterruptedException2);
+    locals[0].data.o = __cn1ThisObject; locals[0].type = CN1_TYPE_OBJECT;     int restoreToL224181952cn1_class_id_java_lang_InterruptedException1;
+    int tryBlockOffsetL224181952cn1_class_id_java_lang_InterruptedException1;
+    DEFINE_CATCH_BLOCK(catch_L224181952cn1_class_id_java_lang_InterruptedException1, label_L954764819, restoreToL224181952cn1_class_id_java_lang_InterruptedException1);
+    int restoreToL2127218518cn1_class_id_java_lang_InterruptedException2;
+    int tryBlockOffsetL2127218518cn1_class_id_java_lang_InterruptedException2;
+    DEFINE_CATCH_BLOCK(catch_L2127218518cn1_class_id_java_lang_InterruptedException2, label_L980552419, restoreToL2127218518cn1_class_id_java_lang_InterruptedException2);
 
 label_L1801753119:
     __CN1_DEBUG_INFO(528);
     if (/* CustomInvoke */com_codename1_io_NetworkManager_access$700___com_codename1_io_NetworkManager_R_boolean(threadStateData, get_field_com_codename1_io_NetworkManager_1_this_0(__cn1ThisObject))==0) /* IFEQ CustomJump */ JUMP_TO(label_L535002407, 0);
 
-label_L1906019406:
- tryBlockOffsetL1906019406cn1_class_id_java_lang_InterruptedException1 = threadStateData->tryBlockOffset;
-    BEGIN_TRY(cn1_class_id_java_lang_InterruptedException, catch_L1906019406cn1_class_id_java_lang_InterruptedException1);
-    restoreToL1906019406cn1_class_id_java_lang_InterruptedException1 = threadStateData->threadObjectStackOffset;
+label_L224181952:
+ tryBlockOffsetL224181952cn1_class_id_java_lang_InterruptedException1 = threadStateData->tryBlockOffset;
+    BEGIN_TRY(cn1_class_id_java_lang_InterruptedException, catch_L224181952cn1_class_id_java_lang_InterruptedException1);
+    restoreToL224181952cn1_class_id_java_lang_InterruptedException1 = threadStateData->threadObjectStackOffset;
 
     __CN1_DEBUG_INFO(530);
     /* CustomInvoke */PUSH_INT(com_codename1_io_NetworkManager_access$1100___com_codename1_io_NetworkManager_R_int(threadStateData, get_field_com_codename1_io_NetworkManager_1_this_0(__cn1ThisObject)));
@@ -77,7 +77,7 @@ label_L1906019406:
     SP[-1].data.l = SP[-1].data.i; /* I2L */
     java_lang_Thread_sleep___long(threadStateData, SP[-1].data.l);     SP-= 1;
 
-label_L425301507:
+label_L870945399:
 END_TRY(1);    __CN1_DEBUG_INFO(533);
     JUMP_TO(label_L387505776, 0);
 
@@ -121,15 +121,15 @@ label_L340234965:
     __CN1_DEBUG_INFO(550);
     virtual_com_codename1_io_NetworkManager_NetworkThread_interrupt__(threadStateData, CN1_ARRAY_ELEMENT_OBJECT(locals[1].data.o, ilocals_3_)); 
 
-label_L1717355893:
- tryBlockOffsetL1717355893cn1_class_id_java_lang_InterruptedException2 = threadStateData->tryBlockOffset;
-    BEGIN_TRY(cn1_class_id_java_lang_InterruptedException, catch_L1717355893cn1_class_id_java_lang_InterruptedException2);
-    restoreToL1717355893cn1_class_id_java_lang_InterruptedException2 = threadStateData->threadObjectStackOffset;
+label_L2127218518:
+ tryBlockOffsetL2127218518cn1_class_id_java_lang_InterruptedException2 = threadStateData->tryBlockOffset;
+    BEGIN_TRY(cn1_class_id_java_lang_InterruptedException, catch_L2127218518cn1_class_id_java_lang_InterruptedException2);
+    restoreToL2127218518cn1_class_id_java_lang_InterruptedException2 = threadStateData->threadObjectStackOffset;
 
     __CN1_DEBUG_INFO(552);
     /* CustomInvoke */java_lang_Thread_sleep___long(threadStateData, 500LL); 
 
-label_L1317293727:
+label_L1906019406:
 END_TRY(1);    __CN1_DEBUG_INFO(555);
     JUMP_TO(label_L497424937, 0);
 

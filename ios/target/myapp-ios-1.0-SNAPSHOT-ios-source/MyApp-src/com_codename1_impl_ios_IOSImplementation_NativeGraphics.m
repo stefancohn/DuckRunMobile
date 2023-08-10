@@ -911,7 +911,7 @@ label_L812168041:
     __CN1_DEBUG_INFO(4567);
     /* CustomInvoke */virtual_com_codename1_ui_Transform_getInverse___com_codename1_ui_Transform(threadStateData, get_field_com_codename1_impl_ios_IOSImplementation_NativeGraphics_transform(__cn1ThisObject), get_field_com_codename1_impl_ios_IOSImplementation_NativeGraphics_inverseTransform(__cn1ThisObject)); 
 
-label_L1379756869:
+label_L2024314110:
 END_TRY(1);    __CN1_DEBUG_INFO(4570);
     JUMP_TO(label_L399149970, 0);
 
@@ -1910,18 +1910,18 @@ JAVA_VOID com_codename1_impl_ios_IOSImplementation_NativeGraphics_fillPolygon___
     locals[4].data.o = __cn1Arg4;
     locals[4].type = CN1_TYPE_OBJECT;
     ilocals_5_ = __cn1Arg5;
-    int restoreToL61640111901;
-    int tryBlockOffsetL61640111901;
-    DEFINE_CATCH_BLOCK(catch_L61640111901, label_L931911789, restoreToL61640111901);
+    int restoreToL191927798101;
+    int tryBlockOffsetL191927798101;
+    DEFINE_CATCH_BLOCK(catch_L191927798101, label_L931911789, restoreToL191927798101);
     int restoreToL93191178902;
     int tryBlockOffsetL93191178902;
     DEFINE_CATCH_BLOCK(catch_L93191178902, label_L931911789, restoreToL93191178902);
     __CN1_DEBUG_INFO(4952);
     /* VarOp.assignFrom */ locals[6].data.o = com_codename1_ui_geom_GeneralPath_createFromPool___R_com_codename1_ui_geom_GeneralPath(threadStateData);locals[6].type=CN1_TYPE_OBJECT;
-label_L616401119:
- tryBlockOffsetL61640111901 = threadStateData->tryBlockOffset;
-    BEGIN_TRY(0, catch_L61640111901);
-    restoreToL61640111901 = threadStateData->threadObjectStackOffset;
+label_L1919277981:
+ tryBlockOffsetL191927798101 = threadStateData->tryBlockOffset;
+    BEGIN_TRY(0, catch_L191927798101);
+    restoreToL191927798101 = threadStateData->threadObjectStackOffset;
 
     __CN1_DEBUG_INFO(4954);
     /* VarOp.assignFrom */     ilocals_7_ = 0 /* ICONST_0 */; 
@@ -1949,7 +1949,7 @@ label_L562685863:
     __CN1_DEBUG_INFO(4962);
     /* CustomInvoke */virtual_com_codename1_impl_ios_IOSImplementation_NativeGraphics_nativeFillShape___com_codename1_ui_geom_Shape(threadStateData, __cn1ThisObject, locals[6].data.o); 
 
-label_L2027427558:
+label_L879306599:
 END_TRY(1);    __CN1_DEBUG_INFO(4964);
     /* CustomInvoke */com_codename1_ui_geom_GeneralPath_recycle___com_codename1_ui_geom_GeneralPath(threadStateData, locals[6].data.o); 
     __CN1_DEBUG_INFO(4965);
@@ -1963,7 +1963,7 @@ label_L931911789:
     __CN1_DEBUG_INFO(4964);
     BC_ASTORE(8);
 
-label_L1164504888:
+label_L182490344:
 END_TRY(1);    /* CustomInvoke */com_codename1_ui_geom_GeneralPath_recycle___com_codename1_ui_geom_GeneralPath(threadStateData, locals[6].data.o); 
     __CN1_DEBUG_INFO(4965);
     BC_ALOAD(8);

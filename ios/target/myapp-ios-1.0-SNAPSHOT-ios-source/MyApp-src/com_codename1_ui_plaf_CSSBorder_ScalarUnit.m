@@ -379,21 +379,21 @@ JAVA_BOOLEAN com_codename1_ui_plaf_CSSBorder_ScalarUnit_isInt___java_lang_String
     DEFINE_METHOD_STACK(1, 2, 0, 5747, 5752);
     locals[0].data.o = __cn1Arg1;
     locals[0].type = CN1_TYPE_OBJECT;
-    int restoreToL1087991252cn1_class_id_java_lang_Throwable1;
-    int tryBlockOffsetL1087991252cn1_class_id_java_lang_Throwable1;
-    DEFINE_CATCH_BLOCK(catch_L1087991252cn1_class_id_java_lang_Throwable1, label_L700171153, restoreToL1087991252cn1_class_id_java_lang_Throwable1);
+    int restoreToL66707894cn1_class_id_java_lang_Throwable1;
+    int tryBlockOffsetL66707894cn1_class_id_java_lang_Throwable1;
+    DEFINE_CATCH_BLOCK(catch_L66707894cn1_class_id_java_lang_Throwable1, label_L700171153, restoreToL66707894cn1_class_id_java_lang_Throwable1);
 
-label_L1087991252:
- tryBlockOffsetL1087991252cn1_class_id_java_lang_Throwable1 = threadStateData->tryBlockOffset;
-    BEGIN_TRY(cn1_class_id_java_lang_Throwable, catch_L1087991252cn1_class_id_java_lang_Throwable1);
-    restoreToL1087991252cn1_class_id_java_lang_Throwable1 = threadStateData->threadObjectStackOffset;
+label_L66707894:
+ tryBlockOffsetL66707894cn1_class_id_java_lang_Throwable1 = threadStateData->tryBlockOffset;
+    BEGIN_TRY(cn1_class_id_java_lang_Throwable, catch_L66707894cn1_class_id_java_lang_Throwable1);
+    restoreToL66707894cn1_class_id_java_lang_Throwable1 = threadStateData->threadObjectStackOffset;
 
     __CN1_DEBUG_INFO(472);
     /* CustomInvoke */java_lang_Integer_parseInt___java_lang_String_R_int(threadStateData, locals[0].data.o); 
     __CN1_DEBUG_INFO(473);
     PUSH_INT(1); /* ICONST_1 */
 
-label_L207732776:
+label_L608976269:
 END_TRY(1);    releaseForReturnInException(threadStateData, cn1LocalsBeginInThread, methodBlockOffset); return SP[-1].data.i;
 
 label_L700171153:
@@ -409,21 +409,21 @@ JAVA_BOOLEAN com_codename1_ui_plaf_CSSBorder_ScalarUnit_isFloat___java_lang_Stri
     DEFINE_METHOD_STACK(1, 2, 0, 5747, 5753);
     locals[0].data.o = __cn1Arg1;
     locals[0].type = CN1_TYPE_OBJECT;
-    int restoreToL734711682cn1_class_id_java_lang_Throwable1;
-    int tryBlockOffsetL734711682cn1_class_id_java_lang_Throwable1;
-    DEFINE_CATCH_BLOCK(catch_L734711682cn1_class_id_java_lang_Throwable1, label_L881280045, restoreToL734711682cn1_class_id_java_lang_Throwable1);
+    int restoreToL1233400956cn1_class_id_java_lang_Throwable1;
+    int tryBlockOffsetL1233400956cn1_class_id_java_lang_Throwable1;
+    DEFINE_CATCH_BLOCK(catch_L1233400956cn1_class_id_java_lang_Throwable1, label_L881280045, restoreToL1233400956cn1_class_id_java_lang_Throwable1);
 
-label_L734711682:
- tryBlockOffsetL734711682cn1_class_id_java_lang_Throwable1 = threadStateData->tryBlockOffset;
-    BEGIN_TRY(cn1_class_id_java_lang_Throwable, catch_L734711682cn1_class_id_java_lang_Throwable1);
-    restoreToL734711682cn1_class_id_java_lang_Throwable1 = threadStateData->threadObjectStackOffset;
+label_L1233400956:
+ tryBlockOffsetL1233400956cn1_class_id_java_lang_Throwable1 = threadStateData->tryBlockOffset;
+    BEGIN_TRY(cn1_class_id_java_lang_Throwable, catch_L1233400956cn1_class_id_java_lang_Throwable1);
+    restoreToL1233400956cn1_class_id_java_lang_Throwable1 = threadStateData->threadObjectStackOffset;
 
     __CN1_DEBUG_INFO(481);
     /* CustomInvoke */java_lang_Float_parseFloat___java_lang_String_R_float(threadStateData, locals[0].data.o); 
     __CN1_DEBUG_INFO(482);
     PUSH_INT(1); /* ICONST_1 */
 
-label_L1132800339:
+label_L580142164:
 END_TRY(1);    releaseForReturnInException(threadStateData, cn1LocalsBeginInThread, methodBlockOffset); return SP[-1].data.i;
 
 label_L881280045:

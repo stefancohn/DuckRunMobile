@@ -98,14 +98,14 @@ JAVA_VOID com_codename1_impl_CodenameOneImplementation_3___INIT_____com_codename
 
 JAVA_VOID com_codename1_impl_CodenameOneImplementation_3_run__(CODENAME_ONE_THREAD_STATE, JAVA_OBJECT  __cn1ThisObject) {
     DEFINE_INSTANCE_METHOD_STACK(5, 2, 0, 8881, 207);
-    locals[0].data.o = __cn1ThisObject; locals[0].type = CN1_TYPE_OBJECT;     int restoreToL880234640cn1_class_id_java_lang_Throwable1;
-    int tryBlockOffsetL880234640cn1_class_id_java_lang_Throwable1;
-    DEFINE_CATCH_BLOCK(catch_L880234640cn1_class_id_java_lang_Throwable1, label_L1370224403, restoreToL880234640cn1_class_id_java_lang_Throwable1);
+    locals[0].data.o = __cn1ThisObject; locals[0].type = CN1_TYPE_OBJECT;     int restoreToL1892106686cn1_class_id_java_lang_Throwable1;
+    int tryBlockOffsetL1892106686cn1_class_id_java_lang_Throwable1;
+    DEFINE_CATCH_BLOCK(catch_L1892106686cn1_class_id_java_lang_Throwable1, label_L1370224403, restoreToL1892106686cn1_class_id_java_lang_Throwable1);
 
-label_L880234640:
- tryBlockOffsetL880234640cn1_class_id_java_lang_Throwable1 = threadStateData->tryBlockOffset;
-    BEGIN_TRY(cn1_class_id_java_lang_Throwable, catch_L880234640cn1_class_id_java_lang_Throwable1);
-    restoreToL880234640cn1_class_id_java_lang_Throwable1 = threadStateData->threadObjectStackOffset;
+label_L1892106686:
+ tryBlockOffsetL1892106686cn1_class_id_java_lang_Throwable1 = threadStateData->tryBlockOffset;
+    BEGIN_TRY(cn1_class_id_java_lang_Throwable, catch_L1892106686cn1_class_id_java_lang_Throwable1);
+    restoreToL1892106686cn1_class_id_java_lang_Throwable1 = threadStateData->threadObjectStackOffset;
 
     __CN1_DEBUG_INFO(3908);
     PUSH_POINTER(get_field_com_codename1_impl_CodenameOneImplementation_3_val_out(__cn1ThisObject));
@@ -113,7 +113,7 @@ label_L880234640:
     PUSH_OBJ(tmpResult); }
     virtual_com_codename1_util_AsyncResource_complete___java_lang_Object(threadStateData, SP[-2].data.o, SP[-1].data.o);     SP-= 2;
 
-label_L2121739537:
+label_L101832807:
 END_TRY(1);    __CN1_DEBUG_INFO(3911);
     JUMP_TO(label_L246264949, 0);
 

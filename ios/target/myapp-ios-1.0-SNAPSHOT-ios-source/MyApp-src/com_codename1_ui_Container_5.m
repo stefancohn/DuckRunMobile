@@ -88,23 +88,23 @@ JAVA_BOOLEAN com_codename1_ui_Container_5_isInProgress___R_boolean(CODENAME_ONE_
 
 JAVA_VOID com_codename1_ui_Container_5_updateState__(CODENAME_ONE_THREAD_STATE, JAVA_OBJECT  __cn1ThisObject) {
     DEFINE_INSTANCE_METHOD_STACK(2, 2, 0, 3427, 2796);
-    locals[0].data.o = __cn1ThisObject; locals[0].type = CN1_TYPE_OBJECT;     int restoreToL65996635801;
-    int tryBlockOffsetL65996635801;
-    DEFINE_CATCH_BLOCK(catch_L65996635801, label_L1436347886, restoreToL65996635801);
+    locals[0].data.o = __cn1ThisObject; locals[0].type = CN1_TYPE_OBJECT;     int restoreToL171515768001;
+    int tryBlockOffsetL171515768001;
+    DEFINE_CATCH_BLOCK(catch_L171515768001, label_L1436347886, restoreToL171515768001);
     __CN1_DEBUG_INFO(1352);
     if (get_field_com_codename1_ui_Container_5_alreadyRemoved(__cn1ThisObject)!=0) /* IFNE CustomJump */ JUMP_TO(label_L406265225, 0);
 
-label_L659966358:
- tryBlockOffsetL65996635801 = threadStateData->tryBlockOffset;
-    BEGIN_TRY(0, catch_L65996635801);
-    restoreToL65996635801 = threadStateData->threadObjectStackOffset;
+label_L1715157680:
+ tryBlockOffsetL171515768001 = threadStateData->tryBlockOffset;
+    BEGIN_TRY(0, catch_L171515768001);
+    restoreToL171515768001 = threadStateData->threadObjectStackOffset;
 
     __CN1_DEBUG_INFO(1354);
     set_field_com_codename1_ui_Container_5_alreadyRemoved(threadStateData, 1 /* ICONST_1 */, __cn1ThisObject);
     __CN1_DEBUG_INFO(1355);
     /* CustomInvoke */virtual_com_codename1_ui_Container_removeComponentImplNoAnimationSafety___com_codename1_ui_Component(threadStateData, get_field_com_codename1_ui_Container_5_this_0(__cn1ThisObject), get_field_com_codename1_ui_Container_5_val_cmp(__cn1ThisObject)); 
 
-label_L411502966:
+label_L2018842234:
 END_TRY(1);    __CN1_DEBUG_INFO(1357);
     /* CustomInvoke */PUSH_OBJ(com_codename1_ui_Container_access$200___com_codename1_ui_Container_R_java_util_ArrayList(threadStateData, get_field_com_codename1_ui_Container_5_this_0(__cn1ThisObject)));
     /* CustomInvoke */virtual_java_util_ArrayList_remove___java_lang_Object_R_boolean(threadStateData, SP[-1].data.o, get_field_com_codename1_ui_Container_5_val_removed(__cn1ThisObject));     SP -= 1;

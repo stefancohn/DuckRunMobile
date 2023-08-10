@@ -152,22 +152,22 @@ JAVA_VOID com_codename1_io_FileSystemStorage_deleteRetry___java_lang_String_int(
     locals[0].data.o = __cn1ThisObject; locals[0].type = CN1_TYPE_OBJECT;     locals[1].data.o = __cn1Arg1;
     locals[1].type = CN1_TYPE_OBJECT;
     ilocals_2_ = __cn1Arg2;
-    int restoreToL419560010cn1_class_id_java_lang_Throwable1;
-    int tryBlockOffsetL419560010cn1_class_id_java_lang_Throwable1;
-    DEFINE_CATCH_BLOCK(catch_L419560010cn1_class_id_java_lang_Throwable1, label_L1438317505, restoreToL419560010cn1_class_id_java_lang_Throwable1);
+    int restoreToL1120078313cn1_class_id_java_lang_Throwable1;
+    int tryBlockOffsetL1120078313cn1_class_id_java_lang_Throwable1;
+    DEFINE_CATCH_BLOCK(catch_L1120078313cn1_class_id_java_lang_Throwable1, label_L1438317505, restoreToL1120078313cn1_class_id_java_lang_Throwable1);
     __CN1_DEBUG_INFO(167);
     java_lang_System_gc__(threadStateData); 
 
-label_L419560010:
- tryBlockOffsetL419560010cn1_class_id_java_lang_Throwable1 = threadStateData->tryBlockOffset;
-    BEGIN_TRY(cn1_class_id_java_lang_Throwable, catch_L419560010cn1_class_id_java_lang_Throwable1);
-    restoreToL419560010cn1_class_id_java_lang_Throwable1 = threadStateData->threadObjectStackOffset;
+label_L1120078313:
+ tryBlockOffsetL1120078313cn1_class_id_java_lang_Throwable1 = threadStateData->tryBlockOffset;
+    BEGIN_TRY(cn1_class_id_java_lang_Throwable, catch_L1120078313cn1_class_id_java_lang_Throwable1);
+    restoreToL1120078313cn1_class_id_java_lang_Throwable1 = threadStateData->threadObjectStackOffset;
 
     __CN1_DEBUG_INFO(169);
     PUSH_OBJ(com_codename1_io_Util_getImplementation___R_com_codename1_impl_CodenameOneImplementation(threadStateData));
     /* CustomInvoke */virtual_com_codename1_impl_CodenameOneImplementation_deleteFile___java_lang_String(threadStateData, SP[-1].data.o, locals[1].data.o);     SP -= 1;
 
-label_L1129788610:
+label_L1858379850:
 END_TRY(1);    __CN1_DEBUG_INFO(171);
     JUMP_TO(label_L616302301, 0);
 
