@@ -42,7 +42,7 @@ public class PlayingScene extends Scene {
     //implements the shiftLevelRight thingy to shift the level every 50 updates
     public void constantScreenMove() { 
         timerForConstantScreenMoveMethod++;
-        if ((int)PlayingScene.gameScore > 3) { //caps off screen move once difficulty hits >6 to fastest screen move
+        if ((int)PlayingScene.gameScore > 2) { //caps off screen move once difficulty hits >2 to fastest screen move
             constantScreenMoveMethod();
         } else {
             if (timerForConstantScreenMoveMethod % 2 == 0) { //mid diff
