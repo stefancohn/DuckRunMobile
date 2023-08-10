@@ -67,27 +67,27 @@ JAVA_VOID com_codename1_ui_TextArea_TextAreaInputDevice___INIT_____com_codename1
 JAVA_VOID com_codename1_ui_TextArea_TextAreaInputDevice_close__(CODENAME_ONE_THREAD_STATE, JAVA_OBJECT  __cn1ThisObject) {
     DEFINE_INSTANCE_METHOD_STACK(1, 1, 0, 6843, 933);
     locals[0].data.o = __cn1ThisObject; locals[0].type = CN1_TYPE_OBJECT;     __CN1_DEBUG_INFO(1977);
-    if (get_field_com_codename1_ui_TextArea_TextAreaInputDevice_enabled(__cn1ThisObject)!=0) /* IFNE CustomJump */ goto label_L1247348185;
+    if (get_field_com_codename1_ui_TextArea_TextAreaInputDevice_enabled(__cn1ThisObject)!=0) /* IFNE CustomJump */ goto label_L440295203;
     __CN1_DEBUG_INFO(1978);
     releaseForReturn(threadStateData, cn1LocalsBeginInThread); 
     return;
 
-label_L1247348185:
+label_L440295203:
     __CN1_DEBUG_INFO(1980);
     virtual_com_codename1_ui_TextArea_fireCloseEvent__(threadStateData, get_field_com_codename1_ui_TextArea_TextAreaInputDevice_editedTextArea(__cn1ThisObject)); 
     __CN1_DEBUG_INFO(1981);
-    if (get_field_com_codename1_ui_TextArea_TextAreaInputDevice_deferStopEditingToNativeLayer(__cn1ThisObject)==0) /* IFEQ CustomJump */ goto label_L440295203;
+    if (get_field_com_codename1_ui_TextArea_TextAreaInputDevice_deferStopEditingToNativeLayer(__cn1ThisObject)==0) /* IFEQ CustomJump */ goto label_L1653859230;
     __CN1_DEBUG_INFO(1982);
     releaseForReturn(threadStateData, cn1LocalsBeginInThread); 
     return;
 
-label_L440295203:
+label_L1653859230:
     __CN1_DEBUG_INFO(1984);
-    if (virtual_com_codename1_ui_TextArea_isEditing___R_boolean(threadStateData, get_field_com_codename1_ui_TextArea_TextAreaInputDevice_editedTextArea(__cn1ThisObject))==0) /* IFEQ CustomJump */ goto label_L1653859230;
+    if (virtual_com_codename1_ui_TextArea_isEditing___R_boolean(threadStateData, get_field_com_codename1_ui_TextArea_TextAreaInputDevice_editedTextArea(__cn1ThisObject))==0) /* IFEQ CustomJump */ goto label_L911561694;
     __CN1_DEBUG_INFO(1985);
     virtual_com_codename1_ui_TextArea_stopEditing__(threadStateData, get_field_com_codename1_ui_TextArea_TextAreaInputDevice_editedTextArea(__cn1ThisObject)); 
 
-label_L1653859230:
+label_L911561694:
     __CN1_DEBUG_INFO(1987);
     releaseForReturn(threadStateData, cn1LocalsBeginInThread); 
     return;

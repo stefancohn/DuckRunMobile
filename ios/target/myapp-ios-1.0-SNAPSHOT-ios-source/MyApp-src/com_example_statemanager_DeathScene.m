@@ -55,12 +55,12 @@ com_example_statemanager_DeathScene___INIT____(threadStateData, o);
 
 
 JAVA_VOID com_example_statemanager_DeathScene___INIT____(CODENAME_ONE_THREAD_STATE, JAVA_OBJECT  __cn1ThisObject) {
-    DEFINE_INSTANCE_METHOD_STACK(2, 1, 0, 10324, 205);
+    DEFINE_INSTANCE_METHOD_STACK(2, 1, 0, 10327, 205);
     locals[0].data.o = __cn1ThisObject; locals[0].type = CN1_TYPE_OBJECT;     __CN1_DEBUG_INFO(14);
     com_example_statemanager_Scene___INIT____(threadStateData, __cn1ThisObject); 
     __CN1_DEBUG_INFO(12);
     BC_ALOAD(0);
-    /* CustomInvoke */PUSH_OBJ(com_example_util_LoadSave_getSpriteAtlas___java_lang_String_R_com_codename1_ui_Image(threadStateData, STRING_FROM_CONSTANT_POOL_OFFSET(10325)));
+    /* CustomInvoke */PUSH_OBJ(com_example_util_LoadSave_getSpriteAtlas___java_lang_String_R_com_codename1_ui_Image(threadStateData, STRING_FROM_CONSTANT_POOL_OFFSET(10328)));
     set_field_com_example_statemanager_DeathScene_background(threadStateData, PEEK_OBJ(1), PEEK_OBJ(2));
     POP_MANY(2);
     __CN1_DEBUG_INFO(15);
@@ -76,7 +76,7 @@ JAVA_VOID com_example_statemanager_DeathScene___INIT____(CODENAME_ONE_THREAD_STA
 
 
 JAVA_VOID com_example_statemanager_DeathScene_update__(CODENAME_ONE_THREAD_STATE, JAVA_OBJECT  __cn1ThisObject) {
-    DEFINE_INSTANCE_METHOD_STACK(1, 1, 0, 10324, 2519);
+    DEFINE_INSTANCE_METHOD_STACK(1, 1, 0, 10327, 2519);
     locals[0].data.o = __cn1ThisObject; locals[0].type = CN1_TYPE_OBJECT;     __CN1_DEBUG_INFO(20);
     virtual_com_example_ui_DeathSceneOverlay_update__(threadStateData, get_static_com_example_statemanager_DeathScene_deathOverlay(threadStateData)); 
     __CN1_DEBUG_INFO(21);
@@ -86,7 +86,7 @@ JAVA_VOID com_example_statemanager_DeathScene_update__(CODENAME_ONE_THREAD_STATE
 
 
 JAVA_VOID com_example_statemanager_DeathScene_draw___com_codename1_ui_Graphics(CODENAME_ONE_THREAD_STATE, JAVA_OBJECT  __cn1ThisObject, JAVA_OBJECT __cn1Arg1) {
-    DEFINE_INSTANCE_METHOD_STACK(6, 2, 0, 10324, 5493);
+    DEFINE_INSTANCE_METHOD_STACK(6, 2, 0, 10327, 5493);
     locals[0].data.o = __cn1ThisObject; locals[0].type = CN1_TYPE_OBJECT;     locals[1].data.o = __cn1Arg1;
     locals[1].type = CN1_TYPE_OBJECT;
     __CN1_DEBUG_INFO(24);

@@ -79,23 +79,23 @@ JAVA_VOID com_codename1_io_ConnectionRequest_7___INIT_____com_codename1_io_Conne
 
 JAVA_VOID com_codename1_io_ConnectionRequest_7_run__(CODENAME_ONE_THREAD_STATE, JAVA_OBJECT  __cn1ThisObject) {
     DEFINE_INSTANCE_METHOD_STACK(4, 4, 0, 8511, 207);
-    locals[0].data.o = __cn1ThisObject; locals[0].type = CN1_TYPE_OBJECT;     int restoreToL1326029526cn1_class_id_java_lang_Exception1;
-    int tryBlockOffsetL1326029526cn1_class_id_java_lang_Exception1;
-    DEFINE_CATCH_BLOCK(catch_L1326029526cn1_class_id_java_lang_Exception1, label_L466396438, restoreToL1326029526cn1_class_id_java_lang_Exception1);
-    int restoreToL1948220220cn1_class_id_java_lang_Exception2;
-    int tryBlockOffsetL1948220220cn1_class_id_java_lang_Exception2;
-    DEFINE_CATCH_BLOCK(catch_L1948220220cn1_class_id_java_lang_Exception2, label_L216998824, restoreToL1948220220cn1_class_id_java_lang_Exception2);
+    locals[0].data.o = __cn1ThisObject; locals[0].type = CN1_TYPE_OBJECT;     int restoreToL1017648023cn1_class_id_java_lang_Exception1;
+    int tryBlockOffsetL1017648023cn1_class_id_java_lang_Exception1;
+    DEFINE_CATCH_BLOCK(catch_L1017648023cn1_class_id_java_lang_Exception1, label_L216998824, restoreToL1017648023cn1_class_id_java_lang_Exception1);
+    int restoreToL468210629cn1_class_id_java_lang_Exception2;
+    int tryBlockOffsetL468210629cn1_class_id_java_lang_Exception2;
+    DEFINE_CATCH_BLOCK(catch_L468210629cn1_class_id_java_lang_Exception2, label_L1982672460, restoreToL468210629cn1_class_id_java_lang_Exception2);
     __CN1_DEBUG_INFO(2796);
-    if (virtual_com_codename1_io_ConnectionRequest_getDestinationFile___R_java_lang_String(threadStateData, get_field_com_codename1_io_ConnectionRequest_7_this_0(__cn1ThisObject))==JAVA_NULL) /* IFNULL CustomJump */ JUMP_TO(label_L1982672460, 0);
+    if (virtual_com_codename1_io_ConnectionRequest_getDestinationFile___R_java_lang_String(threadStateData, get_field_com_codename1_io_ConnectionRequest_7_this_0(__cn1ThisObject))==JAVA_NULL) /* IFNULL CustomJump */ JUMP_TO(label_L508294491, 0);
     __CN1_DEBUG_INFO(2797);
     /* VarOp.assignFrom */ locals[1].data.o = virtual_com_codename1_io_ConnectionRequest_getDestinationFile___R_java_lang_String(threadStateData, get_field_com_codename1_io_ConnectionRequest_7_this_0(__cn1ThisObject));locals[1].type=CN1_TYPE_OBJECT;    __CN1_DEBUG_INFO(2798);
     /* VarOp.assignFrom */ locals[2].data.o = com_codename1_io_FileSystemStorage_getInstance___R_com_codename1_io_FileSystemStorage(threadStateData);locals[2].type=CN1_TYPE_OBJECT;    __CN1_DEBUG_INFO(2799);
-    if (/* CustomInvoke */virtual_com_codename1_io_FileSystemStorage_exists___java_lang_String_R_boolean(threadStateData, locals[2].data.o, locals[1].data.o)==0) /* IFEQ CustomJump */ JUMP_TO(label_L508294491, 0);
+    if (/* CustomInvoke */virtual_com_codename1_io_FileSystemStorage_exists___java_lang_String_R_boolean(threadStateData, locals[2].data.o, locals[1].data.o)==0) /* IFEQ CustomJump */ JUMP_TO(label_L1615923089, 0);
 
-label_L1326029526:
- tryBlockOffsetL1326029526cn1_class_id_java_lang_Exception1 = threadStateData->tryBlockOffset;
-    BEGIN_TRY(cn1_class_id_java_lang_Exception, catch_L1326029526cn1_class_id_java_lang_Exception1);
-    restoreToL1326029526cn1_class_id_java_lang_Exception1 = threadStateData->threadObjectStackOffset;
+label_L1017648023:
+ tryBlockOffsetL1017648023cn1_class_id_java_lang_Exception1 = threadStateData->tryBlockOffset;
+    BEGIN_TRY(cn1_class_id_java_lang_Exception, catch_L1017648023cn1_class_id_java_lang_Exception1);
+    restoreToL1017648023cn1_class_id_java_lang_Exception1 = threadStateData->threadObjectStackOffset;
 
     __CN1_DEBUG_INFO(2801);
     /* CustomInvoke */{ JAVA_OBJECT tmpResult = virtual_com_codename1_io_FileSystemStorage_openInputStream___java_lang_String_R_java_io_InputStream(threadStateData, locals[2].data.o, locals[1].data.o);
@@ -108,7 +108,7 @@ label_L1326029526:
     SP[-1].data.o = tmpResult; SP[-1].type = CN1_TYPE_OBJECT; }
     BC_ASTORE(3);
     __CN1_DEBUG_INFO(2802);
-    if (locals[3].data.o!=JAVA_NULL) /* IFNONNULL CustomJump */ JUMP_TO(label_L1615923089, 1);
+    if (locals[3].data.o!=JAVA_NULL) /* IFNONNULL CustomJump */ JUMP_TO(label_L366381648, 1);
     __CN1_DEBUG_INFO(2803);
     PUSH_POINTER(__NEW_java_io_IOException(threadStateData)); /* NEW */
     BC_DUP(); /* DUP */
@@ -124,41 +124,41 @@ label_L1326029526:
     java_io_IOException___INIT_____java_lang_String(threadStateData, SP[-2].data.o, SP[-1].data.o);     SP-= 2;
     throwException(threadStateData, POP_OBJ());
 
-label_L1615923089:
+label_L366381648:
     __CN1_DEBUG_INFO(2805);
     /* CustomInvoke */com_codename1_util_CallbackDispatcher_dispatchSuccess___com_codename1_util_SuccessCallback_java_lang_Object(threadStateData, get_field_com_codename1_io_ConnectionRequest_7_val_onSuccess(__cn1ThisObject), locals[3].data.o); 
 
-label_L1083225715:
+label_L870406565:
 END_TRY(1);    __CN1_DEBUG_INFO(2808);
-    JUMP_TO(label_L366381648, 0);
+    JUMP_TO(label_L169249256, 0);
 
-label_L466396438:
+label_L216998824:
     __CN1_DEBUG_INFO(2806);
     BC_ASTORE(3);
     __CN1_DEBUG_INFO(2807);
     /* CustomInvoke */com_codename1_util_CallbackDispatcher_dispatchError___com_codename1_util_FailureCallback_java_lang_Throwable(threadStateData, get_field_com_codename1_io_ConnectionRequest_7_val_onFail(__cn1ThisObject), locals[3].data.o); 
     __CN1_DEBUG_INFO(2808);
-    JUMP_TO(label_L366381648, 0);
+    JUMP_TO(label_L169249256, 0);
 
-label_L508294491:
+label_L1615923089:
     __CN1_DEBUG_INFO(2810);
     /* CustomInvoke */com_codename1_io_ConnectionRequest_access$400___com_codename1_io_ConnectionRequest_com_codename1_util_SuccessCallback_com_codename1_util_FailureCallback_boolean(threadStateData, get_field_com_codename1_io_ConnectionRequest_7_this_0(__cn1ThisObject), get_field_com_codename1_io_ConnectionRequest_7_val_onSuccess(__cn1ThisObject), get_field_com_codename1_io_ConnectionRequest_7_val_onFail(__cn1ThisObject), 0 /* ICONST_0 */); 
 
-label_L366381648:
+label_L169249256:
     __CN1_DEBUG_INFO(2812);
-    JUMP_TO(label_L169249256, 0);
+    JUMP_TO(label_L1270236380, 0);
 
-label_L1982672460:
-    if (virtual_com_codename1_io_ConnectionRequest_getDestinationStorage___R_java_lang_String(threadStateData, get_field_com_codename1_io_ConnectionRequest_7_this_0(__cn1ThisObject))==JAVA_NULL) /* IFNULL CustomJump */ JUMP_TO(label_L169249256, 0);
+label_L508294491:
+    if (virtual_com_codename1_io_ConnectionRequest_getDestinationStorage___R_java_lang_String(threadStateData, get_field_com_codename1_io_ConnectionRequest_7_this_0(__cn1ThisObject))==JAVA_NULL) /* IFNULL CustomJump */ JUMP_TO(label_L1270236380, 0);
     __CN1_DEBUG_INFO(2813);
     /* VarOp.assignFrom */ locals[1].data.o = virtual_com_codename1_io_ConnectionRequest_getDestinationStorage___R_java_lang_String(threadStateData, get_field_com_codename1_io_ConnectionRequest_7_this_0(__cn1ThisObject));locals[1].type=CN1_TYPE_OBJECT;    __CN1_DEBUG_INFO(2814);
     /* VarOp.assignFrom */ locals[2].data.o = com_codename1_io_Storage_getInstance___R_com_codename1_io_Storage(threadStateData);locals[2].type=CN1_TYPE_OBJECT;    __CN1_DEBUG_INFO(2815);
-    if (/* CustomInvoke */virtual_com_codename1_io_Storage_exists___java_lang_String_R_boolean(threadStateData, locals[2].data.o, locals[1].data.o)==0) /* IFEQ CustomJump */ JUMP_TO(label_L1270236380, 0);
+    if (/* CustomInvoke */virtual_com_codename1_io_Storage_exists___java_lang_String_R_boolean(threadStateData, locals[2].data.o, locals[1].data.o)==0) /* IFEQ CustomJump */ JUMP_TO(label_L598978484, 0);
 
-label_L1948220220:
- tryBlockOffsetL1948220220cn1_class_id_java_lang_Exception2 = threadStateData->tryBlockOffset;
-    BEGIN_TRY(cn1_class_id_java_lang_Exception, catch_L1948220220cn1_class_id_java_lang_Exception2);
-    restoreToL1948220220cn1_class_id_java_lang_Exception2 = threadStateData->threadObjectStackOffset;
+label_L468210629:
+ tryBlockOffsetL468210629cn1_class_id_java_lang_Exception2 = threadStateData->tryBlockOffset;
+    BEGIN_TRY(cn1_class_id_java_lang_Exception, catch_L468210629cn1_class_id_java_lang_Exception2);
+    restoreToL468210629cn1_class_id_java_lang_Exception2 = threadStateData->threadObjectStackOffset;
 
     __CN1_DEBUG_INFO(2817);
     /* CustomInvoke */{ JAVA_OBJECT tmpResult = virtual_com_codename1_io_Storage_createInputStream___java_lang_String_R_java_io_InputStream(threadStateData, locals[2].data.o, locals[1].data.o);
@@ -170,7 +170,7 @@ label_L1948220220:
     SP[-1].data.o = tmpResult; SP[-1].type = CN1_TYPE_OBJECT; }
     BC_ASTORE(3);
     __CN1_DEBUG_INFO(2818);
-    if (locals[3].data.o!=JAVA_NULL) /* IFNONNULL CustomJump */ JUMP_TO(label_L598978484, 1);
+    if (locals[3].data.o!=JAVA_NULL) /* IFNONNULL CustomJump */ JUMP_TO(label_L35005848, 1);
     __CN1_DEBUG_INFO(2819);
     PUSH_POINTER(__NEW_java_io_IOException(threadStateData)); /* NEW */
     BC_DUP(); /* DUP */
@@ -186,27 +186,27 @@ label_L1948220220:
     java_io_IOException___INIT_____java_lang_String(threadStateData, SP[-2].data.o, SP[-1].data.o);     SP-= 2;
     throwException(threadStateData, POP_OBJ());
 
-label_L598978484:
+label_L35005848:
     __CN1_DEBUG_INFO(2821);
     /* CustomInvoke */com_codename1_util_CallbackDispatcher_dispatchSuccess___com_codename1_util_SuccessCallback_java_lang_Object(threadStateData, get_field_com_codename1_io_ConnectionRequest_7_val_onSuccess(__cn1ThisObject), locals[3].data.o); 
 
-label_L1941504484:
+label_L228811540:
 END_TRY(1);    __CN1_DEBUG_INFO(2824);
-    JUMP_TO(label_L169249256, 0);
+    JUMP_TO(label_L1270236380, 0);
 
-label_L216998824:
+label_L1982672460:
     __CN1_DEBUG_INFO(2822);
     BC_ASTORE(3);
     __CN1_DEBUG_INFO(2823);
     /* CustomInvoke */com_codename1_util_CallbackDispatcher_dispatchError___com_codename1_util_FailureCallback_java_lang_Throwable(threadStateData, get_field_com_codename1_io_ConnectionRequest_7_val_onFail(__cn1ThisObject), locals[3].data.o); 
     __CN1_DEBUG_INFO(2824);
-    JUMP_TO(label_L169249256, 0);
+    JUMP_TO(label_L1270236380, 0);
 
-label_L1270236380:
+label_L598978484:
     __CN1_DEBUG_INFO(2826);
     /* CustomInvoke */com_codename1_io_ConnectionRequest_access$400___com_codename1_io_ConnectionRequest_com_codename1_util_SuccessCallback_com_codename1_util_FailureCallback_boolean(threadStateData, get_field_com_codename1_io_ConnectionRequest_7_this_0(__cn1ThisObject), get_field_com_codename1_io_ConnectionRequest_7_val_onSuccess(__cn1ThisObject), get_field_com_codename1_io_ConnectionRequest_7_val_onFail(__cn1ThisObject), 0 /* ICONST_0 */); 
 
-label_L169249256:
+label_L1270236380:
     __CN1_DEBUG_INFO(2829);
     releaseForReturnInException(threadStateData, cn1LocalsBeginInThread, methodBlockOffset); 
     return;

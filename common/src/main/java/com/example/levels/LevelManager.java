@@ -22,7 +22,6 @@ public class LevelManager {
         //data of start level to feed into level constructor
         mainLevel = new Level(LoadSave.getLevelDataRed(LoadSave.START_LEVEL));
         importObstacleSequences();
-        System.out.println("widthOfBlocks " + widthOfBlocks);
     }
 
     //grabs each block of map sprite into an array so map can be built
@@ -36,8 +35,8 @@ public class LevelManager {
     //creates levelDatas for obstacles sprites
     public void importObstacleSequences() {
         Image img = LoadSave.getSpriteAtlas(LoadSave.OBSTACLE_SEQUENCES); //loads gimp file into bufferedimg
-        for (int j = 0; j < (img.getWidth()/Constants.TILES_IN_WIDTH); j++) {
-            obstacleSprites[j] = img.subImage(j * 50, 0, 50, 30, false); //fills in array of bufferedimg with subimages of obstacle sequences
+        for (int j = 0; j < (Constants.AMOUNT_OF_PATTERNS); j++) {
+            obstacleSprites[j] = img.subImage(j * 25, 0, 25, 30, false); //fills in array of bufferedimg with subimages of obstacle sequences
         }
         for (int i = 0; i < obstacleSprites.length; i ++) {
             obstacleSequences[i] = new Level(LoadSave.getLevelDataRedImg(obstacleSprites[i])); //retrieves leveldata RGB

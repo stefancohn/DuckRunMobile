@@ -105,12 +105,12 @@ com_example_ui_MenuSceneOverlay___INIT____(threadStateData, o);
 
 
 JAVA_VOID com_example_ui_MenuSceneOverlay___INIT____(CODENAME_ONE_THREAD_STATE, JAVA_OBJECT  __cn1ThisObject) {
-    DEFINE_INSTANCE_METHOD_STACK(5, 1, 0, 10332, 205);
+    DEFINE_INSTANCE_METHOD_STACK(5, 1, 0, 10335, 205);
     locals[0].data.o = __cn1ThisObject; locals[0].type = CN1_TYPE_OBJECT;     __CN1_DEBUG_INFO(23);
     java_lang_Object___INIT____(threadStateData, __cn1ThisObject); 
     __CN1_DEBUG_INFO(12);
     BC_ALOAD(0);
-    /* CustomInvoke */PUSH_OBJ(com_example_util_LoadSave_getSpriteAtlas___java_lang_String_R_com_codename1_ui_Image(threadStateData, STRING_FROM_CONSTANT_POOL_OFFSET(10333)));
+    /* CustomInvoke */PUSH_OBJ(com_example_util_LoadSave_getSpriteAtlas___java_lang_String_R_com_codename1_ui_Image(threadStateData, STRING_FROM_CONSTANT_POOL_OFFSET(10336)));
     set_field_com_example_ui_MenuSceneOverlay_menuImage(threadStateData, PEEK_OBJ(1), PEEK_OBJ(2));
     POP_MANY(2);
     __CN1_DEBUG_INFO(13);
@@ -145,9 +145,9 @@ JAVA_VOID com_example_ui_MenuSceneOverlay___INIT____(CODENAME_ONE_THREAD_STATE, 
 
 JAVA_VOID com_example_ui_MenuSceneOverlay_initializePlayButton__(CODENAME_ONE_THREAD_STATE, JAVA_OBJECT  __cn1ThisObject) {
     volatile JAVA_INT ilocals_2_ = 0; /* v2 */
-    DEFINE_INSTANCE_METHOD_STACK(8, 3, 0, 10332, 10334);
+    DEFINE_INSTANCE_METHOD_STACK(8, 3, 0, 10335, 10337);
     locals[0].data.o = __cn1ThisObject; locals[0].type = CN1_TYPE_OBJECT;     __CN1_DEBUG_INFO(28);
-    /* VarOp.assignFrom */ locals[1].data.o = /* CustomInvoke */com_example_util_LoadSave_getSpriteAtlas___java_lang_String_R_com_codename1_ui_Image(threadStateData, STRING_FROM_CONSTANT_POOL_OFFSET(10335));locals[1].type=CN1_TYPE_OBJECT;    __CN1_DEBUG_INFO(29);
+    /* VarOp.assignFrom */ locals[1].data.o = /* CustomInvoke */com_example_util_LoadSave_getSpriteAtlas___java_lang_String_R_com_codename1_ui_Image(threadStateData, STRING_FROM_CONSTANT_POOL_OFFSET(10338));locals[1].type=CN1_TYPE_OBJECT;    __CN1_DEBUG_INFO(29);
     /* VarOp.assignFrom */     ilocals_2_ = 0 /* ICONST_0 */; 
     goto label_L276748028;
 
@@ -168,7 +168,7 @@ label_L276748028:
 JAVA_VOID com_example_ui_MenuSceneOverlay_touchMovement___int_int(CODENAME_ONE_THREAD_STATE, JAVA_OBJECT  __cn1ThisObject, JAVA_INT __cn1Arg1, JAVA_INT __cn1Arg2) {
     volatile JAVA_INT ilocals_1_ = 0; /* x */
     volatile JAVA_INT ilocals_2_ = 0; /* y */
-    DEFINE_INSTANCE_METHOD_STACK(6, 3, 0, 10332, 10232);
+    DEFINE_INSTANCE_METHOD_STACK(6, 3, 0, 10335, 10235);
     locals[0].data.o = __cn1ThisObject; locals[0].type = CN1_TYPE_OBJECT;     ilocals_1_ = __cn1Arg1;
     ilocals_2_ = __cn1Arg2;
     __CN1_DEBUG_INFO(35);
@@ -194,7 +194,7 @@ label_L409565350:
 JAVA_VOID com_example_ui_MenuSceneOverlay_releaseMovement___int_int(CODENAME_ONE_THREAD_STATE, JAVA_OBJECT  __cn1ThisObject, JAVA_INT __cn1Arg1, JAVA_INT __cn1Arg2) {
     volatile JAVA_INT ilocals_1_ = 0; /* x */
     volatile JAVA_INT ilocals_2_ = 0; /* y */
-    DEFINE_INSTANCE_METHOD_STACK(2, 3, 0, 10332, 10329);
+    DEFINE_INSTANCE_METHOD_STACK(2, 3, 0, 10335, 10332);
     locals[0].data.o = __cn1ThisObject; locals[0].type = CN1_TYPE_OBJECT;     ilocals_1_ = __cn1Arg1;
     ilocals_2_ = __cn1Arg2;
     __CN1_DEBUG_INFO(41);
@@ -217,7 +217,7 @@ label_L771923297:
 
 
 JAVA_VOID com_example_ui_MenuSceneOverlay_draw___com_codename1_ui_Graphics(CODENAME_ONE_THREAD_STATE, JAVA_OBJECT  __cn1ThisObject, JAVA_OBJECT __cn1Arg1) {
-    DEFINE_INSTANCE_METHOD_STACK(6, 3, 0, 10332, 5493);
+    DEFINE_INSTANCE_METHOD_STACK(6, 3, 0, 10335, 5493);
     locals[0].data.o = __cn1ThisObject; locals[0].type = CN1_TYPE_OBJECT;     locals[1].data.o = __cn1Arg1;
     locals[1].type = CN1_TYPE_OBJECT;
     __CN1_DEBUG_INFO(49);

@@ -222,7 +222,7 @@ com_example_ui_playingUI___INIT____(threadStateData, o);
 
 
 JAVA_VOID com_example_ui_playingUI___INIT____(CODENAME_ONE_THREAD_STATE, JAVA_OBJECT  __cn1ThisObject) {
-    DEFINE_INSTANCE_METHOD_STACK(5, 1, 0, 10301, 205);
+    DEFINE_INSTANCE_METHOD_STACK(5, 1, 0, 10304, 205);
     locals[0].data.o = __cn1ThisObject; locals[0].type = CN1_TYPE_OBJECT;     __CN1_DEBUG_INFO(45);
     java_lang_Object___INIT____(threadStateData, __cn1ThisObject); 
     __CN1_DEBUG_INFO(9);
@@ -261,7 +261,7 @@ JAVA_VOID com_example_ui_playingUI___INIT____(CODENAME_ONE_THREAD_STATE, JAVA_OB
     set_field_com_example_ui_playingUI_height(threadStateData, ((JAVA_INT)(0.18 * ((JAVA_DOUBLE)get_static_com_example_myapp_MyApp_DEVICE_HEIGHT(threadStateData)))), __cn1ThisObject);
     __CN1_DEBUG_INFO(18);
     BC_ALOAD(0);
-    PUSH_INT(20);
+    PUSH_INT(50);
     set_field_com_example_ui_playingUI_xPos(threadStateData, POP_INT(), POP_OBJ());
     __CN1_DEBUG_INFO(19);
     set_field_com_example_ui_playingUI_yPos(threadStateData, ((JAVA_INT)((((JAVA_DOUBLE)get_static_com_example_myapp_MyApp_DEVICE_HEIGHT(threadStateData)) * 0.93) - ((JAVA_DOUBLE)get_field_com_example_ui_playingUI_height(__cn1ThisObject)))), __cn1ThisObject);
@@ -270,9 +270,9 @@ JAVA_VOID com_example_ui_playingUI___INIT____(CODENAME_ONE_THREAD_STATE, JAVA_OB
     __CN1_DEBUG_INFO(23);
     set_field_com_example_ui_playingUI_imageHeightScale(threadStateData, ((JAVA_FLOAT)(get_field_com_example_ui_playingUI_height(__cn1ThisObject) / 11)), __cn1ThisObject);
     __CN1_DEBUG_INFO(24);
-    set_field_com_example_ui_playingUI_arrowWidth(threadStateData, ((JAVA_INT)(13.0 * get_field_com_example_ui_playingUI_imageWidthScale(__cn1ThisObject))), __cn1ThisObject);
+    set_field_com_example_ui_playingUI_arrowWidth(threadStateData, ((JAVA_INT)(16.0 * get_field_com_example_ui_playingUI_imageWidthScale(__cn1ThisObject))), __cn1ThisObject);
     __CN1_DEBUG_INFO(25);
-    set_field_com_example_ui_playingUI_arrowHeight(threadStateData, ((JAVA_INT)(11.0 * get_field_com_example_ui_playingUI_imageHeightScale(__cn1ThisObject))), __cn1ThisObject);
+    set_field_com_example_ui_playingUI_arrowHeight(threadStateData, ((JAVA_INT)(12.0 * get_field_com_example_ui_playingUI_imageHeightScale(__cn1ThisObject))), __cn1ThisObject);
     __CN1_DEBUG_INFO(28);
     set_field_com_example_ui_playingUI_rightArrowX(threadStateData, ((JAVA_INT)(19.0 * get_field_com_example_ui_playingUI_imageWidthScale(__cn1ThisObject))), __cn1ThisObject);
     __CN1_DEBUG_INFO(31);
@@ -311,9 +311,9 @@ JAVA_VOID com_example_ui_playingUI___INIT____(CODENAME_ONE_THREAD_STATE, JAVA_OB
 
 JAVA_VOID com_example_ui_playingUI_loadJumpButton__(CODENAME_ONE_THREAD_STATE, JAVA_OBJECT  __cn1ThisObject) {
     volatile JAVA_INT ilocals_2_ = 0; /* v2 */
-    DEFINE_INSTANCE_METHOD_STACK(8, 3, 0, 10301, 10302);
+    DEFINE_INSTANCE_METHOD_STACK(8, 3, 0, 10304, 10305);
     locals[0].data.o = __cn1ThisObject; locals[0].type = CN1_TYPE_OBJECT;     __CN1_DEBUG_INFO(53);
-    /* VarOp.assignFrom */ locals[1].data.o = /* CustomInvoke */com_example_util_LoadSave_getSpriteAtlas___java_lang_String_R_com_codename1_ui_Image(threadStateData, STRING_FROM_CONSTANT_POOL_OFFSET(10303));locals[1].type=CN1_TYPE_OBJECT;    __CN1_DEBUG_INFO(54);
+    /* VarOp.assignFrom */ locals[1].data.o = /* CustomInvoke */com_example_util_LoadSave_getSpriteAtlas___java_lang_String_R_com_codename1_ui_Image(threadStateData, STRING_FROM_CONSTANT_POOL_OFFSET(10306));locals[1].type=CN1_TYPE_OBJECT;    __CN1_DEBUG_INFO(54);
     /* VarOp.assignFrom */     ilocals_2_ = 0 /* ICONST_0 */; 
     goto label_L1985028494;
 
@@ -333,9 +333,9 @@ label_L1985028494:
 
 JAVA_VOID com_example_ui_playingUI_loadArrowButton__(CODENAME_ONE_THREAD_STATE, JAVA_OBJECT  __cn1ThisObject) {
     volatile JAVA_INT ilocals_2_ = 0; /* v2 */
-    DEFINE_INSTANCE_METHOD_STACK(8, 3, 0, 10301, 10304);
+    DEFINE_INSTANCE_METHOD_STACK(8, 3, 0, 10304, 10307);
     locals[0].data.o = __cn1ThisObject; locals[0].type = CN1_TYPE_OBJECT;     __CN1_DEBUG_INFO(59);
-    /* VarOp.assignFrom */ locals[1].data.o = /* CustomInvoke */com_example_util_LoadSave_getSpriteAtlas___java_lang_String_R_com_codename1_ui_Image(threadStateData, STRING_FROM_CONSTANT_POOL_OFFSET(10305));locals[1].type=CN1_TYPE_OBJECT;    __CN1_DEBUG_INFO(60);
+    /* VarOp.assignFrom */ locals[1].data.o = /* CustomInvoke */com_example_util_LoadSave_getSpriteAtlas___java_lang_String_R_com_codename1_ui_Image(threadStateData, STRING_FROM_CONSTANT_POOL_OFFSET(10308));locals[1].type=CN1_TYPE_OBJECT;    __CN1_DEBUG_INFO(60);
     /* VarOp.assignFrom */     ilocals_2_ = 0 /* ICONST_0 */; 
     goto label_L1832283291;
 
@@ -355,9 +355,9 @@ label_L1832283291:
 
 JAVA_VOID com_example_ui_playingUI_loadPauseButton__(CODENAME_ONE_THREAD_STATE, JAVA_OBJECT  __cn1ThisObject) {
     volatile JAVA_INT ilocals_2_ = 0; /* v2 */
-    DEFINE_INSTANCE_METHOD_STACK(8, 3, 0, 10301, 10306);
+    DEFINE_INSTANCE_METHOD_STACK(8, 3, 0, 10304, 10309);
     locals[0].data.o = __cn1ThisObject; locals[0].type = CN1_TYPE_OBJECT;     __CN1_DEBUG_INFO(65);
-    /* VarOp.assignFrom */ locals[1].data.o = /* CustomInvoke */com_example_util_LoadSave_getSpriteAtlas___java_lang_String_R_com_codename1_ui_Image(threadStateData, STRING_FROM_CONSTANT_POOL_OFFSET(10307));locals[1].type=CN1_TYPE_OBJECT;    __CN1_DEBUG_INFO(66);
+    /* VarOp.assignFrom */ locals[1].data.o = /* CustomInvoke */com_example_util_LoadSave_getSpriteAtlas___java_lang_String_R_com_codename1_ui_Image(threadStateData, STRING_FROM_CONSTANT_POOL_OFFSET(10310));locals[1].type=CN1_TYPE_OBJECT;    __CN1_DEBUG_INFO(66);
     /* VarOp.assignFrom */     ilocals_2_ = 0 /* ICONST_0 */; 
     goto label_L620423816;
 
@@ -377,9 +377,9 @@ label_L620423816:
 
 JAVA_VOID com_example_ui_playingUI_loadShootButton__(CODENAME_ONE_THREAD_STATE, JAVA_OBJECT  __cn1ThisObject) {
     volatile JAVA_INT ilocals_2_ = 0; /* v2 */
-    DEFINE_INSTANCE_METHOD_STACK(8, 3, 0, 10301, 10308);
+    DEFINE_INSTANCE_METHOD_STACK(8, 3, 0, 10304, 10311);
     locals[0].data.o = __cn1ThisObject; locals[0].type = CN1_TYPE_OBJECT;     __CN1_DEBUG_INFO(71);
-    /* VarOp.assignFrom */ locals[1].data.o = /* CustomInvoke */com_example_util_LoadSave_getSpriteAtlas___java_lang_String_R_com_codename1_ui_Image(threadStateData, STRING_FROM_CONSTANT_POOL_OFFSET(10309));locals[1].type=CN1_TYPE_OBJECT;    __CN1_DEBUG_INFO(72);
+    /* VarOp.assignFrom */ locals[1].data.o = /* CustomInvoke */com_example_util_LoadSave_getSpriteAtlas___java_lang_String_R_com_codename1_ui_Image(threadStateData, STRING_FROM_CONSTANT_POOL_OFFSET(10312));locals[1].type=CN1_TYPE_OBJECT;    __CN1_DEBUG_INFO(72);
     /* VarOp.assignFrom */     ilocals_2_ = 0 /* ICONST_0 */; 
     goto label_L1690233783;
 
@@ -398,7 +398,7 @@ label_L1690233783:
 
 
 JAVA_VOID com_example_ui_playingUI_draw___com_codename1_ui_Graphics(CODENAME_ONE_THREAD_STATE, JAVA_OBJECT  __cn1ThisObject, JAVA_OBJECT __cn1Arg1) {
-    DEFINE_INSTANCE_METHOD_STACK(6, 2, 0, 10301, 5493);
+    DEFINE_INSTANCE_METHOD_STACK(6, 2, 0, 10304, 5493);
     locals[0].data.o = __cn1ThisObject; locals[0].type = CN1_TYPE_OBJECT;     locals[1].data.o = __cn1Arg1;
     locals[1].type = CN1_TYPE_OBJECT;
     __CN1_DEBUG_INFO(79);

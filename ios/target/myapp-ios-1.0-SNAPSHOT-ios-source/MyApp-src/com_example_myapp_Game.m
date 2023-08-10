@@ -10,6 +10,7 @@
 #include "com_example_statemanager_PlayingScene.h"
 #include "com_example_statemanager_Scene.h"
 #include "com_example_ui_VolumeButton.h"
+#include "java_lang_Boolean.h"
 #include "java_lang_NullPointerException.h"
 #include "java_lang_System.h"
 #include "java_lang_Thread.h"
@@ -28,6 +29,28 @@ JAVA_OBJECT get_static_com_example_myapp_Game_game(CODENAME_ONE_THREAD_STATE) {
 void set_static_com_example_myapp_Game_game(CODENAME_ONE_THREAD_STATE, JAVA_OBJECT __cn1StaticVal) {
     __STATIC_INITIALIZER_com_example_myapp_Game(threadStateData);
     STATIC_FIELD_com_example_myapp_Game_game = __cn1StaticVal;
+}
+
+JAVA_OBJECT STATIC_FIELD_com_example_myapp_Game_audioPlayer = 0;
+JAVA_OBJECT get_static_com_example_myapp_Game_audioPlayer(CODENAME_ONE_THREAD_STATE) {
+    __STATIC_INITIALIZER_com_example_myapp_Game(threadStateData);
+     return STATIC_FIELD_com_example_myapp_Game_audioPlayer;
+}
+
+void set_static_com_example_myapp_Game_audioPlayer(CODENAME_ONE_THREAD_STATE, JAVA_OBJECT __cn1StaticVal) {
+    __STATIC_INITIALIZER_com_example_myapp_Game(threadStateData);
+    STATIC_FIELD_com_example_myapp_Game_audioPlayer = __cn1StaticVal;
+}
+
+JAVA_OBJECT STATIC_FIELD_com_example_myapp_Game_audioOn = 0;
+JAVA_OBJECT get_static_com_example_myapp_Game_audioOn(CODENAME_ONE_THREAD_STATE) {
+    __STATIC_INITIALIZER_com_example_myapp_Game(threadStateData);
+     return STATIC_FIELD_com_example_myapp_Game_audioOn;
+}
+
+void set_static_com_example_myapp_Game_audioOn(CODENAME_ONE_THREAD_STATE, JAVA_OBJECT __cn1StaticVal) {
+    __STATIC_INITIALIZER_com_example_myapp_Game(threadStateData);
+    STATIC_FIELD_com_example_myapp_Game_audioOn = __cn1StaticVal;
 }
 
 JAVA_OBJECT get_field_com_example_myapp_Game_GameThread(JAVA_OBJECT __cn1T) {
@@ -78,14 +101,6 @@ void set_field_com_example_myapp_Game_sceneNum(CODENAME_ONE_THREAD_STATE, JAVA_I
     (*(struct obj__com_example_myapp_Game*)__cn1T).com_example_myapp_Game_sceneNum = __cn1Val;
 }
 
-JAVA_OBJECT get_field_com_example_myapp_Game_audioPlayer(JAVA_OBJECT __cn1T) {
-  return (*(struct obj__com_example_myapp_Game*)__cn1T).com_example_myapp_Game_audioPlayer;
-}
-
-void set_field_com_example_myapp_Game_audioPlayer(CODENAME_ONE_THREAD_STATE, JAVA_OBJECT __cn1Val, JAVA_OBJECT __cn1T) {
-    (*(struct obj__com_example_myapp_Game*)__cn1T).com_example_myapp_Game_audioPlayer = __cn1Val;
-}
-
 JAVA_OBJECT get_field_com_example_myapp_Game_volumeButton(JAVA_OBJECT __cn1T) {
   return (*(struct obj__com_example_myapp_Game*)__cn1T).com_example_myapp_Game_volumeButton;
 }
@@ -113,7 +128,6 @@ void __GC_MARK_com_example_myapp_Game(CODENAME_ONE_THREAD_STATE, JAVA_OBJECT obj
     gcMarkObject(threadStateData, objInstance->com_example_myapp_Game_frame, force);
     gcMarkObject(threadStateData, objInstance->com_example_myapp_Game_duck, force);
     gcMarkObject(threadStateData, objInstance->com_example_myapp_Game_currentScene, force);
-    gcMarkObject(threadStateData, objInstance->com_example_myapp_Game_audioPlayer, force);
     gcMarkObject(threadStateData, objInstance->com_example_myapp_Game_volumeButton, force);
     gcMarkObject(threadStateData, objInstance->com_example_myapp_Game_random, force);
     __GC_MARK_java_lang_Object(threadStateData, objToMark, force);
@@ -134,9 +148,19 @@ com_example_myapp_Game___INIT____(threadStateData, o);
 
 
 JAVA_VOID com_example_myapp_Game___CLINIT____(CODENAME_ONE_THREAD_STATE) {
-    DEFINE_METHOD_STACK(1, 0, 0, 10197, 863);
+    DEFINE_METHOD_STACK(2, 0, 0, 10197, 863);
     __CN1_DEBUG_INFO(14);
     set_static_com_example_myapp_Game_game(threadStateData, JAVA_NULL /* ACONST_NULL */);
+    __CN1_DEBUG_INFO(24);
+    PUSH_POINTER(__NEW_com_example_audio_AudioPlayer(threadStateData)); /* NEW */
+    BC_DUP(); /* DUP */
+    com_example_audio_AudioPlayer___INIT____(threadStateData, SP[-1].data.o);     SP -= 1;
+    set_static_com_example_myapp_Game_audioPlayer(threadStateData, PEEK_OBJ(1));
+    SP--;
+    __CN1_DEBUG_INFO(25);
+    /* CustomInvoke */PUSH_OBJ(java_lang_Boolean_valueOf___boolean_R_java_lang_Boolean(threadStateData, 1 /* ICONST_1 */));
+    set_static_com_example_myapp_Game_audioOn(threadStateData, PEEK_OBJ(1));
+    SP--;
     releaseForReturn(threadStateData, cn1LocalsBeginInThread); 
     return;
 }
@@ -144,7 +168,7 @@ JAVA_VOID com_example_myapp_Game___CLINIT____(CODENAME_ONE_THREAD_STATE) {
 
 JAVA_VOID com_example_myapp_Game___INIT____(CODENAME_ONE_THREAD_STATE, JAVA_OBJECT  __cn1ThisObject) {
     DEFINE_INSTANCE_METHOD_STACK(7, 1, 0, 10197, 205);
-    locals[0].data.o = __cn1ThisObject; locals[0].type = CN1_TYPE_OBJECT;     __CN1_DEBUG_INFO(29);
+    locals[0].data.o = __cn1ThisObject; locals[0].type = CN1_TYPE_OBJECT;     __CN1_DEBUG_INFO(30);
     java_lang_Object___INIT____(threadStateData, __cn1ThisObject); 
     __CN1_DEBUG_INFO(15);
     BC_ALOAD(0);
@@ -176,28 +200,21 @@ JAVA_VOID com_example_myapp_Game___INIT____(CODENAME_ONE_THREAD_STATE, JAVA_OBJE
     POP_MANY(2);
     __CN1_DEBUG_INFO(22);
     set_field_com_example_myapp_Game_sceneNum(threadStateData, 0 /* ICONST_0 */, __cn1ThisObject);
-    __CN1_DEBUG_INFO(24);
-    BC_ALOAD(0);
-    PUSH_POINTER(__NEW_com_example_audio_AudioPlayer(threadStateData)); /* NEW */
-    BC_DUP(); /* DUP */
-    com_example_audio_AudioPlayer___INIT____(threadStateData, SP[-1].data.o);     SP -= 1;
-    set_field_com_example_myapp_Game_audioPlayer(threadStateData, PEEK_OBJ(1), PEEK_OBJ(2));
-    POP_MANY(2);
-    __CN1_DEBUG_INFO(25);
+    __CN1_DEBUG_INFO(26);
     BC_ALOAD(0);
     PUSH_POINTER(__NEW_com_example_ui_VolumeButton(threadStateData)); /* NEW */
     BC_DUP(); /* DUP */
     com_example_ui_VolumeButton___INIT____(threadStateData, SP[-1].data.o);     SP -= 1;
     set_field_com_example_myapp_Game_volumeButton(threadStateData, PEEK_OBJ(1), PEEK_OBJ(2));
     POP_MANY(2);
-    __CN1_DEBUG_INFO(27);
+    __CN1_DEBUG_INFO(28);
     BC_ALOAD(0);
     PUSH_POINTER(__NEW_java_util_Random(threadStateData)); /* NEW */
     BC_DUP(); /* DUP */
     java_util_Random___INIT____(threadStateData, SP[-1].data.o);     SP -= 1;
     set_field_com_example_myapp_Game_random(threadStateData, PEEK_OBJ(1), PEEK_OBJ(2));
     POP_MANY(2);
-    __CN1_DEBUG_INFO(30);
+    __CN1_DEBUG_INFO(31);
     /* CustomInvoke */virtual_com_example_myapp_Game_changeState___int(threadStateData, __cn1ThisObject, get_field_com_example_myapp_Game_sceneNum(__cn1ThisObject)); 
     __CN1_DEBUG_INFO(36);
     releaseForReturn(threadStateData, cn1LocalsBeginInThread); 
@@ -209,7 +226,7 @@ JAVA_OBJECT com_example_myapp_Game_getGame___R_com_example_myapp_Game(CODENAME_O
     __STATIC_INITIALIZER_com_example_myapp_Game(threadStateData);
     DEFINE_METHOD_STACK(2, 0, 0, 10197, 10198);
     __CN1_DEBUG_INFO(39);
-    if (get_static_com_example_myapp_Game_game(threadStateData)!=JAVA_NULL) /* IFNONNULL CustomJump */ goto label_L908722588;
+    if (get_static_com_example_myapp_Game_game(threadStateData)!=JAVA_NULL) /* IFNONNULL CustomJump */ goto label_L496757837;
     __CN1_DEBUG_INFO(40);
     PUSH_POINTER(__NEW_com_example_myapp_Game(threadStateData)); /* NEW */
     BC_DUP(); /* DUP */
@@ -217,7 +234,7 @@ JAVA_OBJECT com_example_myapp_Game_getGame___R_com_example_myapp_Game(CODENAME_O
     set_static_com_example_myapp_Game_game(threadStateData, PEEK_OBJ(1));
     SP--;
 
-label_L908722588:
+label_L496757837:
     __CN1_DEBUG_INFO(42);
     PUSH_POINTER(get_static_com_example_myapp_Game_game(threadStateData));
     releaseForReturn(threadStateData, cn1LocalsBeginInThread); 
@@ -283,13 +300,13 @@ JAVA_VOID com_example_myapp_Game_changeState___int(CODENAME_ONE_THREAD_STATE, JA
     SP++;
     SP--;
     switch((*SP).data.i) {
-        case 0: goto label_L496757837;
-        case 1: goto label_L1548271808;
-        case 2: goto label_L17600354;
-        default: goto label_L1733056574;
+        case 0: goto label_L1548271808;
+        case 1: goto label_L17600354;
+        case 2: goto label_L1733056574;
+        default: goto label_L636959006;
     }
 
-label_L496757837:
+label_L1548271808:
     __CN1_DEBUG_INFO(74);
     BC_ALOAD(0);
     PUSH_POINTER(__NEW_com_example_statemanager_MenuScene(threadStateData)); /* NEW */
@@ -300,9 +317,9 @@ label_L496757837:
     __CN1_DEBUG_INFO(75);
     set_field_com_example_myapp_Game_sceneNum(threadStateData, 0 /* ICONST_0 */, __cn1ThisObject);
     __CN1_DEBUG_INFO(77);
-    goto label_L636959006;
+    goto label_L1059300256;
 
-label_L1548271808:
+label_L17600354:
     __CN1_DEBUG_INFO(79);
     BC_ALOAD(0);
     PUSH_POINTER(__NEW_com_example_statemanager_PlayingScene(threadStateData)); /* NEW */
@@ -313,9 +330,9 @@ label_L1548271808:
     __CN1_DEBUG_INFO(80);
     set_field_com_example_myapp_Game_sceneNum(threadStateData, 1 /* ICONST_1 */, __cn1ThisObject);
     __CN1_DEBUG_INFO(82);
-    goto label_L636959006;
+    goto label_L1059300256;
 
-label_L17600354:
+label_L1733056574:
     __CN1_DEBUG_INFO(84);
     BC_ALOAD(0);
     PUSH_POINTER(__NEW_com_example_statemanager_DeathScene(threadStateData)); /* NEW */
@@ -328,13 +345,13 @@ label_L17600354:
     __CN1_DEBUG_INFO(87);
     /* VarOp.assignFrom */ ilocals_2_ = /* CustomInvoke */virtual_java_util_Random_nextInt___int_R_int(threadStateData, get_field_com_example_myapp_Game_random(__cn1ThisObject), 100);
     __CN1_DEBUG_INFO(92);
-    goto label_L636959006;
+    goto label_L1059300256;
 
-label_L1733056574:
+label_L636959006:
     __CN1_DEBUG_INFO(94);
     set_field_com_example_myapp_Game_currentScene(threadStateData, JAVA_NULL /* ACONST_NULL */, __cn1ThisObject);
 
-label_L636959006:
+label_L1059300256:
     __CN1_DEBUG_INFO(97);
     releaseForReturn(threadStateData, cn1LocalsBeginInThread); 
     return;
@@ -363,9 +380,9 @@ JAVA_VOID com_example_myapp_Game_run__(CODENAME_ONE_THREAD_STATE, JAVA_OBJECT  _
     SP--; SP[-1].data.l = SP[-1].data.l * (*SP).data.l; /* LMUL */
     BC_LSTORE(9);
     __CN1_DEBUG_INFO(108);
-    goto label_L1059300256;
+    goto label_L1521568953;
 
-label_L1605988985:
+label_L1134202713:
     __CN1_DEBUG_INFO(109);
     PUSH_LONG(java_lang_System_currentTimeMillis___R_long(threadStateData));
     PUSH_LONG(1000000LL); /* LDC */
@@ -378,23 +395,23 @@ label_L1605988985:
     __CN1_DEBUG_INFO(112);
     /* VarOp.assignFrom */     llocals_9_ = llocals_11_;
     __CN1_DEBUG_INFO(114);
-    if (CN1_CMP_EXPR(dlocals_7_, 1 /* DCONST_1 */)<0) /* IFLT CustomJump */ goto label_L1521568953;
+    if (CN1_CMP_EXPR(dlocals_7_, 1 /* DCONST_1 */)<0) /* IFLT CustomJump */ goto label_L1605988985;
     __CN1_DEBUG_INFO(115);
     virtual_com_example_myapp_Game_update__(threadStateData, __cn1ThisObject); 
     __CN1_DEBUG_INFO(116);
     /* VarOp.assignFrom */ dlocals_7_=(dlocals_7_ - 1 /* DCONST_1 */);
 
-label_L1521568953:
+label_L1605988985:
     __CN1_DEBUG_INFO(118);
-    if (CN1_CMP_EXPR(dlocals_5_, 1 /* DCONST_1 */)<0) /* IFLT CustomJump */ goto label_L1059300256;
+    if (CN1_CMP_EXPR(dlocals_5_, 1 /* DCONST_1 */)<0) /* IFLT CustomJump */ goto label_L1521568953;
     __CN1_DEBUG_INFO(119);
     virtual_com_example_myapp_GameContainer_repaint__(threadStateData, get_field_com_example_myapp_Game_panel(__cn1ThisObject)); 
     __CN1_DEBUG_INFO(120);
     /* VarOp.assignFrom */ dlocals_5_=(dlocals_5_ - 1 /* DCONST_1 */);
 
-label_L1059300256:
+label_L1521568953:
     __CN1_DEBUG_INFO(108);
-    if (get_field_com_example_myapp_Game_GameThread(__cn1ThisObject)!=JAVA_NULL) /* IFNONNULL CustomJump */ goto label_L1605988985;
+    if (get_field_com_example_myapp_Game_GameThread(__cn1ThisObject)!=JAVA_NULL) /* IFNONNULL CustomJump */ goto label_L1134202713;
     __CN1_DEBUG_INFO(123);
     releaseForReturn(threadStateData, cn1LocalsBeginInThread); 
     return;

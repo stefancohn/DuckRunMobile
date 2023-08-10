@@ -97,7 +97,7 @@ public class EnemyManager {
                     projectiles.get(j).collided = true; 
                     enemies.get(i).isDead = true;
                     PlayingScene.gameScore+= .2001; //add score
-                    //Game.game.audioPlayer.playAudio("/gooseDeath.wav"); //play death sound for goose 
+                    Game.audioPlayer.playAudio("/gooseDeath.mp3"); //play death sound for goose 
                 }
             }
         }

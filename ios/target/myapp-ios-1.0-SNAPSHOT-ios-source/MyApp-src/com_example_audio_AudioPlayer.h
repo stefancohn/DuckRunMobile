@@ -34,6 +34,7 @@ JAVA_VOID com_example_audio_AudioPlayer_wait___long(CODENAME_ONE_THREAD_STATE, J
 JAVA_VOID com_example_audio_AudioPlayer_wait___long_int(CODENAME_ONE_THREAD_STATE, JAVA_OBJECT  __cn1ThisObject, JAVA_LONG __cn1Arg1, JAVA_INT __cn1Arg2);
 
 JAVA_OBJECT com_example_audio_AudioPlayer_clone___R_java_lang_Object(CODENAME_ONE_THREAD_STATE, JAVA_OBJECT  __cn1ThisObject);
+#define virtual_com_example_audio_AudioPlayer_playAudio___java_lang_String com_example_audio_AudioPlayer_playAudio___java_lang_String
 
 
 struct obj__com_example_audio_AudioPlayer {

@@ -15,14 +15,14 @@ Image[] upArrow = new Image[2];
 public int arrowSprite = 0;
 public int width = (int) (0.2 * MyApp.DEVICE_WIDTH);
 public int height = (int) (0.18 * MyApp.DEVICE_HEIGHT);
-public int xPos = 20;
+public int xPos = 50;
 public int yPos = (int) (MyApp.DEVICE_HEIGHT * .93 - height);
 
 //these represent how much bigger the image is in-game to the root image for the arrows 
 public float imageWidthScale = width/32;
 public float imageHeightScale = height/11;
-public int arrowWidth = (int) (13 * imageWidthScale);
-public int arrowHeight = (int) (11 * imageHeightScale);
+public int arrowWidth = (int) (16 * imageWidthScale);
+public int arrowHeight = (int) (12 * imageHeightScale);
 
 //placement for arrow hitboxes
 public int rightArrowX = (int) (19 * imageWidthScale);

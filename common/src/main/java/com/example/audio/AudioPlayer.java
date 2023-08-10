@@ -8,7 +8,8 @@ public class AudioPlayer {
     
     public void playAudio(String uri) {
         try {
-            Media media = MediaManager.createMedia(uri, false);
+            Media media = MediaManager.createMedia((Display.getInstance()
+                .getResourceAsStream(getClass(), uri)), "audio/mp3");
     
             media.play();
         } catch (IOException e) {

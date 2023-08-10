@@ -27,7 +27,7 @@ public class DeathSceneOverlay {
     int hsX = (int) (MyApp.DEVICE_WIDTH * .20);
     int hsY = (int) (MyApp.DEVICE_HEIGHT * .225);
 
-    VolumeButton volumeButton = new VolumeButton();
+    //VolumeButton volumeButton = new VolumeButton();
 
     public DeathSceneOverlay() { 
         loadButtons();

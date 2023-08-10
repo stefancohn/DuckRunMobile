@@ -149,8 +149,8 @@ JAVA_OBJECT com_codename1_ui_RGBImage_subImage___int_int_int_int_boolean_R_com_c
     __CN1_DEBUG_INFO(83);
     /* VarOp.assignFrom */     ilocals_8_ = 0 /* ICONST_0 */; 
 
-label_L772147225:
-    if (ilocals_8_>=ilocals_7_) /* IF_ICMPGE CustomJump */ goto label_L602928593;
+label_L1120043781:
+    if (ilocals_8_>=ilocals_7_) /* IF_ICMPGE CustomJump */ goto label_L772147225;
     __CN1_DEBUG_INFO(84);
     /* VarOp.assignFrom */ ilocals_9_=(ilocals_8_ / ilocals_3_);
     __CN1_DEBUG_INFO(85);
@@ -161,9 +161,9 @@ label_L772147225:
     CN1_SET_ARRAY_ELEMENT_INT(locals[6].data.o, ilocals_8_, CN1_ARRAY_ELEMENT_INT(get_field_com_codename1_ui_RGBImage_rgb(__cn1ThisObject), ilocals_11_));
     __CN1_DEBUG_INFO(83);
     BC_IINC(8, 1);
-    goto label_L772147225;
+    goto label_L1120043781;
 
-label_L602928593:
+label_L772147225:
     __CN1_DEBUG_INFO(90);
     PUSH_POINTER(__NEW_com_codename1_ui_RGBImage(threadStateData)); /* NEW */
     BC_DUP(); /* DUP */
@@ -186,8 +186,8 @@ JAVA_OBJECT com_codename1_ui_RGBImage_scaled___int_int_R_com_codename1_ui_Image(
     __CN1_DEBUG_INFO(98);
     /* VarOp.assignFrom */ ilocals_4_ = virtual_com_codename1_ui_RGBImage_getHeight___R_int(threadStateData, __cn1ThisObject);
     __CN1_DEBUG_INFO(101);
-    if (ilocals_3_!=ilocals_1_) /* IF_ICMPNE CustomJump */ goto label_L1120043781;
-    if (ilocals_4_!=ilocals_2_) /* IF_ICMPNE CustomJump */ goto label_L1120043781;
+    if (ilocals_3_!=ilocals_1_) /* IF_ICMPNE CustomJump */ goto label_L562345204;
+    if (ilocals_4_!=ilocals_2_) /* IF_ICMPNE CustomJump */ goto label_L562345204;
     __CN1_DEBUG_INFO(102);
 
 {
@@ -195,7 +195,7 @@ JAVA_OBJECT com_codename1_ui_RGBImage_scaled___int_int_R_com_codename1_ui_Image(
     releaseForReturn(threadStateData, cn1LocalsBeginInThread); return ___returnValue;
 }
 
-label_L1120043781:
+label_L562345204:
     __CN1_DEBUG_INFO(104);
     (*SP).type = CN1_TYPE_INT; /* ILOAD */ 
     (*SP).data.i = ilocals_3_; 
@@ -236,13 +236,13 @@ JAVA_VOID com_codename1_ui_RGBImage_scale___int_int(CODENAME_ONE_THREAD_STATE, J
     __CN1_DEBUG_INFO(117);
     /* VarOp.assignFrom */ ilocals_4_ = virtual_com_codename1_ui_RGBImage_getHeight___R_int(threadStateData, __cn1ThisObject);
     __CN1_DEBUG_INFO(120);
-    if (ilocals_3_!=ilocals_1_) /* IF_ICMPNE CustomJump */ goto label_L562345204;
-    if (ilocals_4_!=ilocals_2_) /* IF_ICMPNE CustomJump */ goto label_L562345204;
+    if (ilocals_3_!=ilocals_1_) /* IF_ICMPNE CustomJump */ goto label_L2098830440;
+    if (ilocals_4_!=ilocals_2_) /* IF_ICMPNE CustomJump */ goto label_L2098830440;
     __CN1_DEBUG_INFO(121);
     releaseForReturn(threadStateData, cn1LocalsBeginInThread); 
     return;
 
-label_L562345204:
+label_L2098830440:
     __CN1_DEBUG_INFO(123);
     (*SP).type = CN1_TYPE_INT; /* ILOAD */ 
     (*SP).data.i = ilocals_3_; 
@@ -313,19 +313,19 @@ JAVA_OBJECT com_codename1_ui_RGBImage_modifyAlpha___byte_R_com_codename1_ui_Imag
     __CN1_DEBUG_INFO(147);
     /* VarOp.assignFrom */     ilocals_5_ = 0 /* ICONST_0 */; 
 
-label_L902654164:
-    if (ilocals_5_>=ilocals_4_) /* IF_ICMPGE CustomJump */ goto label_L2098830440;
+label_L829053325:
+    if (ilocals_5_>=ilocals_4_) /* IF_ICMPGE CustomJump */ goto label_L1665209618;
     __CN1_DEBUG_INFO(148);
-    if ((CN1_ARRAY_ELEMENT_INT(locals[2].data.o, ilocals_5_) & -16777216)==0) /* IFEQ CustomJump */ goto label_L1665209618;
+    if ((CN1_ARRAY_ELEMENT_INT(locals[2].data.o, ilocals_5_) & -16777216)==0) /* IFEQ CustomJump */ goto label_L902654164;
     __CN1_DEBUG_INFO(149);
     CN1_SET_ARRAY_ELEMENT_INT(locals[2].data.o, ilocals_5_, ((CN1_ARRAY_ELEMENT_INT(locals[2].data.o, ilocals_5_) & 16777215) | ilocals_3_));
 
-label_L1665209618:
+label_L902654164:
     __CN1_DEBUG_INFO(147);
     BC_IINC(5, 1);
-    goto label_L902654164;
+    goto label_L829053325;
 
-label_L2098830440:
+label_L1665209618:
     __CN1_DEBUG_INFO(152);
     PUSH_POINTER(__NEW_com_codename1_ui_RGBImage(threadStateData)); /* NEW */
     BC_DUP(); /* DUP */
@@ -380,29 +380,29 @@ JAVA_VOID com_codename1_ui_RGBImage_getRGB___int_1ARRAY_int_int_int_int_int(CODE
     __CN1_DEBUG_INFO(183);
     /* VarOp.assignFrom */     ilocals_8_ = 0 /* ICONST_0 */; 
 
-label_L896945135:
-    if (ilocals_8_>=ilocals_6_) /* IF_ICMPGE CustomJump */ goto label_L829053325;
+label_L1446238973:
+    if (ilocals_8_>=ilocals_6_) /* IF_ICMPGE CustomJump */ goto label_L2189588;
     __CN1_DEBUG_INFO(184);
     /* VarOp.assignFrom */ ilocals_9_=(ilocals_8_ * ilocals_5_);
     __CN1_DEBUG_INFO(185);
     /* VarOp.assignFrom */     ilocals_10_ = 0 /* ICONST_0 */; 
 
-label_L1805845895:
-    if (ilocals_10_>=ilocals_5_) /* IF_ICMPGE CustomJump */ goto label_L2189588;
+label_L896945135:
+    if (ilocals_10_>=ilocals_5_) /* IF_ICMPGE CustomJump */ goto label_L1805845895;
     __CN1_DEBUG_INFO(186);
     CN1_SET_ARRAY_ELEMENT_INT(locals[1].data.o, ((ilocals_2_ + ilocals_9_) + ilocals_10_), CN1_ARRAY_ELEMENT_INT(get_field_com_codename1_ui_RGBImage_rgb(__cn1ThisObject), (ilocals_7_ + ilocals_10_)));
     __CN1_DEBUG_INFO(185);
     BC_IINC(10, 1);
-    goto label_L1805845895;
+    goto label_L896945135;
 
-label_L2189588:
+label_L1805845895:
     __CN1_DEBUG_INFO(188);
     /* VarOp.assignFrom */ ilocals_7_=(ilocals_7_ + get_field_com_codename1_ui_RGBImage_width(__cn1ThisObject));
     __CN1_DEBUG_INFO(183);
     BC_IINC(8, 1);
-    goto label_L896945135;
+    goto label_L1446238973;
 
-label_L829053325:
+label_L2189588:
     __CN1_DEBUG_INFO(190);
     releaseForReturn(threadStateData, cn1LocalsBeginInThread); 
     return;
@@ -431,14 +431,14 @@ JAVA_VOID com_codename1_ui_RGBImage_drawImage___com_codename1_ui_Graphics_java_l
     SP++;
     PUSH_INT(get_field_com_codename1_ui_RGBImage_width(__cn1ThisObject));
     PUSH_INT(get_field_com_codename1_ui_RGBImage_height(__cn1ThisObject));
-    if (get_field_com_codename1_ui_RGBImage_opaque(__cn1ThisObject)!=0) /* IFNE CustomJump */ goto label_L1446238973;
+    if (get_field_com_codename1_ui_RGBImage_opaque(__cn1ThisObject)!=0) /* IFNE CustomJump */ goto label_L1565614310;
     PUSH_INT(1); /* ICONST_1 */
-    goto label_L1565614310;
-
-label_L1446238973:
-    PUSH_INT(0); /* ICONST_0 */
+    goto label_L783141366;
 
 label_L1565614310:
+    PUSH_INT(0); /* ICONST_0 */
+
+label_L783141366:
     virtual_com_codename1_ui_Graphics_drawRGB___int_1ARRAY_int_int_int_int_int_boolean(threadStateData, SP[-8].data.o, SP[-7].data.o, SP[-6].data.i, SP[-5].data.i, SP[-4].data.i, SP[-3].data.i, SP[-2].data.i, SP[-1].data.i);     SP-= 8;
     __CN1_DEBUG_INFO(197);
     releaseForReturn(threadStateData, cn1LocalsBeginInThread); 

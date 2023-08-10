@@ -1,5 +1,13 @@
 #include "com_example_audio_AudioPlayer.h"
+#include "com_codename1_media_Media.h"
+#include "com_codename1_media_MediaManager.h"
+#include "com_codename1_ui_Display.h"
+#include "java_io_IOException.h"
+#include "java_io_PrintStream.h"
 #include "java_lang_NullPointerException.h"
+#include "java_lang_String.h"
+#include "java_lang_StringBuilder.h"
+#include "java_lang_System.h"
 const struct clazz *base_interfaces_for_com_example_audio_AudioPlayer[] = {};
 struct clazz class__com_example_audio_AudioPlayer = {
   DEBUG_GC_INIT &class__java_lang_Class, 999999, 0, 0, 0, 0, &__FINALIZER_com_example_audio_AudioPlayer ,0 , &__GC_MARK_com_example_audio_AudioPlayer,  0, cn1_class_id_com_example_audio_AudioPlayer, "com.example.audio.AudioPlayer", 0, 0, 0, JAVA_FALSE, &class__java_lang_Object, base_interfaces_for_com_example_audio_AudioPlayer, 0, &__NEW_INSTANCE_com_example_audio_AudioPlayer, 0
@@ -38,6 +46,57 @@ JAVA_VOID com_example_audio_AudioPlayer___INIT____(CODENAME_ONE_THREAD_STATE, JA
 
 
 JAVA_VOID com_example_audio_AudioPlayer_playAudio___java_lang_String(CODENAME_ONE_THREAD_STATE, JAVA_OBJECT  __cn1ThisObject, JAVA_OBJECT __cn1Arg1) {
+    DEFINE_INSTANCE_METHOD_STACK(4, 3, 0, 10206, 9240);
+    locals[0].data.o = __cn1ThisObject; locals[0].type = CN1_TYPE_OBJECT;     locals[1].data.o = __cn1Arg1;
+    locals[1].type = CN1_TYPE_OBJECT;
+    int restoreToL309281422cn1_class_id_java_io_IOException1;
+    int tryBlockOffsetL309281422cn1_class_id_java_io_IOException1;
+    DEFINE_CATCH_BLOCK(catch_L309281422cn1_class_id_java_io_IOException1, label_L1562764987, restoreToL309281422cn1_class_id_java_io_IOException1);
+
+label_L309281422:
+ tryBlockOffsetL309281422cn1_class_id_java_io_IOException1 = threadStateData->tryBlockOffset;
+    BEGIN_TRY(cn1_class_id_java_io_IOException, catch_L309281422cn1_class_id_java_io_IOException1);
+    restoreToL309281422cn1_class_id_java_io_IOException1 = threadStateData->threadObjectStackOffset;
+
+    __CN1_DEBUG_INFO(11);
+    PUSH_OBJ(com_codename1_ui_Display_getInstance___R_com_codename1_ui_Display(threadStateData));
+    __CN1_DEBUG_INFO(12);
+    { JAVA_OBJECT tmpResult = virtual_java_lang_Object_getClass___R_java_lang_Class(threadStateData, __cn1ThisObject);
+    PUSH_OBJ(tmpResult); }
+    BC_ALOAD(1);
+    { JAVA_OBJECT tmpResult = virtual_com_codename1_ui_Display_getResourceAsStream___java_lang_Class_java_lang_String_R_java_io_InputStream(threadStateData, SP[-3].data.o, SP[-2].data.o, SP[-1].data.o);
+    SP-=2;
+    SP[-1].data.o = tmpResult; SP[-1].type = CN1_TYPE_OBJECT; }
+    /* LDC: 'audio/mp3'*/
+    PUSH_POINTER(STRING_FROM_CONSTANT_POOL_OFFSET(1702));
+    __CN1_DEBUG_INFO(11);
+    { JAVA_OBJECT tmpResult = com_codename1_media_MediaManager_createMedia___java_io_InputStream_java_lang_String_R_com_codename1_media_Media(threadStateData, SP[-2].data.o, SP[-1].data.o);
+    SP-=1;
+    SP[-1].data.o = tmpResult; SP[-1].type = CN1_TYPE_OBJECT; }
+    BC_ASTORE(2);
+    __CN1_DEBUG_INFO(14);
+    virtual_com_codename1_media_Media_play__(threadStateData, locals[2].data.o); 
+
+label_L538608865:
+END_TRY(1);    __CN1_DEBUG_INFO(15);
+    JUMP_TO(label_L216376974, 0);
+
+label_L1562764987:
+    BC_ASTORE(2);
+    __CN1_DEBUG_INFO(16);
+    PUSH_POINTER(get_static_java_lang_System_out(threadStateData));
+    PUSH_POINTER(__NEW_java_lang_StringBuilder(threadStateData)); /* NEW */
+    BC_DUP(); /* DUP */
+    /* CustomInvoke */java_lang_StringBuilder___INIT_____java_lang_String(threadStateData, SP[-1].data.o, STRING_FROM_CONSTANT_POOL_OFFSET(10207));     SP -= 1;
+    /* CustomInvoke */{ JAVA_OBJECT tmpResult = virtual_java_lang_StringBuilder_append___java_lang_Object_R_java_lang_StringBuilder(threadStateData, SP[-1].data.o, locals[2].data.o);
+    SP[-1].data.o = tmpResult; SP[-1].type = CN1_TYPE_OBJECT; }
+    { JAVA_OBJECT tmpResult = virtual_java_lang_StringBuilder_toString___R_java_lang_String(threadStateData, SP[-1].data.o);
+    SP[-1].data.o = tmpResult; SP[-1].type = CN1_TYPE_OBJECT; }
+    virtual_java_io_PrintStream_println___java_lang_String(threadStateData, SP[-2].data.o, SP[-1].data.o);     SP-= 2;
+
+label_L216376974:
+    __CN1_DEBUG_INFO(18);
+    releaseForReturnInException(threadStateData, cn1LocalsBeginInThread, methodBlockOffset); 
     return;
 }
 
@@ -80,7 +139,7 @@ void __STATIC_INITIALIZER_com_example_audio_AudioPlayer(CODENAME_ONE_THREAD_STAT
         return;
     }
 
-    class__com_example_audio_AudioPlayer.vtable = malloc(sizeof(void*) *10);
+    class__com_example_audio_AudioPlayer.vtable = malloc(sizeof(void*) *11);
     __INIT_VTABLE_com_example_audio_AudioPlayer(threadStateData, class__com_example_audio_AudioPlayer.vtable);
     class__com_example_audio_AudioPlayer.initialized = JAVA_TRUE;
 monitorExit(threadStateData, (JAVA_OBJECT)&class__com_example_audio_AudioPlayer);

@@ -46,22 +46,22 @@ JAVA_VOID java_io_FilterOutputStream___INIT_____java_io_OutputStream(CODENAME_ON
 
 JAVA_VOID java_io_FilterOutputStream_close__(CODENAME_ONE_THREAD_STATE, JAVA_OBJECT  __cn1ThisObject) {
     DEFINE_INSTANCE_METHOD_STACK(1, 3, 0, 941, 933);
-    locals[0].data.o = __cn1ThisObject; locals[0].type = CN1_TYPE_OBJECT;     int restoreToL778946892cn1_class_id_java_lang_Throwable1;
-    int tryBlockOffsetL778946892cn1_class_id_java_lang_Throwable1;
-    DEFINE_CATCH_BLOCK(catch_L778946892cn1_class_id_java_lang_Throwable1, label_L1632497828, restoreToL778946892cn1_class_id_java_lang_Throwable1);
+    locals[0].data.o = __cn1ThisObject; locals[0].type = CN1_TYPE_OBJECT;     int restoreToL1815722544cn1_class_id_java_lang_Throwable1;
+    int tryBlockOffsetL1815722544cn1_class_id_java_lang_Throwable1;
+    DEFINE_CATCH_BLOCK(catch_L1815722544cn1_class_id_java_lang_Throwable1, label_L1632497828, restoreToL1815722544cn1_class_id_java_lang_Throwable1);
     int restoreToL764826684cn1_class_id_java_lang_Throwable2;
     int tryBlockOffsetL764826684cn1_class_id_java_lang_Throwable2;
     DEFINE_CATCH_BLOCK(catch_L764826684cn1_class_id_java_lang_Throwable2, label_L33419717, restoreToL764826684cn1_class_id_java_lang_Throwable2);
     /* VarOp.assignFrom */ locals[1].type=CN1_TYPE_INVALID;    locals[1].data.o = JAVA_NULL /* ACONST_NULL */; 
 locals[1].type=CN1_TYPE_OBJECT;
-label_L778946892:
- tryBlockOffsetL778946892cn1_class_id_java_lang_Throwable1 = threadStateData->tryBlockOffset;
-    BEGIN_TRY(cn1_class_id_java_lang_Throwable, catch_L778946892cn1_class_id_java_lang_Throwable1);
-    restoreToL778946892cn1_class_id_java_lang_Throwable1 = threadStateData->threadObjectStackOffset;
+label_L1815722544:
+ tryBlockOffsetL1815722544cn1_class_id_java_lang_Throwable1 = threadStateData->tryBlockOffset;
+    BEGIN_TRY(cn1_class_id_java_lang_Throwable, catch_L1815722544cn1_class_id_java_lang_Throwable1);
+    restoreToL1815722544cn1_class_id_java_lang_Throwable1 = threadStateData->threadObjectStackOffset;
 
     virtual_java_io_FilterOutputStream_flush__(threadStateData, __cn1ThisObject); 
 
-label_L1815722544:
+label_L254669696:
 END_TRY(1);    JUMP_TO(label_L764826684, 0);
 
 label_L1632497828:
@@ -75,7 +75,7 @@ label_L764826684:
 
     virtual_java_io_OutputStream_close__(threadStateData, get_field_java_io_FilterOutputStream_out(__cn1ThisObject)); 
 
-label_L254669696:
+label_L741827271:
 END_TRY(1);    JUMP_TO(label_L1940055334, 0);
 
 label_L33419717:

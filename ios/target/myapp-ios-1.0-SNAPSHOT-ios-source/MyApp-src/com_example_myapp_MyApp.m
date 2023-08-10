@@ -100,13 +100,13 @@ JAVA_VOID com_example_myapp_MyApp_init___java_lang_Object(CODENAME_ONE_THREAD_ST
     PUSH_OBJ(com_codename1_ui_Display_getInstance___R_com_codename1_ui_Display(threadStateData));
     { JAVA_INT tmpResult = virtual_com_codename1_ui_Display_isPortrait___R_boolean(threadStateData, SP[-1].data.o);
     SP[-1].data.i = tmpResult; SP[-1].type = CN1_TYPE_INT; }
-    if(POP_INT() == 0) /* IFEQ */ goto label_L1926027290;
+    if(POP_INT() == 0) /* IFEQ */ goto label_L1837601499;
     PUSH_OBJ(com_codename1_ui_Display_getInstance___R_com_codename1_ui_Display(threadStateData));
     { JAVA_OBJECT tmpResult = virtual_com_codename1_ui_Display_getPlatformName___R_java_lang_String(threadStateData, SP[-1].data.o);
     SP[-1].data.o = tmpResult; SP[-1].type = CN1_TYPE_OBJECT; }
     /* CustomInvoke */{ JAVA_INT tmpResult = virtual_java_lang_String_equals___java_lang_Object_R_boolean(threadStateData, SP[-1].data.o, STRING_FROM_CONSTANT_POOL_OFFSET(10185));
     SP[-1].data.i = tmpResult; SP[-1].type = CN1_TYPE_INT; }
-    if(POP_INT() == 0) /* IFEQ */ goto label_L1926027290;
+    if(POP_INT() == 0) /* IFEQ */ goto label_L1837601499;
     __CN1_DEBUG_INFO(29);
     PUSH_OBJ(com_codename1_ui_Display_getInstance___R_com_codename1_ui_Display(threadStateData));
     /* CustomInvoke */virtual_com_codename1_ui_Display_lockOrientation___boolean(threadStateData, SP[-1].data.o, 0 /* ICONST_0 */);     SP -= 1;
@@ -141,9 +141,9 @@ JAVA_VOID com_example_myapp_MyApp_init___java_lang_Object(CODENAME_ONE_THREAD_ST
     __CN1_DEBUG_INFO(33);
     set_static_com_example_myapp_MyApp_HEIGHT_SCALE(threadStateData, (((JAVA_FLOAT)get_static_com_example_myapp_MyApp_DEVICE_HEIGHT(threadStateData)) / 480.0));
     __CN1_DEBUG_INFO(34);
-    goto label_L1837601499;
+    goto label_L1690050988;
 
-label_L1926027290:
+label_L1837601499:
     __CN1_DEBUG_INFO(35);
     PUSH_OBJ(com_codename1_ui_Display_getInstance___R_com_codename1_ui_Display(threadStateData));
     /* CustomInvoke */virtual_com_codename1_ui_Display_lockOrientation___boolean(threadStateData, SP[-1].data.o, 0 /* ICONST_0 */);     SP -= 1;
@@ -162,7 +162,7 @@ label_L1926027290:
     __CN1_DEBUG_INFO(39);
     set_static_com_example_myapp_MyApp_HEIGHT_SCALE(threadStateData, (((JAVA_FLOAT)get_static_com_example_myapp_MyApp_DEVICE_HEIGHT(threadStateData)) / 480.0));
 
-label_L1837601499:
+label_L1690050988:
     __CN1_DEBUG_INFO(43);
     /* VarOp.assignFrom */ locals[2].type=CN1_TYPE_INVALID;    locals[2].data.o = STRING_FROM_CONSTANT_POOL_OFFSET(10186);
 locals[2].type=CN1_TYPE_OBJECT;    __CN1_DEBUG_INFO(44);
@@ -171,11 +171,11 @@ locals[2].type=CN1_TYPE_OBJECT;    __CN1_DEBUG_INFO(44);
     SP[-1].data.o = tmpResult; SP[-1].type = CN1_TYPE_OBJECT; }
     /* CustomInvoke */{ JAVA_INT tmpResult = virtual_java_lang_String_equals___java_lang_Object_R_boolean(threadStateData, SP[-1].data.o, STRING_FROM_CONSTANT_POOL_OFFSET(552));
     SP[-1].data.i = tmpResult; SP[-1].type = CN1_TYPE_INT; }
-    if(POP_INT() == 0) /* IFEQ */ goto label_L1690050988;
+    if(POP_INT() == 0) /* IFEQ */ goto label_L1228798862;
     __CN1_DEBUG_INFO(45);
     /* VarOp.assignFrom */ locals[2].type=CN1_TYPE_INVALID;    locals[2].data.o = STRING_FROM_CONSTANT_POOL_OFFSET(10187);
 locals[2].type=CN1_TYPE_OBJECT;
-label_L1690050988:
+label_L1228798862:
     __CN1_DEBUG_INFO(48);
     /* CustomInvoke */com_codename1_ui_Toolbar_setGlobalToolbar___boolean(threadStateData, 0 /* ICONST_0 */); 
     __CN1_DEBUG_INFO(49);

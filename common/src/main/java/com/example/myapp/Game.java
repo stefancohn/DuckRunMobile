@@ -21,7 +21,8 @@ public class Game implements Runnable {
     Scene currentScene;
     public int sceneNum = Constants.SCENE_MENU; //controls which scene we are on
     
-    public AudioPlayer audioPlayer = new AudioPlayer(); //audio player 
+    public static AudioPlayer audioPlayer = new AudioPlayer(); //audio player 
+    public static Boolean audioOn = true;
     public VolumeButton volumeButton = new VolumeButton();
 
     Random random = new Random();
@@ -32,7 +33,6 @@ public class Game implements Runnable {
         //frame.pack();
         //frame.setIconImage(logo.getImage());
        // frame.setVisible(true);
-       //audioPlayer.playAudio("https://www.youtube.com/watch?v=ProbPpO_8oo");
     }
     //singleton game panel
     public static Game getGame() {

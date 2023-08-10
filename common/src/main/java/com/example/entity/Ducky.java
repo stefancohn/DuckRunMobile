@@ -114,11 +114,11 @@ import com.example.util.SaveScores;
             if (aniTick >= aniSpeed) {  //once anitick is greater than desired speed reset it and go to next sprite in the animation
                 aniTick = 0;
 
-                if (isDead && spriteLoop == 0) { //to play death sound
-                    //Game.game.audioPlayer.playAudio("/duckDeath.wav");
+                if (isDead && Game.audioOn && spriteLoop == 0) { //to play death sound
+                    Game.audioPlayer.playAudio("/duckDeath.mp3");
                 }
-                if (isAttacking && spriteLoop == 1) { //to play quack sound
-                   // Game.game.audioPlayer.playAudio("/quack.wav");
+                if (isAttacking && Game.audioOn && spriteLoop == 1) { //to play quack sound
+                    //Game.audioPlayer.playAudio("/quack.mp3");
                 }
 
                 spriteLoop++;
@@ -270,7 +270,7 @@ import com.example.util.SaveScores;
         private void jump() { //sets jump and inAir to true and plays jump effect
             inAir = true;
             jump = true;
-            //Game.game.audioPlayer.playAudio("/jumpEffect.wav");
+            //if (Game.audioOn) { Game.audioPlayer.playAudio("/jumpEffect.mp3"); }
         }
 
         public void xOffsetForConstantMove(int xOffset) {

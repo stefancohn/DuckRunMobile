@@ -55,7 +55,7 @@ JAVA_OBJECT com_codename1_ui_ImageFactory_getImageFactory___com_codename1_ui_Com
     locals[0].data.o = __cn1Arg1;
     locals[0].type = CN1_TYPE_OBJECT;
     __CN1_DEBUG_INFO(76);
-    if (locals[0].data.o!=JAVA_NULL) /* IFNONNULL CustomJump */ goto label_L472124658;
+    if (locals[0].data.o!=JAVA_NULL) /* IFNONNULL CustomJump */ goto label_L2025322501;
     __CN1_DEBUG_INFO(77);
 
 {
@@ -63,10 +63,10 @@ JAVA_OBJECT com_codename1_ui_ImageFactory_getImageFactory___com_codename1_ui_Com
     releaseForReturn(threadStateData, cn1LocalsBeginInThread); return ___returnValue;
 }
 
-label_L472124658:
+label_L2025322501:
     __CN1_DEBUG_INFO(79);
     /* VarOp.assignFrom */ locals[1].data.o = /* CustomInvoke */virtual_com_codename1_ui_Component_getClientProperty___java_lang_String_R_java_lang_Object(threadStateData, locals[0].data.o, STRING_FROM_CONSTANT_POOL_OFFSET(83));locals[1].type=CN1_TYPE_OBJECT;    __CN1_DEBUG_INFO(80);
-    if (locals[1].data.o!=JAVA_NULL) /* IFNONNULL CustomJump */ goto label_L2025322501;
+    if (locals[1].data.o!=JAVA_NULL) /* IFNONNULL CustomJump */ goto label_L1492272748;
     __CN1_DEBUG_INFO(81);
     { JAVA_OBJECT tmpResult = virtual_com_codename1_ui_Component_getParent___R_com_codename1_ui_Container(threadStateData, locals[0].data.o);
     PUSH_OBJ(tmpResult); }
@@ -75,7 +75,7 @@ label_L472124658:
     releaseForReturn(threadStateData, cn1LocalsBeginInThread); 
     return POP_OBJ();
 
-label_L2025322501:
+label_L1492272748:
     __CN1_DEBUG_INFO(84);
 
 {
