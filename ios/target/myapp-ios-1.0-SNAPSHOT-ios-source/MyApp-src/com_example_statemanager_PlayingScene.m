@@ -259,7 +259,7 @@ JAVA_VOID com_example_statemanager_PlayingScene_constantScreenMove__(CODENAME_ON
     locals[0].data.o = __cn1ThisObject; locals[0].type = CN1_TYPE_OBJECT;     __CN1_DEBUG_INFO(44);
     set_field_com_example_statemanager_PlayingScene_timerForConstantScreenMoveMethod(threadStateData, (get_field_com_example_statemanager_PlayingScene_timerForConstantScreenMoveMethod(__cn1ThisObject) + 1 /* ICONST_1 */), __cn1ThisObject);
     __CN1_DEBUG_INFO(45);
-    if (((JAVA_INT)get_static_com_example_statemanager_PlayingScene_gameScore(threadStateData))<=3 /* ICONST_3 */) /* IF_ICMPLE CustomJump */ goto label_L1709578324;
+    if (((JAVA_INT)get_static_com_example_statemanager_PlayingScene_gameScore(threadStateData))<=2 /* ICONST_2 */) /* IF_ICMPLE CustomJump */ goto label_L1709578324;
     __CN1_DEBUG_INFO(46);
     virtual_com_example_statemanager_PlayingScene_constantScreenMoveMethod__(threadStateData, __cn1ThisObject); 
     __CN1_DEBUG_INFO(47);
