@@ -189,9 +189,9 @@ JAVA_VOID java_lang_Thread_join__(CODENAME_ONE_THREAD_STATE, JAVA_OBJECT  __cn1T
 JAVA_VOID java_lang_Thread_runImpl___long(CODENAME_ONE_THREAD_STATE, JAVA_OBJECT  __cn1ThisObject, JAVA_LONG __cn1Arg1) {
     DEFINE_INSTANCE_METHOD_STACK(4, 5, 0, 1158, 1166);
     locals[0].data.o = __cn1ThisObject; locals[0].type = CN1_TYPE_OBJECT;     JAVA_LONG llocals_1_ = __cn1Arg1;
-    int restoreToL581564963cn1_class_id_java_lang_Throwable1;
-    int tryBlockOffsetL581564963cn1_class_id_java_lang_Throwable1;
-    DEFINE_CATCH_BLOCK(catch_L581564963cn1_class_id_java_lang_Throwable1, label_L628064884, restoreToL581564963cn1_class_id_java_lang_Throwable1);
+    int restoreToL44293675cn1_class_id_java_lang_Throwable1;
+    int tryBlockOffsetL44293675cn1_class_id_java_lang_Throwable1;
+    DEFINE_CATCH_BLOCK(catch_L44293675cn1_class_id_java_lang_Throwable1, label_L628064884, restoreToL44293675cn1_class_id_java_lang_Throwable1);
     set_field_java_lang_Thread_alive(threadStateData, 1 /* ICONST_1 */, __cn1ThisObject);
     set_field_java_lang_Thread_nativeThreadId(threadStateData, llocals_1_, __cn1ThisObject);
     PUSH_POINTER(__NEW_java_lang_Long(threadStateData)); /* NEW */
@@ -200,14 +200,14 @@ JAVA_VOID java_lang_Thread_runImpl___long(CODENAME_ONE_THREAD_STATE, JAVA_OBJECT
     BC_ASTORE(3);
     set_static_java_lang_Thread_activeThreads(threadStateData, (get_static_java_lang_Thread_activeThreads(threadStateData) + 1 /* ICONST_1 */));
 
-label_L581564963:
- tryBlockOffsetL581564963cn1_class_id_java_lang_Throwable1 = threadStateData->tryBlockOffset;
-    BEGIN_TRY(cn1_class_id_java_lang_Throwable, catch_L581564963cn1_class_id_java_lang_Throwable1);
-    restoreToL581564963cn1_class_id_java_lang_Throwable1 = threadStateData->threadObjectStackOffset;
+label_L44293675:
+ tryBlockOffsetL44293675cn1_class_id_java_lang_Throwable1 = threadStateData->tryBlockOffset;
+    BEGIN_TRY(cn1_class_id_java_lang_Throwable, catch_L44293675cn1_class_id_java_lang_Throwable1);
+    restoreToL44293675cn1_class_id_java_lang_Throwable1 = threadStateData->threadObjectStackOffset;
 
     virtual_java_lang_Runnable_run__(threadStateData, get_field_java_lang_Thread_target(__cn1ThisObject)); 
 
-label_L2019147162:
+label_L581564963:
 END_TRY(1);    JUMP_TO(label_L109069556, 0);
 
 label_L628064884:

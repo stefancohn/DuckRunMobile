@@ -77,7 +77,7 @@ com_example_ui_VolumeButton___INIT____(threadStateData, o);
 
 
 JAVA_VOID com_example_ui_VolumeButton___INIT____(CODENAME_ONE_THREAD_STATE, JAVA_OBJECT  __cn1ThisObject) {
-    DEFINE_INSTANCE_METHOD_STACK(3, 1, 0, 10314, 205);
+    DEFINE_INSTANCE_METHOD_STACK(3, 1, 0, 10312, 205);
     locals[0].data.o = __cn1ThisObject; locals[0].type = CN1_TYPE_OBJECT;     __CN1_DEBUG_INFO(15);
     java_lang_Object___INIT____(threadStateData, __cn1ThisObject); 
     __CN1_DEBUG_INFO(8);
@@ -112,9 +112,9 @@ JAVA_VOID com_example_ui_VolumeButton___INIT____(CODENAME_ONE_THREAD_STATE, JAVA
 JAVA_VOID com_example_ui_VolumeButton_loadButton__(CODENAME_ONE_THREAD_STATE, JAVA_OBJECT  __cn1ThisObject) {
     volatile JAVA_INT ilocals_2_ = 0; /* v2 */
     volatile JAVA_INT ilocals_3_ = 0; /* v3 */
-    DEFINE_INSTANCE_METHOD_STACK(8, 4, 0, 10314, 10315);
+    DEFINE_INSTANCE_METHOD_STACK(8, 4, 0, 10312, 10313);
     locals[0].data.o = __cn1ThisObject; locals[0].type = CN1_TYPE_OBJECT;     __CN1_DEBUG_INFO(20);
-    /* VarOp.assignFrom */ locals[1].data.o = /* CustomInvoke */com_example_util_LoadSave_getSpriteAtlas___java_lang_String_R_com_codename1_ui_Image(threadStateData, STRING_FROM_CONSTANT_POOL_OFFSET(10316));locals[1].type=CN1_TYPE_OBJECT;    __CN1_DEBUG_INFO(21);
+    /* VarOp.assignFrom */ locals[1].data.o = /* CustomInvoke */com_example_util_LoadSave_getSpriteAtlas___java_lang_String_R_com_codename1_ui_Image(threadStateData, STRING_FROM_CONSTANT_POOL_OFFSET(10314));locals[1].type=CN1_TYPE_OBJECT;    __CN1_DEBUG_INFO(21);
     /* VarOp.assignFrom */     ilocals_2_ = 0 /* ICONST_0 */; 
     goto label_L1662912171;
 
@@ -153,7 +153,7 @@ JAVA_VOID com_example_ui_VolumeButton_update__(CODENAME_ONE_THREAD_STATE, JAVA_O
 
 
 JAVA_VOID com_example_ui_VolumeButton_draw___com_codename1_ui_Graphics(CODENAME_ONE_THREAD_STATE, JAVA_OBJECT  __cn1ThisObject, JAVA_OBJECT __cn1Arg1) {
-    DEFINE_INSTANCE_METHOD_STACK(6, 2, 0, 10314, 5493);
+    DEFINE_INSTANCE_METHOD_STACK(6, 2, 0, 10312, 5493);
     locals[0].data.o = __cn1ThisObject; locals[0].type = CN1_TYPE_OBJECT;     locals[1].data.o = __cn1Arg1;
     locals[1].type = CN1_TYPE_OBJECT;
     __CN1_DEBUG_INFO(50);

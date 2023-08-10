@@ -263,14 +263,14 @@ JAVA_OBJECT com_codename1_ui_TextSelection_getDefaultTextSelectionTrigger___R_co
     __STATIC_INITIALIZER_com_codename1_ui_TextSelection(threadStateData);
     DEFINE_METHOD_STACK(1, 0, 0, 6118, 6119);
     __CN1_DEBUG_INFO(152);
-    if (virtual_com_codename1_impl_CodenameOneImplementation_isDesktop___R_boolean(threadStateData, get_static_com_codename1_ui_Display_impl(threadStateData))==0) /* IFEQ CustomJump */ goto label_L1501513951;
+    if (virtual_com_codename1_impl_CodenameOneImplementation_isDesktop___R_boolean(threadStateData, get_static_com_codename1_ui_Display_impl(threadStateData))==0) /* IFEQ CustomJump */ goto label_L1287606099;
     PUSH_POINTER(get_static_com_codename1_ui_TextSelection_TextSelectionTrigger_Press(threadStateData));
-    goto label_L366828226;
+    goto label_L1501513951;
 
-label_L1501513951:
+label_L1287606099:
     PUSH_POINTER(get_static_com_codename1_ui_TextSelection_TextSelectionTrigger_LongPress(threadStateData));
 
-label_L366828226:
+label_L1501513951:
     releaseForReturn(threadStateData, cn1LocalsBeginInThread); 
     return POP_OBJ();
 }
@@ -279,11 +279,11 @@ label_L366828226:
 JAVA_OBJECT com_codename1_ui_TextSelection_getSelectionRoot___R_com_codename1_ui_Component(CODENAME_ONE_THREAD_STATE, JAVA_OBJECT  __cn1ThisObject) {
     DEFINE_INSTANCE_METHOD_STACK(2, 1, 0, 6118, 6120);
     locals[0].data.o = __cn1ThisObject; locals[0].type = CN1_TYPE_OBJECT;     __CN1_DEBUG_INFO(290);
-    if (get_field_com_codename1_ui_TextSelection_selectionRoot(__cn1ThisObject)!=JAVA_NULL) /* IFNONNULL CustomJump */ goto label_L1296612741;
+    if (get_field_com_codename1_ui_TextSelection_selectionRoot(__cn1ThisObject)!=JAVA_NULL) /* IFNONNULL CustomJump */ goto label_L366828226;
     __CN1_DEBUG_INFO(291);
     set_field_com_codename1_ui_TextSelection_selectionRoot(threadStateData, get_field_com_codename1_ui_TextSelection_root(__cn1ThisObject), __cn1ThisObject);
 
-label_L1296612741:
+label_L366828226:
     __CN1_DEBUG_INFO(293);
 
 {
@@ -390,22 +390,22 @@ JAVA_OBJECT com_codename1_ui_TextSelection_getSelectionAsText___R_java_lang_Stri
 JAVA_VOID com_codename1_ui_TextSelection_update__(CODENAME_ONE_THREAD_STATE, JAVA_OBJECT  __cn1ThisObject) {
     DEFINE_INSTANCE_METHOD_STACK(5, 6, 0, 6118, 2519);
     locals[0].data.o = __cn1ThisObject; locals[0].type = CN1_TYPE_OBJECT;     __CN1_DEBUG_INFO(835);
-    if (get_field_com_codename1_ui_TextSelection_selectionRoot(__cn1ThisObject)!=JAVA_NULL) /* IFNONNULL CustomJump */ goto label_L2075899560;
+    if (get_field_com_codename1_ui_TextSelection_selectionRoot(__cn1ThisObject)!=JAVA_NULL) /* IFNONNULL CustomJump */ goto label_L1296612741;
     __CN1_DEBUG_INFO(836);
     set_field_com_codename1_ui_TextSelection_selectionRoot(threadStateData, get_field_com_codename1_ui_TextSelection_root(__cn1ThisObject), __cn1ThisObject);
 
-label_L2075899560:
+label_L1296612741:
     __CN1_DEBUG_INFO(839);
     PUSH_POINTER(__NEW_java_util_TreeSet(threadStateData)); /* NEW */
     BC_DUP(); /* DUP */
-    if (get_field_com_codename1_ui_TextSelection_ltr(__cn1ThisObject)==0) /* IFEQ CustomJump */ goto label_L1486954672;
+    if (get_field_com_codename1_ui_TextSelection_ltr(__cn1ThisObject)==0) /* IFEQ CustomJump */ goto label_L2075899560;
     PUSH_POINTER(get_static_com_codename1_ui_TextSelection_LTRComparator(threadStateData));
-    goto label_L668301868;
+    goto label_L1486954672;
 
-label_L1486954672:
+label_L2075899560:
     PUSH_POINTER(get_static_com_codename1_ui_TextSelection_RTLComparator(threadStateData));
 
-label_L668301868:
+label_L1486954672:
     java_util_TreeSet___INIT_____java_util_Comparator(threadStateData, SP[-2].data.o, SP[-1].data.o);     SP-= 2;
     BC_ASTORE(1);
     __CN1_DEBUG_INFO(840);
@@ -439,17 +439,17 @@ locals[2].type=CN1_TYPE_OBJECT;    __CN1_DEBUG_INFO(853);
     /* CustomInvoke */virtual_com_codename1_ui_geom_Rectangle_setBounds___com_codename1_ui_geom_Rectangle(threadStateData, get_field_com_codename1_ui_TextSelection_tmpRect(__cn1ThisObject), get_field_com_codename1_ui_TextSelection_selectedBounds(__cn1ThisObject)); 
     __CN1_DEBUG_INFO(855);
     /* VarOp.assignFrom */ locals[3].data.o = virtual_java_util_TreeSet_iterator___R_java_util_Iterator(threadStateData, locals[1].data.o);locals[3].type=CN1_TYPE_OBJECT;
-label_L1487185741:
-    if (virtual_java_util_Iterator_hasNext___R_boolean(threadStateData, locals[3].data.o)==0) /* IFEQ CustomJump */ goto label_L804872134;
+label_L164733543:
+    if (virtual_java_util_Iterator_hasNext___R_boolean(threadStateData, locals[3].data.o)==0) /* IFEQ CustomJump */ goto label_L668301868;
     /* VarOp.assignFrom */ locals[4].data.o = virtual_java_util_Iterator_next___R_java_lang_Object(threadStateData, locals[3].data.o);locals[4].type=CN1_TYPE_OBJECT;    __CN1_DEBUG_INFO(856);
     /* VarOp.assignFrom */ locals[5].data.o = virtual_com_codename1_ui_Component_getTextSelectionSupport___R_com_codename1_ui_TextSelection_TextSelectionSupport(threadStateData, locals[4].data.o);locals[5].type=CN1_TYPE_OBJECT;    __CN1_DEBUG_INFO(857);
-    if (locals[5].data.o!=JAVA_NULL) /* IFNONNULL CustomJump */ goto label_L164733543;
+    if (locals[5].data.o!=JAVA_NULL) /* IFNONNULL CustomJump */ goto label_L804872134;
     __CN1_DEBUG_INFO(858);
-    goto label_L1487185741;
+    goto label_L164733543;
 
-label_L164733543:
+label_L804872134:
     __CN1_DEBUG_INFO(860);
-    if (/* CustomInvoke */com_codename1_ui_TextSelection_isVerticallyCoveredByBounds___com_codename1_ui_Component_com_codename1_ui_geom_Rectangle_R_boolean(threadStateData, __cn1ThisObject, locals[4].data.o, get_field_com_codename1_ui_TextSelection_selectedBounds(__cn1ThisObject))==0) /* IFEQ CustomJump */ goto label_L1420599919;
+    if (/* CustomInvoke */com_codename1_ui_TextSelection_isVerticallyCoveredByBounds___com_codename1_ui_Component_com_codename1_ui_geom_Rectangle_R_boolean(threadStateData, __cn1ThisObject, locals[4].data.o, get_field_com_codename1_ui_TextSelection_selectedBounds(__cn1ThisObject))==0) /* IFEQ CustomJump */ goto label_L1487185741;
     __CN1_DEBUG_INFO(863);
     /* CustomInvoke */virtual_com_codename1_ui_geom_Rectangle_setX___int(threadStateData, get_field_com_codename1_ui_TextSelection_selectedBounds(__cn1ThisObject), /* CustomInvoke */com_codename1_ui_TextSelection_getX___com_codename1_ui_Component_com_codename1_ui_Component_R_int(threadStateData, locals[4].data.o, get_field_com_codename1_ui_TextSelection_selectionRoot(__cn1ThisObject))); 
     __CN1_DEBUG_INFO(864);
@@ -479,7 +479,7 @@ label_L164733543:
     SP[-1].data.i = tmpResult; SP[-1].type = CN1_TYPE_INT; }
     virtual_com_codename1_ui_geom_Rectangle_setHeight___int(threadStateData, SP[-2].data.o, SP[-1].data.i);     SP-= 2;
 
-label_L1420599919:
+label_L1487185741:
     __CN1_DEBUG_INFO(869);
     BC_ALOAD(2);
     /* CustomInvoke */{ JAVA_OBJECT tmpResult = virtual_com_codename1_ui_TextSelection_TextSelectionSupport_getTextSelectionForBounds___com_codename1_ui_TextSelection_com_codename1_ui_geom_Rectangle_R_com_codename1_ui_TextSelection_Spans(threadStateData, locals[5].data.o, __cn1ThisObject, get_field_com_codename1_ui_TextSelection_selectedBounds(__cn1ThisObject));
@@ -488,9 +488,9 @@ label_L1420599919:
     __CN1_DEBUG_INFO(871);
     /* CustomInvoke */virtual_com_codename1_ui_geom_Rectangle_setBounds___com_codename1_ui_geom_Rectangle(threadStateData, get_field_com_codename1_ui_TextSelection_selectedBounds(__cn1ThisObject), get_field_com_codename1_ui_TextSelection_tmpRect(__cn1ThisObject)); 
     __CN1_DEBUG_INFO(872);
-    goto label_L1487185741;
+    goto label_L164733543;
 
-label_L804872134:
+label_L668301868:
     __CN1_DEBUG_INFO(874);
     releaseForReturn(threadStateData, cn1LocalsBeginInThread); 
     return;
@@ -519,7 +519,7 @@ JAVA_BOOLEAN com_codename1_ui_TextSelection_isVerticallyCoveredByBounds___com_co
     SP--; SP[-1].data.i = SP[-1].data.i + (*SP).data.i; /* IADD */
     BC_ISTORE(4);
     __CN1_DEBUG_INFO(880);
-    if (ilocals_4_<virtual_com_codename1_ui_geom_Rectangle_getY___R_int(threadStateData, locals[2].data.o)) /* IF_IMPLT CustomJump */ goto label_L827248723;
+    if (ilocals_4_<virtual_com_codename1_ui_geom_Rectangle_getY___R_int(threadStateData, locals[2].data.o)) /* IF_IMPLT CustomJump */ goto label_L1420599919;
     (*SP).type = CN1_TYPE_INT; /* ILOAD */ 
     (*SP).data.i = ilocals_4_; 
     SP++;
@@ -531,30 +531,30 @@ JAVA_BOOLEAN com_codename1_ui_TextSelection_isVerticallyCoveredByBounds___com_co
     { JAVA_INT tmpResult = virtual_com_codename1_ui_geom_Rectangle_getHeight___R_int(threadStateData, locals[2].data.o);
     PUSH_INT(tmpResult); }
     SP--; SP[-1].data.i = SP[-1].data.i + (*SP).data.i; /* IADD */
-    SP-=2; if((*SP).data.i > SP[1].data.i) /* IF_ICMPGT */ goto label_L827248723;
+    SP-=2; if((*SP).data.i > SP[1].data.i) /* IF_ICMPGT */ goto label_L1420599919;
     PUSH_INT(1); /* ICONST_1 */
-    goto label_L889753223;
+    goto label_L827248723;
 
-label_L827248723:
+label_L1420599919:
     PUSH_INT(0); /* ICONST_0 */
 
-label_L889753223:
+label_L827248723:
     BC_ISTORE(5);
     __CN1_DEBUG_INFO(881);
-    if (ilocals_5_==0) /* IFEQ CustomJump */ goto label_L1215023524;
+    if (ilocals_5_==0) /* IFEQ CustomJump */ goto label_L889753223;
     __CN1_DEBUG_INFO(882);
     releaseForReturn(threadStateData, cn1LocalsBeginInThread); return 1 /* ICONST_1 */;
 
-label_L1215023524:
+label_L889753223:
     __CN1_DEBUG_INFO(884);
-    if (locals[1].data.o!=get_field_com_codename1_ui_TextSelection_selectionRoot(__cn1ThisObject)) /* IF_ACMPNE CustomJump */ goto label_L2036704540;
+    if (locals[1].data.o!=get_field_com_codename1_ui_TextSelection_selectionRoot(__cn1ThisObject)) /* IF_ACMPNE CustomJump */ goto label_L1215023524;
     __CN1_DEBUG_INFO(885);
     releaseForReturn(threadStateData, cn1LocalsBeginInThread); return 0 /* ICONST_0 */;
 
-label_L2036704540:
+label_L1215023524:
     __CN1_DEBUG_INFO(887);
     /* VarOp.assignFrom */ locals[6].data.o = virtual_com_codename1_ui_Component_getParent___R_com_codename1_ui_Container(threadStateData, locals[1].data.o);locals[6].type=CN1_TYPE_OBJECT;    __CN1_DEBUG_INFO(888);
-    if (locals[6].data.o==JAVA_NULL) /* IFNULL CustomJump */ goto label_L1055800875;
+    if (locals[6].data.o==JAVA_NULL) /* IFNULL CustomJump */ goto label_L2036704540;
     __CN1_DEBUG_INFO(889);
 
 {
@@ -562,7 +562,7 @@ label_L2036704540:
     releaseForReturn(threadStateData, cn1LocalsBeginInThread); return ___returnValue;
 }
 
-label_L1055800875:
+label_L2036704540:
     __CN1_DEBUG_INFO(891);
     releaseForReturn(threadStateData, cn1LocalsBeginInThread); return 0 /* ICONST_0 */;
 }
@@ -578,12 +578,12 @@ JAVA_VOID com_codename1_ui_TextSelection_setEnabled___boolean(CODENAME_ONE_THREA
     DEFINE_INSTANCE_METHOD_STACK(2, 4, 0, 6118, 2716);
     locals[0].data.o = __cn1ThisObject; locals[0].type = CN1_TYPE_OBJECT;     ilocals_1_ = __cn1Arg1;
     __CN1_DEBUG_INFO(1158);
-    if (ilocals_1_==get_field_com_codename1_ui_TextSelection_enabled(__cn1ThisObject)) /* IF_ICMPEQ CustomJump */ goto label_L1109020385;
+    if (ilocals_1_==get_field_com_codename1_ui_TextSelection_enabled(__cn1ThisObject)) /* IF_ICMPEQ CustomJump */ goto label_L231351829;
     __CN1_DEBUG_INFO(1159);
     set_field_com_codename1_ui_TextSelection_enabled(threadStateData, ilocals_1_, __cn1ThisObject);
     __CN1_DEBUG_INFO(1160);
     /* VarOp.assignFrom */ locals[2].data.o = virtual_com_codename1_ui_Component_getComponentForm___R_com_codename1_ui_Form(threadStateData, get_field_com_codename1_ui_TextSelection_root(__cn1ThisObject));locals[2].type=CN1_TYPE_OBJECT;    __CN1_DEBUG_INFO(1161);
-    if (ilocals_1_==0) /* IFEQ CustomJump */ goto label_L305651902;
+    if (ilocals_1_==0) /* IFEQ CustomJump */ goto label_L1109020385;
     __CN1_DEBUG_INFO(1162);
     /* VarOp.assignFrom */ locals[3].data.o = virtual_com_codename1_ui_Component_getComponentForm___R_com_codename1_ui_Form(threadStateData, locals[2].data.o);locals[3].type=CN1_TYPE_OBJECT;    __CN1_DEBUG_INFO(1163);
     /* CustomInvoke */virtual_com_codename1_ui_Form_setEnableCursors___boolean(threadStateData, locals[3].data.o, 1 /* ICONST_1 */); 
@@ -600,9 +600,9 @@ JAVA_VOID com_codename1_ui_TextSelection_setEnabled___boolean(CODENAME_ONE_THREA
     __CN1_DEBUG_INFO(1169);
     /* CustomInvoke */virtual_com_codename1_impl_CodenameOneImplementation_initializeTextSelection___com_codename1_ui_TextSelection(threadStateData, get_static_com_codename1_ui_Display_impl(threadStateData), __cn1ThisObject); 
     __CN1_DEBUG_INFO(1170);
-    goto label_L1109020385;
+    goto label_L231351829;
 
-label_L305651902:
+label_L1109020385:
     __CN1_DEBUG_INFO(1171);
     /* CustomInvoke */virtual_com_codename1_ui_Component_removePointerPressedListener___com_codename1_ui_events_ActionListener(threadStateData, locals[2].data.o, get_field_com_codename1_ui_TextSelection_pressListener(__cn1ThisObject)); 
     __CN1_DEBUG_INFO(1172);
@@ -616,7 +616,7 @@ label_L305651902:
     __CN1_DEBUG_INFO(1176);
     /* CustomInvoke */virtual_com_codename1_impl_CodenameOneImplementation_deinitializeTextSelection___com_codename1_ui_TextSelection(threadStateData, get_static_com_codename1_ui_Display_impl(threadStateData), __cn1ThisObject); 
 
-label_L1109020385:
+label_L231351829:
     __CN1_DEBUG_INFO(1179);
     releaseForReturn(threadStateData, cn1LocalsBeginInThread); 
     return;
@@ -633,8 +633,8 @@ JAVA_VOID com_codename1_ui_TextSelection_updateSnappedSelectedBounds__(CODENAME_
     /* CustomInvoke */virtual_com_codename1_ui_geom_Rectangle_setBounds___int_int_int_int(threadStateData, get_field_com_codename1_ui_TextSelection_snappedSelectedBounds(__cn1ThisObject), virtual_com_codename1_ui_geom_Rectangle_getX___R_int(threadStateData, get_field_com_codename1_ui_TextSelection_selectedBounds(__cn1ThisObject)), virtual_com_codename1_ui_geom_Rectangle_getY___R_int(threadStateData, get_field_com_codename1_ui_TextSelection_selectedBounds(__cn1ThisObject)), virtual_com_codename1_ui_geom_Rectangle_getWidth___R_int(threadStateData, get_field_com_codename1_ui_TextSelection_selectedBounds(__cn1ThisObject)), virtual_com_codename1_ui_geom_Rectangle_getHeight___R_int(threadStateData, get_field_com_codename1_ui_TextSelection_selectedBounds(__cn1ThisObject))); 
     __CN1_DEBUG_INFO(1185);
     /* VarOp.assignFrom */ locals[1].data.o = virtual_com_codename1_ui_TextSelection_Spans_iterator___R_java_util_Iterator(threadStateData, get_field_com_codename1_ui_TextSelection_selectedSpans(__cn1ThisObject));locals[1].type=CN1_TYPE_OBJECT;
-label_L246014273:
-    if (virtual_java_util_Iterator_hasNext___R_boolean(threadStateData, locals[1].data.o)==0) /* IFEQ CustomJump */ goto label_L1385140107;
+label_L1385140107:
+    if (virtual_java_util_Iterator_hasNext___R_boolean(threadStateData, locals[1].data.o)==0) /* IFEQ CustomJump */ goto label_L305651902;
     /* VarOp.assignFrom */ locals[2].data.o = virtual_java_util_Iterator_next___R_java_lang_Object(threadStateData, locals[1].data.o);locals[2].type=CN1_TYPE_OBJECT;    __CN1_DEBUG_INFO(1186);
     { JAVA_OBJECT tmpResult = virtual_com_codename1_ui_TextSelection_Span_getBounds___R_com_codename1_ui_geom_Rectangle(threadStateData, locals[2].data.o);
     PUSH_OBJ(tmpResult); }
@@ -706,9 +706,9 @@ label_L246014273:
     __CN1_DEBUG_INFO(1190);
     /* CustomInvoke */virtual_com_codename1_ui_geom_Rectangle_setBounds___int_int_int_int(threadStateData, get_field_com_codename1_ui_TextSelection_snappedSelectedBounds(__cn1ThisObject), ilocals_3_, ilocals_4_, ilocals_5_, ilocals_6_); 
     __CN1_DEBUG_INFO(1191);
-    goto label_L246014273;
+    goto label_L1385140107;
 
-label_L1385140107:
+label_L305651902:
     __CN1_DEBUG_INFO(1192);
     releaseForReturn(threadStateData, cn1LocalsBeginInThread); 
     return;
@@ -731,10 +731,10 @@ JAVA_OBJECT com_codename1_ui_TextSelection_findSelectionRoot___com_codename1_ui_
     locals[0].data.o = __cn1Arg1;
     locals[0].type = CN1_TYPE_OBJECT;
     __CN1_DEBUG_INFO(1450);
-    if (virtual_com_codename1_ui_Component_scrollableYFlag___R_boolean(threadStateData, locals[0].data.o)!=0) /* IFNE CustomJump */ goto label_L508873523;
-    if (virtual_com_codename1_ui_Component_scrollableXFlag___R_boolean(threadStateData, locals[0].data.o)==0) /* IFEQ CustomJump */ goto label_L869005911;
+    if (virtual_com_codename1_ui_Component_scrollableYFlag___R_boolean(threadStateData, locals[0].data.o)!=0) /* IFNE CustomJump */ goto label_L246014273;
+    if (virtual_com_codename1_ui_Component_scrollableXFlag___R_boolean(threadStateData, locals[0].data.o)==0) /* IFEQ CustomJump */ goto label_L508873523;
 
-label_L508873523:
+label_L246014273:
     __CN1_DEBUG_INFO(1451);
 
 {
@@ -742,10 +742,10 @@ label_L508873523:
     releaseForReturn(threadStateData, cn1LocalsBeginInThread); return ___returnValue;
 }
 
-label_L869005911:
+label_L508873523:
     __CN1_DEBUG_INFO(1453);
     /* VarOp.assignFrom */ locals[1].data.o = virtual_com_codename1_ui_Component_getParent___R_com_codename1_ui_Container(threadStateData, locals[0].data.o);locals[1].type=CN1_TYPE_OBJECT;    __CN1_DEBUG_INFO(1454);
-    if (locals[1].data.o!=JAVA_NULL) /* IFNONNULL CustomJump */ goto label_L496425074;
+    if (locals[1].data.o!=JAVA_NULL) /* IFNONNULL CustomJump */ goto label_L869005911;
     __CN1_DEBUG_INFO(1455);
 
 {
@@ -753,7 +753,7 @@ label_L869005911:
     releaseForReturn(threadStateData, cn1LocalsBeginInThread); return ___returnValue;
 }
 
-label_L496425074:
+label_L869005911:
     __CN1_DEBUG_INFO(1457);
     /* CustomInvoke */PUSH_OBJ(com_codename1_ui_TextSelection_findSelectionRoot___com_codename1_ui_Component_R_com_codename1_ui_Component(threadStateData, locals[1].data.o));
     releaseForReturn(threadStateData, cn1LocalsBeginInThread); 
@@ -786,7 +786,7 @@ JAVA_VOID com_codename1_ui_TextSelection_copy__(CODENAME_ONE_THREAD_STATE, JAVA_
 JAVA_VOID com_codename1_ui_TextSelection_selectAll__(CODENAME_ONE_THREAD_STATE, JAVA_OBJECT  __cn1ThisObject) {
     DEFINE_INSTANCE_METHOD_STACK(5, 1, 0, 6118, 6131);
     locals[0].data.o = __cn1ThisObject; locals[0].type = CN1_TYPE_OBJECT;     __CN1_DEBUG_INFO(1478);
-    if (get_field_com_codename1_ui_TextSelection_selectionMask(__cn1ThisObject)!=JAVA_NULL) /* IFNONNULL CustomJump */ goto label_L1551139176;
+    if (get_field_com_codename1_ui_TextSelection_selectionMask(__cn1ThisObject)!=JAVA_NULL) /* IFNONNULL CustomJump */ goto label_L496425074;
     __CN1_DEBUG_INFO(1479);
     BC_ALOAD(0);
     PUSH_POINTER(__NEW_com_codename1_ui_TextSelection_SelectionMask(threadStateData)); /* NEW */
@@ -799,7 +799,7 @@ JAVA_VOID com_codename1_ui_TextSelection_selectAll__(CODENAME_ONE_THREAD_STATE, 
     PUSH_OBJ(tmpResult); }
     /* CustomInvoke */virtual_com_codename1_ui_Container_add___com_codename1_ui_Component_R_com_codename1_ui_Container(threadStateData, SP[-1].data.o, get_field_com_codename1_ui_TextSelection_selectionMask(__cn1ThisObject));     SP -= 1;
 
-label_L1551139176:
+label_L496425074:
     __CN1_DEBUG_INFO(1484);
     set_field_com_codename1_ui_TextSelection_selectionRoot(threadStateData, get_field_com_codename1_ui_TextSelection_root(__cn1ThisObject), __cn1ThisObject);
     __CN1_DEBUG_INFO(1485);

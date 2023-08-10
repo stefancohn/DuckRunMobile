@@ -232,22 +232,22 @@ JAVA_VOID com_codename1_ui_plaf_RoundRectBorder_1_paint___com_codename1_ui_Graph
     DEFINE_INSTANCE_METHOD_STACK(8, 13, 0, 5871, 2359);
     locals[0].data.o = __cn1ThisObject; locals[0].type = CN1_TYPE_OBJECT;     locals[1].data.o = __cn1Arg1;
     locals[1].type = CN1_TYPE_OBJECT;
-    int restoreToL177190085801;
-    int tryBlockOffsetL177190085801;
-    DEFINE_CATCH_BLOCK(catch_L177190085801, label_L435930516, restoreToL177190085801);
-    int restoreToL182677747802;
-    int tryBlockOffsetL182677747802;
-    DEFINE_CATCH_BLOCK(catch_L182677747802, label_L435930516, restoreToL182677747802);
-    int restoreToL43593051603;
-    int tryBlockOffsetL43593051603;
-    DEFINE_CATCH_BLOCK(catch_L43593051603, label_L435930516, restoreToL43593051603);
+    int restoreToL159260032101;
+    int tryBlockOffsetL159260032101;
+    DEFINE_CATCH_BLOCK(catch_L159260032101, label_L1262092760, restoreToL159260032101);
+    int restoreToL200156837402;
+    int tryBlockOffsetL200156837402;
+    DEFINE_CATCH_BLOCK(catch_L200156837402, label_L1262092760, restoreToL200156837402);
+    int restoreToL126209276003;
+    int tryBlockOffsetL126209276003;
+    DEFINE_CATCH_BLOCK(catch_L126209276003, label_L1262092760, restoreToL126209276003);
     __CN1_DEBUG_INFO(571);
     /* CustomInvoke */com_codename1_ui_Component_paint___com_codename1_ui_Graphics(threadStateData, __cn1ThisObject, locals[1].data.o); 
 
-label_L1771900858:
- tryBlockOffsetL177190085801 = threadStateData->tryBlockOffset;
-    BEGIN_TRY(0, catch_L177190085801);
-    restoreToL177190085801 = threadStateData->threadObjectStackOffset;
+label_L1592600321:
+ tryBlockOffsetL159260032101 = threadStateData->tryBlockOffset;
+    BEGIN_TRY(0, catch_L159260032101);
+    restoreToL159260032101 = threadStateData->threadObjectStackOffset;
 
     __CN1_DEBUG_INFO(573);
     /* CustomInvoke */virtual_com_codename1_ui_Graphics_translate___int_int(threadStateData, locals[1].data.o, virtual_com_codename1_ui_plaf_RoundRectBorder_1_getX___R_int(threadStateData, __cn1ThisObject), virtual_com_codename1_ui_plaf_RoundRectBorder_1_getY___R_int(threadStateData, __cn1ThisObject)); 
@@ -269,7 +269,7 @@ locals[6].type=CN1_TYPE_OBJECT;    __CN1_DEBUG_INFO(580);
     SP[-1].data.i = tmpResult; SP[-1].type = CN1_TYPE_INT; }
     BC_ISTORE(7);
     __CN1_DEBUG_INFO(584);
-    if (/* CustomInvoke */com_codename1_ui_plaf_RoundRectBorder_access$100___com_codename1_ui_plaf_RoundRectBorder_R_int(threadStateData, get_field_com_codename1_ui_plaf_RoundRectBorder_1_this_0(__cn1ThisObject))<=0) /* IFLE CustomJump */ JUMP_TO(label_L793588415, 1);
+    if (/* CustomInvoke */com_codename1_ui_plaf_RoundRectBorder_access$100___com_codename1_ui_plaf_RoundRectBorder_R_int(threadStateData, get_field_com_codename1_ui_plaf_RoundRectBorder_1_this_0(__cn1ThisObject))<=0) /* IFLE CustomJump */ JUMP_TO(label_L435930516, 1);
     __CN1_DEBUG_INFO(585);
     /* VarOp.assignFrom */ ilocals_4_=(ilocals_4_ - ilocals_7_);
     __CN1_DEBUG_INFO(586);
@@ -305,8 +305,8 @@ locals[6].type=CN1_TYPE_OBJECT;    __CN1_DEBUG_INFO(580);
     __CN1_DEBUG_INFO(591);
     /* VarOp.assignFrom */ ilocals_8_=(ilocals_7_ - 1 /* ICONST_1 */);
 
-label_L2001568374:
-    if (ilocals_8_<0) /* IFLT CustomJump */ JUMP_TO(label_L793588415, 1);
+label_L793588415:
+    if (ilocals_8_<0) /* IFLT CustomJump */ JUMP_TO(label_L435930516, 1);
     __CN1_DEBUG_INFO(592);
     /* CustomInvoke */virtual_com_codename1_ui_Graphics_translate___int_int(threadStateData, locals[6].data.o, ilocals_8_, ilocals_8_); 
     __CN1_DEBUG_INFO(593);
@@ -363,22 +363,22 @@ label_L2001568374:
     /* CustomInvoke */virtual_com_codename1_ui_Graphics_translate___int_int(threadStateData, locals[6].data.o, (-(ilocals_8_)), (-(ilocals_8_))); 
     __CN1_DEBUG_INFO(591);
     BC_IINC(8, -1);
-    JUMP_TO(label_L2001568374, 1);
+    JUMP_TO(label_L793588415, 1);
 
-label_L793588415:
+label_L435930516:
     __CN1_DEBUG_INFO(598);
     /* CustomInvoke */virtual_com_codename1_ui_Graphics_translate___int_int(threadStateData, locals[6].data.o, ilocals_2_, ilocals_3_); 
     __CN1_DEBUG_INFO(600);
     /* VarOp.assignFrom */ locals[8].data.o = /* CustomInvoke */com_codename1_ui_plaf_RoundRectBorder_access$600___com_codename1_ui_plaf_RoundRectBorder_int_int_R_com_codename1_ui_geom_GeneralPath(threadStateData, get_field_com_codename1_ui_plaf_RoundRectBorder_1_this_0(__cn1ThisObject), ilocals_4_, ilocals_5_);locals[8].type=CN1_TYPE_OBJECT;    __CN1_DEBUG_INFO(601);
     /* VarOp.assignFrom */ locals[9].data.o = virtual_com_codename1_ui_Component_getStyle___R_com_codename1_ui_plaf_Style(threadStateData, get_field_com_codename1_ui_plaf_RoundRectBorder_1_val_c(__cn1ThisObject));locals[9].type=CN1_TYPE_OBJECT;    __CN1_DEBUG_INFO(602);
-    if (virtual_com_codename1_ui_plaf_Style_getBgImage___R_com_codename1_ui_Image(threadStateData, locals[9].data.o)!=JAVA_NULL) /* IFNONNULL CustomJump */ JUMP_TO(label_L1826777478, 0);
+    if (virtual_com_codename1_ui_plaf_Style_getBgImage___R_com_codename1_ui_Image(threadStateData, locals[9].data.o)!=JAVA_NULL) /* IFNONNULL CustomJump */ JUMP_TO(label_L2001568374, 0);
     __CN1_DEBUG_INFO(603);
     /* VarOp.assignFrom */ ilocals_10_ = virtual_com_codename1_ui_plaf_Style_getBackgroundType___R_byte(threadStateData, locals[9].data.o);
     __CN1_DEBUG_INFO(604);
-    if (ilocals_10_==1 /* ICONST_1 */) /* IF_ICMPEQ CustomJump */ JUMP_TO(label_L737335019, 1);
-    if (ilocals_10_!=0) /* IFNE CustomJump */ JUMP_TO(label_L1826777478, 0);
+    if (ilocals_10_==1 /* ICONST_1 */) /* IF_ICMPEQ CustomJump */ JUMP_TO(label_L1826777478, 1);
+    if (ilocals_10_!=0) /* IFNE CustomJump */ JUMP_TO(label_L2001568374, 0);
 
-label_L737335019:
+label_L1826777478:
     __CN1_DEBUG_INFO(605);
     { JAVA_OBJECT tmpResult = virtual_com_codename1_ui_Component_getStyle___R_com_codename1_ui_plaf_Style(threadStateData, get_field_com_codename1_ui_plaf_RoundRectBorder_1_val_c(__cn1ThisObject));
     PUSH_OBJ(tmpResult); }
@@ -386,7 +386,7 @@ label_L737335019:
     SP[-1].data.i = tmpResult; SP[-1].type = CN1_TYPE_INT; }
     BC_ISTORE(11);
     __CN1_DEBUG_INFO(606);
-    if (ilocals_11_==0) /* IFEQ CustomJump */ JUMP_TO(label_L1835848160, 1);
+    if (ilocals_11_==0) /* IFEQ CustomJump */ JUMP_TO(label_L737335019, 1);
     __CN1_DEBUG_INFO(607);
     /* CustomInvoke */virtual_com_codename1_ui_Graphics_setAlpha___int(threadStateData, locals[6].data.o, (ilocals_11_ & 255)); 
     __CN1_DEBUG_INFO(608);
@@ -394,14 +394,14 @@ label_L737335019:
     __CN1_DEBUG_INFO(609);
     /* CustomInvoke */virtual_com_codename1_ui_Graphics_fillShape___com_codename1_ui_geom_Shape(threadStateData, locals[6].data.o, locals[8].data.o); 
 
-label_L1835848160:
+label_L737335019:
     __CN1_DEBUG_INFO(611);
-    if (/* CustomInvoke */com_codename1_ui_plaf_RoundRectBorder_access$700___com_codename1_ui_plaf_RoundRectBorder_R_com_codename1_ui_Stroke(threadStateData, get_field_com_codename1_ui_plaf_RoundRectBorder_1_this_0(__cn1ThisObject))==JAVA_NULL) /* IFNULL CustomJump */ JUMP_TO(label_L1990828041, 1);
-    if (/* CustomInvoke */com_codename1_ui_plaf_RoundRectBorder_access$800___com_codename1_ui_plaf_RoundRectBorder_R_int(threadStateData, get_field_com_codename1_ui_plaf_RoundRectBorder_1_this_0(__cn1ThisObject))<=0) /* IFLE CustomJump */ JUMP_TO(label_L1990828041, 1);
+    if (/* CustomInvoke */com_codename1_ui_plaf_RoundRectBorder_access$700___com_codename1_ui_plaf_RoundRectBorder_R_com_codename1_ui_Stroke(threadStateData, get_field_com_codename1_ui_plaf_RoundRectBorder_1_this_0(__cn1ThisObject))==JAVA_NULL) /* IFNULL CustomJump */ JUMP_TO(label_L1835848160, 1);
+    if (/* CustomInvoke */com_codename1_ui_plaf_RoundRectBorder_access$800___com_codename1_ui_plaf_RoundRectBorder_R_int(threadStateData, get_field_com_codename1_ui_plaf_RoundRectBorder_1_this_0(__cn1ThisObject))<=0) /* IFLE CustomJump */ JUMP_TO(label_L1835848160, 1);
     /* CustomInvoke */PUSH_FLOAT(com_codename1_ui_plaf_RoundRectBorder_access$900___com_codename1_ui_plaf_RoundRectBorder_R_float(threadStateData, get_field_com_codename1_ui_plaf_RoundRectBorder_1_this_0(__cn1ThisObject)));
     PUSH_FLOAT(0); /* FCONST_0 */
     BC_FCMPL();
-    if(POP_INT() <= 0) /* IFLE */ JUMP_TO(label_L1990828041, 1);
+    if(POP_INT() <= 0) /* IFLE */ JUMP_TO(label_L1835848160, 1);
     __CN1_DEBUG_INFO(612);
     /* CustomInvoke */virtual_com_codename1_ui_Graphics_setAlpha___int(threadStateData, locals[6].data.o, /* CustomInvoke */com_codename1_ui_plaf_RoundRectBorder_access$800___com_codename1_ui_plaf_RoundRectBorder_R_int(threadStateData, get_field_com_codename1_ui_plaf_RoundRectBorder_1_this_0(__cn1ThisObject))); 
     __CN1_DEBUG_INFO(613);
@@ -412,7 +412,7 @@ label_L1835848160:
     /* CustomInvoke */PUSH_OBJ(com_codename1_ui_plaf_RoundRectBorder_access$700___com_codename1_ui_plaf_RoundRectBorder_R_com_codename1_ui_Stroke(threadStateData, get_field_com_codename1_ui_plaf_RoundRectBorder_1_this_0(__cn1ThisObject)));
     virtual_com_codename1_ui_Graphics_drawShape___com_codename1_ui_geom_Shape_com_codename1_ui_Stroke(threadStateData, SP[-3].data.o, SP[-2].data.o, SP[-1].data.o);     SP-= 3;
 
-label_L1990828041:
+label_L1835848160:
 END_TRY(1);    __CN1_DEBUG_INFO(632);
     BC_ALOAD(1);
     { JAVA_INT tmpResult = virtual_com_codename1_ui_plaf_RoundRectBorder_1_getX___R_int(threadStateData, __cn1ThisObject);
@@ -426,10 +426,10 @@ END_TRY(1);    __CN1_DEBUG_INFO(632);
     releaseForReturnInException(threadStateData, cn1LocalsBeginInThread, methodBlockOffset); 
     return;
 
-label_L1826777478:
- tryBlockOffsetL182677747802 = threadStateData->tryBlockOffset;
-    BEGIN_TRY(0, catch_L182677747802);
-    restoreToL182677747802 = threadStateData->threadObjectStackOffset;
+label_L2001568374:
+ tryBlockOffsetL200156837402 = threadStateData->tryBlockOffset;
+    BEGIN_TRY(0, catch_L200156837402);
+    restoreToL200156837402 = threadStateData->threadObjectStackOffset;
 
     __CN1_DEBUG_INFO(620);
     { JAVA_OBJECT tmpResult = virtual_com_codename1_ui_Component_getStyle___R_com_codename1_ui_plaf_Style(threadStateData, get_field_com_codename1_ui_plaf_RoundRectBorder_1_val_c(__cn1ThisObject));
@@ -447,12 +447,12 @@ label_L1826777478:
     /* CustomInvoke */com_codename1_ui_geom_Rectangle___INIT_____int_int_int_int(threadStateData, SP[-1].data.o, 0 /* ICONST_0 */, 0 /* ICONST_0 */, get_field_com_codename1_ui_plaf_RoundRectBorder_1_val_w(__cn1ThisObject), get_field_com_codename1_ui_plaf_RoundRectBorder_1_val_h(__cn1ThisObject));     SP -= 1;
     virtual_com_codename1_ui_Painter_paint___com_codename1_ui_Graphics_com_codename1_ui_geom_Rectangle(threadStateData, SP[-3].data.o, SP[-2].data.o, SP[-1].data.o);     SP-= 3;
     __CN1_DEBUG_INFO(623);
-    if (/* CustomInvoke */com_codename1_ui_plaf_RoundRectBorder_access$700___com_codename1_ui_plaf_RoundRectBorder_R_com_codename1_ui_Stroke(threadStateData, get_field_com_codename1_ui_plaf_RoundRectBorder_1_this_0(__cn1ThisObject))==JAVA_NULL) /* IFNULL CustomJump */ JUMP_TO(label_L158882051, 1);
-    if (/* CustomInvoke */com_codename1_ui_plaf_RoundRectBorder_access$800___com_codename1_ui_plaf_RoundRectBorder_R_int(threadStateData, get_field_com_codename1_ui_plaf_RoundRectBorder_1_this_0(__cn1ThisObject))<=0) /* IFLE CustomJump */ JUMP_TO(label_L158882051, 1);
+    if (/* CustomInvoke */com_codename1_ui_plaf_RoundRectBorder_access$700___com_codename1_ui_plaf_RoundRectBorder_R_com_codename1_ui_Stroke(threadStateData, get_field_com_codename1_ui_plaf_RoundRectBorder_1_this_0(__cn1ThisObject))==JAVA_NULL) /* IFNULL CustomJump */ JUMP_TO(label_L1990828041, 1);
+    if (/* CustomInvoke */com_codename1_ui_plaf_RoundRectBorder_access$800___com_codename1_ui_plaf_RoundRectBorder_R_int(threadStateData, get_field_com_codename1_ui_plaf_RoundRectBorder_1_this_0(__cn1ThisObject))<=0) /* IFLE CustomJump */ JUMP_TO(label_L1990828041, 1);
     /* CustomInvoke */PUSH_FLOAT(com_codename1_ui_plaf_RoundRectBorder_access$900___com_codename1_ui_plaf_RoundRectBorder_R_float(threadStateData, get_field_com_codename1_ui_plaf_RoundRectBorder_1_this_0(__cn1ThisObject)));
     PUSH_FLOAT(0); /* FCONST_0 */
     BC_FCMPL();
-    if(POP_INT() <= 0) /* IFLE */ JUMP_TO(label_L158882051, 1);
+    if(POP_INT() <= 0) /* IFLE */ JUMP_TO(label_L1990828041, 1);
     __CN1_DEBUG_INFO(624);
     /* CustomInvoke */virtual_com_codename1_ui_Graphics_setClip___int_int_int_int(threadStateData, locals[6].data.o, 0 /* ICONST_0 */, 0 /* ICONST_0 */, get_field_com_codename1_ui_plaf_RoundRectBorder_1_val_w(__cn1ThisObject), get_field_com_codename1_ui_plaf_RoundRectBorder_1_val_h(__cn1ThisObject)); 
     __CN1_DEBUG_INFO(625);
@@ -465,13 +465,13 @@ label_L1826777478:
     /* CustomInvoke */PUSH_OBJ(com_codename1_ui_plaf_RoundRectBorder_access$700___com_codename1_ui_plaf_RoundRectBorder_R_com_codename1_ui_Stroke(threadStateData, get_field_com_codename1_ui_plaf_RoundRectBorder_1_this_0(__cn1ThisObject)));
     virtual_com_codename1_ui_Graphics_drawShape___com_codename1_ui_geom_Shape_com_codename1_ui_Stroke(threadStateData, SP[-3].data.o, SP[-2].data.o, SP[-1].data.o);     SP-= 3;
 
-label_L158882051:
+label_L1990828041:
     __CN1_DEBUG_INFO(629);
     { JAVA_OBJECT tmpResult = virtual_com_codename1_ui_Component_getStyle___R_com_codename1_ui_plaf_Style(threadStateData, get_field_com_codename1_ui_plaf_RoundRectBorder_1_val_c(__cn1ThisObject));
     PUSH_OBJ(tmpResult); }
     /* CustomInvoke */virtual_com_codename1_ui_plaf_Style_setBorder___com_codename1_ui_plaf_Border(threadStateData, SP[-1].data.o, get_field_com_codename1_ui_plaf_RoundRectBorder_1_this_0(__cn1ThisObject));     SP -= 1;
 
-label_L89431024:
+label_L2105880970:
 END_TRY(1);    __CN1_DEBUG_INFO(632);
     BC_ALOAD(1);
     { JAVA_INT tmpResult = virtual_com_codename1_ui_plaf_RoundRectBorder_1_getX___R_int(threadStateData, __cn1ThisObject);
@@ -485,15 +485,15 @@ END_TRY(1);    __CN1_DEBUG_INFO(632);
     releaseForReturnInException(threadStateData, cn1LocalsBeginInThread, methodBlockOffset); 
     return;
 
-label_L435930516:
- tryBlockOffsetL43593051603 = threadStateData->tryBlockOffset;
-    BEGIN_TRY(0, catch_L43593051603);
-    restoreToL43593051603 = threadStateData->threadObjectStackOffset;
+label_L1262092760:
+ tryBlockOffsetL126209276003 = threadStateData->tryBlockOffset;
+    BEGIN_TRY(0, catch_L126209276003);
+    restoreToL126209276003 = threadStateData->threadObjectStackOffset;
 
     __CN1_DEBUG_INFO(632);
     BC_ASTORE(12);
 
-label_L1260968271:
+label_L13049212:
 END_TRY(1);    BC_ALOAD(1);
     { JAVA_INT tmpResult = virtual_com_codename1_ui_plaf_RoundRectBorder_1_getX___R_int(threadStateData, __cn1ThisObject);
     PUSH_INT(tmpResult); }

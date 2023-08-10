@@ -59,7 +59,7 @@ JAVA_VOID com_example_util_Rectangle___INIT_____int_int_int_int(CODENAME_ONE_THR
     volatile JAVA_INT ilocals_2_ = 0; /* y */
     volatile JAVA_INT ilocals_3_ = 0; /* width */
     volatile JAVA_INT ilocals_4_ = 0; /* height */
-    DEFINE_INSTANCE_METHOD_STACK(2, 5, 0, 10233, 205);
+    DEFINE_INSTANCE_METHOD_STACK(2, 5, 0, 10231, 205);
     locals[0].data.o = __cn1ThisObject; locals[0].type = CN1_TYPE_OBJECT;     ilocals_1_ = __cn1Arg1;
     ilocals_2_ = __cn1Arg2;
     ilocals_3_ = __cn1Arg3;

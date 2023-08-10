@@ -205,7 +205,7 @@ JAVA_OBJECT __NEW_com_example_myapp_GameContainer(CODENAME_ONE_THREAD_STATE) {
 
 
 JAVA_VOID com_example_myapp_GameContainer___INIT_____com_example_myapp_Game(CODENAME_ONE_THREAD_STATE, JAVA_OBJECT  __cn1ThisObject, JAVA_OBJECT __cn1Arg1) {
-    DEFINE_INSTANCE_METHOD_STACK(3, 2, 0, 10323, 205);
+    DEFINE_INSTANCE_METHOD_STACK(3, 2, 0, 10321, 205);
     locals[0].data.o = __cn1ThisObject; locals[0].type = CN1_TYPE_OBJECT;     locals[1].data.o = __cn1Arg1;
     locals[1].type = CN1_TYPE_OBJECT;
     __CN1_DEBUG_INFO(13);
@@ -222,7 +222,7 @@ JAVA_VOID com_example_myapp_GameContainer___INIT_____com_example_myapp_Game(CODE
     set_field_com_example_myapp_GameContainer_kh(threadStateData, PEEK_OBJ(1), PEEK_OBJ(2));
     POP_MANY(2);
     __CN1_DEBUG_INFO(14);
-    /* CustomInvoke */virtual_com_example_myapp_GameContainer_setUIID___java_lang_String(threadStateData, __cn1ThisObject, STRING_FROM_CONSTANT_POOL_OFFSET(10324)); 
+    /* CustomInvoke */virtual_com_example_myapp_GameContainer_setUIID___java_lang_String(threadStateData, __cn1ThisObject, STRING_FROM_CONSTANT_POOL_OFFSET(10322)); 
     __CN1_DEBUG_INFO(15);
     /* CustomInvoke */virtual_com_example_myapp_GameContainer_setFocusable___boolean(threadStateData, __cn1ThisObject, 1 /* ICONST_1 */); 
     __CN1_DEBUG_INFO(24);
@@ -234,7 +234,7 @@ JAVA_VOID com_example_myapp_GameContainer___INIT_____com_example_myapp_Game(CODE
 
 
 JAVA_OBJECT com_example_myapp_GameContainer_getGame___R_com_example_myapp_Game(CODENAME_ONE_THREAD_STATE, JAVA_OBJECT  __cn1ThisObject) {
-    DEFINE_INSTANCE_METHOD_STACK(1, 1, 0, 10323, 10198);
+    DEFINE_INSTANCE_METHOD_STACK(1, 1, 0, 10321, 10198);
     locals[0].data.o = __cn1ThisObject; locals[0].type = CN1_TYPE_OBJECT;     __CN1_DEBUG_INFO(28);
 
 {
@@ -255,7 +255,7 @@ JAVA_VOID com_example_myapp_GameContainer_update__(CODENAME_ONE_THREAD_STATE, JA
 
 
 JAVA_VOID com_example_myapp_GameContainer_paint___com_codename1_ui_Graphics(CODENAME_ONE_THREAD_STATE, JAVA_OBJECT  __cn1ThisObject, JAVA_OBJECT __cn1Arg1) {
-    DEFINE_INSTANCE_METHOD_STACK(2, 2, 0, 10323, 2359);
+    DEFINE_INSTANCE_METHOD_STACK(2, 2, 0, 10321, 2359);
     locals[0].data.o = __cn1ThisObject; locals[0].type = CN1_TYPE_OBJECT;     locals[1].data.o = __cn1Arg1;
     locals[1].type = CN1_TYPE_OBJECT;
     __CN1_DEBUG_INFO(40);

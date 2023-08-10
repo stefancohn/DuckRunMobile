@@ -42,7 +42,7 @@ JAVA_OBJECT __NEW_ARRAY_com_example_levels_Level(CODENAME_ONE_THREAD_STATE, JAVA
 
 
 JAVA_VOID com_example_levels_Level___INIT_____int_2ARRAY(CODENAME_ONE_THREAD_STATE, JAVA_OBJECT  __cn1ThisObject, JAVA_OBJECT __cn1Arg1) {
-    DEFINE_INSTANCE_METHOD_STACK(2, 2, 0, 10287, 205);
+    DEFINE_INSTANCE_METHOD_STACK(2, 2, 0, 10285, 205);
     locals[0].data.o = __cn1ThisObject; locals[0].type = CN1_TYPE_OBJECT;     locals[1].data.o = __cn1Arg1;
     locals[1].type = CN1_TYPE_OBJECT;
     __CN1_DEBUG_INFO(6);
@@ -58,7 +58,7 @@ JAVA_VOID com_example_levels_Level___INIT_____int_2ARRAY(CODENAME_ONE_THREAD_STA
 JAVA_INT com_example_levels_Level_getSpriteIndex___int_int_R_int(CODENAME_ONE_THREAD_STATE, JAVA_OBJECT  __cn1ThisObject, JAVA_INT __cn1Arg1, JAVA_INT __cn1Arg2) {
     volatile JAVA_INT ilocals_1_ = 0; /* x */
     volatile JAVA_INT ilocals_2_ = 0; /* y */
-    DEFINE_INSTANCE_METHOD_STACK(2, 3, 0, 10287, 10288);
+    DEFINE_INSTANCE_METHOD_STACK(2, 3, 0, 10285, 10286);
     locals[0].data.o = __cn1ThisObject; locals[0].type = CN1_TYPE_OBJECT;     ilocals_1_ = __cn1Arg1;
     ilocals_2_ = __cn1Arg2;
     __CN1_DEBUG_INFO(11);
@@ -71,7 +71,7 @@ JAVA_INT com_example_levels_Level_getSpriteIndex___int_int_R_int(CODENAME_ONE_TH
 
 
 JAVA_OBJECT com_example_levels_Level_getLevelData___R_int_2ARRAY(CODENAME_ONE_THREAD_STATE, JAVA_OBJECT  __cn1ThisObject) {
-    DEFINE_INSTANCE_METHOD_STACK(1, 1, 0, 10287, 10289);
+    DEFINE_INSTANCE_METHOD_STACK(1, 1, 0, 10285, 10287);
     locals[0].data.o = __cn1ThisObject; locals[0].type = CN1_TYPE_OBJECT;     __CN1_DEBUG_INFO(15);
 
 {
@@ -85,30 +85,30 @@ JAVA_VOID com_example_levels_Level_shiftLevelRight___int(CODENAME_ONE_THREAD_STA
     volatile JAVA_INT ilocals_1_ = 0; /* xOffset */
     volatile JAVA_INT ilocals_2_ = 0; /* v2 */
     volatile JAVA_INT ilocals_3_ = 0; /* v3 */
-    DEFINE_INSTANCE_METHOD_STACK(5, 4, 0, 10287, 10290);
+    DEFINE_INSTANCE_METHOD_STACK(5, 4, 0, 10285, 10288);
     locals[0].data.o = __cn1ThisObject; locals[0].type = CN1_TYPE_OBJECT;     ilocals_1_ = __cn1Arg1;
     __CN1_DEBUG_INFO(21);
     /* VarOp.assignFrom */     ilocals_2_ = 0 /* ICONST_0 */; 
-    goto label_L2019157894;
-
-label_L1716164115:
-    __CN1_DEBUG_INFO(22);
-    /* VarOp.assignFrom */     ilocals_3_ = 0 /* ICONST_0 */; 
-    goto label_L677217562;
+    goto label_L907815246;
 
 label_L827035437:
+    __CN1_DEBUG_INFO(22);
+    /* VarOp.assignFrom */     ilocals_3_ = 0 /* ICONST_0 */; 
+    goto label_L2019157894;
+
+label_L677217562:
     __CN1_DEBUG_INFO(23);
     CN1_SET_ARRAY_ELEMENT_INT(CN1_ARRAY_ELEMENT_OBJECT(get_field_com_example_levels_Level_levelData(__cn1ThisObject), ilocals_2_), ilocals_3_, CN1_ARRAY_ELEMENT_INT(CN1_ARRAY_ELEMENT_OBJECT(get_field_com_example_levels_Level_levelData(__cn1ThisObject), ilocals_2_), (ilocals_3_ + ilocals_1_)));
     __CN1_DEBUG_INFO(22);
     BC_IINC(3, 1);
 
-label_L677217562:
-    if (ilocals_3_<(CN1_ARRAY_LENGTH(CN1_ARRAY_ELEMENT_OBJECT(get_field_com_example_levels_Level_levelData(__cn1ThisObject), ilocals_2_)) - ilocals_1_)) /* IF_IMPLT CustomJump */ goto label_L827035437;
+label_L2019157894:
+    if (ilocals_3_<(CN1_ARRAY_LENGTH(CN1_ARRAY_ELEMENT_OBJECT(get_field_com_example_levels_Level_levelData(__cn1ThisObject), ilocals_2_)) - ilocals_1_)) /* IF_IMPLT CustomJump */ goto label_L677217562;
     __CN1_DEBUG_INFO(21);
     BC_IINC(2, 1);
 
-label_L2019157894:
-    if (ilocals_2_<CN1_ARRAY_LENGTH(get_field_com_example_levels_Level_levelData(__cn1ThisObject))) /* IF_IMPLT CustomJump */ goto label_L1716164115;
+label_L907815246:
+    if (ilocals_2_<CN1_ARRAY_LENGTH(get_field_com_example_levels_Level_levelData(__cn1ThisObject))) /* IF_IMPLT CustomJump */ goto label_L827035437;
     __CN1_DEBUG_INFO(26);
     releaseForReturn(threadStateData, cn1LocalsBeginInThread); 
     return;

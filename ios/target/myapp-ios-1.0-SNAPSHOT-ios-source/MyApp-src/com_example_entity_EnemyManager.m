@@ -118,7 +118,7 @@ JAVA_OBJECT __NEW_com_example_entity_EnemyManager(CODENAME_ONE_THREAD_STATE) {
 
 
 JAVA_VOID com_example_entity_EnemyManager___INIT_____com_example_levels_LevelManager(CODENAME_ONE_THREAD_STATE, JAVA_OBJECT  __cn1ThisObject, JAVA_OBJECT __cn1Arg1) {
-    DEFINE_INSTANCE_METHOD_STACK(3, 2, 0, 10248, 205);
+    DEFINE_INSTANCE_METHOD_STACK(3, 2, 0, 10246, 205);
     locals[0].data.o = __cn1ThisObject; locals[0].type = CN1_TYPE_OBJECT;     locals[1].data.o = __cn1Arg1;
     locals[1].type = CN1_TYPE_OBJECT;
     __CN1_DEBUG_INFO(30);
@@ -180,7 +180,7 @@ JAVA_VOID com_example_entity_EnemyManager_spawnGooseDefault__(CODENAME_ONE_THREA
     volatile JAVA_INT ilocals_1_ = 0; /* v1 */
     volatile JAVA_INT ilocals_2_ = 0; /* v2 */
     volatile JAVA_INT ilocals_3_ = 0; /* v3 */
-    DEFINE_INSTANCE_METHOD_STACK(8, 4, 0, 10248, 10249);
+    DEFINE_INSTANCE_METHOD_STACK(8, 4, 0, 10246, 10247);
     locals[0].data.o = __cn1ThisObject; locals[0].type = CN1_TYPE_OBJECT;     __CN1_DEBUG_INFO(37);
     BC_ALOAD(0);
     /* CustomInvoke */PUSH_OBJ(com_example_util_LoadSave_getLevelDataBlue___java_lang_String_R_int_2ARRAY(threadStateData, STRING_FROM_CONSTANT_POOL_OFFSET(40)));
@@ -188,18 +188,18 @@ JAVA_VOID com_example_entity_EnemyManager_spawnGooseDefault__(CODENAME_ONE_THREA
     POP_MANY(2);
     __CN1_DEBUG_INFO(38);
     /* VarOp.assignFrom */     ilocals_1_ = 0 /* ICONST_0 */; 
-    goto label_L1818747191;
-
-label_L1403716230:
-    __CN1_DEBUG_INFO(39);
-    /* VarOp.assignFrom */     ilocals_2_ = 0 /* ICONST_0 */; 
-    goto label_L747870628;
+    goto label_L1523084197;
 
 label_L9844218:
+    __CN1_DEBUG_INFO(39);
+    /* VarOp.assignFrom */     ilocals_2_ = 0 /* ICONST_0 */; 
+    goto label_L1818747191;
+
+label_L421191743:
     __CN1_DEBUG_INFO(40);
     /* VarOp.assignFrom */ ilocals_3_=CN1_ARRAY_ELEMENT_INT(CN1_ARRAY_ELEMENT_OBJECT(get_field_com_example_entity_EnemyManager_spawnPoints(__cn1ThisObject), ilocals_1_), ilocals_2_);
     __CN1_DEBUG_INFO(41);
-    if (ilocals_3_!=1 /* ICONST_1 */) /* IF_ICMPNE CustomJump */ goto label_L421191743;
+    if (ilocals_3_!=1 /* ICONST_1 */) /* IF_ICMPNE CustomJump */ goto label_L747870628;
     __CN1_DEBUG_INFO(42);
     PUSH_POINTER(get_field_com_example_entity_EnemyManager_enemies(__cn1ThisObject));
     PUSH_POINTER(__NEW_com_example_entity_Goose(threadStateData)); /* NEW */
@@ -210,17 +210,17 @@ label_L9844218:
     SP[-1].data.i = tmpResult; SP[-1].type = CN1_TYPE_INT; }
     SP--; /* POP */
 
-label_L421191743:
+label_L747870628:
     __CN1_DEBUG_INFO(39);
     BC_IINC(2, 1);
 
-label_L747870628:
-    if (ilocals_2_<CN1_ARRAY_LENGTH(CN1_ARRAY_ELEMENT_OBJECT(get_field_com_example_entity_EnemyManager_spawnPoints(__cn1ThisObject), ilocals_1_))) /* IF_IMPLT CustomJump */ goto label_L9844218;
+label_L1818747191:
+    if (ilocals_2_<CN1_ARRAY_LENGTH(CN1_ARRAY_ELEMENT_OBJECT(get_field_com_example_entity_EnemyManager_spawnPoints(__cn1ThisObject), ilocals_1_))) /* IF_IMPLT CustomJump */ goto label_L421191743;
     __CN1_DEBUG_INFO(38);
     BC_IINC(1, 1);
 
-label_L1818747191:
-    if (ilocals_1_<CN1_ARRAY_LENGTH(get_field_com_example_entity_EnemyManager_spawnPoints(__cn1ThisObject))) /* IF_IMPLT CustomJump */ goto label_L1403716230;
+label_L1523084197:
+    if (ilocals_1_<CN1_ARRAY_LENGTH(get_field_com_example_entity_EnemyManager_spawnPoints(__cn1ThisObject))) /* IF_IMPLT CustomJump */ goto label_L9844218;
     __CN1_DEBUG_INFO(46);
     releaseForReturn(threadStateData, cn1LocalsBeginInThread); 
     return;
@@ -233,7 +233,7 @@ JAVA_VOID com_example_entity_EnemyManager_spawnGooseRandom__(CODENAME_ONE_THREAD
     volatile JAVA_INT ilocals_4_ = 0; /* v4 */
     volatile JAVA_INT ilocals_5_ = 0; /* v5 */
     volatile JAVA_INT ilocals_6_ = 0; /* v6 */
-    DEFINE_INSTANCE_METHOD_STACK(8, 7, 0, 10248, 10250);
+    DEFINE_INSTANCE_METHOD_STACK(8, 7, 0, 10246, 10248);
     locals[0].data.o = __cn1ThisObject; locals[0].type = CN1_TYPE_OBJECT;     __CN1_DEBUG_INFO(49);
     { JAVA_OBJECT tmpResult = virtual_com_example_levels_LevelManager_getCurrentLevel___R_com_example_levels_Level(threadStateData, get_field_com_example_entity_EnemyManager_levelManager(__cn1ThisObject));
     PUSH_OBJ(tmpResult); }
@@ -242,9 +242,9 @@ JAVA_VOID com_example_entity_EnemyManager_spawnGooseRandom__(CODENAME_ONE_THREAD
     BC_ASTORE(1);
     __CN1_DEBUG_INFO(50);
     /* VarOp.assignFrom */     ilocals_2_ = 1 /* ICONST_1 */; 
-    goto label_L1673916398;
+    goto label_L1403716230;
 
-label_L753426788:
+label_L1910896157:
     __CN1_DEBUG_INFO(51);
     BC_ALOAD(1);
     (*SP).type = CN1_TYPE_INT; /* ILOAD */ 
@@ -288,18 +288,18 @@ label_L753426788:
     SP[-1].data.i = ((JAVA_ARRAY_INT*) (*(JAVA_ARRAY)SP[-1].data.o).data)[(*SP).data.i];
     BC_ISTORE(5);
     __CN1_DEBUG_INFO(54);
-    if (ilocals_3_==0) /* IFEQ CustomJump */ goto label_L756080817;
-    if (ilocals_3_!=3 /* ICONST_3 */) /* IF_ICMPNE CustomJump */ goto label_L479734028;
+    if (ilocals_3_==0) /* IFEQ CustomJump */ goto label_L1673916398;
+    if (ilocals_3_!=3 /* ICONST_3 */) /* IF_ICMPNE CustomJump */ goto label_L756080817;
 
-label_L756080817:
-    if (ilocals_4_==0) /* IFEQ CustomJump */ goto label_L388802347;
-    if (ilocals_4_!=3 /* ICONST_3 */) /* IF_ICMPNE CustomJump */ goto label_L479734028;
+label_L1673916398:
+    if (ilocals_4_==0) /* IFEQ CustomJump */ goto label_L479734028;
+    if (ilocals_4_!=3 /* ICONST_3 */) /* IF_ICMPNE CustomJump */ goto label_L756080817;
+
+label_L479734028:
+    if (ilocals_5_==0) /* IFEQ CustomJump */ goto label_L388802347;
+    if (ilocals_5_!=3 /* ICONST_3 */) /* IF_ICMPNE CustomJump */ goto label_L756080817;
 
 label_L388802347:
-    if (ilocals_5_==0) /* IFEQ CustomJump */ goto label_L1541046463;
-    if (ilocals_5_!=3 /* ICONST_3 */) /* IF_ICMPNE CustomJump */ goto label_L479734028;
-
-label_L1541046463:
     __CN1_DEBUG_INFO(55);
     BC_ALOAD(1);
     (*SP).type = CN1_TYPE_INT; /* ILOAD */ 
@@ -316,7 +316,7 @@ label_L1541046463:
     SP--; SP[-1].type = CN1_TYPE_INT; 
     SP[-1].data.i = ((JAVA_ARRAY_INT*) (*(JAVA_ARRAY)SP[-1].data.o).data)[(*SP).data.i];
     PUSH_INT(4); /* ICONST_4 */
-    SP-=2; if((*SP).data.i != SP[1].data.i) /* IF_ICMPNE */ goto label_L479734028;
+    SP-=2; if((*SP).data.i != SP[1].data.i) /* IF_ICMPNE */ goto label_L756080817;
     BC_ALOAD(1);
     (*SP).type = CN1_TYPE_INT; /* ILOAD */ 
     (*SP).data.i = ilocals_2_; 
@@ -332,7 +332,7 @@ label_L1541046463:
     SP--; SP[-1].type = CN1_TYPE_INT; 
     SP[-1].data.i = ((JAVA_ARRAY_INT*) (*(JAVA_ARRAY)SP[-1].data.o).data)[(*SP).data.i];
     PUSH_INT(4); /* ICONST_4 */
-    SP-=2; if((*SP).data.i != SP[1].data.i) /* IF_ICMPNE */ goto label_L479734028;
+    SP-=2; if((*SP).data.i != SP[1].data.i) /* IF_ICMPNE */ goto label_L756080817;
     BC_ALOAD(1);
     (*SP).type = CN1_TYPE_INT; /* ILOAD */ 
     (*SP).data.i = ilocals_2_; 
@@ -348,7 +348,7 @@ label_L1541046463:
     SP--; SP[-1].type = CN1_TYPE_INT; 
     SP[-1].data.i = ((JAVA_ARRAY_INT*) (*(JAVA_ARRAY)SP[-1].data.o).data)[(*SP).data.i];
     PUSH_INT(4); /* ICONST_4 */
-    SP-=2; if((*SP).data.i != SP[1].data.i) /* IF_ICMPNE */ goto label_L479734028;
+    SP-=2; if((*SP).data.i != SP[1].data.i) /* IF_ICMPNE */ goto label_L756080817;
     __CN1_DEBUG_INFO(56);
     BC_ALOAD(1);
     (*SP).type = CN1_TYPE_INT; /* ILOAD */ 
@@ -365,7 +365,7 @@ label_L1541046463:
     SP--; SP[-1].type = CN1_TYPE_INT; 
     SP[-1].data.i = ((JAVA_ARRAY_INT*) (*(JAVA_ARRAY)SP[-1].data.o).data)[(*SP).data.i];
     PUSH_INT(4); /* ICONST_4 */
-    SP-=2; if((*SP).data.i != SP[1].data.i) /* IF_ICMPNE */ goto label_L479734028;
+    SP-=2; if((*SP).data.i != SP[1].data.i) /* IF_ICMPNE */ goto label_L756080817;
     BC_ALOAD(1);
     (*SP).type = CN1_TYPE_INT; /* ILOAD */ 
     (*SP).data.i = ilocals_2_; 
@@ -381,7 +381,7 @@ label_L1541046463:
     SP--; SP[-1].type = CN1_TYPE_INT; 
     SP[-1].data.i = ((JAVA_ARRAY_INT*) (*(JAVA_ARRAY)SP[-1].data.o).data)[(*SP).data.i];
     PUSH_INT(4); /* ICONST_4 */
-    SP-=2; if((*SP).data.i != SP[1].data.i) /* IF_ICMPNE */ goto label_L479734028;
+    SP-=2; if((*SP).data.i != SP[1].data.i) /* IF_ICMPNE */ goto label_L756080817;
     BC_ALOAD(1);
     (*SP).type = CN1_TYPE_INT; /* ILOAD */ 
     (*SP).data.i = ilocals_2_; 
@@ -397,16 +397,16 @@ label_L1541046463:
     SP--; SP[-1].type = CN1_TYPE_INT; 
     SP[-1].data.i = ((JAVA_ARRAY_INT*) (*(JAVA_ARRAY)SP[-1].data.o).data)[(*SP).data.i];
     PUSH_INT(4); /* ICONST_4 */
-    SP-=2; if((*SP).data.i != SP[1].data.i) /* IF_ICMPNE */ goto label_L479734028;
+    SP-=2; if((*SP).data.i != SP[1].data.i) /* IF_ICMPNE */ goto label_L756080817;
     __CN1_DEBUG_INFO(57);
     /* VarOp.assignFrom */ ilocals_6_ = /* CustomInvoke */virtual_java_util_Random_nextInt___int_R_int(threadStateData, get_field_com_example_entity_EnemyManager_spawnGooseChance(__cn1ThisObject), 101);
     __CN1_DEBUG_INFO(58);
     PUSH_DOUBLE(get_static_com_example_statemanager_PlayingScene_gameScore(threadStateData));
     SP[-1].data.i = (JAVA_INT)SP[-1].data.d; /* D2I */
     PUSH_INT(30);
-    SP-=2; if((*SP).data.i >= SP[1].data.i) /* IF_ICMPGE */ goto label_L1910896157;
+    SP-=2; if((*SP).data.i >= SP[1].data.i) /* IF_ICMPGE */ goto label_L1541046463;
     __CN1_DEBUG_INFO(59);
-    if (ilocals_6_>(6 + ((JAVA_INT)get_static_com_example_statemanager_PlayingScene_gameScore(threadStateData)))) /* IF_ICMPGT CustomJump */ goto label_L479734028;
+    if (ilocals_6_>(6 + ((JAVA_INT)get_static_com_example_statemanager_PlayingScene_gameScore(threadStateData)))) /* IF_ICMPGT CustomJump */ goto label_L756080817;
     __CN1_DEBUG_INFO(60);
     PUSH_POINTER(get_field_com_example_entity_EnemyManager_enemies(__cn1ThisObject));
     PUSH_POINTER(__NEW_com_example_entity_Goose(threadStateData)); /* NEW */
@@ -417,15 +417,15 @@ label_L1541046463:
     SP[-1].data.i = tmpResult; SP[-1].type = CN1_TYPE_INT; }
     SP--; /* POP */
     __CN1_DEBUG_INFO(62);
-    goto label_L479734028;
+    goto label_L756080817;
 
-label_L1910896157:
+label_L1541046463:
     __CN1_DEBUG_INFO(63);
     (*SP).type = CN1_TYPE_INT; /* ILOAD */ 
     (*SP).data.i = ilocals_6_; 
     SP++;
     PUSH_INT(36);
-    SP-=2; if((*SP).data.i > SP[1].data.i) /* IF_ICMPGT */ goto label_L479734028;
+    SP-=2; if((*SP).data.i > SP[1].data.i) /* IF_ICMPGT */ goto label_L756080817;
     __CN1_DEBUG_INFO(64);
     PUSH_POINTER(get_field_com_example_entity_EnemyManager_enemies(__cn1ThisObject));
     PUSH_POINTER(__NEW_com_example_entity_Goose(threadStateData)); /* NEW */
@@ -436,12 +436,12 @@ label_L1910896157:
     SP[-1].data.i = tmpResult; SP[-1].type = CN1_TYPE_INT; }
     SP--; /* POP */
 
-label_L479734028:
+label_L756080817:
     __CN1_DEBUG_INFO(50);
     BC_IINC(2, 1);
 
-label_L1673916398:
-    if (ilocals_2_<CN1_ARRAY_LENGTH(locals[1].data.o)) /* IF_IMPLT CustomJump */ goto label_L753426788;
+label_L1403716230:
+    if (ilocals_2_<CN1_ARRAY_LENGTH(locals[1].data.o)) /* IF_IMPLT CustomJump */ goto label_L1910896157;
     __CN1_DEBUG_INFO(69);
     releaseForReturn(threadStateData, cn1LocalsBeginInThread); 
     return;
@@ -450,18 +450,18 @@ label_L1673916398:
 
 JAVA_VOID com_example_entity_EnemyManager_callXOffsetGoose___int(CODENAME_ONE_THREAD_STATE, JAVA_OBJECT  __cn1ThisObject, JAVA_INT __cn1Arg1) {
     volatile JAVA_INT ilocals_1_ = 0; /* offset */
-    DEFINE_INSTANCE_METHOD_STACK(2, 4, 0, 10248, 10251);
+    DEFINE_INSTANCE_METHOD_STACK(2, 4, 0, 10246, 10249);
     locals[0].data.o = __cn1ThisObject; locals[0].type = CN1_TYPE_OBJECT;     ilocals_1_ = __cn1Arg1;
     __CN1_DEBUG_INFO(72);
-    /* VarOp.assignFrom */ locals[3].data.o = virtual_java_util_ArrayList_iterator___R_java_util_Iterator(threadStateData, get_field_com_example_entity_EnemyManager_enemies(__cn1ThisObject));locals[3].type=CN1_TYPE_OBJECT;    goto label_L1586470445;
+    /* VarOp.assignFrom */ locals[3].data.o = virtual_java_util_ArrayList_iterator___R_java_util_Iterator(threadStateData, get_field_com_example_entity_EnemyManager_enemies(__cn1ThisObject));locals[3].type=CN1_TYPE_OBJECT;    goto label_L753426788;
 
-label_L1373577787:
+label_L1586470445:
     /* VarOp.assignFrom */ locals[2].data.o = virtual_java_util_Iterator_next___R_java_lang_Object(threadStateData, locals[3].data.o);locals[2].type=CN1_TYPE_OBJECT;    __CN1_DEBUG_INFO(73);
     /* CustomInvoke */virtual_com_example_entity_Goose_xOffsetForConstantMove___int(threadStateData, locals[2].data.o, ilocals_1_); 
 
-label_L1586470445:
+label_L753426788:
     __CN1_DEBUG_INFO(72);
-    if (virtual_java_util_Iterator_hasNext___R_boolean(threadStateData, locals[3].data.o)!=0) /* IFNE CustomJump */ goto label_L1373577787;
+    if (virtual_java_util_Iterator_hasNext___R_boolean(threadStateData, locals[3].data.o)!=0) /* IFNE CustomJump */ goto label_L1586470445;
     __CN1_DEBUG_INFO(75);
     releaseForReturn(threadStateData, cn1LocalsBeginInThread); 
     return;
@@ -470,12 +470,12 @@ label_L1586470445:
 
 JAVA_VOID com_example_entity_EnemyManager_removeGoose__(CODENAME_ONE_THREAD_STATE, JAVA_OBJECT  __cn1ThisObject) {
     volatile JAVA_INT ilocals_1_ = 0; /* v1 */
-    DEFINE_INSTANCE_METHOD_STACK(2, 2, 0, 10248, 10252);
+    DEFINE_INSTANCE_METHOD_STACK(2, 2, 0, 10246, 10250);
     locals[0].data.o = __cn1ThisObject; locals[0].type = CN1_TYPE_OBJECT;     __CN1_DEBUG_INFO(78);
     /* VarOp.assignFrom */     ilocals_1_ = 0 /* ICONST_0 */; 
-    goto label_L265577219;
+    goto label_L1373577787;
 
-label_L1107579932:
+label_L1624817884:
     __CN1_DEBUG_INFO(79);
     /* CustomInvoke */{ JAVA_OBJECT tmpResult = virtual_java_util_ArrayList_get___int_R_java_lang_Object(threadStateData, get_field_com_example_entity_EnemyManager_enemies(__cn1ThisObject), ilocals_1_);
     PUSH_OBJ(tmpResult); }
@@ -483,16 +483,16 @@ label_L1107579932:
     SP[-1].data.o = tmpResult; SP[-1].type = CN1_TYPE_OBJECT; }
     { JAVA_INT tmpResult = virtual_java_lang_Boolean_booleanValue___R_boolean(threadStateData, SP[-1].data.o);
     SP[-1].data.i = tmpResult; SP[-1].type = CN1_TYPE_INT; }
-    if(POP_INT() == 0) /* IFEQ */ goto label_L1624817884;
+    if(POP_INT() == 0) /* IFEQ */ goto label_L265577219;
     __CN1_DEBUG_INFO(80);
     /* CustomInvoke */virtual_java_util_ArrayList_remove___int_R_java_lang_Object(threadStateData, get_field_com_example_entity_EnemyManager_enemies(__cn1ThisObject), ilocals_1_); 
 
-label_L1624817884:
+label_L265577219:
     __CN1_DEBUG_INFO(78);
     BC_IINC(1, 1);
 
-label_L265577219:
-    if (ilocals_1_<virtual_java_util_ArrayList_size___R_int(threadStateData, get_field_com_example_entity_EnemyManager_enemies(__cn1ThisObject))) /* IF_IMPLT CustomJump */ goto label_L1107579932;
+label_L1373577787:
+    if (ilocals_1_<virtual_java_util_ArrayList_size___R_int(threadStateData, get_field_com_example_entity_EnemyManager_enemies(__cn1ThisObject))) /* IF_IMPLT CustomJump */ goto label_L1624817884;
     __CN1_DEBUG_INFO(83);
     releaseForReturn(threadStateData, cn1LocalsBeginInThread); 
     return;
@@ -501,14 +501,14 @@ label_L265577219:
 
 JAVA_VOID com_example_entity_EnemyManager_duckyAndGooseCollision__(CODENAME_ONE_THREAD_STATE, JAVA_OBJECT  __cn1ThisObject) {
     volatile JAVA_INT ilocals_1_ = 0; /* v1 */
-    DEFINE_INSTANCE_METHOD_STACK(3, 2, 0, 10248, 10253);
+    DEFINE_INSTANCE_METHOD_STACK(3, 2, 0, 10246, 10251);
     locals[0].data.o = __cn1ThisObject; locals[0].type = CN1_TYPE_OBJECT;     __CN1_DEBUG_INFO(86);
     /* VarOp.assignFrom */     ilocals_1_ = 0 /* ICONST_0 */; 
-    goto label_L1784834205;
+    goto label_L1107579932;
 
-label_L1627010197:
+label_L1174586025:
     __CN1_DEBUG_INFO(88);
-    if (virtual_java_util_ArrayList_size___R_int(threadStateData, get_field_com_example_entity_EnemyManager_enemies(__cn1ThisObject))<=0) /* IFLE CustomJump */ goto label_L1174586025;
+    if (virtual_java_util_ArrayList_size___R_int(threadStateData, get_field_com_example_entity_EnemyManager_enemies(__cn1ThisObject))<=0) /* IFLE CustomJump */ goto label_L1784834205;
     PUSH_POINTER(get_field_com_example_entity_Ducky_hitbox(get_field_com_example_entity_EnemyManager_duck(__cn1ThisObject)));
     /* CustomInvoke */{ JAVA_OBJECT tmpResult = virtual_java_util_ArrayList_get___int_R_java_lang_Object(threadStateData, get_field_com_example_entity_EnemyManager_enemies(__cn1ThisObject), ilocals_1_);
     PUSH_OBJ(tmpResult); }
@@ -518,18 +518,18 @@ label_L1627010197:
     SP[-1].data.o = tmpResult; SP[-1].type = CN1_TYPE_OBJECT; }
     { JAVA_INT tmpResult = virtual_java_lang_Boolean_booleanValue___R_boolean(threadStateData, SP[-1].data.o);
     SP[-1].data.i = tmpResult; SP[-1].type = CN1_TYPE_INT; }
-    if(POP_INT() == 0) /* IFEQ */ goto label_L1174586025;
+    if(POP_INT() == 0) /* IFEQ */ goto label_L1784834205;
     __CN1_DEBUG_INFO(89);
     PUSH_POINTER(get_field_com_example_entity_EnemyManager_duck(__cn1ThisObject));
     /* CustomInvoke */PUSH_OBJ(java_lang_Boolean_valueOf___boolean_R_java_lang_Boolean(threadStateData, 1 /* ICONST_1 */));
     virtual_com_example_entity_Ducky_setIsDead___java_lang_Boolean(threadStateData, SP[-2].data.o, SP[-1].data.o);     SP-= 2;
 
-label_L1174586025:
+label_L1784834205:
     __CN1_DEBUG_INFO(86);
     BC_IINC(1, 1);
 
-label_L1784834205:
-    if (ilocals_1_<virtual_java_util_ArrayList_size___R_int(threadStateData, get_field_com_example_entity_EnemyManager_enemies(__cn1ThisObject))) /* IF_IMPLT CustomJump */ goto label_L1627010197;
+label_L1107579932:
+    if (ilocals_1_<virtual_java_util_ArrayList_size___R_int(threadStateData, get_field_com_example_entity_EnemyManager_enemies(__cn1ThisObject))) /* IF_IMPLT CustomJump */ goto label_L1174586025;
     __CN1_DEBUG_INFO(92);
     releaseForReturn(threadStateData, cn1LocalsBeginInThread); 
     return;
@@ -539,17 +539,17 @@ label_L1784834205:
 JAVA_VOID com_example_entity_EnemyManager_gooseAndProjectileCollision__(CODENAME_ONE_THREAD_STATE, JAVA_OBJECT  __cn1ThisObject) {
     volatile JAVA_INT ilocals_1_ = 0; /* v1 */
     volatile JAVA_INT ilocals_2_ = 0; /* v2 */
-    DEFINE_INSTANCE_METHOD_STACK(4, 3, 0, 10248, 10254);
+    DEFINE_INSTANCE_METHOD_STACK(4, 3, 0, 10246, 10252);
     locals[0].data.o = __cn1ThisObject; locals[0].type = CN1_TYPE_OBJECT;     __CN1_DEBUG_INFO(94);
     /* VarOp.assignFrom */     ilocals_1_ = 0 /* ICONST_0 */; 
-    goto label_L4073506;
-
-label_L1774690057:
-    __CN1_DEBUG_INFO(95);
-    /* VarOp.assignFrom */     ilocals_2_ = 0 /* ICONST_0 */; 
-    goto label_L2044825144;
+    goto label_L1627010197;
 
 label_L407493402:
+    __CN1_DEBUG_INFO(95);
+    /* VarOp.assignFrom */     ilocals_2_ = 0 /* ICONST_0 */; 
+    goto label_L4073506;
+
+label_L698747943:
     __CN1_DEBUG_INFO(96);
     /* CustomInvoke */{ JAVA_OBJECT tmpResult = virtual_java_util_ArrayList_get___int_R_java_lang_Object(threadStateData, get_field_com_example_entity_EnemyManager_enemies(__cn1ThisObject), ilocals_1_);
     PUSH_OBJ(tmpResult); }
@@ -562,7 +562,7 @@ label_L407493402:
     SP[-1].data.o = tmpResult; SP[-1].type = CN1_TYPE_OBJECT; }
     { JAVA_INT tmpResult = virtual_java_lang_Boolean_booleanValue___R_boolean(threadStateData, SP[-1].data.o);
     SP[-1].data.i = tmpResult; SP[-1].type = CN1_TYPE_INT; }
-    if(POP_INT() == 0) /* IFEQ */ goto label_L698747943;
+    if(POP_INT() == 0) /* IFEQ */ goto label_L2044825144;
     __CN1_DEBUG_INFO(97);
     /* CustomInvoke */{ JAVA_OBJECT tmpResult = virtual_java_util_ArrayList_get___int_R_java_lang_Object(threadStateData, get_field_com_example_entity_EnemyManager_projectiles(__cn1ThisObject), ilocals_2_);
     PUSH_OBJ(tmpResult); }
@@ -578,19 +578,19 @@ label_L407493402:
     __CN1_DEBUG_INFO(99);
     set_static_com_example_statemanager_PlayingScene_gameScore(threadStateData, (get_static_com_example_statemanager_PlayingScene_gameScore(threadStateData) + 0.2001));
     __CN1_DEBUG_INFO(100);
-    /* CustomInvoke */virtual_com_example_audio_AudioPlayer_playAudio___java_lang_String(threadStateData, get_static_com_example_myapp_Game_audioPlayer(threadStateData), STRING_FROM_CONSTANT_POOL_OFFSET(10255)); 
+    /* CustomInvoke */virtual_com_example_audio_AudioPlayer_playAudio___java_lang_String(threadStateData, get_static_com_example_myapp_Game_audioPlayer(threadStateData), STRING_FROM_CONSTANT_POOL_OFFSET(10253)); 
 
-label_L698747943:
+label_L2044825144:
     __CN1_DEBUG_INFO(95);
     BC_IINC(2, 1);
 
-label_L2044825144:
-    if (ilocals_2_<virtual_java_util_ArrayList_size___R_int(threadStateData, get_field_com_example_entity_EnemyManager_projectiles(__cn1ThisObject))) /* IF_IMPLT CustomJump */ goto label_L407493402;
+label_L4073506:
+    if (ilocals_2_<virtual_java_util_ArrayList_size___R_int(threadStateData, get_field_com_example_entity_EnemyManager_projectiles(__cn1ThisObject))) /* IF_IMPLT CustomJump */ goto label_L698747943;
     __CN1_DEBUG_INFO(94);
     BC_IINC(1, 1);
 
-label_L4073506:
-    if (ilocals_1_<virtual_java_util_ArrayList_size___R_int(threadStateData, get_field_com_example_entity_EnemyManager_enemies(__cn1ThisObject))) /* IF_IMPLT CustomJump */ goto label_L1774690057;
+label_L1627010197:
+    if (ilocals_1_<virtual_java_util_ArrayList_size___R_int(threadStateData, get_field_com_example_entity_EnemyManager_enemies(__cn1ThisObject))) /* IF_IMPLT CustomJump */ goto label_L407493402;
     __CN1_DEBUG_INFO(104);
     releaseForReturn(threadStateData, cn1LocalsBeginInThread); 
     return;
@@ -598,14 +598,14 @@ label_L4073506:
 
 
 JAVA_VOID com_example_entity_EnemyManager_createProjectiles__(CODENAME_ONE_THREAD_STATE, JAVA_OBJECT  __cn1ThisObject) {
-    DEFINE_INSTANCE_METHOD_STACK(9, 1, 0, 10248, 10256);
+    DEFINE_INSTANCE_METHOD_STACK(9, 1, 0, 10246, 10254);
     locals[0].data.o = __cn1ThisObject; locals[0].type = CN1_TYPE_OBJECT;     __CN1_DEBUG_INFO(108);
-    if (virtual_java_lang_Boolean_booleanValue___R_boolean(threadStateData, get_field_com_example_entity_Ducky_isAttacking(get_field_com_example_entity_EnemyManager_duck(__cn1ThisObject)))==0) /* IFEQ CustomJump */ goto label_L480402503;
-    if (get_field_com_example_entity_Ducky_spriteLoop(get_field_com_example_entity_EnemyManager_duck(__cn1ThisObject))!=3 /* ICONST_3 */) /* IF_ICMPNE CustomJump */ goto label_L480402503;
+    if (virtual_java_lang_Boolean_booleanValue___R_boolean(threadStateData, get_field_com_example_entity_Ducky_isAttacking(get_field_com_example_entity_EnemyManager_duck(__cn1ThisObject)))==0) /* IFEQ CustomJump */ goto label_L1774690057;
+    if (get_field_com_example_entity_Ducky_spriteLoop(get_field_com_example_entity_EnemyManager_duck(__cn1ThisObject))!=3 /* ICONST_3 */) /* IF_ICMPNE CustomJump */ goto label_L1774690057;
     PUSH_INT(get_field_com_example_entity_Ducky_aniTick(get_field_com_example_entity_EnemyManager_duck(__cn1ThisObject)));
     PUSH_INT(7);
-    SP-=2; if((*SP).data.i != SP[1].data.i) /* IF_ICMPNE */ goto label_L480402503;
-    if (virtual_java_lang_Boolean_booleanValue___R_boolean(threadStateData, get_field_com_example_entity_Ducky_isAttackingLeft(get_field_com_example_entity_EnemyManager_duck(__cn1ThisObject)))!=0) /* IFNE CustomJump */ goto label_L480402503;
+    SP-=2; if((*SP).data.i != SP[1].data.i) /* IF_ICMPNE */ goto label_L1774690057;
+    if (virtual_java_lang_Boolean_booleanValue___R_boolean(threadStateData, get_field_com_example_entity_Ducky_isAttackingLeft(get_field_com_example_entity_EnemyManager_duck(__cn1ThisObject)))!=0) /* IFNE CustomJump */ goto label_L1774690057;
     __CN1_DEBUG_INFO(109);
     PUSH_POINTER(get_field_com_example_entity_EnemyManager_projectiles(__cn1ThisObject));
     PUSH_POINTER(__NEW_com_example_entity_DuckyProjectile(threadStateData)); /* NEW */
@@ -628,15 +628,15 @@ JAVA_VOID com_example_entity_EnemyManager_createProjectiles__(CODENAME_ONE_THREA
     SP[-1].data.i = tmpResult; SP[-1].type = CN1_TYPE_INT; }
     SP--; /* POP */
     __CN1_DEBUG_INFO(110);
-    goto label_L100445376;
+    goto label_L480402503;
 
-label_L480402503:
-    if (virtual_java_lang_Boolean_booleanValue___R_boolean(threadStateData, get_field_com_example_entity_Ducky_isAttacking(get_field_com_example_entity_EnemyManager_duck(__cn1ThisObject)))==0) /* IFEQ CustomJump */ goto label_L100445376;
-    if (get_field_com_example_entity_Ducky_spriteLoop(get_field_com_example_entity_EnemyManager_duck(__cn1ThisObject))!=3 /* ICONST_3 */) /* IF_ICMPNE CustomJump */ goto label_L100445376;
+label_L1774690057:
+    if (virtual_java_lang_Boolean_booleanValue___R_boolean(threadStateData, get_field_com_example_entity_Ducky_isAttacking(get_field_com_example_entity_EnemyManager_duck(__cn1ThisObject)))==0) /* IFEQ CustomJump */ goto label_L480402503;
+    if (get_field_com_example_entity_Ducky_spriteLoop(get_field_com_example_entity_EnemyManager_duck(__cn1ThisObject))!=3 /* ICONST_3 */) /* IF_ICMPNE CustomJump */ goto label_L480402503;
     PUSH_INT(get_field_com_example_entity_Ducky_aniTick(get_field_com_example_entity_EnemyManager_duck(__cn1ThisObject)));
     PUSH_INT(7);
-    SP-=2; if((*SP).data.i != SP[1].data.i) /* IF_ICMPNE */ goto label_L100445376;
-    if (virtual_java_lang_Boolean_booleanValue___R_boolean(threadStateData, get_field_com_example_entity_Ducky_isAttackingLeft(get_field_com_example_entity_EnemyManager_duck(__cn1ThisObject)))==0) /* IFEQ CustomJump */ goto label_L100445376;
+    SP-=2; if((*SP).data.i != SP[1].data.i) /* IF_ICMPNE */ goto label_L480402503;
+    if (virtual_java_lang_Boolean_booleanValue___R_boolean(threadStateData, get_field_com_example_entity_Ducky_isAttackingLeft(get_field_com_example_entity_EnemyManager_duck(__cn1ThisObject)))==0) /* IFEQ CustomJump */ goto label_L480402503;
     __CN1_DEBUG_INFO(111);
     PUSH_POINTER(get_field_com_example_entity_EnemyManager_projectiles(__cn1ThisObject));
     PUSH_POINTER(__NEW_com_example_entity_DuckyProjectile(threadStateData)); /* NEW */
@@ -655,7 +655,7 @@ label_L480402503:
     SP[-1].data.i = tmpResult; SP[-1].type = CN1_TYPE_INT; }
     SP--; /* POP */
 
-label_L100445376:
+label_L480402503:
     __CN1_DEBUG_INFO(113);
     releaseForReturn(threadStateData, cn1LocalsBeginInThread); 
     return;
@@ -664,28 +664,28 @@ label_L100445376:
 
 JAVA_VOID com_example_entity_EnemyManager_removeProjectiles__(CODENAME_ONE_THREAD_STATE, JAVA_OBJECT  __cn1ThisObject) {
     volatile JAVA_INT ilocals_1_ = 0; /* v1 */
-    DEFINE_INSTANCE_METHOD_STACK(2, 2, 0, 10248, 10257);
+    DEFINE_INSTANCE_METHOD_STACK(2, 2, 0, 10246, 10255);
     locals[0].data.o = __cn1ThisObject; locals[0].type = CN1_TYPE_OBJECT;     __CN1_DEBUG_INFO(115);
     /* VarOp.assignFrom */     ilocals_1_ = 0 /* ICONST_0 */; 
-    goto label_L1396385390;
+    goto label_L100445376;
 
-label_L144699438:
+label_L114414807:
     __CN1_DEBUG_INFO(116);
     /* CustomInvoke */{ JAVA_OBJECT tmpResult = virtual_java_util_ArrayList_get___int_R_java_lang_Object(threadStateData, get_field_com_example_entity_EnemyManager_projectiles(__cn1ThisObject), ilocals_1_);
     PUSH_OBJ(tmpResult); }
     PUSH_POINTER(get_field_com_example_entity_DuckyProjectile_collided(POP_OBJ()));
     { JAVA_INT tmpResult = virtual_java_lang_Boolean_booleanValue___R_boolean(threadStateData, SP[-1].data.o);
     SP[-1].data.i = tmpResult; SP[-1].type = CN1_TYPE_INT; }
-    if(POP_INT() == 0) /* IFEQ */ goto label_L114414807;
+    if(POP_INT() == 0) /* IFEQ */ goto label_L1396385390;
     __CN1_DEBUG_INFO(117);
     /* CustomInvoke */virtual_java_util_ArrayList_remove___int_R_java_lang_Object(threadStateData, get_field_com_example_entity_EnemyManager_projectiles(__cn1ThisObject), ilocals_1_); 
 
-label_L114414807:
+label_L1396385390:
     __CN1_DEBUG_INFO(115);
     BC_IINC(1, 1);
 
-label_L1396385390:
-    if (ilocals_1_<virtual_java_util_ArrayList_size___R_int(threadStateData, get_field_com_example_entity_EnemyManager_projectiles(__cn1ThisObject))) /* IF_IMPLT CustomJump */ goto label_L144699438;
+label_L100445376:
+    if (ilocals_1_<virtual_java_util_ArrayList_size___R_int(threadStateData, get_field_com_example_entity_EnemyManager_projectiles(__cn1ThisObject))) /* IF_IMPLT CustomJump */ goto label_L114414807;
     __CN1_DEBUG_INFO(120);
     releaseForReturn(threadStateData, cn1LocalsBeginInThread); 
     return;
@@ -694,7 +694,7 @@ label_L1396385390:
 
 JAVA_VOID com_example_entity_EnemyManager_update__(CODENAME_ONE_THREAD_STATE, JAVA_OBJECT  __cn1ThisObject) {
     volatile JAVA_INT ilocals_1_ = 0; /* v1 */
-    DEFINE_INSTANCE_METHOD_STACK(2, 3, 0, 10248, 2519);
+    DEFINE_INSTANCE_METHOD_STACK(2, 3, 0, 10246, 2519);
     locals[0].data.o = __cn1ThisObject; locals[0].type = CN1_TYPE_OBJECT;     __CN1_DEBUG_INFO(125);
     virtual_com_example_entity_EnemyManager_createProjectiles__(threadStateData, __cn1ThisObject); 
     __CN1_DEBUG_INFO(126);
@@ -702,25 +702,25 @@ JAVA_VOID com_example_entity_EnemyManager_update__(CODENAME_ONE_THREAD_STATE, JA
     __CN1_DEBUG_INFO(127);
     virtual_com_example_entity_EnemyManager_gooseAndProjectileCollision__(threadStateData, __cn1ThisObject); 
     __CN1_DEBUG_INFO(128);
-    /* VarOp.assignFrom */ locals[2].data.o = virtual_java_util_ArrayList_iterator___R_java_util_Iterator(threadStateData, get_field_com_example_entity_EnemyManager_enemies(__cn1ThisObject));locals[2].type=CN1_TYPE_OBJECT;    goto label_L1751500625;
-
-label_L1650955365:
-    /* VarOp.assignFrom */ locals[1].data.o = virtual_java_util_Iterator_next___R_java_lang_Object(threadStateData, locals[2].data.o);locals[1].type=CN1_TYPE_OBJECT;    virtual_com_example_entity_Goose_update__(threadStateData, locals[1].data.o); 
+    /* VarOp.assignFrom */ locals[2].data.o = virtual_java_util_ArrayList_iterator___R_java_util_Iterator(threadStateData, get_field_com_example_entity_EnemyManager_enemies(__cn1ThisObject));locals[2].type=CN1_TYPE_OBJECT;    goto label_L144699438;
 
 label_L1751500625:
-    if (virtual_java_util_Iterator_hasNext___R_boolean(threadStateData, locals[2].data.o)!=0) /* IFNE CustomJump */ goto label_L1650955365;
+    /* VarOp.assignFrom */ locals[1].data.o = virtual_java_util_Iterator_next___R_java_lang_Object(threadStateData, locals[2].data.o);locals[1].type=CN1_TYPE_OBJECT;    virtual_com_example_entity_Goose_update__(threadStateData, locals[1].data.o); 
+
+label_L144699438:
+    if (virtual_java_util_Iterator_hasNext___R_boolean(threadStateData, locals[2].data.o)!=0) /* IFNE CustomJump */ goto label_L1751500625;
     __CN1_DEBUG_INFO(129);
     /* VarOp.assignFrom */     ilocals_1_ = 0 /* ICONST_0 */; 
-    goto label_L1788380050;
+    goto label_L1650955365;
 
-label_L493944943:
+label_L1788380050:
     /* CustomInvoke */{ JAVA_OBJECT tmpResult = virtual_java_util_ArrayList_get___int_R_java_lang_Object(threadStateData, get_field_com_example_entity_EnemyManager_projectiles(__cn1ThisObject), ilocals_1_);
     PUSH_OBJ(tmpResult); }
     virtual_com_example_entity_DuckyProjectile_update__(threadStateData, SP[-1].data.o);     SP -= 1;
     BC_IINC(1, 1);
 
-label_L1788380050:
-    if (ilocals_1_<virtual_java_util_ArrayList_size___R_int(threadStateData, get_field_com_example_entity_EnemyManager_projectiles(__cn1ThisObject))) /* IF_IMPLT CustomJump */ goto label_L493944943;
+label_L1650955365:
+    if (ilocals_1_<virtual_java_util_ArrayList_size___R_int(threadStateData, get_field_com_example_entity_EnemyManager_projectiles(__cn1ThisObject))) /* IF_IMPLT CustomJump */ goto label_L1788380050;
     __CN1_DEBUG_INFO(130);
     virtual_com_example_entity_EnemyManager_removeGoose__(threadStateData, __cn1ThisObject); 
     __CN1_DEBUG_INFO(131);
@@ -734,25 +734,25 @@ label_L1788380050:
 JAVA_VOID com_example_entity_EnemyManager_draw___com_codename1_ui_Graphics_int(CODENAME_ONE_THREAD_STATE, JAVA_OBJECT  __cn1ThisObject, JAVA_OBJECT __cn1Arg1, JAVA_INT __cn1Arg2) {
     volatile JAVA_INT ilocals_2_ = 0; /* xOffset */
     volatile JAVA_INT ilocals_3_ = 0; /* v3 */
-    DEFINE_INSTANCE_METHOD_STACK(3, 5, 0, 10248, 5493);
+    DEFINE_INSTANCE_METHOD_STACK(3, 5, 0, 10246, 5493);
     locals[0].data.o = __cn1ThisObject; locals[0].type = CN1_TYPE_OBJECT;     locals[1].data.o = __cn1Arg1;
     locals[1].type = CN1_TYPE_OBJECT;
     ilocals_2_ = __cn1Arg2;
     __CN1_DEBUG_INFO(134);
-    /* VarOp.assignFrom */ locals[4].data.o = virtual_java_util_ArrayList_iterator___R_java_util_Iterator(threadStateData, get_field_com_example_entity_EnemyManager_enemies(__cn1ThisObject));locals[4].type=CN1_TYPE_OBJECT;    goto label_L1533547487;
+    /* VarOp.assignFrom */ locals[4].data.o = virtual_java_util_ArrayList_iterator___R_java_util_Iterator(threadStateData, get_field_com_example_entity_EnemyManager_enemies(__cn1ThisObject));locals[4].type=CN1_TYPE_OBJECT;    goto label_L493944943;
 
-label_L99770475:
+label_L1533547487:
     /* VarOp.assignFrom */ locals[3].data.o = virtual_java_util_Iterator_next___R_java_lang_Object(threadStateData, locals[4].data.o);locals[3].type=CN1_TYPE_OBJECT;    __CN1_DEBUG_INFO(135);
     /* CustomInvoke */virtual_com_example_entity_Goose_draw___com_codename1_ui_Graphics_int(threadStateData, locals[3].data.o, locals[1].data.o, ilocals_2_); 
 
-label_L1533547487:
+label_L493944943:
     __CN1_DEBUG_INFO(134);
-    if (virtual_java_util_Iterator_hasNext___R_boolean(threadStateData, locals[4].data.o)!=0) /* IFNE CustomJump */ goto label_L99770475;
+    if (virtual_java_util_Iterator_hasNext___R_boolean(threadStateData, locals[4].data.o)!=0) /* IFNE CustomJump */ goto label_L1533547487;
     __CN1_DEBUG_INFO(137);
     /* VarOp.assignFrom */     ilocals_3_ = 0 /* ICONST_0 */; 
-    goto label_L727250772;
+    goto label_L99770475;
 
-label_L1052768296:
+label_L727250772:
     __CN1_DEBUG_INFO(138);
     /* CustomInvoke */{ JAVA_OBJECT tmpResult = virtual_java_util_ArrayList_get___int_R_java_lang_Object(threadStateData, get_field_com_example_entity_EnemyManager_projectiles(__cn1ThisObject), ilocals_3_);
     PUSH_OBJ(tmpResult); }
@@ -760,8 +760,8 @@ label_L1052768296:
     __CN1_DEBUG_INFO(137);
     BC_IINC(3, 1);
 
-label_L727250772:
-    if (ilocals_3_<virtual_java_util_ArrayList_size___R_int(threadStateData, get_field_com_example_entity_EnemyManager_projectiles(__cn1ThisObject))) /* IF_IMPLT CustomJump */ goto label_L1052768296;
+label_L99770475:
+    if (ilocals_3_<virtual_java_util_ArrayList_size___R_int(threadStateData, get_field_com_example_entity_EnemyManager_projectiles(__cn1ThisObject))) /* IF_IMPLT CustomJump */ goto label_L727250772;
     __CN1_DEBUG_INFO(140);
     releaseForReturn(threadStateData, cn1LocalsBeginInThread); 
     return;

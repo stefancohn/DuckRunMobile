@@ -65,8 +65,6 @@ JAVA_INT get_field_com_example_ui_DeathSceneOverlay_hsX(JAVA_OBJECT t);
 void set_field_com_example_ui_DeathSceneOverlay_hsX(CODENAME_ONE_THREAD_STATE, JAVA_INT __cn1Val, JAVA_OBJECT __cn1T);
 JAVA_INT get_field_com_example_ui_DeathSceneOverlay_hsY(JAVA_OBJECT t);
 void set_field_com_example_ui_DeathSceneOverlay_hsY(CODENAME_ONE_THREAD_STATE, JAVA_INT __cn1Val, JAVA_OBJECT __cn1T);
-JAVA_OBJECT get_field_com_example_ui_DeathSceneOverlay_volumeButton(JAVA_OBJECT t);
-void set_field_com_example_ui_DeathSceneOverlay_volumeButton(CODENAME_ONE_THREAD_STATE, JAVA_OBJECT __cn1Val, JAVA_OBJECT __cn1T);
 
 
 struct obj__com_example_ui_DeathSceneOverlay {
@@ -86,7 +84,6 @@ struct obj__com_example_ui_DeathSceneOverlay {
     JAVA_OBJECT com_example_ui_DeathSceneOverlay_playButtonPressed;
     JAVA_INT com_example_ui_DeathSceneOverlay_hsX;
     JAVA_INT com_example_ui_DeathSceneOverlay_hsY;
-    JAVA_OBJECT com_example_ui_DeathSceneOverlay_volumeButton;
 };
 
 

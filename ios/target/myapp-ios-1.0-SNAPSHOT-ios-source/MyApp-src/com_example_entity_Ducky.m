@@ -590,9 +590,6 @@ label_L1060042118:
     __CN1_DEBUG_INFO(120);
     if (virtual_java_lang_Boolean_booleanValue___R_boolean(threadStateData, get_field_com_example_entity_Ducky_isAttacking(__cn1ThisObject))==0) /* IFEQ CustomJump */ goto label_L1964847681;
     if (virtual_java_lang_Boolean_booleanValue___R_boolean(threadStateData, get_static_com_example_myapp_Game_audioOn(threadStateData))==0) /* IFEQ CustomJump */ goto label_L1964847681;
-    if (get_field_com_example_entity_Ducky_spriteLoop(__cn1ThisObject)!=1 /* ICONST_1 */) /* IF_ICMPNE CustomJump */ goto label_L1964847681;
-    __CN1_DEBUG_INFO(121);
-    /* CustomInvoke */virtual_com_example_audio_AudioPlayer_playAudio___java_lang_String(threadStateData, get_static_com_example_myapp_Game_audioPlayer(threadStateData), STRING_FROM_CONSTANT_POOL_OFFSET(10218)); 
 
 label_L1964847681:
     __CN1_DEBUG_INFO(124);
@@ -645,7 +642,7 @@ label_L1970073944:
 
 
 JAVA_VOID com_example_entity_Ducky_actionsToTakeWhenDuckyDies__(CODENAME_ONE_THREAD_STATE, JAVA_OBJECT  __cn1ThisObject) {
-    DEFINE_INSTANCE_METHOD_STACK(2, 1, 0, 10208, 10219);
+    DEFINE_INSTANCE_METHOD_STACK(2, 1, 0, 10208, 10218);
     locals[0].data.o = __cn1ThisObject; locals[0].type = CN1_TYPE_OBJECT;     __CN1_DEBUG_INFO(142);
     /* CustomInvoke */virtual_com_example_myapp_Game_changeState___int(threadStateData, get_static_com_example_myapp_Game_game(threadStateData), 2 /* ICONST_2 */); 
     __CN1_DEBUG_INFO(143);
@@ -657,7 +654,7 @@ JAVA_VOID com_example_entity_Ducky_actionsToTakeWhenDuckyDies__(CODENAME_ONE_THR
 
 
 JAVA_VOID com_example_entity_Ducky_duckyMovementAndHitbox__(CODENAME_ONE_THREAD_STATE, JAVA_OBJECT  __cn1ThisObject) {
-    DEFINE_INSTANCE_METHOD_STACK(5, 1, 0, 10208, 10220);
+    DEFINE_INSTANCE_METHOD_STACK(5, 1, 0, 10208, 10219);
     locals[0].data.o = __cn1ThisObject; locals[0].type = CN1_TYPE_OBJECT;     __CN1_DEBUG_INFO(148);
     { JAVA_OBJECT tmpResult = virtual_com_example_handler_KeyHandler_getRightPres___R_java_lang_Boolean(threadStateData, get_static_com_example_entity_Ducky_kh(threadStateData));
     PUSH_OBJ(tmpResult); }
@@ -1150,7 +1147,7 @@ label_L1990421361:
 
 
 JAVA_VOID com_example_entity_Ducky_jump__(CODENAME_ONE_THREAD_STATE, JAVA_OBJECT  __cn1ThisObject) {
-    DEFINE_INSTANCE_METHOD_STACK(2, 1, 0, 10208, 10221);
+    DEFINE_INSTANCE_METHOD_STACK(2, 1, 0, 10208, 10220);
     locals[0].data.o = __cn1ThisObject; locals[0].type = CN1_TYPE_OBJECT;     __CN1_DEBUG_INFO(271);
     BC_ALOAD(0);
     /* CustomInvoke */PUSH_OBJ(java_lang_Boolean_valueOf___boolean_R_java_lang_Boolean(threadStateData, 1 /* ICONST_1 */));
@@ -1161,11 +1158,6 @@ JAVA_VOID com_example_entity_Ducky_jump__(CODENAME_ONE_THREAD_STATE, JAVA_OBJECT
     /* CustomInvoke */PUSH_OBJ(java_lang_Boolean_valueOf___boolean_R_java_lang_Boolean(threadStateData, 1 /* ICONST_1 */));
     set_field_com_example_entity_Ducky_jump(threadStateData, PEEK_OBJ(1), PEEK_OBJ(2));
     POP_MANY(2);
-    __CN1_DEBUG_INFO(273);
-    if (virtual_java_lang_Boolean_booleanValue___R_boolean(threadStateData, get_static_com_example_myapp_Game_audioOn(threadStateData))==0) /* IFEQ CustomJump */ goto label_L407148497;
-    /* CustomInvoke */virtual_com_example_audio_AudioPlayer_playAudio___java_lang_String(threadStateData, get_static_com_example_myapp_Game_audioPlayer(threadStateData), STRING_FROM_CONSTANT_POOL_OFFSET(10222)); 
-
-label_L407148497:
     __CN1_DEBUG_INFO(274);
     releaseForReturn(threadStateData, cn1LocalsBeginInThread); 
     return;
@@ -1174,7 +1166,7 @@ label_L407148497:
 
 JAVA_VOID com_example_entity_Ducky_xOffsetForConstantMove___int(CODENAME_ONE_THREAD_STATE, JAVA_OBJECT  __cn1ThisObject, JAVA_INT __cn1Arg1) {
     volatile JAVA_INT ilocals_1_ = 0; /* xOffset */
-    DEFINE_INSTANCE_METHOD_STACK(3, 2, 0, 10208, 10223);
+    DEFINE_INSTANCE_METHOD_STACK(3, 2, 0, 10208, 10221);
     locals[0].data.o = __cn1ThisObject; locals[0].type = CN1_TYPE_OBJECT;     ilocals_1_ = __cn1Arg1;
     __CN1_DEBUG_INFO(277);
     PUSH_POINTER(get_field_com_example_entity_Ducky_hitbox(__cn1ThisObject));
@@ -1192,30 +1184,30 @@ JAVA_VOID com_example_entity_Ducky_xOffsetForConstantMove___int(CODENAME_ONE_THR
 
 
 JAVA_VOID com_example_entity_Ducky_duckyDead__(CODENAME_ONE_THREAD_STATE, JAVA_OBJECT  __cn1ThisObject) {
-    DEFINE_INSTANCE_METHOD_STACK(3, 1, 0, 10208, 10224);
+    DEFINE_INSTANCE_METHOD_STACK(3, 1, 0, 10208, 10222);
     locals[0].data.o = __cn1ThisObject; locals[0].type = CN1_TYPE_OBJECT;     __CN1_DEBUG_INFO(281);
     /* CustomInvoke */PUSH_OBJ(com_example_util_Collisions_touchedLava___int_int_int_2ARRAY_R_java_lang_Boolean(threadStateData, get_field_com_example_util_Rectangle_x(get_field_com_example_entity_Ducky_hitbox(__cn1ThisObject)), get_field_com_example_util_Rectangle_y(get_field_com_example_entity_Ducky_hitbox(__cn1ThisObject)), get_field_com_example_entity_Ducky_levelData(__cn1ThisObject)));
     { JAVA_INT tmpResult = virtual_java_lang_Boolean_booleanValue___R_boolean(threadStateData, SP[-1].data.o);
     SP[-1].data.i = tmpResult; SP[-1].type = CN1_TYPE_INT; }
-    if(POP_INT() == 0) /* IFEQ */ goto label_L16373883;
+    if(POP_INT() == 0) /* IFEQ */ goto label_L407148497;
     __CN1_DEBUG_INFO(282);
     BC_ALOAD(0);
     /* CustomInvoke */PUSH_OBJ(java_lang_Boolean_valueOf___boolean_R_java_lang_Boolean(threadStateData, 1 /* ICONST_1 */));
     set_field_com_example_entity_Ducky_isDead(threadStateData, PEEK_OBJ(1), PEEK_OBJ(2));
     POP_MANY(2);
 
-label_L16373883:
+label_L407148497:
     __CN1_DEBUG_INFO(284);
-    if (get_field_com_example_util_Rectangle_x(get_field_com_example_entity_Ducky_hitbox(__cn1ThisObject))>0) /* IFGT CustomJump */ goto label_L1878700101;
+    if (get_field_com_example_util_Rectangle_x(get_field_com_example_entity_Ducky_hitbox(__cn1ThisObject))>0) /* IFGT CustomJump */ goto label_L16373883;
     __CN1_DEBUG_INFO(285);
     BC_ALOAD(0);
     /* CustomInvoke */PUSH_OBJ(java_lang_Boolean_valueOf___boolean_R_java_lang_Boolean(threadStateData, 1 /* ICONST_1 */));
     set_field_com_example_entity_Ducky_isDead(threadStateData, PEEK_OBJ(1), PEEK_OBJ(2));
     POP_MANY(2);
 
-label_L1878700101:
+label_L16373883:
     __CN1_DEBUG_INFO(287);
-    if (virtual_java_lang_Boolean_booleanValue___R_boolean(threadStateData, get_field_com_example_entity_Ducky_isDead(__cn1ThisObject))==0) /* IFEQ CustomJump */ goto label_L40875560;
+    if (virtual_java_lang_Boolean_booleanValue___R_boolean(threadStateData, get_field_com_example_entity_Ducky_isDead(__cn1ThisObject))==0) /* IFEQ CustomJump */ goto label_L1878700101;
     __CN1_DEBUG_INFO(289);
     set_field_com_example_entity_Ducky_direction(threadStateData, STRING_FROM_CONSTANT_POOL_OFFSET(10213), __cn1ThisObject);
     __CN1_DEBUG_INFO(290);
@@ -1223,7 +1215,7 @@ label_L1878700101:
     PUSH_INT(60);
     set_field_com_example_entity_Ducky_aniSpeed(threadStateData, POP_INT(), POP_OBJ());
 
-label_L40875560:
+label_L1878700101:
     __CN1_DEBUG_INFO(292);
     releaseForReturn(threadStateData, cn1LocalsBeginInThread); 
     return;
@@ -1231,7 +1223,7 @@ label_L40875560:
 
 
 JAVA_VOID com_example_entity_Ducky_setIsDead___java_lang_Boolean(CODENAME_ONE_THREAD_STATE, JAVA_OBJECT  __cn1ThisObject, JAVA_OBJECT __cn1Arg1) {
-    DEFINE_INSTANCE_METHOD_STACK(2, 2, 0, 10208, 10225);
+    DEFINE_INSTANCE_METHOD_STACK(2, 2, 0, 10208, 10223);
     locals[0].data.o = __cn1ThisObject; locals[0].type = CN1_TYPE_OBJECT;     locals[1].data.o = __cn1Arg1;
     locals[1].type = CN1_TYPE_OBJECT;
     __CN1_DEBUG_INFO(295);
@@ -1245,10 +1237,10 @@ JAVA_VOID com_example_entity_Ducky_setIsDead___java_lang_Boolean(CODENAME_ONE_TH
 JAVA_VOID com_example_entity_Ducky_update__(CODENAME_ONE_THREAD_STATE, JAVA_OBJECT  __cn1ThisObject) {
     DEFINE_INSTANCE_METHOD_STACK(1, 1, 0, 10208, 2519);
     locals[0].data.o = __cn1ThisObject; locals[0].type = CN1_TYPE_OBJECT;     __CN1_DEBUG_INFO(299);
-    if (virtual_java_lang_Boolean_booleanValue___R_boolean(threadStateData, get_field_com_example_entity_Ducky_isDead(__cn1ThisObject))!=0) /* IFNE CustomJump */ goto label_L1042891691;
+    if (virtual_java_lang_Boolean_booleanValue___R_boolean(threadStateData, get_field_com_example_entity_Ducky_isDead(__cn1ThisObject))!=0) /* IFNE CustomJump */ goto label_L40875560;
     com_example_entity_Ducky_duckyMovementAndHitbox__(threadStateData, __cn1ThisObject); 
 
-label_L1042891691:
+label_L40875560:
     __CN1_DEBUG_INFO(300);
     virtual_com_example_entity_Ducky_duckyDead__(threadStateData, __cn1ThisObject); 
     __CN1_DEBUG_INFO(301);
@@ -1268,30 +1260,30 @@ JAVA_VOID com_example_entity_Ducky_draw___com_codename1_ui_Graphics_int(CODENAME
     locals[1].type = CN1_TYPE_OBJECT;
     ilocals_2_ = __cn1Arg2;
     __CN1_DEBUG_INFO(305);
-    if (get_field_com_example_entity_Ducky_direction(__cn1ThisObject)==STRING_FROM_CONSTANT_POOL_OFFSET(78)) /* IF_ACMPEQ CustomJump */ goto label_L1893563925;
-    if (get_field_com_example_entity_Ducky_direction(__cn1ThisObject)!=STRING_FROM_CONSTANT_POOL_OFFSET(10214)) /* IF_ACMPNE CustomJump */ goto label_L1251967187;
+    if (get_field_com_example_entity_Ducky_direction(__cn1ThisObject)==STRING_FROM_CONSTANT_POOL_OFFSET(78)) /* IF_ACMPEQ CustomJump */ goto label_L1042891691;
+    if (get_field_com_example_entity_Ducky_direction(__cn1ThisObject)!=STRING_FROM_CONSTANT_POOL_OFFSET(10214)) /* IF_ACMPNE CustomJump */ goto label_L1893563925;
 
-label_L1893563925:
+label_L1042891691:
     __CN1_DEBUG_INFO(306);
     /* CustomInvoke */virtual_com_codename1_ui_Graphics_drawImage___com_codename1_ui_Image_int_int_int_int(threadStateData, locals[1].data.o, CN1_ARRAY_ELEMENT_OBJECT(CN1_ARRAY_ELEMENT_OBJECT(get_field_com_example_entity_Ducky_duckAni(__cn1ThisObject), get_field_com_example_entity_Ducky_spriteRow(__cn1ThisObject)), get_field_com_example_entity_Ducky_spriteLoop(__cn1ThisObject)), ((JAVA_INT)((get_static_com_example_myapp_MyApp_WIDTH_SCALE(threadStateData) * ((JAVA_FLOAT)(get_field_com_example_util_Rectangle_x(get_field_com_example_entity_Ducky_hitbox(__cn1ThisObject)) - 10))) - ((JAVA_FLOAT)ilocals_2_))), ((JAVA_INT)(get_static_com_example_myapp_MyApp_HEIGHT_SCALE(threadStateData) * ((JAVA_FLOAT)get_field_com_example_util_Rectangle_y(get_field_com_example_entity_Ducky_hitbox(__cn1ThisObject))))), ((JAVA_INT)(((JAVA_FLOAT)get_field_com_example_entity_Ducky_width(__cn1ThisObject)) * get_static_com_example_myapp_MyApp_WIDTH_SCALE(threadStateData))), ((JAVA_INT)(((JAVA_FLOAT)get_field_com_example_entity_Ducky_height(__cn1ThisObject)) * get_static_com_example_myapp_MyApp_HEIGHT_SCALE(threadStateData)))); 
     __CN1_DEBUG_INFO(308);
-    goto label_L901689694;
+    goto label_L1251967187;
 
-label_L1251967187:
-    if (get_field_com_example_entity_Ducky_direction(__cn1ThisObject)==STRING_FROM_CONSTANT_POOL_OFFSET(5697)) /* IF_ACMPEQ CustomJump */ goto label_L1107204185;
-    if (get_field_com_example_entity_Ducky_direction(__cn1ThisObject)!=STRING_FROM_CONSTANT_POOL_OFFSET(10215)) /* IF_ACMPNE CustomJump */ goto label_L1523084197;
+label_L1893563925:
+    if (get_field_com_example_entity_Ducky_direction(__cn1ThisObject)==STRING_FROM_CONSTANT_POOL_OFFSET(5697)) /* IF_ACMPEQ CustomJump */ goto label_L901689694;
+    if (get_field_com_example_entity_Ducky_direction(__cn1ThisObject)!=STRING_FROM_CONSTANT_POOL_OFFSET(10215)) /* IF_ACMPNE CustomJump */ goto label_L1107204185;
 
-label_L1107204185:
+label_L901689694:
     __CN1_DEBUG_INFO(309);
     /* CustomInvoke */virtual_com_codename1_ui_Graphics_drawImage___com_codename1_ui_Image_int_int_int_int(threadStateData, locals[1].data.o, CN1_ARRAY_ELEMENT_OBJECT(CN1_ARRAY_ELEMENT_OBJECT(get_field_com_example_entity_Ducky_duckAni(__cn1ThisObject), get_field_com_example_entity_Ducky_spriteRow(__cn1ThisObject)), get_field_com_example_entity_Ducky_spriteLoop(__cn1ThisObject)), ((JAVA_INT)((get_static_com_example_myapp_MyApp_WIDTH_SCALE(threadStateData) * ((JAVA_FLOAT)(get_field_com_example_util_Rectangle_x(get_field_com_example_entity_Ducky_hitbox(__cn1ThisObject)) - 8))) - ((JAVA_FLOAT)ilocals_2_))), ((JAVA_INT)(((JAVA_FLOAT)get_field_com_example_util_Rectangle_y(get_field_com_example_entity_Ducky_hitbox(__cn1ThisObject))) * get_static_com_example_myapp_MyApp_HEIGHT_SCALE(threadStateData))), ((JAVA_INT)(((JAVA_FLOAT)get_field_com_example_entity_Ducky_width(__cn1ThisObject)) * get_static_com_example_myapp_MyApp_WIDTH_SCALE(threadStateData))), ((JAVA_INT)(((JAVA_FLOAT)get_field_com_example_entity_Ducky_height(__cn1ThisObject)) * get_static_com_example_myapp_MyApp_HEIGHT_SCALE(threadStateData)))); 
     __CN1_DEBUG_INFO(311);
-    goto label_L901689694;
+    goto label_L1251967187;
 
-label_L1523084197:
+label_L1107204185:
     __CN1_DEBUG_INFO(312);
     /* CustomInvoke */virtual_com_codename1_ui_Graphics_drawImage___com_codename1_ui_Image_int_int_int_int(threadStateData, locals[1].data.o, CN1_ARRAY_ELEMENT_OBJECT(CN1_ARRAY_ELEMENT_OBJECT(get_field_com_example_entity_Ducky_duckAni(__cn1ThisObject), get_field_com_example_entity_Ducky_spriteRow(__cn1ThisObject)), get_field_com_example_entity_Ducky_spriteLoop(__cn1ThisObject)), (((JAVA_INT)(((JAVA_FLOAT)get_field_com_example_util_Rectangle_x(get_field_com_example_entity_Ducky_hitbox(__cn1ThisObject))) * get_static_com_example_myapp_MyApp_WIDTH_SCALE(threadStateData))) - ilocals_2_), ((JAVA_INT)(((JAVA_FLOAT)get_field_com_example_util_Rectangle_y(get_field_com_example_entity_Ducky_hitbox(__cn1ThisObject))) * get_static_com_example_myapp_MyApp_HEIGHT_SCALE(threadStateData))), ((JAVA_INT)(((JAVA_FLOAT)get_field_com_example_entity_Ducky_width(__cn1ThisObject)) * get_static_com_example_myapp_MyApp_WIDTH_SCALE(threadStateData))), ((JAVA_INT)(((JAVA_FLOAT)get_field_com_example_entity_Ducky_height(__cn1ThisObject)) * get_static_com_example_myapp_MyApp_HEIGHT_SCALE(threadStateData)))); 
 
-label_L901689694:
+label_L1251967187:
     __CN1_DEBUG_INFO(315);
     releaseForReturn(threadStateData, cn1LocalsBeginInThread); 
     return;

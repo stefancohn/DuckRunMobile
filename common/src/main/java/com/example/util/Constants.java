@@ -1,7 +1,5 @@
 package com.example.util;
 
-import com.codename1.ui.Display;
-
 public class Constants {
     //values to be used across whole game
     public static final int SCREEN_WIDTH = 1000;

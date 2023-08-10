@@ -165,7 +165,7 @@ com_example_ui_PauseOverlay___INIT____(threadStateData, o);
 
 
 JAVA_VOID com_example_ui_PauseOverlay___INIT____(CODENAME_ONE_THREAD_STATE, JAVA_OBJECT  __cn1ThisObject) {
-    DEFINE_INSTANCE_METHOD_STACK(6, 1, 0, 10298, 205);
+    DEFINE_INSTANCE_METHOD_STACK(6, 1, 0, 10296, 205);
     locals[0].data.o = __cn1ThisObject; locals[0].type = CN1_TYPE_OBJECT;     __CN1_DEBUG_INFO(33);
     java_lang_Object___INIT____(threadStateData, __cn1ThisObject); 
     __CN1_DEBUG_INFO(15);
@@ -226,10 +226,10 @@ JAVA_VOID com_example_ui_PauseOverlay___INIT____(CODENAME_ONE_THREAD_STATE, JAVA
 
 
 JAVA_VOID com_example_ui_PauseOverlay_initialzePauseOverlay__(CODENAME_ONE_THREAD_STATE, JAVA_OBJECT  __cn1ThisObject) {
-    DEFINE_INSTANCE_METHOD_STACK(2, 1, 0, 10298, 10299);
+    DEFINE_INSTANCE_METHOD_STACK(2, 1, 0, 10296, 10297);
     locals[0].data.o = __cn1ThisObject; locals[0].type = CN1_TYPE_OBJECT;     __CN1_DEBUG_INFO(39);
     BC_ALOAD(0);
-    /* CustomInvoke */PUSH_OBJ(com_example_util_LoadSave_getSpriteAtlas___java_lang_String_R_com_codename1_ui_Image(threadStateData, STRING_FROM_CONSTANT_POOL_OFFSET(10300)));
+    /* CustomInvoke */PUSH_OBJ(com_example_util_LoadSave_getSpriteAtlas___java_lang_String_R_com_codename1_ui_Image(threadStateData, STRING_FROM_CONSTANT_POOL_OFFSET(10298)));
     set_field_com_example_ui_PauseOverlay_pauseOverlay(threadStateData, PEEK_OBJ(1), PEEK_OBJ(2));
     POP_MANY(2);
     __CN1_DEBUG_INFO(40);
@@ -241,9 +241,9 @@ JAVA_VOID com_example_ui_PauseOverlay_initialzePauseOverlay__(CODENAME_ONE_THREA
 JAVA_VOID com_example_ui_PauseOverlay_initializePauseButtons__(CODENAME_ONE_THREAD_STATE, JAVA_OBJECT  __cn1ThisObject) {
     volatile JAVA_INT ilocals_2_ = 0; /* v2 */
     volatile JAVA_INT ilocals_3_ = 0; /* v3 */
-    DEFINE_INSTANCE_METHOD_STACK(8, 4, 0, 10298, 10301);
+    DEFINE_INSTANCE_METHOD_STACK(8, 4, 0, 10296, 10299);
     locals[0].data.o = __cn1ThisObject; locals[0].type = CN1_TYPE_OBJECT;     __CN1_DEBUG_INFO(43);
-    /* VarOp.assignFrom */ locals[1].data.o = /* CustomInvoke */com_example_util_LoadSave_getSpriteAtlas___java_lang_String_R_com_codename1_ui_Image(threadStateData, STRING_FROM_CONSTANT_POOL_OFFSET(10302));locals[1].type=CN1_TYPE_OBJECT;    __CN1_DEBUG_INFO(44);
+    /* VarOp.assignFrom */ locals[1].data.o = /* CustomInvoke */com_example_util_LoadSave_getSpriteAtlas___java_lang_String_R_com_codename1_ui_Image(threadStateData, STRING_FROM_CONSTANT_POOL_OFFSET(10300));locals[1].type=CN1_TYPE_OBJECT;    __CN1_DEBUG_INFO(44);
     /* VarOp.assignFrom */     ilocals_2_ = 0 /* ICONST_0 */; 
     goto label_L1210939243;
 
@@ -274,7 +274,7 @@ label_L1210939243:
 JAVA_VOID com_example_ui_PauseOverlay_touchMovement___int_int(CODENAME_ONE_THREAD_STATE, JAVA_OBJECT  __cn1ThisObject, JAVA_INT __cn1Arg1, JAVA_INT __cn1Arg2) {
     volatile JAVA_INT ilocals_1_ = 0; /* x */
     volatile JAVA_INT ilocals_2_ = 0; /* y */
-    DEFINE_INSTANCE_METHOD_STACK(6, 3, 0, 10298, 10235);
+    DEFINE_INSTANCE_METHOD_STACK(6, 3, 0, 10296, 10233);
     locals[0].data.o = __cn1ThisObject; locals[0].type = CN1_TYPE_OBJECT;     ilocals_1_ = __cn1Arg1;
     ilocals_2_ = __cn1Arg2;
     __CN1_DEBUG_INFO(53);
@@ -314,7 +314,7 @@ label_L1542598424:
 JAVA_VOID com_example_ui_PauseOverlay_touchReleased___int_int(CODENAME_ONE_THREAD_STATE, JAVA_OBJECT  __cn1ThisObject, JAVA_INT __cn1Arg1, JAVA_INT __cn1Arg2) {
     volatile JAVA_INT ilocals_1_ = 0; /* x */
     volatile JAVA_INT ilocals_2_ = 0; /* y */
-    DEFINE_INSTANCE_METHOD_STACK(6, 3, 0, 10298, 10303);
+    DEFINE_INSTANCE_METHOD_STACK(6, 3, 0, 10296, 10301);
     locals[0].data.o = __cn1ThisObject; locals[0].type = CN1_TYPE_OBJECT;     ilocals_1_ = __cn1Arg1;
     ilocals_2_ = __cn1Arg2;
     __CN1_DEBUG_INFO(65);
@@ -370,7 +370,7 @@ label_L673672784:
 
 
 JAVA_VOID com_example_ui_PauseOverlay_draw___com_codename1_ui_Graphics(CODENAME_ONE_THREAD_STATE, JAVA_OBJECT  __cn1ThisObject, JAVA_OBJECT __cn1Arg1) {
-    DEFINE_INSTANCE_METHOD_STACK(6, 2, 0, 10298, 5493);
+    DEFINE_INSTANCE_METHOD_STACK(6, 2, 0, 10296, 5493);
     locals[0].data.o = __cn1ThisObject; locals[0].type = CN1_TYPE_OBJECT;     locals[1].data.o = __cn1Arg1;
     locals[1].type = CN1_TYPE_OBJECT;
     __CN1_DEBUG_INFO(84);
