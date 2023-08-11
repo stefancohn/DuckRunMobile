@@ -44,7 +44,7 @@ import com.example.util.SaveScores;
 
         public Ducky(int x, int y, int width, int height) {
             super(x, y, width, height);
-            initializeHitbox(x -5, y, width, height);
+            initializeHitbox(x, y, width, height);
             duckSprite = LoadSave.getSpriteAtlas(LoadSave.DUCKY_ATLAS);
             loadAni();
         }
