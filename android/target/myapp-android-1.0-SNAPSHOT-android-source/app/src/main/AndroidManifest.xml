@@ -23,7 +23,7 @@
               android:resource="@xml/file_paths">
           </meta-data>
       </provider>        <uses-library android:name="org.apache.http.legacy" android:required="false" />
-<meta-data android:name="com.google.android.gms.version" android:value="@integer/google_play_services_version"/>        <activity android:name="MyAppStub"
+<meta-data android:name="com.google.android.gms.version" android:value="@integer/google_play_services_version"/>        <activity android:name="com.mygame.myapp.MyAppStub"
  android:exported="true"                  android:theme="@style/CustomTheme"
                   android:configChanges="orientation|keyboardHidden|screenSize|smallestScreenSize|screenLayout"
                   android:launchMode="singleTop"
@@ -33,7 +33,7 @@
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
-  <meta-data android:name="com.google.android.gms.version" android:value="@integer/google_play_services_version" /><activity android:name="com.google.android.gms.ads.AdActivity" android:configChanges="keyboard|keyboardHidden|orientation|screenLayout|uiMode|screenSize|smallestScreenSize" /><receiver android:name="com.codename1.impl.android.LocalNotificationPublisher" android:exported="false"></receiver>
+  <activity android:name="com.google.android.gms.ads.AdActivity" android:configChanges="keyboard|keyboardHidden|orientation|screenLayout|uiMode|screenSize|smallestScreenSize" /><receiver android:name="com.codename1.impl.android.LocalNotificationPublisher" android:exported="false"></receiver>
 <receiver android:name="com.codename1.location.BackgroundLocationBroadcastReceiver" android:exported="true"></receiver>
 <service android:name="com.codename1.impl.android.BackgroundFetchHandler" android:exported="false" />
 <activity android:name="com.codename1.impl.android.CodenameOneBackgroundFetchActivity" android:theme="@android:style/Theme.NoDisplay" android:exported="true"/>

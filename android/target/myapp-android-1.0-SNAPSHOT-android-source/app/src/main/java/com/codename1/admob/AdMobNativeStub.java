@@ -9,16 +9,16 @@ public class AdMobNativeStub implements AdMobNative{
         return impl.isLoaded();
     }
 
-    public void init(String param0) {
-        impl.init(param0);
-    }
-
     public void showAd() {
         impl.showAd();
     }
 
     public boolean loadAd() {
         return impl.loadAd();
+    }
+
+    public void init(String param0) {
+        impl.init(param0);
     }
 
     public boolean isSupported() {

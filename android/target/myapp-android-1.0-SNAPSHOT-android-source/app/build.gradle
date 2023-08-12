@@ -26,7 +26,7 @@ android {
         javaMaxHeapSize "3g"
     }
     defaultConfig {
-        applicationId "com.example.myapp"
+        applicationId "com.mygame.myapp"
         minSdkVersion 15
         targetSdkVersion 31
         versionCode 100
