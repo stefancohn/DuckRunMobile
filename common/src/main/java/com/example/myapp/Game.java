@@ -85,8 +85,8 @@ public class Game implements Runnable {
                 this.sceneNum = 2;
 
                 int chanceForAd = random.nextInt(100); //ad has 40 percent chance of spawning 
-                if (chanceForAd > 60) {
-                    //MyApp.admob.loadAndShow();
+                if (chanceForAd > 54) {
+                    MyApp.admob.loadAndShow();
                 }
                 //audioPlayer.playAudio("/highscoreMusic.wav");
                 break;

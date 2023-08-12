@@ -51,6 +51,7 @@ public class MyAppStub extends CodenameOneActivity{
 
     public void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
+        NativeLookup.register(com.codename1.admob.AdMobNative.class, com.codename1.admob.AdMobNativeStub.class);
 
 Display.getInstance().setProperty("IncludeGPlayServices", "true");
 com.codename1.impl.android.AndroidNativeUtil.addLifecycleListener(com.codename1.location.AndroidLocationPlayServiceManager.getInstance());

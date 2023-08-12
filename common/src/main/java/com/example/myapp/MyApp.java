@@ -1,6 +1,6 @@
 package com.example.myapp;
 
-//import com.codename1.admob.AdMobManager;
+import com.codename1.admob.AdMobManager;
 import com.codename1.system.Lifecycle;
 import com.codename1.ui.Display;
 import com.codename1.ui.Toolbar;
@@ -12,7 +12,7 @@ import com.example.util.Constants;
  */
 //./run.sh
 public class MyApp extends Lifecycle {
-    //public static AdMobManager admob;
+    public static AdMobManager admob;
     public static int DEVICE_HEIGHT;
     public static int DEVICE_WIDTH;
     public static float WIDTH_SCALE;
@@ -44,7 +44,7 @@ public class MyApp extends Lifecycle {
         if(Display.getInstance().getPlatformName().equals("ios")){
             admobId = "ca-app-pub-9749305699775932/2037621036";
         }
-        //admob = new AdMobManager(admobId);
+        admob = new AdMobManager(admobId);
         Toolbar.setGlobalToolbar(false);
         Game.game = Game.getGame();
         Game.game.startGameThread();
