@@ -156,7 +156,7 @@ JAVA_OBJECT __NEW_com_codename1_impl_ios_ZoozPurchase(CODENAME_ONE_THREAD_STATE)
 
 
 JAVA_VOID com_codename1_impl_ios_ZoozPurchase___INIT_____com_codename1_impl_ios_IOSImplementation_com_codename1_impl_ios_IOSNative_com_codename1_payment_PurchaseCallback(CODENAME_ONE_THREAD_STATE, JAVA_OBJECT  __cn1ThisObject, JAVA_OBJECT __cn1Arg1, JAVA_OBJECT __cn1Arg2, JAVA_OBJECT __cn1Arg3) {
-    DEFINE_INSTANCE_METHOD_STACK(2, 4, 0, 9722, 205);
+    DEFINE_INSTANCE_METHOD_STACK(2, 4, 0, 9732, 205);
     locals[0].data.o = __cn1ThisObject; locals[0].type = CN1_TYPE_OBJECT;     locals[1].data.o = __cn1Arg1;
     locals[1].type = CN1_TYPE_OBJECT;
     locals[2].data.o = __cn1Arg2;
@@ -180,7 +180,7 @@ JAVA_VOID com_codename1_impl_ios_ZoozPurchase___INIT_____com_codename1_impl_ios_
 
 
 JAVA_OBJECT com_codename1_impl_ios_ZoozPurchase_getStoreCode___R_java_lang_String(CODENAME_ONE_THREAD_STATE, JAVA_OBJECT  __cn1ThisObject) {
-    DEFINE_INSTANCE_METHOD_STACK(1, 1, 0, 9722, 9107);
+    DEFINE_INSTANCE_METHOD_STACK(1, 1, 0, 9732, 9117);
     locals[0].data.o = __cn1ThisObject; locals[0].type = CN1_TYPE_OBJECT;     __CN1_DEBUG_INFO(62);
     releaseForReturn(threadStateData, cn1LocalsBeginInThread); return STRING_FROM_CONSTANT_POOL_OFFSET(158);
 }
@@ -199,16 +199,16 @@ JAVA_BOOLEAN com_codename1_impl_ios_ZoozPurchase_isItemListingSupported___R_bool
 JAVA_VOID com_codename1_impl_ios_ZoozPurchase_paymentSuccessWithResponse___java_lang_String_float(CODENAME_ONE_THREAD_STATE, JAVA_OBJECT __cn1Arg1, JAVA_FLOAT __cn1Arg2) {
     volatile JAVA_FLOAT flocals_1_ = 0; /* total */
     __STATIC_INITIALIZER_com_codename1_impl_ios_ZoozPurchase(threadStateData);
-    DEFINE_METHOD_STACK(2, 4, 0, 9722, 9723);
+    DEFINE_METHOD_STACK(2, 4, 0, 9732, 9733);
     locals[0].data.o = __cn1Arg1;
     locals[0].type = CN1_TYPE_OBJECT;
     flocals_1_ = __cn1Arg2;
-    int restoreToL58164857701;
-    int tryBlockOffsetL58164857701;
-    DEFINE_CATCH_BLOCK(catch_L58164857701, label_L1295225869, restoreToL58164857701);
-    int restoreToL129522586902;
-    int tryBlockOffsetL129522586902;
-    DEFINE_CATCH_BLOCK(catch_L129522586902, label_L1295225869, restoreToL129522586902);
+    int restoreToL210378148201;
+    int tryBlockOffsetL210378148201;
+    DEFINE_CATCH_BLOCK(catch_L210378148201, label_L935722070, restoreToL210378148201);
+    int restoreToL93572207002;
+    int tryBlockOffsetL93572207002;
+    DEFINE_CATCH_BLOCK(catch_L93572207002, label_L935722070, restoreToL93572207002);
     __CN1_DEBUG_INFO(74);
     set_static_com_codename1_impl_ios_ZoozPurchase_transactionId(threadStateData, locals[0].data.o);
     __CN1_DEBUG_INFO(75);
@@ -221,10 +221,10 @@ JAVA_VOID com_codename1_impl_ios_ZoozPurchase_paymentSuccessWithResponse___java_
     BC_ASTORE(2);
     monitorEnter(threadStateData, POP_OBJ());
 
-label_L581648577:
- tryBlockOffsetL58164857701 = threadStateData->tryBlockOffset;
-    BEGIN_TRY(0, catch_L58164857701);
-    restoreToL58164857701 = threadStateData->threadObjectStackOffset;
+label_L2103781482:
+ tryBlockOffsetL210378148201 = threadStateData->tryBlockOffset;
+    BEGIN_TRY(0, catch_L210378148201);
+    restoreToL210378148201 = threadStateData->threadObjectStackOffset;
 
     __CN1_DEBUG_INFO(78);
     virtual_java_lang_Object_notify__(threadStateData, get_static_com_codename1_impl_ios_ZoozPurchase_LOCK(threadStateData)); 
@@ -232,23 +232,23 @@ label_L581648577:
     BC_ALOAD(2);
     monitorExit(threadStateData, POP_OBJ());
 
-label_L742992643:
-END_TRY(1);    JUMP_TO(label_L1137667747, 0);
+label_L2115119751:
+END_TRY(1);    JUMP_TO(label_L29369803, 0);
 
-label_L1295225869:
- tryBlockOffsetL129522586902 = threadStateData->tryBlockOffset;
-    BEGIN_TRY(0, catch_L129522586902);
-    restoreToL129522586902 = threadStateData->threadObjectStackOffset;
+label_L935722070:
+ tryBlockOffsetL93572207002 = threadStateData->tryBlockOffset;
+    BEGIN_TRY(0, catch_L93572207002);
+    restoreToL93572207002 = threadStateData->threadObjectStackOffset;
 
     BC_ASTORE(3);
     BC_ALOAD(2);
     monitorExit(threadStateData, POP_OBJ());
 
-label_L1356835865:
+label_L27272492:
 END_TRY(1);    BC_ALOAD(3);
     throwException(threadStateData, POP_OBJ());
 
-label_L1137667747:
+label_L29369803:
     __CN1_DEBUG_INFO(80);
     releaseForReturnInException(threadStateData, cn1LocalsBeginInThread, methodBlockOffset); 
     return;
@@ -257,15 +257,15 @@ label_L1137667747:
 
 JAVA_VOID com_codename1_impl_ios_ZoozPurchase_paymentCanceledOrFailed___java_lang_String(CODENAME_ONE_THREAD_STATE, JAVA_OBJECT __cn1Arg1) {
     __STATIC_INITIALIZER_com_codename1_impl_ios_ZoozPurchase(threadStateData);
-    DEFINE_METHOD_STACK(2, 3, 0, 9722, 9724);
+    DEFINE_METHOD_STACK(2, 3, 0, 9732, 9734);
     locals[0].data.o = __cn1Arg1;
     locals[0].type = CN1_TYPE_OBJECT;
-    int restoreToL34156017901;
-    int tryBlockOffsetL34156017901;
-    DEFINE_CATCH_BLOCK(catch_L34156017901, label_L935722070, restoreToL34156017901);
-    int restoreToL93572207002;
-    int tryBlockOffsetL93572207002;
-    DEFINE_CATCH_BLOCK(catch_L93572207002, label_L935722070, restoreToL93572207002);
+    int restoreToL62052796501;
+    int tryBlockOffsetL62052796501;
+    DEFINE_CATCH_BLOCK(catch_L62052796501, label_L1350720002, restoreToL62052796501);
+    int restoreToL135072000202;
+    int tryBlockOffsetL135072000202;
+    DEFINE_CATCH_BLOCK(catch_L135072000202, label_L1350720002, restoreToL135072000202);
     __CN1_DEBUG_INFO(83);
     set_static_com_codename1_impl_ios_ZoozPurchase_transactionId(threadStateData, JAVA_NULL /* ACONST_NULL */);
     __CN1_DEBUG_INFO(84);
@@ -278,10 +278,10 @@ JAVA_VOID com_codename1_impl_ios_ZoozPurchase_paymentCanceledOrFailed___java_lan
     BC_ASTORE(1);
     monitorEnter(threadStateData, POP_OBJ());
 
-label_L341560179:
- tryBlockOffsetL34156017901 = threadStateData->tryBlockOffset;
-    BEGIN_TRY(0, catch_L34156017901);
-    restoreToL34156017901 = threadStateData->threadObjectStackOffset;
+label_L620527965:
+ tryBlockOffsetL62052796501 = threadStateData->tryBlockOffset;
+    BEGIN_TRY(0, catch_L62052796501);
+    restoreToL62052796501 = threadStateData->threadObjectStackOffset;
 
     __CN1_DEBUG_INFO(87);
     virtual_java_lang_Object_notify__(threadStateData, get_static_com_codename1_impl_ios_ZoozPurchase_LOCK(threadStateData)); 
@@ -289,23 +289,23 @@ label_L341560179:
     BC_ALOAD(1);
     monitorExit(threadStateData, POP_OBJ());
 
-label_L1729548513:
-END_TRY(1);    JUMP_TO(label_L29369803, 0);
+label_L527599317:
+END_TRY(1);    JUMP_TO(label_L1753259207, 0);
 
-label_L935722070:
- tryBlockOffsetL93572207002 = threadStateData->tryBlockOffset;
-    BEGIN_TRY(0, catch_L93572207002);
-    restoreToL93572207002 = threadStateData->threadObjectStackOffset;
+label_L1350720002:
+ tryBlockOffsetL135072000202 = threadStateData->tryBlockOffset;
+    BEGIN_TRY(0, catch_L135072000202);
+    restoreToL135072000202 = threadStateData->threadObjectStackOffset;
 
     BC_ASTORE(2);
     BC_ALOAD(1);
     monitorExit(threadStateData, POP_OBJ());
 
-label_L865600325:
+label_L1122673705:
 END_TRY(1);    BC_ALOAD(2);
     throwException(threadStateData, POP_OBJ());
 
-label_L29369803:
+label_L1753259207:
     __CN1_DEBUG_INFO(89);
     releaseForReturnInException(threadStateData, cn1LocalsBeginInThread, methodBlockOffset); 
     return;
@@ -314,7 +314,7 @@ label_L29369803:
 
 JAVA_VOID com_codename1_impl_ios_ZoozPurchase_fetchProductsCanceledOrFailed___java_lang_String(CODENAME_ONE_THREAD_STATE, JAVA_OBJECT __cn1Arg1) {
     __STATIC_INITIALIZER_com_codename1_impl_ios_ZoozPurchase(threadStateData);
-    DEFINE_METHOD_STACK(1, 1, 0, 9722, 9725);
+    DEFINE_METHOD_STACK(1, 1, 0, 9732, 9735);
     locals[0].data.o = __cn1Arg1;
     locals[0].type = CN1_TYPE_OBJECT;
     __CN1_DEBUG_INFO(92);
@@ -329,7 +329,7 @@ JAVA_VOID com_codename1_impl_ios_ZoozPurchase_fetchProductsCanceledOrFailed___ja
 
 JAVA_VOID com_codename1_impl_ios_ZoozPurchase_fetchProductsComplete__(CODENAME_ONE_THREAD_STATE) {
     __STATIC_INITIALIZER_com_codename1_impl_ios_ZoozPurchase(threadStateData);
-    DEFINE_METHOD_STACK(1, 0, 0, 9722, 9726);
+    DEFINE_METHOD_STACK(1, 0, 0, 9732, 9736);
     __CN1_DEBUG_INFO(97);
     set_static_com_codename1_impl_ios_ZoozPurchase_fetchProductsComplete(threadStateData, 1 /* ICONST_1 */);
     __CN1_DEBUG_INFO(98);
@@ -349,7 +349,7 @@ JAVA_BOOLEAN com_codename1_impl_ios_ZoozPurchase_wasPurchased___java_lang_String
 
 
 JAVA_VOID com_codename1_impl_ios_ZoozPurchase_purchase___java_lang_String(CODENAME_ONE_THREAD_STATE, JAVA_OBJECT  __cn1ThisObject, JAVA_OBJECT __cn1Arg1) {
-    DEFINE_INSTANCE_METHOD_STACK(2, 2, 0, 9722, 9079);
+    DEFINE_INSTANCE_METHOD_STACK(2, 2, 0, 9732, 9089);
     locals[0].data.o = __cn1ThisObject; locals[0].type = CN1_TYPE_OBJECT;     locals[1].data.o = __cn1Arg1;
     locals[1].type = CN1_TYPE_OBJECT;
     __CN1_DEBUG_INFO(134);
@@ -361,18 +361,18 @@ JAVA_VOID com_codename1_impl_ios_ZoozPurchase_purchase___java_lang_String(CODENA
 
 
 JAVA_VOID com_codename1_impl_ios_ZoozPurchase_subscribe___java_lang_String(CODENAME_ONE_THREAD_STATE, JAVA_OBJECT  __cn1ThisObject, JAVA_OBJECT __cn1Arg1) {
-    DEFINE_INSTANCE_METHOD_STACK(2, 2, 0, 9722, 9080);
+    DEFINE_INSTANCE_METHOD_STACK(2, 2, 0, 9732, 9090);
     locals[0].data.o = __cn1ThisObject; locals[0].type = CN1_TYPE_OBJECT;     locals[1].data.o = __cn1Arg1;
     locals[1].type = CN1_TYPE_OBJECT;
     __CN1_DEBUG_INFO(139);
-    if (virtual_com_codename1_impl_ios_ZoozPurchase_getReceiptStore___R_com_codename1_payment_ReceiptStore(threadStateData, __cn1ThisObject)==JAVA_NULL) /* IFNULL CustomJump */ goto label_L1884387196;
+    if (virtual_com_codename1_impl_ios_ZoozPurchase_getReceiptStore___R_com_codename1_payment_ReceiptStore(threadStateData, __cn1ThisObject)==JAVA_NULL) /* IFNULL CustomJump */ goto label_L1590404373;
     __CN1_DEBUG_INFO(140);
     /* CustomInvoke */virtual_com_codename1_impl_ios_ZoozPurchase_purchase___java_lang_String(threadStateData, __cn1ThisObject, locals[1].data.o); 
     __CN1_DEBUG_INFO(141);
     releaseForReturn(threadStateData, cn1LocalsBeginInThread); 
     return;
 
-label_L1884387196:
+label_L1590404373:
     __CN1_DEBUG_INFO(143);
     /* CustomInvoke */com_codename1_payment_Purchase_subscribe___java_lang_String(threadStateData, __cn1ThisObject, locals[1].data.o); 
     __CN1_DEBUG_INFO(144);
@@ -399,7 +399,7 @@ JAVA_BOOLEAN com_codename1_impl_ios_ZoozPurchase_isManualPaymentSupported___R_bo
 JAVA_OBJECT com_codename1_impl_ios_ZoozPurchase_pay___double_java_lang_String_java_lang_String_R_java_lang_String(CODENAME_ONE_THREAD_STATE, JAVA_OBJECT  __cn1ThisObject, JAVA_DOUBLE __cn1Arg1, JAVA_OBJECT __cn1Arg2, JAVA_OBJECT __cn1Arg3) {
     volatile JAVA_DOUBLE dlocals_1_ = 0; /* amount */
     volatile JAVA_INT ilocals_6_ = 0; /* v6 */
-    DEFINE_INSTANCE_METHOD_STACK(7, 7, 0, 9722, 9074);
+    DEFINE_INSTANCE_METHOD_STACK(7, 7, 0, 9732, 9084);
     locals[0].data.o = __cn1ThisObject; locals[0].type = CN1_TYPE_OBJECT;     dlocals_1_ = __cn1Arg1;
     locals[3].data.o = __cn1Arg2;
     locals[3].type = CN1_TYPE_OBJECT;
@@ -407,12 +407,12 @@ JAVA_OBJECT com_codename1_impl_ios_ZoozPurchase_pay___double_java_lang_String_ja
     locals[4].type = CN1_TYPE_OBJECT;
     __CN1_DEBUG_INFO(162);
     PUSH_OBJ(com_codename1_ui_Display_getInstance___R_com_codename1_ui_Display(threadStateData));
-    /* CustomInvoke */{ JAVA_OBJECT tmpResult = virtual_com_codename1_ui_Display_getProperty___java_lang_String_java_lang_String_R_java_lang_String(threadStateData, SP[-1].data.o, STRING_FROM_CONSTANT_POOL_OFFSET(9728), STRING_FROM_CONSTANT_POOL_OFFSET(223));
+    /* CustomInvoke */{ JAVA_OBJECT tmpResult = virtual_com_codename1_ui_Display_getProperty___java_lang_String_java_lang_String_R_java_lang_String(threadStateData, SP[-1].data.o, STRING_FROM_CONSTANT_POOL_OFFSET(9738), STRING_FROM_CONSTANT_POOL_OFFSET(289));
     SP[-1].data.o = tmpResult; SP[-1].type = CN1_TYPE_OBJECT; }
     BC_ASTORE(5);
     __CN1_DEBUG_INFO(163);
     PUSH_OBJ(com_codename1_ui_Display_getInstance___R_com_codename1_ui_Display(threadStateData));
-    /* CustomInvoke */{ JAVA_OBJECT tmpResult = virtual_com_codename1_ui_Display_getProperty___java_lang_String_java_lang_String_R_java_lang_String(threadStateData, SP[-1].data.o, STRING_FROM_CONSTANT_POOL_OFFSET(9729), STRING_FROM_CONSTANT_POOL_OFFSET(212));
+    /* CustomInvoke */{ JAVA_OBJECT tmpResult = virtual_com_codename1_ui_Display_getProperty___java_lang_String_java_lang_String_R_java_lang_String(threadStateData, SP[-1].data.o, STRING_FROM_CONSTANT_POOL_OFFSET(9739), STRING_FROM_CONSTANT_POOL_OFFSET(212));
     SP[-1].data.o = tmpResult; SP[-1].type = CN1_TYPE_OBJECT; }
     /* CustomInvoke */{ JAVA_INT tmpResult = virtual_java_lang_String_equals___java_lang_Object_R_boolean(threadStateData, SP[-1].data.o, STRING_FROM_CONSTANT_POOL_OFFSET(212));
     SP[-1].data.i = tmpResult; SP[-1].type = CN1_TYPE_INT; }
@@ -439,12 +439,12 @@ JAVA_OBJECT com_codename1_impl_ios_ZoozPurchase_pay___double_java_lang_String_ja
 
 JAVA_OBJECT com_codename1_impl_ios_ZoozPurchase_pay___double_java_lang_String_R_java_lang_String(CODENAME_ONE_THREAD_STATE, JAVA_OBJECT  __cn1ThisObject, JAVA_DOUBLE __cn1Arg1, JAVA_OBJECT __cn1Arg2) {
     volatile JAVA_DOUBLE dlocals_1_ = 0; /* amount */
-    DEFINE_INSTANCE_METHOD_STACK(5, 4, 0, 9722, 9074);
+    DEFINE_INSTANCE_METHOD_STACK(5, 4, 0, 9732, 9084);
     locals[0].data.o = __cn1ThisObject; locals[0].type = CN1_TYPE_OBJECT;     dlocals_1_ = __cn1Arg1;
     locals[3].data.o = __cn1Arg2;
     locals[3].type = CN1_TYPE_OBJECT;
     __CN1_DEBUG_INFO(186);
-    /* CustomInvoke */{ JAVA_OBJECT tmpResult = virtual_com_codename1_impl_ios_ZoozPurchase_pay___double_java_lang_String_java_lang_String_R_java_lang_String(threadStateData, __cn1ThisObject, dlocals_1_, locals[3].data.o, STRING_FROM_CONSTANT_POOL_OFFSET(7712));
+    /* CustomInvoke */{ JAVA_OBJECT tmpResult = virtual_com_codename1_impl_ios_ZoozPurchase_pay___double_java_lang_String_java_lang_String_R_java_lang_String(threadStateData, __cn1ThisObject, dlocals_1_, locals[3].data.o, STRING_FROM_CONSTANT_POOL_OFFSET(7722));
     PUSH_OBJ(tmpResult); }
     releaseForReturn(threadStateData, cn1LocalsBeginInThread); 
     return POP_OBJ();
@@ -452,70 +452,70 @@ JAVA_OBJECT com_codename1_impl_ios_ZoozPurchase_pay___double_java_lang_String_R_
 
 
 JAVA_VOID com_codename1_impl_ios_ZoozPurchase_run__(CODENAME_ONE_THREAD_STATE, JAVA_OBJECT  __cn1ThisObject) {
-    DEFINE_INSTANCE_METHOD_STACK(2, 4, 0, 9722, 207);
-    locals[0].data.o = __cn1ThisObject; locals[0].type = CN1_TYPE_OBJECT;     int restoreToL992063733cn1_class_id_java_lang_InterruptedException1;
-    int tryBlockOffsetL992063733cn1_class_id_java_lang_InterruptedException1;
-    DEFINE_CATCH_BLOCK(catch_L992063733cn1_class_id_java_lang_InterruptedException1, label_L1361921411, restoreToL992063733cn1_class_id_java_lang_InterruptedException1);
-    int restoreToL27142214802;
-    int tryBlockOffsetL27142214802;
-    DEFINE_CATCH_BLOCK(catch_L27142214802, label_L716972621, restoreToL27142214802);
-    int restoreToL71697262103;
-    int tryBlockOffsetL71697262103;
-    DEFINE_CATCH_BLOCK(catch_L71697262103, label_L716972621, restoreToL71697262103);
+    DEFINE_INSTANCE_METHOD_STACK(2, 4, 0, 9732, 207);
+    locals[0].data.o = __cn1ThisObject; locals[0].type = CN1_TYPE_OBJECT;     int restoreToL1051521166cn1_class_id_java_lang_InterruptedException1;
+    int tryBlockOffsetL1051521166cn1_class_id_java_lang_InterruptedException1;
+    DEFINE_CATCH_BLOCK(catch_L1051521166cn1_class_id_java_lang_InterruptedException1, label_L332234405, restoreToL1051521166cn1_class_id_java_lang_InterruptedException1);
+    int restoreToL161809956202;
+    int tryBlockOffsetL161809956202;
+    DEFINE_CATCH_BLOCK(catch_L161809956202, label_L271422148, restoreToL161809956202);
+    int restoreToL27142214803;
+    int tryBlockOffsetL27142214803;
+    DEFINE_CATCH_BLOCK(catch_L27142214803, label_L271422148, restoreToL27142214803);
     __CN1_DEBUG_INFO(191);
     PUSH_POINTER(get_static_com_codename1_impl_ios_ZoozPurchase_LOCK(threadStateData));
     BC_DUP(); /* DUP */
     BC_ASTORE(1);
     monitorEnter(threadStateData, POP_OBJ());
 
-label_L271422148:
- tryBlockOffsetL27142214802 = threadStateData->tryBlockOffset;
-    BEGIN_TRY(0, catch_L27142214802);
-    restoreToL27142214802 = threadStateData->threadObjectStackOffset;
+label_L1618099562:
+ tryBlockOffsetL161809956202 = threadStateData->tryBlockOffset;
+    BEGIN_TRY(0, catch_L161809956202);
+    restoreToL161809956202 = threadStateData->threadObjectStackOffset;
 
     __CN1_DEBUG_INFO(192);
-    if (get_static_com_codename1_impl_ios_ZoozPurchase_completed(threadStateData)!=0) /* IFNE CustomJump */ JUMP_TO(label_L332234405, 1);
+    if (get_static_com_codename1_impl_ios_ZoozPurchase_completed(threadStateData)!=0) /* IFNE CustomJump */ JUMP_TO(label_L731368479, 1);
 
-label_L992063733:
- tryBlockOffsetL992063733cn1_class_id_java_lang_InterruptedException1 = threadStateData->tryBlockOffset;
-    BEGIN_TRY(cn1_class_id_java_lang_InterruptedException, catch_L992063733cn1_class_id_java_lang_InterruptedException1);
-    restoreToL992063733cn1_class_id_java_lang_InterruptedException1 = threadStateData->threadObjectStackOffset;
+label_L1051521166:
+ tryBlockOffsetL1051521166cn1_class_id_java_lang_InterruptedException1 = threadStateData->tryBlockOffset;
+    BEGIN_TRY(cn1_class_id_java_lang_InterruptedException, catch_L1051521166cn1_class_id_java_lang_InterruptedException1);
+    restoreToL1051521166cn1_class_id_java_lang_InterruptedException1 = threadStateData->threadObjectStackOffset;
 
     __CN1_DEBUG_INFO(194);
     virtual_java_lang_Object_wait__(threadStateData, get_static_com_codename1_impl_ios_ZoozPurchase_LOCK(threadStateData)); 
 
-label_L20125506:
+label_L953909385:
 END_TRY(1);    __CN1_DEBUG_INFO(196);
-    JUMP_TO(label_L271422148, 0);
+    JUMP_TO(label_L1618099562, 0);
 
-label_L1361921411:
+label_L332234405:
     __CN1_DEBUG_INFO(195);
     BC_ASTORE(2);
     __CN1_DEBUG_INFO(196);
-    JUMP_TO(label_L271422148, 0);
+    JUMP_TO(label_L1618099562, 0);
 
-label_L332234405:
+label_L731368479:
     __CN1_DEBUG_INFO(198);
     BC_ALOAD(1);
     monitorExit(threadStateData, POP_OBJ());
 
-label_L1748470476:
-END_TRY(1);    JUMP_TO(label_L731368479, 0);
+label_L102251986:
+END_TRY(1);    JUMP_TO(label_L405950359, 0);
 
-label_L716972621:
- tryBlockOffsetL71697262103 = threadStateData->tryBlockOffset;
-    BEGIN_TRY(0, catch_L71697262103);
-    restoreToL71697262103 = threadStateData->threadObjectStackOffset;
+label_L271422148:
+ tryBlockOffsetL27142214803 = threadStateData->tryBlockOffset;
+    BEGIN_TRY(0, catch_L27142214803);
+    restoreToL27142214803 = threadStateData->threadObjectStackOffset;
 
     BC_ASTORE(3);
     BC_ALOAD(1);
     monitorExit(threadStateData, POP_OBJ());
 
-label_L1203223734:
+label_L995269027:
 END_TRY(1);    BC_ALOAD(3);
     throwException(threadStateData, POP_OBJ());
 
-label_L731368479:
+label_L405950359:
     __CN1_DEBUG_INFO(199);
     releaseForReturnInException(threadStateData, cn1LocalsBeginInThread, methodBlockOffset); 
     return;
@@ -544,7 +544,7 @@ JAVA_VOID com_codename1_impl_ios_ZoozPurchase_manageSubscriptions___java_lang_St
 
 JAVA_BOOLEAN com_codename1_impl_ios_ZoozPurchase_access$000___R_boolean(CODENAME_ONE_THREAD_STATE) {
     __STATIC_INITIALIZER_com_codename1_impl_ios_ZoozPurchase(threadStateData);
-    DEFINE_METHOD_STACK(1, 0, 0, 9722, 221);
+    DEFINE_METHOD_STACK(1, 0, 0, 9732, 223);
     __CN1_DEBUG_INFO(39);
     PUSH_INT(get_static_com_codename1_impl_ios_ZoozPurchase_fetchProductsFailed(threadStateData));
     releaseForReturn(threadStateData, cn1LocalsBeginInThread); return SP[-1].data.i;
@@ -553,7 +553,7 @@ JAVA_BOOLEAN com_codename1_impl_ios_ZoozPurchase_access$000___R_boolean(CODENAME
 
 JAVA_BOOLEAN com_codename1_impl_ios_ZoozPurchase_access$100___R_boolean(CODENAME_ONE_THREAD_STATE) {
     __STATIC_INITIALIZER_com_codename1_impl_ios_ZoozPurchase(threadStateData);
-    DEFINE_METHOD_STACK(1, 0, 0, 9722, 802);
+    DEFINE_METHOD_STACK(1, 0, 0, 9732, 522);
     __CN1_DEBUG_INFO(39);
     PUSH_INT(get_static_com_codename1_impl_ios_ZoozPurchase_fetchProductsComplete(threadStateData));
     releaseForReturn(threadStateData, cn1LocalsBeginInThread); return SP[-1].data.i;
@@ -562,7 +562,7 @@ JAVA_BOOLEAN com_codename1_impl_ios_ZoozPurchase_access$100___R_boolean(CODENAME
 
 JAVA_OBJECT com_codename1_impl_ios_ZoozPurchase_access$200___com_codename1_impl_ios_ZoozPurchase_R_com_codename1_payment_PurchaseCallback(CODENAME_ONE_THREAD_STATE, JAVA_OBJECT __cn1Arg1) {
     __STATIC_INITIALIZER_com_codename1_impl_ios_ZoozPurchase(threadStateData);
-    DEFINE_METHOD_STACK(1, 1, 0, 9722, 803);
+    DEFINE_METHOD_STACK(1, 1, 0, 9732, 523);
     locals[0].data.o = __cn1Arg1;
     locals[0].type = CN1_TYPE_OBJECT;
     __CN1_DEBUG_INFO(39);
@@ -576,7 +576,7 @@ JAVA_OBJECT com_codename1_impl_ios_ZoozPurchase_access$200___com_codename1_impl_
 
 JAVA_OBJECT com_codename1_impl_ios_ZoozPurchase_access$300___R_java_lang_String(CODENAME_ONE_THREAD_STATE) {
     __STATIC_INITIALIZER_com_codename1_impl_ios_ZoozPurchase(threadStateData);
-    DEFINE_METHOD_STACK(1, 0, 0, 9722, 1152);
+    DEFINE_METHOD_STACK(1, 0, 0, 9732, 524);
     __CN1_DEBUG_INFO(39);
     PUSH_POINTER(get_static_com_codename1_impl_ios_ZoozPurchase_errorMessage(threadStateData));
     releaseForReturn(threadStateData, cn1LocalsBeginInThread); 
@@ -586,7 +586,7 @@ JAVA_OBJECT com_codename1_impl_ios_ZoozPurchase_access$300___R_java_lang_String(
 
 JAVA_OBJECT com_codename1_impl_ios_ZoozPurchase_access$400___com_codename1_impl_ios_ZoozPurchase_R_java_lang_String(CODENAME_ONE_THREAD_STATE, JAVA_OBJECT __cn1Arg1) {
     __STATIC_INITIALIZER_com_codename1_impl_ios_ZoozPurchase(threadStateData);
-    DEFINE_METHOD_STACK(1, 1, 0, 9722, 1153);
+    DEFINE_METHOD_STACK(1, 1, 0, 9732, 525);
     locals[0].data.o = __cn1Arg1;
     locals[0].type = CN1_TYPE_OBJECT;
     __CN1_DEBUG_INFO(39);
@@ -600,7 +600,7 @@ JAVA_OBJECT com_codename1_impl_ios_ZoozPurchase_access$400___com_codename1_impl_
 
 JAVA_DOUBLE com_codename1_impl_ios_ZoozPurchase_access$500___R_double(CODENAME_ONE_THREAD_STATE) {
     __STATIC_INITIALIZER_com_codename1_impl_ios_ZoozPurchase(threadStateData);
-    DEFINE_METHOD_STACK(2, 0, 0, 9722, 1861);
+    DEFINE_METHOD_STACK(2, 0, 0, 9732, 1872);
     __CN1_DEBUG_INFO(39);
     PUSH_DOUBLE(get_static_com_codename1_impl_ios_ZoozPurchase_amount(threadStateData));
     releaseForReturn(threadStateData, cn1LocalsBeginInThread); 
@@ -609,7 +609,7 @@ JAVA_DOUBLE com_codename1_impl_ios_ZoozPurchase_access$500___R_double(CODENAME_O
 
 
 JAVA_VOID com_codename1_impl_ios_ZoozPurchase___CLINIT____(CODENAME_ONE_THREAD_STATE) {
-    DEFINE_METHOD_STACK(2, 0, 0, 9722, 863);
+    DEFINE_METHOD_STACK(2, 0, 0, 9732, 275);
     __CN1_DEBUG_INFO(42);
     PUSH_POINTER(__NEW_java_lang_Object(threadStateData)); /* NEW */
     BC_DUP(); /* DUP */

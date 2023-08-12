@@ -222,7 +222,7 @@ java_util_GregorianCalendar___INIT____(threadStateData, o);
 
 
 JAVA_VOID java_util_GregorianCalendar___INIT____(CODENAME_ONE_THREAD_STATE, JAVA_OBJECT  __cn1ThisObject) {
-    DEFINE_INSTANCE_METHOD_STACK(5, 1, 0, 6657, 205);
+    DEFINE_INSTANCE_METHOD_STACK(5, 1, 0, 6667, 205);
     locals[0].data.o = __cn1ThisObject; locals[0].type = CN1_TYPE_OBJECT;     java_util_Calendar___INIT____(threadStateData, __cn1ThisObject); 
     set_field_java_util_GregorianCalendar_gregorianCutover(threadStateData, -12219292800000LL, __cn1ThisObject);
     BC_ALOAD(0);
@@ -314,7 +314,7 @@ JAVA_VOID java_util_GregorianCalendar___INIT____(CODENAME_ONE_THREAD_STATE, JAVA
 
 
 JAVA_VOID java_util_GregorianCalendar___INIT_____java_util_TimeZone(CODENAME_ONE_THREAD_STATE, JAVA_OBJECT  __cn1ThisObject, JAVA_OBJECT __cn1Arg1) {
-    DEFINE_INSTANCE_METHOD_STACK(5, 2, 0, 6657, 205);
+    DEFINE_INSTANCE_METHOD_STACK(5, 2, 0, 6667, 205);
     locals[0].data.o = __cn1ThisObject; locals[0].type = CN1_TYPE_OBJECT;     locals[1].data.o = __cn1Arg1;
     locals[1].type = CN1_TYPE_OBJECT;
     java_util_Calendar___INIT____(threadStateData, __cn1ThisObject); 
@@ -415,7 +415,7 @@ JAVA_VOID java_util_GregorianCalendar_computeFields__(CODENAME_ONE_THREAD_STATE,
     volatile JAVA_INT ilocals_5_ = 0; /* v5 */
     volatile JAVA_INT ilocals_6_ = 0; /* v6 */
     volatile JAVA_INT ilocals_9_ = 0; /* v9 */
-    DEFINE_INSTANCE_METHOD_STACK(9, 12, 0, 6657, 6647);
+    DEFINE_INSTANCE_METHOD_STACK(9, 12, 0, 6667, 6657);
     locals[0].data.o = __cn1ThisObject; locals[0].type = CN1_TYPE_OBJECT;     /* VarOp.assignFrom */ locals[1].data.o = virtual_java_util_GregorianCalendar_getTimeZone___R_java_util_TimeZone(threadStateData, __cn1ThisObject);locals[1].type=CN1_TYPE_OBJECT;    if (locals[1].data.o!=JAVA_NULL) /* IFNONNULL CustomJump */ goto label_L856055143;
     /* VarOp.assignFrom */ locals[1].data.o = java_util_TimeZone_getDefault___R_java_util_TimeZone(threadStateData);locals[1].type=CN1_TYPE_OBJECT;    /* CustomInvoke */virtual_java_util_GregorianCalendar_setTimeZone___java_util_TimeZone(threadStateData, __cn1ThisObject, locals[1].data.o); 
 
@@ -780,7 +780,7 @@ JAVA_VOID java_util_GregorianCalendar_computeTime__(CODENAME_ONE_THREAD_STATE, J
     volatile JAVA_INT ilocals_8_ = 0; /* v8 */
     volatile JAVA_LONG llocals_5_ = 0; /* v5 */
     volatile JAVA_INT ilocals_9_ = 0; /* v9 */
-    DEFINE_INSTANCE_METHOD_STACK(11, 15, 0, 6657, 6648);
+    DEFINE_INSTANCE_METHOD_STACK(11, 15, 0, 6667, 6658);
     locals[0].data.o = __cn1ThisObject; locals[0].type = CN1_TYPE_OBJECT;     if (virtual_java_util_GregorianCalendar_isLenient___R_boolean(threadStateData, __cn1ThisObject)!=0) /* IFNE CustomJump */ goto label_L1000966072;
     PUSH_POINTER(get_field_java_util_GregorianCalendar_isSet(__cn1ThisObject));
     PUSH_INT(11);
@@ -1801,7 +1801,7 @@ JAVA_VOID java_util_GregorianCalendar_addImpl___int_int(CODENAME_ONE_THREAD_STAT
     volatile JAVA_LONG llocals_3_ = 0; /* v3 */
     volatile JAVA_INT ilocals_6_ = 0; /* v6 */
     volatile JAVA_INT ilocals_7_ = 0; /* v7 */
-    DEFINE_INSTANCE_METHOD_STACK(7, 8, 0, 6657, 6652);
+    DEFINE_INSTANCE_METHOD_STACK(7, 8, 0, 6667, 6662);
     locals[0].data.o = __cn1ThisObject; locals[0].type = CN1_TYPE_OBJECT;     JAVA_INT ilocals_1_ = __cn1Arg1;
     ilocals_2_ = __cn1Arg2;
     if (ilocals_2_!=0) /* IFNE CustomJump */ goto label_L602423811;
@@ -1952,7 +1952,7 @@ label_L1171802656:
 
 
 JAVA_INT java_util_GregorianCalendar_julianError___R_int(CODENAME_ONE_THREAD_STATE, JAVA_OBJECT  __cn1ThisObject) {
-    DEFINE_INSTANCE_METHOD_STACK(3, 1, 0, 6657, 6658);
+    DEFINE_INSTANCE_METHOD_STACK(3, 1, 0, 6667, 6668);
     locals[0].data.o = __cn1ThisObject; locals[0].type = CN1_TYPE_OBJECT;     PUSH_INT(get_field_java_util_GregorianCalendar_changeYear(__cn1ThisObject));
     PUSH_INT(100);
     SP--; SP[-1].data.i = SP[-1].data.i / (*SP).data.i; /* IDIV */
@@ -1972,7 +1972,7 @@ JAVA_INT java_util_GregorianCalendar_daysInMonth___R_int(CODENAME_ONE_THREAD_STA
 
 
 JAVA_INT java_util_GregorianCalendar_daysInMonth___boolean_int_R_int(CODENAME_ONE_THREAD_STATE, JAVA_OBJECT  __cn1ThisObject, JAVA_BOOLEAN __cn1Arg1, JAVA_INT __cn1Arg2) {
-    DEFINE_INSTANCE_METHOD_STACK(2, 3, 0, 6657, 6659);
+    DEFINE_INSTANCE_METHOD_STACK(2, 3, 0, 6667, 6669);
     locals[0].data.o = __cn1ThisObject; locals[0].type = CN1_TYPE_OBJECT;     JAVA_INT ilocals_1_ = __cn1Arg1;
     JAVA_INT ilocals_2_ = __cn1Arg2;
     if (ilocals_1_==0) /* IFEQ CustomJump */ goto label_L1391624125;
@@ -1998,7 +1998,7 @@ label_L1391624125:
 
 JAVA_INT java_util_GregorianCalendar_daysInYear___int_R_int(CODENAME_ONE_THREAD_STATE, JAVA_OBJECT  __cn1ThisObject, JAVA_INT __cn1Arg1) {
     volatile JAVA_INT ilocals_2_ = 0; /* v2 */
-    DEFINE_INSTANCE_METHOD_STACK(3, 3, 0, 6657, 6660);
+    DEFINE_INSTANCE_METHOD_STACK(3, 3, 0, 6667, 6670);
     locals[0].data.o = __cn1ThisObject; locals[0].type = CN1_TYPE_OBJECT;     JAVA_INT ilocals_1_ = __cn1Arg1;
     if (/* CustomInvoke */virtual_java_util_GregorianCalendar_isLeapYear___int_R_boolean(threadStateData, __cn1ThisObject, ilocals_1_)==0) /* IFEQ CustomJump */ goto label_L79782883;
     PUSH_INT(366);
@@ -2025,7 +2025,7 @@ label_L205721196:
 
 
 JAVA_INT java_util_GregorianCalendar_daysInYear___boolean_int_R_int(CODENAME_ONE_THREAD_STATE, JAVA_OBJECT  __cn1ThisObject, JAVA_BOOLEAN __cn1Arg1, JAVA_INT __cn1Arg2) {
-    DEFINE_INSTANCE_METHOD_STACK(2, 3, 0, 6657, 6660);
+    DEFINE_INSTANCE_METHOD_STACK(2, 3, 0, 6667, 6670);
     locals[0].data.o = __cn1ThisObject; locals[0].type = CN1_TYPE_OBJECT;     JAVA_INT ilocals_1_ = __cn1Arg1;
     JAVA_INT ilocals_2_ = __cn1Arg2;
     if (ilocals_1_==0) /* IFEQ CustomJump */ goto label_L51554940;
@@ -2049,7 +2049,7 @@ label_L51554940:
 
 
 JAVA_BOOLEAN java_util_GregorianCalendar_isLeapYear___int_R_boolean(CODENAME_ONE_THREAD_STATE, JAVA_OBJECT  __cn1ThisObject, JAVA_INT __cn1Arg1) {
-    DEFINE_INSTANCE_METHOD_STACK(2, 2, 0, 6657, 6661);
+    DEFINE_INSTANCE_METHOD_STACK(2, 2, 0, 6667, 6671);
     locals[0].data.o = __cn1ThisObject; locals[0].type = CN1_TYPE_OBJECT;     JAVA_INT ilocals_1_ = __cn1Arg1;
     if (ilocals_1_<=get_field_java_util_GregorianCalendar_changeYear(__cn1ThisObject)) /* IF_ICMPLE CustomJump */ goto label_L1399794302;
     if ((ilocals_1_ % 4/* ICONST_4 */)!=0) /* IFNE CustomJump */ goto label_L1924949331;
@@ -2081,7 +2081,7 @@ label_L1272883899:
 
 JAVA_VOID java_util_GregorianCalendar_cachedFieldsCheckAndGet___long_long_long_int_int(CODENAME_ONE_THREAD_STATE, JAVA_OBJECT  __cn1ThisObject, JAVA_LONG __cn1Arg1, JAVA_LONG __cn1Arg2, JAVA_LONG __cn1Arg3, JAVA_INT __cn1Arg4, JAVA_INT __cn1Arg5) {
     volatile JAVA_INT ilocals_9_ = 0; /* v9 */
-    DEFINE_INSTANCE_METHOD_STACK(5, 10, 0, 6657, 6662);
+    DEFINE_INSTANCE_METHOD_STACK(5, 10, 0, 6667, 6672);
     locals[0].data.o = __cn1ThisObject; locals[0].type = CN1_TYPE_OBJECT;     JAVA_LONG llocals_1_ = __cn1Arg1;
     JAVA_LONG llocals_3_ = __cn1Arg2;
     JAVA_LONG llocals_5_ = __cn1Arg3;
@@ -2177,7 +2177,7 @@ JAVA_VOID java_util_GregorianCalendar_fullFieldsCalc___long_int_int(CODENAME_ONE
     volatile JAVA_LONG llocals_5_ = 0; /* v5 */
     volatile JAVA_INT ilocals_8_ = 0; /* v8 */
     volatile JAVA_INT ilocals_9_ = 0; /* v9 */
-    DEFINE_INSTANCE_METHOD_STACK(8, 14, 0, 6657, 6663);
+    DEFINE_INSTANCE_METHOD_STACK(8, 14, 0, 6667, 6673);
     locals[0].data.o = __cn1ThisObject; locals[0].type = CN1_TYPE_OBJECT;     JAVA_LONG llocals_1_ = __cn1Arg1;
     ilocals_3_ = __cn1Arg2;
     JAVA_INT ilocals_4_ = __cn1Arg3;
@@ -2611,7 +2611,7 @@ label_L713312506:
 
 
 JAVA_BOOLEAN java_util_GregorianCalendar_isLenient___R_boolean(CODENAME_ONE_THREAD_STATE, JAVA_OBJECT  __cn1ThisObject) {
-    DEFINE_INSTANCE_METHOD_STACK(1, 1, 0, 6657, 6664);
+    DEFINE_INSTANCE_METHOD_STACK(1, 1, 0, 6667, 6674);
     locals[0].data.o = __cn1ThisObject; locals[0].type = CN1_TYPE_OBJECT;     PUSH_INT(1); /* ICONST_1 */
     releaseForReturn(threadStateData, cn1LocalsBeginInThread); return SP[-1].data.i;
 }
@@ -2620,7 +2620,7 @@ JAVA_BOOLEAN java_util_GregorianCalendar_isLenient___R_boolean(CODENAME_ONE_THRE
 JAVA_LONG java_util_GregorianCalendar_daysFromBaseYear___int_R_long(CODENAME_ONE_THREAD_STATE, JAVA_OBJECT  __cn1ThisObject, JAVA_INT __cn1Arg1) {
     volatile JAVA_LONG llocals_2_ = 0; /* v2 */
     volatile JAVA_LONG llocals_4_ = 0; /* v4 */
-    DEFINE_INSTANCE_METHOD_STACK(8, 6, 0, 6657, 6665);
+    DEFINE_INSTANCE_METHOD_STACK(8, 6, 0, 6667, 6675);
     locals[0].data.o = __cn1ThisObject; locals[0].type = CN1_TYPE_OBJECT;     JAVA_INT ilocals_1_ = __cn1Arg1;
     /* VarOp.assignFrom */ llocals_2_=((JAVA_LONG)ilocals_1_);
     if (CN1_CMP_EXPR(llocals_2_, 1970LL)<0) /* IFLT CustomJump */ goto label_L1530446316;
@@ -2693,7 +2693,7 @@ JAVA_INT java_util_GregorianCalendar_mod___int_int_R_int(CODENAME_ONE_THREAD_STA
 
 JAVA_INT java_util_GregorianCalendar_mod7___long_R_int(CODENAME_ONE_THREAD_STATE, JAVA_OBJECT  __cn1ThisObject, JAVA_LONG __cn1Arg1) {
     volatile JAVA_INT ilocals_3_ = 0; /* v3 */
-    DEFINE_INSTANCE_METHOD_STACK(4, 4, 0, 6657, 6667);
+    DEFINE_INSTANCE_METHOD_STACK(4, 4, 0, 6667, 6677);
     locals[0].data.o = __cn1ThisObject; locals[0].type = CN1_TYPE_OBJECT;     JAVA_LONG llocals_1_ = __cn1Arg1;
     /* VarOp.assignFrom */ ilocals_3_=((JAVA_INT)(llocals_1_ % 7LL));
     if (CN1_CMP_EXPR(llocals_1_, 0 /* LCONST_0 */)>=0) /* IFGE CustomJump */ goto label_L253601149;
@@ -2716,7 +2716,7 @@ JAVA_INT java_util_GregorianCalendar_computeYearAndDay___long_long_R_int(CODENAM
     volatile JAVA_INT ilocals_5_ = 0; /* v5 */
     volatile JAVA_INT ilocals_8_ = 0; /* v8 */
     volatile JAVA_LONG llocals_6_ = 0; /* v6 */
-    DEFINE_INSTANCE_METHOD_STACK(4, 9, 0, 6657, 6668);
+    DEFINE_INSTANCE_METHOD_STACK(4, 9, 0, 6667, 6678);
     locals[0].data.o = __cn1ThisObject; locals[0].type = CN1_TYPE_OBJECT;     JAVA_LONG llocals_1_ = __cn1Arg1;
     JAVA_LONG llocals_3_ = __cn1Arg2;
     PUSH_INT(1970);
@@ -2773,7 +2773,7 @@ JAVA_INT java_util_GregorianCalendar_getOffset___long_R_int(CODENAME_ONE_THREAD_
     volatile JAVA_INT ilocals_6_ = 0; /* v6 */
     volatile JAVA_LONG llocals_4_ = 0; /* v4 */
     volatile JAVA_INT ilocals_7_ = 0; /* v7 */
-    DEFINE_INSTANCE_METHOD_STACK(7, 17, 0, 6657, 6669);
+    DEFINE_INSTANCE_METHOD_STACK(7, 17, 0, 6667, 6679);
     locals[0].data.o = __cn1ThisObject; locals[0].type = CN1_TYPE_OBJECT;     JAVA_LONG llocals_1_ = __cn1Arg1;
     /* VarOp.assignFrom */ locals[3].data.o = virtual_java_util_GregorianCalendar_getTimeZone___R_java_util_TimeZone(threadStateData, __cn1ThisObject);locals[3].type=CN1_TYPE_OBJECT;    if (virtual_java_util_TimeZone_useDaylightTime___R_boolean(threadStateData, locals[3].data.o)!=0) /* IFNE CustomJump */ goto label_L1710814638;
 
@@ -2882,7 +2882,7 @@ label_L1267556427:
 
 
 JAVA_VOID java_util_GregorianCalendar___CLINIT____(CODENAME_ONE_THREAD_STATE) {
-    DEFINE_METHOD_STACK(4, 0, 0, 6657, 863);
+    DEFINE_METHOD_STACK(4, 0, 0, 6667, 275);
     PUSH_INT(12);
     PUSH_OBJ(allocArray(threadStateData, POP_INT(), &class_array1__JAVA_BYTE, sizeof(JAVA_ARRAY_BYTE), 1));
     BC_DUP(); /* DUP */

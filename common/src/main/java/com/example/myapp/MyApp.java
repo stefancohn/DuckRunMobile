@@ -40,9 +40,9 @@ public class MyApp extends Lifecycle {
         }
 
         //set up admobid to correspond with apple/android 
-        String admobId = "ca-app-pub-9749305699775932/5182659129";
-        if(Display.getInstance().getPlatformName().equals("ios")){
-            admobId = "ca-app-pub-9749305699775932/2037621036";
+        String admobId = "ca-app-pub-9749305699775932/2037621036";
+        if(Display.getInstance().getPlatformName().equals("and")){
+            admobId = "ca-app-pub-9749305699775932/5182659129";
         }
         admob = new AdMobManager(admobId);
         Toolbar.setGlobalToolbar(false);

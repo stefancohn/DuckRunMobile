@@ -130,7 +130,7 @@ com_codename1_ui_Font___INIT____(threadStateData, o);
 
 
 JAVA_VOID com_codename1_ui_Font___INIT____(CODENAME_ONE_THREAD_STATE, JAVA_OBJECT  __cn1ThisObject) {
-    DEFINE_INSTANCE_METHOD_STACK(2, 1, 0, 3085, 205);
+    DEFINE_INSTANCE_METHOD_STACK(2, 1, 0, 3095, 205);
     locals[0].data.o = __cn1ThisObject; locals[0].type = CN1_TYPE_OBJECT;     __CN1_DEBUG_INFO(89);
     com_codename1_ui_CN___INIT____(threadStateData, __cn1ThisObject); 
     __CN1_DEBUG_INFO(79);
@@ -142,7 +142,7 @@ JAVA_VOID com_codename1_ui_Font___INIT____(CODENAME_ONE_THREAD_STATE, JAVA_OBJEC
 
 
 JAVA_VOID com_codename1_ui_Font___INIT_____java_lang_Object(CODENAME_ONE_THREAD_STATE, JAVA_OBJECT  __cn1ThisObject, JAVA_OBJECT __cn1Arg1) {
-    DEFINE_INSTANCE_METHOD_STACK(2, 2, 0, 3085, 205);
+    DEFINE_INSTANCE_METHOD_STACK(2, 2, 0, 3095, 205);
     locals[0].data.o = __cn1ThisObject; locals[0].type = CN1_TYPE_OBJECT;     locals[1].data.o = __cn1Arg1;
     locals[1].type = CN1_TYPE_OBJECT;
     __CN1_DEBUG_INFO(92);
@@ -161,7 +161,7 @@ JAVA_VOID com_codename1_ui_Font___INIT_____int_int_int(CODENAME_ONE_THREAD_STATE
     volatile JAVA_INT ilocals_1_ = 0; /* face */
     volatile JAVA_INT ilocals_2_ = 0; /* style */
     volatile JAVA_INT ilocals_3_ = 0; /* size */
-    DEFINE_INSTANCE_METHOD_STACK(5, 6, 0, 3085, 205);
+    DEFINE_INSTANCE_METHOD_STACK(5, 6, 0, 3095, 205);
     locals[0].data.o = __cn1ThisObject; locals[0].type = CN1_TYPE_OBJECT;     ilocals_1_ = __cn1Arg1;
     ilocals_2_ = __cn1Arg2;
     ilocals_3_ = __cn1Arg3;
@@ -185,7 +185,7 @@ JAVA_VOID com_codename1_ui_Font___INIT_____int_int_int(CODENAME_ONE_THREAD_STATE
 
 JAVA_OBJECT com_codename1_ui_Font_getBitmapFont___java_lang_String_R_com_codename1_ui_Font(CODENAME_ONE_THREAD_STATE, JAVA_OBJECT __cn1Arg1) {
     __STATIC_INITIALIZER_com_codename1_ui_Font(threadStateData);
-    DEFINE_METHOD_STACK(2, 1, 0, 3085, 3086);
+    DEFINE_METHOD_STACK(2, 1, 0, 3095, 3096);
     locals[0].data.o = __cn1Arg1;
     locals[0].type = CN1_TYPE_OBJECT;
     __CN1_DEBUG_INFO(111);
@@ -203,7 +203,7 @@ JAVA_VOID com_codename1_ui_Font_clearBitmapCache__(CODENAME_ONE_THREAD_STATE) {
 
 JAVA_BOOLEAN com_codename1_ui_Font_isTrueTypeFileSupported___R_boolean(CODENAME_ONE_THREAD_STATE) {
     __STATIC_INITIALIZER_com_codename1_ui_Font(threadStateData);
-    DEFINE_METHOD_STACK(1, 0, 0, 3085, 3088);
+    DEFINE_METHOD_STACK(1, 0, 0, 3095, 3098);
     __CN1_DEBUG_INFO(132);
     { JAVA_INT tmpResult = virtual_com_codename1_impl_CodenameOneImplementation_isTrueTypeSupported___R_boolean(threadStateData, get_static_com_codename1_ui_Display_impl(threadStateData));
     PUSH_INT(tmpResult); }
@@ -213,7 +213,7 @@ JAVA_BOOLEAN com_codename1_ui_Font_isTrueTypeFileSupported___R_boolean(CODENAME_
 
 JAVA_BOOLEAN com_codename1_ui_Font_isCreationByStringSupported___R_boolean(CODENAME_ONE_THREAD_STATE) {
     __STATIC_INITIALIZER_com_codename1_ui_Font(threadStateData);
-    DEFINE_METHOD_STACK(1, 0, 0, 3085, 3089);
+    DEFINE_METHOD_STACK(1, 0, 0, 3095, 3099);
     __CN1_DEBUG_INFO(143);
     { JAVA_INT tmpResult = virtual_com_codename1_impl_CodenameOneImplementation_isLookupFontSupported___R_boolean(threadStateData, get_static_com_codename1_ui_Display_impl(threadStateData));
     PUSH_INT(tmpResult); }
@@ -223,7 +223,7 @@ JAVA_BOOLEAN com_codename1_ui_Font_isCreationByStringSupported___R_boolean(CODEN
 
 JAVA_BOOLEAN com_codename1_ui_Font_isNativeFontSchemeSupported___R_boolean(CODENAME_ONE_THREAD_STATE) {
     __STATIC_INITIALIZER_com_codename1_ui_Font(threadStateData);
-    DEFINE_METHOD_STACK(1, 0, 0, 3085, 594);
+    DEFINE_METHOD_STACK(1, 0, 0, 3095, 1029);
     __CN1_DEBUG_INFO(152);
     { JAVA_INT tmpResult = virtual_com_codename1_impl_CodenameOneImplementation_isNativeFontSchemeSupported___R_boolean(threadStateData, get_static_com_codename1_ui_Display_impl(threadStateData));
     PUSH_INT(tmpResult); }
@@ -233,22 +233,22 @@ JAVA_BOOLEAN com_codename1_ui_Font_isNativeFontSchemeSupported___R_boolean(CODEN
 
 JAVA_OBJECT com_codename1_ui_Font_createTrueTypeFont___java_lang_String_R_com_codename1_ui_Font(CODENAME_ONE_THREAD_STATE, JAVA_OBJECT __cn1Arg1) {
     __STATIC_INITIALIZER_com_codename1_ui_Font(threadStateData);
-    DEFINE_METHOD_STACK(3, 1, 0, 3085, 3090);
+    DEFINE_METHOD_STACK(3, 1, 0, 3095, 3100);
     locals[0].data.o = __cn1Arg1;
     locals[0].type = CN1_TYPE_OBJECT;
     __CN1_DEBUG_INFO(162);
     PUSH_OBJ(com_codename1_ui_Display_getInstance___R_com_codename1_ui_Display(threadStateData));
     { JAVA_INT tmpResult = virtual_com_codename1_ui_Display_isSimulator___R_boolean(threadStateData, SP[-1].data.o);
     SP[-1].data.i = tmpResult; SP[-1].type = CN1_TYPE_INT; }
-    if(POP_INT() == 0) /* IFEQ */ goto label_L1652552120;
-    if (/* CustomInvoke */virtual_java_lang_String_startsWith___java_lang_String_R_boolean(threadStateData, locals[0].data.o, STRING_FROM_CONSTANT_POOL_OFFSET(596))!=0) /* IFNE CustomJump */ goto label_L1652552120;
+    if(POP_INT() == 0) /* IFEQ */ goto label_L698562080;
+    if (/* CustomInvoke */virtual_java_lang_String_startsWith___java_lang_String_R_boolean(threadStateData, locals[0].data.o, STRING_FROM_CONSTANT_POOL_OFFSET(1031))!=0) /* IFNE CustomJump */ goto label_L698562080;
     __CN1_DEBUG_INFO(163);
     PUSH_POINTER(__NEW_java_lang_IllegalArgumentException(threadStateData)); /* NEW */
     BC_DUP(); /* DUP */
-    /* CustomInvoke */java_lang_IllegalArgumentException___INIT_____java_lang_String(threadStateData, SP[-1].data.o, STRING_FROM_CONSTANT_POOL_OFFSET(3091));     SP -= 1;
+    /* CustomInvoke */java_lang_IllegalArgumentException___INIT_____java_lang_String(threadStateData, SP[-1].data.o, STRING_FROM_CONSTANT_POOL_OFFSET(3101));     SP -= 1;
     throwException(threadStateData, POP_OBJ());
 
-label_L1652552120:
+label_L698562080:
     __CN1_DEBUG_INFO(165);
     /* CustomInvoke */PUSH_OBJ(com_codename1_ui_Font_createTrueTypeFont___java_lang_String_java_lang_String_R_com_codename1_ui_Font(threadStateData, locals[0].data.o, locals[0].data.o));
     releaseForReturn(threadStateData, cn1LocalsBeginInThread); 
@@ -259,7 +259,7 @@ label_L1652552120:
 JAVA_OBJECT com_codename1_ui_Font_createTrueTypeFont___java_lang_String_float_R_com_codename1_ui_Font(CODENAME_ONE_THREAD_STATE, JAVA_OBJECT __cn1Arg1, JAVA_FLOAT __cn1Arg2) {
     volatile JAVA_FLOAT flocals_1_ = 0; /* sizeMm */
     __STATIC_INITIALIZER_com_codename1_ui_Font(threadStateData);
-    DEFINE_METHOD_STACK(3, 2, 0, 3085, 3090);
+    DEFINE_METHOD_STACK(3, 2, 0, 3095, 3100);
     locals[0].data.o = __cn1Arg1;
     locals[0].type = CN1_TYPE_OBJECT;
     flocals_1_ = __cn1Arg2;
@@ -288,7 +288,7 @@ JAVA_OBJECT com_codename1_ui_Font_createTrueTypeFont___java_lang_String_float_by
 JAVA_OBJECT com_codename1_ui_Font_createTrueTypeFont___java_lang_String_java_lang_String_R_com_codename1_ui_Font(CODENAME_ONE_THREAD_STATE, JAVA_OBJECT __cn1Arg1, JAVA_OBJECT __cn1Arg2) {
     volatile JAVA_FLOAT flocals_5_ = 0; /* v5 */
     __STATIC_INITIALIZER_com_codename1_ui_Font(threadStateData);
-    DEFINE_METHOD_STACK(4, 6, 0, 3085, 3090);
+    DEFINE_METHOD_STACK(4, 6, 0, 3095, 3100);
     locals[0].data.o = __cn1Arg1;
     locals[0].type = CN1_TYPE_OBJECT;
     locals[1].data.o = __cn1Arg2;
@@ -299,11 +299,11 @@ JAVA_OBJECT com_codename1_ui_Font_createTrueTypeFont___java_lang_String_java_lan
     java_lang_StringBuilder___INIT____(threadStateData, SP[-1].data.o);     SP -= 1;
     /* CustomInvoke */{ JAVA_OBJECT tmpResult = virtual_java_lang_StringBuilder_append___java_lang_String_R_java_lang_StringBuilder(threadStateData, SP[-1].data.o, locals[1].data.o);
     SP[-1].data.o = tmpResult; SP[-1].type = CN1_TYPE_OBJECT; }
-    /* CustomInvoke */{ JAVA_OBJECT tmpResult = virtual_java_lang_StringBuilder_append___java_lang_String_R_java_lang_StringBuilder(threadStateData, SP[-1].data.o, STRING_FROM_CONSTANT_POOL_OFFSET(1648));
+    /* CustomInvoke */{ JAVA_OBJECT tmpResult = virtual_java_lang_StringBuilder_append___java_lang_String_R_java_lang_StringBuilder(threadStateData, SP[-1].data.o, STRING_FROM_CONSTANT_POOL_OFFSET(1659));
     SP[-1].data.o = tmpResult; SP[-1].type = CN1_TYPE_OBJECT; }
     /* CustomInvoke */{ JAVA_OBJECT tmpResult = virtual_java_lang_StringBuilder_append___float_R_java_lang_StringBuilder(threadStateData, SP[-1].data.o, get_static_com_codename1_ui_Font_fontReturnedHeight(threadStateData));
     SP[-1].data.o = tmpResult; SP[-1].type = CN1_TYPE_OBJECT; }
-    /* CustomInvoke */{ JAVA_OBJECT tmpResult = virtual_java_lang_StringBuilder_append___java_lang_String_R_java_lang_StringBuilder(threadStateData, SP[-1].data.o, STRING_FROM_CONSTANT_POOL_OFFSET(1648));
+    /* CustomInvoke */{ JAVA_OBJECT tmpResult = virtual_java_lang_StringBuilder_append___java_lang_String_R_java_lang_StringBuilder(threadStateData, SP[-1].data.o, STRING_FROM_CONSTANT_POOL_OFFSET(1659));
     SP[-1].data.o = tmpResult; SP[-1].type = CN1_TYPE_OBJECT; }
     /* CustomInvoke */{ JAVA_OBJECT tmpResult = virtual_java_lang_StringBuilder_append___int_R_java_lang_StringBuilder(threadStateData, SP[-1].data.o, 0 /* ICONST_0 */);
     SP[-1].data.o = tmpResult; SP[-1].type = CN1_TYPE_OBJECT; }
@@ -312,7 +312,7 @@ JAVA_OBJECT com_codename1_ui_Font_createTrueTypeFont___java_lang_String_java_lan
     BC_ASTORE(2);
     __CN1_DEBUG_INFO(219);
     /* VarOp.assignFrom */ locals[3].data.o = /* CustomInvoke */virtual_java_util_HashMap_get___java_lang_Object_R_java_lang_Object(threadStateData, get_static_com_codename1_ui_Font_derivedFontCache(threadStateData), locals[2].data.o);locals[3].type=CN1_TYPE_OBJECT;    __CN1_DEBUG_INFO(220);
-    if (locals[3].data.o==JAVA_NULL) /* IFNULL CustomJump */ goto label_L1656059001;
+    if (locals[3].data.o==JAVA_NULL) /* IFNULL CustomJump */ goto label_L245386411;
     __CN1_DEBUG_INFO(221);
 
 {
@@ -320,29 +320,29 @@ JAVA_OBJECT com_codename1_ui_Font_createTrueTypeFont___java_lang_String_java_lan
     releaseForReturn(threadStateData, cn1LocalsBeginInThread); return ___returnValue;
 }
 
-label_L1656059001:
+label_L245386411:
     __CN1_DEBUG_INFO(223);
-    if (/* CustomInvoke */virtual_java_lang_String_startsWith___java_lang_String_R_boolean(threadStateData, locals[0].data.o, STRING_FROM_CONSTANT_POOL_OFFSET(596))==0) /* IFEQ CustomJump */ goto label_L698562080;
+    if (/* CustomInvoke */virtual_java_lang_String_startsWith___java_lang_String_R_boolean(threadStateData, locals[0].data.o, STRING_FROM_CONSTANT_POOL_OFFSET(1031))==0) /* IFEQ CustomJump */ goto label_L323981046;
     __CN1_DEBUG_INFO(224);
-    if (virtual_com_codename1_impl_CodenameOneImplementation_isNativeFontSchemeSupported___R_boolean(threadStateData, get_static_com_codename1_ui_Display_impl(threadStateData))!=0) /* IFNE CustomJump */ goto label_L245386411;
+    if (virtual_com_codename1_impl_CodenameOneImplementation_isNativeFontSchemeSupported___R_boolean(threadStateData, get_static_com_codename1_ui_Display_impl(threadStateData))!=0) /* IFNE CustomJump */ goto label_L1519396442;
     __CN1_DEBUG_INFO(225);
     releaseForReturn(threadStateData, cn1LocalsBeginInThread); return JAVA_NULL /* ACONST_NULL */;
 
-label_L698562080:
-    __CN1_DEBUG_INFO(228);
-    if (locals[1].data.o==JAVA_NULL) /* IFNULL CustomJump */ goto label_L245386411;
-    if (/* CustomInvoke */virtual_java_lang_String_indexOf___int_R_int(threadStateData, locals[1].data.o, 47)>-1 /* ICONST_M1 */) /* IF_ICMPGT CustomJump */ goto label_L323981046;
-    if (/* CustomInvoke */virtual_java_lang_String_indexOf___int_R_int(threadStateData, locals[1].data.o, 92)>-1 /* ICONST_M1 */) /* IF_ICMPGT CustomJump */ goto label_L323981046;
-    if (/* CustomInvoke */virtual_java_lang_String_endsWith___java_lang_String_R_boolean(threadStateData, locals[1].data.o, STRING_FROM_CONSTANT_POOL_OFFSET(3092))!=0) /* IFNE CustomJump */ goto label_L245386411;
-
 label_L323981046:
+    __CN1_DEBUG_INFO(228);
+    if (locals[1].data.o==JAVA_NULL) /* IFNULL CustomJump */ goto label_L1519396442;
+    if (/* CustomInvoke */virtual_java_lang_String_indexOf___int_R_int(threadStateData, locals[1].data.o, 47)>-1 /* ICONST_M1 */) /* IF_ICMPGT CustomJump */ goto label_L1781668126;
+    if (/* CustomInvoke */virtual_java_lang_String_indexOf___int_R_int(threadStateData, locals[1].data.o, 92)>-1 /* ICONST_M1 */) /* IF_ICMPGT CustomJump */ goto label_L1781668126;
+    if (/* CustomInvoke */virtual_java_lang_String_endsWith___java_lang_String_R_boolean(threadStateData, locals[1].data.o, STRING_FROM_CONSTANT_POOL_OFFSET(3102))!=0) /* IFNE CustomJump */ goto label_L1519396442;
+
+label_L1781668126:
     __CN1_DEBUG_INFO(229);
     PUSH_POINTER(__NEW_java_lang_IllegalArgumentException(threadStateData)); /* NEW */
     BC_DUP(); /* DUP */
     PUSH_POINTER(__NEW_java_lang_StringBuilder(threadStateData)); /* NEW */
     BC_DUP(); /* DUP */
     java_lang_StringBuilder___INIT____(threadStateData, SP[-1].data.o);     SP -= 1;
-    /* CustomInvoke */{ JAVA_OBJECT tmpResult = virtual_java_lang_StringBuilder_append___java_lang_String_R_java_lang_StringBuilder(threadStateData, SP[-1].data.o, STRING_FROM_CONSTANT_POOL_OFFSET(3093));
+    /* CustomInvoke */{ JAVA_OBJECT tmpResult = virtual_java_lang_StringBuilder_append___java_lang_String_R_java_lang_StringBuilder(threadStateData, SP[-1].data.o, STRING_FROM_CONSTANT_POOL_OFFSET(3103));
     SP[-1].data.o = tmpResult; SP[-1].type = CN1_TYPE_OBJECT; }
     /* CustomInvoke */{ JAVA_OBJECT tmpResult = virtual_java_lang_StringBuilder_append___java_lang_String_R_java_lang_StringBuilder(threadStateData, SP[-1].data.o, locals[1].data.o);
     SP[-1].data.o = tmpResult; SP[-1].type = CN1_TYPE_OBJECT; }
@@ -351,14 +351,14 @@ label_L323981046:
     java_lang_IllegalArgumentException___INIT_____java_lang_String(threadStateData, SP[-2].data.o, SP[-1].data.o);     SP-= 2;
     throwException(threadStateData, POP_OBJ());
 
-label_L245386411:
+label_L1519396442:
     __CN1_DEBUG_INFO(232);
     /* VarOp.assignFrom */ locals[4].data.o = /* CustomInvoke */virtual_com_codename1_impl_CodenameOneImplementation_loadTrueTypeFont___java_lang_String_java_lang_String_R_java_lang_Object(threadStateData, get_static_com_codename1_ui_Display_impl(threadStateData), locals[0].data.o, locals[1].data.o);locals[4].type=CN1_TYPE_OBJECT;    __CN1_DEBUG_INFO(233);
-    if (locals[4].data.o!=JAVA_NULL) /* IFNONNULL CustomJump */ goto label_L1519396442;
+    if (locals[4].data.o!=JAVA_NULL) /* IFNONNULL CustomJump */ goto label_L1727776231;
     __CN1_DEBUG_INFO(234);
     releaseForReturn(threadStateData, cn1LocalsBeginInThread); return JAVA_NULL /* ACONST_NULL */;
 
-label_L1519396442:
+label_L1727776231:
     __CN1_DEBUG_INFO(236);
     PUSH_POINTER(__NEW_com_codename1_ui_Font(threadStateData)); /* NEW */
     BC_DUP(); /* DUP */
@@ -382,11 +382,11 @@ label_L1519396442:
     java_lang_StringBuilder___INIT____(threadStateData, SP[-1].data.o);     SP -= 1;
     /* CustomInvoke */{ JAVA_OBJECT tmpResult = virtual_java_lang_StringBuilder_append___java_lang_String_R_java_lang_StringBuilder(threadStateData, SP[-1].data.o, locals[1].data.o);
     SP[-1].data.o = tmpResult; SP[-1].type = CN1_TYPE_OBJECT; }
-    /* CustomInvoke */{ JAVA_OBJECT tmpResult = virtual_java_lang_StringBuilder_append___java_lang_String_R_java_lang_StringBuilder(threadStateData, SP[-1].data.o, STRING_FROM_CONSTANT_POOL_OFFSET(1648));
+    /* CustomInvoke */{ JAVA_OBJECT tmpResult = virtual_java_lang_StringBuilder_append___java_lang_String_R_java_lang_StringBuilder(threadStateData, SP[-1].data.o, STRING_FROM_CONSTANT_POOL_OFFSET(1659));
     SP[-1].data.o = tmpResult; SP[-1].type = CN1_TYPE_OBJECT; }
     /* CustomInvoke */{ JAVA_OBJECT tmpResult = virtual_java_lang_StringBuilder_append___float_R_java_lang_StringBuilder(threadStateData, SP[-1].data.o, flocals_5_);
     SP[-1].data.o = tmpResult; SP[-1].type = CN1_TYPE_OBJECT; }
-    /* CustomInvoke */{ JAVA_OBJECT tmpResult = virtual_java_lang_StringBuilder_append___java_lang_String_R_java_lang_StringBuilder(threadStateData, SP[-1].data.o, STRING_FROM_CONSTANT_POOL_OFFSET(1648));
+    /* CustomInvoke */{ JAVA_OBJECT tmpResult = virtual_java_lang_StringBuilder_append___java_lang_String_R_java_lang_StringBuilder(threadStateData, SP[-1].data.o, STRING_FROM_CONSTANT_POOL_OFFSET(1659));
     SP[-1].data.o = tmpResult; SP[-1].type = CN1_TYPE_OBJECT; }
     /* CustomInvoke */{ JAVA_OBJECT tmpResult = virtual_java_lang_StringBuilder_append___int_R_java_lang_StringBuilder(threadStateData, SP[-1].data.o, 0 /* ICONST_0 */);
     SP[-1].data.o = tmpResult; SP[-1].type = CN1_TYPE_OBJECT; }
@@ -414,22 +414,22 @@ JAVA_OBJECT com_codename1_ui_Font_derive___float_int_byte_R_com_codename1_ui_Fon
 JAVA_OBJECT com_codename1_ui_Font_derive___float_int_R_com_codename1_ui_Font(CODENAME_ONE_THREAD_STATE, JAVA_OBJECT  __cn1ThisObject, JAVA_FLOAT __cn1Arg1, JAVA_INT __cn1Arg2) {
     volatile JAVA_INT ilocals_2_ = 0; /* weight */
     volatile JAVA_FLOAT flocals_1_ = 0; /* sizePixels */
-    DEFINE_INSTANCE_METHOD_STACK(6, 5, 0, 3085, 3094);
+    DEFINE_INSTANCE_METHOD_STACK(6, 5, 0, 3095, 3104);
     locals[0].data.o = __cn1ThisObject; locals[0].type = CN1_TYPE_OBJECT;     flocals_1_ = __cn1Arg1;
     ilocals_2_ = __cn1Arg2;
     __CN1_DEBUG_INFO(276);
-    if (get_field_com_codename1_ui_Font_fontUniqueId(__cn1ThisObject)==JAVA_NULL) /* IFNULL CustomJump */ goto label_L1781668126;
+    if (get_field_com_codename1_ui_Font_fontUniqueId(__cn1ThisObject)==JAVA_NULL) /* IFNULL CustomJump */ goto label_L162320368;
     __CN1_DEBUG_INFO(278);
     PUSH_POINTER(__NEW_java_lang_StringBuilder(threadStateData)); /* NEW */
     BC_DUP(); /* DUP */
     java_lang_StringBuilder___INIT____(threadStateData, SP[-1].data.o);     SP -= 1;
     /* CustomInvoke */{ JAVA_OBJECT tmpResult = virtual_java_lang_StringBuilder_append___java_lang_String_R_java_lang_StringBuilder(threadStateData, SP[-1].data.o, get_field_com_codename1_ui_Font_fontUniqueId(__cn1ThisObject));
     SP[-1].data.o = tmpResult; SP[-1].type = CN1_TYPE_OBJECT; }
-    /* CustomInvoke */{ JAVA_OBJECT tmpResult = virtual_java_lang_StringBuilder_append___java_lang_String_R_java_lang_StringBuilder(threadStateData, SP[-1].data.o, STRING_FROM_CONSTANT_POOL_OFFSET(1648));
+    /* CustomInvoke */{ JAVA_OBJECT tmpResult = virtual_java_lang_StringBuilder_append___java_lang_String_R_java_lang_StringBuilder(threadStateData, SP[-1].data.o, STRING_FROM_CONSTANT_POOL_OFFSET(1659));
     SP[-1].data.o = tmpResult; SP[-1].type = CN1_TYPE_OBJECT; }
     /* CustomInvoke */{ JAVA_OBJECT tmpResult = virtual_java_lang_StringBuilder_append___float_R_java_lang_StringBuilder(threadStateData, SP[-1].data.o, flocals_1_);
     SP[-1].data.o = tmpResult; SP[-1].type = CN1_TYPE_OBJECT; }
-    /* CustomInvoke */{ JAVA_OBJECT tmpResult = virtual_java_lang_StringBuilder_append___java_lang_String_R_java_lang_StringBuilder(threadStateData, SP[-1].data.o, STRING_FROM_CONSTANT_POOL_OFFSET(1648));
+    /* CustomInvoke */{ JAVA_OBJECT tmpResult = virtual_java_lang_StringBuilder_append___java_lang_String_R_java_lang_StringBuilder(threadStateData, SP[-1].data.o, STRING_FROM_CONSTANT_POOL_OFFSET(1659));
     SP[-1].data.o = tmpResult; SP[-1].type = CN1_TYPE_OBJECT; }
     /* CustomInvoke */{ JAVA_OBJECT tmpResult = virtual_java_lang_StringBuilder_append___int_R_java_lang_StringBuilder(threadStateData, SP[-1].data.o, ilocals_2_);
     SP[-1].data.o = tmpResult; SP[-1].type = CN1_TYPE_OBJECT; }
@@ -438,7 +438,7 @@ JAVA_OBJECT com_codename1_ui_Font_derive___float_int_R_com_codename1_ui_Font(COD
     BC_ASTORE(3);
     __CN1_DEBUG_INFO(279);
     /* VarOp.assignFrom */ locals[4].data.o = /* CustomInvoke */virtual_java_util_HashMap_get___java_lang_Object_R_java_lang_Object(threadStateData, get_static_com_codename1_ui_Font_derivedFontCache(threadStateData), locals[3].data.o);locals[4].type=CN1_TYPE_OBJECT;    __CN1_DEBUG_INFO(280);
-    if (locals[4].data.o==JAVA_NULL) /* IFNULL CustomJump */ goto label_L1727776231;
+    if (locals[4].data.o==JAVA_NULL) /* IFNULL CustomJump */ goto label_L1381341801;
     __CN1_DEBUG_INFO(281);
 
 {
@@ -446,7 +446,7 @@ JAVA_OBJECT com_codename1_ui_Font_derive___float_int_R_com_codename1_ui_Font(COD
     releaseForReturn(threadStateData, cn1LocalsBeginInThread); return ___returnValue;
 }
 
-label_L1727776231:
+label_L1381341801:
     __CN1_DEBUG_INFO(283);
     PUSH_POINTER(__NEW_com_codename1_ui_Font(threadStateData)); /* NEW */
     BC_DUP(); /* DUP */
@@ -469,9 +469,9 @@ label_L1727776231:
     releaseForReturn(threadStateData, cn1LocalsBeginInThread); return ___returnValue;
 }
 
-label_L1781668126:
+label_L162320368:
     __CN1_DEBUG_INFO(291);
-    if (get_field_com_codename1_ui_Font_font(__cn1ThisObject)==JAVA_NULL) /* IFNULL CustomJump */ goto label_L162320368;
+    if (get_field_com_codename1_ui_Font_font(__cn1ThisObject)==JAVA_NULL) /* IFNULL CustomJump */ goto label_L676692948;
     __CN1_DEBUG_INFO(292);
     PUSH_POINTER(__NEW_com_codename1_ui_Font(threadStateData)); /* NEW */
     BC_DUP(); /* DUP */
@@ -490,38 +490,38 @@ label_L1781668126:
     releaseForReturn(threadStateData, cn1LocalsBeginInThread); return ___returnValue;
 }
 
-label_L162320368:
+label_L676692948:
     __CN1_DEBUG_INFO(297);
-    if (get_field_com_codename1_ui_Font_ttf(__cn1ThisObject)!=0) /* IFNE CustomJump */ goto label_L1381341801;
+    if (get_field_com_codename1_ui_Font_ttf(__cn1ThisObject)!=0) /* IFNE CustomJump */ goto label_L272220100;
     __CN1_DEBUG_INFO(298);
     PUSH_POINTER(__NEW_java_lang_IllegalArgumentException(threadStateData)); /* NEW */
     BC_DUP(); /* DUP */
     PUSH_POINTER(__NEW_java_lang_StringBuilder(threadStateData)); /* NEW */
     BC_DUP(); /* DUP */
     java_lang_StringBuilder___INIT____(threadStateData, SP[-1].data.o);     SP -= 1;
-    /* CustomInvoke */{ JAVA_OBJECT tmpResult = virtual_java_lang_StringBuilder_append___java_lang_String_R_java_lang_StringBuilder(threadStateData, SP[-1].data.o, STRING_FROM_CONSTANT_POOL_OFFSET(3095));
+    /* CustomInvoke */{ JAVA_OBJECT tmpResult = virtual_java_lang_StringBuilder_append___java_lang_String_R_java_lang_StringBuilder(threadStateData, SP[-1].data.o, STRING_FROM_CONSTANT_POOL_OFFSET(3105));
     SP[-1].data.o = tmpResult; SP[-1].type = CN1_TYPE_OBJECT; }
     /* CustomInvoke */{ JAVA_OBJECT tmpResult = virtual_java_lang_StringBuilder_append___java_lang_Object_R_java_lang_StringBuilder(threadStateData, SP[-1].data.o, __cn1ThisObject);
     SP[-1].data.o = tmpResult; SP[-1].type = CN1_TYPE_OBJECT; }
-    /* CustomInvoke */{ JAVA_OBJECT tmpResult = virtual_java_lang_StringBuilder_append___java_lang_String_R_java_lang_StringBuilder(threadStateData, SP[-1].data.o, STRING_FROM_CONSTANT_POOL_OFFSET(3096));
+    /* CustomInvoke */{ JAVA_OBJECT tmpResult = virtual_java_lang_StringBuilder_append___java_lang_String_R_java_lang_StringBuilder(threadStateData, SP[-1].data.o, STRING_FROM_CONSTANT_POOL_OFFSET(3106));
     SP[-1].data.o = tmpResult; SP[-1].type = CN1_TYPE_OBJECT; }
     { JAVA_OBJECT tmpResult = virtual_java_lang_StringBuilder_toString___R_java_lang_String(threadStateData, SP[-1].data.o);
     SP[-1].data.o = tmpResult; SP[-1].type = CN1_TYPE_OBJECT; }
     java_lang_IllegalArgumentException___INIT_____java_lang_String(threadStateData, SP[-2].data.o, SP[-1].data.o);     SP-= 2;
     throwException(threadStateData, POP_OBJ());
 
-label_L1381341801:
+label_L272220100:
     __CN1_DEBUG_INFO(300);
     PUSH_POINTER(__NEW_java_lang_IllegalArgumentException(threadStateData)); /* NEW */
     BC_DUP(); /* DUP */
     PUSH_POINTER(__NEW_java_lang_StringBuilder(threadStateData)); /* NEW */
     BC_DUP(); /* DUP */
     java_lang_StringBuilder___INIT____(threadStateData, SP[-1].data.o);     SP -= 1;
-    /* CustomInvoke */{ JAVA_OBJECT tmpResult = virtual_java_lang_StringBuilder_append___java_lang_String_R_java_lang_StringBuilder(threadStateData, SP[-1].data.o, STRING_FROM_CONSTANT_POOL_OFFSET(3095));
+    /* CustomInvoke */{ JAVA_OBJECT tmpResult = virtual_java_lang_StringBuilder_append___java_lang_String_R_java_lang_StringBuilder(threadStateData, SP[-1].data.o, STRING_FROM_CONSTANT_POOL_OFFSET(3105));
     SP[-1].data.o = tmpResult; SP[-1].type = CN1_TYPE_OBJECT; }
     /* CustomInvoke */{ JAVA_OBJECT tmpResult = virtual_java_lang_StringBuilder_append___java_lang_Object_R_java_lang_StringBuilder(threadStateData, SP[-1].data.o, __cn1ThisObject);
     SP[-1].data.o = tmpResult; SP[-1].type = CN1_TYPE_OBJECT; }
-    /* CustomInvoke */{ JAVA_OBJECT tmpResult = virtual_java_lang_StringBuilder_append___java_lang_String_R_java_lang_StringBuilder(threadStateData, SP[-1].data.o, STRING_FROM_CONSTANT_POOL_OFFSET(3097));
+    /* CustomInvoke */{ JAVA_OBJECT tmpResult = virtual_java_lang_StringBuilder_append___java_lang_String_R_java_lang_StringBuilder(threadStateData, SP[-1].data.o, STRING_FROM_CONSTANT_POOL_OFFSET(3107));
     SP[-1].data.o = tmpResult; SP[-1].type = CN1_TYPE_OBJECT; }
     { JAVA_OBJECT tmpResult = virtual_java_lang_StringBuilder_toString___R_java_lang_String(threadStateData, SP[-1].data.o);
     SP[-1].data.o = tmpResult; SP[-1].type = CN1_TYPE_OBJECT; }
@@ -532,7 +532,7 @@ label_L1381341801:
 
 
 JAVA_BOOLEAN com_codename1_ui_Font_isTTFNativeFont___R_boolean(CODENAME_ONE_THREAD_STATE, JAVA_OBJECT  __cn1ThisObject) {
-    DEFINE_INSTANCE_METHOD_STACK(1, 1, 0, 3085, 3098);
+    DEFINE_INSTANCE_METHOD_STACK(1, 1, 0, 3095, 3108);
     locals[0].data.o = __cn1ThisObject; locals[0].type = CN1_TYPE_OBJECT;     __CN1_DEBUG_INFO(314);
 
 {
@@ -544,24 +544,24 @@ JAVA_BOOLEAN com_codename1_ui_Font_isTTFNativeFont___R_boolean(CODENAME_ONE_THRE
 
 JAVA_OBJECT com_codename1_ui_Font_create___java_lang_String_R_com_codename1_ui_Font(CODENAME_ONE_THREAD_STATE, JAVA_OBJECT __cn1Arg1) {
     __STATIC_INITIALIZER_com_codename1_ui_Font(threadStateData);
-    DEFINE_METHOD_STACK(3, 2, 0, 3085, 3072);
+    DEFINE_METHOD_STACK(3, 2, 0, 3095, 3082);
     locals[0].data.o = __cn1Arg1;
     locals[0].type = CN1_TYPE_OBJECT;
     __CN1_DEBUG_INFO(327);
-    if (/* CustomInvoke */virtual_java_lang_String_startsWith___java_lang_String_R_boolean(threadStateData, locals[0].data.o, STRING_FROM_CONSTANT_POOL_OFFSET(596))==0) /* IFEQ CustomJump */ goto label_L676692948;
+    if (/* CustomInvoke */virtual_java_lang_String_startsWith___java_lang_String_R_boolean(threadStateData, locals[0].data.o, STRING_FROM_CONSTANT_POOL_OFFSET(1031))==0) /* IFEQ CustomJump */ goto label_L2139431292;
     __CN1_DEBUG_INFO(328);
     /* CustomInvoke */PUSH_OBJ(com_codename1_ui_Font_createTrueTypeFont___java_lang_String_java_lang_String_R_com_codename1_ui_Font(threadStateData, locals[0].data.o, locals[0].data.o));
     releaseForReturn(threadStateData, cn1LocalsBeginInThread); 
     return POP_OBJ();
 
-label_L676692948:
+label_L2139431292:
     __CN1_DEBUG_INFO(330);
     /* VarOp.assignFrom */ locals[1].data.o = /* CustomInvoke */virtual_com_codename1_impl_CodenameOneImplementation_loadNativeFont___java_lang_String_R_java_lang_Object(threadStateData, get_static_com_codename1_ui_Display_impl(threadStateData), locals[0].data.o);locals[1].type=CN1_TYPE_OBJECT;    __CN1_DEBUG_INFO(331);
-    if (locals[1].data.o!=JAVA_NULL) /* IFNONNULL CustomJump */ goto label_L272220100;
+    if (locals[1].data.o!=JAVA_NULL) /* IFNONNULL CustomJump */ goto label_L33389111;
     __CN1_DEBUG_INFO(332);
     releaseForReturn(threadStateData, cn1LocalsBeginInThread); return JAVA_NULL /* ACONST_NULL */;
 
-label_L272220100:
+label_L33389111:
     __CN1_DEBUG_INFO(334);
     PUSH_POINTER(__NEW_com_codename1_ui_Font(threadStateData)); /* NEW */
     BC_DUP(); /* DUP */
@@ -578,7 +578,7 @@ JAVA_VOID com_codename1_ui_Font_addContrast___byte(CODENAME_ONE_THREAD_STATE, JA
 
 JAVA_OBJECT com_codename1_ui_Font_createBitmapFont___java_lang_String_com_codename1_ui_Image_int_1ARRAY_int_1ARRAY_java_lang_String_R_com_codename1_ui_Font(CODENAME_ONE_THREAD_STATE, JAVA_OBJECT __cn1Arg1, JAVA_OBJECT __cn1Arg2, JAVA_OBJECT __cn1Arg3, JAVA_OBJECT __cn1Arg4, JAVA_OBJECT __cn1Arg5) {
     __STATIC_INITIALIZER_com_codename1_ui_Font(threadStateData);
-    DEFINE_METHOD_STACK(4, 6, 0, 3085, 3100);
+    DEFINE_METHOD_STACK(4, 6, 0, 3095, 3110);
     locals[0].data.o = __cn1Arg1;
     locals[0].type = CN1_TYPE_OBJECT;
     locals[1].data.o = __cn1Arg2;
@@ -603,7 +603,7 @@ JAVA_OBJECT com_codename1_ui_Font_createBitmapFont___java_lang_String_com_codena
 
 JAVA_OBJECT com_codename1_ui_Font_createBitmapFont___com_codename1_ui_Image_int_1ARRAY_int_1ARRAY_java_lang_String_R_com_codename1_ui_Font(CODENAME_ONE_THREAD_STATE, JAVA_OBJECT __cn1Arg1, JAVA_OBJECT __cn1Arg2, JAVA_OBJECT __cn1Arg3, JAVA_OBJECT __cn1Arg4) {
     __STATIC_INITIALIZER_com_codename1_ui_Font(threadStateData);
-    DEFINE_METHOD_STACK(6, 4, 0, 3085, 3100);
+    DEFINE_METHOD_STACK(6, 4, 0, 3095, 3110);
     locals[0].data.o = __cn1Arg1;
     locals[0].type = CN1_TYPE_OBJECT;
     locals[1].data.o = __cn1Arg2;
@@ -626,7 +626,7 @@ JAVA_OBJECT com_codename1_ui_Font_createSystemFont___int_int_int_R_com_codename1
     volatile JAVA_INT ilocals_1_ = 0; /* style */
     volatile JAVA_INT ilocals_2_ = 0; /* size */
     __STATIC_INITIALIZER_com_codename1_ui_Font(threadStateData);
-    DEFINE_METHOD_STACK(5, 3, 0, 3085, 444);
+    DEFINE_METHOD_STACK(5, 3, 0, 3095, 882);
     ilocals_0_ = __cn1Arg1;
     ilocals_1_ = __cn1Arg2;
     ilocals_2_ = __cn1Arg3;
@@ -642,7 +642,7 @@ JAVA_OBJECT com_codename1_ui_Font_createSystemFont___int_int_int_R_com_codename1
 JAVA_INT com_codename1_ui_Font_charsWidth___char_1ARRAY_int_int_R_int(CODENAME_ONE_THREAD_STATE, JAVA_OBJECT  __cn1ThisObject, JAVA_OBJECT __cn1Arg1, JAVA_INT __cn1Arg2, JAVA_INT __cn1Arg3) {
     volatile JAVA_INT ilocals_2_ = 0; /* offset */
     volatile JAVA_INT ilocals_3_ = 0; /* length */
-    DEFINE_INSTANCE_METHOD_STACK(5, 4, 0, 3085, 430);
+    DEFINE_INSTANCE_METHOD_STACK(5, 4, 0, 3095, 868);
     locals[0].data.o = __cn1ThisObject; locals[0].type = CN1_TYPE_OBJECT;     locals[1].data.o = __cn1Arg1;
     locals[1].type = CN1_TYPE_OBJECT;
     ilocals_2_ = __cn1Arg2;
@@ -659,7 +659,7 @@ JAVA_INT com_codename1_ui_Font_charsWidth___char_1ARRAY_int_int_R_int(CODENAME_O
 JAVA_INT com_codename1_ui_Font_substringWidth___java_lang_String_int_int_R_int(CODENAME_ONE_THREAD_STATE, JAVA_OBJECT  __cn1ThisObject, JAVA_OBJECT __cn1Arg1, JAVA_INT __cn1Arg2, JAVA_INT __cn1Arg3) {
     volatile JAVA_INT ilocals_2_ = 0; /* offset */
     volatile JAVA_INT ilocals_3_ = 0; /* len */
-    DEFINE_INSTANCE_METHOD_STACK(6, 4, 0, 3085, 3101);
+    DEFINE_INSTANCE_METHOD_STACK(6, 4, 0, 3095, 3111);
     locals[0].data.o = __cn1ThisObject; locals[0].type = CN1_TYPE_OBJECT;     locals[1].data.o = __cn1Arg1;
     locals[1].type = CN1_TYPE_OBJECT;
     ilocals_2_ = __cn1Arg2;
@@ -677,24 +677,24 @@ JAVA_INT com_codename1_ui_Font_substringWidth___java_lang_String_int_int_R_int(C
 
 
 JAVA_INT com_codename1_ui_Font_stringWidth___java_lang_String_R_int(CODENAME_ONE_THREAD_STATE, JAVA_OBJECT  __cn1ThisObject, JAVA_OBJECT __cn1Arg1) {
-    DEFINE_INSTANCE_METHOD_STACK(3, 2, 0, 3085, 435);
+    DEFINE_INSTANCE_METHOD_STACK(3, 2, 0, 3095, 873);
     locals[0].data.o = __cn1ThisObject; locals[0].type = CN1_TYPE_OBJECT;     locals[1].data.o = __cn1Arg1;
     locals[1].type = CN1_TYPE_OBJECT;
     __CN1_DEBUG_INFO(434);
-    if (locals[1].data.o==JAVA_NULL) /* IFNULL CustomJump */ goto label_L2139431292;
-    if (virtual_java_lang_String_length___R_int(threadStateData, locals[1].data.o)!=0) /* IFNE CustomJump */ goto label_L33389111;
+    if (locals[1].data.o==JAVA_NULL) /* IFNULL CustomJump */ goto label_L95552255;
+    if (virtual_java_lang_String_length___R_int(threadStateData, locals[1].data.o)!=0) /* IFNE CustomJump */ goto label_L1487424018;
 
-label_L2139431292:
+label_L95552255:
     __CN1_DEBUG_INFO(435);
     releaseForReturn(threadStateData, cn1LocalsBeginInThread); return 0 /* ICONST_0 */;
 
-label_L33389111:
+label_L1487424018:
     __CN1_DEBUG_INFO(439);
-    if (locals[1].data.o!=STRING_FROM_CONSTANT_POOL_OFFSET(617)) /* IF_ACMPNE CustomJump */ goto label_L95552255;
+    if (locals[1].data.o!=STRING_FROM_CONSTANT_POOL_OFFSET(1051)) /* IF_ACMPNE CustomJump */ goto label_L242224826;
     __CN1_DEBUG_INFO(440);
     releaseForReturn(threadStateData, cn1LocalsBeginInThread); return 5 /* ICONST_5 */;
 
-label_L95552255:
+label_L242224826:
     __CN1_DEBUG_INFO(442);
 
 {
@@ -706,7 +706,7 @@ label_L95552255:
 
 JAVA_INT com_codename1_ui_Font_charWidth___char_R_int(CODENAME_ONE_THREAD_STATE, JAVA_OBJECT  __cn1ThisObject, JAVA_CHAR __cn1Arg1) {
     volatile JAVA_INT ilocals_1_ = 0; /* ch */
-    DEFINE_INSTANCE_METHOD_STACK(3, 2, 0, 3085, 439);
+    DEFINE_INSTANCE_METHOD_STACK(3, 2, 0, 3095, 877);
     locals[0].data.o = __cn1ThisObject; locals[0].type = CN1_TYPE_OBJECT;     ilocals_1_ = __cn1Arg1;
     __CN1_DEBUG_INFO(452);
 
@@ -718,7 +718,7 @@ JAVA_INT com_codename1_ui_Font_charWidth___char_R_int(CODENAME_ONE_THREAD_STATE,
 
 
 JAVA_INT com_codename1_ui_Font_getHeight___R_int(CODENAME_ONE_THREAD_STATE, JAVA_OBJECT  __cn1ThisObject) {
-    DEFINE_INSTANCE_METHOD_STACK(2, 1, 0, 3085, 441);
+    DEFINE_INSTANCE_METHOD_STACK(2, 1, 0, 3095, 879);
     locals[0].data.o = __cn1ThisObject; locals[0].type = CN1_TYPE_OBJECT;     __CN1_DEBUG_INFO(461);
 
 {
@@ -735,7 +735,7 @@ JAVA_VOID com_codename1_ui_Font_drawChar___com_codename1_ui_Graphics_char_int_in
 
 JAVA_OBJECT com_codename1_ui_Font_getDefaultFont___R_com_codename1_ui_Font(CODENAME_ONE_THREAD_STATE) {
     __STATIC_INITIALIZER_com_codename1_ui_Font(threadStateData);
-    DEFINE_METHOD_STACK(1, 0, 0, 3085, 443);
+    DEFINE_METHOD_STACK(1, 0, 0, 3095, 881);
     __CN1_DEBUG_INFO(482);
     PUSH_POINTER(get_static_com_codename1_ui_Font_defaultFont(threadStateData));
     releaseForReturn(threadStateData, cn1LocalsBeginInThread); 
@@ -745,15 +745,15 @@ JAVA_OBJECT com_codename1_ui_Font_getDefaultFont___R_com_codename1_ui_Font(CODEN
 
 JAVA_VOID com_codename1_ui_Font_setDefaultFont___com_codename1_ui_Font(CODENAME_ONE_THREAD_STATE, JAVA_OBJECT __cn1Arg1) {
     __STATIC_INITIALIZER_com_codename1_ui_Font(threadStateData);
-    DEFINE_METHOD_STACK(1, 1, 0, 3085, 3103);
+    DEFINE_METHOD_STACK(1, 1, 0, 3095, 3113);
     locals[0].data.o = __cn1Arg1;
     locals[0].type = CN1_TYPE_OBJECT;
     __CN1_DEBUG_INFO(491);
-    if (locals[0].data.o==JAVA_NULL) /* IFNULL CustomJump */ goto label_L1487424018;
+    if (locals[0].data.o==JAVA_NULL) /* IFNULL CustomJump */ goto label_L1681318273;
     __CN1_DEBUG_INFO(492);
     set_static_com_codename1_ui_Font_defaultFont(threadStateData, locals[0].data.o);
 
-label_L1487424018:
+label_L1681318273:
     __CN1_DEBUG_INFO(494);
     releaseForReturn(threadStateData, cn1LocalsBeginInThread); 
     return;
@@ -771,7 +771,7 @@ JAVA_VOID com_codename1_ui_Font_drawChars___com_codename1_ui_Graphics_char_1ARRA
 
 
 JAVA_INT com_codename1_ui_Font_getFace___R_int(CODENAME_ONE_THREAD_STATE, JAVA_OBJECT  __cn1ThisObject) {
-    DEFINE_INSTANCE_METHOD_STACK(2, 1, 0, 3085, 542);
+    DEFINE_INSTANCE_METHOD_STACK(2, 1, 0, 3095, 978);
     locals[0].data.o = __cn1ThisObject; locals[0].type = CN1_TYPE_OBJECT;     __CN1_DEBUG_INFO(528);
 
 {
@@ -782,7 +782,7 @@ JAVA_INT com_codename1_ui_Font_getFace___R_int(CODENAME_ONE_THREAD_STATE, JAVA_O
 
 
 JAVA_INT com_codename1_ui_Font_getSize___R_int(CODENAME_ONE_THREAD_STATE, JAVA_OBJECT  __cn1ThisObject) {
-    DEFINE_INSTANCE_METHOD_STACK(2, 1, 0, 3085, 560);
+    DEFINE_INSTANCE_METHOD_STACK(2, 1, 0, 3095, 995);
     locals[0].data.o = __cn1ThisObject; locals[0].type = CN1_TYPE_OBJECT;     __CN1_DEBUG_INFO(537);
 
 {
@@ -793,7 +793,7 @@ JAVA_INT com_codename1_ui_Font_getSize___R_int(CODENAME_ONE_THREAD_STATE, JAVA_O
 
 
 JAVA_INT com_codename1_ui_Font_getStyle___R_int(CODENAME_ONE_THREAD_STATE, JAVA_OBJECT  __cn1ThisObject) {
-    DEFINE_INSTANCE_METHOD_STACK(2, 1, 0, 3085, 561);
+    DEFINE_INSTANCE_METHOD_STACK(2, 1, 0, 3095, 996);
     locals[0].data.o = __cn1ThisObject; locals[0].type = CN1_TYPE_OBJECT;     __CN1_DEBUG_INFO(546);
 
 {
@@ -815,7 +815,7 @@ JAVA_VOID com_codename1_ui_Font_setBitmapFontEnabled___boolean(CODENAME_ONE_THRE
 
 JAVA_BOOLEAN com_codename1_ui_Font_isBitmapFontEnabled___R_boolean(CODENAME_ONE_THREAD_STATE) {
     __STATIC_INITIALIZER_com_codename1_ui_Font(threadStateData);
-    DEFINE_METHOD_STACK(1, 0, 0, 3085, 3107);
+    DEFINE_METHOD_STACK(1, 0, 0, 3095, 3117);
     __CN1_DEBUG_INFO(580);
     PUSH_INT(get_static_com_codename1_ui_Font_enableBitmapFont(threadStateData));
     releaseForReturn(threadStateData, cn1LocalsBeginInThread); return SP[-1].data.i;
@@ -823,7 +823,7 @@ JAVA_BOOLEAN com_codename1_ui_Font_isBitmapFontEnabled___R_boolean(CODENAME_ONE_
 
 
 JAVA_OBJECT com_codename1_ui_Font_getNativeFont___R_java_lang_Object(CODENAME_ONE_THREAD_STATE, JAVA_OBJECT  __cn1ThisObject) {
-    DEFINE_INSTANCE_METHOD_STACK(1, 1, 0, 3085, 3108);
+    DEFINE_INSTANCE_METHOD_STACK(1, 1, 0, 3095, 3118);
     locals[0].data.o = __cn1ThisObject; locals[0].type = CN1_TYPE_OBJECT;     __CN1_DEBUG_INFO(590);
 
 {
@@ -834,57 +834,57 @@ JAVA_OBJECT com_codename1_ui_Font_getNativeFont___R_java_lang_Object(CODENAME_ON
 
 
 JAVA_BOOLEAN com_codename1_ui_Font_equals___java_lang_Object_R_boolean(CODENAME_ONE_THREAD_STATE, JAVA_OBJECT  __cn1ThisObject, JAVA_OBJECT __cn1Arg1) {
-    DEFINE_INSTANCE_METHOD_STACK(2, 3, 0, 3085, 880);
+    DEFINE_INSTANCE_METHOD_STACK(2, 3, 0, 3095, 244);
     locals[0].data.o = __cn1ThisObject; locals[0].type = CN1_TYPE_OBJECT;     locals[1].data.o = __cn1Arg1;
     locals[1].type = CN1_TYPE_OBJECT;
     __CN1_DEBUG_INFO(597);
-    if (get_field_com_codename1_ui_Font_ttf(__cn1ThisObject)==0) /* IFEQ CustomJump */ goto label_L242224826;
-    if (locals[1].data.o==JAVA_NULL) /* IFNULL CustomJump */ goto label_L242224826;
+    if (get_field_com_codename1_ui_Font_ttf(__cn1ThisObject)==0) /* IFEQ CustomJump */ goto label_L1904652802;
+    if (locals[1].data.o==JAVA_NULL) /* IFNULL CustomJump */ goto label_L1904652802;
     __CN1_DEBUG_INFO(598);
-    if (get_field_com_codename1_ui_Font_font(locals[1].data.o)==JAVA_NULL) /* IFNULL CustomJump */ goto label_L1681318273;
-    if (get_field_com_codename1_ui_Font_ttf(locals[1].data.o)==0) /* IFEQ CustomJump */ goto label_L1681318273;
-    if (/* CustomInvoke */virtual_java_lang_Object_equals___java_lang_Object_R_boolean(threadStateData, get_field_com_codename1_ui_Font_font(locals[1].data.o), get_field_com_codename1_ui_Font_font(__cn1ThisObject))==0) /* IFEQ CustomJump */ goto label_L1681318273;
+    if (get_field_com_codename1_ui_Font_font(locals[1].data.o)==JAVA_NULL) /* IFNULL CustomJump */ goto label_L1801756410;
+    if (get_field_com_codename1_ui_Font_ttf(locals[1].data.o)==0) /* IFEQ CustomJump */ goto label_L1801756410;
+    if (/* CustomInvoke */virtual_java_lang_Object_equals___java_lang_Object_R_boolean(threadStateData, get_field_com_codename1_ui_Font_font(locals[1].data.o), get_field_com_codename1_ui_Font_font(__cn1ThisObject))==0) /* IFEQ CustomJump */ goto label_L1801756410;
     PUSH_INT(1); /* ICONST_1 */
-    goto label_L1904652802;
+    goto label_L1710180594;
 
-label_L1681318273:
+label_L1801756410:
     PUSH_INT(0); /* ICONST_0 */
 
-label_L1904652802:
+label_L1710180594:
     releaseForReturn(threadStateData, cn1LocalsBeginInThread); return SP[-1].data.i;
 
-label_L242224826:
+label_L1904652802:
     __CN1_DEBUG_INFO(600);
-    if (locals[1].data.o==JAVA_NULL) /* IFNULL CustomJump */ goto label_L1801756410;
+    if (locals[1].data.o==JAVA_NULL) /* IFNULL CustomJump */ goto label_L906397479;
     { JAVA_OBJECT tmpResult = virtual_java_lang_Object_getClass___R_java_lang_Class(threadStateData, locals[1].data.o);
     PUSH_OBJ(tmpResult); }
     { JAVA_OBJECT tmpResult = virtual_java_lang_Object_getClass___R_java_lang_Class(threadStateData, __cn1ThisObject);
     PUSH_OBJ(tmpResult); }
-    SP-=2; if((*SP).data.o != SP[1].data.o) /* IF_ACMPNE */ goto label_L1801756410;
+    SP-=2; if((*SP).data.o != SP[1].data.o) /* IF_ACMPNE */ goto label_L906397479;
     __CN1_DEBUG_INFO(601);
     /* VarOp.assignFrom */ locals[2].type=CN1_TYPE_INVALID;    locals[2].data.o = locals[1].data.o;
 locals[2].type=CN1_TYPE_OBJECT;    __CN1_DEBUG_INFO(602);
-    if (get_field_com_codename1_ui_Font_ttf(locals[2].data.o)!=0) /* IFNE CustomJump */ goto label_L1710180594;
-    if (virtual_com_codename1_ui_Font_getFace___R_int(threadStateData, locals[2].data.o)!=virtual_com_codename1_ui_Font_getFace___R_int(threadStateData, __cn1ThisObject)) /* IF_ICMPNE CustomJump */ goto label_L1710180594;
-    if (virtual_com_codename1_ui_Font_getSize___R_int(threadStateData, locals[2].data.o)!=virtual_com_codename1_ui_Font_getSize___R_int(threadStateData, __cn1ThisObject)) /* IF_ICMPNE CustomJump */ goto label_L1710180594;
-    if (virtual_com_codename1_ui_Font_getStyle___R_int(threadStateData, locals[2].data.o)!=virtual_com_codename1_ui_Font_getStyle___R_int(threadStateData, __cn1ThisObject)) /* IF_ICMPNE CustomJump */ goto label_L1710180594;
+    if (get_field_com_codename1_ui_Font_ttf(locals[2].data.o)!=0) /* IFNE CustomJump */ goto label_L1918121287;
+    if (virtual_com_codename1_ui_Font_getFace___R_int(threadStateData, locals[2].data.o)!=virtual_com_codename1_ui_Font_getFace___R_int(threadStateData, __cn1ThisObject)) /* IF_ICMPNE CustomJump */ goto label_L1918121287;
+    if (virtual_com_codename1_ui_Font_getSize___R_int(threadStateData, locals[2].data.o)!=virtual_com_codename1_ui_Font_getSize___R_int(threadStateData, __cn1ThisObject)) /* IF_ICMPNE CustomJump */ goto label_L1918121287;
+    if (virtual_com_codename1_ui_Font_getStyle___R_int(threadStateData, locals[2].data.o)!=virtual_com_codename1_ui_Font_getStyle___R_int(threadStateData, __cn1ThisObject)) /* IF_ICMPNE CustomJump */ goto label_L1918121287;
     PUSH_INT(1); /* ICONST_1 */
-    goto label_L906397479;
+    goto label_L1032382137;
 
-label_L1710180594:
+label_L1918121287:
     PUSH_INT(0); /* ICONST_0 */
 
-label_L906397479:
+label_L1032382137:
     releaseForReturn(threadStateData, cn1LocalsBeginInThread); return SP[-1].data.i;
 
-label_L1801756410:
+label_L906397479:
     __CN1_DEBUG_INFO(604);
     releaseForReturn(threadStateData, cn1LocalsBeginInThread); return 0 /* ICONST_0 */;
 }
 
 
 JAVA_INT com_codename1_ui_Font_getAscent___R_int(CODENAME_ONE_THREAD_STATE, JAVA_OBJECT  __cn1ThisObject) {
-    DEFINE_INSTANCE_METHOD_STACK(2, 1, 0, 3085, 3109);
+    DEFINE_INSTANCE_METHOD_STACK(2, 1, 0, 3095, 3119);
     locals[0].data.o = __cn1ThisObject; locals[0].type = CN1_TYPE_OBJECT;     __CN1_DEBUG_INFO(612);
 
 {
@@ -900,7 +900,7 @@ JAVA_INT com_codename1_ui_Font_getDescent___R_int(CODENAME_ONE_THREAD_STATE, JAV
 
 
 JAVA_FLOAT com_codename1_ui_Font_getPixelSize___R_float(CODENAME_ONE_THREAD_STATE, JAVA_OBJECT  __cn1ThisObject) {
-    DEFINE_INSTANCE_METHOD_STACK(1, 1, 0, 3085, 3111);
+    DEFINE_INSTANCE_METHOD_STACK(1, 1, 0, 3095, 3121);
     locals[0].data.o = __cn1ThisObject; locals[0].type = CN1_TYPE_OBJECT;     __CN1_DEBUG_INFO(630);
 
 {
@@ -911,7 +911,7 @@ JAVA_FLOAT com_codename1_ui_Font_getPixelSize___R_float(CODENAME_ONE_THREAD_STAT
 
 
 JAVA_VOID com_codename1_ui_Font___CLINIT____(CODENAME_ONE_THREAD_STATE) {
-    DEFINE_METHOD_STACK(3, 0, 0, 3085, 863);
+    DEFINE_METHOD_STACK(3, 0, 0, 3095, 275);
     __CN1_DEBUG_INFO(69);
     PUSH_POINTER(__NEW_com_codename1_ui_Font(threadStateData)); /* NEW */
     BC_DUP(); /* DUP */

@@ -52,7 +52,7 @@ JAVA_OBJECT __NEW_java_io_OutputStreamWriter(CODENAME_ONE_THREAD_STATE) {
 
 
 JAVA_VOID java_io_OutputStreamWriter___INIT_____java_io_OutputStream(CODENAME_ONE_THREAD_STATE, JAVA_OBJECT  __cn1ThisObject, JAVA_OBJECT __cn1Arg1) {
-    DEFINE_INSTANCE_METHOD_STACK(2, 2, 0, 8550, 205);
+    DEFINE_INSTANCE_METHOD_STACK(2, 2, 0, 8560, 205);
     locals[0].data.o = __cn1ThisObject; locals[0].type = CN1_TYPE_OBJECT;     locals[1].data.o = __cn1Arg1;
     locals[1].type = CN1_TYPE_OBJECT;
     java_io_Writer___INIT____(threadStateData, __cn1ThisObject); 
@@ -64,7 +64,7 @@ JAVA_VOID java_io_OutputStreamWriter___INIT_____java_io_OutputStream(CODENAME_ON
 
 
 JAVA_VOID java_io_OutputStreamWriter___INIT_____java_io_OutputStream_java_lang_String(CODENAME_ONE_THREAD_STATE, JAVA_OBJECT  __cn1ThisObject, JAVA_OBJECT __cn1Arg1, JAVA_OBJECT __cn1Arg2) {
-    DEFINE_INSTANCE_METHOD_STACK(2, 3, 0, 8550, 205);
+    DEFINE_INSTANCE_METHOD_STACK(2, 3, 0, 8560, 205);
     locals[0].data.o = __cn1ThisObject; locals[0].type = CN1_TYPE_OBJECT;     locals[1].data.o = __cn1Arg1;
     locals[1].type = CN1_TYPE_OBJECT;
     locals[2].data.o = __cn1Arg2;
@@ -78,7 +78,7 @@ JAVA_VOID java_io_OutputStreamWriter___INIT_____java_io_OutputStream_java_lang_S
 
 
 JAVA_VOID java_io_OutputStreamWriter_close__(CODENAME_ONE_THREAD_STATE, JAVA_OBJECT  __cn1ThisObject) {
-    DEFINE_INSTANCE_METHOD_STACK(1, 1, 0, 8550, 933);
+    DEFINE_INSTANCE_METHOD_STACK(1, 1, 0, 8560, 300);
     locals[0].data.o = __cn1ThisObject; locals[0].type = CN1_TYPE_OBJECT;     virtual_java_io_OutputStream_close__(threadStateData, get_field_java_io_OutputStreamWriter_os(__cn1ThisObject)); 
     releaseForReturn(threadStateData, cn1LocalsBeginInThread); 
     return;
@@ -86,7 +86,7 @@ JAVA_VOID java_io_OutputStreamWriter_close__(CODENAME_ONE_THREAD_STATE, JAVA_OBJ
 
 
 JAVA_VOID java_io_OutputStreamWriter_flush__(CODENAME_ONE_THREAD_STATE, JAVA_OBJECT  __cn1ThisObject) {
-    DEFINE_INSTANCE_METHOD_STACK(1, 1, 0, 8550, 934);
+    DEFINE_INSTANCE_METHOD_STACK(1, 1, 0, 8560, 301);
     locals[0].data.o = __cn1ThisObject; locals[0].type = CN1_TYPE_OBJECT;     virtual_java_io_OutputStream_flush__(threadStateData, get_field_java_io_OutputStreamWriter_os(__cn1ThisObject)); 
     releaseForReturn(threadStateData, cn1LocalsBeginInThread); 
     return;
@@ -94,7 +94,7 @@ JAVA_VOID java_io_OutputStreamWriter_flush__(CODENAME_ONE_THREAD_STATE, JAVA_OBJ
 
 
 JAVA_VOID java_io_OutputStreamWriter_write___char_1ARRAY_int_int(CODENAME_ONE_THREAD_STATE, JAVA_OBJECT  __cn1ThisObject, JAVA_OBJECT __cn1Arg1, JAVA_INT __cn1Arg2, JAVA_INT __cn1Arg3) {
-    DEFINE_INSTANCE_METHOD_STACK(6, 4, 0, 8550, 939);
+    DEFINE_INSTANCE_METHOD_STACK(6, 4, 0, 8560, 307);
     locals[0].data.o = __cn1ThisObject; locals[0].type = CN1_TYPE_OBJECT;     locals[1].data.o = __cn1Arg1;
     locals[1].type = CN1_TYPE_OBJECT;
     JAVA_INT ilocals_2_ = __cn1Arg2;
@@ -110,7 +110,7 @@ JAVA_VOID java_io_OutputStreamWriter_write___char_1ARRAY_int_int(CODENAME_ONE_TH
 
 
 JAVA_VOID java_io_OutputStreamWriter_write___int(CODENAME_ONE_THREAD_STATE, JAVA_OBJECT  __cn1ThisObject, JAVA_INT __cn1Arg1) {
-    DEFINE_INSTANCE_METHOD_STACK(7, 2, 0, 8550, 939);
+    DEFINE_INSTANCE_METHOD_STACK(7, 2, 0, 8560, 307);
     locals[0].data.o = __cn1ThisObject; locals[0].type = CN1_TYPE_OBJECT;     JAVA_INT ilocals_1_ = __cn1Arg1;
     BC_ALOAD(0);
     PUSH_POINTER(__NEW_java_lang_String(threadStateData)); /* NEW */
@@ -134,7 +134,7 @@ JAVA_VOID java_io_OutputStreamWriter_write___int(CODENAME_ONE_THREAD_STATE, JAVA
 
 
 JAVA_VOID java_io_OutputStreamWriter_write___java_lang_String_int_int(CODENAME_ONE_THREAD_STATE, JAVA_OBJECT  __cn1ThisObject, JAVA_OBJECT __cn1Arg1, JAVA_INT __cn1Arg2, JAVA_INT __cn1Arg3) {
-    DEFINE_INSTANCE_METHOD_STACK(3, 4, 0, 8550, 939);
+    DEFINE_INSTANCE_METHOD_STACK(3, 4, 0, 8560, 307);
     locals[0].data.o = __cn1ThisObject; locals[0].type = CN1_TYPE_OBJECT;     locals[1].data.o = __cn1Arg1;
     locals[1].type = CN1_TYPE_OBJECT;
     JAVA_INT ilocals_2_ = __cn1Arg2;
@@ -155,7 +155,7 @@ label_L692998280:
 
 
 JAVA_VOID java_io_OutputStreamWriter_write___java_lang_CharSequence(CODENAME_ONE_THREAD_STATE, JAVA_OBJECT  __cn1ThisObject, JAVA_OBJECT __cn1Arg1) {
-    DEFINE_INSTANCE_METHOD_STACK(2, 2, 0, 8550, 939);
+    DEFINE_INSTANCE_METHOD_STACK(2, 2, 0, 8560, 307);
     locals[0].data.o = __cn1ThisObject; locals[0].type = CN1_TYPE_OBJECT;     locals[1].data.o = __cn1Arg1;
     locals[1].type = CN1_TYPE_OBJECT;
     BC_ALOAD(0);

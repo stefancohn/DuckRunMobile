@@ -11,8 +11,6 @@ extern void __GC_MARK_com_example_levels_LevelManager(CODENAME_ONE_THREAD_STATE,
 extern JAVA_OBJECT __NEW_com_example_levels_LevelManager(CODENAME_ONE_THREAD_STATE);
 extern JAVA_OBJECT __NEW_INSTANCE_com_example_levels_LevelManager(CODENAME_ONE_THREAD_STATE);
 
-JAVA_VOID com_example_levels_LevelManager___CLINIT____(CODENAME_ONE_THREAD_STATE);
-
 JAVA_VOID com_example_levels_LevelManager___INIT____(CODENAME_ONE_THREAD_STATE, JAVA_OBJECT  __cn1ThisObject);
 
 JAVA_VOID com_example_levels_LevelManager_importLevelSprite__(CODENAME_ONE_THREAD_STATE, JAVA_OBJECT  __cn1ThisObject);
@@ -26,6 +24,8 @@ JAVA_OBJECT com_example_levels_LevelManager_getCurrentLevel___R_com_example_leve
 JAVA_VOID com_example_levels_LevelManager_update__(CODENAME_ONE_THREAD_STATE, JAVA_OBJECT  __cn1ThisObject);
 
 JAVA_VOID com_example_levels_LevelManager_draw___com_codename1_ui_Graphics_int(CODENAME_ONE_THREAD_STATE, JAVA_OBJECT  __cn1ThisObject, JAVA_OBJECT __cn1Arg1, JAVA_INT __cn1Arg2);
+
+JAVA_VOID com_example_levels_LevelManager___CLINIT____(CODENAME_ONE_THREAD_STATE);
 
 JAVA_BOOLEAN com_example_levels_LevelManager_equals___java_lang_Object_R_boolean(CODENAME_ONE_THREAD_STATE, JAVA_OBJECT  __cn1ThisObject, JAVA_OBJECT __cn1Arg1);
 

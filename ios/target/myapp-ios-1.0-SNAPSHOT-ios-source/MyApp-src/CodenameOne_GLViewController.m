@@ -1875,7 +1875,8 @@ bool lockDrawing;
     [super viewDidAppear:animated];
     [self becomeFirstResponder];
     [self updateCanvas:animated];
-    //replaceViewDidAppear
+    [self addGoogleAds];
+
 }
 
 -(void)updateCanvas:(BOOL)animated {
@@ -2486,7 +2487,12 @@ BOOL prefersStatusBarHidden = NO;
     if(firstTime) {
         return;
     }
-    //WILL_ROTATE_TO_INTERFACE_MARKER
+    if(googleBannerView != nil) {
+        [googleBannerView removeFromSuperview];
+        [googleBannerView release];
+        googleBannerView = nil;
+    }
+
     if(editingComponent != nil) {
         if([editingComponent isKindOfClass:[UITextView class]]) {
             UITextView* v = (UITextView*)editingComponent;
@@ -2672,10 +2678,34 @@ BOOL prefersStatusBarHidden = NO;
     self.adView.frame = CGRectMake(centeredX, bottomAlignedY, size.width, size.height);
 #endif
     
-    //DID_ROTATE_FROM_INTERFACE_MARKER
+    [self addGoogleAds];
+
 }
 
-//INJECT_METHODS_MARKER
+-(void) addGoogleAds {
+    if(googleBannerView != nil) {
+        [googleBannerView removeFromSuperview];
+        [googleBannerView release];
+        googleBannerView = nil;
+    }
+    UIInterfaceOrientation orientation = [[UIApplication sharedApplication] statusBarOrientation];
+    bool isPortrait = (orientation == UIInterfaceOrientationPortrait || orientation == UIInterfaceOrientationPortraitUpsideDown);
+    GADAdSize adSize = kGADAdSizeSmartBannerPortrait;
+    if(!isPortrait) {
+        adSize = kGADAdSizeSmartBannerLandscape;
+    }
+    googleBannerView = [[GADBannerView alloc] initWithAdSize:adSize];
+    googleBannerView.adUnitID = @"ca-app-pub-9749305699775932/2037621036";
+    googleBannerView.rootViewController = self;
+    [self.view addSubview:googleBannerView];
+    GADRequest *request = [GADRequest request];
+    request.testDevices = [NSArray arrayWithObjects:@"97cfc76e5efbc6dfa7eb2e6857b613a0", nil];
+    [googleBannerView loadRequest:request];
+    CGRect r =CGRectMake([CodenameOne_GLViewController instance].view.bounds.size.width / 2 - googleBannerView.bounds.size.width / 2,
+                         [CodenameOne_GLViewController instance].view.bounds.size.height - googleBannerView.bounds.size.height,
+                         CGSizeFromGADAdSize(adSize).width, CGSizeFromGADAdSize(adSize).height);
+    [googleBannerView setFrame:r];
+}
 
 //static UIImage *img = nil;
 //static GLUIImage* glut = nil;

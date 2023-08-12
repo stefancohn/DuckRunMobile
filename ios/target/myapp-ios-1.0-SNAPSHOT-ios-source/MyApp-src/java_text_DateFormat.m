@@ -89,7 +89,7 @@ java_text_DateFormat___INIT____(threadStateData, o);
 
 
 JAVA_VOID java_text_DateFormat___INIT____(CODENAME_ONE_THREAD_STATE, JAVA_OBJECT  __cn1ThisObject) {
-    DEFINE_INSTANCE_METHOD_STACK(3, 1, 0, 3152, 205);
+    DEFINE_INSTANCE_METHOD_STACK(3, 1, 0, 3162, 205);
     locals[0].data.o = __cn1ThisObject; locals[0].type = CN1_TYPE_OBJECT;     /* CustomInvoke */java_text_DateFormat___INIT_____int_int(threadStateData, __cn1ThisObject, 3 /* ICONST_3 */, 3 /* ICONST_3 */); 
     releaseForReturn(threadStateData, cn1LocalsBeginInThread); 
     return;
@@ -97,7 +97,7 @@ JAVA_VOID java_text_DateFormat___INIT____(CODENAME_ONE_THREAD_STATE, JAVA_OBJECT
 
 
 JAVA_VOID java_text_DateFormat___INIT_____int_int(CODENAME_ONE_THREAD_STATE, JAVA_OBJECT  __cn1ThisObject, JAVA_INT __cn1Arg1, JAVA_INT __cn1Arg2) {
-    DEFINE_INSTANCE_METHOD_STACK(2, 3, 0, 3152, 205);
+    DEFINE_INSTANCE_METHOD_STACK(2, 3, 0, 3162, 205);
     locals[0].data.o = __cn1ThisObject; locals[0].type = CN1_TYPE_OBJECT;     JAVA_INT ilocals_1_ = __cn1Arg1;
     JAVA_INT ilocals_2_ = __cn1Arg2;
     java_text_Format___INIT____(threadStateData, __cn1ThisObject); 
@@ -109,7 +109,7 @@ JAVA_VOID java_text_DateFormat___INIT_____int_int(CODENAME_ONE_THREAD_STATE, JAV
 
 
 JAVA_OBJECT java_text_DateFormat_format___java_lang_Object_R_java_lang_String(CODENAME_ONE_THREAD_STATE, JAVA_OBJECT  __cn1ThisObject, JAVA_OBJECT __cn1Arg1) {
-    DEFINE_INSTANCE_METHOD_STACK(4, 2, 0, 3152, 907);
+    DEFINE_INSTANCE_METHOD_STACK(4, 2, 0, 3162, 272);
     locals[0].data.o = __cn1ThisObject; locals[0].type = CN1_TYPE_OBJECT;     locals[1].data.o = __cn1Arg1;
     locals[1].type = CN1_TYPE_OBJECT;
     BC_ALOAD(0);
@@ -126,7 +126,7 @@ JAVA_OBJECT java_text_DateFormat_format___java_lang_Object_R_java_lang_String(CO
 
 
 JAVA_OBJECT java_text_DateFormat_format___java_lang_Object_java_lang_StringBuffer_R_java_lang_String(CODENAME_ONE_THREAD_STATE, JAVA_OBJECT  __cn1ThisObject, JAVA_OBJECT __cn1Arg1, JAVA_OBJECT __cn1Arg2) {
-    DEFINE_INSTANCE_METHOD_STACK(3, 3, 0, 3152, 907);
+    DEFINE_INSTANCE_METHOD_STACK(3, 3, 0, 3162, 272);
     locals[0].data.o = __cn1ThisObject; locals[0].type = CN1_TYPE_OBJECT;     locals[1].data.o = __cn1Arg1;
     locals[1].type = CN1_TYPE_OBJECT;
     locals[2].data.o = __cn1Arg2;
@@ -139,7 +139,7 @@ JAVA_OBJECT java_text_DateFormat_format___java_lang_Object_java_lang_StringBuffe
 
 
 JAVA_OBJECT java_text_DateFormat_format___java_util_Date_R_java_lang_String(CODENAME_ONE_THREAD_STATE, JAVA_OBJECT  __cn1ThisObject, JAVA_OBJECT __cn1Arg1) {
-    DEFINE_INSTANCE_METHOD_STACK(3, 2, 0, 3152, 907);
+    DEFINE_INSTANCE_METHOD_STACK(3, 2, 0, 3162, 272);
     locals[0].data.o = __cn1ThisObject; locals[0].type = CN1_TYPE_OBJECT;     locals[1].data.o = __cn1Arg1;
     locals[1].type = CN1_TYPE_OBJECT;
     /* CustomInvoke */{ JAVA_OBJECT tmpResult = virtual_java_text_DateFormat_format___java_util_Date_java_lang_StringBuffer_R_java_lang_String(threadStateData, __cn1ThisObject, locals[1].data.o, JAVA_NULL /* ACONST_NULL */);
@@ -150,19 +150,19 @@ JAVA_OBJECT java_text_DateFormat_format___java_util_Date_R_java_lang_String(CODE
 
 
 JAVA_OBJECT java_text_DateFormat_parseObject___java_lang_String_R_java_lang_Object(CODENAME_ONE_THREAD_STATE, JAVA_OBJECT  __cn1ThisObject, JAVA_OBJECT __cn1Arg1) {
-    DEFINE_INSTANCE_METHOD_STACK(4, 2, 0, 3152, 3153);
+    DEFINE_INSTANCE_METHOD_STACK(4, 2, 0, 3162, 3163);
     locals[0].data.o = __cn1ThisObject; locals[0].type = CN1_TYPE_OBJECT;     locals[1].data.o = __cn1Arg1;
     locals[1].type = CN1_TYPE_OBJECT;
     PUSH_POINTER(__NEW_java_text_ParseException(threadStateData)); /* NEW */
     BC_DUP(); /* DUP */
-    /* CustomInvoke */java_text_ParseException___INIT_____java_lang_String_int(threadStateData, SP[-1].data.o, STRING_FROM_CONSTANT_POOL_OFFSET(1811), 0 /* ICONST_0 */);     SP -= 1;
+    /* CustomInvoke */java_text_ParseException___INIT_____java_lang_String_int(threadStateData, SP[-1].data.o, STRING_FROM_CONSTANT_POOL_OFFSET(1822), 0 /* ICONST_0 */);     SP -= 1;
     throwException(threadStateData, POP_OBJ());
     return 0;
 }
 
 
 JAVA_OBJECT java_text_DateFormat_parse___java_lang_String_R_java_util_Date(CODENAME_ONE_THREAD_STATE, JAVA_OBJECT  __cn1ThisObject, JAVA_OBJECT __cn1Arg1) {
-    DEFINE_INSTANCE_METHOD_STACK(2, 2, 0, 3152, 1074);
+    DEFINE_INSTANCE_METHOD_STACK(2, 2, 0, 3162, 443);
     locals[0].data.o = __cn1ThisObject; locals[0].type = CN1_TYPE_OBJECT;     locals[1].data.o = __cn1Arg1;
     locals[1].type = CN1_TYPE_OBJECT;
     /* CustomInvoke */{ JAVA_OBJECT tmpResult = virtual_java_text_DateFormat_parseObject___java_lang_String_R_java_lang_Object(threadStateData, __cn1ThisObject, locals[1].data.o);
@@ -199,7 +199,7 @@ JAVA_OBJECT java_text_DateFormat_getTimeInstance___int_R_java_text_DateFormat(CO
 
 JAVA_OBJECT java_text_DateFormat_getDateTimeInstance___int_int_R_java_text_DateFormat(CODENAME_ONE_THREAD_STATE, JAVA_INT __cn1Arg1, JAVA_INT __cn1Arg2) {
     __STATIC_INITIALIZER_java_text_DateFormat(threadStateData);
-    DEFINE_METHOD_STACK(4, 2, 0, 3152, 3156);
+    DEFINE_METHOD_STACK(4, 2, 0, 3162, 3166);
     JAVA_INT ilocals_0_ = __cn1Arg1;
     JAVA_INT ilocals_1_ = __cn1Arg2;
     PUSH_POINTER(__NEW_java_text_DateFormat(threadStateData)); /* NEW */
@@ -212,7 +212,7 @@ JAVA_OBJECT java_text_DateFormat_getDateTimeInstance___int_int_R_java_text_DateF
 
 JAVA_INT java_text_DateFormat_hashCode___R_int(CODENAME_ONE_THREAD_STATE, JAVA_OBJECT  __cn1ThisObject) {
     volatile JAVA_INT ilocals_2_ = 0; /* v2 */
-    DEFINE_INSTANCE_METHOD_STACK(2, 3, 0, 3152, 885);
+    DEFINE_INSTANCE_METHOD_STACK(2, 3, 0, 3162, 249);
     locals[0].data.o = __cn1ThisObject; locals[0].type = CN1_TYPE_OBJECT;     /* VarOp.assignFrom */     ilocals_2_ = 1 /* ICONST_1 */; 
     /* VarOp.assignFrom */ ilocals_2_=((31 * ilocals_2_) + get_field_java_text_DateFormat_dateStyle(__cn1ThisObject));
     /* VarOp.assignFrom */ ilocals_2_=((31 * ilocals_2_) + get_field_java_text_DateFormat_timeStyle(__cn1ThisObject));
@@ -224,7 +224,7 @@ JAVA_INT java_text_DateFormat_hashCode___R_int(CODENAME_ONE_THREAD_STATE, JAVA_O
 
 
 JAVA_BOOLEAN java_text_DateFormat_equals___java_lang_Object_R_boolean(CODENAME_ONE_THREAD_STATE, JAVA_OBJECT  __cn1ThisObject, JAVA_OBJECT __cn1Arg1) {
-    DEFINE_INSTANCE_METHOD_STACK(2, 3, 0, 3152, 880);
+    DEFINE_INSTANCE_METHOD_STACK(2, 3, 0, 3162, 244);
     locals[0].data.o = __cn1ThisObject; locals[0].type = CN1_TYPE_OBJECT;     locals[1].data.o = __cn1Arg1;
     locals[1].type = CN1_TYPE_OBJECT;
     if (__cn1ThisObject!=locals[1].data.o) /* IF_ACMPNE CustomJump */ goto label_L749486981;
@@ -258,7 +258,7 @@ label_L883020319:
 
 
 JAVA_OBJECT java_text_DateFormat_clone___R_java_lang_Object(CODENAME_ONE_THREAD_STATE, JAVA_OBJECT  __cn1ThisObject) {
-    DEFINE_INSTANCE_METHOD_STACK(4, 1, 0, 3152, 950);
+    DEFINE_INSTANCE_METHOD_STACK(4, 1, 0, 3162, 318);
     locals[0].data.o = __cn1ThisObject; locals[0].type = CN1_TYPE_OBJECT;     PUSH_POINTER(__NEW_java_text_DateFormat(threadStateData)); /* NEW */
     BC_DUP(); /* DUP */
     /* CustomInvoke */java_text_DateFormat___INIT_____int_int(threadStateData, SP[-1].data.o, get_field_java_text_DateFormat_dateStyle(__cn1ThisObject), get_field_java_text_DateFormat_timeStyle(__cn1ThisObject));     SP -= 1;
@@ -268,7 +268,7 @@ JAVA_OBJECT java_text_DateFormat_clone___R_java_lang_Object(CODENAME_ONE_THREAD_
 
 
 JAVA_VOID java_text_DateFormat___CLINIT____(CODENAME_ONE_THREAD_STATE) {
-    DEFINE_METHOD_STACK(1, 0, 0, 3152, 863);
+    DEFINE_METHOD_STACK(1, 0, 0, 3162, 275);
     set_static_java_text_DateFormat_NONE(threadStateData, -1 /* ICONST_M1 */);
     releaseForReturn(threadStateData, cn1LocalsBeginInThread); 
     return;

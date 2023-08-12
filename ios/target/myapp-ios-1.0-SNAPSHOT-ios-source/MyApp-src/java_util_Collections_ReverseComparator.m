@@ -42,7 +42,7 @@ java_util_Collections_ReverseComparator___INIT____(threadStateData, o);
 
 
 JAVA_VOID java_util_Collections_ReverseComparator___INIT____(CODENAME_ONE_THREAD_STATE, JAVA_OBJECT  __cn1ThisObject) {
-    DEFINE_INSTANCE_METHOD_STACK(1, 1, 0, 6344, 205);
+    DEFINE_INSTANCE_METHOD_STACK(1, 1, 0, 6354, 205);
     locals[0].data.o = __cn1ThisObject; locals[0].type = CN1_TYPE_OBJECT;     java_lang_Object___INIT____(threadStateData, __cn1ThisObject); 
     releaseForReturn(threadStateData, cn1LocalsBeginInThread); 
     return;
@@ -50,7 +50,7 @@ JAVA_VOID java_util_Collections_ReverseComparator___INIT____(CODENAME_ONE_THREAD
 
 
 JAVA_INT java_util_Collections_ReverseComparator_compare___java_lang_Object_java_lang_Object_R_int(CODENAME_ONE_THREAD_STATE, JAVA_OBJECT  __cn1ThisObject, JAVA_OBJECT __cn1Arg1, JAVA_OBJECT __cn1Arg2) {
-    DEFINE_INSTANCE_METHOD_STACK(2, 4, 0, 6344, 1035);
+    DEFINE_INSTANCE_METHOD_STACK(2, 4, 0, 6354, 404);
     locals[0].data.o = __cn1ThisObject; locals[0].type = CN1_TYPE_OBJECT;     locals[1].data.o = __cn1Arg1;
     locals[1].type = CN1_TYPE_OBJECT;
     locals[2].data.o = __cn1Arg2;
@@ -64,7 +64,7 @@ locals[3].type=CN1_TYPE_OBJECT;    /* CustomInvoke */{ JAVA_INT tmpResult = virt
 
 JAVA_OBJECT java_util_Collections_ReverseComparator_access$300___R_java_util_Collections_ReverseComparator(CODENAME_ONE_THREAD_STATE) {
     __STATIC_INITIALIZER_java_util_Collections_ReverseComparator(threadStateData);
-    DEFINE_METHOD_STACK(1, 0, 0, 6344, 1152);
+    DEFINE_METHOD_STACK(1, 0, 0, 6354, 524);
     PUSH_POINTER(get_static_java_util_Collections_ReverseComparator_INSTANCE(threadStateData));
     releaseForReturn(threadStateData, cn1LocalsBeginInThread); 
     return POP_OBJ();
@@ -72,7 +72,7 @@ JAVA_OBJECT java_util_Collections_ReverseComparator_access$300___R_java_util_Col
 
 
 JAVA_VOID java_util_Collections_ReverseComparator___CLINIT____(CODENAME_ONE_THREAD_STATE) {
-    DEFINE_METHOD_STACK(2, 0, 0, 6344, 863);
+    DEFINE_METHOD_STACK(2, 0, 0, 6354, 275);
     PUSH_POINTER(__NEW_java_util_Collections_ReverseComparator(threadStateData)); /* NEW */
     BC_DUP(); /* DUP */
     java_util_Collections_ReverseComparator___INIT____(threadStateData, SP[-1].data.o);     SP -= 1;

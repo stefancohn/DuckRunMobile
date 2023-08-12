@@ -83,7 +83,7 @@ JAVA_OBJECT __NEW_com_codename1_ui_geom_Geometry_BezierCurve(CODENAME_ONE_THREAD
 JAVA_VOID com_codename1_ui_geom_Geometry_BezierCurve___INIT_____double_1ARRAY(CODENAME_ONE_THREAD_STATE, JAVA_OBJECT  __cn1ThisObject, JAVA_OBJECT __cn1Arg1) {
     volatile JAVA_INT ilocals_2_ = 0; /* v2 */
     volatile JAVA_INT ilocals_3_ = 0; /* v3 */
-    DEFINE_INSTANCE_METHOD_STACK(5, 4, 0, 3757, 205);
+    DEFINE_INSTANCE_METHOD_STACK(5, 4, 0, 3767, 205);
     locals[0].data.o = __cn1ThisObject; locals[0].type = CN1_TYPE_OBJECT;     locals[1].data.o = __cn1Arg1;
     locals[1].type = CN1_TYPE_OBJECT;
     __CN1_DEBUG_INFO(65);
@@ -91,14 +91,14 @@ JAVA_VOID com_codename1_ui_geom_Geometry_BezierCurve___INIT_____double_1ARRAY(CO
     __CN1_DEBUG_INFO(66);
     /* VarOp.assignFrom */ ilocals_2_ = CN1_ARRAY_LENGTH(locals[1].data.o);
     __CN1_DEBUG_INFO(67);
-    if ((ilocals_2_ % 2 /* ICONST_2 */)==0) /* IFEQ CustomJump */ goto label_L347419231;
+    if ((ilocals_2_ % 2 /* ICONST_2 */)==0) /* IFEQ CustomJump */ goto label_L1825112984;
     __CN1_DEBUG_INFO(68);
     PUSH_POINTER(__NEW_java_lang_IllegalArgumentException(threadStateData)); /* NEW */
     BC_DUP(); /* DUP */
-    /* CustomInvoke */java_lang_IllegalArgumentException___INIT_____java_lang_String(threadStateData, SP[-1].data.o, STRING_FROM_CONSTANT_POOL_OFFSET(3758));     SP -= 1;
+    /* CustomInvoke */java_lang_IllegalArgumentException___INIT_____java_lang_String(threadStateData, SP[-1].data.o, STRING_FROM_CONSTANT_POOL_OFFSET(3768));     SP -= 1;
     throwException(threadStateData, POP_OBJ());
 
-label_L347419231:
+label_L1825112984:
     __CN1_DEBUG_INFO(70);
     BC_ALOAD(0);
     (*SP).type = CN1_TYPE_INT; /* ILOAD */ 
@@ -122,17 +122,17 @@ label_L347419231:
     __CN1_DEBUG_INFO(73);
     /* VarOp.assignFrom */     ilocals_3_ = 0 /* ICONST_0 */; 
 
-label_L1825112984:
-    if (ilocals_3_>=ilocals_2_) /* IF_ICMPGE CustomJump */ goto label_L322981749;
+label_L1030849096:
+    if (ilocals_3_>=ilocals_2_) /* IF_ICMPGE CustomJump */ goto label_L7040976;
     __CN1_DEBUG_INFO(74);
     CN1_SET_ARRAY_ELEMENT_DOUBLE(get_field_com_codename1_ui_geom_Geometry_BezierCurve_x(__cn1ThisObject), (ilocals_3_ / 2 /* ICONST_2 */), CN1_ARRAY_ELEMENT_DOUBLE(locals[1].data.o, ilocals_3_));
     __CN1_DEBUG_INFO(75);
     CN1_SET_ARRAY_ELEMENT_DOUBLE(get_field_com_codename1_ui_geom_Geometry_BezierCurve_y(__cn1ThisObject), (ilocals_3_ / 2 /* ICONST_2 */), CN1_ARRAY_ELEMENT_DOUBLE(locals[1].data.o, (ilocals_3_ + 1 /* ICONST_1 */)));
     __CN1_DEBUG_INFO(73);
     BC_IINC(3, 2);
-    goto label_L1825112984;
+    goto label_L1030849096;
 
-label_L322981749:
+label_L7040976:
     __CN1_DEBUG_INFO(78);
     releaseForReturn(threadStateData, cn1LocalsBeginInThread); 
     return;
@@ -140,24 +140,24 @@ label_L322981749:
 
 
 JAVA_OBJECT com_codename1_ui_geom_Geometry_BezierCurve_toString___R_java_lang_String(CODENAME_ONE_THREAD_STATE, JAVA_OBJECT  __cn1ThisObject) {
-    DEFINE_INSTANCE_METHOD_STACK(2, 1, 0, 3757, 899);
+    DEFINE_INSTANCE_METHOD_STACK(2, 1, 0, 3767, 263);
     locals[0].data.o = __cn1ThisObject; locals[0].type = CN1_TYPE_OBJECT;     __CN1_DEBUG_INFO(82);
     PUSH_POINTER(__NEW_java_lang_StringBuilder(threadStateData)); /* NEW */
     BC_DUP(); /* DUP */
     java_lang_StringBuilder___INIT____(threadStateData, SP[-1].data.o);     SP -= 1;
-    /* CustomInvoke */{ JAVA_OBJECT tmpResult = virtual_java_lang_StringBuilder_append___java_lang_String_R_java_lang_StringBuilder(threadStateData, SP[-1].data.o, STRING_FROM_CONSTANT_POOL_OFFSET(3759));
+    /* CustomInvoke */{ JAVA_OBJECT tmpResult = virtual_java_lang_StringBuilder_append___java_lang_String_R_java_lang_StringBuilder(threadStateData, SP[-1].data.o, STRING_FROM_CONSTANT_POOL_OFFSET(3769));
     SP[-1].data.o = tmpResult; SP[-1].type = CN1_TYPE_OBJECT; }
     /* CustomInvoke */PUSH_OBJ(java_util_Arrays_toString___double_1ARRAY_R_java_lang_String(threadStateData, get_field_com_codename1_ui_geom_Geometry_BezierCurve_x(__cn1ThisObject)));
     { JAVA_OBJECT tmpResult = virtual_java_lang_StringBuilder_append___java_lang_String_R_java_lang_StringBuilder(threadStateData, SP[-2].data.o, SP[-1].data.o);
     SP-=1;
     SP[-1].data.o = tmpResult; SP[-1].type = CN1_TYPE_OBJECT; }
-    /* CustomInvoke */{ JAVA_OBJECT tmpResult = virtual_java_lang_StringBuilder_append___java_lang_String_R_java_lang_StringBuilder(threadStateData, SP[-1].data.o, STRING_FROM_CONSTANT_POOL_OFFSET(3760));
+    /* CustomInvoke */{ JAVA_OBJECT tmpResult = virtual_java_lang_StringBuilder_append___java_lang_String_R_java_lang_StringBuilder(threadStateData, SP[-1].data.o, STRING_FROM_CONSTANT_POOL_OFFSET(3770));
     SP[-1].data.o = tmpResult; SP[-1].type = CN1_TYPE_OBJECT; }
     /* CustomInvoke */PUSH_OBJ(java_util_Arrays_toString___double_1ARRAY_R_java_lang_String(threadStateData, get_field_com_codename1_ui_geom_Geometry_BezierCurve_y(__cn1ThisObject)));
     { JAVA_OBJECT tmpResult = virtual_java_lang_StringBuilder_append___java_lang_String_R_java_lang_StringBuilder(threadStateData, SP[-2].data.o, SP[-1].data.o);
     SP-=1;
     SP[-1].data.o = tmpResult; SP[-1].type = CN1_TYPE_OBJECT; }
-    /* CustomInvoke */{ JAVA_OBJECT tmpResult = virtual_java_lang_StringBuilder_append___java_lang_String_R_java_lang_StringBuilder(threadStateData, SP[-1].data.o, STRING_FROM_CONSTANT_POOL_OFFSET(1291));
+    /* CustomInvoke */{ JAVA_OBJECT tmpResult = virtual_java_lang_StringBuilder_append___java_lang_String_R_java_lang_StringBuilder(threadStateData, SP[-1].data.o, STRING_FROM_CONSTANT_POOL_OFFSET(1303));
     SP[-1].data.o = tmpResult; SP[-1].type = CN1_TYPE_OBJECT; }
     { JAVA_OBJECT tmpResult = virtual_java_lang_StringBuilder_toString___R_java_lang_String(threadStateData, SP[-1].data.o);
     SP[-1].data.o = tmpResult; SP[-1].type = CN1_TYPE_OBJECT; }
@@ -167,9 +167,9 @@ JAVA_OBJECT com_codename1_ui_geom_Geometry_BezierCurve_toString___R_java_lang_St
 
 
 JAVA_OBJECT com_codename1_ui_geom_Geometry_BezierCurve_getEndPoint___R_com_codename1_ui_geom_Point2D(CODENAME_ONE_THREAD_STATE, JAVA_OBJECT  __cn1ThisObject) {
-    DEFINE_INSTANCE_METHOD_STACK(7, 1, 0, 3757, 3761);
+    DEFINE_INSTANCE_METHOD_STACK(7, 1, 0, 3767, 3771);
     locals[0].data.o = __cn1ThisObject; locals[0].type = CN1_TYPE_OBJECT;     __CN1_DEBUG_INFO(90);
-    if (get_field_com_codename1_ui_geom_Geometry_BezierCurve_endPoint(__cn1ThisObject)!=JAVA_NULL) /* IFNONNULL CustomJump */ goto label_L7040976;
+    if (get_field_com_codename1_ui_geom_Geometry_BezierCurve_endPoint(__cn1ThisObject)!=JAVA_NULL) /* IFNONNULL CustomJump */ goto label_L752572788;
     __CN1_DEBUG_INFO(91);
     BC_ALOAD(0);
     PUSH_POINTER(__NEW_com_codename1_ui_geom_Point2D(threadStateData)); /* NEW */
@@ -190,7 +190,7 @@ JAVA_OBJECT com_codename1_ui_geom_Geometry_BezierCurve_getEndPoint___R_com_coden
     set_field_com_codename1_ui_geom_Geometry_BezierCurve_endPoint(threadStateData, PEEK_OBJ(1), PEEK_OBJ(2));
     POP_MANY(2);
 
-label_L7040976:
+label_L752572788:
     __CN1_DEBUG_INFO(93);
 
 {
@@ -201,9 +201,9 @@ label_L7040976:
 
 
 JAVA_OBJECT com_codename1_ui_geom_Geometry_BezierCurve_getStartPoint___R_com_codename1_ui_geom_Point2D(CODENAME_ONE_THREAD_STATE, JAVA_OBJECT  __cn1ThisObject) {
-    DEFINE_INSTANCE_METHOD_STACK(7, 1, 0, 3757, 3762);
+    DEFINE_INSTANCE_METHOD_STACK(7, 1, 0, 3767, 3772);
     locals[0].data.o = __cn1ThisObject; locals[0].type = CN1_TYPE_OBJECT;     __CN1_DEBUG_INFO(101);
-    if (get_field_com_codename1_ui_geom_Geometry_BezierCurve_startPoint(__cn1ThisObject)!=JAVA_NULL) /* IFNONNULL CustomJump */ goto label_L1030849096;
+    if (get_field_com_codename1_ui_geom_Geometry_BezierCurve_startPoint(__cn1ThisObject)!=JAVA_NULL) /* IFNONNULL CustomJump */ goto label_L145382068;
     __CN1_DEBUG_INFO(102);
     BC_ALOAD(0);
     PUSH_POINTER(__NEW_com_codename1_ui_geom_Point2D(threadStateData)); /* NEW */
@@ -212,7 +212,7 @@ JAVA_OBJECT com_codename1_ui_geom_Geometry_BezierCurve_getStartPoint___R_com_cod
     set_field_com_codename1_ui_geom_Geometry_BezierCurve_startPoint(threadStateData, PEEK_OBJ(1), PEEK_OBJ(2));
     POP_MANY(2);
 
-label_L1030849096:
+label_L145382068:
     __CN1_DEBUG_INFO(104);
 
 {
@@ -223,7 +223,7 @@ label_L1030849096:
 
 
 JAVA_VOID com_codename1_ui_geom_Geometry_BezierCurve___INIT_____com_codename1_ui_geom_Geometry_BezierCurve(CODENAME_ONE_THREAD_STATE, JAVA_OBJECT  __cn1ThisObject, JAVA_OBJECT __cn1Arg1) {
-    DEFINE_INSTANCE_METHOD_STACK(5, 2, 0, 3757, 205);
+    DEFINE_INSTANCE_METHOD_STACK(5, 2, 0, 3767, 205);
     locals[0].data.o = __cn1ThisObject; locals[0].type = CN1_TYPE_OBJECT;     locals[1].data.o = __cn1Arg1;
     locals[1].type = CN1_TYPE_OBJECT;
     __CN1_DEBUG_INFO(112);
@@ -265,7 +265,7 @@ JAVA_VOID com_codename1_ui_geom_Geometry_BezierCurve___INIT_____com_codename1_ui
 
 
 JAVA_INT com_codename1_ui_geom_Geometry_BezierCurve_n___R_int(CODENAME_ONE_THREAD_STATE, JAVA_OBJECT  __cn1ThisObject) {
-    DEFINE_INSTANCE_METHOD_STACK(2, 1, 0, 3757, 3763);
+    DEFINE_INSTANCE_METHOD_STACK(2, 1, 0, 3767, 3773);
     locals[0].data.o = __cn1ThisObject; locals[0].type = CN1_TYPE_OBJECT;     __CN1_DEBUG_INFO(120);
 
 {
@@ -277,7 +277,7 @@ JAVA_INT com_codename1_ui_geom_Geometry_BezierCurve_n___R_int(CODENAME_ONE_THREA
 
 JAVA_DOUBLE com_codename1_ui_geom_Geometry_BezierCurve_cx___int_R_double(CODENAME_ONE_THREAD_STATE, JAVA_OBJECT  __cn1ThisObject, JAVA_INT __cn1Arg1) {
     volatile JAVA_INT ilocals_1_ = 0; /* j */
-    DEFINE_INSTANCE_METHOD_STACK(5, 2, 0, 3757, 3764);
+    DEFINE_INSTANCE_METHOD_STACK(5, 2, 0, 3767, 3774);
     locals[0].data.o = __cn1ThisObject; locals[0].type = CN1_TYPE_OBJECT;     ilocals_1_ = __cn1Arg1;
     __CN1_DEBUG_INFO(129);
     /* CustomInvoke */PUSH_INT(com_codename1_ui_geom_Geometry_access$000___int_R_int(threadStateData, virtual_com_codename1_ui_geom_Geometry_BezierCurve_n___R_int(threadStateData, __cn1ThisObject)));
@@ -302,11 +302,11 @@ JAVA_DOUBLE com_codename1_ui_geom_Geometry_BezierCurve_cx___int_R_double(CODENAM
 JAVA_DOUBLE com_codename1_ui_geom_Geometry_BezierCurve_sumFactorX___int_int_R_double(CODENAME_ONE_THREAD_STATE, JAVA_OBJECT  __cn1ThisObject, JAVA_INT __cn1Arg1, JAVA_INT __cn1Arg2) {
     volatile JAVA_INT ilocals_1_ = 0; /* j */
     volatile JAVA_INT ilocals_2_ = 0; /* i */
-    DEFINE_INSTANCE_METHOD_STACK(6, 3, 0, 3757, 3765);
+    DEFINE_INSTANCE_METHOD_STACK(6, 3, 0, 3767, 3775);
     locals[0].data.o = __cn1ThisObject; locals[0].type = CN1_TYPE_OBJECT;     ilocals_1_ = __cn1Arg1;
     ilocals_2_ = __cn1Arg2;
     __CN1_DEBUG_INFO(140);
-    if (ilocals_2_!=0) /* IFNE CustomJump */ goto label_L752572788;
+    if (ilocals_2_!=0) /* IFNE CustomJump */ goto label_L1407492510;
     __CN1_DEBUG_INFO(141);
     /* CustomInvoke */PUSH_DOUBLE(com_codename1_util_MathUtil_pow___double_double_R_double(threadStateData, -1.0, ((JAVA_DOUBLE)ilocals_1_)));
     PUSH_POINTER(get_field_com_codename1_ui_geom_Geometry_BezierCurve_x(__cn1ThisObject));
@@ -321,7 +321,7 @@ JAVA_DOUBLE com_codename1_ui_geom_Geometry_BezierCurve_sumFactorX___int_int_R_do
     releaseForReturn(threadStateData, cn1LocalsBeginInThread); 
     return POP_DOUBLE();
 
-label_L752572788:
+label_L1407492510:
     __CN1_DEBUG_INFO(143);
     /* CustomInvoke */PUSH_DOUBLE(com_codename1_util_MathUtil_pow___double_double_R_double(threadStateData, -1.0, ((JAVA_DOUBLE)(ilocals_2_ + ilocals_1_))));
     PUSH_POINTER(get_field_com_codename1_ui_geom_Geometry_BezierCurve_x(__cn1ThisObject));
@@ -348,7 +348,7 @@ label_L752572788:
 
 JAVA_DOUBLE com_codename1_ui_geom_Geometry_BezierCurve_cy___int_R_double(CODENAME_ONE_THREAD_STATE, JAVA_OBJECT  __cn1ThisObject, JAVA_INT __cn1Arg1) {
     volatile JAVA_INT ilocals_1_ = 0; /* j */
-    DEFINE_INSTANCE_METHOD_STACK(5, 2, 0, 3757, 3766);
+    DEFINE_INSTANCE_METHOD_STACK(5, 2, 0, 3767, 3776);
     locals[0].data.o = __cn1ThisObject; locals[0].type = CN1_TYPE_OBJECT;     ilocals_1_ = __cn1Arg1;
     __CN1_DEBUG_INFO(153);
     /* CustomInvoke */PUSH_INT(com_codename1_ui_geom_Geometry_access$000___int_R_int(threadStateData, virtual_com_codename1_ui_geom_Geometry_BezierCurve_n___R_int(threadStateData, __cn1ThisObject)));
@@ -373,11 +373,11 @@ JAVA_DOUBLE com_codename1_ui_geom_Geometry_BezierCurve_cy___int_R_double(CODENAM
 JAVA_DOUBLE com_codename1_ui_geom_Geometry_BezierCurve_sumFactorY___int_int_R_double(CODENAME_ONE_THREAD_STATE, JAVA_OBJECT  __cn1ThisObject, JAVA_INT __cn1Arg1, JAVA_INT __cn1Arg2) {
     volatile JAVA_INT ilocals_1_ = 0; /* j */
     volatile JAVA_INT ilocals_2_ = 0; /* i */
-    DEFINE_INSTANCE_METHOD_STACK(6, 3, 0, 3757, 3767);
+    DEFINE_INSTANCE_METHOD_STACK(6, 3, 0, 3767, 3777);
     locals[0].data.o = __cn1ThisObject; locals[0].type = CN1_TYPE_OBJECT;     ilocals_1_ = __cn1Arg1;
     ilocals_2_ = __cn1Arg2;
     __CN1_DEBUG_INFO(164);
-    if (ilocals_2_!=0) /* IFNE CustomJump */ goto label_L145382068;
+    if (ilocals_2_!=0) /* IFNE CustomJump */ goto label_L1647708776;
     __CN1_DEBUG_INFO(165);
     /* CustomInvoke */PUSH_DOUBLE(com_codename1_util_MathUtil_pow___double_double_R_double(threadStateData, -1.0, ((JAVA_DOUBLE)ilocals_1_)));
     PUSH_POINTER(get_field_com_codename1_ui_geom_Geometry_BezierCurve_y(__cn1ThisObject));
@@ -392,7 +392,7 @@ JAVA_DOUBLE com_codename1_ui_geom_Geometry_BezierCurve_sumFactorY___int_int_R_do
     releaseForReturn(threadStateData, cn1LocalsBeginInThread); 
     return POP_DOUBLE();
 
-label_L145382068:
+label_L1647708776:
     __CN1_DEBUG_INFO(167);
     /* CustomInvoke */PUSH_DOUBLE(com_codename1_util_MathUtil_pow___double_double_R_double(threadStateData, -1.0, ((JAVA_DOUBLE)(ilocals_2_ + ilocals_1_))));
     PUSH_POINTER(get_field_com_codename1_ui_geom_Geometry_BezierCurve_y(__cn1ThisObject));
@@ -419,7 +419,7 @@ label_L145382068:
 
 JAVA_DOUBLE com_codename1_ui_geom_Geometry_BezierCurve_x___double_R_double(CODENAME_ONE_THREAD_STATE, JAVA_OBJECT  __cn1ThisObject, JAVA_DOUBLE __cn1Arg1) {
     volatile JAVA_DOUBLE dlocals_1_ = 0; /* t */
-    DEFINE_INSTANCE_METHOD_STACK(4, 3, 0, 3757, 1288);
+    DEFINE_INSTANCE_METHOD_STACK(4, 3, 0, 3767, 1300);
     locals[0].data.o = __cn1ThisObject; locals[0].type = CN1_TYPE_OBJECT;     dlocals_1_ = __cn1Arg1;
     __CN1_DEBUG_INFO(177);
 
@@ -433,11 +433,11 @@ JAVA_DOUBLE com_codename1_ui_geom_Geometry_BezierCurve_x___double_R_double(CODEN
 JAVA_DOUBLE com_codename1_ui_geom_Geometry_BezierCurve_termX___double_int_R_double(CODENAME_ONE_THREAD_STATE, JAVA_OBJECT  __cn1ThisObject, JAVA_DOUBLE __cn1Arg1, JAVA_INT __cn1Arg2) {
     volatile JAVA_DOUBLE dlocals_1_ = 0; /* t */
     volatile JAVA_INT ilocals_3_ = 0; /* j */
-    DEFINE_INSTANCE_METHOD_STACK(7, 4, 0, 3757, 3768);
+    DEFINE_INSTANCE_METHOD_STACK(7, 4, 0, 3767, 3778);
     locals[0].data.o = __cn1ThisObject; locals[0].type = CN1_TYPE_OBJECT;     dlocals_1_ = __cn1Arg1;
     ilocals_3_ = __cn1Arg2;
     __CN1_DEBUG_INFO(185);
-    if (ilocals_3_!=0) /* IFNE CustomJump */ goto label_L1407492510;
+    if (ilocals_3_!=0) /* IFNE CustomJump */ goto label_L340852643;
     __CN1_DEBUG_INFO(186);
 
 {
@@ -445,7 +445,7 @@ JAVA_DOUBLE com_codename1_ui_geom_Geometry_BezierCurve_termX___double_int_R_doub
     releaseForReturn(threadStateData, cn1LocalsBeginInThread); return ___returnValue;
 }
 
-label_L1407492510:
+label_L340852643:
     __CN1_DEBUG_INFO(188);
     /* CustomInvoke */{ JAVA_DOUBLE tmpResult = virtual_com_codename1_ui_geom_Geometry_BezierCurve_cx___int_R_double(threadStateData, __cn1ThisObject, ilocals_3_);
     PUSH_DOUBLE(tmpResult); }
@@ -460,19 +460,19 @@ label_L1407492510:
 
 
 JAVA_OBJECT com_codename1_ui_geom_Geometry_BezierCurve_getDerivativeCoefficientsX___R_double_1ARRAY(CODENAME_ONE_THREAD_STATE, JAVA_OBJECT  __cn1ThisObject) {
-    DEFINE_INSTANCE_METHOD_STACK(7, 1, 0, 3757, 3769);
+    DEFINE_INSTANCE_METHOD_STACK(7, 1, 0, 3767, 3779);
     locals[0].data.o = __cn1ThisObject; locals[0].type = CN1_TYPE_OBJECT;     __CN1_DEBUG_INFO(196);
     { JAVA_INT tmpResult = virtual_com_codename1_ui_geom_Geometry_BezierCurve_n___R_int(threadStateData, __cn1ThisObject);
     PUSH_INT(tmpResult); }
     SP--;
     switch((*SP).data.i) {
-        case 1: goto label_L1647708776;
-        case 2: goto label_L340852643;
-        case 3: goto label_L1316317287;
-        default: goto label_L954976358;
+        case 1: goto label_L1316317287;
+        case 2: goto label_L954976358;
+        case 3: goto label_L1792864345;
+        default: goto label_L2036508486;
     }
 
-label_L1647708776:
+label_L1316317287:
     __CN1_DEBUG_INFO(198);
     PUSH_INT(3); /* ICONST_3 */
     PUSH_OBJ(allocArray(threadStateData, POP_INT(), &class_array1__JAVA_DOUBLE, sizeof(JAVA_ARRAY_DOUBLE), 1));
@@ -495,7 +495,7 @@ label_L1647708776:
     releaseForReturn(threadStateData, cn1LocalsBeginInThread); 
     return POP_OBJ();
 
-label_L340852643:
+label_L954976358:
     __CN1_DEBUG_INFO(200);
     PUSH_INT(3); /* ICONST_3 */
     PUSH_OBJ(allocArray(threadStateData, POP_INT(), &class_array1__JAVA_DOUBLE, sizeof(JAVA_ARRAY_DOUBLE), 1));
@@ -521,7 +521,7 @@ label_L340852643:
     releaseForReturn(threadStateData, cn1LocalsBeginInThread); 
     return POP_OBJ();
 
-label_L1316317287:
+label_L1792864345:
     __CN1_DEBUG_INFO(202);
     PUSH_INT(3); /* ICONST_3 */
     PUSH_OBJ(allocArray(threadStateData, POP_INT(), &class_array1__JAVA_DOUBLE, sizeof(JAVA_ARRAY_DOUBLE), 1));
@@ -550,30 +550,30 @@ label_L1316317287:
     releaseForReturn(threadStateData, cn1LocalsBeginInThread); 
     return POP_OBJ();
 
-label_L954976358:
+label_L2036508486:
     __CN1_DEBUG_INFO(204);
     PUSH_POINTER(__NEW_java_lang_IllegalArgumentException(threadStateData)); /* NEW */
     BC_DUP(); /* DUP */
-    /* CustomInvoke */java_lang_IllegalArgumentException___INIT_____java_lang_String(threadStateData, SP[-1].data.o, STRING_FROM_CONSTANT_POOL_OFFSET(3770));     SP -= 1;
+    /* CustomInvoke */java_lang_IllegalArgumentException___INIT_____java_lang_String(threadStateData, SP[-1].data.o, STRING_FROM_CONSTANT_POOL_OFFSET(3780));     SP -= 1;
     throwException(threadStateData, POP_OBJ());
     return 0;
 }
 
 
 JAVA_OBJECT com_codename1_ui_geom_Geometry_BezierCurve_getDerivativeCoefficientsY___R_double_1ARRAY(CODENAME_ONE_THREAD_STATE, JAVA_OBJECT  __cn1ThisObject) {
-    DEFINE_INSTANCE_METHOD_STACK(7, 1, 0, 3757, 3771);
+    DEFINE_INSTANCE_METHOD_STACK(7, 1, 0, 3767, 3781);
     locals[0].data.o = __cn1ThisObject; locals[0].type = CN1_TYPE_OBJECT;     __CN1_DEBUG_INFO(212);
     { JAVA_INT tmpResult = virtual_com_codename1_ui_geom_Geometry_BezierCurve_n___R_int(threadStateData, __cn1ThisObject);
     PUSH_INT(tmpResult); }
     SP--;
     switch((*SP).data.i) {
-        case 1: goto label_L1792864345;
-        case 2: goto label_L2036508486;
-        case 3: goto label_L473030237;
-        default: goto label_L2055183685;
+        case 1: goto label_L473030237;
+        case 2: goto label_L2055183685;
+        case 3: goto label_L1999434859;
+        default: goto label_L462959967;
     }
 
-label_L1792864345:
+label_L473030237:
     __CN1_DEBUG_INFO(214);
     PUSH_INT(3); /* ICONST_3 */
     PUSH_OBJ(allocArray(threadStateData, POP_INT(), &class_array1__JAVA_DOUBLE, sizeof(JAVA_ARRAY_DOUBLE), 1));
@@ -596,7 +596,7 @@ label_L1792864345:
     releaseForReturn(threadStateData, cn1LocalsBeginInThread); 
     return POP_OBJ();
 
-label_L2036508486:
+label_L2055183685:
     __CN1_DEBUG_INFO(216);
     PUSH_INT(3); /* ICONST_3 */
     PUSH_OBJ(allocArray(threadStateData, POP_INT(), &class_array1__JAVA_DOUBLE, sizeof(JAVA_ARRAY_DOUBLE), 1));
@@ -622,7 +622,7 @@ label_L2036508486:
     releaseForReturn(threadStateData, cn1LocalsBeginInThread); 
     return POP_OBJ();
 
-label_L473030237:
+label_L1999434859:
     __CN1_DEBUG_INFO(218);
     PUSH_INT(3); /* ICONST_3 */
     PUSH_OBJ(allocArray(threadStateData, POP_INT(), &class_array1__JAVA_DOUBLE, sizeof(JAVA_ARRAY_DOUBLE), 1));
@@ -651,11 +651,11 @@ label_L473030237:
     releaseForReturn(threadStateData, cn1LocalsBeginInThread); 
     return POP_OBJ();
 
-label_L2055183685:
+label_L462959967:
     __CN1_DEBUG_INFO(220);
     PUSH_POINTER(__NEW_java_lang_IllegalArgumentException(threadStateData)); /* NEW */
     BC_DUP(); /* DUP */
-    /* CustomInvoke */java_lang_IllegalArgumentException___INIT_____java_lang_String(threadStateData, SP[-1].data.o, STRING_FROM_CONSTANT_POOL_OFFSET(3770));     SP -= 1;
+    /* CustomInvoke */java_lang_IllegalArgumentException___INIT_____java_lang_String(threadStateData, SP[-1].data.o, STRING_FROM_CONSTANT_POOL_OFFSET(3780));     SP -= 1;
     throwException(threadStateData, POP_OBJ());
     return 0;
 }
@@ -663,7 +663,7 @@ label_L2055183685:
 
 JAVA_DOUBLE com_codename1_ui_geom_Geometry_BezierCurve_y___double_R_double(CODENAME_ONE_THREAD_STATE, JAVA_OBJECT  __cn1ThisObject, JAVA_DOUBLE __cn1Arg1) {
     volatile JAVA_DOUBLE dlocals_1_ = 0; /* t */
-    DEFINE_INSTANCE_METHOD_STACK(4, 3, 0, 3757, 3772);
+    DEFINE_INSTANCE_METHOD_STACK(4, 3, 0, 3767, 3782);
     locals[0].data.o = __cn1ThisObject; locals[0].type = CN1_TYPE_OBJECT;     dlocals_1_ = __cn1Arg1;
     __CN1_DEBUG_INFO(232);
 
@@ -677,11 +677,11 @@ JAVA_DOUBLE com_codename1_ui_geom_Geometry_BezierCurve_y___double_R_double(CODEN
 JAVA_DOUBLE com_codename1_ui_geom_Geometry_BezierCurve_termY___double_int_R_double(CODENAME_ONE_THREAD_STATE, JAVA_OBJECT  __cn1ThisObject, JAVA_DOUBLE __cn1Arg1, JAVA_INT __cn1Arg2) {
     volatile JAVA_DOUBLE dlocals_1_ = 0; /* t */
     volatile JAVA_INT ilocals_3_ = 0; /* j */
-    DEFINE_INSTANCE_METHOD_STACK(7, 4, 0, 3757, 3773);
+    DEFINE_INSTANCE_METHOD_STACK(7, 4, 0, 3767, 3783);
     locals[0].data.o = __cn1ThisObject; locals[0].type = CN1_TYPE_OBJECT;     dlocals_1_ = __cn1Arg1;
     ilocals_3_ = __cn1Arg2;
     __CN1_DEBUG_INFO(240);
-    if (ilocals_3_!=0) /* IFNE CustomJump */ goto label_L1999434859;
+    if (ilocals_3_!=0) /* IFNE CustomJump */ goto label_L155833159;
     __CN1_DEBUG_INFO(241);
 
 {
@@ -689,7 +689,7 @@ JAVA_DOUBLE com_codename1_ui_geom_Geometry_BezierCurve_termY___double_int_R_doub
     releaseForReturn(threadStateData, cn1LocalsBeginInThread); return ___returnValue;
 }
 
-label_L1999434859:
+label_L155833159:
     __CN1_DEBUG_INFO(243);
     /* CustomInvoke */{ JAVA_DOUBLE tmpResult = virtual_com_codename1_ui_geom_Geometry_BezierCurve_cy___int_R_double(threadStateData, __cn1ThisObject, ilocals_3_);
     PUSH_DOUBLE(tmpResult); }
@@ -705,7 +705,7 @@ label_L1999434859:
 
 JAVA_INT com_codename1_ui_geom_Geometry_BezierCurve_findTValuesForX___double_double_1ARRAY_R_int(CODENAME_ONE_THREAD_STATE, JAVA_OBJECT  __cn1ThisObject, JAVA_DOUBLE __cn1Arg1, JAVA_OBJECT __cn1Arg2) {
     volatile JAVA_DOUBLE dlocals_1_ = 0; /* x */
-    DEFINE_INSTANCE_METHOD_STACK(7, 4, 0, 3757, 3774);
+    DEFINE_INSTANCE_METHOD_STACK(7, 4, 0, 3767, 3784);
     locals[0].data.o = __cn1ThisObject; locals[0].type = CN1_TYPE_OBJECT;     dlocals_1_ = __cn1Arg1;
     locals[3].data.o = __cn1Arg2;
     locals[3].type = CN1_TYPE_OBJECT;
@@ -714,12 +714,12 @@ JAVA_INT com_codename1_ui_geom_Geometry_BezierCurve_findTValuesForX___double_dou
     PUSH_INT(tmpResult); }
     SP--;
     switch((*SP).data.i) {
-        case 2: goto label_L462959967;
-        case 3: goto label_L155833159;
-        default: goto label_L257614494;
+        case 2: goto label_L257614494;
+        case 3: goto label_L533053618;
+        default: goto label_L1168981208;
     }
 
-label_L462959967:
+label_L257614494:
     __CN1_DEBUG_INFO(256);
     PUSH_INT(4); /* ICONST_4 */
     PUSH_OBJ(allocArray(threadStateData, POP_INT(), &class_array1__JAVA_DOUBLE, sizeof(JAVA_ARRAY_DOUBLE), 1));
@@ -754,7 +754,7 @@ label_L462959967:
     SP[-1].data.i = tmpResult; SP[-1].type = CN1_TYPE_INT; }
     releaseForReturn(threadStateData, cn1LocalsBeginInThread); return SP[-1].data.i;
 
-label_L155833159:
+label_L533053618:
     __CN1_DEBUG_INFO(259);
     PUSH_INT(4); /* ICONST_4 */
     PUSH_OBJ(allocArray(threadStateData, POP_INT(), &class_array1__JAVA_DOUBLE, sizeof(JAVA_ARRAY_DOUBLE), 1));
@@ -790,11 +790,11 @@ label_L155833159:
     SP[-1].data.i = tmpResult; SP[-1].type = CN1_TYPE_INT; }
     releaseForReturn(threadStateData, cn1LocalsBeginInThread); return SP[-1].data.i;
 
-label_L257614494:
+label_L1168981208:
     __CN1_DEBUG_INFO(262);
     PUSH_POINTER(__NEW_java_lang_IllegalArgumentException(threadStateData)); /* NEW */
     BC_DUP(); /* DUP */
-    /* CustomInvoke */java_lang_IllegalArgumentException___INIT_____java_lang_String(threadStateData, SP[-1].data.o, STRING_FROM_CONSTANT_POOL_OFFSET(3775));     SP -= 1;
+    /* CustomInvoke */java_lang_IllegalArgumentException___INIT_____java_lang_String(threadStateData, SP[-1].data.o, STRING_FROM_CONSTANT_POOL_OFFSET(3785));     SP -= 1;
     throwException(threadStateData, POP_OBJ());
     return 0;
 }
@@ -802,7 +802,7 @@ label_L257614494:
 
 JAVA_INT com_codename1_ui_geom_Geometry_BezierCurve_findTValuesForY___double_double_1ARRAY_R_int(CODENAME_ONE_THREAD_STATE, JAVA_OBJECT  __cn1ThisObject, JAVA_DOUBLE __cn1Arg1, JAVA_OBJECT __cn1Arg2) {
     volatile JAVA_DOUBLE dlocals_1_ = 0; /* y */
-    DEFINE_INSTANCE_METHOD_STACK(7, 4, 0, 3757, 3776);
+    DEFINE_INSTANCE_METHOD_STACK(7, 4, 0, 3767, 3786);
     locals[0].data.o = __cn1ThisObject; locals[0].type = CN1_TYPE_OBJECT;     dlocals_1_ = __cn1Arg1;
     locals[3].data.o = __cn1Arg2;
     locals[3].type = CN1_TYPE_OBJECT;
@@ -811,12 +811,12 @@ JAVA_INT com_codename1_ui_geom_Geometry_BezierCurve_findTValuesForY___double_dou
     PUSH_INT(tmpResult); }
     SP--;
     switch((*SP).data.i) {
-        case 2: goto label_L533053618;
-        case 3: goto label_L1168981208;
-        default: goto label_L45681857;
+        case 2: goto label_L45681857;
+        case 3: goto label_L1513046042;
+        default: goto label_L1809767357;
     }
 
-label_L533053618:
+label_L45681857:
     __CN1_DEBUG_INFO(276);
     PUSH_INT(3); /* ICONST_3 */
     PUSH_OBJ(allocArray(threadStateData, POP_INT(), &class_array1__JAVA_DOUBLE, sizeof(JAVA_ARRAY_DOUBLE), 1));
@@ -846,7 +846,7 @@ label_L533053618:
     SP[-1].data.i = tmpResult; SP[-1].type = CN1_TYPE_INT; }
     releaseForReturn(threadStateData, cn1LocalsBeginInThread); return SP[-1].data.i;
 
-label_L1168981208:
+label_L1513046042:
     __CN1_DEBUG_INFO(279);
     PUSH_INT(4); /* ICONST_4 */
     PUSH_OBJ(allocArray(threadStateData, POP_INT(), &class_array1__JAVA_DOUBLE, sizeof(JAVA_ARRAY_DOUBLE), 1));
@@ -882,11 +882,11 @@ label_L1168981208:
     SP[-1].data.i = tmpResult; SP[-1].type = CN1_TYPE_INT; }
     releaseForReturn(threadStateData, cn1LocalsBeginInThread); return SP[-1].data.i;
 
-label_L45681857:
+label_L1809767357:
     __CN1_DEBUG_INFO(282);
     PUSH_POINTER(__NEW_java_lang_IllegalArgumentException(threadStateData)); /* NEW */
     BC_DUP(); /* DUP */
-    /* CustomInvoke */java_lang_IllegalArgumentException___INIT_____java_lang_String(threadStateData, SP[-1].data.o, STRING_FROM_CONSTANT_POOL_OFFSET(3775));     SP -= 1;
+    /* CustomInvoke */java_lang_IllegalArgumentException___INIT_____java_lang_String(threadStateData, SP[-1].data.o, STRING_FROM_CONSTANT_POOL_OFFSET(3785));     SP -= 1;
     throwException(threadStateData, POP_OBJ());
     return 0;
 }
@@ -896,7 +896,7 @@ JAVA_OBJECT com_codename1_ui_geom_Geometry_BezierCurve_reverse___R_com_codename1
     volatile JAVA_INT ilocals_1_ = 0; /* v1 */
     volatile JAVA_INT ilocals_3_ = 0; /* v3 */
     volatile JAVA_INT ilocals_4_ = 0; /* v4 */
-    DEFINE_INSTANCE_METHOD_STACK(4, 5, 0, 3757, 1011);
+    DEFINE_INSTANCE_METHOD_STACK(4, 5, 0, 3767, 380);
     locals[0].data.o = __cn1ThisObject; locals[0].type = CN1_TYPE_OBJECT;     __CN1_DEBUG_INFO(292);
     /* VarOp.assignFrom */ ilocals_1_ = CN1_ARRAY_LENGTH(get_field_com_codename1_ui_geom_Geometry_BezierCurve_x(__cn1ThisObject));
     __CN1_DEBUG_INFO(293);
@@ -912,8 +912,8 @@ JAVA_OBJECT com_codename1_ui_geom_Geometry_BezierCurve_reverse___R_com_codename1
     __CN1_DEBUG_INFO(295);
     /* VarOp.assignFrom */ ilocals_4_=(ilocals_1_ - 1 /* ICONST_1 */);
 
-label_L1809767357:
-    if (ilocals_4_<0) /* IFLT CustomJump */ goto label_L1513046042;
+label_L221033168:
+    if (ilocals_4_<0) /* IFLT CustomJump */ goto label_L1203331554;
     __CN1_DEBUG_INFO(296);
     BC_ALOAD(2);
     (*SP).type = CN1_TYPE_INT; /* ILOAD */ 
@@ -946,9 +946,9 @@ label_L1809767357:
     DOUBLE_ARRAY_LOOKUP((JAVA_ARRAY)SP[-3].data.o, SP[-2].data.i) = SP[-1].data.d; SP -= 3;
     __CN1_DEBUG_INFO(295);
     BC_IINC(4, -1);
-    goto label_L1809767357;
+    goto label_L221033168;
 
-label_L1513046042:
+label_L1203331554:
     __CN1_DEBUG_INFO(300);
     PUSH_POINTER(__NEW_com_codename1_ui_geom_Geometry_BezierCurve(threadStateData)); /* NEW */
     BC_DUP(); /* DUP */
@@ -960,7 +960,7 @@ label_L1513046042:
 
 JAVA_VOID com_codename1_ui_geom_Geometry_BezierCurve_segment___double_java_util_List(CODENAME_ONE_THREAD_STATE, JAVA_OBJECT  __cn1ThisObject, JAVA_DOUBLE __cn1Arg1, JAVA_OBJECT __cn1Arg2) {
     volatile JAVA_DOUBLE dlocals_1_ = 0; /* t */
-    DEFINE_INSTANCE_METHOD_STACK(6, 4, 0, 3757, 3777);
+    DEFINE_INSTANCE_METHOD_STACK(6, 4, 0, 3767, 3787);
     locals[0].data.o = __cn1ThisObject; locals[0].type = CN1_TYPE_OBJECT;     dlocals_1_ = __cn1Arg1;
     locals[3].data.o = __cn1Arg2;
     locals[3].type = CN1_TYPE_OBJECT;
@@ -992,45 +992,45 @@ JAVA_VOID com_codename1_ui_geom_Geometry_BezierCurve_segment___double_java_util_
 
 JAVA_VOID com_codename1_ui_geom_Geometry_BezierCurve_addToPath___com_codename1_ui_geom_GeneralPath_boolean(CODENAME_ONE_THREAD_STATE, JAVA_OBJECT  __cn1ThisObject, JAVA_OBJECT __cn1Arg1, JAVA_BOOLEAN __cn1Arg2) {
     volatile JAVA_INT ilocals_2_ = 0; /* join */
-    DEFINE_INSTANCE_METHOD_STACK(13, 3, 0, 3757, 3690);
+    DEFINE_INSTANCE_METHOD_STACK(13, 3, 0, 3767, 3700);
     locals[0].data.o = __cn1ThisObject; locals[0].type = CN1_TYPE_OBJECT;     locals[1].data.o = __cn1Arg1;
     locals[1].type = CN1_TYPE_OBJECT;
     ilocals_2_ = __cn1Arg2;
     __CN1_DEBUG_INFO(320);
-    if (virtual_com_codename1_ui_geom_Geometry_BezierCurve_n___R_int(threadStateData, __cn1ThisObject)!=2 /* ICONST_2 */) /* IF_ICMPNE CustomJump */ goto label_L1203331554;
+    if (virtual_com_codename1_ui_geom_Geometry_BezierCurve_n___R_int(threadStateData, __cn1ThisObject)!=2 /* ICONST_2 */) /* IF_ICMPNE CustomJump */ goto label_L757271807;
     __CN1_DEBUG_INFO(321);
-    if (ilocals_2_!=0) /* IFNE CustomJump */ goto label_L221033168;
+    if (ilocals_2_!=0) /* IFNE CustomJump */ goto label_L817707477;
     /* CustomInvoke */virtual_com_codename1_ui_geom_GeneralPath_moveTo___double_double(threadStateData, locals[1].data.o, CN1_ARRAY_ELEMENT_DOUBLE(get_field_com_codename1_ui_geom_Geometry_BezierCurve_x(__cn1ThisObject), 0 /* ICONST_0 */), CN1_ARRAY_ELEMENT_DOUBLE(get_field_com_codename1_ui_geom_Geometry_BezierCurve_y(__cn1ThisObject), 0 /* ICONST_0 */)); 
-
-label_L221033168:
-    __CN1_DEBUG_INFO(322);
-    /* CustomInvoke */virtual_com_codename1_ui_geom_GeneralPath_quadTo___double_double_double_double(threadStateData, locals[1].data.o, CN1_ARRAY_ELEMENT_DOUBLE(get_field_com_codename1_ui_geom_Geometry_BezierCurve_x(__cn1ThisObject), 1 /* ICONST_1 */), CN1_ARRAY_ELEMENT_DOUBLE(get_field_com_codename1_ui_geom_Geometry_BezierCurve_y(__cn1ThisObject), 1 /* ICONST_1 */), CN1_ARRAY_ELEMENT_DOUBLE(get_field_com_codename1_ui_geom_Geometry_BezierCurve_x(__cn1ThisObject), 2 /* ICONST_2 */), CN1_ARRAY_ELEMENT_DOUBLE(get_field_com_codename1_ui_geom_Geometry_BezierCurve_y(__cn1ThisObject), 2 /* ICONST_2 */)); 
-    goto label_L757271807;
-
-label_L1203331554:
-    __CN1_DEBUG_INFO(323);
-    if (virtual_com_codename1_ui_geom_Geometry_BezierCurve_n___R_int(threadStateData, __cn1ThisObject)!=3 /* ICONST_3 */) /* IF_ICMPNE CustomJump */ goto label_L817707477;
-    __CN1_DEBUG_INFO(324);
-    if (ilocals_2_!=0) /* IFNE CustomJump */ goto label_L1015539793;
-    /* CustomInvoke */virtual_com_codename1_ui_geom_GeneralPath_moveTo___double_double(threadStateData, locals[1].data.o, CN1_ARRAY_ELEMENT_DOUBLE(get_field_com_codename1_ui_geom_Geometry_BezierCurve_x(__cn1ThisObject), 0 /* ICONST_0 */), CN1_ARRAY_ELEMENT_DOUBLE(get_field_com_codename1_ui_geom_Geometry_BezierCurve_y(__cn1ThisObject), 0 /* ICONST_0 */)); 
-
-label_L1015539793:
-    __CN1_DEBUG_INFO(325);
-    /* CustomInvoke */virtual_com_codename1_ui_geom_GeneralPath_curveTo___double_double_double_double_double_double(threadStateData, locals[1].data.o, CN1_ARRAY_ELEMENT_DOUBLE(get_field_com_codename1_ui_geom_Geometry_BezierCurve_x(__cn1ThisObject), 1 /* ICONST_1 */), CN1_ARRAY_ELEMENT_DOUBLE(get_field_com_codename1_ui_geom_Geometry_BezierCurve_y(__cn1ThisObject), 1 /* ICONST_1 */), CN1_ARRAY_ELEMENT_DOUBLE(get_field_com_codename1_ui_geom_Geometry_BezierCurve_x(__cn1ThisObject), 2 /* ICONST_2 */), CN1_ARRAY_ELEMENT_DOUBLE(get_field_com_codename1_ui_geom_Geometry_BezierCurve_y(__cn1ThisObject), 2 /* ICONST_2 */), CN1_ARRAY_ELEMENT_DOUBLE(get_field_com_codename1_ui_geom_Geometry_BezierCurve_x(__cn1ThisObject), 3 /* ICONST_3 */), CN1_ARRAY_ELEMENT_DOUBLE(get_field_com_codename1_ui_geom_Geometry_BezierCurve_y(__cn1ThisObject), 3 /* ICONST_3 */)); 
-    goto label_L757271807;
 
 label_L817707477:
-    __CN1_DEBUG_INFO(326);
-    if (virtual_com_codename1_ui_geom_Geometry_BezierCurve_n___R_int(threadStateData, __cn1ThisObject)!=1 /* ICONST_1 */) /* IF_ICMPNE CustomJump */ goto label_L757271807;
-    __CN1_DEBUG_INFO(327);
-    if (ilocals_2_==0) /* IFEQ CustomJump */ goto label_L1414883107;
+    __CN1_DEBUG_INFO(322);
+    /* CustomInvoke */virtual_com_codename1_ui_geom_GeneralPath_quadTo___double_double_double_double(threadStateData, locals[1].data.o, CN1_ARRAY_ELEMENT_DOUBLE(get_field_com_codename1_ui_geom_Geometry_BezierCurve_x(__cn1ThisObject), 1 /* ICONST_1 */), CN1_ARRAY_ELEMENT_DOUBLE(get_field_com_codename1_ui_geom_Geometry_BezierCurve_y(__cn1ThisObject), 1 /* ICONST_1 */), CN1_ARRAY_ELEMENT_DOUBLE(get_field_com_codename1_ui_geom_Geometry_BezierCurve_x(__cn1ThisObject), 2 /* ICONST_2 */), CN1_ARRAY_ELEMENT_DOUBLE(get_field_com_codename1_ui_geom_Geometry_BezierCurve_y(__cn1ThisObject), 2 /* ICONST_2 */)); 
+    goto label_L1015539793;
+
+label_L757271807:
+    __CN1_DEBUG_INFO(323);
+    if (virtual_com_codename1_ui_geom_Geometry_BezierCurve_n___R_int(threadStateData, __cn1ThisObject)!=3 /* ICONST_3 */) /* IF_ICMPNE CustomJump */ goto label_L1414883107;
+    __CN1_DEBUG_INFO(324);
+    if (ilocals_2_!=0) /* IFNE CustomJump */ goto label_L1629805986;
     /* CustomInvoke */virtual_com_codename1_ui_geom_GeneralPath_moveTo___double_double(threadStateData, locals[1].data.o, CN1_ARRAY_ELEMENT_DOUBLE(get_field_com_codename1_ui_geom_Geometry_BezierCurve_x(__cn1ThisObject), 0 /* ICONST_0 */), CN1_ARRAY_ELEMENT_DOUBLE(get_field_com_codename1_ui_geom_Geometry_BezierCurve_y(__cn1ThisObject), 0 /* ICONST_0 */)); 
 
+label_L1629805986:
+    __CN1_DEBUG_INFO(325);
+    /* CustomInvoke */virtual_com_codename1_ui_geom_GeneralPath_curveTo___double_double_double_double_double_double(threadStateData, locals[1].data.o, CN1_ARRAY_ELEMENT_DOUBLE(get_field_com_codename1_ui_geom_Geometry_BezierCurve_x(__cn1ThisObject), 1 /* ICONST_1 */), CN1_ARRAY_ELEMENT_DOUBLE(get_field_com_codename1_ui_geom_Geometry_BezierCurve_y(__cn1ThisObject), 1 /* ICONST_1 */), CN1_ARRAY_ELEMENT_DOUBLE(get_field_com_codename1_ui_geom_Geometry_BezierCurve_x(__cn1ThisObject), 2 /* ICONST_2 */), CN1_ARRAY_ELEMENT_DOUBLE(get_field_com_codename1_ui_geom_Geometry_BezierCurve_y(__cn1ThisObject), 2 /* ICONST_2 */), CN1_ARRAY_ELEMENT_DOUBLE(get_field_com_codename1_ui_geom_Geometry_BezierCurve_x(__cn1ThisObject), 3 /* ICONST_3 */), CN1_ARRAY_ELEMENT_DOUBLE(get_field_com_codename1_ui_geom_Geometry_BezierCurve_y(__cn1ThisObject), 3 /* ICONST_3 */)); 
+    goto label_L1015539793;
+
 label_L1414883107:
+    __CN1_DEBUG_INFO(326);
+    if (virtual_com_codename1_ui_geom_Geometry_BezierCurve_n___R_int(threadStateData, __cn1ThisObject)!=1 /* ICONST_1 */) /* IF_ICMPNE CustomJump */ goto label_L1015539793;
+    __CN1_DEBUG_INFO(327);
+    if (ilocals_2_==0) /* IFEQ CustomJump */ goto label_L940454850;
+    /* CustomInvoke */virtual_com_codename1_ui_geom_GeneralPath_moveTo___double_double(threadStateData, locals[1].data.o, CN1_ARRAY_ELEMENT_DOUBLE(get_field_com_codename1_ui_geom_Geometry_BezierCurve_x(__cn1ThisObject), 0 /* ICONST_0 */), CN1_ARRAY_ELEMENT_DOUBLE(get_field_com_codename1_ui_geom_Geometry_BezierCurve_y(__cn1ThisObject), 0 /* ICONST_0 */)); 
+
+label_L940454850:
     __CN1_DEBUG_INFO(328);
     /* CustomInvoke */virtual_com_codename1_ui_geom_GeneralPath_lineTo___double_double(threadStateData, locals[1].data.o, CN1_ARRAY_ELEMENT_DOUBLE(get_field_com_codename1_ui_geom_Geometry_BezierCurve_x(__cn1ThisObject), 1 /* ICONST_1 */), CN1_ARRAY_ELEMENT_DOUBLE(get_field_com_codename1_ui_geom_Geometry_BezierCurve_y(__cn1ThisObject), 1 /* ICONST_1 */)); 
 
-label_L757271807:
+label_L1015539793:
     __CN1_DEBUG_INFO(330);
     releaseForReturn(threadStateData, cn1LocalsBeginInThread); 
     return;
@@ -1057,9 +1057,9 @@ JAVA_OBJECT com_codename1_ui_geom_Geometry_BezierCurve_getBoundingRect___R_com_c
     volatile JAVA_DOUBLE dlocals_14_ = 0; /* v14 */
     volatile JAVA_DOUBLE dlocals_16_ = 0; /* v16 */
     volatile JAVA_DOUBLE dlocals_18_ = 0; /* v18 */
-    DEFINE_INSTANCE_METHOD_STACK(13, 20, 0, 3757, 3780);
+    DEFINE_INSTANCE_METHOD_STACK(13, 20, 0, 3767, 3790);
     locals[0].data.o = __cn1ThisObject; locals[0].type = CN1_TYPE_OBJECT;     __CN1_DEBUG_INFO(395);
-    if (get_field_com_codename1_ui_geom_Geometry_BezierCurve_boundingRect(__cn1ThisObject)!=JAVA_NULL) /* IFNONNULL CustomJump */ goto label_L689471568;
+    if (get_field_com_codename1_ui_geom_Geometry_BezierCurve_boundingRect(__cn1ThisObject)!=JAVA_NULL) /* IFNONNULL CustomJump */ goto label_L1542792163;
     __CN1_DEBUG_INFO(396);
     /* VarOp.assignFrom */ locals[1].data.o = virtual_com_codename1_ui_geom_Geometry_BezierCurve_getStartPoint___R_com_codename1_ui_geom_Point2D(threadStateData, __cn1ThisObject);locals[1].type=CN1_TYPE_OBJECT;    __CN1_DEBUG_INFO(397);
     /* VarOp.assignFrom */ locals[2].data.o = virtual_com_codename1_ui_geom_Geometry_BezierCurve_getEndPoint___R_com_codename1_ui_geom_Point2D(threadStateData, __cn1ThisObject);locals[2].type=CN1_TYPE_OBJECT;    __CN1_DEBUG_INFO(398);
@@ -1081,22 +1081,22 @@ JAVA_OBJECT com_codename1_ui_geom_Geometry_BezierCurve_getBoundingRect___R_com_c
     PUSH_INT(tmpResult); }
     SP--;
     switch((*SP).data.i) {
-        case 0: goto label_L1058155740;
-        case 1: goto label_L1542792163;
-        case 2: goto label_L148018969;
-        case 3: goto label_L148018969;
-        default: goto label_L1696963667;
+        case 0: goto label_L148018969;
+        case 1: goto label_L1696963667;
+        case 2: goto label_L1275013351;
+        case 3: goto label_L1275013351;
+        default: goto label_L971497536;
     }
 
-label_L1542792163:
+label_L1696963667:
     __CN1_DEBUG_INFO(406);
-    goto label_L1275013351;
-
-label_L1058155740:
-    __CN1_DEBUG_INFO(408);
-    goto label_L1275013351;
+    goto label_L630313530;
 
 label_L148018969:
+    __CN1_DEBUG_INFO(408);
+    goto label_L630313530;
+
+label_L1275013351:
     __CN1_DEBUG_INFO(412);
     { JAVA_OBJECT tmpResult = virtual_com_codename1_ui_geom_Geometry_BezierCurve_getDerivativeCoefficientsX___R_double_1ARRAY(threadStateData, __cn1ThisObject);
     PUSH_OBJ(tmpResult); }
@@ -1106,21 +1106,21 @@ label_L148018969:
     SP[-1].data.i = tmpResult; SP[-1].type = CN1_TYPE_INT; }
     BC_ISTORE(3);
     __CN1_DEBUG_INFO(413);
-    if (ilocals_3_<=0) /* IFLE CustomJump */ goto label_L971497536;
+    if (ilocals_3_<=0) /* IFLE CustomJump */ goto label_L1813976543;
     __CN1_DEBUG_INFO(414);
     /* VarOp.assignFrom */     ilocals_13_ = 0 /* ICONST_0 */; 
 
-label_L1586868395:
-    if (ilocals_13_>=ilocals_3_) /* IF_ICMPGE CustomJump */ goto label_L971497536;
+label_L1943910383:
+    if (ilocals_13_>=ilocals_3_) /* IF_ICMPGE CustomJump */ goto label_L1813976543;
     __CN1_DEBUG_INFO(415);
     /* VarOp.assignFrom */ dlocals_14_=CN1_ARRAY_ELEMENT_DOUBLE(locals[4].data.o, ilocals_13_);
     __CN1_DEBUG_INFO(416);
-    if (CN1_CMP_EXPR(dlocals_14_, 0 /* DCONST_0 */)<0) /* IFLT CustomJump */ goto label_L630313530;
-    if (CN1_CMP_EXPR(dlocals_14_, 1 /* DCONST_1 */)<=0) /* IFLE CustomJump */ goto label_L1813976543;
+    if (CN1_CMP_EXPR(dlocals_14_, 0 /* DCONST_0 */)<0) /* IFLT CustomJump */ goto label_L1586868395;
+    if (CN1_CMP_EXPR(dlocals_14_, 1 /* DCONST_1 */)<=0) /* IFLE CustomJump */ goto label_L1484177113;
     __CN1_DEBUG_INFO(417);
-    goto label_L630313530;
+    goto label_L1586868395;
 
-label_L1813976543:
+label_L1484177113:
     __CN1_DEBUG_INFO(419);
     /* VarOp.assignFrom */ dlocals_16_ = /* CustomInvoke */virtual_com_codename1_ui_geom_Geometry_BezierCurve_x___double_R_double(threadStateData, __cn1ThisObject, dlocals_14_);
     __CN1_DEBUG_INFO(420);
@@ -1134,12 +1134,12 @@ label_L1813976543:
     __CN1_DEBUG_INFO(424);
     /* VarOp.assignFrom */ dlocals_11_ = /* CustomInvoke */java_lang_Math_max___double_double_R_double(threadStateData, dlocals_11_, dlocals_18_);
 
-label_L630313530:
+label_L1586868395:
     __CN1_DEBUG_INFO(414);
     BC_IINC(13, 1);
-    goto label_L1586868395;
+    goto label_L1943910383;
 
-label_L971497536:
+label_L1813976543:
     __CN1_DEBUG_INFO(428);
     { JAVA_OBJECT tmpResult = virtual_com_codename1_ui_geom_Geometry_BezierCurve_getDerivativeCoefficientsY___R_double_1ARRAY(threadStateData, __cn1ThisObject);
     PUSH_OBJ(tmpResult); }
@@ -1149,21 +1149,21 @@ label_L971497536:
     SP[-1].data.i = tmpResult; SP[-1].type = CN1_TYPE_INT; }
     BC_ISTORE(3);
     __CN1_DEBUG_INFO(429);
-    if (ilocals_3_<=0) /* IFLE CustomJump */ goto label_L1275013351;
+    if (ilocals_3_<=0) /* IFLE CustomJump */ goto label_L630313530;
     __CN1_DEBUG_INFO(430);
     /* VarOp.assignFrom */     ilocals_13_ = 0 /* ICONST_0 */; 
 
-label_L337314074:
-    if (ilocals_13_>=ilocals_3_) /* IF_ICMPGE CustomJump */ goto label_L1484177113;
+label_L1728726840:
+    if (ilocals_13_>=ilocals_3_) /* IF_ICMPGE CustomJump */ goto label_L1744369062;
     __CN1_DEBUG_INFO(431);
     /* VarOp.assignFrom */ dlocals_14_=CN1_ARRAY_ELEMENT_DOUBLE(locals[4].data.o, ilocals_13_);
     __CN1_DEBUG_INFO(432);
-    if (CN1_CMP_EXPR(dlocals_14_, 0 /* DCONST_0 */)<0) /* IFLT CustomJump */ goto label_L1943910383;
-    if (CN1_CMP_EXPR(dlocals_14_, 1 /* DCONST_1 */)<=0) /* IFLE CustomJump */ goto label_L1744369062;
+    if (CN1_CMP_EXPR(dlocals_14_, 0 /* DCONST_0 */)<0) /* IFLT CustomJump */ goto label_L337314074;
+    if (CN1_CMP_EXPR(dlocals_14_, 1 /* DCONST_1 */)<=0) /* IFLE CustomJump */ goto label_L2037835062;
     __CN1_DEBUG_INFO(433);
-    goto label_L1943910383;
+    goto label_L337314074;
 
-label_L1744369062:
+label_L2037835062:
     __CN1_DEBUG_INFO(435);
     /* VarOp.assignFrom */ dlocals_16_ = /* CustomInvoke */virtual_com_codename1_ui_geom_Geometry_BezierCurve_x___double_R_double(threadStateData, __cn1ThisObject, dlocals_14_);
     __CN1_DEBUG_INFO(436);
@@ -1177,22 +1177,22 @@ label_L1744369062:
     __CN1_DEBUG_INFO(440);
     /* VarOp.assignFrom */ dlocals_11_ = /* CustomInvoke */java_lang_Math_max___double_double_R_double(threadStateData, dlocals_11_, dlocals_18_);
 
-label_L1943910383:
+label_L337314074:
     __CN1_DEBUG_INFO(430);
     BC_IINC(13, 1);
-    goto label_L337314074;
+    goto label_L1728726840;
 
-label_L1484177113:
-    goto label_L1275013351;
+label_L1744369062:
+    goto label_L630313530;
 
-label_L1696963667:
+label_L971497536:
     __CN1_DEBUG_INFO(446);
     PUSH_POINTER(__NEW_java_lang_IllegalArgumentException(threadStateData)); /* NEW */
     BC_DUP(); /* DUP */
-    /* CustomInvoke */java_lang_IllegalArgumentException___INIT_____java_lang_String(threadStateData, SP[-1].data.o, STRING_FROM_CONSTANT_POOL_OFFSET(3781));     SP -= 1;
+    /* CustomInvoke */java_lang_IllegalArgumentException___INIT_____java_lang_String(threadStateData, SP[-1].data.o, STRING_FROM_CONSTANT_POOL_OFFSET(3791));     SP -= 1;
     throwException(threadStateData, POP_OBJ());
 
-label_L1275013351:
+label_L630313530:
     __CN1_DEBUG_INFO(452);
     BC_ALOAD(0);
     PUSH_POINTER(__NEW_com_codename1_ui_geom_Rectangle2D(threadStateData)); /* NEW */
@@ -1201,7 +1201,7 @@ label_L1275013351:
     set_field_com_codename1_ui_geom_Geometry_BezierCurve_boundingRect(threadStateData, PEEK_OBJ(1), PEEK_OBJ(2));
     POP_MANY(2);
 
-label_L689471568:
+label_L1542792163:
     __CN1_DEBUG_INFO(454);
 
 {
@@ -1213,7 +1213,7 @@ label_L689471568:
 
 JAVA_OBJECT com_codename1_ui_geom_Geometry_BezierCurve_segment___double_R_com_codename1_ui_geom_Geometry_BezierCurve(CODENAME_ONE_THREAD_STATE, JAVA_OBJECT  __cn1ThisObject, JAVA_DOUBLE __cn1Arg1) {
     volatile JAVA_DOUBLE dlocals_1_ = 0; /* t */
-    DEFINE_INSTANCE_METHOD_STACK(5, 3, 0, 3757, 3777);
+    DEFINE_INSTANCE_METHOD_STACK(5, 3, 0, 3767, 3787);
     locals[0].data.o = __cn1ThisObject; locals[0].type = CN1_TYPE_OBJECT;     dlocals_1_ = __cn1Arg1;
     __CN1_DEBUG_INFO(464);
     /* CustomInvoke */{ JAVA_OBJECT tmpResult = com_codename1_ui_geom_Geometry_BezierCurve_segment___double_double_R_com_codename1_ui_geom_Geometry_BezierCurve(threadStateData, __cn1ThisObject, 0 /* DCONST_0 */, dlocals_1_);
@@ -1231,7 +1231,7 @@ JAVA_INT com_codename1_ui_geom_Geometry_BezierCurve_findTValuesForX___double_dou
     volatile JAVA_DOUBLE dlocals_5_ = 0; /* maxY */
     volatile JAVA_INT ilocals_8_ = 0; /* v8 */
     volatile JAVA_INT ilocals_9_ = 0; /* v9 */
-    DEFINE_INSTANCE_METHOD_STACK(4, 13, 0, 3757, 3774);
+    DEFINE_INSTANCE_METHOD_STACK(4, 13, 0, 3767, 3784);
     locals[0].data.o = __cn1ThisObject; locals[0].type = CN1_TYPE_OBJECT;     dlocals_1_ = __cn1Arg1;
     dlocals_3_ = __cn1Arg2;
     dlocals_5_ = __cn1Arg3;
@@ -1244,31 +1244,31 @@ JAVA_INT com_codename1_ui_geom_Geometry_BezierCurve_findTValuesForX___double_dou
     __CN1_DEBUG_INFO(482);
     /* VarOp.assignFrom */     ilocals_10_ = 0 /* ICONST_0 */; 
 
-label_L195035534:
-    if (ilocals_10_>=ilocals_8_) /* IF_ICMPGE CustomJump */ goto label_L2037835062;
+label_L1882695296:
+    if (ilocals_10_>=ilocals_8_) /* IF_ICMPGE CustomJump */ goto label_L1207950266;
     __CN1_DEBUG_INFO(483);
-    if (CN1_CMP_EXPR(CN1_ARRAY_ELEMENT_DOUBLE(locals[7].data.o, ilocals_10_), 0 /* DCONST_0 */)<0) /* IFLT CustomJump */ goto label_L1728726840;
-    if (CN1_CMP_EXPR(CN1_ARRAY_ELEMENT_DOUBLE(locals[7].data.o, ilocals_10_), 1 /* DCONST_1 */)<=0) /* IFLE CustomJump */ goto label_L1207950266;
+    if (CN1_CMP_EXPR(CN1_ARRAY_ELEMENT_DOUBLE(locals[7].data.o, ilocals_10_), 0 /* DCONST_0 */)<0) /* IFLT CustomJump */ goto label_L195035534;
+    if (CN1_CMP_EXPR(CN1_ARRAY_ELEMENT_DOUBLE(locals[7].data.o, ilocals_10_), 1 /* DCONST_1 */)<=0) /* IFLE CustomJump */ goto label_L1160845977;
     __CN1_DEBUG_INFO(484);
-    goto label_L1728726840;
+    goto label_L195035534;
 
-label_L1207950266:
+label_L1160845977:
     __CN1_DEBUG_INFO(486);
     /* VarOp.assignFrom */ dlocals_11_ = /* CustomInvoke */virtual_com_codename1_ui_geom_Geometry_BezierCurve_y___double_R_double(threadStateData, __cn1ThisObject, CN1_ARRAY_ELEMENT_DOUBLE(locals[7].data.o, ilocals_10_));
     __CN1_DEBUG_INFO(487);
-    if (CN1_CMP_EXPR(dlocals_11_, dlocals_3_)<0) /* IFLT CustomJump */ goto label_L1728726840;
-    if (CN1_CMP_EXPR(dlocals_11_, dlocals_5_)>0) /* IFGT CustomJump */ goto label_L1728726840;
+    if (CN1_CMP_EXPR(dlocals_11_, dlocals_3_)<0) /* IFLT CustomJump */ goto label_L195035534;
+    if (CN1_CMP_EXPR(dlocals_11_, dlocals_5_)>0) /* IFGT CustomJump */ goto label_L195035534;
     __CN1_DEBUG_INFO(488);
     CN1_SET_ARRAY_ELEMENT_DOUBLE(locals[7].data.o, ilocals_9_, CN1_ARRAY_ELEMENT_DOUBLE(locals[7].data.o, ilocals_10_));
     __CN1_DEBUG_INFO(489);
     BC_IINC(9, 1);
 
-label_L1728726840:
+label_L195035534:
     __CN1_DEBUG_INFO(482);
     BC_IINC(10, 1);
-    goto label_L195035534;
+    goto label_L1882695296;
 
-label_L2037835062:
+label_L1207950266:
     __CN1_DEBUG_INFO(492);
 
 {
@@ -1286,7 +1286,7 @@ JAVA_INT com_codename1_ui_geom_Geometry_BezierCurve_findTValuesForY___double_dou
     volatile JAVA_DOUBLE dlocals_5_ = 0; /* maxX */
     volatile JAVA_INT ilocals_8_ = 0; /* v8 */
     volatile JAVA_INT ilocals_9_ = 0; /* v9 */
-    DEFINE_INSTANCE_METHOD_STACK(4, 13, 0, 3757, 3776);
+    DEFINE_INSTANCE_METHOD_STACK(4, 13, 0, 3767, 3786);
     locals[0].data.o = __cn1ThisObject; locals[0].type = CN1_TYPE_OBJECT;     dlocals_1_ = __cn1Arg1;
     dlocals_3_ = __cn1Arg2;
     dlocals_5_ = __cn1Arg3;
@@ -1299,31 +1299,31 @@ JAVA_INT com_codename1_ui_geom_Geometry_BezierCurve_findTValuesForY___double_dou
     __CN1_DEBUG_INFO(510);
     /* VarOp.assignFrom */     ilocals_10_ = 0 /* ICONST_0 */; 
 
-label_L1108039149:
-    if (ilocals_10_>=ilocals_8_) /* IF_ICMPGE CustomJump */ goto label_L1160845977;
+label_L1122885157:
+    if (ilocals_10_>=ilocals_8_) /* IF_ICMPGE CustomJump */ goto label_L1227653431;
     __CN1_DEBUG_INFO(511);
-    if (CN1_CMP_EXPR(CN1_ARRAY_ELEMENT_DOUBLE(locals[7].data.o, ilocals_10_), 0 /* DCONST_0 */)<0) /* IFLT CustomJump */ goto label_L1882695296;
-    if (CN1_CMP_EXPR(CN1_ARRAY_ELEMENT_DOUBLE(locals[7].data.o, ilocals_10_), 1 /* DCONST_1 */)<=0) /* IFLE CustomJump */ goto label_L1227653431;
+    if (CN1_CMP_EXPR(CN1_ARRAY_ELEMENT_DOUBLE(locals[7].data.o, ilocals_10_), 0 /* DCONST_0 */)<0) /* IFLT CustomJump */ goto label_L1108039149;
+    if (CN1_CMP_EXPR(CN1_ARRAY_ELEMENT_DOUBLE(locals[7].data.o, ilocals_10_), 1 /* DCONST_1 */)<=0) /* IFLE CustomJump */ goto label_L253983463;
     __CN1_DEBUG_INFO(512);
-    goto label_L1882695296;
+    goto label_L1108039149;
 
-label_L1227653431:
+label_L253983463:
     __CN1_DEBUG_INFO(514);
     /* VarOp.assignFrom */ dlocals_11_ = /* CustomInvoke */virtual_com_codename1_ui_geom_Geometry_BezierCurve_x___double_R_double(threadStateData, __cn1ThisObject, CN1_ARRAY_ELEMENT_DOUBLE(locals[7].data.o, ilocals_10_));
     __CN1_DEBUG_INFO(515);
-    if (CN1_CMP_EXPR(dlocals_11_, dlocals_3_)<0) /* IFLT CustomJump */ goto label_L1882695296;
-    if (CN1_CMP_EXPR(dlocals_11_, dlocals_5_)>0) /* IFGT CustomJump */ goto label_L1882695296;
+    if (CN1_CMP_EXPR(dlocals_11_, dlocals_3_)<0) /* IFLT CustomJump */ goto label_L1108039149;
+    if (CN1_CMP_EXPR(dlocals_11_, dlocals_5_)>0) /* IFGT CustomJump */ goto label_L1108039149;
     __CN1_DEBUG_INFO(516);
     CN1_SET_ARRAY_ELEMENT_DOUBLE(locals[7].data.o, ilocals_9_, CN1_ARRAY_ELEMENT_DOUBLE(locals[7].data.o, ilocals_10_));
     __CN1_DEBUG_INFO(517);
     BC_IINC(9, 1);
 
-label_L1882695296:
+label_L1108039149:
     __CN1_DEBUG_INFO(510);
     BC_IINC(10, 1);
-    goto label_L1108039149;
+    goto label_L1122885157;
 
-label_L1160845977:
+label_L1227653431:
     __CN1_DEBUG_INFO(520);
 
 {
@@ -1337,45 +1337,45 @@ JAVA_BOOLEAN com_codename1_ui_geom_Geometry_BezierCurve_equals___com_codename1_u
     volatile JAVA_DOUBLE dlocals_2_ = 0; /* epsilon */
     volatile JAVA_INT ilocals_4_ = 0; /* v4 */
     volatile JAVA_INT ilocals_5_ = 0; /* v5 */
-    DEFINE_INSTANCE_METHOD_STACK(4, 6, 0, 3757, 880);
+    DEFINE_INSTANCE_METHOD_STACK(4, 6, 0, 3767, 244);
     locals[0].data.o = __cn1ThisObject; locals[0].type = CN1_TYPE_OBJECT;     locals[1].data.o = __cn1Arg1;
     locals[1].type = CN1_TYPE_OBJECT;
     dlocals_2_ = __cn1Arg2;
     __CN1_DEBUG_INFO(531);
-    if (virtual_com_codename1_ui_geom_Geometry_BezierCurve_n___R_int(threadStateData, locals[1].data.o)==virtual_com_codename1_ui_geom_Geometry_BezierCurve_n___R_int(threadStateData, __cn1ThisObject)) /* IF_ICMPEQ CustomJump */ goto label_L253983463;
+    if (virtual_com_codename1_ui_geom_Geometry_BezierCurve_n___R_int(threadStateData, locals[1].data.o)==virtual_com_codename1_ui_geom_Geometry_BezierCurve_n___R_int(threadStateData, __cn1ThisObject)) /* IF_ICMPEQ CustomJump */ goto label_L1877334646;
     releaseForReturn(threadStateData, cn1LocalsBeginInThread); return 0 /* ICONST_0 */;
 
-label_L253983463:
+label_L1877334646:
     __CN1_DEBUG_INFO(532);
     /* VarOp.assignFrom */ ilocals_4_ = CN1_ARRAY_LENGTH(get_field_com_codename1_ui_geom_Geometry_BezierCurve_x(__cn1ThisObject));
     __CN1_DEBUG_INFO(533);
     /* VarOp.assignFrom */     ilocals_5_ = 0 /* ICONST_0 */; 
 
-label_L1664738820:
-    if (ilocals_5_>=ilocals_4_) /* IF_ICMPGE CustomJump */ goto label_L1122885157;
+label_L243156317:
+    if (ilocals_5_>=ilocals_4_) /* IF_ICMPGE CustomJump */ goto label_L2010734170;
     __CN1_DEBUG_INFO(534);
     /* CustomInvoke */PUSH_DOUBLE(java_lang_Math_abs___double_R_double(threadStateData, (CN1_ARRAY_ELEMENT_DOUBLE(get_field_com_codename1_ui_geom_Geometry_BezierCurve_x(__cn1ThisObject), ilocals_5_) - CN1_ARRAY_ELEMENT_DOUBLE(get_field_com_codename1_ui_geom_Geometry_BezierCurve_x(locals[1].data.o), ilocals_5_))));
     BC_DLOAD(2);
     BC_DCMPL();
-    if(POP_INT() <= 0) /* IFLE */ goto label_L1877334646;
+    if(POP_INT() <= 0) /* IFLE */ goto label_L1664738820;
     __CN1_DEBUG_INFO(535);
     releaseForReturn(threadStateData, cn1LocalsBeginInThread); return 0 /* ICONST_0 */;
 
-label_L1877334646:
+label_L1664738820:
     __CN1_DEBUG_INFO(537);
     /* CustomInvoke */PUSH_DOUBLE(java_lang_Math_abs___double_R_double(threadStateData, (CN1_ARRAY_ELEMENT_DOUBLE(get_field_com_codename1_ui_geom_Geometry_BezierCurve_y(__cn1ThisObject), ilocals_5_) - CN1_ARRAY_ELEMENT_DOUBLE(get_field_com_codename1_ui_geom_Geometry_BezierCurve_y(locals[1].data.o), ilocals_5_))));
     BC_DLOAD(2);
     BC_DCMPL();
-    if(POP_INT() <= 0) /* IFLE */ goto label_L2010734170;
+    if(POP_INT() <= 0) /* IFLE */ goto label_L1334378672;
     __CN1_DEBUG_INFO(538);
     releaseForReturn(threadStateData, cn1LocalsBeginInThread); return 0 /* ICONST_0 */;
 
-label_L2010734170:
+label_L1334378672:
     __CN1_DEBUG_INFO(533);
     BC_IINC(5, 1);
-    goto label_L1664738820;
+    goto label_L243156317;
 
-label_L1122885157:
+label_L2010734170:
     __CN1_DEBUG_INFO(541);
     releaseForReturn(threadStateData, cn1LocalsBeginInThread); return 1 /* ICONST_1 */;
 }
@@ -1388,13 +1388,13 @@ JAVA_VOID com_codename1_ui_geom_Geometry_BezierCurve_segment___com_codename1_ui_
     volatile JAVA_INT ilocals_5_ = 0; /* v5 */
     volatile JAVA_INT ilocals_7_ = 0; /* v7 */
     volatile JAVA_DOUBLE dlocals_8_ = 0; /* v8 */
-    DEFINE_INSTANCE_METHOD_STACK(26, 13, 0, 3757, 3777);
+    DEFINE_INSTANCE_METHOD_STACK(26, 13, 0, 3767, 3787);
     locals[0].data.o = __cn1ThisObject; locals[0].type = CN1_TYPE_OBJECT;     locals[1].data.o = __cn1Arg1;
     locals[1].type = CN1_TYPE_OBJECT;
     locals[2].data.o = __cn1Arg2;
     locals[2].type = CN1_TYPE_OBJECT;
     __CN1_DEBUG_INFO(551);
-    if (virtual_com_codename1_ui_geom_Geometry_BezierCurve_n___R_int(threadStateData, __cn1ThisObject)!=2 /* ICONST_2 */) /* IF_ICMPNE CustomJump */ goto label_L1334378672;
+    if (virtual_com_codename1_ui_geom_Geometry_BezierCurve_n___R_int(threadStateData, __cn1ThisObject)!=2 /* ICONST_2 */) /* IF_ICMPNE CustomJump */ goto label_L870900038;
     PUSH_POINTER(get_field_com_codename1_ui_geom_Geometry_BezierCurve_x(__cn1ThisObject));
     PUSH_INT(0); /* ICONST_0 */
     CHECK_ARRAY_ACCESS(2, SP[-1].data.i); /* DALOAD */
@@ -1442,15 +1442,15 @@ JAVA_VOID com_codename1_ui_geom_Geometry_BezierCurve_segment___com_codename1_ui_
     { JAVA_INT tmpResult = com_codename1_ui_geom_GeneralPath_ShapeUtil_intersectQuad___double_double_double_double_double_double_double_double_double_double_R_int(threadStateData, SP[-10].data.d, SP[-9].data.d, SP[-8].data.d, SP[-7].data.d, SP[-6].data.d, SP[-5].data.d, SP[-4].data.d, SP[-3].data.d, SP[-2].data.d, SP[-1].data.d);
     SP-=9;
     SP[-1].data.i = tmpResult; SP[-1].type = CN1_TYPE_INT; }
-    goto label_L243156317;
+    goto label_L525154553;
 
-label_L1334378672:
+label_L870900038:
     BC_ALOAD(0);
     __CN1_DEBUG_INFO(552);
     { JAVA_INT tmpResult = virtual_com_codename1_ui_geom_Geometry_BezierCurve_n___R_int(threadStateData, SP[-1].data.o);
     SP[-1].data.i = tmpResult; SP[-1].type = CN1_TYPE_INT; }
     PUSH_INT(3); /* ICONST_3 */
-    SP-=2; if((*SP).data.i != SP[1].data.i) /* IF_ICMPNE */ goto label_L870900038;
+    SP-=2; if((*SP).data.i != SP[1].data.i) /* IF_ICMPNE */ goto label_L407254816;
     PUSH_POINTER(get_field_com_codename1_ui_geom_Geometry_BezierCurve_x(__cn1ThisObject));
     PUSH_INT(0); /* ICONST_0 */
     CHECK_ARRAY_ACCESS(2, SP[-1].data.i); /* DALOAD */
@@ -1508,15 +1508,15 @@ label_L1334378672:
     { JAVA_INT tmpResult = com_codename1_ui_geom_GeneralPath_ShapeUtil_intersectCubic___double_double_double_double_double_double_double_double_double_double_double_double_R_int(threadStateData, SP[-12].data.d, SP[-11].data.d, SP[-10].data.d, SP[-9].data.d, SP[-8].data.d, SP[-7].data.d, SP[-6].data.d, SP[-5].data.d, SP[-4].data.d, SP[-3].data.d, SP[-2].data.d, SP[-1].data.d);
     SP-=11;
     SP[-1].data.i = tmpResult; SP[-1].type = CN1_TYPE_INT; }
-    goto label_L243156317;
+    goto label_L525154553;
 
-label_L870900038:
+label_L407254816:
     BC_ALOAD(0);
     __CN1_DEBUG_INFO(553);
     { JAVA_INT tmpResult = virtual_com_codename1_ui_geom_Geometry_BezierCurve_n___R_int(threadStateData, SP[-1].data.o);
     SP[-1].data.i = tmpResult; SP[-1].type = CN1_TYPE_INT; }
     PUSH_INT(1); /* ICONST_1 */
-    SP-=2; if((*SP).data.i != SP[1].data.i) /* IF_ICMPNE */ goto label_L525154553;
+    SP-=2; if((*SP).data.i != SP[1].data.i) /* IF_ICMPNE */ goto label_L1693375960;
     PUSH_POINTER(get_field_com_codename1_ui_geom_Geometry_BezierCurve_x(__cn1ThisObject));
     PUSH_INT(0); /* ICONST_0 */
     CHECK_ARRAY_ACCESS(2, SP[-1].data.i); /* DALOAD */
@@ -1554,22 +1554,22 @@ label_L870900038:
     { JAVA_INT tmpResult = com_codename1_ui_geom_GeneralPath_ShapeUtil_intersectLine___double_double_double_double_double_double_double_double_R_int(threadStateData, SP[-8].data.d, SP[-7].data.d, SP[-6].data.d, SP[-5].data.d, SP[-4].data.d, SP[-3].data.d, SP[-2].data.d, SP[-1].data.d);
     SP-=7;
     SP[-1].data.i = tmpResult; SP[-1].type = CN1_TYPE_INT; }
-    goto label_L243156317;
+    goto label_L525154553;
 
-label_L525154553:
+label_L1693375960:
     PUSH_INT(-1); /* ICONST_M1 */
 
-label_L243156317:
+label_L525154553:
     BC_ISTORE(3);
     __CN1_DEBUG_INFO(555);
-    if (ilocals_3_!=-1 /* ICONST_M1 */) /* IF_ICMPNE CustomJump */ goto label_L407254816;
+    if (ilocals_3_!=-1 /* ICONST_M1 */) /* IF_ICMPNE CustomJump */ goto label_L284746450;
     __CN1_DEBUG_INFO(556);
     PUSH_POINTER(__NEW_java_lang_IllegalArgumentException(threadStateData)); /* NEW */
     BC_DUP(); /* DUP */
     PUSH_POINTER(__NEW_java_lang_StringBuilder(threadStateData)); /* NEW */
     BC_DUP(); /* DUP */
     java_lang_StringBuilder___INIT____(threadStateData, SP[-1].data.o);     SP -= 1;
-    /* CustomInvoke */{ JAVA_OBJECT tmpResult = virtual_java_lang_StringBuilder_append___java_lang_String_R_java_lang_StringBuilder(threadStateData, SP[-1].data.o, STRING_FROM_CONSTANT_POOL_OFFSET(3782));
+    /* CustomInvoke */{ JAVA_OBJECT tmpResult = virtual_java_lang_StringBuilder_append___java_lang_String_R_java_lang_StringBuilder(threadStateData, SP[-1].data.o, STRING_FROM_CONSTANT_POOL_OFFSET(3792));
     SP[-1].data.o = tmpResult; SP[-1].type = CN1_TYPE_OBJECT; }
     /* CustomInvoke */{ JAVA_OBJECT tmpResult = virtual_java_lang_StringBuilder_append___int_R_java_lang_StringBuilder(threadStateData, SP[-1].data.o, virtual_com_codename1_ui_geom_Geometry_BezierCurve_n___R_int(threadStateData, __cn1ThisObject));
     SP[-1].data.o = tmpResult; SP[-1].type = CN1_TYPE_OBJECT; }
@@ -1578,9 +1578,9 @@ label_L243156317:
     java_lang_IllegalArgumentException___INIT_____java_lang_String(threadStateData, SP[-2].data.o, SP[-1].data.o);     SP-= 2;
     throwException(threadStateData, POP_OBJ());
 
-label_L407254816:
+label_L284746450:
     __CN1_DEBUG_INFO(559);
-    if (ilocals_3_!=0) /* IFNE CustomJump */ goto label_L1693375960;
+    if (ilocals_3_!=0) /* IFNE CustomJump */ goto label_L1711573700;
     __CN1_DEBUG_INFO(560);
     BC_ALOAD(2);
     PUSH_POINTER(__NEW_com_codename1_ui_geom_Geometry_BezierCurve(threadStateData)); /* NEW */
@@ -1594,7 +1594,7 @@ label_L407254816:
     releaseForReturn(threadStateData, cn1LocalsBeginInThread); 
     return;
 
-label_L1693375960:
+label_L1711573700:
     __CN1_DEBUG_INFO(566);
     (*SP).type = CN1_TYPE_INT; /* ILOAD */ 
     (*SP).data.i = ilocals_3_; 
@@ -1628,7 +1628,7 @@ label_L1693375960:
     SP[-1].data.i = tmpResult; SP[-1].type = CN1_TYPE_INT; }
     BC_DUP(); /* DUP */
     BC_ISTORE(7);
-    if(POP_INT() <= 0) /* IFLE */ goto label_L284746450;
+    if(POP_INT() <= 0) /* IFLE */ goto label_L1330798099;
     __CN1_DEBUG_INFO(575);
     (*SP).type = CN1_TYPE_INT; /* ILOAD */ 
     (*SP).data.i = ilocals_5_; 
@@ -1637,7 +1637,7 @@ label_L1693375960:
     SP--; SP[-1].data.i = SP[-1].data.i + (*SP).data.i; /* IADD */
     BC_ISTORE(5);
 
-label_L284746450:
+label_L1330798099:
     __CN1_DEBUG_INFO(578);
     BC_ALOAD(0);
     { JAVA_DOUBLE tmpResult = virtual_com_codename1_ui_geom_Rectangle2D_getX___R_double(threadStateData, locals[1].data.o);
@@ -1658,7 +1658,7 @@ label_L284746450:
     SP[-1].data.i = tmpResult; SP[-1].type = CN1_TYPE_INT; }
     BC_DUP(); /* DUP */
     BC_ISTORE(7);
-    if(POP_INT() <= 0) /* IFLE */ goto label_L1711573700;
+    if(POP_INT() <= 0) /* IFLE */ goto label_L1564494396;
     __CN1_DEBUG_INFO(580);
     (*SP).type = CN1_TYPE_INT; /* ILOAD */ 
     (*SP).data.i = ilocals_5_; 
@@ -1667,7 +1667,7 @@ label_L284746450:
     SP--; SP[-1].data.i = SP[-1].data.i + (*SP).data.i; /* IADD */
     BC_ISTORE(5);
 
-label_L1711573700:
+label_L1564494396:
     __CN1_DEBUG_INFO(583);
     BC_ALOAD(0);
     { JAVA_DOUBLE tmpResult = virtual_com_codename1_ui_geom_Rectangle2D_getY___R_double(threadStateData, locals[1].data.o);
@@ -1685,7 +1685,7 @@ label_L1711573700:
     SP[-1].data.i = tmpResult; SP[-1].type = CN1_TYPE_INT; }
     BC_DUP(); /* DUP */
     BC_ISTORE(7);
-    if(POP_INT() <= 0) /* IFLE */ goto label_L1330798099;
+    if(POP_INT() <= 0) /* IFLE */ goto label_L184147252;
     __CN1_DEBUG_INFO(585);
     (*SP).type = CN1_TYPE_INT; /* ILOAD */ 
     (*SP).data.i = ilocals_5_; 
@@ -1694,7 +1694,7 @@ label_L1711573700:
     SP--; SP[-1].data.i = SP[-1].data.i + (*SP).data.i; /* IADD */
     BC_ISTORE(5);
 
-label_L1330798099:
+label_L184147252:
     __CN1_DEBUG_INFO(588);
     BC_ALOAD(0);
     { JAVA_DOUBLE tmpResult = virtual_com_codename1_ui_geom_Rectangle2D_getY___R_double(threadStateData, locals[1].data.o);
@@ -1715,7 +1715,7 @@ label_L1330798099:
     SP[-1].data.i = tmpResult; SP[-1].type = CN1_TYPE_INT; }
     BC_DUP(); /* DUP */
     BC_ISTORE(7);
-    if(POP_INT() <= 0) /* IFLE */ goto label_L1564494396;
+    if(POP_INT() <= 0) /* IFLE */ goto label_L1214850053;
     __CN1_DEBUG_INFO(590);
     (*SP).type = CN1_TYPE_INT; /* ILOAD */ 
     (*SP).data.i = ilocals_5_; 
@@ -1724,7 +1724,7 @@ label_L1330798099:
     SP--; SP[-1].data.i = SP[-1].data.i + (*SP).data.i; /* IADD */
     BC_ISTORE(5);
 
-label_L1564494396:
+label_L1214850053:
     __CN1_DEBUG_INFO(593);
     /* CustomInvoke */java_util_Arrays_sort___double_1ARRAY_int_int(threadStateData, locals[4].data.o, 0 /* ICONST_0 */, ilocals_5_); 
     __CN1_DEBUG_INFO(595);
@@ -1735,12 +1735,12 @@ label_L1564494396:
     SP++;
     SP--;
     switch((*SP).data.i) {
-        case 1: goto label_L184147252;
-        case 2: goto label_L1214850053;
-        default: goto label_L353786333;
+        case 1: goto label_L353786333;
+        case 2: goto label_L1247338729;
+        default: goto label_L244090091;
     }
 
-label_L184147252:
+label_L353786333:
     __CN1_DEBUG_INFO(598);
     BC_ALOAD(2);
     PUSH_POINTER(__NEW_com_codename1_ui_geom_Geometry_BezierCurve(threadStateData)); /* NEW */
@@ -1754,15 +1754,15 @@ label_L184147252:
     releaseForReturn(threadStateData, cn1LocalsBeginInThread); 
     return;
 
-label_L1214850053:
+label_L1247338729:
     __CN1_DEBUG_INFO(601);
-    if (CN1_CMP_EXPR(CN1_ARRAY_ELEMENT_DOUBLE(locals[4].data.o, 0 /* ICONST_0 */), dlocals_8_)<=0) /* IFLE CustomJump */ goto label_L1247338729;
-    if (CN1_CMP_EXPR(CN1_ARRAY_ELEMENT_DOUBLE(locals[4].data.o, 0 /* ICONST_0 */), (1 /* DCONST_1 */ - dlocals_8_))>=0) /* IFGE CustomJump */ goto label_L1247338729;
+    if (CN1_CMP_EXPR(CN1_ARRAY_ELEMENT_DOUBLE(locals[4].data.o, 0 /* ICONST_0 */), dlocals_8_)<=0) /* IFLE CustomJump */ goto label_L256167987;
+    if (CN1_CMP_EXPR(CN1_ARRAY_ELEMENT_DOUBLE(locals[4].data.o, 0 /* ICONST_0 */), (1 /* DCONST_1 */ - dlocals_8_))>=0) /* IFGE CustomJump */ goto label_L256167987;
     __CN1_DEBUG_INFO(602);
     /* CustomInvoke */virtual_com_codename1_ui_geom_Geometry_BezierCurve_segment___double_java_util_List(threadStateData, __cn1ThisObject, CN1_ARRAY_ELEMENT_DOUBLE(locals[4].data.o, 0 /* ICONST_0 */), locals[2].data.o); 
-    goto label_L244090091;
+    goto label_L675002551;
 
-label_L1247338729:
+label_L256167987:
     __CN1_DEBUG_INFO(604);
     BC_ALOAD(2);
     PUSH_POINTER(__NEW_com_codename1_ui_geom_Geometry_BezierCurve(threadStateData)); /* NEW */
@@ -1773,25 +1773,25 @@ label_L1247338729:
     SP[-1].data.i = tmpResult; SP[-1].type = CN1_TYPE_INT; }
     SP--; /* POP */
 
-label_L244090091:
+label_L675002551:
     __CN1_DEBUG_INFO(606);
     releaseForReturn(threadStateData, cn1LocalsBeginInThread); 
     return;
 
-label_L353786333:
+label_L244090091:
     __CN1_DEBUG_INFO(608);
     /* VarOp.assignFrom */     ilocals_11_ = 0 /* ICONST_0 */; 
 
-label_L636050161:
+label_L1715781109:
     __CN1_DEBUG_INFO(609);
-    if (CN1_CMP_EXPR(CN1_ARRAY_ELEMENT_DOUBLE(locals[4].data.o, ilocals_11_), dlocals_8_)<0) /* IFLT CustomJump */ goto label_L256167987;
-    if (CN1_CMP_EXPR(CN1_ARRAY_ELEMENT_DOUBLE(locals[4].data.o, ilocals_11_), (1 /* DCONST_1 */ - dlocals_8_))<=0) /* IFLE CustomJump */ goto label_L675002551;
+    if (CN1_CMP_EXPR(CN1_ARRAY_ELEMENT_DOUBLE(locals[4].data.o, ilocals_11_), dlocals_8_)<0) /* IFLT CustomJump */ goto label_L636050161;
+    if (CN1_CMP_EXPR(CN1_ARRAY_ELEMENT_DOUBLE(locals[4].data.o, ilocals_11_), (1 /* DCONST_1 */ - dlocals_8_))<=0) /* IFLE CustomJump */ goto label_L1336420731;
 
-label_L256167987:
+label_L636050161:
     __CN1_DEBUG_INFO(610);
     BC_IINC(11, 1);
     __CN1_DEBUG_INFO(611);
-    if (ilocals_11_<ilocals_5_) /* IF_IMPLT CustomJump */ goto label_L636050161;
+    if (ilocals_11_<ilocals_5_) /* IF_IMPLT CustomJump */ goto label_L1715781109;
     __CN1_DEBUG_INFO(612);
     BC_ALOAD(2);
     PUSH_POINTER(__NEW_com_codename1_ui_geom_Geometry_BezierCurve(threadStateData)); /* NEW */
@@ -1805,7 +1805,7 @@ label_L256167987:
     releaseForReturn(threadStateData, cn1LocalsBeginInThread); 
     return;
 
-label_L675002551:
+label_L1336420731:
     __CN1_DEBUG_INFO(617);
     /* CustomInvoke */virtual_com_codename1_ui_geom_Geometry_BezierCurve_segment___double_java_util_List(threadStateData, __cn1ThisObject, CN1_ARRAY_ELEMENT_DOUBLE(locals[4].data.o, ilocals_11_), locals[2].data.o); 
     __CN1_DEBUG_INFO(618);
@@ -1819,16 +1819,16 @@ label_L675002551:
     SP[-1].data.o = tmpResult; SP[-1].type = CN1_TYPE_OBJECT; }
     BC_ASTORE(12);
     __CN1_DEBUG_INFO(619);
-    if (/* CustomInvoke */virtual_com_codename1_ui_geom_Geometry_BezierCurve_equals___com_codename1_ui_geom_Geometry_BezierCurve_double_R_boolean(threadStateData, locals[12].data.o, __cn1ThisObject, dlocals_8_)==0) /* IFEQ CustomJump */ goto label_L1336420731;
+    if (/* CustomInvoke */virtual_com_codename1_ui_geom_Geometry_BezierCurve_equals___com_codename1_ui_geom_Geometry_BezierCurve_double_R_boolean(threadStateData, locals[12].data.o, __cn1ThisObject, dlocals_8_)==0) /* IFEQ CustomJump */ goto label_L332357514;
     __CN1_DEBUG_INFO(620);
     /* CustomInvoke */virtual_java_util_List_add___java_lang_Object_R_boolean(threadStateData, locals[2].data.o, locals[12].data.o); 
-    goto label_L1715781109;
+    goto label_L2090770896;
 
-label_L1336420731:
+label_L332357514:
     __CN1_DEBUG_INFO(622);
     /* CustomInvoke */virtual_com_codename1_ui_geom_Geometry_BezierCurve_segment___com_codename1_ui_geom_Rectangle2D_java_util_List(threadStateData, locals[12].data.o, locals[1].data.o, locals[2].data.o); 
 
-label_L1715781109:
+label_L2090770896:
     __CN1_DEBUG_INFO(624);
     releaseForReturn(threadStateData, cn1LocalsBeginInThread); 
     return;
@@ -1842,7 +1842,7 @@ JAVA_BOOLEAN com_codename1_ui_geom_Geometry_BezierCurve_contains___double_double
     volatile JAVA_INT ilocals_6_ = 0; /* endIndex */
     volatile JAVA_INT ilocals_7_ = 0; /* v7 */
     __STATIC_INITIALIZER_com_codename1_ui_geom_Geometry_BezierCurve(threadStateData);
-    DEFINE_METHOD_STACK(4, 8, 0, 3757, 908);
+    DEFINE_METHOD_STACK(4, 8, 0, 3767, 273);
     dlocals_0_ = __cn1Arg1;
     locals[2].data.o = __cn1Arg2;
     locals[2].type = CN1_TYPE_OBJECT;
@@ -1852,22 +1852,22 @@ JAVA_BOOLEAN com_codename1_ui_geom_Geometry_BezierCurve_contains___double_double
     __CN1_DEBUG_INFO(640);
     /* VarOp.assignFrom */     ilocals_7_ = ilocals_5_;
 
-label_L1928572105:
-    if (ilocals_7_>=ilocals_6_) /* IF_ICMPGE CustomJump */ goto label_L332357514;
+label_L1480668865:
+    if (ilocals_7_>=ilocals_6_) /* IF_ICMPGE CustomJump */ goto label_L1928572105;
     __CN1_DEBUG_INFO(641);
     /* CustomInvoke */PUSH_DOUBLE(java_lang_Math_abs___double_R_double(threadStateData, (dlocals_0_ - CN1_ARRAY_ELEMENT_DOUBLE(locals[2].data.o, ilocals_7_))));
     BC_DLOAD(3);
     BC_DCMPL();
-    if(POP_INT() >= 0) /* IFGE */ goto label_L2090770896;
+    if(POP_INT() >= 0) /* IFGE */ goto label_L832248951;
     __CN1_DEBUG_INFO(642);
     releaseForReturn(threadStateData, cn1LocalsBeginInThread); return 1 /* ICONST_1 */;
 
-label_L2090770896:
+label_L832248951:
     __CN1_DEBUG_INFO(640);
     BC_IINC(7, 1);
-    goto label_L1928572105;
+    goto label_L1480668865;
 
-label_L332357514:
+label_L1928572105:
     __CN1_DEBUG_INFO(645);
     releaseForReturn(threadStateData, cn1LocalsBeginInThread); return 0 /* ICONST_0 */;
 }
@@ -1881,7 +1881,7 @@ JAVA_INT com_codename1_ui_geom_Geometry_BezierCurve_arraycopy___double_1ARRAY_in
     volatile JAVA_INT ilocals_7_ = 0; /* v7 */
     volatile JAVA_INT ilocals_8_ = 0; /* v8 */
     __STATIC_INITIALIZER_com_codename1_ui_geom_Geometry_BezierCurve(threadStateData);
-    DEFINE_METHOD_STACK(7, 9, 0, 3757, 1138);
+    DEFINE_METHOD_STACK(7, 9, 0, 3767, 507);
     locals[0].data.o = __cn1Arg1;
     locals[0].type = CN1_TYPE_OBJECT;
     ilocals_1_ = __cn1Arg2;
@@ -1895,10 +1895,10 @@ JAVA_INT com_codename1_ui_geom_Geometry_BezierCurve_arraycopy___double_1ARRAY_in
     __CN1_DEBUG_INFO(661);
     /* VarOp.assignFrom */     ilocals_8_ = 0 /* ICONST_0 */; 
 
-label_L1373146168:
-    if (ilocals_8_>=ilocals_4_) /* IF_ICMPGE CustomJump */ goto label_L832248951;
+label_L1471364137:
+    if (ilocals_8_>=ilocals_4_) /* IF_ICMPGE CustomJump */ goto label_L1373146168;
     __CN1_DEBUG_INFO(662);
-    if (/* CustomInvoke */com_codename1_ui_geom_Geometry_BezierCurve_contains___double_double_1ARRAY_double_int_int_R_boolean(threadStateData, CN1_ARRAY_ELEMENT_DOUBLE(locals[0].data.o, (ilocals_1_ + ilocals_8_)), locals[2].data.o, dlocals_5_, 0 /* ICONST_0 */, ilocals_3_)!=0) /* IFNE CustomJump */ goto label_L1480668865;
+    if (/* CustomInvoke */com_codename1_ui_geom_Geometry_BezierCurve_contains___double_double_1ARRAY_double_int_int_R_boolean(threadStateData, CN1_ARRAY_ELEMENT_DOUBLE(locals[0].data.o, (ilocals_1_ + ilocals_8_)), locals[2].data.o, dlocals_5_, 0 /* ICONST_0 */, ilocals_3_)!=0) /* IFNE CustomJump */ goto label_L1050867502;
     __CN1_DEBUG_INFO(663);
     BC_ALOAD(2);
     (*SP).type = CN1_TYPE_INT; /* ILOAD */ 
@@ -1921,12 +1921,12 @@ label_L1373146168:
     __CN1_DEBUG_INFO(664);
     BC_IINC(7, 1);
 
-label_L1480668865:
+label_L1050867502:
     __CN1_DEBUG_INFO(661);
     BC_IINC(8, 1);
-    goto label_L1373146168;
+    goto label_L1471364137;
 
-label_L832248951:
+label_L1373146168:
     __CN1_DEBUG_INFO(667);
 
 {
@@ -1960,21 +1960,21 @@ JAVA_OBJECT com_codename1_ui_geom_Geometry_BezierCurve_segment___double_double_R
     volatile JAVA_DOUBLE dlocals_41_ = 0; /* v41 */
     volatile JAVA_DOUBLE dlocals_43_ = 0; /* v43 */
     volatile JAVA_DOUBLE dlocals_45_ = 0; /* v45 */
-    DEFINE_INSTANCE_METHOD_STACK(7, 47, 0, 3757, 3777);
+    DEFINE_INSTANCE_METHOD_STACK(7, 47, 0, 3767, 3787);
     locals[0].data.o = __cn1ThisObject; locals[0].type = CN1_TYPE_OBJECT;     dlocals_1_ = __cn1Arg1;
     dlocals_3_ = __cn1Arg2;
     __CN1_DEBUG_INFO(677);
-    if (CN1_CMP_EXPR(dlocals_3_, 0 /* DCONST_0 */)<=0) /* IFLE CustomJump */ goto label_L1050867502;
-    if (CN1_CMP_EXPR(dlocals_3_, 1 /* DCONST_1 */)<0) /* IFLT CustomJump */ goto label_L1471364137;
+    if (CN1_CMP_EXPR(dlocals_3_, 0 /* DCONST_0 */)<=0) /* IFLE CustomJump */ goto label_L102100768;
+    if (CN1_CMP_EXPR(dlocals_3_, 1 /* DCONST_1 */)<0) /* IFLT CustomJump */ goto label_L322505366;
 
-label_L1050867502:
+label_L102100768:
     __CN1_DEBUG_INFO(678);
     PUSH_POINTER(__NEW_java_lang_IllegalArgumentException(threadStateData)); /* NEW */
     BC_DUP(); /* DUP */
     PUSH_POINTER(__NEW_java_lang_StringBuilder(threadStateData)); /* NEW */
     BC_DUP(); /* DUP */
     java_lang_StringBuilder___INIT____(threadStateData, SP[-1].data.o);     SP -= 1;
-    /* CustomInvoke */{ JAVA_OBJECT tmpResult = virtual_java_lang_StringBuilder_append___java_lang_String_R_java_lang_StringBuilder(threadStateData, SP[-1].data.o, STRING_FROM_CONSTANT_POOL_OFFSET(3783));
+    /* CustomInvoke */{ JAVA_OBJECT tmpResult = virtual_java_lang_StringBuilder_append___java_lang_String_R_java_lang_StringBuilder(threadStateData, SP[-1].data.o, STRING_FROM_CONSTANT_POOL_OFFSET(3793));
     SP[-1].data.o = tmpResult; SP[-1].type = CN1_TYPE_OBJECT; }
     /* CustomInvoke */{ JAVA_OBJECT tmpResult = virtual_java_lang_StringBuilder_append___double_R_java_lang_StringBuilder(threadStateData, SP[-1].data.o, dlocals_3_);
     SP[-1].data.o = tmpResult; SP[-1].type = CN1_TYPE_OBJECT; }
@@ -1983,9 +1983,9 @@ label_L1050867502:
     java_lang_IllegalArgumentException___INIT_____java_lang_String(threadStateData, SP[-2].data.o, SP[-1].data.o);     SP-= 2;
     throwException(threadStateData, POP_OBJ());
 
-label_L1471364137:
+label_L322505366:
     __CN1_DEBUG_INFO(680);
-    if (virtual_com_codename1_ui_geom_Geometry_BezierCurve_n___R_int(threadStateData, __cn1ThisObject)!=2 /* ICONST_2 */) /* IF_ICMPNE CustomJump */ goto label_L102100768;
+    if (virtual_com_codename1_ui_geom_Geometry_BezierCurve_n___R_int(threadStateData, __cn1ThisObject)!=2 /* ICONST_2 */) /* IF_ICMPNE CustomJump */ goto label_L982226008;
     __CN1_DEBUG_INFO(681);
     /* VarOp.assignFrom */ dlocals_5_ = /* CustomInvoke */virtual_com_codename1_ui_geom_Geometry_BezierCurve_x___double_R_double(threadStateData, __cn1ThisObject, dlocals_1_);
     __CN1_DEBUG_INFO(682);
@@ -2042,18 +2042,18 @@ label_L1471364137:
     releaseForReturn(threadStateData, cn1LocalsBeginInThread); return ___returnValue;
 }
 
-label_L102100768:
+label_L982226008:
     __CN1_DEBUG_INFO(695);
-    if (virtual_com_codename1_ui_geom_Geometry_BezierCurve_n___R_int(threadStateData, __cn1ThisObject)!=3 /* ICONST_3 */) /* IF_ICMPNE CustomJump */ goto label_L322505366;
+    if (virtual_com_codename1_ui_geom_Geometry_BezierCurve_n___R_int(threadStateData, __cn1ThisObject)!=3 /* ICONST_3 */) /* IF_ICMPNE CustomJump */ goto label_L1956095316;
     __CN1_DEBUG_INFO(696);
-    if (CN1_CMP_EXPR(dlocals_1_, 0 /* DCONST_0 */)==0) /* IFEQ CustomJump */ goto label_L982226008;
+    if (CN1_CMP_EXPR(dlocals_1_, 0 /* DCONST_0 */)==0) /* IFEQ CustomJump */ goto label_L1574057993;
     __CN1_DEBUG_INFO(697);
     PUSH_POINTER(__NEW_java_lang_IllegalArgumentException(threadStateData)); /* NEW */
     BC_DUP(); /* DUP */
-    /* CustomInvoke */java_lang_IllegalArgumentException___INIT_____java_lang_String(threadStateData, SP[-1].data.o, STRING_FROM_CONSTANT_POOL_OFFSET(3784));     SP -= 1;
+    /* CustomInvoke */java_lang_IllegalArgumentException___INIT_____java_lang_String(threadStateData, SP[-1].data.o, STRING_FROM_CONSTANT_POOL_OFFSET(3794));     SP -= 1;
     throwException(threadStateData, POP_OBJ());
 
-label_L982226008:
+label_L1574057993:
     __CN1_DEBUG_INFO(699);
     /* VarOp.assignFrom */     dlocals_5_ = dlocals_3_;
     __CN1_DEBUG_INFO(700);
@@ -2145,14 +2145,14 @@ label_L982226008:
     releaseForReturn(threadStateData, cn1LocalsBeginInThread); 
     return POP_OBJ();
 
-label_L322505366:
+label_L1956095316:
     __CN1_DEBUG_INFO(729);
     PUSH_POINTER(__NEW_java_lang_IllegalArgumentException(threadStateData)); /* NEW */
     BC_DUP(); /* DUP */
     PUSH_POINTER(__NEW_java_lang_StringBuilder(threadStateData)); /* NEW */
     BC_DUP(); /* DUP */
     java_lang_StringBuilder___INIT____(threadStateData, SP[-1].data.o);     SP -= 1;
-    /* CustomInvoke */{ JAVA_OBJECT tmpResult = virtual_java_lang_StringBuilder_append___java_lang_String_R_java_lang_StringBuilder(threadStateData, SP[-1].data.o, STRING_FROM_CONSTANT_POOL_OFFSET(3785));
+    /* CustomInvoke */{ JAVA_OBJECT tmpResult = virtual_java_lang_StringBuilder_append___java_lang_String_R_java_lang_StringBuilder(threadStateData, SP[-1].data.o, STRING_FROM_CONSTANT_POOL_OFFSET(3795));
     SP[-1].data.o = tmpResult; SP[-1].type = CN1_TYPE_OBJECT; }
     /* CustomInvoke */{ JAVA_OBJECT tmpResult = virtual_java_lang_StringBuilder_append___int_R_java_lang_StringBuilder(threadStateData, SP[-1].data.o, virtual_com_codename1_ui_geom_Geometry_BezierCurve_n___R_int(threadStateData, __cn1ThisObject));
     SP[-1].data.o = tmpResult; SP[-1].type = CN1_TYPE_OBJECT; }

@@ -76,7 +76,7 @@ JAVA_OBJECT __NEW_ARRAY_java_lang_Float(CODENAME_ONE_THREAD_STATE, JAVA_INT size
 
 
 JAVA_VOID java_lang_Float___INIT_____double(CODENAME_ONE_THREAD_STATE, JAVA_OBJECT  __cn1ThisObject, JAVA_DOUBLE __cn1Arg1) {
-    DEFINE_INSTANCE_METHOD_STACK(3, 3, 0, 1068, 205);
+    DEFINE_INSTANCE_METHOD_STACK(3, 3, 0, 437, 205);
     locals[0].data.o = __cn1ThisObject; locals[0].type = CN1_TYPE_OBJECT;     JAVA_DOUBLE dlocals_1_ = __cn1Arg1;
     java_lang_Number___INIT____(threadStateData, __cn1ThisObject); 
     set_field_java_lang_Float_value(threadStateData, ((JAVA_FLOAT)dlocals_1_), __cn1ThisObject);
@@ -86,7 +86,7 @@ JAVA_VOID java_lang_Float___INIT_____double(CODENAME_ONE_THREAD_STATE, JAVA_OBJE
 
 
 JAVA_VOID java_lang_Float___INIT_____float(CODENAME_ONE_THREAD_STATE, JAVA_OBJECT  __cn1ThisObject, JAVA_FLOAT __cn1Arg1) {
-    DEFINE_INSTANCE_METHOD_STACK(2, 2, 0, 1068, 205);
+    DEFINE_INSTANCE_METHOD_STACK(2, 2, 0, 437, 205);
     locals[0].data.o = __cn1ThisObject; locals[0].type = CN1_TYPE_OBJECT;     JAVA_FLOAT flocals_1_ = __cn1Arg1;
     java_lang_Number___INIT____(threadStateData, __cn1ThisObject); 
     set_field_java_lang_Float_value(threadStateData, flocals_1_, __cn1ThisObject);
@@ -96,7 +96,7 @@ JAVA_VOID java_lang_Float___INIT_____float(CODENAME_ONE_THREAD_STATE, JAVA_OBJEC
 
 
 JAVA_BYTE java_lang_Float_byteValue___R_byte(CODENAME_ONE_THREAD_STATE, JAVA_OBJECT  __cn1ThisObject) {
-    DEFINE_INSTANCE_METHOD_STACK(1, 1, 0, 1068, 1018);
+    DEFINE_INSTANCE_METHOD_STACK(1, 1, 0, 437, 387);
     locals[0].data.o = __cn1ThisObject; locals[0].type = CN1_TYPE_OBJECT;     PUSH_FLOAT(get_field_java_lang_Float_value(__cn1ThisObject));
     SP[-1].data.i = (JAVA_INT)SP[-1].data.f; /* F2I */
     SP[-1].data.i = ((SP[-1].data.i << 24) >> 24); /* I2B */
@@ -105,7 +105,7 @@ JAVA_BYTE java_lang_Float_byteValue___R_byte(CODENAME_ONE_THREAD_STATE, JAVA_OBJ
 
 
 JAVA_DOUBLE java_lang_Float_doubleValue___R_double(CODENAME_ONE_THREAD_STATE, JAVA_OBJECT  __cn1ThisObject) {
-    DEFINE_INSTANCE_METHOD_STACK(2, 1, 0, 1068, 1020);
+    DEFINE_INSTANCE_METHOD_STACK(2, 1, 0, 437, 389);
     locals[0].data.o = __cn1ThisObject; locals[0].type = CN1_TYPE_OBJECT;     PUSH_FLOAT(get_field_java_lang_Float_value(__cn1ThisObject));
     SP[-1].data.d = SP[-1].data.f; /* F2D */
     releaseForReturn(threadStateData, cn1LocalsBeginInThread); 
@@ -114,7 +114,7 @@ JAVA_DOUBLE java_lang_Float_doubleValue___R_double(CODENAME_ONE_THREAD_STATE, JA
 
 
 JAVA_BOOLEAN java_lang_Float_equals___java_lang_Object_R_boolean(CODENAME_ONE_THREAD_STATE, JAVA_OBJECT  __cn1ThisObject, JAVA_OBJECT __cn1Arg1) {
-    DEFINE_INSTANCE_METHOD_STACK(2, 2, 0, 1068, 880);
+    DEFINE_INSTANCE_METHOD_STACK(2, 2, 0, 437, 244);
     locals[0].data.o = __cn1ThisObject; locals[0].type = CN1_TYPE_OBJECT;     locals[1].data.o = __cn1Arg1;
     locals[1].type = CN1_TYPE_OBJECT;
     if (locals[1].data.o==JAVA_NULL) /* IFNULL CustomJump */ goto label_L1244867001;
@@ -136,7 +136,7 @@ label_L1037955032:
 
 
 JAVA_FLOAT java_lang_Float_floatValue___R_float(CODENAME_ONE_THREAD_STATE, JAVA_OBJECT  __cn1ThisObject) {
-    DEFINE_INSTANCE_METHOD_STACK(1, 1, 0, 1068, 1021);
+    DEFINE_INSTANCE_METHOD_STACK(1, 1, 0, 437, 390);
     locals[0].data.o = __cn1ThisObject; locals[0].type = CN1_TYPE_OBJECT;     PUSH_FLOAT(get_field_java_lang_Float_value(__cn1ThisObject));
     releaseForReturn(threadStateData, cn1LocalsBeginInThread); 
     return POP_FLOAT();
@@ -144,14 +144,14 @@ JAVA_FLOAT java_lang_Float_floatValue___R_float(CODENAME_ONE_THREAD_STATE, JAVA_
 
 
 JAVA_INT java_lang_Float_hashCode___R_int(CODENAME_ONE_THREAD_STATE, JAVA_OBJECT  __cn1ThisObject) {
-    DEFINE_INSTANCE_METHOD_STACK(1, 1, 0, 1068, 885);
+    DEFINE_INSTANCE_METHOD_STACK(1, 1, 0, 437, 249);
     locals[0].data.o = __cn1ThisObject; locals[0].type = CN1_TYPE_OBJECT;     /* CustomInvoke */PUSH_INT(java_lang_Float_floatToIntBits___float_R_int(threadStateData, get_field_java_lang_Float_value(__cn1ThisObject)));
     releaseForReturn(threadStateData, cn1LocalsBeginInThread); return SP[-1].data.i;
 }
 
 
 JAVA_INT java_lang_Float_intValue___R_int(CODENAME_ONE_THREAD_STATE, JAVA_OBJECT  __cn1ThisObject) {
-    DEFINE_INSTANCE_METHOD_STACK(1, 1, 0, 1068, 1022);
+    DEFINE_INSTANCE_METHOD_STACK(1, 1, 0, 437, 391);
     locals[0].data.o = __cn1ThisObject; locals[0].type = CN1_TYPE_OBJECT;     PUSH_FLOAT(get_field_java_lang_Float_value(__cn1ThisObject));
     SP[-1].data.i = (JAVA_INT)SP[-1].data.f; /* F2I */
     releaseForReturn(threadStateData, cn1LocalsBeginInThread); return SP[-1].data.i;
@@ -169,7 +169,7 @@ JAVA_BOOLEAN java_lang_Float_isInfinite___float_R_boolean(CODENAME_ONE_THREAD_ST
 
 
 JAVA_BOOLEAN java_lang_Float_isNaN___R_boolean(CODENAME_ONE_THREAD_STATE, JAVA_OBJECT  __cn1ThisObject) {
-    DEFINE_INSTANCE_METHOD_STACK(2, 1, 0, 1068, 1024);
+    DEFINE_INSTANCE_METHOD_STACK(2, 1, 0, 437, 393);
     locals[0].data.o = __cn1ThisObject; locals[0].type = CN1_TYPE_OBJECT;     if (CN1_CMP_EXPR(get_field_java_lang_Float_value(__cn1ThisObject), get_field_java_lang_Float_value(__cn1ThisObject))==0) /* IFEQ CustomJump */ goto label_L333693383;
     PUSH_INT(1); /* ICONST_1 */
     goto label_L1394010463;
@@ -184,7 +184,7 @@ label_L1394010463:
 
 JAVA_BOOLEAN java_lang_Float_isNaN___float_R_boolean(CODENAME_ONE_THREAD_STATE, JAVA_FLOAT __cn1Arg1) {
     __STATIC_INITIALIZER_java_lang_Float(threadStateData);
-    DEFINE_METHOD_STACK(2, 1, 0, 1068, 1024);
+    DEFINE_METHOD_STACK(2, 1, 0, 437, 393);
     JAVA_FLOAT flocals_0_ = __cn1Arg1;
     if (CN1_CMP_EXPR(flocals_0_, flocals_0_)==0) /* IFEQ CustomJump */ goto label_L1057307776;
     PUSH_INT(1); /* ICONST_1 */
@@ -199,7 +199,7 @@ label_L1819038759:
 
 
 JAVA_LONG java_lang_Float_longValue___R_long(CODENAME_ONE_THREAD_STATE, JAVA_OBJECT  __cn1ThisObject) {
-    DEFINE_INSTANCE_METHOD_STACK(2, 1, 0, 1068, 1026);
+    DEFINE_INSTANCE_METHOD_STACK(2, 1, 0, 437, 395);
     locals[0].data.o = __cn1ThisObject; locals[0].type = CN1_TYPE_OBJECT;     PUSH_FLOAT(get_field_java_lang_Float_value(__cn1ThisObject));
     SP[-1].data.l = (JAVA_LONG)SP[-1].data.f; /* F2L */
     releaseForReturn(threadStateData, cn1LocalsBeginInThread); 
@@ -209,7 +209,7 @@ JAVA_LONG java_lang_Float_longValue___R_long(CODENAME_ONE_THREAD_STATE, JAVA_OBJ
 
 JAVA_FLOAT java_lang_Float_parseFloat___java_lang_String_R_float(CODENAME_ONE_THREAD_STATE, JAVA_OBJECT __cn1Arg1) {
     __STATIC_INITIALIZER_java_lang_Float(threadStateData);
-    DEFINE_METHOD_STACK(1, 1, 0, 1068, 1067);
+    DEFINE_METHOD_STACK(1, 1, 0, 437, 436);
     locals[0].data.o = __cn1Arg1;
     locals[0].type = CN1_TYPE_OBJECT;
     /* CustomInvoke */PUSH_FLOAT(java_lang_StringToReal_parseFloat___java_lang_String_R_float(threadStateData, locals[0].data.o));
@@ -219,7 +219,7 @@ JAVA_FLOAT java_lang_Float_parseFloat___java_lang_String_R_float(CODENAME_ONE_TH
 
 
 JAVA_SHORT java_lang_Float_shortValue___R_short(CODENAME_ONE_THREAD_STATE, JAVA_OBJECT  __cn1ThisObject) {
-    DEFINE_INSTANCE_METHOD_STACK(1, 1, 0, 1068, 1028);
+    DEFINE_INSTANCE_METHOD_STACK(1, 1, 0, 437, 397);
     locals[0].data.o = __cn1ThisObject; locals[0].type = CN1_TYPE_OBJECT;     PUSH_FLOAT(get_field_java_lang_Float_value(__cn1ThisObject));
     SP[-1].data.i = (JAVA_INT)SP[-1].data.f; /* F2I */
     SP[-1].data.i = ((SP[-1].data.i << 16) >> 16); /* I2S */
@@ -228,7 +228,7 @@ JAVA_SHORT java_lang_Float_shortValue___R_short(CODENAME_ONE_THREAD_STATE, JAVA_
 
 
 JAVA_OBJECT java_lang_Float_toString___R_java_lang_String(CODENAME_ONE_THREAD_STATE, JAVA_OBJECT  __cn1ThisObject) {
-    DEFINE_INSTANCE_METHOD_STACK(1, 1, 0, 1068, 899);
+    DEFINE_INSTANCE_METHOD_STACK(1, 1, 0, 437, 263);
     locals[0].data.o = __cn1ThisObject; locals[0].type = CN1_TYPE_OBJECT;     /* CustomInvoke */PUSH_OBJ(java_lang_Float_toString___float_R_java_lang_String(threadStateData, get_field_java_lang_Float_value(__cn1ThisObject)));
     releaseForReturn(threadStateData, cn1LocalsBeginInThread); 
     return POP_OBJ();
@@ -240,19 +240,19 @@ JAVA_OBJECT java_lang_Float_toString___float_R_java_lang_String(CODENAME_ONE_THR
     volatile JAVA_INT ilocals_5_ = 0; /* v5 */
     volatile JAVA_FLOAT flocals_1_ = 0; /* v1 */
     __STATIC_INITIALIZER_java_lang_Float(threadStateData);
-    DEFINE_METHOD_STACK(4, 6, 0, 1068, 899);
+    DEFINE_METHOD_STACK(4, 6, 0, 437, 263);
     JAVA_FLOAT flocals_0_ = __cn1Arg1;
     /* VarOp.assignFrom */ flocals_1_ = /* CustomInvoke */java_lang_Math_abs___float_R_float(threadStateData, flocals_0_);
     if (CN1_CMP_EXPR(flocals_0_, 1.0f / 0.0f)!=0) /* IFNE CustomJump */ goto label_L1636588948;
-    releaseForReturn(threadStateData, cn1LocalsBeginInThread); return STRING_FROM_CONSTANT_POOL_OFFSET(1030);
+    releaseForReturn(threadStateData, cn1LocalsBeginInThread); return STRING_FROM_CONSTANT_POOL_OFFSET(399);
 
 label_L1636588948:
     if (CN1_CMP_EXPR(flocals_0_, -1.0f / 0.0f)!=0) /* IFNE CustomJump */ goto label_L95685867;
-    releaseForReturn(threadStateData, cn1LocalsBeginInThread); return STRING_FROM_CONSTANT_POOL_OFFSET(1031);
+    releaseForReturn(threadStateData, cn1LocalsBeginInThread); return STRING_FROM_CONSTANT_POOL_OFFSET(400);
 
 label_L95685867:
     if (CN1_CMP_EXPR(flocals_0_, 0 /* FCONST_0 */)!=0) /* IFNE CustomJump */ goto label_L331596257;
-    releaseForReturn(threadStateData, cn1LocalsBeginInThread); return STRING_FROM_CONSTANT_POOL_OFFSET(1032);
+    releaseForReturn(threadStateData, cn1LocalsBeginInThread); return STRING_FROM_CONSTANT_POOL_OFFSET(401);
 
 label_L331596257:
     if (CN1_CMP_EXPR(flocals_1_, 0.001)<0) /* IFLT CustomJump */ goto label_L494953170;
@@ -329,7 +329,7 @@ JAVA_OBJECT java_lang_Float_valueOf___java_lang_String_R_java_lang_Float(CODENAM
 
 JAVA_OBJECT java_lang_Float_valueOf___float_R_java_lang_Float(CODENAME_ONE_THREAD_STATE, JAVA_FLOAT __cn1Arg1) {
     __STATIC_INITIALIZER_java_lang_Float(threadStateData);
-    DEFINE_METHOD_STACK(3, 1, 0, 1068, 902);
+    DEFINE_METHOD_STACK(3, 1, 0, 437, 266);
     JAVA_FLOAT flocals_0_ = __cn1Arg1;
     PUSH_POINTER(__NEW_java_lang_Float(threadStateData)); /* NEW */
     BC_DUP(); /* DUP */
@@ -343,7 +343,7 @@ JAVA_INT java_lang_Float_compare___float_float_R_int(CODENAME_ONE_THREAD_STATE, 
     volatile JAVA_INT ilocals_2_ = 0; /* v2 */
     volatile JAVA_INT ilocals_3_ = 0; /* v3 */
     __STATIC_INITIALIZER_java_lang_Float(threadStateData);
-    DEFINE_METHOD_STACK(2, 4, 0, 1068, 1035);
+    DEFINE_METHOD_STACK(2, 4, 0, 437, 404);
     JAVA_FLOAT flocals_0_ = __cn1Arg1;
     JAVA_FLOAT flocals_1_ = __cn1Arg2;
     if (/* CustomInvoke */java_lang_Float_isNaN___float_R_boolean(threadStateData, flocals_0_)==0) /* IFEQ CustomJump */ goto label_L747158012;
@@ -397,7 +397,7 @@ label_L1628551735:
 
 
 JAVA_INT java_lang_Float_compareTo___java_lang_Float_R_int(CODENAME_ONE_THREAD_STATE, JAVA_OBJECT  __cn1ThisObject, JAVA_OBJECT __cn1Arg1) {
-    DEFINE_INSTANCE_METHOD_STACK(2, 2, 0, 1068, 874);
+    DEFINE_INSTANCE_METHOD_STACK(2, 2, 0, 437, 238);
     locals[0].data.o = __cn1ThisObject; locals[0].type = CN1_TYPE_OBJECT;     locals[1].data.o = __cn1Arg1;
     locals[1].type = CN1_TYPE_OBJECT;
     /* CustomInvoke */PUSH_INT(java_lang_Float_compare___float_float_R_int(threadStateData, get_field_java_lang_Float_value(__cn1ThisObject), get_field_java_lang_Float_value(locals[1].data.o)));
@@ -406,7 +406,7 @@ JAVA_INT java_lang_Float_compareTo___java_lang_Float_R_int(CODENAME_ONE_THREAD_S
 
 
 JAVA_INT java_lang_Float_compareTo___java_lang_Object_R_int(CODENAME_ONE_THREAD_STATE, JAVA_OBJECT  __cn1ThisObject, JAVA_OBJECT __cn1Arg1) {
-    DEFINE_INSTANCE_METHOD_STACK(2, 2, 0, 1068, 874);
+    DEFINE_INSTANCE_METHOD_STACK(2, 2, 0, 437, 238);
     locals[0].data.o = __cn1ThisObject; locals[0].type = CN1_TYPE_OBJECT;     locals[1].data.o = __cn1Arg1;
     locals[1].type = CN1_TYPE_OBJECT;
     /* CustomInvoke */{ JAVA_INT tmpResult = virtual_java_lang_Float_compareTo___java_lang_Float_R_int(threadStateData, __cn1ThisObject, locals[1].data.o);
@@ -416,7 +416,7 @@ JAVA_INT java_lang_Float_compareTo___java_lang_Object_R_int(CODENAME_ONE_THREAD_
 
 
 JAVA_VOID java_lang_Float___CLINIT____(CODENAME_ONE_THREAD_STATE) {
-    DEFINE_METHOD_STACK(1, 0, 0, 1068, 863);
+    DEFINE_METHOD_STACK(1, 0, 0, 437, 275);
     /* CustomInvoke */PUSH_INT(java_lang_Float_floatToIntBits___float_R_int(threadStateData, -0.0));
     set_static_java_lang_Float_NEGATIVE_ZERO_BITS(threadStateData, POP_INT());
     releaseForReturn(threadStateData, cn1LocalsBeginInThread); 

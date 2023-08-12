@@ -60,6 +60,9 @@ JAVA_VOID virtual_com_example_myapp_MyApp_start__(CODENAME_ONE_THREAD_STATE, JAV
 JAVA_VOID virtual_com_example_myapp_MyApp_stop__(CODENAME_ONE_THREAD_STATE, JAVA_OBJECT  __cn1ThisObject);
 
 JAVA_VOID virtual_com_example_myapp_MyApp_destroy__(CODENAME_ONE_THREAD_STATE, JAVA_OBJECT  __cn1ThisObject);
+extern JAVA_OBJECT get_static_com_example_myapp_MyApp_admob();
+extern JAVA_OBJECT STATIC_FIELD_com_example_myapp_MyApp_admob;
+extern void set_static_com_example_myapp_MyApp_admob(CODENAME_ONE_THREAD_STATE, JAVA_OBJECT v);
 extern JAVA_INT get_static_com_example_myapp_MyApp_DEVICE_HEIGHT();
 extern JAVA_INT STATIC_FIELD_com_example_myapp_MyApp_DEVICE_HEIGHT;
 extern void set_static_com_example_myapp_MyApp_DEVICE_HEIGHT(CODENAME_ONE_THREAD_STATE, JAVA_INT v);

@@ -165,7 +165,7 @@ java_net_URIHelper___INIT____(threadStateData, o);
 
 
 JAVA_VOID java_net_URIHelper___INIT____(CODENAME_ONE_THREAD_STATE, JAVA_OBJECT  __cn1ThisObject) {
-    DEFINE_INSTANCE_METHOD_STACK(1, 1, 0, 8007, 205);
+    DEFINE_INSTANCE_METHOD_STACK(1, 1, 0, 8017, 205);
     locals[0].data.o = __cn1ThisObject; locals[0].type = CN1_TYPE_OBJECT;     java_lang_Object___INIT____(threadStateData, __cn1ThisObject); 
     releaseForReturn(threadStateData, cn1LocalsBeginInThread); 
     return;
@@ -191,7 +191,7 @@ JAVA_OBJECT java_net_URIHelper_encodeString___java_lang_String_R_java_lang_Strin
     volatile JAVA_INT ilocals_1_ = 0; /* v1 */
     volatile JAVA_INT ilocals_4_ = 0; /* v4 */
     __STATIC_INITIALIZER_java_net_URIHelper(threadStateData);
-    DEFINE_METHOD_STACK(4, 5, 0, 8007, 7840);
+    DEFINE_METHOD_STACK(4, 5, 0, 8017, 7850);
     locals[0].data.o = __cn1Arg1;
     locals[0].type = CN1_TYPE_OBJECT;
     if (locals[0].data.o!=JAVA_NULL) /* IFNONNULL CustomJump */ goto label_L321142942;
@@ -264,22 +264,22 @@ label_L610984013:
 
 JAVA_OBJECT java_net_URIHelper_decodeString___java_lang_String_boolean_R_java_lang_String(CODENAME_ONE_THREAD_STATE, JAVA_OBJECT __cn1Arg1, JAVA_BOOLEAN __cn1Arg2) {
     __STATIC_INITIALIZER_java_net_URIHelper(threadStateData);
-    DEFINE_METHOD_STACK(3, 3, 0, 8007, 8011);
+    DEFINE_METHOD_STACK(3, 3, 0, 8017, 8021);
     locals[0].data.o = __cn1Arg1;
     locals[0].type = CN1_TYPE_OBJECT;
     JAVA_INT ilocals_1_ = __cn1Arg2;
-    int restoreToL1886526509cn1_class_id_java_net_URISyntaxException1;
-    int tryBlockOffsetL1886526509cn1_class_id_java_net_URISyntaxException1;
-    DEFINE_CATCH_BLOCK(catch_L1886526509cn1_class_id_java_net_URISyntaxException1, label_L1566723494, restoreToL1886526509cn1_class_id_java_net_URISyntaxException1);
+    int restoreToL874981433cn1_class_id_java_net_URISyntaxException1;
+    int tryBlockOffsetL874981433cn1_class_id_java_net_URISyntaxException1;
+    DEFINE_CATCH_BLOCK(catch_L874981433cn1_class_id_java_net_URISyntaxException1, label_L1566723494, restoreToL874981433cn1_class_id_java_net_URISyntaxException1);
 
-label_L1886526509:
- tryBlockOffsetL1886526509cn1_class_id_java_net_URISyntaxException1 = threadStateData->tryBlockOffset;
-    BEGIN_TRY(cn1_class_id_java_net_URISyntaxException, catch_L1886526509cn1_class_id_java_net_URISyntaxException1);
-    restoreToL1886526509cn1_class_id_java_net_URISyntaxException1 = threadStateData->threadObjectStackOffset;
+label_L874981433:
+ tryBlockOffsetL874981433cn1_class_id_java_net_URISyntaxException1 = threadStateData->tryBlockOffset;
+    BEGIN_TRY(cn1_class_id_java_net_URISyntaxException, catch_L874981433cn1_class_id_java_net_URISyntaxException1);
+    restoreToL874981433cn1_class_id_java_net_URISyntaxException1 = threadStateData->threadObjectStackOffset;
 
     /* CustomInvoke */PUSH_OBJ(java_net_URIHelper_decodeString___java_lang_String_R_java_lang_String(threadStateData, locals[0].data.o));
 
-label_L1999923549:
+label_L276990011:
 END_TRY(1);    releaseForReturnInException(threadStateData, cn1LocalsBeginInThread, methodBlockOffset); 
     return POP_OBJ();
 
@@ -300,15 +300,15 @@ JAVA_OBJECT java_net_URIHelper_decodeString___java_lang_String_R_java_lang_Strin
     volatile JAVA_INT ilocals_3_ = 0; /* v3 */
     volatile JAVA_INT ilocals_4_ = 0; /* v4 */
     __STATIC_INITIALIZER_java_net_URIHelper(threadStateData);
-    DEFINE_METHOD_STACK(4, 6, 0, 8007, 8011);
+    DEFINE_METHOD_STACK(4, 6, 0, 8017, 8021);
     locals[0].data.o = __cn1Arg1;
     locals[0].type = CN1_TYPE_OBJECT;
     int restoreToL760563749cn1_class_id_java_lang_NumberFormatException1;
     int tryBlockOffsetL760563749cn1_class_id_java_lang_NumberFormatException1;
     DEFINE_CATCH_BLOCK(catch_L760563749cn1_class_id_java_lang_NumberFormatException1, label_L1622006612, restoreToL760563749cn1_class_id_java_lang_NumberFormatException1);
-    int restoreToL1315434656cn1_class_id_java_io_IOException2;
-    int tryBlockOffsetL1315434656cn1_class_id_java_io_IOException2;
-    DEFINE_CATCH_BLOCK(catch_L1315434656cn1_class_id_java_io_IOException2, label_L66233253, restoreToL1315434656cn1_class_id_java_io_IOException2);
+    int restoreToL891709829cn1_class_id_java_io_IOException2;
+    int tryBlockOffsetL891709829cn1_class_id_java_io_IOException2;
+    DEFINE_CATCH_BLOCK(catch_L891709829cn1_class_id_java_io_IOException2, label_L66233253, restoreToL891709829cn1_class_id_java_io_IOException2);
     if (locals[0].data.o!=JAVA_NULL) /* IFNONNULL CustomJump */ JUMP_TO(label_L1286783232, 0);
 
 {
@@ -335,10 +335,10 @@ label_L1874154700:
     java_io_ByteArrayOutputStream___INIT____(threadStateData, SP[-1].data.o);     SP -= 1;
     BC_ASTORE(2);
 
-label_L1315434656:
- tryBlockOffsetL1315434656cn1_class_id_java_io_IOException2 = threadStateData->tryBlockOffset;
-    BEGIN_TRY(cn1_class_id_java_io_IOException, catch_L1315434656cn1_class_id_java_io_IOException2);
-    restoreToL1315434656cn1_class_id_java_io_IOException2 = threadStateData->threadObjectStackOffset;
+label_L891709829:
+ tryBlockOffsetL891709829cn1_class_id_java_io_IOException2 = threadStateData->tryBlockOffset;
+    BEGIN_TRY(cn1_class_id_java_io_IOException, catch_L891709829cn1_class_id_java_io_IOException2);
+    restoreToL891709829cn1_class_id_java_io_IOException2 = threadStateData->threadObjectStackOffset;
 
     BC_ALOAD(2);
     /* CustomInvoke */{ JAVA_OBJECT tmpResult = virtual_java_lang_String_substring___int_int_R_java_lang_String(threadStateData, locals[0].data.o, 0 /* ICONST_0 */, ilocals_1_);
@@ -374,14 +374,14 @@ label_L760563749:
     SP[-1].data.i = (SP[-1].data.i & 0xffff); /* I2C */
     BC_ISTORE(4);
 
-label_L348708793:
+label_L2066536447:
 END_TRY(1);    JUMP_TO(label_L75457651, 1);
 
 label_L1622006612:
     BC_ASTORE(5);
     PUSH_POINTER(__NEW_java_net_URISyntaxException(threadStateData)); /* NEW */
     BC_DUP(); /* DUP */
-    /* CustomInvoke */java_net_URISyntaxException___INIT_____java_lang_String_java_lang_String(threadStateData, SP[-1].data.o, locals[0].data.o, STRING_FROM_CONSTANT_POOL_OFFSET(8012));     SP -= 1;
+    /* CustomInvoke */java_net_URISyntaxException___INIT_____java_lang_String_java_lang_String(threadStateData, SP[-1].data.o, locals[0].data.o, STRING_FROM_CONSTANT_POOL_OFFSET(8022));     SP -= 1;
     throwException(threadStateData, POP_OBJ());
 
 label_L75457651:
@@ -404,10 +404,10 @@ label_L1632392469:
     { JAVA_OBJECT tmpResult = virtual_java_io_ByteArrayOutputStream_toByteArray___R_byte_1ARRAY(threadStateData, locals[2].data.o);
     PUSH_OBJ(tmpResult); }
     /* LDC: 'UTF8'*/
-    PUSH_POINTER(STRING_FROM_CONSTANT_POOL_OFFSET(8013));
+    PUSH_POINTER(STRING_FROM_CONSTANT_POOL_OFFSET(8023));
     java_lang_String___INIT_____byte_1ARRAY_java_lang_String(threadStateData, SP[-3].data.o, SP[-2].data.o, SP[-1].data.o);     SP-= 3;
 
-label_L1701590380:
+label_L1617991947:
 END_TRY(1);    releaseForReturnInException(threadStateData, cn1LocalsBeginInThread, methodBlockOffset); 
     return POP_OBJ();
 
@@ -452,22 +452,22 @@ JAVA_INT java_net_URIHelper_getDefaultPort___java_lang_String_R_int(CODENAME_ONE
 
 JAVA_OBJECT java_net_URIHelper_toBytes___java_lang_String_R_byte_1ARRAY(CODENAME_ONE_THREAD_STATE, JAVA_OBJECT __cn1Arg1) {
     __STATIC_INITIALIZER_java_net_URIHelper(threadStateData);
-    DEFINE_METHOD_STACK(3, 2, 0, 8007, 8018);
+    DEFINE_METHOD_STACK(3, 2, 0, 8017, 8028);
     locals[0].data.o = __cn1Arg1;
     locals[0].type = CN1_TYPE_OBJECT;
-    int restoreToL826721821cn1_class_id_java_io_UnsupportedEncodingException1;
-    int tryBlockOffsetL826721821cn1_class_id_java_io_UnsupportedEncodingException1;
-    DEFINE_CATCH_BLOCK(catch_L826721821cn1_class_id_java_io_UnsupportedEncodingException1, label_L1358444045, restoreToL826721821cn1_class_id_java_io_UnsupportedEncodingException1);
+    int restoreToL1689716334cn1_class_id_java_io_UnsupportedEncodingException1;
+    int tryBlockOffsetL1689716334cn1_class_id_java_io_UnsupportedEncodingException1;
+    DEFINE_CATCH_BLOCK(catch_L1689716334cn1_class_id_java_io_UnsupportedEncodingException1, label_L1358444045, restoreToL1689716334cn1_class_id_java_io_UnsupportedEncodingException1);
 
-label_L826721821:
- tryBlockOffsetL826721821cn1_class_id_java_io_UnsupportedEncodingException1 = threadStateData->tryBlockOffset;
-    BEGIN_TRY(cn1_class_id_java_io_UnsupportedEncodingException, catch_L826721821cn1_class_id_java_io_UnsupportedEncodingException1);
-    restoreToL826721821cn1_class_id_java_io_UnsupportedEncodingException1 = threadStateData->threadObjectStackOffset;
+label_L1689716334:
+ tryBlockOffsetL1689716334cn1_class_id_java_io_UnsupportedEncodingException1 = threadStateData->tryBlockOffset;
+    BEGIN_TRY(cn1_class_id_java_io_UnsupportedEncodingException, catch_L1689716334cn1_class_id_java_io_UnsupportedEncodingException1);
+    restoreToL1689716334cn1_class_id_java_io_UnsupportedEncodingException1 = threadStateData->threadObjectStackOffset;
 
-    /* CustomInvoke */{ JAVA_OBJECT tmpResult = virtual_java_lang_String_getBytes___java_lang_String_R_byte_1ARRAY(threadStateData, locals[0].data.o, STRING_FROM_CONSTANT_POOL_OFFSET(8013));
+    /* CustomInvoke */{ JAVA_OBJECT tmpResult = virtual_java_lang_String_getBytes___java_lang_String_R_byte_1ARRAY(threadStateData, locals[0].data.o, STRING_FROM_CONSTANT_POOL_OFFSET(8023));
     PUSH_OBJ(tmpResult); }
 
-label_L1663165083:
+label_L2042213928:
 END_TRY(1);    releaseForReturnInException(threadStateData, cn1LocalsBeginInThread, methodBlockOffset); 
     return POP_OBJ();
 
@@ -486,7 +486,7 @@ label_L1358444045:
 JAVA_INT java_net_URIHelper_firstIllegalCharacter___java_lang_String_R_int(CODENAME_ONE_THREAD_STATE, JAVA_OBJECT __cn1Arg1) {
     volatile JAVA_INT ilocals_1_ = 0; /* v1 */
     __STATIC_INITIALIZER_java_net_URIHelper(threadStateData);
-    DEFINE_METHOD_STACK(2, 2, 0, 8007, 8019);
+    DEFINE_METHOD_STACK(2, 2, 0, 8017, 8029);
     locals[0].data.o = __cn1Arg1;
     locals[0].type = CN1_TYPE_OBJECT;
     /* VarOp.assignFrom */     ilocals_1_ = 0 /* ICONST_0 */; 
@@ -512,7 +512,7 @@ label_L750044075:
 
 JAVA_BOOLEAN java_net_URIHelper_isLegal___int_R_boolean(CODENAME_ONE_THREAD_STATE, JAVA_INT __cn1Arg1) {
     __STATIC_INITIALIZER_java_net_URIHelper(threadStateData);
-    DEFINE_METHOD_STACK(2, 1, 0, 8007, 8020);
+    DEFINE_METHOD_STACK(2, 1, 0, 8017, 8030);
     JAVA_INT ilocals_0_ = __cn1Arg1;
     if (/* CustomInvoke */java_net_URIHelper_isAlpha___int_R_boolean(threadStateData, ilocals_0_)!=0) /* IFNE CustomJump */ goto label_L64830413;
     if (/* CustomInvoke */java_net_URIHelper_isNumeric___int_R_boolean(threadStateData, ilocals_0_)!=0) /* IFNE CustomJump */ goto label_L64830413;
@@ -534,7 +534,7 @@ label_L653687670:
 
 JAVA_BOOLEAN java_net_URIHelper_isLegalUnicode___int_R_boolean(CODENAME_ONE_THREAD_STATE, JAVA_INT __cn1Arg1) {
     __STATIC_INITIALIZER_java_net_URIHelper(threadStateData);
-    DEFINE_METHOD_STACK(1, 1, 0, 8007, 8021);
+    DEFINE_METHOD_STACK(1, 1, 0, 8017, 8031);
     JAVA_INT ilocals_0_ = __cn1Arg1;
     if (/* CustomInvoke */java_net_URIHelper_isASCII___int_R_boolean(threadStateData, ilocals_0_)!=0) /* IFNE CustomJump */ goto label_L356473385;
     if (/* CustomInvoke */java_net_URIHelper_isSpace___int_R_boolean(threadStateData, ilocals_0_)!=0) /* IFNE CustomJump */ goto label_L356473385;
@@ -552,7 +552,7 @@ label_L2136344592:
 
 JAVA_BOOLEAN java_net_URIHelper_isASCII___int_R_boolean(CODENAME_ONE_THREAD_STATE, JAVA_INT __cn1Arg1) {
     __STATIC_INITIALIZER_java_net_URIHelper(threadStateData);
-    DEFINE_METHOD_STACK(2, 1, 0, 8007, 8022);
+    DEFINE_METHOD_STACK(2, 1, 0, 8017, 8032);
     JAVA_INT ilocals_0_ = __cn1Arg1;
     if (ilocals_0_<=0) /* IFLE CustomJump */ goto label_L110992469;
     (*SP).type = CN1_TYPE_INT; /* ILOAD */ 
@@ -573,7 +573,7 @@ label_L329611835:
 
 JAVA_BOOLEAN java_net_URIHelper_isSpace___int_R_boolean(CODENAME_ONE_THREAD_STATE, JAVA_INT __cn1Arg1) {
     __STATIC_INITIALIZER_java_net_URIHelper(threadStateData);
-    DEFINE_METHOD_STACK(2, 1, 0, 8007, 8023);
+    DEFINE_METHOD_STACK(2, 1, 0, 8017, 8033);
     JAVA_INT ilocals_0_ = __cn1Arg1;
     (*SP).type = CN1_TYPE_INT; /* ILOAD */ 
     (*SP).data.i = ilocals_0_; 
@@ -606,7 +606,7 @@ label_L1508395126:
 
 JAVA_BOOLEAN java_net_URIHelper_isLineBreak___int_R_boolean(CODENAME_ONE_THREAD_STATE, JAVA_INT __cn1Arg1) {
     __STATIC_INITIALIZER_java_net_URIHelper(threadStateData);
-    DEFINE_METHOD_STACK(2, 1, 0, 8007, 8024);
+    DEFINE_METHOD_STACK(2, 1, 0, 8017, 8034);
     JAVA_INT ilocals_0_ = __cn1Arg1;
     (*SP).type = CN1_TYPE_INT; /* ILOAD */ 
     (*SP).data.i = ilocals_0_; 
@@ -668,7 +668,7 @@ label_L1651945012:
 
 JAVA_BOOLEAN java_net_URIHelper_isISOControl___int_R_boolean(CODENAME_ONE_THREAD_STATE, JAVA_INT __cn1Arg1) {
     __STATIC_INITIALIZER_java_net_URIHelper(threadStateData);
-    DEFINE_METHOD_STACK(2, 1, 0, 8007, 8025);
+    DEFINE_METHOD_STACK(2, 1, 0, 8017, 8035);
     JAVA_INT ilocals_0_ = __cn1Arg1;
     if (ilocals_0_<0) /* IFLT CustomJump */ goto label_L2034688500;
     (*SP).type = CN1_TYPE_INT; /* ILOAD */ 
@@ -708,7 +708,7 @@ JAVA_BOOLEAN java_net_URIHelper_isAlphaNum___int_R_boolean(CODENAME_ONE_THREAD_S
 
 JAVA_BOOLEAN java_net_URIHelper_isAlpha___int_R_boolean(CODENAME_ONE_THREAD_STATE, JAVA_INT __cn1Arg1) {
     __STATIC_INITIALIZER_java_net_URIHelper(threadStateData);
-    DEFINE_METHOD_STACK(2, 1, 0, 8007, 7695);
+    DEFINE_METHOD_STACK(2, 1, 0, 8017, 7705);
     JAVA_INT ilocals_0_ = __cn1Arg1;
     (*SP).type = CN1_TYPE_INT; /* ILOAD */ 
     (*SP).data.i = ilocals_0_; 
@@ -747,7 +747,7 @@ label_L1166726978:
 
 JAVA_BOOLEAN java_net_URIHelper_isNumeric___int_R_boolean(CODENAME_ONE_THREAD_STATE, JAVA_INT __cn1Arg1) {
     __STATIC_INITIALIZER_java_net_URIHelper(threadStateData);
-    DEFINE_METHOD_STACK(2, 1, 0, 8007, 7614);
+    DEFINE_METHOD_STACK(2, 1, 0, 8017, 7624);
     JAVA_INT ilocals_0_ = __cn1Arg1;
     (*SP).type = CN1_TYPE_INT; /* ILOAD */ 
     (*SP).data.i = ilocals_0_; 
@@ -771,14 +771,14 @@ label_L1856056345:
 
 
 JAVA_VOID java_net_URIHelper___CLINIT____(CODENAME_ONE_THREAD_STATE) {
-    DEFINE_METHOD_STACK(4, 0, 0, 8007, 863);
+    DEFINE_METHOD_STACK(4, 0, 0, 8017, 275);
     PUSH_INT(4); /* ICONST_4 */
     SP--;
     PUSH_POINTER(__NEW_ARRAY_java_lang_String(threadStateData, SP[0].data.i));
     BC_DUP(); /* DUP */
     PUSH_INT(0); /* ICONST_0 */
     /* LDC: '&quot;'*/
-    PUSH_POINTER(STRING_FROM_CONSTANT_POOL_OFFSET(8027));
+    PUSH_POINTER(STRING_FROM_CONSTANT_POOL_OFFSET(8037));
     CHECK_ARRAY_ACCESS(3, SP[-2].data.i); { /* BC_AASTORE */
     JAVA_OBJECT aastoreTmp = SP[-3].data.o; 
     ((JAVA_ARRAY_OBJECT*) (*(JAVA_ARRAY)aastoreTmp).data)[SP[-2].data.i] = SP[-1].data.o; 
@@ -794,7 +794,7 @@ JAVA_VOID java_net_URIHelper___CLINIT____(CODENAME_ONE_THREAD_STATE) {
     BC_DUP(); /* DUP */
     PUSH_INT(2); /* ICONST_2 */
     /* LDC: '&lt;'*/
-    PUSH_POINTER(STRING_FROM_CONSTANT_POOL_OFFSET(8028));
+    PUSH_POINTER(STRING_FROM_CONSTANT_POOL_OFFSET(8038));
     CHECK_ARRAY_ACCESS(3, SP[-2].data.i); { /* BC_AASTORE */
     JAVA_OBJECT aastoreTmp = SP[-3].data.o; 
     ((JAVA_ARRAY_OBJECT*) (*(JAVA_ARRAY)aastoreTmp).data)[SP[-2].data.i] = SP[-1].data.o; 
@@ -802,7 +802,7 @@ JAVA_VOID java_net_URIHelper___CLINIT____(CODENAME_ONE_THREAD_STATE) {
     BC_DUP(); /* DUP */
     PUSH_INT(3); /* ICONST_3 */
     /* LDC: '&gt;'*/
-    PUSH_POINTER(STRING_FROM_CONSTANT_POOL_OFFSET(8029));
+    PUSH_POINTER(STRING_FROM_CONSTANT_POOL_OFFSET(8039));
     CHECK_ARRAY_ACCESS(3, SP[-2].data.i); { /* BC_AASTORE */
     JAVA_OBJECT aastoreTmp = SP[-3].data.o; 
     ((JAVA_ARRAY_OBJECT*) (*(JAVA_ARRAY)aastoreTmp).data)[SP[-2].data.i] = SP[-1].data.o; 

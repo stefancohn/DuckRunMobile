@@ -165,7 +165,7 @@ com_example_ui_PauseOverlay___INIT____(threadStateData, o);
 
 
 JAVA_VOID com_example_ui_PauseOverlay___INIT____(CODENAME_ONE_THREAD_STATE, JAVA_OBJECT  __cn1ThisObject) {
-    DEFINE_INSTANCE_METHOD_STACK(6, 1, 0, 10296, 205);
+    DEFINE_INSTANCE_METHOD_STACK(6, 1, 0, 10329, 205);
     locals[0].data.o = __cn1ThisObject; locals[0].type = CN1_TYPE_OBJECT;     __CN1_DEBUG_INFO(33);
     java_lang_Object___INIT____(threadStateData, __cn1ThisObject); 
     __CN1_DEBUG_INFO(15);
@@ -226,10 +226,10 @@ JAVA_VOID com_example_ui_PauseOverlay___INIT____(CODENAME_ONE_THREAD_STATE, JAVA
 
 
 JAVA_VOID com_example_ui_PauseOverlay_initialzePauseOverlay__(CODENAME_ONE_THREAD_STATE, JAVA_OBJECT  __cn1ThisObject) {
-    DEFINE_INSTANCE_METHOD_STACK(2, 1, 0, 10296, 10297);
+    DEFINE_INSTANCE_METHOD_STACK(2, 1, 0, 10329, 10330);
     locals[0].data.o = __cn1ThisObject; locals[0].type = CN1_TYPE_OBJECT;     __CN1_DEBUG_INFO(39);
     BC_ALOAD(0);
-    /* CustomInvoke */PUSH_OBJ(com_example_util_LoadSave_getSpriteAtlas___java_lang_String_R_com_codename1_ui_Image(threadStateData, STRING_FROM_CONSTANT_POOL_OFFSET(10298)));
+    /* CustomInvoke */PUSH_OBJ(com_example_util_LoadSave_getSpriteAtlas___java_lang_String_R_com_codename1_ui_Image(threadStateData, STRING_FROM_CONSTANT_POOL_OFFSET(10331)));
     set_field_com_example_ui_PauseOverlay_pauseOverlay(threadStateData, PEEK_OBJ(1), PEEK_OBJ(2));
     POP_MANY(2);
     __CN1_DEBUG_INFO(40);
@@ -241,30 +241,30 @@ JAVA_VOID com_example_ui_PauseOverlay_initialzePauseOverlay__(CODENAME_ONE_THREA
 JAVA_VOID com_example_ui_PauseOverlay_initializePauseButtons__(CODENAME_ONE_THREAD_STATE, JAVA_OBJECT  __cn1ThisObject) {
     volatile JAVA_INT ilocals_2_ = 0; /* v2 */
     volatile JAVA_INT ilocals_3_ = 0; /* v3 */
-    DEFINE_INSTANCE_METHOD_STACK(8, 4, 0, 10296, 10299);
+    DEFINE_INSTANCE_METHOD_STACK(8, 4, 0, 10329, 10332);
     locals[0].data.o = __cn1ThisObject; locals[0].type = CN1_TYPE_OBJECT;     __CN1_DEBUG_INFO(43);
-    /* VarOp.assignFrom */ locals[1].data.o = /* CustomInvoke */com_example_util_LoadSave_getSpriteAtlas___java_lang_String_R_com_codename1_ui_Image(threadStateData, STRING_FROM_CONSTANT_POOL_OFFSET(10300));locals[1].type=CN1_TYPE_OBJECT;    __CN1_DEBUG_INFO(44);
+    /* VarOp.assignFrom */ locals[1].data.o = /* CustomInvoke */com_example_util_LoadSave_getSpriteAtlas___java_lang_String_R_com_codename1_ui_Image(threadStateData, STRING_FROM_CONSTANT_POOL_OFFSET(10333));locals[1].type=CN1_TYPE_OBJECT;    __CN1_DEBUG_INFO(44);
     /* VarOp.assignFrom */     ilocals_2_ = 0 /* ICONST_0 */; 
-    goto label_L1210939243;
 
 label_L696165690:
+    if (ilocals_2_>=CN1_ARRAY_LENGTH(get_field_com_example_ui_PauseOverlay_pauseButtons(__cn1ThisObject))) /* IF_ICMPGE CustomJump */ goto label_L1210939243;
     __CN1_DEBUG_INFO(45);
     /* VarOp.assignFrom */     ilocals_3_ = 0 /* ICONST_0 */; 
-    goto label_L1079125839;
 
 label_L321772459:
+    if (ilocals_3_>=CN1_ARRAY_LENGTH(CN1_ARRAY_ELEMENT_OBJECT(get_field_com_example_ui_PauseOverlay_pauseButtons(__cn1ThisObject), ilocals_2_))) /* IF_ICMPGE CustomJump */ goto label_L1079125839;
     __CN1_DEBUG_INFO(46);
     CN1_SET_ARRAY_ELEMENT_OBJECT(CN1_ARRAY_ELEMENT_OBJECT(get_field_com_example_ui_PauseOverlay_pauseButtons(__cn1ThisObject), ilocals_2_), ilocals_3_, /* CustomInvoke */virtual_com_codename1_ui_Image_subImage___int_int_int_int_boolean_R_com_codename1_ui_Image(threadStateData, locals[1].data.o, (ilocals_3_ * 200), (ilocals_2_ * 50), 200, 50, 0 /* ICONST_0 */));
     __CN1_DEBUG_INFO(45);
     BC_IINC(3, 1);
+    goto label_L321772459;
 
 label_L1079125839:
-    if (ilocals_3_<CN1_ARRAY_LENGTH(CN1_ARRAY_ELEMENT_OBJECT(get_field_com_example_ui_PauseOverlay_pauseButtons(__cn1ThisObject), ilocals_2_))) /* IF_IMPLT CustomJump */ goto label_L321772459;
     __CN1_DEBUG_INFO(44);
     BC_IINC(2, 1);
+    goto label_L696165690;
 
 label_L1210939243:
-    if (ilocals_2_<CN1_ARRAY_LENGTH(get_field_com_example_ui_PauseOverlay_pauseButtons(__cn1ThisObject))) /* IF_IMPLT CustomJump */ goto label_L696165690;
     __CN1_DEBUG_INFO(49);
     releaseForReturn(threadStateData, cn1LocalsBeginInThread); 
     return;
@@ -274,7 +274,7 @@ label_L1210939243:
 JAVA_VOID com_example_ui_PauseOverlay_touchMovement___int_int(CODENAME_ONE_THREAD_STATE, JAVA_OBJECT  __cn1ThisObject, JAVA_INT __cn1Arg1, JAVA_INT __cn1Arg2) {
     volatile JAVA_INT ilocals_1_ = 0; /* x */
     volatile JAVA_INT ilocals_2_ = 0; /* y */
-    DEFINE_INSTANCE_METHOD_STACK(6, 3, 0, 10296, 10233);
+    DEFINE_INSTANCE_METHOD_STACK(6, 3, 0, 10329, 10266);
     locals[0].data.o = __cn1ThisObject; locals[0].type = CN1_TYPE_OBJECT;     ilocals_1_ = __cn1Arg1;
     ilocals_2_ = __cn1Arg2;
     __CN1_DEBUG_INFO(53);
@@ -314,7 +314,7 @@ label_L1542598424:
 JAVA_VOID com_example_ui_PauseOverlay_touchReleased___int_int(CODENAME_ONE_THREAD_STATE, JAVA_OBJECT  __cn1ThisObject, JAVA_INT __cn1Arg1, JAVA_INT __cn1Arg2) {
     volatile JAVA_INT ilocals_1_ = 0; /* x */
     volatile JAVA_INT ilocals_2_ = 0; /* y */
-    DEFINE_INSTANCE_METHOD_STACK(6, 3, 0, 10296, 10301);
+    DEFINE_INSTANCE_METHOD_STACK(6, 3, 0, 10329, 10334);
     locals[0].data.o = __cn1ThisObject; locals[0].type = CN1_TYPE_OBJECT;     ilocals_1_ = __cn1Arg1;
     ilocals_2_ = __cn1Arg2;
     __CN1_DEBUG_INFO(65);
@@ -370,7 +370,7 @@ label_L673672784:
 
 
 JAVA_VOID com_example_ui_PauseOverlay_draw___com_codename1_ui_Graphics(CODENAME_ONE_THREAD_STATE, JAVA_OBJECT  __cn1ThisObject, JAVA_OBJECT __cn1Arg1) {
-    DEFINE_INSTANCE_METHOD_STACK(6, 2, 0, 10296, 5493);
+    DEFINE_INSTANCE_METHOD_STACK(6, 2, 0, 10329, 5503);
     locals[0].data.o = __cn1ThisObject; locals[0].type = CN1_TYPE_OBJECT;     locals[1].data.o = __cn1Arg1;
     locals[1].type = CN1_TYPE_OBJECT;
     __CN1_DEBUG_INFO(84);

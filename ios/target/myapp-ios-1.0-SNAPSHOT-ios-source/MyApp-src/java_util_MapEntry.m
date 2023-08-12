@@ -43,7 +43,7 @@ JAVA_OBJECT __NEW_java_util_MapEntry(CODENAME_ONE_THREAD_STATE) {
 
 
 JAVA_VOID java_util_MapEntry___INIT_____java_lang_Object(CODENAME_ONE_THREAD_STATE, JAVA_OBJECT  __cn1ThisObject, JAVA_OBJECT __cn1Arg1) {
-    DEFINE_INSTANCE_METHOD_STACK(2, 2, 0, 2008, 205);
+    DEFINE_INSTANCE_METHOD_STACK(2, 2, 0, 2019, 205);
     locals[0].data.o = __cn1ThisObject; locals[0].type = CN1_TYPE_OBJECT;     locals[1].data.o = __cn1Arg1;
     locals[1].type = CN1_TYPE_OBJECT;
     java_lang_Object___INIT____(threadStateData, __cn1ThisObject); 
@@ -54,7 +54,7 @@ JAVA_VOID java_util_MapEntry___INIT_____java_lang_Object(CODENAME_ONE_THREAD_STA
 
 
 JAVA_VOID java_util_MapEntry___INIT_____java_lang_Object_java_lang_Object(CODENAME_ONE_THREAD_STATE, JAVA_OBJECT  __cn1ThisObject, JAVA_OBJECT __cn1Arg1, JAVA_OBJECT __cn1Arg2) {
-    DEFINE_INSTANCE_METHOD_STACK(2, 3, 0, 2008, 205);
+    DEFINE_INSTANCE_METHOD_STACK(2, 3, 0, 2019, 205);
     locals[0].data.o = __cn1ThisObject; locals[0].type = CN1_TYPE_OBJECT;     locals[1].data.o = __cn1Arg1;
     locals[1].type = CN1_TYPE_OBJECT;
     locals[2].data.o = __cn1Arg2;
@@ -68,7 +68,7 @@ JAVA_VOID java_util_MapEntry___INIT_____java_lang_Object_java_lang_Object(CODENA
 
 
 JAVA_BOOLEAN java_util_MapEntry_equals___java_lang_Object_R_boolean(CODENAME_ONE_THREAD_STATE, JAVA_OBJECT  __cn1ThisObject, JAVA_OBJECT __cn1Arg1) {
-    DEFINE_INSTANCE_METHOD_STACK(2, 3, 0, 2008, 880);
+    DEFINE_INSTANCE_METHOD_STACK(2, 3, 0, 2019, 244);
     locals[0].data.o = __cn1ThisObject; locals[0].type = CN1_TYPE_OBJECT;     locals[1].data.o = __cn1Arg1;
     locals[1].type = CN1_TYPE_OBJECT;
     if (__cn1ThisObject!=locals[1].data.o) /* IF_ACMPNE CustomJump */ goto label_L932257672;
@@ -123,7 +123,7 @@ label_L1864116663:
 
 
 JAVA_OBJECT java_util_MapEntry_getKey___R_java_lang_Object(CODENAME_ONE_THREAD_STATE, JAVA_OBJECT  __cn1ThisObject) {
-    DEFINE_INSTANCE_METHOD_STACK(1, 1, 0, 2008, 2009);
+    DEFINE_INSTANCE_METHOD_STACK(1, 1, 0, 2019, 2020);
     locals[0].data.o = __cn1ThisObject; locals[0].type = CN1_TYPE_OBJECT;     PUSH_POINTER(get_field_java_util_MapEntry_key(__cn1ThisObject));
     releaseForReturn(threadStateData, cn1LocalsBeginInThread); 
     return POP_OBJ();
@@ -131,7 +131,7 @@ JAVA_OBJECT java_util_MapEntry_getKey___R_java_lang_Object(CODENAME_ONE_THREAD_S
 
 
 JAVA_OBJECT java_util_MapEntry_getValue___R_java_lang_Object(CODENAME_ONE_THREAD_STATE, JAVA_OBJECT  __cn1ThisObject) {
-    DEFINE_INSTANCE_METHOD_STACK(1, 1, 0, 2008, 2010);
+    DEFINE_INSTANCE_METHOD_STACK(1, 1, 0, 2019, 2021);
     locals[0].data.o = __cn1ThisObject; locals[0].type = CN1_TYPE_OBJECT;     PUSH_POINTER(get_field_java_util_MapEntry_value(__cn1ThisObject));
     releaseForReturn(threadStateData, cn1LocalsBeginInThread); 
     return POP_OBJ();
@@ -139,7 +139,7 @@ JAVA_OBJECT java_util_MapEntry_getValue___R_java_lang_Object(CODENAME_ONE_THREAD
 
 
 JAVA_INT java_util_MapEntry_hashCode___R_int(CODENAME_ONE_THREAD_STATE, JAVA_OBJECT  __cn1ThisObject) {
-    DEFINE_INSTANCE_METHOD_STACK(2, 1, 0, 2008, 885);
+    DEFINE_INSTANCE_METHOD_STACK(2, 1, 0, 2019, 249);
     locals[0].data.o = __cn1ThisObject; locals[0].type = CN1_TYPE_OBJECT;     if (get_field_java_util_MapEntry_key(__cn1ThisObject)!=JAVA_NULL) /* IFNONNULL CustomJump */ goto label_L749927456;
     PUSH_INT(0); /* ICONST_0 */
     goto label_L1330400026;
@@ -169,13 +169,13 @@ JAVA_OBJECT java_util_MapEntry_setValue___java_lang_Object_R_java_lang_Object(CO
 
 
 JAVA_OBJECT java_util_MapEntry_toString___R_java_lang_String(CODENAME_ONE_THREAD_STATE, JAVA_OBJECT  __cn1ThisObject) {
-    DEFINE_INSTANCE_METHOD_STACK(2, 1, 0, 2008, 899);
+    DEFINE_INSTANCE_METHOD_STACK(2, 1, 0, 2019, 263);
     locals[0].data.o = __cn1ThisObject; locals[0].type = CN1_TYPE_OBJECT;     PUSH_POINTER(__NEW_java_lang_StringBuilder(threadStateData)); /* NEW */
     BC_DUP(); /* DUP */
     java_lang_StringBuilder___INIT____(threadStateData, SP[-1].data.o);     SP -= 1;
     /* CustomInvoke */{ JAVA_OBJECT tmpResult = virtual_java_lang_StringBuilder_append___java_lang_Object_R_java_lang_StringBuilder(threadStateData, SP[-1].data.o, get_field_java_util_MapEntry_key(__cn1ThisObject));
     SP[-1].data.o = tmpResult; SP[-1].type = CN1_TYPE_OBJECT; }
-    /* CustomInvoke */{ JAVA_OBJECT tmpResult = virtual_java_lang_StringBuilder_append___java_lang_String_R_java_lang_StringBuilder(threadStateData, SP[-1].data.o, STRING_FROM_CONSTANT_POOL_OFFSET(784));
+    /* CustomInvoke */{ JAVA_OBJECT tmpResult = virtual_java_lang_StringBuilder_append___java_lang_String_R_java_lang_StringBuilder(threadStateData, SP[-1].data.o, STRING_FROM_CONSTANT_POOL_OFFSET(1218));
     SP[-1].data.o = tmpResult; SP[-1].type = CN1_TYPE_OBJECT; }
     /* CustomInvoke */{ JAVA_OBJECT tmpResult = virtual_java_lang_StringBuilder_append___java_lang_Object_R_java_lang_StringBuilder(threadStateData, SP[-1].data.o, get_field_java_util_MapEntry_value(__cn1ThisObject));
     SP[-1].data.o = tmpResult; SP[-1].type = CN1_TYPE_OBJECT; }

@@ -31,7 +31,7 @@ com_codename1_ui_geom_Geometry___INIT____(threadStateData, o);
 
 
 JAVA_VOID com_codename1_ui_geom_Geometry___INIT____(CODENAME_ONE_THREAD_STATE, JAVA_OBJECT  __cn1ThisObject) {
-    DEFINE_INSTANCE_METHOD_STACK(1, 1, 0, 3800, 205);
+    DEFINE_INSTANCE_METHOD_STACK(1, 1, 0, 3810, 205);
     locals[0].data.o = __cn1ThisObject; locals[0].type = CN1_TYPE_OBJECT;     __CN1_DEBUG_INFO(37);
     java_lang_Object___INIT____(threadStateData, __cn1ThisObject); 
     releaseForReturn(threadStateData, cn1LocalsBeginInThread); 
@@ -42,22 +42,22 @@ JAVA_VOID com_codename1_ui_geom_Geometry___INIT____(CODENAME_ONE_THREAD_STATE, J
 JAVA_INT com_codename1_ui_geom_Geometry_factorial___int_R_int(CODENAME_ONE_THREAD_STATE, JAVA_INT __cn1Arg1) {
     volatile JAVA_INT ilocals_0_ = 0; /* n */
     __STATIC_INITIALIZER_com_codename1_ui_geom_Geometry(threadStateData);
-    DEFINE_METHOD_STACK(3, 1, 0, 3800, 3801);
+    DEFINE_METHOD_STACK(3, 1, 0, 3810, 3811);
     ilocals_0_ = __cn1Arg1;
     __CN1_DEBUG_INFO(738);
-    if (ilocals_0_>=0) /* IFGE CustomJump */ goto label_L2142521143;
+    if (ilocals_0_>=0) /* IFGE CustomJump */ goto label_L1571476890;
     __CN1_DEBUG_INFO(739);
     PUSH_POINTER(__NEW_java_lang_IllegalArgumentException(threadStateData)); /* NEW */
     BC_DUP(); /* DUP */
-    /* CustomInvoke */java_lang_IllegalArgumentException___INIT_____java_lang_String(threadStateData, SP[-1].data.o, STRING_FROM_CONSTANT_POOL_OFFSET(3802));     SP -= 1;
+    /* CustomInvoke */java_lang_IllegalArgumentException___INIT_____java_lang_String(threadStateData, SP[-1].data.o, STRING_FROM_CONSTANT_POOL_OFFSET(3812));     SP -= 1;
     throwException(threadStateData, POP_OBJ());
 
-label_L2142521143:
+label_L1571476890:
     __CN1_DEBUG_INFO(741);
-    if (ilocals_0_!=0) /* IFNE CustomJump */ goto label_L287923377;
+    if (ilocals_0_!=0) /* IFNE CustomJump */ goto label_L86339516;
     releaseForReturn(threadStateData, cn1LocalsBeginInThread); return 1 /* ICONST_1 */;
 
-label_L287923377:
+label_L86339516:
     __CN1_DEBUG_INFO(742);
     (*SP).type = CN1_TYPE_INT; /* ILOAD */ 
     (*SP).data.i = ilocals_0_; 
@@ -71,7 +71,7 @@ label_L287923377:
 JAVA_INT com_codename1_ui_geom_Geometry_access$000___int_R_int(CODENAME_ONE_THREAD_STATE, JAVA_INT __cn1Arg1) {
     volatile JAVA_INT ilocals_0_ = 0; /* x0 */
     __STATIC_INITIALIZER_com_codename1_ui_geom_Geometry(threadStateData);
-    DEFINE_METHOD_STACK(1, 1, 0, 3800, 221);
+    DEFINE_METHOD_STACK(1, 1, 0, 3810, 223);
     ilocals_0_ = __cn1Arg1;
     __CN1_DEBUG_INFO(37);
 

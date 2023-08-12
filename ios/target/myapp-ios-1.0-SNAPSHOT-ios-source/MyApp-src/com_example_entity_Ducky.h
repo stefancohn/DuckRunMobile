@@ -10,8 +10,6 @@ extern void __FINALIZER_com_example_entity_Ducky(CODENAME_ONE_THREAD_STATE, JAVA
 extern void __GC_MARK_com_example_entity_Ducky(CODENAME_ONE_THREAD_STATE, JAVA_OBJECT objToMark, JAVA_BOOLEAN force);
 extern JAVA_OBJECT __NEW_com_example_entity_Ducky(CODENAME_ONE_THREAD_STATE);
 
-JAVA_VOID com_example_entity_Ducky___CLINIT____(CODENAME_ONE_THREAD_STATE);
-
 JAVA_VOID com_example_entity_Ducky___INIT_____int_int_int_int(CODENAME_ONE_THREAD_STATE, JAVA_OBJECT  __cn1ThisObject, JAVA_INT __cn1Arg1, JAVA_INT __cn1Arg2, JAVA_INT __cn1Arg3, JAVA_INT __cn1Arg4);
 
 JAVA_VOID com_example_entity_Ducky_defaultDucky__(CODENAME_ONE_THREAD_STATE, JAVA_OBJECT  __cn1ThisObject);
@@ -41,6 +39,8 @@ JAVA_VOID com_example_entity_Ducky_update__(CODENAME_ONE_THREAD_STATE, JAVA_OBJE
 JAVA_VOID com_example_entity_Ducky_draw___com_codename1_ui_Graphics_int(CODENAME_ONE_THREAD_STATE, JAVA_OBJECT  __cn1ThisObject, JAVA_OBJECT __cn1Arg1, JAVA_INT __cn1Arg2);
 
 JAVA_VOID com_example_entity_Ducky_resetDir__(CODENAME_ONE_THREAD_STATE, JAVA_OBJECT  __cn1ThisObject);
+
+JAVA_VOID com_example_entity_Ducky___CLINIT____(CODENAME_ONE_THREAD_STATE);
 
 JAVA_VOID com_example_entity_Ducky_initializeHitbox___int_int_int_int(CODENAME_ONE_THREAD_STATE, JAVA_OBJECT  __cn1ThisObject, JAVA_INT __cn1Arg1, JAVA_INT __cn1Arg2, JAVA_INT __cn1Arg3, JAVA_INT __cn1Arg4);
 

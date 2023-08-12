@@ -127,7 +127,7 @@ JAVA_OBJECT __NEW_ARRAY_com_codename1_io_Cookie(CODENAME_ONE_THREAD_STATE, JAVA_
 
 
 JAVA_VOID com_codename1_io_Cookie___INIT____(CODENAME_ONE_THREAD_STATE, JAVA_OBJECT  __cn1ThisObject) {
-    DEFINE_INSTANCE_METHOD_STACK(2, 1, 0, 8530, 205);
+    DEFINE_INSTANCE_METHOD_STACK(2, 1, 0, 8540, 205);
     locals[0].data.o = __cn1ThisObject; locals[0].type = CN1_TYPE_OBJECT;     __CN1_DEBUG_INFO(36);
     java_lang_Object___INIT____(threadStateData, __cn1ThisObject); 
     __CN1_DEBUG_INFO(40);
@@ -142,7 +142,7 @@ JAVA_VOID com_codename1_io_Cookie___INIT____(CODENAME_ONE_THREAD_STATE, JAVA_OBJ
 
 
 JAVA_OBJECT com_codename1_io_Cookie_getName___R_java_lang_String(CODENAME_ONE_THREAD_STATE, JAVA_OBJECT  __cn1ThisObject) {
-    DEFINE_INSTANCE_METHOD_STACK(1, 1, 0, 8530, 955);
+    DEFINE_INSTANCE_METHOD_STACK(1, 1, 0, 8540, 323);
     locals[0].data.o = __cn1ThisObject; locals[0].type = CN1_TYPE_OBJECT;     __CN1_DEBUG_INFO(57);
 
 {
@@ -153,7 +153,7 @@ JAVA_OBJECT com_codename1_io_Cookie_getName___R_java_lang_String(CODENAME_ONE_TH
 
 
 JAVA_VOID com_codename1_io_Cookie_setName___java_lang_String(CODENAME_ONE_THREAD_STATE, JAVA_OBJECT  __cn1ThisObject, JAVA_OBJECT __cn1Arg1) {
-    DEFINE_INSTANCE_METHOD_STACK(2, 2, 0, 8530, 2717);
+    DEFINE_INSTANCE_METHOD_STACK(2, 2, 0, 8540, 2728);
     locals[0].data.o = __cn1ThisObject; locals[0].type = CN1_TYPE_OBJECT;     locals[1].data.o = __cn1Arg1;
     locals[1].type = CN1_TYPE_OBJECT;
     __CN1_DEBUG_INFO(64);
@@ -166,7 +166,7 @@ JAVA_VOID com_codename1_io_Cookie_setName___java_lang_String(CODENAME_ONE_THREAD
 
 JAVA_VOID com_codename1_io_Cookie_setSecure___boolean(CODENAME_ONE_THREAD_STATE, JAVA_OBJECT  __cn1ThisObject, JAVA_BOOLEAN __cn1Arg1) {
     volatile JAVA_INT ilocals_1_ = 0; /* secure */
-    DEFINE_INSTANCE_METHOD_STACK(2, 2, 0, 8530, 8531);
+    DEFINE_INSTANCE_METHOD_STACK(2, 2, 0, 8540, 8541);
     locals[0].data.o = __cn1ThisObject; locals[0].type = CN1_TYPE_OBJECT;     ilocals_1_ = __cn1Arg1;
     __CN1_DEBUG_INFO(68);
     set_field_com_codename1_io_Cookie_secure(threadStateData, ilocals_1_, __cn1ThisObject);
@@ -177,7 +177,7 @@ JAVA_VOID com_codename1_io_Cookie_setSecure___boolean(CODENAME_ONE_THREAD_STATE,
 
 
 JAVA_BOOLEAN com_codename1_io_Cookie_isSecure___R_boolean(CODENAME_ONE_THREAD_STATE, JAVA_OBJECT  __cn1ThisObject) {
-    DEFINE_INSTANCE_METHOD_STACK(1, 1, 0, 8530, 8532);
+    DEFINE_INSTANCE_METHOD_STACK(1, 1, 0, 8540, 8542);
     locals[0].data.o = __cn1ThisObject; locals[0].type = CN1_TYPE_OBJECT;     __CN1_DEBUG_INFO(72);
 
 {
@@ -189,7 +189,7 @@ JAVA_BOOLEAN com_codename1_io_Cookie_isSecure___R_boolean(CODENAME_ONE_THREAD_ST
 
 JAVA_VOID com_codename1_io_Cookie_setHttpOnly___boolean(CODENAME_ONE_THREAD_STATE, JAVA_OBJECT  __cn1ThisObject, JAVA_BOOLEAN __cn1Arg1) {
     volatile JAVA_INT ilocals_1_ = 0; /* httpOnly */
-    DEFINE_INSTANCE_METHOD_STACK(2, 2, 0, 8530, 8533);
+    DEFINE_INSTANCE_METHOD_STACK(2, 2, 0, 8540, 8543);
     locals[0].data.o = __cn1ThisObject; locals[0].type = CN1_TYPE_OBJECT;     ilocals_1_ = __cn1Arg1;
     __CN1_DEBUG_INFO(76);
     set_field_com_codename1_io_Cookie_httpOnly(threadStateData, ilocals_1_, __cn1ThisObject);
@@ -200,7 +200,7 @@ JAVA_VOID com_codename1_io_Cookie_setHttpOnly___boolean(CODENAME_ONE_THREAD_STAT
 
 
 JAVA_BOOLEAN com_codename1_io_Cookie_isHttpOnly___R_boolean(CODENAME_ONE_THREAD_STATE, JAVA_OBJECT  __cn1ThisObject) {
-    DEFINE_INSTANCE_METHOD_STACK(1, 1, 0, 8530, 8534);
+    DEFINE_INSTANCE_METHOD_STACK(1, 1, 0, 8540, 8544);
     locals[0].data.o = __cn1ThisObject; locals[0].type = CN1_TYPE_OBJECT;     __CN1_DEBUG_INFO(80);
 
 {
@@ -211,7 +211,7 @@ JAVA_BOOLEAN com_codename1_io_Cookie_isHttpOnly___R_boolean(CODENAME_ONE_THREAD_
 
 
 JAVA_VOID com_codename1_io_Cookie_setPath___java_lang_String(CODENAME_ONE_THREAD_STATE, JAVA_OBJECT  __cn1ThisObject, JAVA_OBJECT __cn1Arg1) {
-    DEFINE_INSTANCE_METHOD_STACK(2, 2, 0, 8530, 3672);
+    DEFINE_INSTANCE_METHOD_STACK(2, 2, 0, 8540, 3682);
     locals[0].data.o = __cn1ThisObject; locals[0].type = CN1_TYPE_OBJECT;     locals[1].data.o = __cn1Arg1;
     locals[1].type = CN1_TYPE_OBJECT;
     __CN1_DEBUG_INFO(84);
@@ -223,7 +223,7 @@ JAVA_VOID com_codename1_io_Cookie_setPath___java_lang_String(CODENAME_ONE_THREAD
 
 
 JAVA_OBJECT com_codename1_io_Cookie_getPath___R_java_lang_String(CODENAME_ONE_THREAD_STATE, JAVA_OBJECT  __cn1ThisObject) {
-    DEFINE_INSTANCE_METHOD_STACK(1, 1, 0, 8530, 7945);
+    DEFINE_INSTANCE_METHOD_STACK(1, 1, 0, 8540, 7955);
     locals[0].data.o = __cn1ThisObject; locals[0].type = CN1_TYPE_OBJECT;     __CN1_DEBUG_INFO(88);
 
 {
@@ -234,7 +234,7 @@ JAVA_OBJECT com_codename1_io_Cookie_getPath___R_java_lang_String(CODENAME_ONE_TH
 
 
 JAVA_OBJECT com_codename1_io_Cookie_getValue___R_java_lang_String(CODENAME_ONE_THREAD_STATE, JAVA_OBJECT  __cn1ThisObject) {
-    DEFINE_INSTANCE_METHOD_STACK(1, 1, 0, 8530, 2010);
+    DEFINE_INSTANCE_METHOD_STACK(1, 1, 0, 8540, 2021);
     locals[0].data.o = __cn1ThisObject; locals[0].type = CN1_TYPE_OBJECT;     __CN1_DEBUG_INFO(95);
 
 {
@@ -245,7 +245,7 @@ JAVA_OBJECT com_codename1_io_Cookie_getValue___R_java_lang_String(CODENAME_ONE_T
 
 
 JAVA_VOID com_codename1_io_Cookie_setValue___java_lang_String(CODENAME_ONE_THREAD_STATE, JAVA_OBJECT  __cn1ThisObject, JAVA_OBJECT __cn1Arg1) {
-    DEFINE_INSTANCE_METHOD_STACK(2, 2, 0, 8530, 2011);
+    DEFINE_INSTANCE_METHOD_STACK(2, 2, 0, 8540, 2022);
     locals[0].data.o = __cn1ThisObject; locals[0].type = CN1_TYPE_OBJECT;     locals[1].data.o = __cn1Arg1;
     locals[1].type = CN1_TYPE_OBJECT;
     __CN1_DEBUG_INFO(102);
@@ -257,7 +257,7 @@ JAVA_VOID com_codename1_io_Cookie_setValue___java_lang_String(CODENAME_ONE_THREA
 
 
 JAVA_OBJECT com_codename1_io_Cookie_getDomain___R_java_lang_String(CODENAME_ONE_THREAD_STATE, JAVA_OBJECT  __cn1ThisObject) {
-    DEFINE_INSTANCE_METHOD_STACK(1, 1, 0, 8530, 8535);
+    DEFINE_INSTANCE_METHOD_STACK(1, 1, 0, 8540, 8545);
     locals[0].data.o = __cn1ThisObject; locals[0].type = CN1_TYPE_OBJECT;     __CN1_DEBUG_INFO(109);
 
 {
@@ -268,7 +268,7 @@ JAVA_OBJECT com_codename1_io_Cookie_getDomain___R_java_lang_String(CODENAME_ONE_
 
 
 JAVA_VOID com_codename1_io_Cookie_setDomain___java_lang_String(CODENAME_ONE_THREAD_STATE, JAVA_OBJECT  __cn1ThisObject, JAVA_OBJECT __cn1Arg1) {
-    DEFINE_INSTANCE_METHOD_STACK(2, 2, 0, 8530, 8536);
+    DEFINE_INSTANCE_METHOD_STACK(2, 2, 0, 8540, 8546);
     locals[0].data.o = __cn1ThisObject; locals[0].type = CN1_TYPE_OBJECT;     locals[1].data.o = __cn1Arg1;
     locals[1].type = CN1_TYPE_OBJECT;
     __CN1_DEBUG_INFO(116);
@@ -280,7 +280,7 @@ JAVA_VOID com_codename1_io_Cookie_setDomain___java_lang_String(CODENAME_ONE_THRE
 
 
 JAVA_LONG com_codename1_io_Cookie_getExpires___R_long(CODENAME_ONE_THREAD_STATE, JAVA_OBJECT  __cn1ThisObject) {
-    DEFINE_INSTANCE_METHOD_STACK(2, 1, 0, 8530, 8537);
+    DEFINE_INSTANCE_METHOD_STACK(2, 1, 0, 8540, 8547);
     locals[0].data.o = __cn1ThisObject; locals[0].type = CN1_TYPE_OBJECT;     __CN1_DEBUG_INFO(123);
 
 {
@@ -292,7 +292,7 @@ JAVA_LONG com_codename1_io_Cookie_getExpires___R_long(CODENAME_ONE_THREAD_STATE,
 
 JAVA_VOID com_codename1_io_Cookie_setExpires___long(CODENAME_ONE_THREAD_STATE, JAVA_OBJECT  __cn1ThisObject, JAVA_LONG __cn1Arg1) {
     volatile JAVA_LONG llocals_1_ = 0; /* expires */
-    DEFINE_INSTANCE_METHOD_STACK(3, 3, 0, 8530, 8538);
+    DEFINE_INSTANCE_METHOD_STACK(3, 3, 0, 8540, 8548);
     locals[0].data.o = __cn1ThisObject; locals[0].type = CN1_TYPE_OBJECT;     llocals_1_ = __cn1Arg1;
     __CN1_DEBUG_INFO(130);
     set_field_com_codename1_io_Cookie_expires(threadStateData, llocals_1_, __cn1ThisObject);
@@ -303,44 +303,44 @@ JAVA_VOID com_codename1_io_Cookie_setExpires___long(CODENAME_ONE_THREAD_STATE, J
 
 
 JAVA_INT com_codename1_io_Cookie_getVersion___R_int(CODENAME_ONE_THREAD_STATE, JAVA_OBJECT  __cn1ThisObject) {
-    DEFINE_INSTANCE_METHOD_STACK(1, 1, 0, 8530, 8187);
+    DEFINE_INSTANCE_METHOD_STACK(1, 1, 0, 8540, 8197);
     locals[0].data.o = __cn1ThisObject; locals[0].type = CN1_TYPE_OBJECT;     __CN1_DEBUG_INFO(137);
     releaseForReturn(threadStateData, cn1LocalsBeginInThread); return 1 /* ICONST_1 */;
 }
 
 
 JAVA_VOID com_codename1_io_Cookie_externalize___java_io_DataOutputStream(CODENAME_ONE_THREAD_STATE, JAVA_OBJECT  __cn1ThisObject, JAVA_OBJECT __cn1Arg1) {
-    DEFINE_INSTANCE_METHOD_STACK(3, 2, 0, 8530, 8188);
+    DEFINE_INSTANCE_METHOD_STACK(3, 2, 0, 8540, 8198);
     locals[0].data.o = __cn1ThisObject; locals[0].type = CN1_TYPE_OBJECT;     locals[1].data.o = __cn1Arg1;
     locals[1].type = CN1_TYPE_OBJECT;
     __CN1_DEBUG_INFO(144);
     /* CustomInvoke */virtual_java_io_DataOutputStream_writeUTF___java_lang_String(threadStateData, locals[1].data.o, get_field_com_codename1_io_Cookie_name(__cn1ThisObject)); 
     __CN1_DEBUG_INFO(145);
-    if (get_field_com_codename1_io_Cookie_value(__cn1ThisObject)==JAVA_NULL) /* IFNULL CustomJump */ goto label_L1989877020;
+    if (get_field_com_codename1_io_Cookie_value(__cn1ThisObject)==JAVA_NULL) /* IFNULL CustomJump */ goto label_L1331139970;
     __CN1_DEBUG_INFO(146);
     /* CustomInvoke */virtual_java_io_DataOutputStream_writeBoolean___boolean(threadStateData, locals[1].data.o, 1 /* ICONST_1 */); 
     __CN1_DEBUG_INFO(147);
     /* CustomInvoke */virtual_java_io_DataOutputStream_writeUTF___java_lang_String(threadStateData, locals[1].data.o, get_field_com_codename1_io_Cookie_value(__cn1ThisObject)); 
-    goto label_L207517334;
+    goto label_L1198122764;
 
-label_L1989877020:
+label_L1331139970:
     __CN1_DEBUG_INFO(149);
     /* CustomInvoke */virtual_java_io_DataOutputStream_writeBoolean___boolean(threadStateData, locals[1].data.o, 0 /* ICONST_0 */); 
 
-label_L207517334:
+label_L1198122764:
     __CN1_DEBUG_INFO(151);
-    if (get_field_com_codename1_io_Cookie_domain(__cn1ThisObject)==JAVA_NULL) /* IFNULL CustomJump */ goto label_L1331139970;
+    if (get_field_com_codename1_io_Cookie_domain(__cn1ThisObject)==JAVA_NULL) /* IFNULL CustomJump */ goto label_L1765040384;
     __CN1_DEBUG_INFO(152);
     /* CustomInvoke */virtual_java_io_DataOutputStream_writeBoolean___boolean(threadStateData, locals[1].data.o, 1 /* ICONST_1 */); 
     __CN1_DEBUG_INFO(153);
     /* CustomInvoke */virtual_java_io_DataOutputStream_writeUTF___java_lang_String(threadStateData, locals[1].data.o, get_field_com_codename1_io_Cookie_domain(__cn1ThisObject)); 
-    goto label_L1198122764;
+    goto label_L379666550;
 
-label_L1331139970:
+label_L1765040384:
     __CN1_DEBUG_INFO(155);
     /* CustomInvoke */virtual_java_io_DataOutputStream_writeBoolean___boolean(threadStateData, locals[1].data.o, 0 /* ICONST_0 */); 
 
-label_L1198122764:
+label_L379666550:
     __CN1_DEBUG_INFO(157);
     /* CustomInvoke */virtual_java_io_DataOutputStream_writeLong___long(threadStateData, locals[1].data.o, get_field_com_codename1_io_Cookie_expires(__cn1ThisObject)); 
     __CN1_DEBUG_INFO(158);
@@ -351,7 +351,7 @@ label_L1198122764:
 
 JAVA_VOID com_codename1_io_Cookie_internalize___int_java_io_DataInputStream(CODENAME_ONE_THREAD_STATE, JAVA_OBJECT  __cn1ThisObject, JAVA_INT __cn1Arg1, JAVA_OBJECT __cn1Arg2) {
     volatile JAVA_INT ilocals_1_ = 0; /* version */
-    DEFINE_INSTANCE_METHOD_STACK(3, 3, 0, 8530, 8189);
+    DEFINE_INSTANCE_METHOD_STACK(3, 3, 0, 8540, 8199);
     locals[0].data.o = __cn1ThisObject; locals[0].type = CN1_TYPE_OBJECT;     ilocals_1_ = __cn1Arg1;
     locals[2].data.o = __cn1Arg2;
     locals[2].type = CN1_TYPE_OBJECT;
@@ -362,7 +362,7 @@ JAVA_VOID com_codename1_io_Cookie_internalize___int_java_io_DataInputStream(CODE
     set_field_com_codename1_io_Cookie_name(threadStateData, PEEK_OBJ(1), PEEK_OBJ(2));
     POP_MANY(2);
     __CN1_DEBUG_INFO(165);
-    if (virtual_java_io_DataInputStream_readBoolean___R_boolean(threadStateData, locals[2].data.o)==0) /* IFEQ CustomJump */ goto label_L1765040384;
+    if (virtual_java_io_DataInputStream_readBoolean___R_boolean(threadStateData, locals[2].data.o)==0) /* IFEQ CustomJump */ goto label_L1697201317;
     __CN1_DEBUG_INFO(166);
     BC_ALOAD(0);
     { JAVA_OBJECT tmpResult = virtual_java_io_DataInputStream_readUTF___R_java_lang_String(threadStateData, locals[2].data.o);
@@ -370,9 +370,9 @@ JAVA_VOID com_codename1_io_Cookie_internalize___int_java_io_DataInputStream(CODE
     set_field_com_codename1_io_Cookie_value(threadStateData, PEEK_OBJ(1), PEEK_OBJ(2));
     POP_MANY(2);
 
-label_L1765040384:
+label_L1697201317:
     __CN1_DEBUG_INFO(168);
-    if (virtual_java_io_DataInputStream_readBoolean___R_boolean(threadStateData, locals[2].data.o)==0) /* IFEQ CustomJump */ goto label_L379666550;
+    if (virtual_java_io_DataInputStream_readBoolean___R_boolean(threadStateData, locals[2].data.o)==0) /* IFEQ CustomJump */ goto label_L1836115595;
     __CN1_DEBUG_INFO(169);
     BC_ALOAD(0);
     { JAVA_OBJECT tmpResult = virtual_java_io_DataInputStream_readUTF___R_java_lang_String(threadStateData, locals[2].data.o);
@@ -380,7 +380,7 @@ label_L1765040384:
     set_field_com_codename1_io_Cookie_domain(threadStateData, PEEK_OBJ(1), PEEK_OBJ(2));
     POP_MANY(2);
 
-label_L379666550:
+label_L1836115595:
     __CN1_DEBUG_INFO(171);
     BC_ALOAD(0);
     { JAVA_LONG tmpResult = virtual_java_io_DataInputStream_readLong___R_long(threadStateData, locals[2].data.o);
@@ -393,39 +393,39 @@ label_L379666550:
 
 
 JAVA_OBJECT com_codename1_io_Cookie_getObjectId___R_java_lang_String(CODENAME_ONE_THREAD_STATE, JAVA_OBJECT  __cn1ThisObject) {
-    DEFINE_INSTANCE_METHOD_STACK(1, 1, 0, 8530, 8190);
+    DEFINE_INSTANCE_METHOD_STACK(1, 1, 0, 8540, 8200);
     locals[0].data.o = __cn1ThisObject; locals[0].type = CN1_TYPE_OBJECT;     __CN1_DEBUG_INFO(178);
-    releaseForReturn(threadStateData, cn1LocalsBeginInThread); return STRING_FROM_CONSTANT_POOL_OFFSET(8539);
+    releaseForReturn(threadStateData, cn1LocalsBeginInThread); return STRING_FROM_CONSTANT_POOL_OFFSET(8549);
 }
 
 
 JAVA_OBJECT com_codename1_io_Cookie_toString___R_java_lang_String(CODENAME_ONE_THREAD_STATE, JAVA_OBJECT  __cn1ThisObject) {
-    DEFINE_INSTANCE_METHOD_STACK(3, 1, 0, 8530, 899);
+    DEFINE_INSTANCE_METHOD_STACK(3, 1, 0, 8540, 263);
     locals[0].data.o = __cn1ThisObject; locals[0].type = CN1_TYPE_OBJECT;     __CN1_DEBUG_INFO(185);
     PUSH_POINTER(__NEW_java_lang_StringBuilder(threadStateData)); /* NEW */
     BC_DUP(); /* DUP */
     java_lang_StringBuilder___INIT____(threadStateData, SP[-1].data.o);     SP -= 1;
-    /* CustomInvoke */{ JAVA_OBJECT tmpResult = virtual_java_lang_StringBuilder_append___java_lang_String_R_java_lang_StringBuilder(threadStateData, SP[-1].data.o, STRING_FROM_CONSTANT_POOL_OFFSET(8540));
+    /* CustomInvoke */{ JAVA_OBJECT tmpResult = virtual_java_lang_StringBuilder_append___java_lang_String_R_java_lang_StringBuilder(threadStateData, SP[-1].data.o, STRING_FROM_CONSTANT_POOL_OFFSET(8550));
     SP[-1].data.o = tmpResult; SP[-1].type = CN1_TYPE_OBJECT; }
     /* CustomInvoke */{ JAVA_OBJECT tmpResult = virtual_java_lang_StringBuilder_append___java_lang_String_R_java_lang_StringBuilder(threadStateData, SP[-1].data.o, get_field_com_codename1_io_Cookie_name(__cn1ThisObject));
     SP[-1].data.o = tmpResult; SP[-1].type = CN1_TYPE_OBJECT; }
-    /* CustomInvoke */{ JAVA_OBJECT tmpResult = virtual_java_lang_StringBuilder_append___java_lang_String_R_java_lang_StringBuilder(threadStateData, SP[-1].data.o, STRING_FROM_CONSTANT_POOL_OFFSET(8541));
+    /* CustomInvoke */{ JAVA_OBJECT tmpResult = virtual_java_lang_StringBuilder_append___java_lang_String_R_java_lang_StringBuilder(threadStateData, SP[-1].data.o, STRING_FROM_CONSTANT_POOL_OFFSET(8551));
     SP[-1].data.o = tmpResult; SP[-1].type = CN1_TYPE_OBJECT; }
     /* CustomInvoke */{ JAVA_OBJECT tmpResult = virtual_java_lang_StringBuilder_append___java_lang_String_R_java_lang_StringBuilder(threadStateData, SP[-1].data.o, get_field_com_codename1_io_Cookie_value(__cn1ThisObject));
     SP[-1].data.o = tmpResult; SP[-1].type = CN1_TYPE_OBJECT; }
-    /* CustomInvoke */{ JAVA_OBJECT tmpResult = virtual_java_lang_StringBuilder_append___java_lang_String_R_java_lang_StringBuilder(threadStateData, SP[-1].data.o, STRING_FROM_CONSTANT_POOL_OFFSET(8542));
+    /* CustomInvoke */{ JAVA_OBJECT tmpResult = virtual_java_lang_StringBuilder_append___java_lang_String_R_java_lang_StringBuilder(threadStateData, SP[-1].data.o, STRING_FROM_CONSTANT_POOL_OFFSET(8552));
     SP[-1].data.o = tmpResult; SP[-1].type = CN1_TYPE_OBJECT; }
     /* CustomInvoke */{ JAVA_OBJECT tmpResult = virtual_java_lang_StringBuilder_append___java_lang_String_R_java_lang_StringBuilder(threadStateData, SP[-1].data.o, get_field_com_codename1_io_Cookie_domain(__cn1ThisObject));
     SP[-1].data.o = tmpResult; SP[-1].type = CN1_TYPE_OBJECT; }
-    /* CustomInvoke */{ JAVA_OBJECT tmpResult = virtual_java_lang_StringBuilder_append___java_lang_String_R_java_lang_StringBuilder(threadStateData, SP[-1].data.o, STRING_FROM_CONSTANT_POOL_OFFSET(8543));
+    /* CustomInvoke */{ JAVA_OBJECT tmpResult = virtual_java_lang_StringBuilder_append___java_lang_String_R_java_lang_StringBuilder(threadStateData, SP[-1].data.o, STRING_FROM_CONSTANT_POOL_OFFSET(8553));
     SP[-1].data.o = tmpResult; SP[-1].type = CN1_TYPE_OBJECT; }
     /* CustomInvoke */{ JAVA_OBJECT tmpResult = virtual_java_lang_StringBuilder_append___long_R_java_lang_StringBuilder(threadStateData, SP[-1].data.o, get_field_com_codename1_io_Cookie_expires(__cn1ThisObject));
     SP[-1].data.o = tmpResult; SP[-1].type = CN1_TYPE_OBJECT; }
-    /* CustomInvoke */{ JAVA_OBJECT tmpResult = virtual_java_lang_StringBuilder_append___java_lang_String_R_java_lang_StringBuilder(threadStateData, SP[-1].data.o, STRING_FROM_CONSTANT_POOL_OFFSET(8544));
+    /* CustomInvoke */{ JAVA_OBJECT tmpResult = virtual_java_lang_StringBuilder_append___java_lang_String_R_java_lang_StringBuilder(threadStateData, SP[-1].data.o, STRING_FROM_CONSTANT_POOL_OFFSET(8554));
     SP[-1].data.o = tmpResult; SP[-1].type = CN1_TYPE_OBJECT; }
     /* CustomInvoke */{ JAVA_OBJECT tmpResult = virtual_java_lang_StringBuilder_append___boolean_R_java_lang_StringBuilder(threadStateData, SP[-1].data.o, get_field_com_codename1_io_Cookie_secure(__cn1ThisObject));
     SP[-1].data.o = tmpResult; SP[-1].type = CN1_TYPE_OBJECT; }
-    /* CustomInvoke */{ JAVA_OBJECT tmpResult = virtual_java_lang_StringBuilder_append___java_lang_String_R_java_lang_StringBuilder(threadStateData, SP[-1].data.o, STRING_FROM_CONSTANT_POOL_OFFSET(8545));
+    /* CustomInvoke */{ JAVA_OBJECT tmpResult = virtual_java_lang_StringBuilder_append___java_lang_String_R_java_lang_StringBuilder(threadStateData, SP[-1].data.o, STRING_FROM_CONSTANT_POOL_OFFSET(8555));
     SP[-1].data.o = tmpResult; SP[-1].type = CN1_TYPE_OBJECT; }
     /* CustomInvoke */{ JAVA_OBJECT tmpResult = virtual_java_lang_StringBuilder_append___java_lang_String_R_java_lang_StringBuilder(threadStateData, SP[-1].data.o, get_field_com_codename1_io_Cookie_path(__cn1ThisObject));
     SP[-1].data.o = tmpResult; SP[-1].type = CN1_TYPE_OBJECT; }
@@ -443,7 +443,7 @@ JAVA_VOID com_codename1_io_Cookie_setAutoStored___boolean(CODENAME_ONE_THREAD_ST
 
 JAVA_BOOLEAN com_codename1_io_Cookie_isAutoStored___R_boolean(CODENAME_ONE_THREAD_STATE) {
     __STATIC_INITIALIZER_com_codename1_io_Cookie(threadStateData);
-    DEFINE_METHOD_STACK(1, 0, 0, 8530, 8547);
+    DEFINE_METHOD_STACK(1, 0, 0, 8540, 8557);
     __CN1_DEBUG_INFO(203);
     PUSH_INT(get_static_com_codename1_io_Cookie_autoStored(threadStateData));
     releaseForReturn(threadStateData, cn1LocalsBeginInThread); return SP[-1].data.i;
@@ -456,13 +456,13 @@ JAVA_VOID com_codename1_io_Cookie_clearCookiesFromStorage__(CODENAME_ONE_THREAD_
 
 
 JAVA_VOID com_codename1_io_Cookie___CLINIT____(CODENAME_ONE_THREAD_STATE) {
-    DEFINE_METHOD_STACK(2, 0, 0, 8530, 863);
+    DEFINE_METHOD_STACK(2, 0, 0, 8540, 275);
     __CN1_DEBUG_INFO(46);
     set_static_com_codename1_io_Cookie_autoStored(threadStateData, 1 /* ICONST_1 */);
     __CN1_DEBUG_INFO(48);
-    set_static_com_codename1_io_Cookie_STORAGE_NAME(threadStateData, STRING_FROM_CONSTANT_POOL_OFFSET(8549));
+    set_static_com_codename1_io_Cookie_STORAGE_NAME(threadStateData, STRING_FROM_CONSTANT_POOL_OFFSET(8559));
     __CN1_DEBUG_INFO(51);
-    /* CustomInvoke */com_codename1_io_Util_register___java_lang_String_java_lang_Class(threadStateData, STRING_FROM_CONSTANT_POOL_OFFSET(8539), (JAVA_OBJECT)&class__com_codename1_io_Cookie); 
+    /* CustomInvoke */com_codename1_io_Util_register___java_lang_String_java_lang_Class(threadStateData, STRING_FROM_CONSTANT_POOL_OFFSET(8549), (JAVA_OBJECT)&class__com_codename1_io_Cookie); 
     __CN1_DEBUG_INFO(52);
     releaseForReturn(threadStateData, cn1LocalsBeginInThread); 
     return;

@@ -93,7 +93,7 @@ JAVA_OBJECT __NEW_com_codename1_ui_events_ActionEvent(CODENAME_ONE_THREAD_STATE)
 
 
 JAVA_OBJECT com_codename1_ui_events_ActionEvent_getEventType___R_com_codename1_ui_events_ActionEvent_Type(CODENAME_ONE_THREAD_STATE, JAVA_OBJECT  __cn1ThisObject) {
-    DEFINE_INSTANCE_METHOD_STACK(1, 1, 0, 3052, 3053);
+    DEFINE_INSTANCE_METHOD_STACK(1, 1, 0, 3062, 3063);
     locals[0].data.o = __cn1ThisObject; locals[0].type = CN1_TYPE_OBJECT;     __CN1_DEBUG_INFO(175);
 
 {
@@ -104,7 +104,7 @@ JAVA_OBJECT com_codename1_ui_events_ActionEvent_getEventType___R_com_codename1_u
 
 
 JAVA_VOID com_codename1_ui_events_ActionEvent___INIT_____java_lang_Object(CODENAME_ONE_THREAD_STATE, JAVA_OBJECT  __cn1ThisObject, JAVA_OBJECT __cn1Arg1) {
-    DEFINE_INSTANCE_METHOD_STACK(2, 2, 0, 3052, 205);
+    DEFINE_INSTANCE_METHOD_STACK(2, 2, 0, 3062, 205);
     locals[0].data.o = __cn1ThisObject; locals[0].type = CN1_TYPE_OBJECT;     locals[1].data.o = __cn1Arg1;
     locals[1].type = CN1_TYPE_OBJECT;
     __CN1_DEBUG_INFO(200);
@@ -126,7 +126,7 @@ JAVA_VOID com_codename1_ui_events_ActionEvent___INIT_____java_lang_Object(CODENA
 
 
 JAVA_VOID com_codename1_ui_events_ActionEvent___INIT_____java_lang_Object_com_codename1_ui_events_ActionEvent_Type(CODENAME_ONE_THREAD_STATE, JAVA_OBJECT  __cn1ThisObject, JAVA_OBJECT __cn1Arg1, JAVA_OBJECT __cn1Arg2) {
-    DEFINE_INSTANCE_METHOD_STACK(2, 3, 0, 3052, 205);
+    DEFINE_INSTANCE_METHOD_STACK(2, 3, 0, 3062, 205);
     locals[0].data.o = __cn1ThisObject; locals[0].type = CN1_TYPE_OBJECT;     locals[1].data.o = __cn1Arg1;
     locals[1].type = CN1_TYPE_OBJECT;
     locals[2].data.o = __cn1Arg2;
@@ -144,11 +144,11 @@ JAVA_VOID com_codename1_ui_events_ActionEvent___INIT_____java_lang_Object_com_co
     __CN1_DEBUG_INFO(212);
     set_field_com_codename1_ui_events_ActionEvent_trigger(threadStateData, locals[2].data.o, __cn1ThisObject);
     __CN1_DEBUG_INFO(213);
-    if (locals[2].data.o!=get_static_com_codename1_ui_events_ActionEvent_Type_LongPointerPress(threadStateData)) /* IF_ACMPNE CustomJump */ goto label_L1246335388;
+    if (locals[2].data.o!=get_static_com_codename1_ui_events_ActionEvent_Type_LongPointerPress(threadStateData)) /* IF_ACMPNE CustomJump */ goto label_L472015917;
     __CN1_DEBUG_INFO(214);
     set_field_com_codename1_ui_events_ActionEvent_longEvent(threadStateData, 1 /* ICONST_1 */, __cn1ThisObject);
 
-label_L1246335388:
+label_L472015917:
     __CN1_DEBUG_INFO(216);
     releaseForReturn(threadStateData, cn1LocalsBeginInThread); 
     return;
@@ -158,7 +158,7 @@ label_L1246335388:
 JAVA_VOID com_codename1_ui_events_ActionEvent___INIT_____java_lang_Object_com_codename1_ui_events_ActionEvent_Type_int_int(CODENAME_ONE_THREAD_STATE, JAVA_OBJECT  __cn1ThisObject, JAVA_OBJECT __cn1Arg1, JAVA_OBJECT __cn1Arg2, JAVA_INT __cn1Arg3, JAVA_INT __cn1Arg4) {
     volatile JAVA_INT ilocals_3_ = 0; /* x */
     volatile JAVA_INT ilocals_4_ = 0; /* y */
-    DEFINE_INSTANCE_METHOD_STACK(2, 5, 0, 3052, 205);
+    DEFINE_INSTANCE_METHOD_STACK(2, 5, 0, 3062, 205);
     locals[0].data.o = __cn1ThisObject; locals[0].type = CN1_TYPE_OBJECT;     locals[1].data.o = __cn1Arg1;
     locals[1].type = CN1_TYPE_OBJECT;
     locals[2].data.o = __cn1Arg2;
@@ -182,11 +182,11 @@ JAVA_VOID com_codename1_ui_events_ActionEvent___INIT_____java_lang_Object_com_co
     __CN1_DEBUG_INFO(230);
     set_field_com_codename1_ui_events_ActionEvent_trigger(threadStateData, locals[2].data.o, __cn1ThisObject);
     __CN1_DEBUG_INFO(231);
-    if (locals[2].data.o!=get_static_com_codename1_ui_events_ActionEvent_Type_LongPointerPress(threadStateData)) /* IF_ACMPNE CustomJump */ goto label_L1046160944;
+    if (locals[2].data.o!=get_static_com_codename1_ui_events_ActionEvent_Type_LongPointerPress(threadStateData)) /* IF_ACMPNE CustomJump */ goto label_L1974219375;
     __CN1_DEBUG_INFO(232);
     set_field_com_codename1_ui_events_ActionEvent_longEvent(threadStateData, 1 /* ICONST_1 */, __cn1ThisObject);
 
-label_L1046160944:
+label_L1974219375:
     __CN1_DEBUG_INFO(234);
     releaseForReturn(threadStateData, cn1LocalsBeginInThread); 
     return;
@@ -196,7 +196,7 @@ label_L1046160944:
 JAVA_VOID com_codename1_ui_events_ActionEvent___INIT_____com_codename1_ui_Command_com_codename1_ui_events_ActionEvent_Type_com_codename1_ui_Component_int_int(CODENAME_ONE_THREAD_STATE, JAVA_OBJECT  __cn1ThisObject, JAVA_OBJECT __cn1Arg1, JAVA_OBJECT __cn1Arg2, JAVA_OBJECT __cn1Arg3, JAVA_INT __cn1Arg4, JAVA_INT __cn1Arg5) {
     volatile JAVA_INT ilocals_4_ = 0; /* x */
     volatile JAVA_INT ilocals_5_ = 0; /* y */
-    DEFINE_INSTANCE_METHOD_STACK(2, 6, 0, 3052, 205);
+    DEFINE_INSTANCE_METHOD_STACK(2, 6, 0, 3062, 205);
     locals[0].data.o = __cn1ThisObject; locals[0].type = CN1_TYPE_OBJECT;     locals[1].data.o = __cn1Arg1;
     locals[1].type = CN1_TYPE_OBJECT;
     locals[2].data.o = __cn1Arg2;
@@ -224,11 +224,11 @@ JAVA_VOID com_codename1_ui_events_ActionEvent___INIT_____com_codename1_ui_Comman
     __CN1_DEBUG_INFO(250);
     set_field_com_codename1_ui_events_ActionEvent_trigger(threadStateData, locals[2].data.o, __cn1ThisObject);
     __CN1_DEBUG_INFO(251);
-    if (locals[2].data.o!=get_static_com_codename1_ui_events_ActionEvent_Type_LongPointerPress(threadStateData)) /* IF_ACMPNE CustomJump */ goto label_L472015917;
+    if (locals[2].data.o!=get_static_com_codename1_ui_events_ActionEvent_Type_LongPointerPress(threadStateData)) /* IF_ACMPNE CustomJump */ goto label_L1936689207;
     __CN1_DEBUG_INFO(252);
     set_field_com_codename1_ui_events_ActionEvent_longEvent(threadStateData, 1 /* ICONST_1 */, __cn1ThisObject);
 
-label_L472015917:
+label_L1936689207:
     __CN1_DEBUG_INFO(254);
     releaseForReturn(threadStateData, cn1LocalsBeginInThread); 
     return;
@@ -238,7 +238,7 @@ label_L472015917:
 JAVA_VOID com_codename1_ui_events_ActionEvent___INIT_____com_codename1_ui_Component_com_codename1_ui_events_ActionEvent_Type_com_codename1_ui_Component_int_int(CODENAME_ONE_THREAD_STATE, JAVA_OBJECT  __cn1ThisObject, JAVA_OBJECT __cn1Arg1, JAVA_OBJECT __cn1Arg2, JAVA_OBJECT __cn1Arg3, JAVA_INT __cn1Arg4, JAVA_INT __cn1Arg5) {
     volatile JAVA_INT ilocals_4_ = 0; /* x */
     volatile JAVA_INT ilocals_5_ = 0; /* y */
-    DEFINE_INSTANCE_METHOD_STACK(2, 6, 0, 3052, 205);
+    DEFINE_INSTANCE_METHOD_STACK(2, 6, 0, 3062, 205);
     locals[0].data.o = __cn1ThisObject; locals[0].type = CN1_TYPE_OBJECT;     locals[1].data.o = __cn1Arg1;
     locals[1].type = CN1_TYPE_OBJECT;
     locals[2].data.o = __cn1Arg2;
@@ -266,11 +266,11 @@ JAVA_VOID com_codename1_ui_events_ActionEvent___INIT_____com_codename1_ui_Compon
     __CN1_DEBUG_INFO(269);
     set_field_com_codename1_ui_events_ActionEvent_trigger(threadStateData, locals[2].data.o, __cn1ThisObject);
     __CN1_DEBUG_INFO(270);
-    if (locals[2].data.o!=get_static_com_codename1_ui_events_ActionEvent_Type_LongPointerPress(threadStateData)) /* IF_ACMPNE CustomJump */ goto label_L1974219375;
+    if (locals[2].data.o!=get_static_com_codename1_ui_events_ActionEvent_Type_LongPointerPress(threadStateData)) /* IF_ACMPNE CustomJump */ goto label_L341985996;
     __CN1_DEBUG_INFO(271);
     set_field_com_codename1_ui_events_ActionEvent_longEvent(threadStateData, 1 /* ICONST_1 */, __cn1ThisObject);
 
-label_L1974219375:
+label_L341985996:
     __CN1_DEBUG_INFO(273);
     releaseForReturn(threadStateData, cn1LocalsBeginInThread); 
     return;
@@ -279,7 +279,7 @@ label_L1974219375:
 
 JAVA_VOID com_codename1_ui_events_ActionEvent___INIT_____java_lang_Object_com_codename1_ui_events_ActionEvent_Type_int(CODENAME_ONE_THREAD_STATE, JAVA_OBJECT  __cn1ThisObject, JAVA_OBJECT __cn1Arg1, JAVA_OBJECT __cn1Arg2, JAVA_INT __cn1Arg3) {
     volatile JAVA_INT ilocals_3_ = 0; /* keyEvent */
-    DEFINE_INSTANCE_METHOD_STACK(2, 4, 0, 3052, 205);
+    DEFINE_INSTANCE_METHOD_STACK(2, 4, 0, 3062, 205);
     locals[0].data.o = __cn1ThisObject; locals[0].type = CN1_TYPE_OBJECT;     locals[1].data.o = __cn1Arg1;
     locals[1].type = CN1_TYPE_OBJECT;
     locals[2].data.o = __cn1Arg2;
@@ -300,11 +300,11 @@ JAVA_VOID com_codename1_ui_events_ActionEvent___INIT_____java_lang_Object_com_co
     __CN1_DEBUG_INFO(286);
     set_field_com_codename1_ui_events_ActionEvent_trigger(threadStateData, locals[2].data.o, __cn1ThisObject);
     __CN1_DEBUG_INFO(287);
-    if (locals[2].data.o!=get_static_com_codename1_ui_events_ActionEvent_Type_LongPointerPress(threadStateData)) /* IF_ACMPNE CustomJump */ goto label_L1936689207;
+    if (locals[2].data.o!=get_static_com_codename1_ui_events_ActionEvent_Type_LongPointerPress(threadStateData)) /* IF_ACMPNE CustomJump */ goto label_L460212065;
     __CN1_DEBUG_INFO(288);
     set_field_com_codename1_ui_events_ActionEvent_longEvent(threadStateData, 1 /* ICONST_1 */, __cn1ThisObject);
 
-label_L1936689207:
+label_L460212065:
     __CN1_DEBUG_INFO(290);
     releaseForReturn(threadStateData, cn1LocalsBeginInThread); 
     return;
@@ -313,7 +313,7 @@ label_L1936689207:
 
 JAVA_VOID com_codename1_ui_events_ActionEvent___INIT_____java_lang_Object_int(CODENAME_ONE_THREAD_STATE, JAVA_OBJECT  __cn1ThisObject, JAVA_OBJECT __cn1Arg1, JAVA_INT __cn1Arg2) {
     volatile JAVA_INT ilocals_2_ = 0; /* keyEvent */
-    DEFINE_INSTANCE_METHOD_STACK(2, 3, 0, 3052, 205);
+    DEFINE_INSTANCE_METHOD_STACK(2, 3, 0, 3062, 205);
     locals[0].data.o = __cn1ThisObject; locals[0].type = CN1_TYPE_OBJECT;     locals[1].data.o = __cn1Arg1;
     locals[1].type = CN1_TYPE_OBJECT;
     ilocals_2_ = __cn1Arg2;
@@ -340,7 +340,7 @@ JAVA_VOID com_codename1_ui_events_ActionEvent___INIT_____java_lang_Object_int(CO
 JAVA_VOID com_codename1_ui_events_ActionEvent___INIT_____java_lang_Object_int_boolean(CODENAME_ONE_THREAD_STATE, JAVA_OBJECT  __cn1ThisObject, JAVA_OBJECT __cn1Arg1, JAVA_INT __cn1Arg2, JAVA_BOOLEAN __cn1Arg3) {
     volatile JAVA_INT ilocals_2_ = 0; /* keyEvent */
     volatile JAVA_INT ilocals_3_ = 0; /* longClick */
-    DEFINE_INSTANCE_METHOD_STACK(2, 4, 0, 3052, 205);
+    DEFINE_INSTANCE_METHOD_STACK(2, 4, 0, 3062, 205);
     locals[0].data.o = __cn1ThisObject; locals[0].type = CN1_TYPE_OBJECT;     locals[1].data.o = __cn1Arg1;
     locals[1].type = CN1_TYPE_OBJECT;
     ilocals_2_ = __cn1Arg2;
@@ -371,7 +371,7 @@ JAVA_VOID com_codename1_ui_events_ActionEvent___INIT_____java_lang_Object_int_in
     volatile JAVA_INT ilocals_2_ = 0; /* x */
     volatile JAVA_INT ilocals_3_ = 0; /* y */
     volatile JAVA_INT ilocals_4_ = 0; /* longPointer */
-    DEFINE_INSTANCE_METHOD_STACK(2, 5, 0, 3052, 205);
+    DEFINE_INSTANCE_METHOD_STACK(2, 5, 0, 3062, 205);
     locals[0].data.o = __cn1ThisObject; locals[0].type = CN1_TYPE_OBJECT;     locals[1].data.o = __cn1Arg1;
     locals[1].type = CN1_TYPE_OBJECT;
     ilocals_2_ = __cn1Arg2;
@@ -404,7 +404,7 @@ JAVA_VOID com_codename1_ui_events_ActionEvent___INIT_____java_lang_Object_int_in
 JAVA_VOID com_codename1_ui_events_ActionEvent___INIT_____java_lang_Object_int_int(CODENAME_ONE_THREAD_STATE, JAVA_OBJECT  __cn1ThisObject, JAVA_OBJECT __cn1Arg1, JAVA_INT __cn1Arg2, JAVA_INT __cn1Arg3) {
     volatile JAVA_INT ilocals_2_ = 0; /* x */
     volatile JAVA_INT ilocals_3_ = 0; /* y */
-    DEFINE_INSTANCE_METHOD_STACK(2, 4, 0, 3052, 205);
+    DEFINE_INSTANCE_METHOD_STACK(2, 4, 0, 3062, 205);
     locals[0].data.o = __cn1ThisObject; locals[0].type = CN1_TYPE_OBJECT;     locals[1].data.o = __cn1Arg1;
     locals[1].type = CN1_TYPE_OBJECT;
     ilocals_2_ = __cn1Arg2;
@@ -434,7 +434,7 @@ JAVA_VOID com_codename1_ui_events_ActionEvent___INIT_____java_lang_Object_int_in
 JAVA_VOID com_codename1_ui_events_ActionEvent___INIT_____com_codename1_ui_Command_com_codename1_ui_Component_int_int(CODENAME_ONE_THREAD_STATE, JAVA_OBJECT  __cn1ThisObject, JAVA_OBJECT __cn1Arg1, JAVA_OBJECT __cn1Arg2, JAVA_INT __cn1Arg3, JAVA_INT __cn1Arg4) {
     volatile JAVA_INT ilocals_3_ = 0; /* x */
     volatile JAVA_INT ilocals_4_ = 0; /* y */
-    DEFINE_INSTANCE_METHOD_STACK(2, 5, 0, 3052, 205);
+    DEFINE_INSTANCE_METHOD_STACK(2, 5, 0, 3062, 205);
     locals[0].data.o = __cn1ThisObject; locals[0].type = CN1_TYPE_OBJECT;     locals[1].data.o = __cn1Arg1;
     locals[1].type = CN1_TYPE_OBJECT;
     locals[2].data.o = __cn1Arg2;
@@ -468,7 +468,7 @@ JAVA_VOID com_codename1_ui_events_ActionEvent___INIT_____com_codename1_ui_Comman
 JAVA_VOID com_codename1_ui_events_ActionEvent___INIT_____com_codename1_ui_Component_com_codename1_ui_Component_int_int(CODENAME_ONE_THREAD_STATE, JAVA_OBJECT  __cn1ThisObject, JAVA_OBJECT __cn1Arg1, JAVA_OBJECT __cn1Arg2, JAVA_INT __cn1Arg3, JAVA_INT __cn1Arg4) {
     volatile JAVA_INT ilocals_3_ = 0; /* x */
     volatile JAVA_INT ilocals_4_ = 0; /* y */
-    DEFINE_INSTANCE_METHOD_STACK(2, 5, 0, 3052, 205);
+    DEFINE_INSTANCE_METHOD_STACK(2, 5, 0, 3062, 205);
     locals[0].data.o = __cn1ThisObject; locals[0].type = CN1_TYPE_OBJECT;     locals[1].data.o = __cn1Arg1;
     locals[1].type = CN1_TYPE_OBJECT;
     locals[2].data.o = __cn1Arg2;
@@ -500,7 +500,7 @@ JAVA_VOID com_codename1_ui_events_ActionEvent___INIT_____com_codename1_ui_Compon
 
 
 JAVA_OBJECT com_codename1_ui_events_ActionEvent_getSource___R_java_lang_Object(CODENAME_ONE_THREAD_STATE, JAVA_OBJECT  __cn1ThisObject) {
-    DEFINE_INSTANCE_METHOD_STACK(1, 1, 0, 3052, 3054);
+    DEFINE_INSTANCE_METHOD_STACK(1, 1, 0, 3062, 3064);
     locals[0].data.o = __cn1ThisObject; locals[0].type = CN1_TYPE_OBJECT;     __CN1_DEBUG_INFO(385);
 
 {
@@ -521,11 +521,11 @@ JAVA_INT com_codename1_ui_events_ActionEvent_getProgress___R_int(CODENAME_ONE_TH
 
 
 JAVA_OBJECT com_codename1_ui_events_ActionEvent_getCommand___R_com_codename1_ui_Command(CODENAME_ONE_THREAD_STATE, JAVA_OBJECT  __cn1ThisObject) {
-    DEFINE_INSTANCE_METHOD_STACK(1, 1, 0, 3052, 2974);
+    DEFINE_INSTANCE_METHOD_STACK(1, 1, 0, 3062, 2984);
     locals[0].data.o = __cn1ThisObject; locals[0].type = CN1_TYPE_OBJECT;     __CN1_DEBUG_INFO(411);
     PUSH_POINTER(get_field_com_codename1_ui_events_ActionEvent_source(__cn1ThisObject));
     BC_INSTANCEOF(cn1_class_id_com_codename1_ui_Command);
-    if(POP_INT() == 0) /* IFEQ */ goto label_L341985996;
+    if(POP_INT() == 0) /* IFEQ */ goto label_L256192809;
     __CN1_DEBUG_INFO(412);
 
 {
@@ -533,7 +533,7 @@ JAVA_OBJECT com_codename1_ui_events_ActionEvent_getCommand___R_com_codename1_ui_
     releaseForReturn(threadStateData, cn1LocalsBeginInThread); return ___returnValue;
 }
 
-label_L341985996:
+label_L256192809:
     __CN1_DEBUG_INFO(414);
     releaseForReturn(threadStateData, cn1LocalsBeginInThread); return JAVA_NULL /* ACONST_NULL */;
 }
@@ -550,7 +550,7 @@ JAVA_OBJECT com_codename1_ui_events_ActionEvent_getComponent___R_com_codename1_u
 
 
 JAVA_VOID com_codename1_ui_events_ActionEvent_consume__(CODENAME_ONE_THREAD_STATE, JAVA_OBJECT  __cn1ThisObject) {
-    DEFINE_INSTANCE_METHOD_STACK(2, 1, 0, 3052, 3059);
+    DEFINE_INSTANCE_METHOD_STACK(2, 1, 0, 3062, 3069);
     locals[0].data.o = __cn1ThisObject; locals[0].type = CN1_TYPE_OBJECT;     __CN1_DEBUG_INFO(465);
     set_field_com_codename1_ui_events_ActionEvent_consumed(threadStateData, 1 /* ICONST_1 */, __cn1ThisObject);
     __CN1_DEBUG_INFO(466);
@@ -560,7 +560,7 @@ JAVA_VOID com_codename1_ui_events_ActionEvent_consume__(CODENAME_ONE_THREAD_STAT
 
 
 JAVA_BOOLEAN com_codename1_ui_events_ActionEvent_isConsumed___R_boolean(CODENAME_ONE_THREAD_STATE, JAVA_OBJECT  __cn1ThisObject) {
-    DEFINE_INSTANCE_METHOD_STACK(1, 1, 0, 3052, 3060);
+    DEFINE_INSTANCE_METHOD_STACK(1, 1, 0, 3062, 3070);
     locals[0].data.o = __cn1ThisObject; locals[0].type = CN1_TYPE_OBJECT;     __CN1_DEBUG_INFO(475);
 
 {
@@ -571,7 +571,7 @@ JAVA_BOOLEAN com_codename1_ui_events_ActionEvent_isConsumed___R_boolean(CODENAME
 
 
 JAVA_INT com_codename1_ui_events_ActionEvent_getX___R_int(CODENAME_ONE_THREAD_STATE, JAVA_OBJECT  __cn1ThisObject) {
-    DEFINE_INSTANCE_METHOD_STACK(1, 1, 0, 3052, 2406);
+    DEFINE_INSTANCE_METHOD_STACK(1, 1, 0, 3062, 2417);
     locals[0].data.o = __cn1ThisObject; locals[0].type = CN1_TYPE_OBJECT;     __CN1_DEBUG_INFO(484);
 
 {
@@ -582,7 +582,7 @@ JAVA_INT com_codename1_ui_events_ActionEvent_getX___R_int(CODENAME_ONE_THREAD_ST
 
 
 JAVA_INT com_codename1_ui_events_ActionEvent_getY___R_int(CODENAME_ONE_THREAD_STATE, JAVA_OBJECT  __cn1ThisObject) {
-    DEFINE_INSTANCE_METHOD_STACK(1, 1, 0, 3052, 2409);
+    DEFINE_INSTANCE_METHOD_STACK(1, 1, 0, 3062, 2420);
     locals[0].data.o = __cn1ThisObject; locals[0].type = CN1_TYPE_OBJECT;     __CN1_DEBUG_INFO(494);
 
 {
@@ -598,7 +598,7 @@ JAVA_BOOLEAN com_codename1_ui_events_ActionEvent_isLongEvent___R_boolean(CODENAM
 
 
 JAVA_OBJECT com_codename1_ui_events_ActionEvent_getDraggedComponent___R_com_codename1_ui_Component(CODENAME_ONE_THREAD_STATE, JAVA_OBJECT  __cn1ThisObject) {
-    DEFINE_INSTANCE_METHOD_STACK(1, 1, 0, 3052, 2872);
+    DEFINE_INSTANCE_METHOD_STACK(1, 1, 0, 3062, 2882);
     locals[0].data.o = __cn1ThisObject; locals[0].type = CN1_TYPE_OBJECT;     __CN1_DEBUG_INFO(509);
 
 {
@@ -620,7 +620,7 @@ JAVA_BOOLEAN com_codename1_ui_events_ActionEvent_isPointerPressedDuringDrag___R_
 
 JAVA_VOID com_codename1_ui_events_ActionEvent_setPointerPressedDuringDrag___boolean(CODENAME_ONE_THREAD_STATE, JAVA_OBJECT  __cn1ThisObject, JAVA_BOOLEAN __cn1Arg1) {
     volatile JAVA_INT ilocals_1_ = 0; /* pressed */
-    DEFINE_INSTANCE_METHOD_STACK(2, 2, 0, 3052, 3064);
+    DEFINE_INSTANCE_METHOD_STACK(2, 2, 0, 3062, 3074);
     locals[0].data.o = __cn1ThisObject; locals[0].type = CN1_TYPE_OBJECT;     ilocals_1_ = __cn1Arg1;
     __CN1_DEBUG_INFO(541);
     set_field_com_codename1_ui_events_ActionEvent_pointerPressedDuringDrag(threadStateData, ilocals_1_, __cn1ThisObject);

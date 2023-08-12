@@ -252,7 +252,7 @@ JAVA_OBJECT __NEW_com_codename1_ui_ComboBox_1(CODENAME_ONE_THREAD_STATE) {
 
 
 JAVA_VOID com_codename1_ui_ComboBox_1___INIT_____com_codename1_ui_ComboBox_java_lang_String_java_lang_String(CODENAME_ONE_THREAD_STATE, JAVA_OBJECT  __cn1ThisObject, JAVA_OBJECT __cn1Arg1, JAVA_OBJECT __cn1Arg2, JAVA_OBJECT __cn1Arg3) {
-    DEFINE_INSTANCE_METHOD_STACK(3, 4, 0, 4466, 205);
+    DEFINE_INSTANCE_METHOD_STACK(3, 4, 0, 4476, 205);
     locals[0].data.o = __cn1ThisObject; locals[0].type = CN1_TYPE_OBJECT;     locals[1].data.o = __cn1Arg1;
     locals[1].type = CN1_TYPE_OBJECT;
     locals[2].data.o = __cn1Arg2;
@@ -270,19 +270,19 @@ JAVA_VOID com_codename1_ui_ComboBox_1___INIT_____com_codename1_ui_ComboBox_java_
 JAVA_VOID com_codename1_ui_ComboBox_1_sizeChangedInternal___int_int(CODENAME_ONE_THREAD_STATE, JAVA_OBJECT  __cn1ThisObject, JAVA_INT __cn1Arg1, JAVA_INT __cn1Arg2) {
     volatile JAVA_INT ilocals_1_ = 0; /* w */
     volatile JAVA_INT ilocals_2_ = 0; /* h */
-    DEFINE_INSTANCE_METHOD_STACK(5, 4, 0, 4466, 2856);
+    DEFINE_INSTANCE_METHOD_STACK(5, 4, 0, 4476, 2866);
     locals[0].data.o = __cn1ThisObject; locals[0].type = CN1_TYPE_OBJECT;     ilocals_1_ = __cn1Arg1;
     ilocals_2_ = __cn1Arg2;
     __CN1_DEBUG_INFO(294);
-    if (virtual_com_codename1_ui_ComboBox_1_getWidth___R_int(threadStateData, __cn1ThisObject)!=ilocals_1_) /* IF_ICMPNE CustomJump */ goto label_L1587818510;
-    if (virtual_com_codename1_ui_ComboBox_1_getHeight___R_int(threadStateData, __cn1ThisObject)==ilocals_2_) /* IF_ICMPEQ CustomJump */ goto label_L1587818510;
+    if (virtual_com_codename1_ui_ComboBox_1_getWidth___R_int(threadStateData, __cn1ThisObject)!=ilocals_1_) /* IF_ICMPNE CustomJump */ goto label_L1991075605;
+    if (virtual_com_codename1_ui_ComboBox_1_getHeight___R_int(threadStateData, __cn1ThisObject)==ilocals_2_) /* IF_ICMPEQ CustomJump */ goto label_L1991075605;
     __CN1_DEBUG_INFO(295);
     /* VarOp.assignFrom */ locals[3].data.o = virtual_com_codename1_ui_ComboBox_1_getPreviousForm___R_com_codename1_ui_Form(threadStateData, __cn1ThisObject);locals[3].type=CN1_TYPE_OBJECT;    __CN1_DEBUG_INFO(296);
-    if (locals[3].data.o==JAVA_NULL) /* IFNULL CustomJump */ goto label_L1511799988;
+    if (locals[3].data.o==JAVA_NULL) /* IFNULL CustomJump */ goto label_L1449360639;
     __CN1_DEBUG_INFO(297);
     /* CustomInvoke */virtual_com_codename1_ui_Form_sizeChangedInternal___int_int(threadStateData, locals[3].data.o, ilocals_1_, ilocals_2_); 
 
-label_L1511799988:
+label_L1449360639:
     __CN1_DEBUG_INFO(299);
     BC_ALOAD(0);
     PUSH_POINTER(__NEW_com_codename1_ui_geom_Dimension(threadStateData)); /* NEW */
@@ -292,13 +292,13 @@ label_L1511799988:
     __CN1_DEBUG_INFO(300);
     virtual_com_codename1_ui_ComboBox_1_repaint__(threadStateData, __cn1ThisObject); 
     __CN1_DEBUG_INFO(301);
-    goto label_L1991075605;
+    goto label_L691540605;
 
-label_L1587818510:
+label_L1991075605:
     __CN1_DEBUG_INFO(302);
     virtual_com_codename1_ui_ComboBox_1_dispose__(threadStateData, __cn1ThisObject); 
 
-label_L1991075605:
+label_L691540605:
     __CN1_DEBUG_INFO(304);
     releaseForReturn(threadStateData, cn1LocalsBeginInThread); 
     return;

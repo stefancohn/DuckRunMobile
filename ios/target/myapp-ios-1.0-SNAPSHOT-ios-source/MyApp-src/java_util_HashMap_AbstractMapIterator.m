@@ -80,7 +80,7 @@ JAVA_OBJECT __NEW_java_util_HashMap_AbstractMapIterator(CODENAME_ONE_THREAD_STAT
 
 
 JAVA_VOID java_util_HashMap_AbstractMapIterator___INIT_____java_util_HashMap(CODENAME_ONE_THREAD_STATE, JAVA_OBJECT  __cn1ThisObject, JAVA_OBJECT __cn1Arg1) {
-    DEFINE_INSTANCE_METHOD_STACK(2, 2, 0, 5729, 205);
+    DEFINE_INSTANCE_METHOD_STACK(2, 2, 0, 5739, 205);
     locals[0].data.o = __cn1ThisObject; locals[0].type = CN1_TYPE_OBJECT;     locals[1].data.o = __cn1Arg1;
     locals[1].type = CN1_TYPE_OBJECT;
     java_lang_Object___INIT____(threadStateData, __cn1ThisObject); 
@@ -94,7 +94,7 @@ JAVA_VOID java_util_HashMap_AbstractMapIterator___INIT_____java_util_HashMap(COD
 
 
 JAVA_BOOLEAN java_util_HashMap_AbstractMapIterator_hasNext___R_boolean(CODENAME_ONE_THREAD_STATE, JAVA_OBJECT  __cn1ThisObject) {
-    DEFINE_INSTANCE_METHOD_STACK(3, 1, 0, 5729, 1253);
+    DEFINE_INSTANCE_METHOD_STACK(3, 1, 0, 5739, 628);
     locals[0].data.o = __cn1ThisObject; locals[0].type = CN1_TYPE_OBJECT;     if (get_field_java_util_HashMap_AbstractMapIterator_futureEntry(__cn1ThisObject)==JAVA_NULL) /* IFNULL CustomJump */ goto label_L1280429864;
     releaseForReturn(threadStateData, cn1LocalsBeginInThread); return 1 /* ICONST_1 */;
 
@@ -114,7 +114,7 @@ label_L1771421544:
 
 
 JAVA_VOID java_util_HashMap_AbstractMapIterator_checkConcurrentMod__(CODENAME_ONE_THREAD_STATE, JAVA_OBJECT  __cn1ThisObject) {
-    DEFINE_INSTANCE_METHOD_STACK(2, 1, 0, 5729, 5730);
+    DEFINE_INSTANCE_METHOD_STACK(2, 1, 0, 5739, 5740);
     locals[0].data.o = __cn1ThisObject; locals[0].type = CN1_TYPE_OBJECT;     if (get_field_java_util_HashMap_AbstractMapIterator_expectedModCount(__cn1ThisObject)==get_field_java_util_HashMap_modCount(get_field_java_util_HashMap_AbstractMapIterator_associatedMap(__cn1ThisObject))) /* IF_ICMPEQ CustomJump */ goto label_L2005028997;
     PUSH_POINTER(__NEW_java_util_ConcurrentModificationException(threadStateData)); /* NEW */
     BC_DUP(); /* DUP */
@@ -128,7 +128,7 @@ label_L2005028997:
 
 
 JAVA_VOID java_util_HashMap_AbstractMapIterator_makeNext__(CODENAME_ONE_THREAD_STATE, JAVA_OBJECT  __cn1ThisObject) {
-    DEFINE_INSTANCE_METHOD_STACK(6, 1, 0, 5729, 5731);
+    DEFINE_INSTANCE_METHOD_STACK(6, 1, 0, 5739, 5741);
     locals[0].data.o = __cn1ThisObject; locals[0].type = CN1_TYPE_OBJECT;     virtual_java_util_HashMap_AbstractMapIterator_checkConcurrentMod__(threadStateData, __cn1ThisObject); 
     if (virtual_java_util_HashMap_AbstractMapIterator_hasNext___R_boolean(threadStateData, __cn1ThisObject)!=0) /* IFNE CustomJump */ goto label_L896072146;
     PUSH_POINTER(__NEW_java_util_NoSuchElementException(threadStateData)); /* NEW */
@@ -172,7 +172,7 @@ label_L1048434276:
 
 JAVA_VOID java_util_HashMap_AbstractMapIterator_remove__(CODENAME_ONE_THREAD_STATE, JAVA_OBJECT  __cn1ThisObject) {
     volatile JAVA_INT ilocals_1_ = 0; /* v1 */
-    DEFINE_INSTANCE_METHOD_STACK(4, 2, 0, 5729, 1235);
+    DEFINE_INSTANCE_METHOD_STACK(4, 2, 0, 5739, 610);
     locals[0].data.o = __cn1ThisObject; locals[0].type = CN1_TYPE_OBJECT;     virtual_java_util_HashMap_AbstractMapIterator_checkConcurrentMod__(threadStateData, __cn1ThisObject); 
     if (get_field_java_util_HashMap_AbstractMapIterator_currentEntry(__cn1ThisObject)!=JAVA_NULL) /* IFNONNULL CustomJump */ goto label_L692743054;
     PUSH_POINTER(__NEW_java_lang_IllegalStateException(threadStateData)); /* NEW */

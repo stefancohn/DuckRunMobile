@@ -44,7 +44,7 @@ JAVA_OBJECT __NEW_java_util_Timer_T(CODENAME_ONE_THREAD_STATE) {
 
 
 JAVA_VOID java_util_Timer_T___INIT_____java_util_Timer(CODENAME_ONE_THREAD_STATE, JAVA_OBJECT  __cn1ThisObject, JAVA_OBJECT __cn1Arg1) {
-    DEFINE_INSTANCE_METHOD_STACK(2, 2, 0, 3162, 205);
+    DEFINE_INSTANCE_METHOD_STACK(2, 2, 0, 3172, 205);
     locals[0].data.o = __cn1ThisObject; locals[0].type = CN1_TYPE_OBJECT;     locals[1].data.o = __cn1Arg1;
     locals[1].type = CN1_TYPE_OBJECT;
     set_field_java_util_Timer_T_this_0(threadStateData, locals[1].data.o, __cn1ThisObject);
@@ -55,20 +55,20 @@ JAVA_VOID java_util_Timer_T___INIT_____java_util_Timer(CODENAME_ONE_THREAD_STATE
 
 
 JAVA_VOID java_util_Timer_T_run__(CODENAME_ONE_THREAD_STATE, JAVA_OBJECT  __cn1ThisObject) {
-    DEFINE_INSTANCE_METHOD_STACK(2, 2, 0, 3162, 207);
-    locals[0].data.o = __cn1ThisObject; locals[0].type = CN1_TYPE_OBJECT;     int restoreToL551300593cn1_class_id_java_lang_InterruptedException1;
-    int tryBlockOffsetL551300593cn1_class_id_java_lang_InterruptedException1;
-    DEFINE_CATCH_BLOCK(catch_L551300593cn1_class_id_java_lang_InterruptedException1, label_L236840983, restoreToL551300593cn1_class_id_java_lang_InterruptedException1);
+    DEFINE_INSTANCE_METHOD_STACK(2, 2, 0, 3172, 207);
+    locals[0].data.o = __cn1ThisObject; locals[0].type = CN1_TYPE_OBJECT;     int restoreToL1348373832cn1_class_id_java_lang_InterruptedException1;
+    int tryBlockOffsetL1348373832cn1_class_id_java_lang_InterruptedException1;
+    DEFINE_CATCH_BLOCK(catch_L1348373832cn1_class_id_java_lang_InterruptedException1, label_L236840983, restoreToL1348373832cn1_class_id_java_lang_InterruptedException1);
     set_field_java_util_TimerTask_parent(threadStateData, get_field_java_util_Timer_T_this_0(__cn1ThisObject), get_field_java_util_Timer_T_task(__cn1ThisObject));
 
-label_L551300593:
- tryBlockOffsetL551300593cn1_class_id_java_lang_InterruptedException1 = threadStateData->tryBlockOffset;
-    BEGIN_TRY(cn1_class_id_java_lang_InterruptedException, catch_L551300593cn1_class_id_java_lang_InterruptedException1);
-    restoreToL551300593cn1_class_id_java_lang_InterruptedException1 = threadStateData->threadObjectStackOffset;
+label_L1348373832:
+ tryBlockOffsetL1348373832cn1_class_id_java_lang_InterruptedException1 = threadStateData->tryBlockOffset;
+    BEGIN_TRY(cn1_class_id_java_lang_InterruptedException, catch_L1348373832cn1_class_id_java_lang_InterruptedException1);
+    restoreToL1348373832cn1_class_id_java_lang_InterruptedException1 = threadStateData->threadObjectStackOffset;
 
     virtual_java_util_TimerTask_runImpl__(threadStateData, get_field_java_util_Timer_T_task(__cn1ThisObject)); 
 
-label_L978920172:
+label_L943843194:
 END_TRY(1);    JUMP_TO(label_L1376790324, 0);
 
 label_L236840983:

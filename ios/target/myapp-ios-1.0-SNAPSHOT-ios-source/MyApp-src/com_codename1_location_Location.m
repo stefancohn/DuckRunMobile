@@ -96,7 +96,7 @@ com_codename1_location_Location___INIT____(threadStateData, o);
 
 
 JAVA_VOID com_codename1_location_Location___INIT____(CODENAME_ONE_THREAD_STATE, JAVA_OBJECT  __cn1ThisObject) {
-    DEFINE_INSTANCE_METHOD_STACK(1, 1, 0, 9019, 205);
+    DEFINE_INSTANCE_METHOD_STACK(1, 1, 0, 9029, 205);
     locals[0].data.o = __cn1ThisObject; locals[0].type = CN1_TYPE_OBJECT;     __CN1_DEBUG_INFO(59);
     java_lang_Object___INIT____(threadStateData, __cn1ThisObject); 
     __CN1_DEBUG_INFO(60);
@@ -110,7 +110,7 @@ JAVA_VOID com_codename1_location_Location___INIT_____double_double_double_float(
     volatile JAVA_DOUBLE dlocals_1_ = 0; /* latitude */
     volatile JAVA_DOUBLE dlocals_3_ = 0; /* longitude */
     volatile JAVA_DOUBLE dlocals_5_ = 0; /* altitude */
-    DEFINE_INSTANCE_METHOD_STACK(3, 8, 0, 9019, 205);
+    DEFINE_INSTANCE_METHOD_STACK(3, 8, 0, 9029, 205);
     locals[0].data.o = __cn1ThisObject; locals[0].type = CN1_TYPE_OBJECT;     dlocals_1_ = __cn1Arg1;
     dlocals_3_ = __cn1Arg2;
     dlocals_5_ = __cn1Arg3;
@@ -134,7 +134,7 @@ JAVA_VOID com_codename1_location_Location___INIT_____double_double_double_float(
 JAVA_VOID com_codename1_location_Location___INIT_____double_double(CODENAME_ONE_THREAD_STATE, JAVA_OBJECT  __cn1ThisObject, JAVA_DOUBLE __cn1Arg1, JAVA_DOUBLE __cn1Arg2) {
     volatile JAVA_DOUBLE dlocals_1_ = 0; /* latitude */
     volatile JAVA_DOUBLE dlocals_3_ = 0; /* longitude */
-    DEFINE_INSTANCE_METHOD_STACK(3, 5, 0, 9019, 205);
+    DEFINE_INSTANCE_METHOD_STACK(3, 5, 0, 9029, 205);
     locals[0].data.o = __cn1ThisObject; locals[0].type = CN1_TYPE_OBJECT;     dlocals_1_ = __cn1Arg1;
     dlocals_3_ = __cn1Arg2;
     __CN1_DEBUG_INFO(71);
@@ -165,7 +165,7 @@ JAVA_FLOAT com_codename1_location_Location_getDirection___R_float(CODENAME_ONE_T
 
 
 JAVA_DOUBLE com_codename1_location_Location_getLatitude___R_double(CODENAME_ONE_THREAD_STATE, JAVA_OBJECT  __cn1ThisObject) {
-    DEFINE_INSTANCE_METHOD_STACK(2, 1, 0, 9019, 9023);
+    DEFINE_INSTANCE_METHOD_STACK(2, 1, 0, 9029, 9033);
     locals[0].data.o = __cn1ThisObject; locals[0].type = CN1_TYPE_OBJECT;     __CN1_DEBUG_INFO(105);
 
 {
@@ -176,7 +176,7 @@ JAVA_DOUBLE com_codename1_location_Location_getLatitude___R_double(CODENAME_ONE_
 
 
 JAVA_DOUBLE com_codename1_location_Location_getLongitude___R_double(CODENAME_ONE_THREAD_STATE, JAVA_OBJECT  __cn1ThisObject) {
-    DEFINE_INSTANCE_METHOD_STACK(2, 1, 0, 9019, 9024);
+    DEFINE_INSTANCE_METHOD_STACK(2, 1, 0, 9029, 9034);
     locals[0].data.o = __cn1ThisObject; locals[0].type = CN1_TYPE_OBJECT;     __CN1_DEBUG_INFO(113);
 
 {
@@ -208,14 +208,14 @@ JAVA_FLOAT com_codename1_location_Location_getVelocity___R_float(CODENAME_ONE_TH
 
 JAVA_VOID com_codename1_location_Location_setAccuracy___float(CODENAME_ONE_THREAD_STATE, JAVA_OBJECT  __cn1ThisObject, JAVA_FLOAT __cn1Arg1) {
     volatile JAVA_FLOAT flocals_1_ = 0; /* accuracy */
-    DEFINE_INSTANCE_METHOD_STACK(2, 2, 0, 9019, 9028);
+    DEFINE_INSTANCE_METHOD_STACK(2, 2, 0, 9029, 9038);
     locals[0].data.o = __cn1ThisObject; locals[0].type = CN1_TYPE_OBJECT;     flocals_1_ = __cn1Arg1;
     __CN1_DEBUG_INFO(150);
-    if (CN1_CMP_EXPR(flocals_1_, 0.0/0.0)==0) /* IFEQ CustomJump */ goto label_L1187091280;
+    if (CN1_CMP_EXPR(flocals_1_, 0.0/0.0)==0) /* IFEQ CustomJump */ goto label_L852779561;
     __CN1_DEBUG_INFO(151);
     set_field_com_codename1_location_Location_accuracy(threadStateData, flocals_1_, __cn1ThisObject);
 
-label_L1187091280:
+label_L852779561:
     __CN1_DEBUG_INFO(153);
     releaseForReturn(threadStateData, cn1LocalsBeginInThread); 
     return;
@@ -224,7 +224,7 @@ label_L1187091280:
 
 JAVA_VOID com_codename1_location_Location_setAltitude___double(CODENAME_ONE_THREAD_STATE, JAVA_OBJECT  __cn1ThisObject, JAVA_DOUBLE __cn1Arg1) {
     volatile JAVA_DOUBLE dlocals_1_ = 0; /* altitude */
-    DEFINE_INSTANCE_METHOD_STACK(3, 3, 0, 9019, 9029);
+    DEFINE_INSTANCE_METHOD_STACK(3, 3, 0, 9029, 9039);
     locals[0].data.o = __cn1ThisObject; locals[0].type = CN1_TYPE_OBJECT;     dlocals_1_ = __cn1Arg1;
     __CN1_DEBUG_INFO(160);
     set_field_com_codename1_location_Location_altitude(threadStateData, dlocals_1_, __cn1ThisObject);
@@ -236,7 +236,7 @@ JAVA_VOID com_codename1_location_Location_setAltitude___double(CODENAME_ONE_THRE
 
 JAVA_VOID com_codename1_location_Location_setDirection___float(CODENAME_ONE_THREAD_STATE, JAVA_OBJECT  __cn1ThisObject, JAVA_FLOAT __cn1Arg1) {
     volatile JAVA_FLOAT flocals_1_ = 0; /* direction */
-    DEFINE_INSTANCE_METHOD_STACK(2, 2, 0, 9019, 9030);
+    DEFINE_INSTANCE_METHOD_STACK(2, 2, 0, 9029, 9040);
     locals[0].data.o = __cn1ThisObject; locals[0].type = CN1_TYPE_OBJECT;     flocals_1_ = __cn1Arg1;
     __CN1_DEBUG_INFO(168);
     set_field_com_codename1_location_Location_direction(threadStateData, flocals_1_, __cn1ThisObject);
@@ -248,7 +248,7 @@ JAVA_VOID com_codename1_location_Location_setDirection___float(CODENAME_ONE_THRE
 
 JAVA_VOID com_codename1_location_Location_setLatitude___double(CODENAME_ONE_THREAD_STATE, JAVA_OBJECT  __cn1ThisObject, JAVA_DOUBLE __cn1Arg1) {
     volatile JAVA_DOUBLE dlocals_1_ = 0; /* latitude */
-    DEFINE_INSTANCE_METHOD_STACK(3, 3, 0, 9019, 9031);
+    DEFINE_INSTANCE_METHOD_STACK(3, 3, 0, 9029, 9041);
     locals[0].data.o = __cn1ThisObject; locals[0].type = CN1_TYPE_OBJECT;     dlocals_1_ = __cn1Arg1;
     __CN1_DEBUG_INFO(176);
     set_field_com_codename1_location_Location_latitude(threadStateData, dlocals_1_, __cn1ThisObject);
@@ -260,7 +260,7 @@ JAVA_VOID com_codename1_location_Location_setLatitude___double(CODENAME_ONE_THRE
 
 JAVA_VOID com_codename1_location_Location_setLongitude___double(CODENAME_ONE_THREAD_STATE, JAVA_OBJECT  __cn1ThisObject, JAVA_DOUBLE __cn1Arg1) {
     volatile JAVA_DOUBLE dlocals_1_ = 0; /* longtitude */
-    DEFINE_INSTANCE_METHOD_STACK(3, 3, 0, 9019, 9032);
+    DEFINE_INSTANCE_METHOD_STACK(3, 3, 0, 9029, 9042);
     locals[0].data.o = __cn1ThisObject; locals[0].type = CN1_TYPE_OBJECT;     dlocals_1_ = __cn1Arg1;
     __CN1_DEBUG_INFO(184);
     set_field_com_codename1_location_Location_longitude(threadStateData, dlocals_1_, __cn1ThisObject);
@@ -277,7 +277,7 @@ JAVA_VOID com_codename1_location_Location_setLongtitude___double(CODENAME_ONE_TH
 
 JAVA_VOID com_codename1_location_Location_setStatus___int(CODENAME_ONE_THREAD_STATE, JAVA_OBJECT  __cn1ThisObject, JAVA_INT __cn1Arg1) {
     volatile JAVA_INT ilocals_1_ = 0; /* status */
-    DEFINE_INSTANCE_METHOD_STACK(2, 2, 0, 9019, 8990);
+    DEFINE_INSTANCE_METHOD_STACK(2, 2, 0, 9029, 9000);
     locals[0].data.o = __cn1ThisObject; locals[0].type = CN1_TYPE_OBJECT;     ilocals_1_ = __cn1Arg1;
     __CN1_DEBUG_INFO(201);
     set_field_com_codename1_location_Location_status(threadStateData, ilocals_1_, __cn1ThisObject);
@@ -289,7 +289,7 @@ JAVA_VOID com_codename1_location_Location_setStatus___int(CODENAME_ONE_THREAD_ST
 
 JAVA_VOID com_codename1_location_Location_setTimeStamp___long(CODENAME_ONE_THREAD_STATE, JAVA_OBJECT  __cn1ThisObject, JAVA_LONG __cn1Arg1) {
     volatile JAVA_LONG llocals_1_ = 0; /* timeStamp */
-    DEFINE_INSTANCE_METHOD_STACK(3, 3, 0, 9019, 9034);
+    DEFINE_INSTANCE_METHOD_STACK(3, 3, 0, 9029, 9044);
     locals[0].data.o = __cn1ThisObject; locals[0].type = CN1_TYPE_OBJECT;     llocals_1_ = __cn1Arg1;
     __CN1_DEBUG_INFO(209);
     set_field_com_codename1_location_Location_timeStamp(threadStateData, llocals_1_, __cn1ThisObject);
@@ -301,7 +301,7 @@ JAVA_VOID com_codename1_location_Location_setTimeStamp___long(CODENAME_ONE_THREA
 
 JAVA_VOID com_codename1_location_Location_setVelocity___float(CODENAME_ONE_THREAD_STATE, JAVA_OBJECT  __cn1ThisObject, JAVA_FLOAT __cn1Arg1) {
     volatile JAVA_FLOAT flocals_1_ = 0; /* velocity */
-    DEFINE_INSTANCE_METHOD_STACK(2, 2, 0, 9019, 9035);
+    DEFINE_INSTANCE_METHOD_STACK(2, 2, 0, 9029, 9045);
     locals[0].data.o = __cn1ThisObject; locals[0].type = CN1_TYPE_OBJECT;     flocals_1_ = __cn1Arg1;
     __CN1_DEBUG_INFO(217);
     set_field_com_codename1_location_Location_velocity(threadStateData, flocals_1_, __cn1ThisObject);
@@ -322,32 +322,32 @@ JAVA_DOUBLE com_codename1_location_Location_haversine___double_double_double_dou
 
 
 JAVA_OBJECT com_codename1_location_Location_toString___R_java_lang_String(CODENAME_ONE_THREAD_STATE, JAVA_OBJECT  __cn1ThisObject) {
-    DEFINE_INSTANCE_METHOD_STACK(3, 1, 0, 9019, 899);
+    DEFINE_INSTANCE_METHOD_STACK(3, 1, 0, 9029, 263);
     locals[0].data.o = __cn1ThisObject; locals[0].type = CN1_TYPE_OBJECT;     __CN1_DEBUG_INFO(244);
     PUSH_POINTER(__NEW_java_lang_StringBuilder(threadStateData)); /* NEW */
     BC_DUP(); /* DUP */
     java_lang_StringBuilder___INIT____(threadStateData, SP[-1].data.o);     SP -= 1;
-    /* CustomInvoke */{ JAVA_OBJECT tmpResult = virtual_java_lang_StringBuilder_append___java_lang_String_R_java_lang_StringBuilder(threadStateData, SP[-1].data.o, STRING_FROM_CONSTANT_POOL_OFFSET(9037));
+    /* CustomInvoke */{ JAVA_OBJECT tmpResult = virtual_java_lang_StringBuilder_append___java_lang_String_R_java_lang_StringBuilder(threadStateData, SP[-1].data.o, STRING_FROM_CONSTANT_POOL_OFFSET(9047));
     SP[-1].data.o = tmpResult; SP[-1].type = CN1_TYPE_OBJECT; }
     /* CustomInvoke */{ JAVA_OBJECT tmpResult = virtual_java_lang_StringBuilder_append___double_R_java_lang_StringBuilder(threadStateData, SP[-1].data.o, get_field_com_codename1_location_Location_altitude(__cn1ThisObject));
     SP[-1].data.o = tmpResult; SP[-1].type = CN1_TYPE_OBJECT; }
-    /* CustomInvoke */{ JAVA_OBJECT tmpResult = virtual_java_lang_StringBuilder_append___java_lang_String_R_java_lang_StringBuilder(threadStateData, SP[-1].data.o, STRING_FROM_CONSTANT_POOL_OFFSET(9038));
+    /* CustomInvoke */{ JAVA_OBJECT tmpResult = virtual_java_lang_StringBuilder_append___java_lang_String_R_java_lang_StringBuilder(threadStateData, SP[-1].data.o, STRING_FROM_CONSTANT_POOL_OFFSET(9048));
     SP[-1].data.o = tmpResult; SP[-1].type = CN1_TYPE_OBJECT; }
     /* CustomInvoke */{ JAVA_OBJECT tmpResult = virtual_java_lang_StringBuilder_append___double_R_java_lang_StringBuilder(threadStateData, SP[-1].data.o, get_field_com_codename1_location_Location_latitude(__cn1ThisObject));
     SP[-1].data.o = tmpResult; SP[-1].type = CN1_TYPE_OBJECT; }
-    /* CustomInvoke */{ JAVA_OBJECT tmpResult = virtual_java_lang_StringBuilder_append___java_lang_String_R_java_lang_StringBuilder(threadStateData, SP[-1].data.o, STRING_FROM_CONSTANT_POOL_OFFSET(9039));
+    /* CustomInvoke */{ JAVA_OBJECT tmpResult = virtual_java_lang_StringBuilder_append___java_lang_String_R_java_lang_StringBuilder(threadStateData, SP[-1].data.o, STRING_FROM_CONSTANT_POOL_OFFSET(9049));
     SP[-1].data.o = tmpResult; SP[-1].type = CN1_TYPE_OBJECT; }
     /* CustomInvoke */{ JAVA_OBJECT tmpResult = virtual_java_lang_StringBuilder_append___double_R_java_lang_StringBuilder(threadStateData, SP[-1].data.o, get_field_com_codename1_location_Location_longitude(__cn1ThisObject));
     SP[-1].data.o = tmpResult; SP[-1].type = CN1_TYPE_OBJECT; }
-    /* CustomInvoke */{ JAVA_OBJECT tmpResult = virtual_java_lang_StringBuilder_append___java_lang_String_R_java_lang_StringBuilder(threadStateData, SP[-1].data.o, STRING_FROM_CONSTANT_POOL_OFFSET(9040));
+    /* CustomInvoke */{ JAVA_OBJECT tmpResult = virtual_java_lang_StringBuilder_append___java_lang_String_R_java_lang_StringBuilder(threadStateData, SP[-1].data.o, STRING_FROM_CONSTANT_POOL_OFFSET(9050));
     SP[-1].data.o = tmpResult; SP[-1].type = CN1_TYPE_OBJECT; }
     /* CustomInvoke */{ JAVA_OBJECT tmpResult = virtual_java_lang_StringBuilder_append___float_R_java_lang_StringBuilder(threadStateData, SP[-1].data.o, get_field_com_codename1_location_Location_direction(__cn1ThisObject));
     SP[-1].data.o = tmpResult; SP[-1].type = CN1_TYPE_OBJECT; }
-    /* CustomInvoke */{ JAVA_OBJECT tmpResult = virtual_java_lang_StringBuilder_append___java_lang_String_R_java_lang_StringBuilder(threadStateData, SP[-1].data.o, STRING_FROM_CONSTANT_POOL_OFFSET(9041));
+    /* CustomInvoke */{ JAVA_OBJECT tmpResult = virtual_java_lang_StringBuilder_append___java_lang_String_R_java_lang_StringBuilder(threadStateData, SP[-1].data.o, STRING_FROM_CONSTANT_POOL_OFFSET(9051));
     SP[-1].data.o = tmpResult; SP[-1].type = CN1_TYPE_OBJECT; }
     /* CustomInvoke */{ JAVA_OBJECT tmpResult = virtual_java_lang_StringBuilder_append___long_R_java_lang_StringBuilder(threadStateData, SP[-1].data.o, get_field_com_codename1_location_Location_timeStamp(__cn1ThisObject));
     SP[-1].data.o = tmpResult; SP[-1].type = CN1_TYPE_OBJECT; }
-    /* CustomInvoke */{ JAVA_OBJECT tmpResult = virtual_java_lang_StringBuilder_append___java_lang_String_R_java_lang_StringBuilder(threadStateData, SP[-1].data.o, STRING_FROM_CONSTANT_POOL_OFFSET(9042));
+    /* CustomInvoke */{ JAVA_OBJECT tmpResult = virtual_java_lang_StringBuilder_append___java_lang_String_R_java_lang_StringBuilder(threadStateData, SP[-1].data.o, STRING_FROM_CONSTANT_POOL_OFFSET(9052));
     SP[-1].data.o = tmpResult; SP[-1].type = CN1_TYPE_OBJECT; }
     /* CustomInvoke */{ JAVA_OBJECT tmpResult = virtual_java_lang_StringBuilder_append___float_R_java_lang_StringBuilder(threadStateData, SP[-1].data.o, get_field_com_codename1_location_Location_velocity(__cn1ThisObject));
     SP[-1].data.o = tmpResult; SP[-1].type = CN1_TYPE_OBJECT; }
@@ -364,20 +364,20 @@ JAVA_OBJECT com_codename1_location_Location_createDistanceCompartor___R_java_uti
 
 
 JAVA_BOOLEAN com_codename1_location_Location_equalsLatLng___com_codename1_location_Location_R_boolean(CODENAME_ONE_THREAD_STATE, JAVA_OBJECT  __cn1ThisObject, JAVA_OBJECT __cn1Arg1) {
-    DEFINE_INSTANCE_METHOD_STACK(4, 2, 0, 9019, 9044);
+    DEFINE_INSTANCE_METHOD_STACK(4, 2, 0, 9029, 9054);
     locals[0].data.o = __cn1ThisObject; locals[0].type = CN1_TYPE_OBJECT;     locals[1].data.o = __cn1Arg1;
     locals[1].type = CN1_TYPE_OBJECT;
     __CN1_DEBUG_INFO(279);
-    if (locals[1].data.o==JAVA_NULL) /* IFNULL CustomJump */ goto label_L1531670331;
-    if (CN1_CMP_EXPR(get_field_com_codename1_location_Location_latitude(locals[1].data.o), get_field_com_codename1_location_Location_latitude(__cn1ThisObject))!=0) /* IFNE CustomJump */ goto label_L1531670331;
-    if (CN1_CMP_EXPR(get_field_com_codename1_location_Location_longitude(locals[1].data.o), get_field_com_codename1_location_Location_longitude(__cn1ThisObject))!=0) /* IFNE CustomJump */ goto label_L1531670331;
+    if (locals[1].data.o==JAVA_NULL) /* IFNULL CustomJump */ goto label_L890867107;
+    if (CN1_CMP_EXPR(get_field_com_codename1_location_Location_latitude(locals[1].data.o), get_field_com_codename1_location_Location_latitude(__cn1ThisObject))!=0) /* IFNE CustomJump */ goto label_L890867107;
+    if (CN1_CMP_EXPR(get_field_com_codename1_location_Location_longitude(locals[1].data.o), get_field_com_codename1_location_Location_longitude(__cn1ThisObject))!=0) /* IFNE CustomJump */ goto label_L890867107;
     PUSH_INT(1); /* ICONST_1 */
-    goto label_L852779561;
+    goto label_L2131280707;
 
-label_L1531670331:
+label_L890867107:
     PUSH_INT(0); /* ICONST_0 */
 
-label_L852779561:
+label_L2131280707:
     releaseForReturn(threadStateData, cn1LocalsBeginInThread); return SP[-1].data.i;
 }
 

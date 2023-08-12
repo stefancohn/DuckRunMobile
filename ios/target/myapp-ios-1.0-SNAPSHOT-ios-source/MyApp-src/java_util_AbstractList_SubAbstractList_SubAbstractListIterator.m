@@ -59,7 +59,7 @@ JAVA_OBJECT __NEW_java_util_AbstractList_SubAbstractList_SubAbstractListIterator
 
 
 JAVA_VOID java_util_AbstractList_SubAbstractList_SubAbstractListIterator___INIT_____java_util_ListIterator_java_util_AbstractList_SubAbstractList_int_int(CODENAME_ONE_THREAD_STATE, JAVA_OBJECT  __cn1ThisObject, JAVA_OBJECT __cn1Arg1, JAVA_OBJECT __cn1Arg2, JAVA_INT __cn1Arg3, JAVA_INT __cn1Arg4) {
-    DEFINE_INSTANCE_METHOD_STACK(3, 5, 0, 1270, 205);
+    DEFINE_INSTANCE_METHOD_STACK(3, 5, 0, 645, 205);
     locals[0].data.o = __cn1ThisObject; locals[0].type = CN1_TYPE_OBJECT;     locals[1].data.o = __cn1Arg1;
     locals[1].type = CN1_TYPE_OBJECT;
     locals[2].data.o = __cn1Arg2;
@@ -77,7 +77,7 @@ JAVA_VOID java_util_AbstractList_SubAbstractList_SubAbstractListIterator___INIT_
 
 
 JAVA_VOID java_util_AbstractList_SubAbstractList_SubAbstractListIterator_add___java_lang_Object(CODENAME_ONE_THREAD_STATE, JAVA_OBJECT  __cn1ThisObject, JAVA_OBJECT __cn1Arg1) {
-    DEFINE_INSTANCE_METHOD_STACK(3, 2, 0, 1270, 1230);
+    DEFINE_INSTANCE_METHOD_STACK(3, 2, 0, 645, 605);
     locals[0].data.o = __cn1ThisObject; locals[0].type = CN1_TYPE_OBJECT;     locals[1].data.o = __cn1Arg1;
     locals[1].type = CN1_TYPE_OBJECT;
     /* CustomInvoke */virtual_java_util_ListIterator_add___java_lang_Object(threadStateData, get_field_java_util_AbstractList_SubAbstractList_SubAbstractListIterator_iterator(__cn1ThisObject), locals[1].data.o); 
@@ -89,7 +89,7 @@ JAVA_VOID java_util_AbstractList_SubAbstractList_SubAbstractListIterator_add___j
 
 
 JAVA_BOOLEAN java_util_AbstractList_SubAbstractList_SubAbstractListIterator_hasNext___R_boolean(CODENAME_ONE_THREAD_STATE, JAVA_OBJECT  __cn1ThisObject) {
-    DEFINE_INSTANCE_METHOD_STACK(2, 1, 0, 1270, 1253);
+    DEFINE_INSTANCE_METHOD_STACK(2, 1, 0, 645, 628);
     locals[0].data.o = __cn1ThisObject; locals[0].type = CN1_TYPE_OBJECT;     if (virtual_java_util_ListIterator_nextIndex___R_int(threadStateData, get_field_java_util_AbstractList_SubAbstractList_SubAbstractListIterator_iterator(__cn1ThisObject))>=get_field_java_util_AbstractList_SubAbstractList_SubAbstractListIterator_end(__cn1ThisObject)) /* IF_ICMPGE CustomJump */ goto label_L168907708;
     PUSH_INT(1); /* ICONST_1 */
     goto label_L447718425;
@@ -103,7 +103,7 @@ label_L447718425:
 
 
 JAVA_BOOLEAN java_util_AbstractList_SubAbstractList_SubAbstractListIterator_hasPrevious___R_boolean(CODENAME_ONE_THREAD_STATE, JAVA_OBJECT  __cn1ThisObject) {
-    DEFINE_INSTANCE_METHOD_STACK(2, 1, 0, 1270, 1257);
+    DEFINE_INSTANCE_METHOD_STACK(2, 1, 0, 645, 632);
     locals[0].data.o = __cn1ThisObject; locals[0].type = CN1_TYPE_OBJECT;     if (virtual_java_util_ListIterator_previousIndex___R_int(threadStateData, get_field_java_util_AbstractList_SubAbstractList_SubAbstractListIterator_iterator(__cn1ThisObject))<get_field_java_util_AbstractList_SubAbstractList_SubAbstractListIterator_start(__cn1ThisObject)) /* IF_IMPLT CustomJump */ goto label_L1206569586;
     PUSH_INT(1); /* ICONST_1 */
     goto label_L1427381743;
@@ -117,7 +117,7 @@ label_L1427381743:
 
 
 JAVA_OBJECT java_util_AbstractList_SubAbstractList_SubAbstractListIterator_next___R_java_lang_Object(CODENAME_ONE_THREAD_STATE, JAVA_OBJECT  __cn1ThisObject) {
-    DEFINE_INSTANCE_METHOD_STACK(2, 1, 0, 1270, 1254);
+    DEFINE_INSTANCE_METHOD_STACK(2, 1, 0, 645, 629);
     locals[0].data.o = __cn1ThisObject; locals[0].type = CN1_TYPE_OBJECT;     if (virtual_java_util_ListIterator_nextIndex___R_int(threadStateData, get_field_java_util_AbstractList_SubAbstractList_SubAbstractListIterator_iterator(__cn1ThisObject))>=get_field_java_util_AbstractList_SubAbstractList_SubAbstractListIterator_end(__cn1ThisObject)) /* IF_ICMPGE CustomJump */ goto label_L1427646530;
     { JAVA_OBJECT tmpResult = virtual_java_util_ListIterator_next___R_java_lang_Object(threadStateData, get_field_java_util_AbstractList_SubAbstractList_SubAbstractListIterator_iterator(__cn1ThisObject));
     PUSH_OBJ(tmpResult); }
@@ -134,7 +134,7 @@ label_L1427646530:
 
 
 JAVA_INT java_util_AbstractList_SubAbstractList_SubAbstractListIterator_nextIndex___R_int(CODENAME_ONE_THREAD_STATE, JAVA_OBJECT  __cn1ThisObject) {
-    DEFINE_INSTANCE_METHOD_STACK(2, 1, 0, 1270, 1258);
+    DEFINE_INSTANCE_METHOD_STACK(2, 1, 0, 645, 633);
     locals[0].data.o = __cn1ThisObject; locals[0].type = CN1_TYPE_OBJECT;     { JAVA_INT tmpResult = virtual_java_util_ListIterator_nextIndex___R_int(threadStateData, get_field_java_util_AbstractList_SubAbstractList_SubAbstractListIterator_iterator(__cn1ThisObject));
     PUSH_INT(tmpResult); }
     PUSH_INT(get_field_java_util_AbstractList_SubAbstractList_SubAbstractListIterator_start(__cn1ThisObject));
@@ -144,7 +144,7 @@ JAVA_INT java_util_AbstractList_SubAbstractList_SubAbstractListIterator_nextInde
 
 
 JAVA_OBJECT java_util_AbstractList_SubAbstractList_SubAbstractListIterator_previous___R_java_lang_Object(CODENAME_ONE_THREAD_STATE, JAVA_OBJECT  __cn1ThisObject) {
-    DEFINE_INSTANCE_METHOD_STACK(2, 1, 0, 1270, 1259);
+    DEFINE_INSTANCE_METHOD_STACK(2, 1, 0, 645, 634);
     locals[0].data.o = __cn1ThisObject; locals[0].type = CN1_TYPE_OBJECT;     if (virtual_java_util_ListIterator_previousIndex___R_int(threadStateData, get_field_java_util_AbstractList_SubAbstractList_SubAbstractListIterator_iterator(__cn1ThisObject))<get_field_java_util_AbstractList_SubAbstractList_SubAbstractListIterator_start(__cn1ThisObject)) /* IF_IMPLT CustomJump */ goto label_L846254484;
     { JAVA_OBJECT tmpResult = virtual_java_util_ListIterator_previous___R_java_lang_Object(threadStateData, get_field_java_util_AbstractList_SubAbstractList_SubAbstractListIterator_iterator(__cn1ThisObject));
     PUSH_OBJ(tmpResult); }
@@ -162,7 +162,7 @@ label_L846254484:
 
 JAVA_INT java_util_AbstractList_SubAbstractList_SubAbstractListIterator_previousIndex___R_int(CODENAME_ONE_THREAD_STATE, JAVA_OBJECT  __cn1ThisObject) {
     volatile JAVA_INT ilocals_1_ = 0; /* v1 */
-    DEFINE_INSTANCE_METHOD_STACK(2, 2, 0, 1270, 1260);
+    DEFINE_INSTANCE_METHOD_STACK(2, 2, 0, 645, 635);
     locals[0].data.o = __cn1ThisObject; locals[0].type = CN1_TYPE_OBJECT;     /* VarOp.assignFrom */ ilocals_1_ = virtual_java_util_ListIterator_previousIndex___R_int(threadStateData, get_field_java_util_AbstractList_SubAbstractList_SubAbstractListIterator_iterator(__cn1ThisObject));
     if (ilocals_1_<get_field_java_util_AbstractList_SubAbstractList_SubAbstractListIterator_start(__cn1ThisObject)) /* IF_IMPLT CustomJump */ goto label_L592983282;
 
@@ -178,7 +178,7 @@ label_L592983282:
 
 
 JAVA_VOID java_util_AbstractList_SubAbstractList_SubAbstractListIterator_remove__(CODENAME_ONE_THREAD_STATE, JAVA_OBJECT  __cn1ThisObject) {
-    DEFINE_INSTANCE_METHOD_STACK(3, 1, 0, 1270, 1235);
+    DEFINE_INSTANCE_METHOD_STACK(3, 1, 0, 645, 610);
     locals[0].data.o = __cn1ThisObject; locals[0].type = CN1_TYPE_OBJECT;     virtual_java_util_ListIterator_remove__(threadStateData, get_field_java_util_AbstractList_SubAbstractList_SubAbstractListIterator_iterator(__cn1ThisObject)); 
     /* CustomInvoke */virtual_java_util_AbstractList_SubAbstractList_sizeChanged___boolean(threadStateData, get_field_java_util_AbstractList_SubAbstractList_SubAbstractListIterator_subList(__cn1ThisObject), 0 /* ICONST_0 */); 
     set_field_java_util_AbstractList_SubAbstractList_SubAbstractListIterator_end(threadStateData, (get_field_java_util_AbstractList_SubAbstractList_SubAbstractListIterator_end(__cn1ThisObject) - 1 /* ICONST_1 */), __cn1ThisObject);
@@ -188,7 +188,7 @@ JAVA_VOID java_util_AbstractList_SubAbstractList_SubAbstractListIterator_remove_
 
 
 JAVA_VOID java_util_AbstractList_SubAbstractList_SubAbstractListIterator_set___java_lang_Object(CODENAME_ONE_THREAD_STATE, JAVA_OBJECT  __cn1ThisObject, JAVA_OBJECT __cn1Arg1) {
-    DEFINE_INSTANCE_METHOD_STACK(2, 2, 0, 1270, 1226);
+    DEFINE_INSTANCE_METHOD_STACK(2, 2, 0, 645, 601);
     locals[0].data.o = __cn1ThisObject; locals[0].type = CN1_TYPE_OBJECT;     locals[1].data.o = __cn1Arg1;
     locals[1].type = CN1_TYPE_OBJECT;
     /* CustomInvoke */virtual_java_util_ListIterator_set___java_lang_Object(threadStateData, get_field_java_util_AbstractList_SubAbstractList_SubAbstractListIterator_iterator(__cn1ThisObject), locals[1].data.o); 

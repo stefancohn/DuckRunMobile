@@ -35,7 +35,7 @@ JAVA_OBJECT __NEW_com_codename1_system_Lifecycle_1(CODENAME_ONE_THREAD_STATE) {
 
 
 JAVA_VOID com_codename1_system_Lifecycle_1___INIT_____com_codename1_system_Lifecycle(CODENAME_ONE_THREAD_STATE, JAVA_OBJECT  __cn1ThisObject, JAVA_OBJECT __cn1Arg1) {
-    DEFINE_INSTANCE_METHOD_STACK(2, 2, 0, 10196, 205);
+    DEFINE_INSTANCE_METHOD_STACK(2, 2, 0, 10229, 205);
     locals[0].data.o = __cn1ThisObject; locals[0].type = CN1_TYPE_OBJECT;     locals[1].data.o = __cn1Arg1;
     locals[1].type = CN1_TYPE_OBJECT;
     __CN1_DEBUG_INFO(66);
@@ -47,7 +47,7 @@ JAVA_VOID com_codename1_system_Lifecycle_1___INIT_____com_codename1_system_Lifec
 
 
 JAVA_VOID com_codename1_system_Lifecycle_1_actionPerformed___com_codename1_io_NetworkEvent(CODENAME_ONE_THREAD_STATE, JAVA_OBJECT  __cn1ThisObject, JAVA_OBJECT __cn1Arg1) {
-    DEFINE_INSTANCE_METHOD_STACK(2, 2, 0, 10196, 3051);
+    DEFINE_INSTANCE_METHOD_STACK(2, 2, 0, 10229, 3061);
     locals[0].data.o = __cn1ThisObject; locals[0].type = CN1_TYPE_OBJECT;     locals[1].data.o = __cn1Arg1;
     locals[1].type = CN1_TYPE_OBJECT;
     __CN1_DEBUG_INFO(69);
@@ -59,7 +59,7 @@ JAVA_VOID com_codename1_system_Lifecycle_1_actionPerformed___com_codename1_io_Ne
 
 
 JAVA_VOID com_codename1_system_Lifecycle_1_actionPerformed___com_codename1_ui_events_ActionEvent(CODENAME_ONE_THREAD_STATE, JAVA_OBJECT  __cn1ThisObject, JAVA_OBJECT __cn1Arg1) {
-    DEFINE_INSTANCE_METHOD_STACK(2, 2, 0, 10196, 3051);
+    DEFINE_INSTANCE_METHOD_STACK(2, 2, 0, 10229, 3061);
     locals[0].data.o = __cn1ThisObject; locals[0].type = CN1_TYPE_OBJECT;     locals[1].data.o = __cn1Arg1;
     locals[1].type = CN1_TYPE_OBJECT;
     __CN1_DEBUG_INFO(66);

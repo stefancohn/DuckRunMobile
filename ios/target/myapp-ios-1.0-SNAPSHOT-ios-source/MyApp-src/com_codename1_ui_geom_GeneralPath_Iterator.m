@@ -79,7 +79,7 @@ JAVA_OBJECT __NEW_com_codename1_ui_geom_GeneralPath_Iterator(CODENAME_ONE_THREAD
 
 
 JAVA_VOID com_codename1_ui_geom_GeneralPath_Iterator___INIT_____com_codename1_ui_geom_GeneralPath_com_codename1_ui_geom_GeneralPath(CODENAME_ONE_THREAD_STATE, JAVA_OBJECT  __cn1ThisObject, JAVA_OBJECT __cn1Arg1, JAVA_OBJECT __cn1Arg2) {
-    DEFINE_INSTANCE_METHOD_STACK(2, 3, 0, 3713, 205);
+    DEFINE_INSTANCE_METHOD_STACK(2, 3, 0, 3723, 205);
     locals[0].data.o = __cn1ThisObject; locals[0].type = CN1_TYPE_OBJECT;     locals[1].data.o = __cn1Arg1;
     locals[1].type = CN1_TYPE_OBJECT;
     locals[2].data.o = __cn1Arg2;
@@ -102,7 +102,7 @@ JAVA_VOID com_codename1_ui_geom_GeneralPath_Iterator___INIT_____com_codename1_ui
 
 
 JAVA_VOID com_codename1_ui_geom_GeneralPath_Iterator_reset__(CODENAME_ONE_THREAD_STATE, JAVA_OBJECT  __cn1ThisObject) {
-    DEFINE_INSTANCE_METHOD_STACK(2, 1, 0, 3713, 991);
+    DEFINE_INSTANCE_METHOD_STACK(2, 1, 0, 3723, 360);
     locals[0].data.o = __cn1ThisObject; locals[0].type = CN1_TYPE_OBJECT;     __CN1_DEBUG_INFO(315);
     set_field_com_codename1_ui_geom_GeneralPath_Iterator_typeIndex(threadStateData, 0 /* ICONST_0 */, __cn1ThisObject);
     __CN1_DEBUG_INFO(316);
@@ -114,7 +114,7 @@ JAVA_VOID com_codename1_ui_geom_GeneralPath_Iterator_reset__(CODENAME_ONE_THREAD
 
 
 JAVA_INT com_codename1_ui_geom_GeneralPath_Iterator_getWindingRule___R_int(CODENAME_ONE_THREAD_STATE, JAVA_OBJECT  __cn1ThisObject) {
-    DEFINE_INSTANCE_METHOD_STACK(1, 1, 0, 3713, 3654);
+    DEFINE_INSTANCE_METHOD_STACK(1, 1, 0, 3723, 3664);
     locals[0].data.o = __cn1ThisObject; locals[0].type = CN1_TYPE_OBJECT;     __CN1_DEBUG_INFO(320);
 
 {
@@ -125,22 +125,22 @@ JAVA_INT com_codename1_ui_geom_GeneralPath_Iterator_getWindingRule___R_int(CODEN
 
 
 JAVA_BOOLEAN com_codename1_ui_geom_GeneralPath_Iterator_isDone___R_boolean(CODENAME_ONE_THREAD_STATE, JAVA_OBJECT  __cn1ThisObject) {
-    DEFINE_INSTANCE_METHOD_STACK(2, 1, 0, 3713, 3714);
+    DEFINE_INSTANCE_METHOD_STACK(2, 1, 0, 3723, 3724);
     locals[0].data.o = __cn1ThisObject; locals[0].type = CN1_TYPE_OBJECT;     __CN1_DEBUG_INFO(324);
-    if (get_field_com_codename1_ui_geom_GeneralPath_Iterator_typeIndex(__cn1ThisObject)<get_field_com_codename1_ui_geom_GeneralPath_typeSize(get_field_com_codename1_ui_geom_GeneralPath_Iterator_p(__cn1ThisObject))) /* IF_IMPLT CustomJump */ goto label_L1726032955;
+    if (get_field_com_codename1_ui_geom_GeneralPath_Iterator_typeIndex(__cn1ThisObject)<get_field_com_codename1_ui_geom_GeneralPath_typeSize(get_field_com_codename1_ui_geom_GeneralPath_Iterator_p(__cn1ThisObject))) /* IF_IMPLT CustomJump */ goto label_L527372258;
     PUSH_INT(1); /* ICONST_1 */
-    goto label_L71599579;
+    goto label_L576736382;
 
-label_L1726032955:
+label_L527372258:
     PUSH_INT(0); /* ICONST_0 */
 
-label_L71599579:
+label_L576736382:
     releaseForReturn(threadStateData, cn1LocalsBeginInThread); return SP[-1].data.i;
 }
 
 
 JAVA_VOID com_codename1_ui_geom_GeneralPath_Iterator_next__(CODENAME_ONE_THREAD_STATE, JAVA_OBJECT  __cn1ThisObject) {
-    DEFINE_INSTANCE_METHOD_STACK(3, 1, 0, 3713, 1254);
+    DEFINE_INSTANCE_METHOD_STACK(3, 1, 0, 3723, 629);
     locals[0].data.o = __cn1ThisObject; locals[0].type = CN1_TYPE_OBJECT;     __CN1_DEBUG_INFO(328);
     set_field_com_codename1_ui_geom_GeneralPath_Iterator_typeIndex(threadStateData, (get_field_com_codename1_ui_geom_GeneralPath_Iterator_typeIndex(__cn1ThisObject) + 1 /* ICONST_1 */), __cn1ThisObject);
     __CN1_DEBUG_INFO(329);
@@ -159,21 +159,21 @@ JAVA_INT com_codename1_ui_geom_GeneralPath_Iterator_currentSegment___double_1ARR
     volatile JAVA_INT ilocals_4_ = 0; /* v4 */
     volatile JAVA_INT ilocals_5_ = 0; /* v5 */
     volatile JAVA_INT ilocals_6_ = 0; /* v6 */
-    DEFINE_INSTANCE_METHOD_STACK(4, 8, 0, 3713, 3717);
+    DEFINE_INSTANCE_METHOD_STACK(4, 8, 0, 3723, 3727);
     locals[0].data.o = __cn1ThisObject; locals[0].type = CN1_TYPE_OBJECT;     locals[1].data.o = __cn1Arg1;
     locals[1].type = CN1_TYPE_OBJECT;
-    int restoreToL116897784101;
-    int tryBlockOffsetL116897784101;
-    DEFINE_CATCH_BLOCK(catch_L116897784101, label_L179437727, restoreToL116897784101);
-    int restoreToL17943772702;
-    int tryBlockOffsetL17943772702;
-    DEFINE_CATCH_BLOCK(catch_L17943772702, label_L179437727, restoreToL17943772702);
+    int restoreToL22022804701;
+    int tryBlockOffsetL22022804701;
+    DEFINE_CATCH_BLOCK(catch_L22022804701, label_L508397424, restoreToL22022804701);
+    int restoreToL50839742402;
+    int tryBlockOffsetL50839742402;
+    DEFINE_CATCH_BLOCK(catch_L50839742402, label_L508397424, restoreToL50839742402);
     __CN1_DEBUG_INFO(352);
     /* VarOp.assignFrom */ locals[2].data.o = /* CustomInvoke */com_codename1_ui_geom_GeneralPath_access$200___int_R_float_1ARRAY(threadStateData, 6);locals[2].type=CN1_TYPE_OBJECT;
-label_L1168977841:
- tryBlockOffsetL116897784101 = threadStateData->tryBlockOffset;
-    BEGIN_TRY(0, catch_L116897784101);
-    restoreToL116897784101 = threadStateData->threadObjectStackOffset;
+label_L220228047:
+ tryBlockOffsetL22022804701 = threadStateData->tryBlockOffset;
+    BEGIN_TRY(0, catch_L22022804701);
+    restoreToL22022804701 = threadStateData->threadObjectStackOffset;
 
     __CN1_DEBUG_INFO(354);
     /* VarOp.assignFrom */ ilocals_3_ = /* CustomInvoke */virtual_com_codename1_ui_geom_GeneralPath_Iterator_currentSegment___float_1ARRAY_R_int(threadStateData, __cn1ThisObject, locals[2].data.o);
@@ -191,19 +191,19 @@ label_L1168977841:
     __CN1_DEBUG_INFO(358);
     /* VarOp.assignFrom */     ilocals_6_ = 0 /* ICONST_0 */; 
 
-label_L508397424:
-    if (ilocals_6_>=ilocals_5_) /* IF_ICMPGE CustomJump */ JUMP_TO(label_L705801739, 1);
+label_L1106755629:
+    if (ilocals_6_>=ilocals_5_) /* IF_ICMPGE CustomJump */ JUMP_TO(label_L1532728609, 1);
     __CN1_DEBUG_INFO(359);
     CN1_SET_ARRAY_ELEMENT_DOUBLE(locals[1].data.o, ilocals_6_, CN1_ARRAY_ELEMENT_FLOAT(locals[2].data.o, ilocals_6_));
     __CN1_DEBUG_INFO(358);
     BC_IINC(6, 1);
-    JUMP_TO(label_L508397424, 1);
+    JUMP_TO(label_L1106755629, 1);
 
-label_L705801739:
+label_L1532728609:
     __CN1_DEBUG_INFO(361);
     /* VarOp.assignFrom */     ilocals_6_ = ilocals_3_;
 
-label_L861465089:
+label_L1884820449:
 END_TRY(1);    __CN1_DEBUG_INFO(363);
     /* CustomInvoke */com_codename1_ui_geom_GeneralPath_access$300___float_1ARRAY(threadStateData, locals[2].data.o); 
     __CN1_DEBUG_INFO(361);
@@ -213,15 +213,15 @@ END_TRY(1);    __CN1_DEBUG_INFO(363);
     releaseForReturnInException(threadStateData, cn1LocalsBeginInThread, methodBlockOffset); return ___returnValue;
 }
 
-label_L179437727:
- tryBlockOffsetL17943772702 = threadStateData->tryBlockOffset;
-    BEGIN_TRY(0, catch_L17943772702);
-    restoreToL17943772702 = threadStateData->threadObjectStackOffset;
+label_L508397424:
+ tryBlockOffsetL50839742402 = threadStateData->tryBlockOffset;
+    BEGIN_TRY(0, catch_L50839742402);
+    restoreToL50839742402 = threadStateData->threadObjectStackOffset;
 
     __CN1_DEBUG_INFO(363);
     BC_ASTORE(7);
 
-label_L775481658:
+label_L1316573032:
 END_TRY(1);    /* CustomInvoke */com_codename1_ui_geom_GeneralPath_access$300___float_1ARRAY(threadStateData, locals[2].data.o); 
     __CN1_DEBUG_INFO(364);
     BC_ALOAD(7);
@@ -233,18 +233,18 @@ END_TRY(1);    /* CustomInvoke */com_codename1_ui_geom_GeneralPath_access$300___
 JAVA_INT com_codename1_ui_geom_GeneralPath_Iterator_currentSegment___float_1ARRAY_R_int(CODENAME_ONE_THREAD_STATE, JAVA_OBJECT  __cn1ThisObject, JAVA_OBJECT __cn1Arg1) {
     volatile JAVA_INT ilocals_2_ = 0; /* v2 */
     volatile JAVA_INT ilocals_3_ = 0; /* v3 */
-    DEFINE_INSTANCE_METHOD_STACK(8, 4, 0, 3713, 3717);
+    DEFINE_INSTANCE_METHOD_STACK(8, 4, 0, 3723, 3727);
     locals[0].data.o = __cn1ThisObject; locals[0].type = CN1_TYPE_OBJECT;     locals[1].data.o = __cn1Arg1;
     locals[1].type = CN1_TYPE_OBJECT;
     __CN1_DEBUG_INFO(370);
-    if (virtual_com_codename1_ui_geom_GeneralPath_Iterator_isDone___R_boolean(threadStateData, __cn1ThisObject)==0) /* IFEQ CustomJump */ goto label_L1532728609;
+    if (virtual_com_codename1_ui_geom_GeneralPath_Iterator_isDone___R_boolean(threadStateData, __cn1ThisObject)==0) /* IFEQ CustomJump */ goto label_L1714507758;
     __CN1_DEBUG_INFO(372);
     PUSH_POINTER(__NEW_java_lang_IndexOutOfBoundsException(threadStateData)); /* NEW */
     BC_DUP(); /* DUP */
-    /* CustomInvoke */java_lang_IndexOutOfBoundsException___INIT_____java_lang_String(threadStateData, SP[-1].data.o, STRING_FROM_CONSTANT_POOL_OFFSET(3716));     SP -= 1;
+    /* CustomInvoke */java_lang_IndexOutOfBoundsException___INIT_____java_lang_String(threadStateData, SP[-1].data.o, STRING_FROM_CONSTANT_POOL_OFFSET(3726));     SP -= 1;
     throwException(threadStateData, POP_OBJ());
 
-label_L1532728609:
+label_L1714507758:
     __CN1_DEBUG_INFO(374);
     /* VarOp.assignFrom */ ilocals_2_=CN1_ARRAY_ELEMENT_BYTE(get_field_com_codename1_ui_geom_GeneralPath_types(get_field_com_codename1_ui_geom_GeneralPath_Iterator_p(__cn1ThisObject)), get_field_com_codename1_ui_geom_GeneralPath_Iterator_typeIndex(__cn1ThisObject));
     __CN1_DEBUG_INFO(375);
@@ -257,16 +257,16 @@ label_L1532728609:
     SP[-1].data.i = ((JAVA_ARRAY_INT*) (*(JAVA_ARRAY)SP[-1].data.o).data)[(*SP).data.i];
     BC_ISTORE(3);
     __CN1_DEBUG_INFO(376);
-    if (get_field_com_codename1_ui_geom_GeneralPath_Iterator_transform(__cn1ThisObject)!=JAVA_NULL) /* IFNONNULL CustomJump */ goto label_L1106755629;
+    if (get_field_com_codename1_ui_geom_GeneralPath_Iterator_transform(__cn1ThisObject)!=JAVA_NULL) /* IFNONNULL CustomJump */ goto label_L347419231;
     __CN1_DEBUG_INFO(377);
     /* CustomInvoke */java_lang_System_arraycopy___java_lang_Object_int_java_lang_Object_int_int(threadStateData, get_field_com_codename1_ui_geom_GeneralPath_points(get_field_com_codename1_ui_geom_GeneralPath_Iterator_p(__cn1ThisObject)), get_field_com_codename1_ui_geom_GeneralPath_Iterator_pointIndex(__cn1ThisObject), locals[1].data.o, 0 /* ICONST_0 */, ilocals_3_); 
-    goto label_L1714507758;
+    goto label_L322981749;
 
-label_L1106755629:
+label_L347419231:
     __CN1_DEBUG_INFO(379);
     /* CustomInvoke */virtual_com_codename1_ui_Transform_transformPoints___int_float_1ARRAY_int_float_1ARRAY_int_int(threadStateData, get_field_com_codename1_ui_geom_GeneralPath_Iterator_transform(__cn1ThisObject), 2 /* ICONST_2 */, get_field_com_codename1_ui_geom_GeneralPath_points(get_field_com_codename1_ui_geom_GeneralPath_Iterator_p(__cn1ThisObject)), get_field_com_codename1_ui_geom_GeneralPath_Iterator_pointIndex(__cn1ThisObject), locals[1].data.o, 0 /* ICONST_0 */, (ilocals_3_ / 2 /* ICONST_2 */)); 
 
-label_L1714507758:
+label_L322981749:
     __CN1_DEBUG_INFO(381);
     set_field_com_codename1_ui_geom_GeneralPath_Iterator_pointIndex(threadStateData, (get_field_com_codename1_ui_geom_GeneralPath_Iterator_pointIndex(__cn1ThisObject) + ilocals_3_), __cn1ThisObject);
     __CN1_DEBUG_INFO(382);
@@ -280,7 +280,7 @@ label_L1714507758:
 
 JAVA_VOID com_codename1_ui_geom_GeneralPath_Iterator_access$000___com_codename1_ui_geom_GeneralPath_Iterator(CODENAME_ONE_THREAD_STATE, JAVA_OBJECT __cn1Arg1) {
     __STATIC_INITIALIZER_com_codename1_ui_geom_GeneralPath_Iterator(threadStateData);
-    DEFINE_METHOD_STACK(1, 1, 0, 3713, 221);
+    DEFINE_METHOD_STACK(1, 1, 0, 3723, 223);
     locals[0].data.o = __cn1Arg1;
     locals[0].type = CN1_TYPE_OBJECT;
     __CN1_DEBUG_INFO(285);

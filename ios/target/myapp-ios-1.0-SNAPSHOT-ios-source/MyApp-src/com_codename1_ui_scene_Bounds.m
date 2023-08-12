@@ -77,7 +77,7 @@ JAVA_VOID com_codename1_ui_scene_Bounds___INIT_____double_double_double_double_d
     volatile JAVA_DOUBLE dlocals_3_ = 0; /* minY */
     volatile JAVA_DOUBLE dlocals_5_ = 0; /* minZ */
     volatile JAVA_DOUBLE dlocals_7_ = 0; /* width */
-    DEFINE_INSTANCE_METHOD_STACK(3, 13, 0, 10007, 205);
+    DEFINE_INSTANCE_METHOD_STACK(3, 13, 0, 10017, 205);
     locals[0].data.o = __cn1ThisObject; locals[0].type = CN1_TYPE_OBJECT;     dlocals_1_ = __cn1Arg1;
     dlocals_3_ = __cn1Arg2;
     dlocals_5_ = __cn1Arg3;
@@ -105,7 +105,7 @@ JAVA_VOID com_codename1_ui_scene_Bounds___INIT_____double_double_double_double_d
 
 
 JAVA_DOUBLE com_codename1_ui_scene_Bounds_getMinX___R_double(CODENAME_ONE_THREAD_STATE, JAVA_OBJECT  __cn1ThisObject) {
-    DEFINE_INSTANCE_METHOD_STACK(2, 1, 0, 10007, 10008);
+    DEFINE_INSTANCE_METHOD_STACK(2, 1, 0, 10017, 10018);
     locals[0].data.o = __cn1ThisObject; locals[0].type = CN1_TYPE_OBJECT;     __CN1_DEBUG_INFO(85);
 
 {
@@ -117,7 +117,7 @@ JAVA_DOUBLE com_codename1_ui_scene_Bounds_getMinX___R_double(CODENAME_ONE_THREAD
 
 JAVA_VOID com_codename1_ui_scene_Bounds_setMinX___double(CODENAME_ONE_THREAD_STATE, JAVA_OBJECT  __cn1ThisObject, JAVA_DOUBLE __cn1Arg1) {
     volatile JAVA_DOUBLE dlocals_1_ = 0; /* minX */
-    DEFINE_INSTANCE_METHOD_STACK(3, 3, 0, 10007, 10009);
+    DEFINE_INSTANCE_METHOD_STACK(3, 3, 0, 10017, 10019);
     locals[0].data.o = __cn1ThisObject; locals[0].type = CN1_TYPE_OBJECT;     dlocals_1_ = __cn1Arg1;
     __CN1_DEBUG_INFO(93);
     set_field_com_codename1_ui_scene_Bounds_minX(threadStateData, dlocals_1_, __cn1ThisObject);
@@ -128,7 +128,7 @@ JAVA_VOID com_codename1_ui_scene_Bounds_setMinX___double(CODENAME_ONE_THREAD_STA
 
 
 JAVA_DOUBLE com_codename1_ui_scene_Bounds_getMinY___R_double(CODENAME_ONE_THREAD_STATE, JAVA_OBJECT  __cn1ThisObject) {
-    DEFINE_INSTANCE_METHOD_STACK(2, 1, 0, 10007, 10010);
+    DEFINE_INSTANCE_METHOD_STACK(2, 1, 0, 10017, 10020);
     locals[0].data.o = __cn1ThisObject; locals[0].type = CN1_TYPE_OBJECT;     __CN1_DEBUG_INFO(101);
 
 {
@@ -140,7 +140,7 @@ JAVA_DOUBLE com_codename1_ui_scene_Bounds_getMinY___R_double(CODENAME_ONE_THREAD
 
 JAVA_VOID com_codename1_ui_scene_Bounds_setMinY___double(CODENAME_ONE_THREAD_STATE, JAVA_OBJECT  __cn1ThisObject, JAVA_DOUBLE __cn1Arg1) {
     volatile JAVA_DOUBLE dlocals_1_ = 0; /* minY */
-    DEFINE_INSTANCE_METHOD_STACK(3, 3, 0, 10007, 10011);
+    DEFINE_INSTANCE_METHOD_STACK(3, 3, 0, 10017, 10021);
     locals[0].data.o = __cn1ThisObject; locals[0].type = CN1_TYPE_OBJECT;     dlocals_1_ = __cn1Arg1;
     __CN1_DEBUG_INFO(109);
     set_field_com_codename1_ui_scene_Bounds_minY(threadStateData, dlocals_1_, __cn1ThisObject);
@@ -161,7 +161,7 @@ JAVA_VOID com_codename1_ui_scene_Bounds_setMinZ___double(CODENAME_ONE_THREAD_STA
 
 
 JAVA_DOUBLE com_codename1_ui_scene_Bounds_getWidth___R_double(CODENAME_ONE_THREAD_STATE, JAVA_OBJECT  __cn1ThisObject) {
-    DEFINE_INSTANCE_METHOD_STACK(2, 1, 0, 10007, 1305);
+    DEFINE_INSTANCE_METHOD_STACK(2, 1, 0, 10017, 1317);
     locals[0].data.o = __cn1ThisObject; locals[0].type = CN1_TYPE_OBJECT;     __CN1_DEBUG_INFO(133);
 
 {
@@ -173,7 +173,7 @@ JAVA_DOUBLE com_codename1_ui_scene_Bounds_getWidth___R_double(CODENAME_ONE_THREA
 
 JAVA_VOID com_codename1_ui_scene_Bounds_setWidth___double(CODENAME_ONE_THREAD_STATE, JAVA_OBJECT  __cn1ThisObject, JAVA_DOUBLE __cn1Arg1) {
     volatile JAVA_DOUBLE dlocals_1_ = 0; /* width */
-    DEFINE_INSTANCE_METHOD_STACK(3, 3, 0, 10007, 2454);
+    DEFINE_INSTANCE_METHOD_STACK(3, 3, 0, 10017, 2465);
     locals[0].data.o = __cn1ThisObject; locals[0].type = CN1_TYPE_OBJECT;     dlocals_1_ = __cn1Arg1;
     __CN1_DEBUG_INFO(141);
     set_field_com_codename1_ui_scene_Bounds_width(threadStateData, dlocals_1_, __cn1ThisObject);
@@ -184,7 +184,7 @@ JAVA_VOID com_codename1_ui_scene_Bounds_setWidth___double(CODENAME_ONE_THREAD_ST
 
 
 JAVA_DOUBLE com_codename1_ui_scene_Bounds_getHeight___R_double(CODENAME_ONE_THREAD_STATE, JAVA_OBJECT  __cn1ThisObject) {
-    DEFINE_INSTANCE_METHOD_STACK(2, 1, 0, 10007, 441);
+    DEFINE_INSTANCE_METHOD_STACK(2, 1, 0, 10017, 879);
     locals[0].data.o = __cn1ThisObject; locals[0].type = CN1_TYPE_OBJECT;     __CN1_DEBUG_INFO(149);
 
 {
@@ -196,7 +196,7 @@ JAVA_DOUBLE com_codename1_ui_scene_Bounds_getHeight___R_double(CODENAME_ONE_THRE
 
 JAVA_VOID com_codename1_ui_scene_Bounds_setHeight___double(CODENAME_ONE_THREAD_STATE, JAVA_OBJECT  __cn1ThisObject, JAVA_DOUBLE __cn1Arg1) {
     volatile JAVA_DOUBLE dlocals_1_ = 0; /* height */
-    DEFINE_INSTANCE_METHOD_STACK(3, 3, 0, 10007, 2455);
+    DEFINE_INSTANCE_METHOD_STACK(3, 3, 0, 10017, 2466);
     locals[0].data.o = __cn1ThisObject; locals[0].type = CN1_TYPE_OBJECT;     dlocals_1_ = __cn1Arg1;
     __CN1_DEBUG_INFO(157);
     set_field_com_codename1_ui_scene_Bounds_height(threadStateData, dlocals_1_, __cn1ThisObject);
@@ -207,7 +207,7 @@ JAVA_VOID com_codename1_ui_scene_Bounds_setHeight___double(CODENAME_ONE_THREAD_S
 
 
 JAVA_DOUBLE com_codename1_ui_scene_Bounds_getDepth___R_double(CODENAME_ONE_THREAD_STATE, JAVA_OBJECT  __cn1ThisObject) {
-    DEFINE_INSTANCE_METHOD_STACK(2, 1, 0, 10007, 10014);
+    DEFINE_INSTANCE_METHOD_STACK(2, 1, 0, 10017, 10024);
     locals[0].data.o = __cn1ThisObject; locals[0].type = CN1_TYPE_OBJECT;     __CN1_DEBUG_INFO(165);
 
 {
@@ -219,7 +219,7 @@ JAVA_DOUBLE com_codename1_ui_scene_Bounds_getDepth___R_double(CODENAME_ONE_THREA
 
 JAVA_VOID com_codename1_ui_scene_Bounds_setDepth___double(CODENAME_ONE_THREAD_STATE, JAVA_OBJECT  __cn1ThisObject, JAVA_DOUBLE __cn1Arg1) {
     volatile JAVA_DOUBLE dlocals_1_ = 0; /* depth */
-    DEFINE_INSTANCE_METHOD_STACK(3, 3, 0, 10007, 10015);
+    DEFINE_INSTANCE_METHOD_STACK(3, 3, 0, 10017, 10025);
     locals[0].data.o = __cn1ThisObject; locals[0].type = CN1_TYPE_OBJECT;     dlocals_1_ = __cn1Arg1;
     __CN1_DEBUG_INFO(173);
     set_field_com_codename1_ui_scene_Bounds_depth(threadStateData, dlocals_1_, __cn1ThisObject);

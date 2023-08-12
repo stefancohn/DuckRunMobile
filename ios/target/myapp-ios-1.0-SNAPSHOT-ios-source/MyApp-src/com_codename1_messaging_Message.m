@@ -96,15 +96,15 @@ JAVA_OBJECT __NEW_com_codename1_messaging_Message(CODENAME_ONE_THREAD_STATE) {
 
 
 JAVA_VOID com_codename1_messaging_Message___INIT_____java_lang_String(CODENAME_ONE_THREAD_STATE, JAVA_OBJECT  __cn1ThisObject, JAVA_OBJECT __cn1Arg1) {
-    DEFINE_INSTANCE_METHOD_STACK(2, 2, 0, 7387, 205);
+    DEFINE_INSTANCE_METHOD_STACK(2, 2, 0, 7397, 205);
     locals[0].data.o = __cn1ThisObject; locals[0].type = CN1_TYPE_OBJECT;     locals[1].data.o = __cn1Arg1;
     locals[1].type = CN1_TYPE_OBJECT;
     __CN1_DEBUG_INFO(72);
     java_lang_Object___INIT____(threadStateData, __cn1ThisObject); 
     __CN1_DEBUG_INFO(48);
-    set_field_com_codename1_messaging_Message_content(threadStateData, STRING_FROM_CONSTANT_POOL_OFFSET(223), __cn1ThisObject);
+    set_field_com_codename1_messaging_Message_content(threadStateData, STRING_FROM_CONSTANT_POOL_OFFSET(289), __cn1ThisObject);
     __CN1_DEBUG_INFO(50);
-    set_field_com_codename1_messaging_Message_fileUri(threadStateData, STRING_FROM_CONSTANT_POOL_OFFSET(223), __cn1ThisObject);
+    set_field_com_codename1_messaging_Message_fileUri(threadStateData, STRING_FROM_CONSTANT_POOL_OFFSET(289), __cn1ThisObject);
     __CN1_DEBUG_INFO(52);
     set_field_com_codename1_messaging_Message_mimeType(threadStateData, STRING_FROM_CONSTANT_POOL_OFFSET(193), __cn1ThisObject);
     __CN1_DEBUG_INFO(54);
@@ -120,7 +120,7 @@ JAVA_VOID com_codename1_messaging_Message___INIT_____java_lang_String(CODENAME_O
 
 
 JAVA_OBJECT com_codename1_messaging_Message_getContent___R_java_lang_String(CODENAME_ONE_THREAD_STATE, JAVA_OBJECT  __cn1ThisObject) {
-    DEFINE_INSTANCE_METHOD_STACK(1, 1, 0, 7387, 7388);
+    DEFINE_INSTANCE_METHOD_STACK(1, 1, 0, 7397, 7398);
     locals[0].data.o = __cn1ThisObject; locals[0].type = CN1_TYPE_OBJECT;     __CN1_DEBUG_INFO(81);
 
 {
@@ -136,9 +136,9 @@ JAVA_VOID com_codename1_messaging_Message_setAttachment___java_lang_String(CODEN
 
 
 JAVA_OBJECT com_codename1_messaging_Message_getAttachments___R_java_util_Map(CODENAME_ONE_THREAD_STATE, JAVA_OBJECT  __cn1ThisObject) {
-    DEFINE_INSTANCE_METHOD_STACK(3, 1, 0, 7387, 7390);
+    DEFINE_INSTANCE_METHOD_STACK(3, 1, 0, 7397, 7400);
     locals[0].data.o = __cn1ThisObject; locals[0].type = CN1_TYPE_OBJECT;     __CN1_DEBUG_INFO(99);
-    if (get_field_com_codename1_messaging_Message_attachments(__cn1ThisObject)!=JAVA_NULL) /* IFNONNULL CustomJump */ goto label_L1612228258;
+    if (get_field_com_codename1_messaging_Message_attachments(__cn1ThisObject)!=JAVA_NULL) /* IFNONNULL CustomJump */ goto label_L2146593577;
     __CN1_DEBUG_INFO(100);
     BC_ALOAD(0);
     PUSH_POINTER(__NEW_java_util_HashMap(threadStateData)); /* NEW */
@@ -147,17 +147,17 @@ JAVA_OBJECT com_codename1_messaging_Message_getAttachments___R_java_util_Map(COD
     set_field_com_codename1_messaging_Message_attachments(threadStateData, PEEK_OBJ(1), PEEK_OBJ(2));
     POP_MANY(2);
 
-label_L1612228258:
+label_L2146593577:
     __CN1_DEBUG_INFO(102);
-    if (get_field_com_codename1_messaging_Message_fileUri(__cn1ThisObject)==JAVA_NULL) /* IFNULL CustomJump */ goto label_L988138425;
-    if (get_field_com_codename1_messaging_Message_attachmentMimeType(__cn1ThisObject)==JAVA_NULL) /* IFNULL CustomJump */ goto label_L988138425;
-    if (virtual_java_lang_String_length___R_int(threadStateData, get_field_com_codename1_messaging_Message_fileUri(__cn1ThisObject))<=0) /* IFLE CustomJump */ goto label_L988138425;
-    if (virtual_java_lang_String_length___R_int(threadStateData, get_field_com_codename1_messaging_Message_attachmentMimeType(__cn1ThisObject))<=0) /* IFLE CustomJump */ goto label_L988138425;
-    if (/* CustomInvoke */virtual_java_util_HashMap_containsKey___java_lang_Object_R_boolean(threadStateData, get_field_com_codename1_messaging_Message_attachments(__cn1ThisObject), get_field_com_codename1_messaging_Message_fileUri(__cn1ThisObject))!=0) /* IFNE CustomJump */ goto label_L988138425;
+    if (get_field_com_codename1_messaging_Message_fileUri(__cn1ThisObject)==JAVA_NULL) /* IFNULL CustomJump */ goto label_L38669275;
+    if (get_field_com_codename1_messaging_Message_attachmentMimeType(__cn1ThisObject)==JAVA_NULL) /* IFNULL CustomJump */ goto label_L38669275;
+    if (virtual_java_lang_String_length___R_int(threadStateData, get_field_com_codename1_messaging_Message_fileUri(__cn1ThisObject))<=0) /* IFLE CustomJump */ goto label_L38669275;
+    if (virtual_java_lang_String_length___R_int(threadStateData, get_field_com_codename1_messaging_Message_attachmentMimeType(__cn1ThisObject))<=0) /* IFLE CustomJump */ goto label_L38669275;
+    if (/* CustomInvoke */virtual_java_util_HashMap_containsKey___java_lang_Object_R_boolean(threadStateData, get_field_com_codename1_messaging_Message_attachments(__cn1ThisObject), get_field_com_codename1_messaging_Message_fileUri(__cn1ThisObject))!=0) /* IFNE CustomJump */ goto label_L38669275;
     __CN1_DEBUG_INFO(103);
     /* CustomInvoke */virtual_java_util_HashMap_put___java_lang_Object_java_lang_Object_R_java_lang_Object(threadStateData, get_field_com_codename1_messaging_Message_attachments(__cn1ThisObject), get_field_com_codename1_messaging_Message_fileUri(__cn1ThisObject), get_field_com_codename1_messaging_Message_attachmentMimeType(__cn1ThisObject)); 
 
-label_L988138425:
+label_L38669275:
     __CN1_DEBUG_INFO(105);
 
 {
@@ -173,7 +173,7 @@ JAVA_VOID com_codename1_messaging_Message_setMimeType___java_lang_String(CODENAM
 
 
 JAVA_OBJECT com_codename1_messaging_Message_getMimeType___R_java_lang_String(CODENAME_ONE_THREAD_STATE, JAVA_OBJECT  __cn1ThisObject) {
-    DEFINE_INSTANCE_METHOD_STACK(1, 1, 0, 7387, 7392);
+    DEFINE_INSTANCE_METHOD_STACK(1, 1, 0, 7397, 7402);
     locals[0].data.o = __cn1ThisObject; locals[0].type = CN1_TYPE_OBJECT;     __CN1_DEBUG_INFO(123);
 
 {
@@ -200,7 +200,7 @@ JAVA_OBJECT com_codename1_messaging_Message_getAttachment___R_java_lang_String(C
 
 JAVA_VOID com_codename1_messaging_Message_sendMessage___java_lang_String_1ARRAY_java_lang_String_com_codename1_messaging_Message(CODENAME_ONE_THREAD_STATE, JAVA_OBJECT __cn1Arg1, JAVA_OBJECT __cn1Arg2, JAVA_OBJECT __cn1Arg3) {
     __STATIC_INITIALIZER_com_codename1_messaging_Message(threadStateData);
-    DEFINE_METHOD_STACK(4, 3, 0, 7387, 577);
+    DEFINE_METHOD_STACK(4, 3, 0, 7397, 1012);
     locals[0].data.o = __cn1Arg1;
     locals[0].type = CN1_TYPE_OBJECT;
     locals[1].data.o = __cn1Arg2;

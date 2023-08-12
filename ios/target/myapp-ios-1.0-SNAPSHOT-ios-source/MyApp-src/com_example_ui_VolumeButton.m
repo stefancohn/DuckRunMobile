@@ -77,7 +77,7 @@ com_example_ui_VolumeButton___INIT____(threadStateData, o);
 
 
 JAVA_VOID com_example_ui_VolumeButton___INIT____(CODENAME_ONE_THREAD_STATE, JAVA_OBJECT  __cn1ThisObject) {
-    DEFINE_INSTANCE_METHOD_STACK(3, 1, 0, 10312, 205);
+    DEFINE_INSTANCE_METHOD_STACK(3, 1, 0, 10345, 205);
     locals[0].data.o = __cn1ThisObject; locals[0].type = CN1_TYPE_OBJECT;     __CN1_DEBUG_INFO(15);
     java_lang_Object___INIT____(threadStateData, __cn1ThisObject); 
     __CN1_DEBUG_INFO(8);
@@ -112,30 +112,30 @@ JAVA_VOID com_example_ui_VolumeButton___INIT____(CODENAME_ONE_THREAD_STATE, JAVA
 JAVA_VOID com_example_ui_VolumeButton_loadButton__(CODENAME_ONE_THREAD_STATE, JAVA_OBJECT  __cn1ThisObject) {
     volatile JAVA_INT ilocals_2_ = 0; /* v2 */
     volatile JAVA_INT ilocals_3_ = 0; /* v3 */
-    DEFINE_INSTANCE_METHOD_STACK(8, 4, 0, 10312, 10313);
+    DEFINE_INSTANCE_METHOD_STACK(8, 4, 0, 10345, 10346);
     locals[0].data.o = __cn1ThisObject; locals[0].type = CN1_TYPE_OBJECT;     __CN1_DEBUG_INFO(20);
-    /* VarOp.assignFrom */ locals[1].data.o = /* CustomInvoke */com_example_util_LoadSave_getSpriteAtlas___java_lang_String_R_com_codename1_ui_Image(threadStateData, STRING_FROM_CONSTANT_POOL_OFFSET(10314));locals[1].type=CN1_TYPE_OBJECT;    __CN1_DEBUG_INFO(21);
+    /* VarOp.assignFrom */ locals[1].data.o = /* CustomInvoke */com_example_util_LoadSave_getSpriteAtlas___java_lang_String_R_com_codename1_ui_Image(threadStateData, STRING_FROM_CONSTANT_POOL_OFFSET(10347));locals[1].type=CN1_TYPE_OBJECT;    __CN1_DEBUG_INFO(21);
     /* VarOp.assignFrom */     ilocals_2_ = 0 /* ICONST_0 */; 
-    goto label_L1662912171;
 
 label_L54960993:
+    if (ilocals_2_>=CN1_ARRAY_LENGTH(get_field_com_example_ui_VolumeButton_volumeButtons(__cn1ThisObject))) /* IF_ICMPGE CustomJump */ goto label_L1662912171;
     __CN1_DEBUG_INFO(22);
     /* VarOp.assignFrom */     ilocals_3_ = 0 /* ICONST_0 */; 
-    goto label_L708153797;
 
 label_L883380345:
+    if (ilocals_3_>=CN1_ARRAY_LENGTH(CN1_ARRAY_ELEMENT_OBJECT(get_field_com_example_ui_VolumeButton_volumeButtons(__cn1ThisObject), ilocals_2_))) /* IF_ICMPGE CustomJump */ goto label_L708153797;
     __CN1_DEBUG_INFO(23);
     CN1_SET_ARRAY_ELEMENT_OBJECT(CN1_ARRAY_ELEMENT_OBJECT(get_field_com_example_ui_VolumeButton_volumeButtons(__cn1ThisObject), ilocals_2_), ilocals_3_, /* CustomInvoke */virtual_com_codename1_ui_Image_subImage___int_int_int_int_boolean_R_com_codename1_ui_Image(threadStateData, locals[1].data.o, (ilocals_3_ * 230), (ilocals_2_ * 170), 230, 170, 0 /* ICONST_0 */));
     __CN1_DEBUG_INFO(22);
     BC_IINC(3, 1);
+    goto label_L883380345;
 
 label_L708153797:
-    if (ilocals_3_<CN1_ARRAY_LENGTH(CN1_ARRAY_ELEMENT_OBJECT(get_field_com_example_ui_VolumeButton_volumeButtons(__cn1ThisObject), ilocals_2_))) /* IF_IMPLT CustomJump */ goto label_L883380345;
     __CN1_DEBUG_INFO(21);
     BC_IINC(2, 1);
+    goto label_L54960993;
 
 label_L1662912171:
-    if (ilocals_2_<CN1_ARRAY_LENGTH(get_field_com_example_ui_VolumeButton_volumeButtons(__cn1ThisObject))) /* IF_IMPLT CustomJump */ goto label_L54960993;
     __CN1_DEBUG_INFO(26);
     releaseForReturn(threadStateData, cn1LocalsBeginInThread); 
     return;
@@ -153,7 +153,7 @@ JAVA_VOID com_example_ui_VolumeButton_update__(CODENAME_ONE_THREAD_STATE, JAVA_O
 
 
 JAVA_VOID com_example_ui_VolumeButton_draw___com_codename1_ui_Graphics(CODENAME_ONE_THREAD_STATE, JAVA_OBJECT  __cn1ThisObject, JAVA_OBJECT __cn1Arg1) {
-    DEFINE_INSTANCE_METHOD_STACK(6, 2, 0, 10312, 5493);
+    DEFINE_INSTANCE_METHOD_STACK(6, 2, 0, 10345, 5503);
     locals[0].data.o = __cn1ThisObject; locals[0].type = CN1_TYPE_OBJECT;     locals[1].data.o = __cn1Arg1;
     locals[1].type = CN1_TYPE_OBJECT;
     __CN1_DEBUG_INFO(50);

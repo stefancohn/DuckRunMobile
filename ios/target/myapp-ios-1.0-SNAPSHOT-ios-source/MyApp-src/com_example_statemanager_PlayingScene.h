@@ -10,8 +10,6 @@ extern void __FINALIZER_com_example_statemanager_PlayingScene(CODENAME_ONE_THREA
 extern void __GC_MARK_com_example_statemanager_PlayingScene(CODENAME_ONE_THREAD_STATE, JAVA_OBJECT objToMark, JAVA_BOOLEAN force);
 extern JAVA_OBJECT __NEW_com_example_statemanager_PlayingScene(CODENAME_ONE_THREAD_STATE);
 
-JAVA_VOID com_example_statemanager_PlayingScene___CLINIT____(CODENAME_ONE_THREAD_STATE);
-
 JAVA_VOID com_example_statemanager_PlayingScene___INIT_____com_example_entity_Ducky(CODENAME_ONE_THREAD_STATE, JAVA_OBJECT  __cn1ThisObject, JAVA_OBJECT __cn1Arg1);
 
 JAVA_VOID com_example_statemanager_PlayingScene_constantScreenMove__(CODENAME_ONE_THREAD_STATE, JAVA_OBJECT  __cn1ThisObject);
@@ -23,6 +21,8 @@ JAVA_VOID com_example_statemanager_PlayingScene_unpauseTimer__(CODENAME_ONE_THRE
 JAVA_VOID com_example_statemanager_PlayingScene_update__(CODENAME_ONE_THREAD_STATE, JAVA_OBJECT  __cn1ThisObject);
 
 JAVA_VOID com_example_statemanager_PlayingScene_draw___com_codename1_ui_Graphics(CODENAME_ONE_THREAD_STATE, JAVA_OBJECT  __cn1ThisObject, JAVA_OBJECT __cn1Arg1);
+
+JAVA_VOID com_example_statemanager_PlayingScene___CLINIT____(CODENAME_ONE_THREAD_STATE);
 
 JAVA_VOID com_example_statemanager_PlayingScene___INIT____(CODENAME_ONE_THREAD_STATE, JAVA_OBJECT  __cn1ThisObject);
 

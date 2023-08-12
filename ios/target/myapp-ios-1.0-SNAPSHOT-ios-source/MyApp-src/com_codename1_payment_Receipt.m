@@ -158,7 +158,7 @@ JAVA_OBJECT __NEW_ARRAY_com_codename1_payment_Receipt(CODENAME_ONE_THREAD_STATE,
 JAVA_VOID com_codename1_payment_Receipt_setExternalizableRegistered___boolean(CODENAME_ONE_THREAD_STATE, JAVA_BOOLEAN __cn1Arg1) {
     volatile JAVA_INT ilocals_0_ = 0; /* aExternalizableRegistered */
     __STATIC_INITIALIZER_com_codename1_payment_Receipt(threadStateData);
-    DEFINE_METHOD_STACK(1, 1, 0, 9116, 9117);
+    DEFINE_METHOD_STACK(1, 1, 0, 9126, 9127);
     ilocals_0_ = __cn1Arg1;
     __CN1_DEBUG_INFO(49);
     set_static_com_codename1_payment_Receipt_externalizableRegistered(threadStateData, ilocals_0_);
@@ -169,7 +169,7 @@ JAVA_VOID com_codename1_payment_Receipt_setExternalizableRegistered___boolean(CO
 
 
 JAVA_VOID com_codename1_payment_Receipt___INIT____(CODENAME_ONE_THREAD_STATE, JAVA_OBJECT  __cn1ThisObject) {
-    DEFINE_INSTANCE_METHOD_STACK(1, 1, 0, 9116, 205);
+    DEFINE_INSTANCE_METHOD_STACK(1, 1, 0, 9126, 205);
     locals[0].data.o = __cn1ThisObject; locals[0].type = CN1_TYPE_OBJECT;     __CN1_DEBUG_INFO(119);
     java_lang_Object___INIT____(threadStateData, __cn1ThisObject); 
     __CN1_DEBUG_INFO(120);
@@ -180,7 +180,7 @@ JAVA_VOID com_codename1_payment_Receipt___INIT____(CODENAME_ONE_THREAD_STATE, JA
 
 JAVA_VOID com_codename1_payment_Receipt___INIT_____java_lang_String_java_util_Date_java_util_Date_java_util_Date_int_java_lang_String_java_lang_String_java_lang_String_java_lang_String(CODENAME_ONE_THREAD_STATE, JAVA_OBJECT  __cn1ThisObject, JAVA_OBJECT __cn1Arg1, JAVA_OBJECT __cn1Arg2, JAVA_OBJECT __cn1Arg3, JAVA_OBJECT __cn1Arg4, JAVA_INT __cn1Arg5, JAVA_OBJECT __cn1Arg6, JAVA_OBJECT __cn1Arg7, JAVA_OBJECT __cn1Arg8, JAVA_OBJECT __cn1Arg9) {
     volatile JAVA_INT ilocals_5_ = 0; /* quantity */
-    DEFINE_INSTANCE_METHOD_STACK(2, 10, 0, 9116, 205);
+    DEFINE_INSTANCE_METHOD_STACK(2, 10, 0, 9126, 205);
     locals[0].data.o = __cn1ThisObject; locals[0].type = CN1_TYPE_OBJECT;     locals[1].data.o = __cn1Arg1;
     locals[1].type = CN1_TYPE_OBJECT;
     locals[2].data.o = __cn1Arg2;
@@ -225,7 +225,7 @@ JAVA_VOID com_codename1_payment_Receipt___INIT_____java_lang_String_java_util_Da
 
 
 JAVA_OBJECT com_codename1_payment_Receipt_getSku___R_java_lang_String(CODENAME_ONE_THREAD_STATE, JAVA_OBJECT  __cn1ThisObject) {
-    DEFINE_INSTANCE_METHOD_STACK(1, 1, 0, 9116, 9113);
+    DEFINE_INSTANCE_METHOD_STACK(1, 1, 0, 9126, 9123);
     locals[0].data.o = __cn1ThisObject; locals[0].type = CN1_TYPE_OBJECT;     __CN1_DEBUG_INFO(143);
 
 {
@@ -236,7 +236,7 @@ JAVA_OBJECT com_codename1_payment_Receipt_getSku___R_java_lang_String(CODENAME_O
 
 
 JAVA_VOID com_codename1_payment_Receipt_setSku___java_lang_String(CODENAME_ONE_THREAD_STATE, JAVA_OBJECT  __cn1ThisObject, JAVA_OBJECT __cn1Arg1) {
-    DEFINE_INSTANCE_METHOD_STACK(2, 2, 0, 9116, 9114);
+    DEFINE_INSTANCE_METHOD_STACK(2, 2, 0, 9126, 9124);
     locals[0].data.o = __cn1ThisObject; locals[0].type = CN1_TYPE_OBJECT;     locals[1].data.o = __cn1Arg1;
     locals[1].type = CN1_TYPE_OBJECT;
     __CN1_DEBUG_INFO(151);
@@ -248,7 +248,7 @@ JAVA_VOID com_codename1_payment_Receipt_setSku___java_lang_String(CODENAME_ONE_T
 
 
 JAVA_OBJECT com_codename1_payment_Receipt_getExpiryDate___R_java_util_Date(CODENAME_ONE_THREAD_STATE, JAVA_OBJECT  __cn1ThisObject) {
-    DEFINE_INSTANCE_METHOD_STACK(1, 1, 0, 9116, 9094);
+    DEFINE_INSTANCE_METHOD_STACK(1, 1, 0, 9126, 9104);
     locals[0].data.o = __cn1ThisObject; locals[0].type = CN1_TYPE_OBJECT;     __CN1_DEBUG_INFO(166);
 
 {
@@ -259,7 +259,7 @@ JAVA_OBJECT com_codename1_payment_Receipt_getExpiryDate___R_java_util_Date(CODEN
 
 
 JAVA_VOID com_codename1_payment_Receipt_setExpiryDate___java_util_Date(CODENAME_ONE_THREAD_STATE, JAVA_OBJECT  __cn1ThisObject, JAVA_OBJECT __cn1Arg1) {
-    DEFINE_INSTANCE_METHOD_STACK(2, 2, 0, 9116, 9118);
+    DEFINE_INSTANCE_METHOD_STACK(2, 2, 0, 9126, 9128);
     locals[0].data.o = __cn1ThisObject; locals[0].type = CN1_TYPE_OBJECT;     locals[1].data.o = __cn1Arg1;
     locals[1].type = CN1_TYPE_OBJECT;
     __CN1_DEBUG_INFO(174);
@@ -271,14 +271,14 @@ JAVA_VOID com_codename1_payment_Receipt_setExpiryDate___java_util_Date(CODENAME_
 
 
 JAVA_INT com_codename1_payment_Receipt_getVersion___R_int(CODENAME_ONE_THREAD_STATE, JAVA_OBJECT  __cn1ThisObject) {
-    DEFINE_INSTANCE_METHOD_STACK(1, 1, 0, 9116, 8187);
+    DEFINE_INSTANCE_METHOD_STACK(1, 1, 0, 9126, 8197);
     locals[0].data.o = __cn1ThisObject; locals[0].type = CN1_TYPE_OBJECT;     __CN1_DEBUG_INFO(181);
     releaseForReturn(threadStateData, cn1LocalsBeginInThread); return 1 /* ICONST_1 */;
 }
 
 
 JAVA_VOID com_codename1_payment_Receipt_externalize___java_io_DataOutputStream(CODENAME_ONE_THREAD_STATE, JAVA_OBJECT  __cn1ThisObject, JAVA_OBJECT __cn1Arg1) {
-    DEFINE_INSTANCE_METHOD_STACK(3, 3, 0, 9116, 8188);
+    DEFINE_INSTANCE_METHOD_STACK(3, 3, 0, 9126, 8198);
     locals[0].data.o = __cn1ThisObject; locals[0].type = CN1_TYPE_OBJECT;     locals[1].data.o = __cn1Arg1;
     locals[1].type = CN1_TYPE_OBJECT;
     __CN1_DEBUG_INFO(189);
@@ -289,7 +289,7 @@ JAVA_VOID com_codename1_payment_Receipt_externalize___java_io_DataOutputStream(C
     __CN1_DEBUG_INFO(190);
     BC_ALOAD(2);
     /* LDC: 'sku'*/
-    PUSH_POINTER(STRING_FROM_CONSTANT_POOL_OFFSET(9119));
+    PUSH_POINTER(STRING_FROM_CONSTANT_POOL_OFFSET(9129));
     { JAVA_OBJECT tmpResult = virtual_com_codename1_payment_Receipt_getSku___R_java_lang_String(threadStateData, __cn1ThisObject);
     PUSH_OBJ(tmpResult); }
     { JAVA_OBJECT tmpResult = virtual_java_util_Map_put___java_lang_Object_java_lang_Object_R_java_lang_Object(threadStateData, SP[-3].data.o, SP[-2].data.o, SP[-1].data.o);
@@ -299,7 +299,7 @@ JAVA_VOID com_codename1_payment_Receipt_externalize___java_io_DataOutputStream(C
     __CN1_DEBUG_INFO(191);
     BC_ALOAD(2);
     /* LDC: 'expiryDate'*/
-    PUSH_POINTER(STRING_FROM_CONSTANT_POOL_OFFSET(9120));
+    PUSH_POINTER(STRING_FROM_CONSTANT_POOL_OFFSET(9130));
     { JAVA_OBJECT tmpResult = virtual_com_codename1_payment_Receipt_getExpiryDate___R_java_util_Date(threadStateData, __cn1ThisObject);
     PUSH_OBJ(tmpResult); }
     { JAVA_OBJECT tmpResult = virtual_java_util_Map_put___java_lang_Object_java_lang_Object_R_java_lang_Object(threadStateData, SP[-3].data.o, SP[-2].data.o, SP[-1].data.o);
@@ -309,7 +309,7 @@ JAVA_VOID com_codename1_payment_Receipt_externalize___java_io_DataOutputStream(C
     __CN1_DEBUG_INFO(192);
     BC_ALOAD(2);
     /* LDC: 'cancellationDate'*/
-    PUSH_POINTER(STRING_FROM_CONSTANT_POOL_OFFSET(9121));
+    PUSH_POINTER(STRING_FROM_CONSTANT_POOL_OFFSET(9131));
     { JAVA_OBJECT tmpResult = virtual_com_codename1_payment_Receipt_getCancellationDate___R_java_util_Date(threadStateData, __cn1ThisObject);
     PUSH_OBJ(tmpResult); }
     { JAVA_OBJECT tmpResult = virtual_java_util_Map_put___java_lang_Object_java_lang_Object_R_java_lang_Object(threadStateData, SP[-3].data.o, SP[-2].data.o, SP[-1].data.o);
@@ -319,7 +319,7 @@ JAVA_VOID com_codename1_payment_Receipt_externalize___java_io_DataOutputStream(C
     __CN1_DEBUG_INFO(193);
     BC_ALOAD(2);
     /* LDC: 'purchaseDate'*/
-    PUSH_POINTER(STRING_FROM_CONSTANT_POOL_OFFSET(9122));
+    PUSH_POINTER(STRING_FROM_CONSTANT_POOL_OFFSET(9132));
     { JAVA_OBJECT tmpResult = virtual_com_codename1_payment_Receipt_getPurchaseDate___R_java_util_Date(threadStateData, __cn1ThisObject);
     PUSH_OBJ(tmpResult); }
     { JAVA_OBJECT tmpResult = virtual_java_util_Map_put___java_lang_Object_java_lang_Object_R_java_lang_Object(threadStateData, SP[-3].data.o, SP[-2].data.o, SP[-1].data.o);
@@ -329,7 +329,7 @@ JAVA_VOID com_codename1_payment_Receipt_externalize___java_io_DataOutputStream(C
     __CN1_DEBUG_INFO(194);
     BC_ALOAD(2);
     /* LDC: 'orderData'*/
-    PUSH_POINTER(STRING_FROM_CONSTANT_POOL_OFFSET(9123));
+    PUSH_POINTER(STRING_FROM_CONSTANT_POOL_OFFSET(9133));
     { JAVA_OBJECT tmpResult = virtual_com_codename1_payment_Receipt_getOrderData___R_java_lang_String(threadStateData, __cn1ThisObject);
     PUSH_OBJ(tmpResult); }
     { JAVA_OBJECT tmpResult = virtual_java_util_Map_put___java_lang_Object_java_lang_Object_R_java_lang_Object(threadStateData, SP[-3].data.o, SP[-2].data.o, SP[-1].data.o);
@@ -339,7 +339,7 @@ JAVA_VOID com_codename1_payment_Receipt_externalize___java_io_DataOutputStream(C
     __CN1_DEBUG_INFO(195);
     BC_ALOAD(2);
     /* LDC: 'transactionId'*/
-    PUSH_POINTER(STRING_FROM_CONSTANT_POOL_OFFSET(9124));
+    PUSH_POINTER(STRING_FROM_CONSTANT_POOL_OFFSET(9134));
     { JAVA_OBJECT tmpResult = virtual_com_codename1_payment_Receipt_getTransactionId___R_java_lang_String(threadStateData, __cn1ThisObject);
     PUSH_OBJ(tmpResult); }
     { JAVA_OBJECT tmpResult = virtual_java_util_Map_put___java_lang_Object_java_lang_Object_R_java_lang_Object(threadStateData, SP[-3].data.o, SP[-2].data.o, SP[-1].data.o);
@@ -349,7 +349,7 @@ JAVA_VOID com_codename1_payment_Receipt_externalize___java_io_DataOutputStream(C
     __CN1_DEBUG_INFO(196);
     BC_ALOAD(2);
     /* LDC: 'quantity'*/
-    PUSH_POINTER(STRING_FROM_CONSTANT_POOL_OFFSET(9125));
+    PUSH_POINTER(STRING_FROM_CONSTANT_POOL_OFFSET(9135));
     /* CustomInvoke */PUSH_OBJ(java_lang_Integer_valueOf___int_R_java_lang_Integer(threadStateData, virtual_com_codename1_payment_Receipt_getQuantity___R_int(threadStateData, __cn1ThisObject)));
     { JAVA_OBJECT tmpResult = virtual_java_util_Map_put___java_lang_Object_java_lang_Object_R_java_lang_Object(threadStateData, SP[-3].data.o, SP[-2].data.o, SP[-1].data.o);
     SP-=2;
@@ -358,7 +358,7 @@ JAVA_VOID com_codename1_payment_Receipt_externalize___java_io_DataOutputStream(C
     __CN1_DEBUG_INFO(197);
     BC_ALOAD(2);
     /* LDC: 'storeCode'*/
-    PUSH_POINTER(STRING_FROM_CONSTANT_POOL_OFFSET(9126));
+    PUSH_POINTER(STRING_FROM_CONSTANT_POOL_OFFSET(9136));
     { JAVA_OBJECT tmpResult = virtual_com_codename1_payment_Receipt_getStoreCode___R_java_lang_String(threadStateData, __cn1ThisObject);
     PUSH_OBJ(tmpResult); }
     { JAVA_OBJECT tmpResult = virtual_java_util_Map_put___java_lang_Object_java_lang_Object_R_java_lang_Object(threadStateData, SP[-3].data.o, SP[-2].data.o, SP[-1].data.o);
@@ -368,7 +368,7 @@ JAVA_VOID com_codename1_payment_Receipt_externalize___java_io_DataOutputStream(C
     __CN1_DEBUG_INFO(198);
     BC_ALOAD(2);
     /* LDC: 'internalId'*/
-    PUSH_POINTER(STRING_FROM_CONSTANT_POOL_OFFSET(9127));
+    PUSH_POINTER(STRING_FROM_CONSTANT_POOL_OFFSET(9137));
     { JAVA_OBJECT tmpResult = virtual_com_codename1_payment_Receipt_getInternalId___R_java_lang_String(threadStateData, __cn1ThisObject);
     PUSH_OBJ(tmpResult); }
     { JAVA_OBJECT tmpResult = virtual_java_util_Map_put___java_lang_Object_java_lang_Object_R_java_lang_Object(threadStateData, SP[-3].data.o, SP[-2].data.o, SP[-1].data.o);
@@ -385,61 +385,61 @@ JAVA_VOID com_codename1_payment_Receipt_externalize___java_io_DataOutputStream(C
 
 JAVA_VOID com_codename1_payment_Receipt_internalize___int_java_io_DataInputStream(CODENAME_ONE_THREAD_STATE, JAVA_OBJECT  __cn1ThisObject, JAVA_INT __cn1Arg1, JAVA_OBJECT __cn1Arg2) {
     volatile JAVA_INT ilocals_1_ = 0; /* version */
-    DEFINE_INSTANCE_METHOD_STACK(3, 4, 0, 9116, 8189);
+    DEFINE_INSTANCE_METHOD_STACK(3, 4, 0, 9126, 8199);
     locals[0].data.o = __cn1ThisObject; locals[0].type = CN1_TYPE_OBJECT;     ilocals_1_ = __cn1Arg1;
     locals[2].data.o = __cn1Arg2;
     locals[2].type = CN1_TYPE_OBJECT;
     __CN1_DEBUG_INFO(208);
     /* VarOp.assignFrom */ locals[3].data.o = /* CustomInvoke */com_codename1_io_Util_readObject___java_io_DataInputStream_R_java_lang_Object(threadStateData, locals[2].data.o);locals[3].type=CN1_TYPE_OBJECT;    __CN1_DEBUG_INFO(209);
     BC_ALOAD(0);
-    /* CustomInvoke */{ JAVA_OBJECT tmpResult = virtual_java_util_Map_get___java_lang_Object_R_java_lang_Object(threadStateData, locals[3].data.o, STRING_FROM_CONSTANT_POOL_OFFSET(9119));
+    /* CustomInvoke */{ JAVA_OBJECT tmpResult = virtual_java_util_Map_get___java_lang_Object_R_java_lang_Object(threadStateData, locals[3].data.o, STRING_FROM_CONSTANT_POOL_OFFSET(9129));
     PUSH_OBJ(tmpResult); }
     virtual_com_codename1_payment_Receipt_setSku___java_lang_String(threadStateData, SP[-2].data.o, SP[-1].data.o);     SP-= 2;
     __CN1_DEBUG_INFO(210);
     BC_ALOAD(0);
-    /* CustomInvoke */{ JAVA_OBJECT tmpResult = virtual_java_util_Map_get___java_lang_Object_R_java_lang_Object(threadStateData, locals[3].data.o, STRING_FROM_CONSTANT_POOL_OFFSET(9120));
+    /* CustomInvoke */{ JAVA_OBJECT tmpResult = virtual_java_util_Map_get___java_lang_Object_R_java_lang_Object(threadStateData, locals[3].data.o, STRING_FROM_CONSTANT_POOL_OFFSET(9130));
     PUSH_OBJ(tmpResult); }
     virtual_com_codename1_payment_Receipt_setExpiryDate___java_util_Date(threadStateData, SP[-2].data.o, SP[-1].data.o);     SP-= 2;
     __CN1_DEBUG_INFO(211);
     BC_ALOAD(0);
-    /* CustomInvoke */{ JAVA_OBJECT tmpResult = virtual_java_util_Map_get___java_lang_Object_R_java_lang_Object(threadStateData, locals[3].data.o, STRING_FROM_CONSTANT_POOL_OFFSET(9121));
+    /* CustomInvoke */{ JAVA_OBJECT tmpResult = virtual_java_util_Map_get___java_lang_Object_R_java_lang_Object(threadStateData, locals[3].data.o, STRING_FROM_CONSTANT_POOL_OFFSET(9131));
     PUSH_OBJ(tmpResult); }
     set_field_com_codename1_payment_Receipt_cancellationDate(threadStateData, PEEK_OBJ(1), PEEK_OBJ(2));
     POP_MANY(2);
     __CN1_DEBUG_INFO(212);
     BC_ALOAD(0);
-    /* CustomInvoke */{ JAVA_OBJECT tmpResult = virtual_java_util_Map_get___java_lang_Object_R_java_lang_Object(threadStateData, locals[3].data.o, STRING_FROM_CONSTANT_POOL_OFFSET(9122));
+    /* CustomInvoke */{ JAVA_OBJECT tmpResult = virtual_java_util_Map_get___java_lang_Object_R_java_lang_Object(threadStateData, locals[3].data.o, STRING_FROM_CONSTANT_POOL_OFFSET(9132));
     PUSH_OBJ(tmpResult); }
     set_field_com_codename1_payment_Receipt_purchaseDate(threadStateData, PEEK_OBJ(1), PEEK_OBJ(2));
     POP_MANY(2);
     __CN1_DEBUG_INFO(213);
     BC_ALOAD(0);
-    /* CustomInvoke */{ JAVA_OBJECT tmpResult = virtual_java_util_Map_get___java_lang_Object_R_java_lang_Object(threadStateData, locals[3].data.o, STRING_FROM_CONSTANT_POOL_OFFSET(9125));
+    /* CustomInvoke */{ JAVA_OBJECT tmpResult = virtual_java_util_Map_get___java_lang_Object_R_java_lang_Object(threadStateData, locals[3].data.o, STRING_FROM_CONSTANT_POOL_OFFSET(9135));
     PUSH_OBJ(tmpResult); }
     { JAVA_INT tmpResult = virtual_java_lang_Integer_intValue___R_int(threadStateData, SP[-1].data.o);
     SP[-1].data.i = tmpResult; SP[-1].type = CN1_TYPE_INT; }
     set_field_com_codename1_payment_Receipt_quantity(threadStateData, POP_INT(), POP_OBJ());
     __CN1_DEBUG_INFO(214);
     BC_ALOAD(0);
-    /* CustomInvoke */{ JAVA_OBJECT tmpResult = virtual_java_util_Map_get___java_lang_Object_R_java_lang_Object(threadStateData, locals[3].data.o, STRING_FROM_CONSTANT_POOL_OFFSET(9124));
+    /* CustomInvoke */{ JAVA_OBJECT tmpResult = virtual_java_util_Map_get___java_lang_Object_R_java_lang_Object(threadStateData, locals[3].data.o, STRING_FROM_CONSTANT_POOL_OFFSET(9134));
     PUSH_OBJ(tmpResult); }
     set_field_com_codename1_payment_Receipt_transactionId(threadStateData, PEEK_OBJ(1), PEEK_OBJ(2));
     POP_MANY(2);
     __CN1_DEBUG_INFO(215);
     BC_ALOAD(0);
-    /* CustomInvoke */{ JAVA_OBJECT tmpResult = virtual_java_util_Map_get___java_lang_Object_R_java_lang_Object(threadStateData, locals[3].data.o, STRING_FROM_CONSTANT_POOL_OFFSET(9123));
+    /* CustomInvoke */{ JAVA_OBJECT tmpResult = virtual_java_util_Map_get___java_lang_Object_R_java_lang_Object(threadStateData, locals[3].data.o, STRING_FROM_CONSTANT_POOL_OFFSET(9133));
     PUSH_OBJ(tmpResult); }
     set_field_com_codename1_payment_Receipt_orderData(threadStateData, PEEK_OBJ(1), PEEK_OBJ(2));
     POP_MANY(2);
     __CN1_DEBUG_INFO(216);
     BC_ALOAD(0);
-    /* CustomInvoke */{ JAVA_OBJECT tmpResult = virtual_java_util_Map_get___java_lang_Object_R_java_lang_Object(threadStateData, locals[3].data.o, STRING_FROM_CONSTANT_POOL_OFFSET(9126));
+    /* CustomInvoke */{ JAVA_OBJECT tmpResult = virtual_java_util_Map_get___java_lang_Object_R_java_lang_Object(threadStateData, locals[3].data.o, STRING_FROM_CONSTANT_POOL_OFFSET(9136));
     PUSH_OBJ(tmpResult); }
     set_field_com_codename1_payment_Receipt_storeCode(threadStateData, PEEK_OBJ(1), PEEK_OBJ(2));
     POP_MANY(2);
     __CN1_DEBUG_INFO(217);
     BC_ALOAD(0);
-    /* CustomInvoke */{ JAVA_OBJECT tmpResult = virtual_java_util_Map_get___java_lang_Object_R_java_lang_Object(threadStateData, locals[3].data.o, STRING_FROM_CONSTANT_POOL_OFFSET(9127));
+    /* CustomInvoke */{ JAVA_OBJECT tmpResult = virtual_java_util_Map_get___java_lang_Object_R_java_lang_Object(threadStateData, locals[3].data.o, STRING_FROM_CONSTANT_POOL_OFFSET(9137));
     PUSH_OBJ(tmpResult); }
     set_field_com_codename1_payment_Receipt_internalId(threadStateData, PEEK_OBJ(1), PEEK_OBJ(2));
     POP_MANY(2);
@@ -450,15 +450,15 @@ JAVA_VOID com_codename1_payment_Receipt_internalize___int_java_io_DataInputStrea
 
 
 JAVA_OBJECT com_codename1_payment_Receipt_getObjectId___R_java_lang_String(CODENAME_ONE_THREAD_STATE, JAVA_OBJECT  __cn1ThisObject) {
-    DEFINE_INSTANCE_METHOD_STACK(1, 1, 0, 9116, 8190);
+    DEFINE_INSTANCE_METHOD_STACK(1, 1, 0, 9126, 8200);
     locals[0].data.o = __cn1ThisObject; locals[0].type = CN1_TYPE_OBJECT;     __CN1_DEBUG_INFO(225);
-    releaseForReturn(threadStateData, cn1LocalsBeginInThread); return STRING_FROM_CONSTANT_POOL_OFFSET(9128);
+    releaseForReturn(threadStateData, cn1LocalsBeginInThread); return STRING_FROM_CONSTANT_POOL_OFFSET(9138);
 }
 
 
 JAVA_BOOLEAN com_codename1_payment_Receipt_isExternalizableRegistered___R_boolean(CODENAME_ONE_THREAD_STATE) {
     __STATIC_INITIALIZER_com_codename1_payment_Receipt(threadStateData);
-    DEFINE_METHOD_STACK(1, 0, 0, 9116, 9129);
+    DEFINE_METHOD_STACK(1, 0, 0, 9126, 9139);
     __CN1_DEBUG_INFO(234);
     PUSH_INT(get_static_com_codename1_payment_Receipt_externalizableRegistered(threadStateData));
     releaseForReturn(threadStateData, cn1LocalsBeginInThread); return SP[-1].data.i;
@@ -467,15 +467,15 @@ JAVA_BOOLEAN com_codename1_payment_Receipt_isExternalizableRegistered___R_boolea
 
 JAVA_VOID com_codename1_payment_Receipt_registerExternalizable__(CODENAME_ONE_THREAD_STATE) {
     __STATIC_INITIALIZER_com_codename1_payment_Receipt(threadStateData);
-    DEFINE_METHOD_STACK(2, 0, 0, 9116, 8440);
+    DEFINE_METHOD_STACK(2, 0, 0, 9126, 8450);
     __CN1_DEBUG_INFO(241);
-    if (com_codename1_payment_Receipt_isExternalizableRegistered___R_boolean(threadStateData)!=0) /* IFNE CustomJump */ goto label_L1020021920;
+    if (com_codename1_payment_Receipt_isExternalizableRegistered___R_boolean(threadStateData)!=0) /* IFNE CustomJump */ goto label_L247576438;
     __CN1_DEBUG_INFO(242);
-    /* CustomInvoke */com_codename1_io_Util_register___java_lang_String_java_lang_Class(threadStateData, STRING_FROM_CONSTANT_POOL_OFFSET(9128), (JAVA_OBJECT)&class__com_codename1_payment_Receipt); 
+    /* CustomInvoke */com_codename1_io_Util_register___java_lang_String_java_lang_Class(threadStateData, STRING_FROM_CONSTANT_POOL_OFFSET(9138), (JAVA_OBJECT)&class__com_codename1_payment_Receipt); 
     __CN1_DEBUG_INFO(243);
     /* CustomInvoke */com_codename1_payment_Receipt_setExternalizableRegistered___boolean(threadStateData, 1 /* ICONST_1 */); 
 
-label_L1020021920:
+label_L247576438:
     __CN1_DEBUG_INFO(246);
     releaseForReturn(threadStateData, cn1LocalsBeginInThread); 
     return;
@@ -483,7 +483,7 @@ label_L1020021920:
 
 
 JAVA_OBJECT com_codename1_payment_Receipt_getCancellationDate___R_java_util_Date(CODENAME_ONE_THREAD_STATE, JAVA_OBJECT  __cn1ThisObject) {
-    DEFINE_INSTANCE_METHOD_STACK(1, 1, 0, 9116, 9130);
+    DEFINE_INSTANCE_METHOD_STACK(1, 1, 0, 9126, 9140);
     locals[0].data.o = __cn1ThisObject; locals[0].type = CN1_TYPE_OBJECT;     __CN1_DEBUG_INFO(255);
 
 {
@@ -499,7 +499,7 @@ JAVA_VOID com_codename1_payment_Receipt_setCancellationDate___java_util_Date(COD
 
 
 JAVA_OBJECT com_codename1_payment_Receipt_getPurchaseDate___R_java_util_Date(CODENAME_ONE_THREAD_STATE, JAVA_OBJECT  __cn1ThisObject) {
-    DEFINE_INSTANCE_METHOD_STACK(1, 1, 0, 9116, 9132);
+    DEFINE_INSTANCE_METHOD_STACK(1, 1, 0, 9126, 9142);
     locals[0].data.o = __cn1ThisObject; locals[0].type = CN1_TYPE_OBJECT;     __CN1_DEBUG_INFO(272);
 
 {
@@ -510,7 +510,7 @@ JAVA_OBJECT com_codename1_payment_Receipt_getPurchaseDate___R_java_util_Date(COD
 
 
 JAVA_VOID com_codename1_payment_Receipt_setPurchaseDate___java_util_Date(CODENAME_ONE_THREAD_STATE, JAVA_OBJECT  __cn1ThisObject, JAVA_OBJECT __cn1Arg1) {
-    DEFINE_INSTANCE_METHOD_STACK(2, 2, 0, 9116, 9133);
+    DEFINE_INSTANCE_METHOD_STACK(2, 2, 0, 9126, 9143);
     locals[0].data.o = __cn1ThisObject; locals[0].type = CN1_TYPE_OBJECT;     locals[1].data.o = __cn1Arg1;
     locals[1].type = CN1_TYPE_OBJECT;
     __CN1_DEBUG_INFO(280);
@@ -522,7 +522,7 @@ JAVA_VOID com_codename1_payment_Receipt_setPurchaseDate___java_util_Date(CODENAM
 
 
 JAVA_INT com_codename1_payment_Receipt_getQuantity___R_int(CODENAME_ONE_THREAD_STATE, JAVA_OBJECT  __cn1ThisObject) {
-    DEFINE_INSTANCE_METHOD_STACK(1, 1, 0, 9116, 9134);
+    DEFINE_INSTANCE_METHOD_STACK(1, 1, 0, 9126, 9144);
     locals[0].data.o = __cn1ThisObject; locals[0].type = CN1_TYPE_OBJECT;     __CN1_DEBUG_INFO(291);
 
 {
@@ -538,7 +538,7 @@ JAVA_VOID com_codename1_payment_Receipt_setQuantity___int(CODENAME_ONE_THREAD_ST
 
 
 JAVA_OBJECT com_codename1_payment_Receipt_getTransactionId___R_java_lang_String(CODENAME_ONE_THREAD_STATE, JAVA_OBJECT  __cn1ThisObject) {
-    DEFINE_INSTANCE_METHOD_STACK(1, 1, 0, 9116, 9136);
+    DEFINE_INSTANCE_METHOD_STACK(1, 1, 0, 9126, 9146);
     locals[0].data.o = __cn1ThisObject; locals[0].type = CN1_TYPE_OBJECT;     __CN1_DEBUG_INFO(310);
 
 {
@@ -549,7 +549,7 @@ JAVA_OBJECT com_codename1_payment_Receipt_getTransactionId___R_java_lang_String(
 
 
 JAVA_VOID com_codename1_payment_Receipt_setTransactionId___java_lang_String(CODENAME_ONE_THREAD_STATE, JAVA_OBJECT  __cn1ThisObject, JAVA_OBJECT __cn1Arg1) {
-    DEFINE_INSTANCE_METHOD_STACK(2, 2, 0, 9116, 9137);
+    DEFINE_INSTANCE_METHOD_STACK(2, 2, 0, 9126, 9147);
     locals[0].data.o = __cn1ThisObject; locals[0].type = CN1_TYPE_OBJECT;     locals[1].data.o = __cn1Arg1;
     locals[1].type = CN1_TYPE_OBJECT;
     __CN1_DEBUG_INFO(318);
@@ -561,7 +561,7 @@ JAVA_VOID com_codename1_payment_Receipt_setTransactionId___java_lang_String(CODE
 
 
 JAVA_OBJECT com_codename1_payment_Receipt_getOrderData___R_java_lang_String(CODENAME_ONE_THREAD_STATE, JAVA_OBJECT  __cn1ThisObject) {
-    DEFINE_INSTANCE_METHOD_STACK(1, 1, 0, 9116, 9138);
+    DEFINE_INSTANCE_METHOD_STACK(1, 1, 0, 9126, 9148);
     locals[0].data.o = __cn1ThisObject; locals[0].type = CN1_TYPE_OBJECT;     __CN1_DEBUG_INFO(335);
 
 {
@@ -572,7 +572,7 @@ JAVA_OBJECT com_codename1_payment_Receipt_getOrderData___R_java_lang_String(CODE
 
 
 JAVA_VOID com_codename1_payment_Receipt_setOrderData___java_lang_String(CODENAME_ONE_THREAD_STATE, JAVA_OBJECT  __cn1ThisObject, JAVA_OBJECT __cn1Arg1) {
-    DEFINE_INSTANCE_METHOD_STACK(2, 2, 0, 9116, 9139);
+    DEFINE_INSTANCE_METHOD_STACK(2, 2, 0, 9126, 9149);
     locals[0].data.o = __cn1ThisObject; locals[0].type = CN1_TYPE_OBJECT;     locals[1].data.o = __cn1Arg1;
     locals[1].type = CN1_TYPE_OBJECT;
     __CN1_DEBUG_INFO(343);
@@ -584,7 +584,7 @@ JAVA_VOID com_codename1_payment_Receipt_setOrderData___java_lang_String(CODENAME
 
 
 JAVA_OBJECT com_codename1_payment_Receipt_getStoreCode___R_java_lang_String(CODENAME_ONE_THREAD_STATE, JAVA_OBJECT  __cn1ThisObject) {
-    DEFINE_INSTANCE_METHOD_STACK(1, 1, 0, 9116, 9107);
+    DEFINE_INSTANCE_METHOD_STACK(1, 1, 0, 9126, 9117);
     locals[0].data.o = __cn1ThisObject; locals[0].type = CN1_TYPE_OBJECT;     __CN1_DEBUG_INFO(355);
 
 {
@@ -595,7 +595,7 @@ JAVA_OBJECT com_codename1_payment_Receipt_getStoreCode___R_java_lang_String(CODE
 
 
 JAVA_VOID com_codename1_payment_Receipt_setStoreCode___java_lang_String(CODENAME_ONE_THREAD_STATE, JAVA_OBJECT  __cn1ThisObject, JAVA_OBJECT __cn1Arg1) {
-    DEFINE_INSTANCE_METHOD_STACK(2, 2, 0, 9116, 9140);
+    DEFINE_INSTANCE_METHOD_STACK(2, 2, 0, 9126, 9150);
     locals[0].data.o = __cn1ThisObject; locals[0].type = CN1_TYPE_OBJECT;     locals[1].data.o = __cn1Arg1;
     locals[1].type = CN1_TYPE_OBJECT;
     __CN1_DEBUG_INFO(363);
@@ -607,7 +607,7 @@ JAVA_VOID com_codename1_payment_Receipt_setStoreCode___java_lang_String(CODENAME
 
 
 JAVA_OBJECT com_codename1_payment_Receipt_getInternalId___R_java_lang_String(CODENAME_ONE_THREAD_STATE, JAVA_OBJECT  __cn1ThisObject) {
-    DEFINE_INSTANCE_METHOD_STACK(1, 1, 0, 9116, 9141);
+    DEFINE_INSTANCE_METHOD_STACK(1, 1, 0, 9126, 9151);
     locals[0].data.o = __cn1ThisObject; locals[0].type = CN1_TYPE_OBJECT;     __CN1_DEBUG_INFO(372);
 
 {
@@ -623,104 +623,104 @@ JAVA_VOID com_codename1_payment_Receipt_setInternalId___java_lang_String(CODENAM
 
 
 JAVA_OBJECT com_codename1_payment_Receipt_toString___R_java_lang_String(CODENAME_ONE_THREAD_STATE, JAVA_OBJECT  __cn1ThisObject) {
-    DEFINE_INSTANCE_METHOD_STACK(2, 2, 0, 9116, 899);
+    DEFINE_INSTANCE_METHOD_STACK(2, 2, 0, 9126, 263);
     locals[0].data.o = __cn1ThisObject; locals[0].type = CN1_TYPE_OBJECT;     __CN1_DEBUG_INFO(385);
     PUSH_POINTER(__NEW_java_lang_StringBuilder(threadStateData)); /* NEW */
     BC_DUP(); /* DUP */
     java_lang_StringBuilder___INIT____(threadStateData, SP[-1].data.o);     SP -= 1;
     BC_ASTORE(1);
     __CN1_DEBUG_INFO(386);
-    /* CustomInvoke */{ JAVA_OBJECT tmpResult = virtual_java_lang_StringBuilder_append___java_lang_String_R_java_lang_StringBuilder(threadStateData, locals[1].data.o, STRING_FROM_CONSTANT_POOL_OFFSET(9143));
+    /* CustomInvoke */{ JAVA_OBJECT tmpResult = virtual_java_lang_StringBuilder_append___java_lang_String_R_java_lang_StringBuilder(threadStateData, locals[1].data.o, STRING_FROM_CONSTANT_POOL_OFFSET(9153));
     PUSH_OBJ(tmpResult); }
     /* LDC: 'sku:'*/
-    PUSH_POINTER(STRING_FROM_CONSTANT_POOL_OFFSET(9144));
+    PUSH_POINTER(STRING_FROM_CONSTANT_POOL_OFFSET(9154));
     __CN1_DEBUG_INFO(387);
     { JAVA_OBJECT tmpResult = virtual_java_lang_StringBuilder_append___java_lang_String_R_java_lang_StringBuilder(threadStateData, SP[-2].data.o, SP[-1].data.o);
     SP-=1;
     SP[-1].data.o = tmpResult; SP[-1].type = CN1_TYPE_OBJECT; }
     /* CustomInvoke */{ JAVA_OBJECT tmpResult = virtual_java_lang_StringBuilder_append___java_lang_String_R_java_lang_StringBuilder(threadStateData, SP[-1].data.o, get_field_com_codename1_payment_Receipt_sku(__cn1ThisObject));
     SP[-1].data.o = tmpResult; SP[-1].type = CN1_TYPE_OBJECT; }
-    /* CustomInvoke */{ JAVA_OBJECT tmpResult = virtual_java_lang_StringBuilder_append___java_lang_String_R_java_lang_StringBuilder(threadStateData, SP[-1].data.o, STRING_FROM_CONSTANT_POOL_OFFSET(1209));
+    /* CustomInvoke */{ JAVA_OBJECT tmpResult = virtual_java_lang_StringBuilder_append___java_lang_String_R_java_lang_StringBuilder(threadStateData, SP[-1].data.o, STRING_FROM_CONSTANT_POOL_OFFSET(583));
     SP[-1].data.o = tmpResult; SP[-1].type = CN1_TYPE_OBJECT; }
     /* LDC: 'expiryDate:'*/
-    PUSH_POINTER(STRING_FROM_CONSTANT_POOL_OFFSET(9145));
+    PUSH_POINTER(STRING_FROM_CONSTANT_POOL_OFFSET(9155));
     __CN1_DEBUG_INFO(388);
     { JAVA_OBJECT tmpResult = virtual_java_lang_StringBuilder_append___java_lang_String_R_java_lang_StringBuilder(threadStateData, SP[-2].data.o, SP[-1].data.o);
     SP-=1;
     SP[-1].data.o = tmpResult; SP[-1].type = CN1_TYPE_OBJECT; }
     /* CustomInvoke */{ JAVA_OBJECT tmpResult = virtual_java_lang_StringBuilder_append___java_lang_Object_R_java_lang_StringBuilder(threadStateData, SP[-1].data.o, get_field_com_codename1_payment_Receipt_expiryDate(__cn1ThisObject));
     SP[-1].data.o = tmpResult; SP[-1].type = CN1_TYPE_OBJECT; }
-    /* CustomInvoke */{ JAVA_OBJECT tmpResult = virtual_java_lang_StringBuilder_append___java_lang_String_R_java_lang_StringBuilder(threadStateData, SP[-1].data.o, STRING_FROM_CONSTANT_POOL_OFFSET(1209));
+    /* CustomInvoke */{ JAVA_OBJECT tmpResult = virtual_java_lang_StringBuilder_append___java_lang_String_R_java_lang_StringBuilder(threadStateData, SP[-1].data.o, STRING_FROM_CONSTANT_POOL_OFFSET(583));
     SP[-1].data.o = tmpResult; SP[-1].type = CN1_TYPE_OBJECT; }
     /* LDC: 'cancellationDate:'*/
-    PUSH_POINTER(STRING_FROM_CONSTANT_POOL_OFFSET(9146));
+    PUSH_POINTER(STRING_FROM_CONSTANT_POOL_OFFSET(9156));
     __CN1_DEBUG_INFO(389);
     { JAVA_OBJECT tmpResult = virtual_java_lang_StringBuilder_append___java_lang_String_R_java_lang_StringBuilder(threadStateData, SP[-2].data.o, SP[-1].data.o);
     SP-=1;
     SP[-1].data.o = tmpResult; SP[-1].type = CN1_TYPE_OBJECT; }
     /* CustomInvoke */{ JAVA_OBJECT tmpResult = virtual_java_lang_StringBuilder_append___java_lang_Object_R_java_lang_StringBuilder(threadStateData, SP[-1].data.o, get_field_com_codename1_payment_Receipt_cancellationDate(__cn1ThisObject));
     SP[-1].data.o = tmpResult; SP[-1].type = CN1_TYPE_OBJECT; }
-    /* CustomInvoke */{ JAVA_OBJECT tmpResult = virtual_java_lang_StringBuilder_append___java_lang_String_R_java_lang_StringBuilder(threadStateData, SP[-1].data.o, STRING_FROM_CONSTANT_POOL_OFFSET(1209));
+    /* CustomInvoke */{ JAVA_OBJECT tmpResult = virtual_java_lang_StringBuilder_append___java_lang_String_R_java_lang_StringBuilder(threadStateData, SP[-1].data.o, STRING_FROM_CONSTANT_POOL_OFFSET(583));
     SP[-1].data.o = tmpResult; SP[-1].type = CN1_TYPE_OBJECT; }
     /* LDC: 'purchaseDate:'*/
-    PUSH_POINTER(STRING_FROM_CONSTANT_POOL_OFFSET(9147));
+    PUSH_POINTER(STRING_FROM_CONSTANT_POOL_OFFSET(9157));
     __CN1_DEBUG_INFO(390);
     { JAVA_OBJECT tmpResult = virtual_java_lang_StringBuilder_append___java_lang_String_R_java_lang_StringBuilder(threadStateData, SP[-2].data.o, SP[-1].data.o);
     SP-=1;
     SP[-1].data.o = tmpResult; SP[-1].type = CN1_TYPE_OBJECT; }
     /* CustomInvoke */{ JAVA_OBJECT tmpResult = virtual_java_lang_StringBuilder_append___java_lang_Object_R_java_lang_StringBuilder(threadStateData, SP[-1].data.o, get_field_com_codename1_payment_Receipt_purchaseDate(__cn1ThisObject));
     SP[-1].data.o = tmpResult; SP[-1].type = CN1_TYPE_OBJECT; }
-    /* CustomInvoke */{ JAVA_OBJECT tmpResult = virtual_java_lang_StringBuilder_append___java_lang_String_R_java_lang_StringBuilder(threadStateData, SP[-1].data.o, STRING_FROM_CONSTANT_POOL_OFFSET(1209));
+    /* CustomInvoke */{ JAVA_OBJECT tmpResult = virtual_java_lang_StringBuilder_append___java_lang_String_R_java_lang_StringBuilder(threadStateData, SP[-1].data.o, STRING_FROM_CONSTANT_POOL_OFFSET(583));
     SP[-1].data.o = tmpResult; SP[-1].type = CN1_TYPE_OBJECT; }
     /* LDC: 'orderData:'*/
-    PUSH_POINTER(STRING_FROM_CONSTANT_POOL_OFFSET(9148));
+    PUSH_POINTER(STRING_FROM_CONSTANT_POOL_OFFSET(9158));
     __CN1_DEBUG_INFO(391);
     { JAVA_OBJECT tmpResult = virtual_java_lang_StringBuilder_append___java_lang_String_R_java_lang_StringBuilder(threadStateData, SP[-2].data.o, SP[-1].data.o);
     SP-=1;
     SP[-1].data.o = tmpResult; SP[-1].type = CN1_TYPE_OBJECT; }
     /* CustomInvoke */{ JAVA_OBJECT tmpResult = virtual_java_lang_StringBuilder_append___java_lang_String_R_java_lang_StringBuilder(threadStateData, SP[-1].data.o, get_field_com_codename1_payment_Receipt_orderData(__cn1ThisObject));
     SP[-1].data.o = tmpResult; SP[-1].type = CN1_TYPE_OBJECT; }
-    /* CustomInvoke */{ JAVA_OBJECT tmpResult = virtual_java_lang_StringBuilder_append___java_lang_String_R_java_lang_StringBuilder(threadStateData, SP[-1].data.o, STRING_FROM_CONSTANT_POOL_OFFSET(1209));
+    /* CustomInvoke */{ JAVA_OBJECT tmpResult = virtual_java_lang_StringBuilder_append___java_lang_String_R_java_lang_StringBuilder(threadStateData, SP[-1].data.o, STRING_FROM_CONSTANT_POOL_OFFSET(583));
     SP[-1].data.o = tmpResult; SP[-1].type = CN1_TYPE_OBJECT; }
     /* LDC: 'quantity:'*/
-    PUSH_POINTER(STRING_FROM_CONSTANT_POOL_OFFSET(9149));
+    PUSH_POINTER(STRING_FROM_CONSTANT_POOL_OFFSET(9159));
     __CN1_DEBUG_INFO(392);
     { JAVA_OBJECT tmpResult = virtual_java_lang_StringBuilder_append___java_lang_String_R_java_lang_StringBuilder(threadStateData, SP[-2].data.o, SP[-1].data.o);
     SP-=1;
     SP[-1].data.o = tmpResult; SP[-1].type = CN1_TYPE_OBJECT; }
     /* CustomInvoke */{ JAVA_OBJECT tmpResult = virtual_java_lang_StringBuilder_append___int_R_java_lang_StringBuilder(threadStateData, SP[-1].data.o, get_field_com_codename1_payment_Receipt_quantity(__cn1ThisObject));
     SP[-1].data.o = tmpResult; SP[-1].type = CN1_TYPE_OBJECT; }
-    /* CustomInvoke */{ JAVA_OBJECT tmpResult = virtual_java_lang_StringBuilder_append___java_lang_String_R_java_lang_StringBuilder(threadStateData, SP[-1].data.o, STRING_FROM_CONSTANT_POOL_OFFSET(1209));
+    /* CustomInvoke */{ JAVA_OBJECT tmpResult = virtual_java_lang_StringBuilder_append___java_lang_String_R_java_lang_StringBuilder(threadStateData, SP[-1].data.o, STRING_FROM_CONSTANT_POOL_OFFSET(583));
     SP[-1].data.o = tmpResult; SP[-1].type = CN1_TYPE_OBJECT; }
     /* LDC: 'transactionId:'*/
-    PUSH_POINTER(STRING_FROM_CONSTANT_POOL_OFFSET(9150));
+    PUSH_POINTER(STRING_FROM_CONSTANT_POOL_OFFSET(9160));
     __CN1_DEBUG_INFO(393);
     { JAVA_OBJECT tmpResult = virtual_java_lang_StringBuilder_append___java_lang_String_R_java_lang_StringBuilder(threadStateData, SP[-2].data.o, SP[-1].data.o);
     SP-=1;
     SP[-1].data.o = tmpResult; SP[-1].type = CN1_TYPE_OBJECT; }
     /* CustomInvoke */{ JAVA_OBJECT tmpResult = virtual_java_lang_StringBuilder_append___java_lang_String_R_java_lang_StringBuilder(threadStateData, SP[-1].data.o, get_field_com_codename1_payment_Receipt_transactionId(__cn1ThisObject));
     SP[-1].data.o = tmpResult; SP[-1].type = CN1_TYPE_OBJECT; }
-    /* CustomInvoke */{ JAVA_OBJECT tmpResult = virtual_java_lang_StringBuilder_append___java_lang_String_R_java_lang_StringBuilder(threadStateData, SP[-1].data.o, STRING_FROM_CONSTANT_POOL_OFFSET(1209));
+    /* CustomInvoke */{ JAVA_OBJECT tmpResult = virtual_java_lang_StringBuilder_append___java_lang_String_R_java_lang_StringBuilder(threadStateData, SP[-1].data.o, STRING_FROM_CONSTANT_POOL_OFFSET(583));
     SP[-1].data.o = tmpResult; SP[-1].type = CN1_TYPE_OBJECT; }
     /* LDC: 'storeCode:'*/
-    PUSH_POINTER(STRING_FROM_CONSTANT_POOL_OFFSET(9151));
+    PUSH_POINTER(STRING_FROM_CONSTANT_POOL_OFFSET(9161));
     __CN1_DEBUG_INFO(394);
     { JAVA_OBJECT tmpResult = virtual_java_lang_StringBuilder_append___java_lang_String_R_java_lang_StringBuilder(threadStateData, SP[-2].data.o, SP[-1].data.o);
     SP-=1;
     SP[-1].data.o = tmpResult; SP[-1].type = CN1_TYPE_OBJECT; }
     /* CustomInvoke */{ JAVA_OBJECT tmpResult = virtual_java_lang_StringBuilder_append___java_lang_String_R_java_lang_StringBuilder(threadStateData, SP[-1].data.o, get_field_com_codename1_payment_Receipt_storeCode(__cn1ThisObject));
     SP[-1].data.o = tmpResult; SP[-1].type = CN1_TYPE_OBJECT; }
-    /* CustomInvoke */{ JAVA_OBJECT tmpResult = virtual_java_lang_StringBuilder_append___java_lang_String_R_java_lang_StringBuilder(threadStateData, SP[-1].data.o, STRING_FROM_CONSTANT_POOL_OFFSET(1209));
+    /* CustomInvoke */{ JAVA_OBJECT tmpResult = virtual_java_lang_StringBuilder_append___java_lang_String_R_java_lang_StringBuilder(threadStateData, SP[-1].data.o, STRING_FROM_CONSTANT_POOL_OFFSET(583));
     SP[-1].data.o = tmpResult; SP[-1].type = CN1_TYPE_OBJECT; }
     /* LDC: 'internalId:'*/
-    PUSH_POINTER(STRING_FROM_CONSTANT_POOL_OFFSET(9152));
+    PUSH_POINTER(STRING_FROM_CONSTANT_POOL_OFFSET(9162));
     __CN1_DEBUG_INFO(395);
     { JAVA_OBJECT tmpResult = virtual_java_lang_StringBuilder_append___java_lang_String_R_java_lang_StringBuilder(threadStateData, SP[-2].data.o, SP[-1].data.o);
     SP-=1;
     SP[-1].data.o = tmpResult; SP[-1].type = CN1_TYPE_OBJECT; }
     /* CustomInvoke */{ JAVA_OBJECT tmpResult = virtual_java_lang_StringBuilder_append___java_lang_String_R_java_lang_StringBuilder(threadStateData, SP[-1].data.o, get_field_com_codename1_payment_Receipt_internalId(__cn1ThisObject));
     SP[-1].data.o = tmpResult; SP[-1].type = CN1_TYPE_OBJECT; }
-    /* CustomInvoke */virtual_java_lang_StringBuilder_append___java_lang_String_R_java_lang_StringBuilder(threadStateData, SP[-1].data.o, STRING_FROM_CONSTANT_POOL_OFFSET(1291));     SP -= 1;
+    /* CustomInvoke */virtual_java_lang_StringBuilder_append___java_lang_String_R_java_lang_StringBuilder(threadStateData, SP[-1].data.o, STRING_FROM_CONSTANT_POOL_OFFSET(1303));     SP -= 1;
     __CN1_DEBUG_INFO(396);
     { JAVA_OBJECT tmpResult = virtual_java_lang_StringBuilder_toString___R_java_lang_String(threadStateData, locals[1].data.o);
     PUSH_OBJ(tmpResult); }

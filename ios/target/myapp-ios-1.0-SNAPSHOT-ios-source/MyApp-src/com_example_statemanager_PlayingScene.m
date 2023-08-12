@@ -169,27 +169,8 @@ JAVA_OBJECT __NEW_com_example_statemanager_PlayingScene(CODENAME_ONE_THREAD_STAT
 }
 
 
-JAVA_VOID com_example_statemanager_PlayingScene___CLINIT____(CODENAME_ONE_THREAD_STATE) {
-    DEFINE_METHOD_STACK(2, 0, 0, 10241, 863);
-    __CN1_DEBUG_INFO(30);
-    PUSH_POINTER(__NEW_com_example_ui_PauseOverlay(threadStateData)); /* NEW */
-    BC_DUP(); /* DUP */
-    com_example_ui_PauseOverlay___INIT____(threadStateData, SP[-1].data.o);     SP -= 1;
-    set_static_com_example_statemanager_PlayingScene_pauseScreen(threadStateData, PEEK_OBJ(1));
-    SP--;
-    __CN1_DEBUG_INFO(31);
-    /* CustomInvoke */PUSH_OBJ(java_lang_Boolean_valueOf___boolean_R_java_lang_Boolean(threadStateData, 0 /* ICONST_0 */));
-    set_static_com_example_statemanager_PlayingScene_unpaused(threadStateData, PEEK_OBJ(1));
-    SP--;
-    __CN1_DEBUG_INFO(35);
-    set_static_com_example_statemanager_PlayingScene_gameScore(threadStateData, 0 /* DCONST_0 */);
-    releaseForReturn(threadStateData, cn1LocalsBeginInThread); 
-    return;
-}
-
-
 JAVA_VOID com_example_statemanager_PlayingScene___INIT_____com_example_entity_Ducky(CODENAME_ONE_THREAD_STATE, JAVA_OBJECT  __cn1ThisObject, JAVA_OBJECT __cn1Arg1) {
-    DEFINE_INSTANCE_METHOD_STACK(4, 2, 0, 10241, 205);
+    DEFINE_INSTANCE_METHOD_STACK(4, 2, 0, 10274, 205);
     locals[0].data.o = __cn1ThisObject; locals[0].type = CN1_TYPE_OBJECT;     locals[1].data.o = __cn1Arg1;
     locals[1].type = CN1_TYPE_OBJECT;
     __CN1_DEBUG_INFO(37);
@@ -255,25 +236,24 @@ JAVA_VOID com_example_statemanager_PlayingScene___INIT_____com_example_entity_Du
 
 
 JAVA_VOID com_example_statemanager_PlayingScene_constantScreenMove__(CODENAME_ONE_THREAD_STATE, JAVA_OBJECT  __cn1ThisObject) {
-    DEFINE_INSTANCE_METHOD_STACK(4, 1, 0, 10241, 10242);
+    DEFINE_INSTANCE_METHOD_STACK(4, 1, 0, 10274, 10275);
     locals[0].data.o = __cn1ThisObject; locals[0].type = CN1_TYPE_OBJECT;     __CN1_DEBUG_INFO(44);
     set_field_com_example_statemanager_PlayingScene_timerForConstantScreenMoveMethod(threadStateData, (get_field_com_example_statemanager_PlayingScene_timerForConstantScreenMoveMethod(__cn1ThisObject) + 1 /* ICONST_1 */), __cn1ThisObject);
     __CN1_DEBUG_INFO(45);
-    if (CN1_CMP_EXPR(get_static_com_example_statemanager_PlayingScene_gameScore(threadStateData), 1.4)<=0) /* IFLE CustomJump */ goto label_L1709578324;
+    if (CN1_CMP_EXPR(get_static_com_example_statemanager_PlayingScene_gameScore(threadStateData), 1.4)<=0) /* IFLE CustomJump */ goto label_L22446425;
     __CN1_DEBUG_INFO(46);
     virtual_com_example_statemanager_PlayingScene_constantScreenMoveMethod__(threadStateData, __cn1ThisObject); 
-    __CN1_DEBUG_INFO(47);
-    goto label_L22446425;
+    goto label_L1338958728;
 
-label_L1709578324:
+label_L22446425:
     __CN1_DEBUG_INFO(48);
-    if ((get_field_com_example_statemanager_PlayingScene_timerForConstantScreenMoveMethod(__cn1ThisObject) % 2 /* ICONST_2 */)!=0) /* IFNE CustomJump */ goto label_L22446425;
+    if ((get_field_com_example_statemanager_PlayingScene_timerForConstantScreenMoveMethod(__cn1ThisObject) % 2 /* ICONST_2 */)!=0) /* IFNE CustomJump */ goto label_L1338958728;
     __CN1_DEBUG_INFO(49);
     virtual_com_example_statemanager_PlayingScene_constantScreenMoveMethod__(threadStateData, __cn1ThisObject); 
     __CN1_DEBUG_INFO(50);
     set_field_com_example_statemanager_PlayingScene_timerForConstantScreenMoveMethod(threadStateData, 0 /* ICONST_0 */, __cn1ThisObject);
 
-label_L22446425:
+label_L1338958728:
     __CN1_DEBUG_INFO(53);
     releaseForReturn(threadStateData, cn1LocalsBeginInThread); 
     return;
@@ -281,13 +261,13 @@ label_L22446425:
 
 
 JAVA_VOID com_example_statemanager_PlayingScene_constantScreenMoveMethod__(CODENAME_ONE_THREAD_STATE, JAVA_OBJECT  __cn1ThisObject) {
-    DEFINE_INSTANCE_METHOD_STACK(4, 1, 0, 10241, 10243);
+    DEFINE_INSTANCE_METHOD_STACK(4, 1, 0, 10274, 10276);
     locals[0].data.o = __cn1ThisObject; locals[0].type = CN1_TYPE_OBJECT;     __CN1_DEBUG_INFO(56);
     set_field_com_example_statemanager_PlayingScene_xOffset(threadStateData, (get_field_com_example_statemanager_PlayingScene_xOffset(__cn1ThisObject) + 1 /* ICONST_1 */), __cn1ThisObject);
     __CN1_DEBUG_INFO(57);
     set_field_com_example_statemanager_PlayingScene_shiftCounter(threadStateData, (get_field_com_example_statemanager_PlayingScene_shiftCounter(__cn1ThisObject) + 1 /* ICONST_1 */), __cn1ThisObject);
     __CN1_DEBUG_INFO(58);
-    if ((get_field_com_example_statemanager_PlayingScene_shiftCounter(__cn1ThisObject) % get_static_com_example_levels_LevelManager_widthOfBlocks(threadStateData))!=0) /* IFNE CustomJump */ goto label_L1338958728;
+    if ((get_field_com_example_statemanager_PlayingScene_shiftCounter(__cn1ThisObject) % get_static_com_example_levels_LevelManager_widthOfBlocks(threadStateData))!=0) /* IFNE CustomJump */ goto label_L1870723838;
     __CN1_DEBUG_INFO(59);
     { JAVA_OBJECT tmpResult = virtual_com_example_levels_LevelManager_getCurrentLevel___R_com_example_levels_Level(threadStateData, get_field_com_example_statemanager_PlayingScene_levelManager(__cn1ThisObject));
     PUSH_OBJ(tmpResult); }
@@ -299,17 +279,16 @@ JAVA_VOID com_example_statemanager_PlayingScene_constantScreenMoveMethod__(CODEN
     __CN1_DEBUG_INFO(63);
     PUSH_INT(get_field_com_example_statemanager_PlayingScene_obstacleCounter(__cn1ThisObject));
     PUSH_INT(25);
-    SP-=2; if((*SP).data.i >= SP[1].data.i) /* IF_ICMPGE */ goto label_L1870723838;
+    SP-=2; if((*SP).data.i >= SP[1].data.i) /* IF_ICMPGE */ goto label_L988904418;
     __CN1_DEBUG_INFO(64);
     /* CustomInvoke */virtual_com_example_levels_LevelManager_transformMainLevel___int_int_int(threadStateData, get_field_com_example_statemanager_PlayingScene_levelManager(__cn1ThisObject), 1 /* ICONST_1 */, get_field_com_example_statemanager_PlayingScene_obstacleCounter(__cn1ThisObject), get_field_com_example_statemanager_PlayingScene_pattern(__cn1ThisObject)); 
     __CN1_DEBUG_INFO(65);
     virtual_com_example_entity_EnemyManager_spawnGooseRandom__(threadStateData, get_field_com_example_statemanager_PlayingScene_enemyManager(__cn1ThisObject)); 
     __CN1_DEBUG_INFO(66);
     set_field_com_example_statemanager_PlayingScene_obstacleCounter(threadStateData, (get_field_com_example_statemanager_PlayingScene_obstacleCounter(__cn1ThisObject) + 1 /* ICONST_1 */), __cn1ThisObject);
-    __CN1_DEBUG_INFO(67);
-    goto label_L988904418;
+    goto label_L261650860;
 
-label_L1870723838:
+label_L988904418:
     __CN1_DEBUG_INFO(68);
     set_static_com_example_statemanager_PlayingScene_gameScore(threadStateData, (get_static_com_example_statemanager_PlayingScene_gameScore(threadStateData) + 0.2001));
     __CN1_DEBUG_INFO(69);
@@ -320,13 +299,13 @@ label_L1870723838:
     PUSH_INT(tmpResult); }
     set_field_com_example_statemanager_PlayingScene_pattern(threadStateData, POP_INT(), POP_OBJ());
 
-label_L988904418:
+label_L261650860:
     __CN1_DEBUG_INFO(72);
     set_field_com_example_statemanager_PlayingScene_shiftCounter(threadStateData, 0 /* ICONST_0 */, __cn1ThisObject);
     __CN1_DEBUG_INFO(73);
     set_field_com_example_statemanager_PlayingScene_xOffset(threadStateData, 0 /* ICONST_0 */, __cn1ThisObject);
 
-label_L1338958728:
+label_L1870723838:
     __CN1_DEBUG_INFO(75);
     releaseForReturn(threadStateData, cn1LocalsBeginInThread); 
     return;
@@ -334,19 +313,19 @@ label_L1338958728:
 
 
 JAVA_VOID com_example_statemanager_PlayingScene_unpauseTimer__(CODENAME_ONE_THREAD_STATE, JAVA_OBJECT  __cn1ThisObject) {
-    DEFINE_INSTANCE_METHOD_STACK(3, 1, 0, 10241, 10244);
+    DEFINE_INSTANCE_METHOD_STACK(3, 1, 0, 10274, 10277);
     locals[0].data.o = __cn1ThisObject; locals[0].type = CN1_TYPE_OBJECT;     __CN1_DEBUG_INFO(78);
     set_field_com_example_statemanager_PlayingScene_unpauseCounter(threadStateData, (get_field_com_example_statemanager_PlayingScene_unpauseCounter(__cn1ThisObject) + 1 /* ICONST_1 */), __cn1ThisObject);
     __CN1_DEBUG_INFO(79);
-    if ((get_field_com_example_statemanager_PlayingScene_unpauseCounter(__cn1ThisObject) % 120)!=0) /* IFNE CustomJump */ goto label_L261650860;
+    if ((get_field_com_example_statemanager_PlayingScene_unpauseCounter(__cn1ThisObject) % 120)!=0) /* IFNE CustomJump */ goto label_L938613108;
     __CN1_DEBUG_INFO(80);
     set_field_com_example_statemanager_PlayingScene_displayedCountdown(threadStateData, (get_field_com_example_statemanager_PlayingScene_displayedCountdown(__cn1ThisObject) - 1 /* ICONST_1 */), __cn1ThisObject);
 
-label_L261650860:
+label_L938613108:
     __CN1_DEBUG_INFO(82);
     PUSH_INT(get_field_com_example_statemanager_PlayingScene_unpauseCounter(__cn1ThisObject));
     PUSH_INT(360);
-    SP-=2; if((*SP).data.i <= SP[1].data.i) /* IF_ICMPLE */ goto label_L938613108;
+    SP-=2; if((*SP).data.i <= SP[1].data.i) /* IF_ICMPLE */ goto label_L1598898814;
     __CN1_DEBUG_INFO(83);
     set_field_com_example_statemanager_PlayingScene_unpauseCounter(threadStateData, 0 /* ICONST_0 */, __cn1ThisObject);
     __CN1_DEBUG_INFO(84);
@@ -356,7 +335,7 @@ label_L261650860:
     set_static_com_example_statemanager_PlayingScene_unpaused(threadStateData, PEEK_OBJ(1));
     SP--;
 
-label_L938613108:
+label_L1598898814:
     __CN1_DEBUG_INFO(87);
     releaseForReturn(threadStateData, cn1LocalsBeginInThread); 
     return;
@@ -364,42 +343,41 @@ label_L938613108:
 
 
 JAVA_VOID com_example_statemanager_PlayingScene_update__(CODENAME_ONE_THREAD_STATE, JAVA_OBJECT  __cn1ThisObject) {
-    DEFINE_INSTANCE_METHOD_STACK(1, 1, 0, 10241, 2519);
+    DEFINE_INSTANCE_METHOD_STACK(1, 1, 0, 10274, 2530);
     locals[0].data.o = __cn1ThisObject; locals[0].type = CN1_TYPE_OBJECT;     __CN1_DEBUG_INFO(91);
-    if (virtual_java_lang_Boolean_booleanValue___R_boolean(threadStateData, get_static_com_example_statemanager_PlayingScene_unpaused(threadStateData))==0) /* IFEQ CustomJump */ goto label_L1598898814;
+    if (virtual_java_lang_Boolean_booleanValue___R_boolean(threadStateData, get_static_com_example_statemanager_PlayingScene_unpaused(threadStateData))==0) /* IFEQ CustomJump */ goto label_L1850874910;
     __CN1_DEBUG_INFO(92);
     virtual_com_example_statemanager_PlayingScene_unpauseTimer__(threadStateData, __cn1ThisObject); 
-    __CN1_DEBUG_INFO(93);
-    goto label_L1850874910;
+    goto label_L575360353;
 
-label_L1598898814:
+label_L1850874910:
     __CN1_DEBUG_INFO(94);
     { JAVA_OBJECT tmpResult = virtual_com_example_handler_KeyHandler_getPause___R_java_lang_Boolean(threadStateData, get_static_com_example_entity_Ducky_kh(threadStateData));
     PUSH_OBJ(tmpResult); }
     { JAVA_INT tmpResult = virtual_java_lang_Boolean_booleanValue___R_boolean(threadStateData, SP[-1].data.o);
     SP[-1].data.i = tmpResult; SP[-1].type = CN1_TYPE_INT; }
-    if(POP_INT() != 0) /* IFNE */ goto label_L575360353;
+    if(POP_INT() != 0) /* IFNE */ goto label_L97901029;
     __CN1_DEBUG_INFO(95);
     virtual_com_example_entity_Ducky_update__(threadStateData, get_field_com_example_statemanager_PlayingScene_duck(__cn1ThisObject)); 
     __CN1_DEBUG_INFO(96);
     virtual_com_example_entity_EnemyManager_update__(threadStateData, get_field_com_example_statemanager_PlayingScene_enemyManager(__cn1ThisObject)); 
     __CN1_DEBUG_INFO(97);
     virtual_com_example_statemanager_PlayingScene_constantScreenMove__(threadStateData, __cn1ThisObject); 
-    __CN1_DEBUG_INFO(98);
-    goto label_L1850874910;
+    goto label_L575360353;
 
-label_L575360353:
+label_L97901029:
+    __CN1_DEBUG_INFO(98);
     { JAVA_OBJECT tmpResult = virtual_com_example_handler_KeyHandler_getPause___R_java_lang_Boolean(threadStateData, get_static_com_example_entity_Ducky_kh(threadStateData));
     PUSH_OBJ(tmpResult); }
     { JAVA_INT tmpResult = virtual_java_lang_Boolean_booleanValue___R_boolean(threadStateData, SP[-1].data.o);
     SP[-1].data.i = tmpResult; SP[-1].type = CN1_TYPE_INT; }
-    if(POP_INT() == 0) /* IFEQ */ goto label_L1850874910;
+    if(POP_INT() == 0) /* IFEQ */ goto label_L575360353;
     __CN1_DEBUG_INFO(99);
     { JAVA_OBJECT tmpResult = virtual_com_example_myapp_Game_getVolumeButton___R_com_example_ui_VolumeButton(threadStateData, get_static_com_example_myapp_Game_game(threadStateData));
     PUSH_OBJ(tmpResult); }
     virtual_com_example_ui_VolumeButton_update__(threadStateData, SP[-1].data.o);     SP -= 1;
 
-label_L1850874910:
+label_L575360353:
     __CN1_DEBUG_INFO(101);
     releaseForReturn(threadStateData, cn1LocalsBeginInThread); 
     return;
@@ -411,7 +389,7 @@ JAVA_VOID com_example_statemanager_PlayingScene_draw___com_codename1_ui_Graphics
     volatile JAVA_INT ilocals_4_ = 0; /* v4 */
     volatile JAVA_INT ilocals_5_ = 0; /* v5 */
     volatile JAVA_INT ilocals_6_ = 0; /* v6 */
-    DEFINE_INSTANCE_METHOD_STACK(6, 7, 0, 10241, 5493);
+    DEFINE_INSTANCE_METHOD_STACK(6, 7, 0, 10274, 5503);
     locals[0].data.o = __cn1ThisObject; locals[0].type = CN1_TYPE_OBJECT;     locals[1].data.o = __cn1Arg1;
     locals[1].type = CN1_TYPE_OBJECT;
     __CN1_DEBUG_INFO(104);
@@ -440,7 +418,9 @@ JAVA_VOID com_example_statemanager_PlayingScene_draw___com_codename1_ui_Graphics
     BC_ALOAD(1);
     PUSH_POINTER(__NEW_java_lang_StringBuilder(threadStateData)); /* NEW */
     BC_DUP(); /* DUP */
-    /* CustomInvoke */java_lang_StringBuilder___INIT_____java_lang_String(threadStateData, SP[-1].data.o, STRING_FROM_CONSTANT_POOL_OFFSET(10245));     SP -= 1;
+    java_lang_StringBuilder___INIT____(threadStateData, SP[-1].data.o);     SP -= 1;
+    /* CustomInvoke */{ JAVA_OBJECT tmpResult = virtual_java_lang_StringBuilder_append___java_lang_String_R_java_lang_StringBuilder(threadStateData, SP[-1].data.o, STRING_FROM_CONSTANT_POOL_OFFSET(10278));
+    SP[-1].data.o = tmpResult; SP[-1].type = CN1_TYPE_OBJECT; }
     /* CustomInvoke */{ JAVA_OBJECT tmpResult = virtual_java_lang_StringBuilder_append___int_R_java_lang_StringBuilder(threadStateData, SP[-1].data.o, ((JAVA_INT)(get_static_com_example_statemanager_PlayingScene_gameScore(threadStateData) * 5.0)));
     SP[-1].data.o = tmpResult; SP[-1].type = CN1_TYPE_OBJECT; }
     { JAVA_OBJECT tmpResult = virtual_java_lang_StringBuilder_toString___R_java_lang_String(threadStateData, SP[-1].data.o);
@@ -453,7 +433,7 @@ JAVA_VOID com_example_statemanager_PlayingScene_draw___com_codename1_ui_Graphics
     PUSH_OBJ(tmpResult); }
     { JAVA_INT tmpResult = virtual_java_lang_Boolean_booleanValue___R_boolean(threadStateData, SP[-1].data.o);
     SP[-1].data.i = tmpResult; SP[-1].type = CN1_TYPE_INT; }
-    if(POP_INT() == 0) /* IFEQ */ goto label_L97901029;
+    if(POP_INT() == 0) /* IFEQ */ goto label_L809383315;
     __CN1_DEBUG_INFO(119);
     /* CustomInvoke */virtual_com_example_ui_PauseOverlay_draw___com_codename1_ui_Graphics(threadStateData, get_static_com_example_statemanager_PlayingScene_pauseScreen(threadStateData), locals[1].data.o); 
     __CN1_DEBUG_INFO(120);
@@ -461,9 +441,9 @@ JAVA_VOID com_example_statemanager_PlayingScene_draw___com_codename1_ui_Graphics
     PUSH_OBJ(tmpResult); }
     /* CustomInvoke */virtual_com_example_ui_VolumeButton_draw___com_codename1_ui_Graphics(threadStateData, SP[-1].data.o, locals[1].data.o);     SP -= 1;
 
-label_L97901029:
+label_L809383315:
     __CN1_DEBUG_INFO(121);
-    if (virtual_java_lang_Boolean_booleanValue___R_boolean(threadStateData, get_static_com_example_statemanager_PlayingScene_unpaused(threadStateData))==0) /* IFEQ CustomJump */ goto label_L809383315;
+    if (virtual_java_lang_Boolean_booleanValue___R_boolean(threadStateData, get_static_com_example_statemanager_PlayingScene_unpaused(threadStateData))==0) /* IFEQ CustomJump */ goto label_L1324514662;
     __CN1_DEBUG_INFO(124);
     PUSH_INT(225);
     BC_ISTORE(3);
@@ -480,12 +460,14 @@ label_L97901029:
     __CN1_DEBUG_INFO(129);
     PUSH_INT(get_field_com_example_statemanager_PlayingScene_unpauseCounter(__cn1ThisObject));
     PUSH_INT(360);
-    SP-=2; if((*SP).data.i >= SP[1].data.i) /* IF_ICMPGE */ goto label_L809383315;
+    SP-=2; if((*SP).data.i >= SP[1].data.i) /* IF_ICMPGE */ goto label_L1324514662;
     __CN1_DEBUG_INFO(130);
     BC_ALOAD(1);
     PUSH_POINTER(__NEW_java_lang_StringBuilder(threadStateData)); /* NEW */
     BC_DUP(); /* DUP */
     java_lang_StringBuilder___INIT____(threadStateData, SP[-1].data.o);     SP -= 1;
+    /* CustomInvoke */{ JAVA_OBJECT tmpResult = virtual_java_lang_StringBuilder_append___java_lang_String_R_java_lang_StringBuilder(threadStateData, SP[-1].data.o, STRING_FROM_CONSTANT_POOL_OFFSET(289));
+    SP[-1].data.o = tmpResult; SP[-1].type = CN1_TYPE_OBJECT; }
     /* CustomInvoke */{ JAVA_OBJECT tmpResult = virtual_java_lang_StringBuilder_append___int_R_java_lang_StringBuilder(threadStateData, SP[-1].data.o, get_field_com_example_statemanager_PlayingScene_displayedCountdown(__cn1ThisObject));
     SP[-1].data.o = tmpResult; SP[-1].type = CN1_TYPE_OBJECT; }
     { JAVA_OBJECT tmpResult = virtual_java_lang_StringBuilder_toString___R_java_lang_String(threadStateData, SP[-1].data.o);
@@ -494,18 +476,37 @@ label_L97901029:
     PUSH_INT(50);
     virtual_com_codename1_ui_Graphics_drawString___java_lang_String_int_int(threadStateData, SP[-4].data.o, SP[-3].data.o, SP[-2].data.i, SP[-1].data.i);     SP-= 4;
 
-label_L809383315:
+label_L1324514662:
     __CN1_DEBUG_INFO(132);
     { JAVA_OBJECT tmpResult = virtual_com_example_handler_KeyHandler_getPause___R_java_lang_Boolean(threadStateData, get_static_com_example_entity_Ducky_kh(threadStateData));
     PUSH_OBJ(tmpResult); }
     { JAVA_INT tmpResult = virtual_java_lang_Boolean_booleanValue___R_boolean(threadStateData, SP[-1].data.o);
     SP[-1].data.i = tmpResult; SP[-1].type = CN1_TYPE_INT; }
-    if(POP_INT() != 0) /* IFNE */ goto label_L1324514662;
+    if(POP_INT() != 0) /* IFNE */ goto label_L908722588;
     __CN1_DEBUG_INFO(133);
     /* CustomInvoke */virtual_com_example_handler_KeyHandler_draw___com_codename1_ui_Graphics(threadStateData, get_static_com_example_entity_Ducky_kh(threadStateData), locals[1].data.o); 
 
-label_L1324514662:
+label_L908722588:
     __CN1_DEBUG_INFO(135);
+    releaseForReturn(threadStateData, cn1LocalsBeginInThread); 
+    return;
+}
+
+
+JAVA_VOID com_example_statemanager_PlayingScene___CLINIT____(CODENAME_ONE_THREAD_STATE) {
+    DEFINE_METHOD_STACK(2, 0, 0, 10274, 275);
+    __CN1_DEBUG_INFO(30);
+    PUSH_POINTER(__NEW_com_example_ui_PauseOverlay(threadStateData)); /* NEW */
+    BC_DUP(); /* DUP */
+    com_example_ui_PauseOverlay___INIT____(threadStateData, SP[-1].data.o);     SP -= 1;
+    set_static_com_example_statemanager_PlayingScene_pauseScreen(threadStateData, PEEK_OBJ(1));
+    SP--;
+    __CN1_DEBUG_INFO(31);
+    /* CustomInvoke */PUSH_OBJ(java_lang_Boolean_valueOf___boolean_R_java_lang_Boolean(threadStateData, 0 /* ICONST_0 */));
+    set_static_com_example_statemanager_PlayingScene_unpaused(threadStateData, PEEK_OBJ(1));
+    SP--;
+    __CN1_DEBUG_INFO(35);
+    set_static_com_example_statemanager_PlayingScene_gameScore(threadStateData, 0 /* DCONST_0 */);
     releaseForReturn(threadStateData, cn1LocalsBeginInThread); 
     return;
 }

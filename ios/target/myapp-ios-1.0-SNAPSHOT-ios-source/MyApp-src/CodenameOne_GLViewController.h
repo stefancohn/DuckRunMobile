@@ -155,7 +155,8 @@
 
 #define EAGLVIEW [[CodenameOne_GLViewController instance] eaglView]
 
-//ADD_INCLUDE
+#import <GoogleMobileAds/GoogleMobileAds.h>
+
 
 @interface CodenameOne_GLViewController : UIViewController<UIImagePickerControllerDelegate, MFMailComposeViewControllerDelegate, 
 #ifdef CN1_USE_STOREKIT
@@ -203,7 +204,9 @@ MFMessageComposeViewControllerDelegate, CLLocationManagerDelegate, AVAudioRecord
     BOOL keyboardIsShown;
     BOOL modifiedViewHeight;
 
-    //ADD_VARIABLES
+    @public
+    GADBannerView *googleBannerView;
+
 }
 
 #ifdef INCLUDE_MOPUB

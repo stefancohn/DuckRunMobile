@@ -12,7 +12,6 @@
 #include "java_lang_Boolean.h"
 #include "java_lang_Integer.h"
 #include "java_lang_NullPointerException.h"
-#include "java_lang_String.h"
 #include "java_lang_StringBuilder.h"
 #include "java_util_ArrayList.h"
 const struct clazz *base_interfaces_for_com_example_ui_DeathSceneOverlay[] = {};
@@ -118,7 +117,7 @@ com_example_ui_DeathSceneOverlay___INIT____(threadStateData, o);
 
 
 JAVA_VOID com_example_ui_DeathSceneOverlay___INIT____(CODENAME_ONE_THREAD_STATE, JAVA_OBJECT  __cn1ThisObject) {
-    DEFINE_INSTANCE_METHOD_STACK(5, 1, 0, 10327, 205);
+    DEFINE_INSTANCE_METHOD_STACK(5, 1, 0, 10360, 205);
     locals[0].data.o = __cn1ThisObject; locals[0].type = CN1_TYPE_OBJECT;     __CN1_DEBUG_INFO(32);
     java_lang_Object___INIT____(threadStateData, __cn1ThisObject); 
     __CN1_DEBUG_INFO(14);
@@ -162,30 +161,30 @@ JAVA_VOID com_example_ui_DeathSceneOverlay___INIT____(CODENAME_ONE_THREAD_STATE,
 JAVA_VOID com_example_ui_DeathSceneOverlay_loadButtons__(CODENAME_ONE_THREAD_STATE, JAVA_OBJECT  __cn1ThisObject) {
     volatile JAVA_INT ilocals_2_ = 0; /* v2 */
     volatile JAVA_INT ilocals_3_ = 0; /* v3 */
-    DEFINE_INSTANCE_METHOD_STACK(8, 4, 0, 10327, 10328);
+    DEFINE_INSTANCE_METHOD_STACK(8, 4, 0, 10360, 10361);
     locals[0].data.o = __cn1ThisObject; locals[0].type = CN1_TYPE_OBJECT;     __CN1_DEBUG_INFO(37);
-    /* VarOp.assignFrom */ locals[1].data.o = /* CustomInvoke */com_example_util_LoadSave_getSpriteAtlas___java_lang_String_R_com_codename1_ui_Image(threadStateData, STRING_FROM_CONSTANT_POOL_OFFSET(10329));locals[1].type=CN1_TYPE_OBJECT;    __CN1_DEBUG_INFO(38);
+    /* VarOp.assignFrom */ locals[1].data.o = /* CustomInvoke */com_example_util_LoadSave_getSpriteAtlas___java_lang_String_R_com_codename1_ui_Image(threadStateData, STRING_FROM_CONSTANT_POOL_OFFSET(10362));locals[1].type=CN1_TYPE_OBJECT;    __CN1_DEBUG_INFO(38);
     /* VarOp.assignFrom */     ilocals_2_ = 0 /* ICONST_0 */; 
-    goto label_L1659309731;
 
 label_L1947941827:
+    if (ilocals_2_>=CN1_ARRAY_LENGTH(get_field_com_example_ui_DeathSceneOverlay_deathSceneButtons(__cn1ThisObject))) /* IF_ICMPGE CustomJump */ goto label_L1659309731;
     __CN1_DEBUG_INFO(39);
     /* VarOp.assignFrom */     ilocals_3_ = 0 /* ICONST_0 */; 
-    goto label_L1056862342;
 
 label_L1734184086:
+    if (ilocals_3_>=CN1_ARRAY_LENGTH(CN1_ARRAY_ELEMENT_OBJECT(get_field_com_example_ui_DeathSceneOverlay_deathSceneButtons(__cn1ThisObject), ilocals_2_))) /* IF_ICMPGE CustomJump */ goto label_L1056862342;
     __CN1_DEBUG_INFO(40);
     CN1_SET_ARRAY_ELEMENT_OBJECT(CN1_ARRAY_ELEMENT_OBJECT(get_field_com_example_ui_DeathSceneOverlay_deathSceneButtons(__cn1ThisObject), ilocals_2_), ilocals_3_, /* CustomInvoke */virtual_com_codename1_ui_Image_subImage___int_int_int_int_boolean_R_com_codename1_ui_Image(threadStateData, locals[1].data.o, (ilocals_3_ * 200), (ilocals_2_ * 50), 200, 50, 0 /* ICONST_0 */));
     __CN1_DEBUG_INFO(39);
     BC_IINC(3, 1);
+    goto label_L1734184086;
 
 label_L1056862342:
-    if (ilocals_3_<CN1_ARRAY_LENGTH(CN1_ARRAY_ELEMENT_OBJECT(get_field_com_example_ui_DeathSceneOverlay_deathSceneButtons(__cn1ThisObject), ilocals_2_))) /* IF_IMPLT CustomJump */ goto label_L1734184086;
     __CN1_DEBUG_INFO(38);
     BC_IINC(2, 1);
+    goto label_L1947941827;
 
 label_L1659309731:
-    if (ilocals_2_<CN1_ARRAY_LENGTH(get_field_com_example_ui_DeathSceneOverlay_deathSceneButtons(__cn1ThisObject))) /* IF_IMPLT CustomJump */ goto label_L1947941827;
     __CN1_DEBUG_INFO(43);
     releaseForReturn(threadStateData, cn1LocalsBeginInThread); 
     return;
@@ -195,7 +194,7 @@ label_L1659309731:
 JAVA_VOID com_example_ui_DeathSceneOverlay_touchMovement___int_int(CODENAME_ONE_THREAD_STATE, JAVA_OBJECT  __cn1ThisObject, JAVA_INT __cn1Arg1, JAVA_INT __cn1Arg2) {
     volatile JAVA_INT ilocals_1_ = 0; /* x */
     volatile JAVA_INT ilocals_2_ = 0; /* y */
-    DEFINE_INSTANCE_METHOD_STACK(6, 3, 0, 10327, 10233);
+    DEFINE_INSTANCE_METHOD_STACK(6, 3, 0, 10360, 10266);
     locals[0].data.o = __cn1ThisObject; locals[0].type = CN1_TYPE_OBJECT;     ilocals_1_ = __cn1Arg1;
     ilocals_2_ = __cn1Arg2;
     __CN1_DEBUG_INFO(47);
@@ -221,7 +220,7 @@ label_L785625589:
 JAVA_VOID com_example_ui_DeathSceneOverlay_releaseMovement___int_int(CODENAME_ONE_THREAD_STATE, JAVA_OBJECT  __cn1ThisObject, JAVA_INT __cn1Arg1, JAVA_INT __cn1Arg2) {
     volatile JAVA_INT ilocals_1_ = 0; /* x */
     volatile JAVA_INT ilocals_2_ = 0; /* y */
-    DEFINE_INSTANCE_METHOD_STACK(2, 3, 0, 10327, 10330);
+    DEFINE_INSTANCE_METHOD_STACK(2, 3, 0, 10360, 10363);
     locals[0].data.o = __cn1ThisObject; locals[0].type = CN1_TYPE_OBJECT;     ilocals_1_ = __cn1Arg1;
     ilocals_2_ = __cn1Arg2;
     __CN1_DEBUG_INFO(53);
@@ -256,7 +255,7 @@ JAVA_VOID com_example_ui_DeathSceneOverlay_update__(CODENAME_ONE_THREAD_STATE, J
 
 JAVA_VOID com_example_ui_DeathSceneOverlay_draw___com_codename1_ui_Graphics(CODENAME_ONE_THREAD_STATE, JAVA_OBJECT  __cn1ThisObject, JAVA_OBJECT __cn1Arg1) {
     volatile JAVA_INT ilocals_3_ = 0; /* v3 */
-    DEFINE_INSTANCE_METHOD_STACK(6, 4, 0, 10327, 5493);
+    DEFINE_INSTANCE_METHOD_STACK(6, 4, 0, 10360, 5503);
     locals[0].data.o = __cn1ThisObject; locals[0].type = CN1_TYPE_OBJECT;     locals[1].data.o = __cn1Arg1;
     locals[1].type = CN1_TYPE_OBJECT;
     __CN1_DEBUG_INFO(66);
@@ -265,19 +264,20 @@ JAVA_VOID com_example_ui_DeathSceneOverlay_draw___com_codename1_ui_Graphics(CODE
     /* VarOp.assignFrom */ locals[2].data.o = /* CustomInvoke */com_codename1_ui_Font_createSystemFont___int_int_int_R_com_codename1_ui_Font(threadStateData, 32, 0 /* ICONST_0 */, 16);locals[2].type=CN1_TYPE_OBJECT;    __CN1_DEBUG_INFO(71);
     /* CustomInvoke */virtual_com_codename1_ui_Graphics_setFont___com_codename1_ui_Font(threadStateData, locals[1].data.o, locals[2].data.o); 
     __CN1_DEBUG_INFO(72);
-    /* CustomInvoke */virtual_com_codename1_ui_Graphics_drawString___java_lang_String_int_int(threadStateData, locals[1].data.o, STRING_FROM_CONSTANT_POOL_OFFSET(10331), get_field_com_example_ui_DeathSceneOverlay_hsX(__cn1ThisObject), get_field_com_example_ui_DeathSceneOverlay_hsY(__cn1ThisObject)); 
+    /* CustomInvoke */virtual_com_codename1_ui_Graphics_drawString___java_lang_String_int_int(threadStateData, locals[1].data.o, STRING_FROM_CONSTANT_POOL_OFFSET(10364), get_field_com_example_ui_DeathSceneOverlay_hsX(__cn1ThisObject), get_field_com_example_ui_DeathSceneOverlay_hsY(__cn1ThisObject)); 
     __CN1_DEBUG_INFO(73);
     /* VarOp.assignFrom */     ilocals_3_ = 0 /* ICONST_0 */; 
-    goto label_L1758893871;
 
 label_L1170111701:
+    if (ilocals_3_>=virtual_java_util_ArrayList_size___R_int(threadStateData, get_static_com_example_util_SaveScores_highscores(threadStateData))) /* IF_ICMPGE CustomJump */ goto label_L1758893871;
     __CN1_DEBUG_INFO(74);
     BC_ALOAD(1);
     PUSH_POINTER(__NEW_java_lang_StringBuilder(threadStateData)); /* NEW */
     BC_DUP(); /* DUP */
-    /* CustomInvoke */PUSH_OBJ(java_lang_String_valueOf___int_R_java_lang_String(threadStateData, (ilocals_3_ + 1 /* ICONST_1 */)));
-    java_lang_StringBuilder___INIT_____java_lang_String(threadStateData, SP[-2].data.o, SP[-1].data.o);     SP-= 2;
-    /* CustomInvoke */{ JAVA_OBJECT tmpResult = virtual_java_lang_StringBuilder_append___java_lang_String_R_java_lang_StringBuilder(threadStateData, SP[-1].data.o, STRING_FROM_CONSTANT_POOL_OFFSET(6511));
+    java_lang_StringBuilder___INIT____(threadStateData, SP[-1].data.o);     SP -= 1;
+    /* CustomInvoke */{ JAVA_OBJECT tmpResult = virtual_java_lang_StringBuilder_append___int_R_java_lang_StringBuilder(threadStateData, SP[-1].data.o, (ilocals_3_ + 1 /* ICONST_1 */));
+    SP[-1].data.o = tmpResult; SP[-1].type = CN1_TYPE_OBJECT; }
+    /* CustomInvoke */{ JAVA_OBJECT tmpResult = virtual_java_lang_StringBuilder_append___java_lang_String_R_java_lang_StringBuilder(threadStateData, SP[-1].data.o, STRING_FROM_CONSTANT_POOL_OFFSET(6521));
     SP[-1].data.o = tmpResult; SP[-1].type = CN1_TYPE_OBJECT; }
     /* CustomInvoke */{ JAVA_OBJECT tmpResult = virtual_java_util_ArrayList_get___int_R_java_lang_Object(threadStateData, get_static_com_example_util_SaveScores_highscores(threadStateData), ilocals_3_);
     PUSH_OBJ(tmpResult); }
@@ -299,9 +299,9 @@ label_L1170111701:
     virtual_com_codename1_ui_Graphics_drawString___java_lang_String_int_int(threadStateData, SP[-4].data.o, SP[-3].data.o, SP[-2].data.i, SP[-1].data.i);     SP-= 4;
     __CN1_DEBUG_INFO(73);
     BC_IINC(3, 1);
+    goto label_L1170111701;
 
 label_L1758893871:
-    if (ilocals_3_<virtual_java_util_ArrayList_size___R_int(threadStateData, get_static_com_example_util_SaveScores_highscores(threadStateData))) /* IF_IMPLT CustomJump */ goto label_L1170111701;
     __CN1_DEBUG_INFO(76);
     releaseForReturn(threadStateData, cn1LocalsBeginInThread); 
     return;

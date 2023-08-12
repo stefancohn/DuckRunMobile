@@ -62,7 +62,7 @@ JAVA_OBJECT __NEW_java_util_AbstractList_FullListIterator(CODENAME_ONE_THREAD_ST
 
 
 JAVA_VOID java_util_AbstractList_FullListIterator___INIT_____java_util_AbstractList_int(CODENAME_ONE_THREAD_STATE, JAVA_OBJECT  __cn1ThisObject, JAVA_OBJECT __cn1Arg1, JAVA_INT __cn1Arg2) {
-    DEFINE_INSTANCE_METHOD_STACK(3, 3, 0, 1262, 205);
+    DEFINE_INSTANCE_METHOD_STACK(3, 3, 0, 637, 205);
     locals[0].data.o = __cn1ThisObject; locals[0].type = CN1_TYPE_OBJECT;     locals[1].data.o = __cn1Arg1;
     locals[1].type = CN1_TYPE_OBJECT;
     JAVA_INT ilocals_2_ = __cn1Arg2;
@@ -85,7 +85,7 @@ label_L1209702763:
 
 
 JAVA_VOID java_util_AbstractList_FullListIterator_add___java_lang_Object(CODENAME_ONE_THREAD_STATE, JAVA_OBJECT  __cn1ThisObject, JAVA_OBJECT __cn1Arg1) {
-    DEFINE_INSTANCE_METHOD_STACK(3, 3, 0, 1262, 1230);
+    DEFINE_INSTANCE_METHOD_STACK(3, 3, 0, 637, 605);
     locals[0].data.o = __cn1ThisObject; locals[0].type = CN1_TYPE_OBJECT;     locals[1].data.o = __cn1Arg1;
     locals[1].type = CN1_TYPE_OBJECT;
     int restoreToL2128029086cn1_class_id_java_lang_IndexOutOfBoundsException1;
@@ -112,7 +112,7 @@ label_L2128029086:
     set_field_java_util_AbstractList_FullListIterator_expectedModCount(threadStateData, get_field_java_util_AbstractList_modCount(get_field_java_util_AbstractList_FullListIterator_this_0(__cn1ThisObject)), __cn1ThisObject);
     set_field_java_util_AbstractList_FullListIterator_lastPosition(threadStateData, -1 /* ICONST_M1 */, __cn1ThisObject);
 
-label_L1887664332:
+label_L187813227:
 END_TRY(1);    JUMP_TO(label_L686466458, 0);
 
 label_L1028780142:
@@ -129,7 +129,7 @@ label_L686466458:
 
 
 JAVA_BOOLEAN java_util_AbstractList_FullListIterator_hasPrevious___R_boolean(CODENAME_ONE_THREAD_STATE, JAVA_OBJECT  __cn1ThisObject) {
-    DEFINE_INSTANCE_METHOD_STACK(2, 1, 0, 1262, 1257);
+    DEFINE_INSTANCE_METHOD_STACK(2, 1, 0, 637, 632);
     locals[0].data.o = __cn1ThisObject; locals[0].type = CN1_TYPE_OBJECT;     if (get_field_java_util_AbstractList_FullListIterator_numLeft(__cn1ThisObject)>=virtual_java_util_AbstractList_size___R_int(threadStateData, get_field_java_util_AbstractList_FullListIterator_this_0(__cn1ThisObject))) /* IF_ICMPGE CustomJump */ goto label_L875016237;
     PUSH_INT(1); /* ICONST_1 */
     goto label_L105374791;
@@ -143,7 +143,7 @@ label_L105374791:
 
 
 JAVA_INT java_util_AbstractList_FullListIterator_nextIndex___R_int(CODENAME_ONE_THREAD_STATE, JAVA_OBJECT  __cn1ThisObject) {
-    DEFINE_INSTANCE_METHOD_STACK(2, 1, 0, 1262, 1258);
+    DEFINE_INSTANCE_METHOD_STACK(2, 1, 0, 637, 633);
     locals[0].data.o = __cn1ThisObject; locals[0].type = CN1_TYPE_OBJECT;     { JAVA_INT tmpResult = virtual_java_util_AbstractList_size___R_int(threadStateData, get_field_java_util_AbstractList_FullListIterator_this_0(__cn1ThisObject));
     PUSH_INT(tmpResult); }
     PUSH_INT(get_field_java_util_AbstractList_FullListIterator_numLeft(__cn1ThisObject));
@@ -154,7 +154,7 @@ JAVA_INT java_util_AbstractList_FullListIterator_nextIndex___R_int(CODENAME_ONE_
 
 JAVA_OBJECT java_util_AbstractList_FullListIterator_previous___R_java_lang_Object(CODENAME_ONE_THREAD_STATE, JAVA_OBJECT  __cn1ThisObject) {
     volatile JAVA_INT ilocals_1_ = 0; /* v1 */
-    DEFINE_INSTANCE_METHOD_STACK(3, 3, 0, 1262, 1259);
+    DEFINE_INSTANCE_METHOD_STACK(3, 3, 0, 637, 634);
     locals[0].data.o = __cn1ThisObject; locals[0].type = CN1_TYPE_OBJECT;     int restoreToL1010856212cn1_class_id_java_lang_IndexOutOfBoundsException1;
     int tryBlockOffsetL1010856212cn1_class_id_java_lang_IndexOutOfBoundsException1;
     DEFINE_CATCH_BLOCK(catch_L1010856212cn1_class_id_java_lang_IndexOutOfBoundsException1, label_L1107024580, restoreToL1010856212cn1_class_id_java_lang_IndexOutOfBoundsException1);
@@ -180,7 +180,7 @@ label_L1010856212:
     set_field_java_util_AbstractList_FullListIterator_lastPosition(threadStateData, ilocals_1_, __cn1ThisObject);
     BC_ALOAD(2);
 
-label_L401290746:
+label_L433609662:
 END_TRY(1);    releaseForReturnInException(threadStateData, cn1LocalsBeginInThread, methodBlockOffset); 
     return POP_OBJ();
 
@@ -195,7 +195,7 @@ label_L1107024580:
 
 
 JAVA_INT java_util_AbstractList_FullListIterator_previousIndex___R_int(CODENAME_ONE_THREAD_STATE, JAVA_OBJECT  __cn1ThisObject) {
-    DEFINE_INSTANCE_METHOD_STACK(2, 1, 0, 1262, 1260);
+    DEFINE_INSTANCE_METHOD_STACK(2, 1, 0, 637, 635);
     locals[0].data.o = __cn1ThisObject; locals[0].type = CN1_TYPE_OBJECT;     { JAVA_INT tmpResult = virtual_java_util_AbstractList_size___R_int(threadStateData, get_field_java_util_AbstractList_FullListIterator_this_0(__cn1ThisObject));
     PUSH_INT(tmpResult); }
     PUSH_INT(get_field_java_util_AbstractList_FullListIterator_numLeft(__cn1ThisObject));
@@ -207,7 +207,7 @@ JAVA_INT java_util_AbstractList_FullListIterator_previousIndex___R_int(CODENAME_
 
 
 JAVA_VOID java_util_AbstractList_FullListIterator_set___java_lang_Object(CODENAME_ONE_THREAD_STATE, JAVA_OBJECT  __cn1ThisObject, JAVA_OBJECT __cn1Arg1) {
-    DEFINE_INSTANCE_METHOD_STACK(3, 3, 0, 1262, 1226);
+    DEFINE_INSTANCE_METHOD_STACK(3, 3, 0, 637, 601);
     locals[0].data.o = __cn1ThisObject; locals[0].type = CN1_TYPE_OBJECT;     locals[1].data.o = __cn1Arg1;
     locals[1].type = CN1_TYPE_OBJECT;
     int restoreToL204715855cn1_class_id_java_lang_IndexOutOfBoundsException1;
@@ -226,7 +226,7 @@ label_L204715855:
 
     /* CustomInvoke */virtual_java_util_AbstractList_set___int_java_lang_Object_R_java_lang_Object(threadStateData, get_field_java_util_AbstractList_FullListIterator_this_0(__cn1ThisObject), get_field_java_util_AbstractList_FullListIterator_lastPosition(__cn1ThisObject), locals[1].data.o); 
 
-label_L493428047:
+label_L2087686610:
 END_TRY(1);    JUMP_TO(label_L318857719, 0);
 
 label_L904861801:

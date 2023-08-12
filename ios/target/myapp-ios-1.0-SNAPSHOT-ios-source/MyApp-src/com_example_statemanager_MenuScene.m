@@ -44,21 +44,8 @@ com_example_statemanager_MenuScene___INIT____(threadStateData, o);
 }
 
 
-JAVA_VOID com_example_statemanager_MenuScene___CLINIT____(CODENAME_ONE_THREAD_STATE) {
-    DEFINE_METHOD_STACK(2, 0, 0, 10332, 863);
-    __CN1_DEBUG_INFO(7);
-    PUSH_POINTER(__NEW_com_example_ui_MenuSceneOverlay(threadStateData)); /* NEW */
-    BC_DUP(); /* DUP */
-    com_example_ui_MenuSceneOverlay___INIT____(threadStateData, SP[-1].data.o);     SP -= 1;
-    set_static_com_example_statemanager_MenuScene_menuSceneOverlay(threadStateData, PEEK_OBJ(1));
-    SP--;
-    releaseForReturn(threadStateData, cn1LocalsBeginInThread); 
-    return;
-}
-
-
 JAVA_VOID com_example_statemanager_MenuScene___INIT____(CODENAME_ONE_THREAD_STATE, JAVA_OBJECT  __cn1ThisObject) {
-    DEFINE_INSTANCE_METHOD_STACK(1, 1, 0, 10332, 205);
+    DEFINE_INSTANCE_METHOD_STACK(1, 1, 0, 10365, 205);
     locals[0].data.o = __cn1ThisObject; locals[0].type = CN1_TYPE_OBJECT;     __CN1_DEBUG_INFO(9);
     com_example_statemanager_Scene___INIT____(threadStateData, __cn1ThisObject); 
     __CN1_DEBUG_INFO(10);
@@ -68,7 +55,7 @@ JAVA_VOID com_example_statemanager_MenuScene___INIT____(CODENAME_ONE_THREAD_STAT
 
 
 JAVA_VOID com_example_statemanager_MenuScene_update__(CODENAME_ONE_THREAD_STATE, JAVA_OBJECT  __cn1ThisObject) {
-    DEFINE_INSTANCE_METHOD_STACK(1, 1, 0, 10332, 2519);
+    DEFINE_INSTANCE_METHOD_STACK(1, 1, 0, 10365, 2530);
     locals[0].data.o = __cn1ThisObject; locals[0].type = CN1_TYPE_OBJECT;     __CN1_DEBUG_INFO(14);
     { JAVA_OBJECT tmpResult = virtual_com_example_myapp_Game_getVolumeButton___R_com_example_ui_VolumeButton(threadStateData, get_static_com_example_myapp_Game_game(threadStateData));
     PUSH_OBJ(tmpResult); }
@@ -80,12 +67,25 @@ JAVA_VOID com_example_statemanager_MenuScene_update__(CODENAME_ONE_THREAD_STATE,
 
 
 JAVA_VOID com_example_statemanager_MenuScene_draw___com_codename1_ui_Graphics(CODENAME_ONE_THREAD_STATE, JAVA_OBJECT  __cn1ThisObject, JAVA_OBJECT __cn1Arg1) {
-    DEFINE_INSTANCE_METHOD_STACK(2, 2, 0, 10332, 5493);
+    DEFINE_INSTANCE_METHOD_STACK(2, 2, 0, 10365, 5503);
     locals[0].data.o = __cn1ThisObject; locals[0].type = CN1_TYPE_OBJECT;     locals[1].data.o = __cn1Arg1;
     locals[1].type = CN1_TYPE_OBJECT;
     __CN1_DEBUG_INFO(18);
     /* CustomInvoke */virtual_com_example_ui_MenuSceneOverlay_draw___com_codename1_ui_Graphics(threadStateData, get_static_com_example_statemanager_MenuScene_menuSceneOverlay(threadStateData), locals[1].data.o); 
     __CN1_DEBUG_INFO(20);
+    releaseForReturn(threadStateData, cn1LocalsBeginInThread); 
+    return;
+}
+
+
+JAVA_VOID com_example_statemanager_MenuScene___CLINIT____(CODENAME_ONE_THREAD_STATE) {
+    DEFINE_METHOD_STACK(2, 0, 0, 10365, 275);
+    __CN1_DEBUG_INFO(7);
+    PUSH_POINTER(__NEW_com_example_ui_MenuSceneOverlay(threadStateData)); /* NEW */
+    BC_DUP(); /* DUP */
+    com_example_ui_MenuSceneOverlay___INIT____(threadStateData, SP[-1].data.o);     SP -= 1;
+    set_static_com_example_statemanager_MenuScene_menuSceneOverlay(threadStateData, PEEK_OBJ(1));
+    SP--;
     releaseForReturn(threadStateData, cn1LocalsBeginInThread); 
     return;
 }

@@ -256,7 +256,7 @@ void __GC_MARK_java_util_Calendar(CODENAME_ONE_THREAD_STATE, JAVA_OBJECT objToMa
 
 
 JAVA_VOID java_util_Calendar___INIT____(CODENAME_ONE_THREAD_STATE, JAVA_OBJECT  __cn1ThisObject) {
-    DEFINE_INSTANCE_METHOD_STACK(4, 1, 0, 6644, 205);
+    DEFINE_INSTANCE_METHOD_STACK(4, 1, 0, 6654, 205);
     locals[0].data.o = __cn1ThisObject; locals[0].type = CN1_TYPE_OBJECT;     java_lang_Object___INIT____(threadStateData, __cn1ThisObject); 
     set_field_java_util_Calendar_minimalDaysInFirstWeek(threadStateData, 5 /* ICONST_5 */, __cn1ThisObject);
     BC_ALOAD(0);
@@ -306,7 +306,7 @@ JAVA_VOID java_util_Calendar_computeTime__(CODENAME_ONE_THREAD_STATE, JAVA_OBJEC
 
 
 JAVA_BOOLEAN java_util_Calendar_equals___java_lang_Object_R_boolean(CODENAME_ONE_THREAD_STATE, JAVA_OBJECT  __cn1ThisObject, JAVA_OBJECT __cn1Arg1) {
-    DEFINE_INSTANCE_METHOD_STACK(4, 3, 0, 6644, 880);
+    DEFINE_INSTANCE_METHOD_STACK(4, 3, 0, 6654, 244);
     locals[0].data.o = __cn1ThisObject; locals[0].type = CN1_TYPE_OBJECT;     locals[1].data.o = __cn1Arg1;
     locals[1].type = CN1_TYPE_OBJECT;
     if (__cn1ThisObject!=locals[1].data.o) /* IF_ACMPNE CustomJump */ goto label_L7829163;
@@ -346,7 +346,7 @@ label_L1370283822:
 
 
 JAVA_INT java_util_Calendar_get___int_R_int(CODENAME_ONE_THREAD_STATE, JAVA_OBJECT  __cn1ThisObject, JAVA_INT __cn1Arg1) {
-    DEFINE_INSTANCE_METHOD_STACK(2, 2, 0, 6644, 614);
+    DEFINE_INSTANCE_METHOD_STACK(2, 2, 0, 6654, 600);
     locals[0].data.o = __cn1ThisObject; locals[0].type = CN1_TYPE_OBJECT;     JAVA_INT ilocals_1_ = __cn1Arg1;
     virtual_java_util_Calendar_complete__(threadStateData, __cn1ThisObject); 
     PUSH_POINTER(get_field_java_util_Calendar_fields(__cn1ThisObject));
@@ -361,7 +361,7 @@ JAVA_INT java_util_Calendar_get___int_R_int(CODENAME_ONE_THREAD_STATE, JAVA_OBJE
 
 
 JAVA_VOID java_util_Calendar_complete__(CODENAME_ONE_THREAD_STATE, JAVA_OBJECT  __cn1ThisObject) {
-    DEFINE_INSTANCE_METHOD_STACK(2, 1, 0, 6644, 6649);
+    DEFINE_INSTANCE_METHOD_STACK(2, 1, 0, 6654, 6659);
     locals[0].data.o = __cn1ThisObject; locals[0].type = CN1_TYPE_OBJECT;     if (get_field_java_util_Calendar_isTimeSet(__cn1ThisObject)!=0) /* IFNE CustomJump */ goto label_L1783966110;
     virtual_java_util_Calendar_computeTime__(threadStateData, __cn1ThisObject); 
     set_field_java_util_Calendar_isTimeSet(threadStateData, 1 /* ICONST_1 */, __cn1ThisObject);
@@ -379,7 +379,7 @@ label_L790487766:
 
 JAVA_OBJECT java_util_Calendar_getInstance___R_java_util_Calendar(CODENAME_ONE_THREAD_STATE) {
     __STATIC_INITIALIZER_java_util_Calendar(threadStateData);
-    DEFINE_METHOD_STACK(2, 0, 0, 6644, 1322);
+    DEFINE_METHOD_STACK(2, 0, 0, 6654, 1333);
     PUSH_POINTER(__NEW_java_util_GregorianCalendar(threadStateData)); /* NEW */
     BC_DUP(); /* DUP */
     java_util_GregorianCalendar___INIT____(threadStateData, SP[-1].data.o);     SP -= 1;
@@ -390,7 +390,7 @@ JAVA_OBJECT java_util_Calendar_getInstance___R_java_util_Calendar(CODENAME_ONE_T
 
 JAVA_OBJECT java_util_Calendar_getInstance___java_util_TimeZone_R_java_util_Calendar(CODENAME_ONE_THREAD_STATE, JAVA_OBJECT __cn1Arg1) {
     __STATIC_INITIALIZER_java_util_Calendar(threadStateData);
-    DEFINE_METHOD_STACK(3, 1, 0, 6644, 1322);
+    DEFINE_METHOD_STACK(3, 1, 0, 6654, 1333);
     locals[0].data.o = __cn1Arg1;
     locals[0].type = CN1_TYPE_OBJECT;
     PUSH_POINTER(__NEW_java_util_GregorianCalendar(threadStateData)); /* NEW */
@@ -402,7 +402,7 @@ JAVA_OBJECT java_util_Calendar_getInstance___java_util_TimeZone_R_java_util_Cale
 
 
 JAVA_OBJECT java_util_Calendar_getTime___R_java_util_Date(CODENAME_ONE_THREAD_STATE, JAVA_OBJECT  __cn1ThisObject) {
-    DEFINE_INSTANCE_METHOD_STACK(4, 1, 0, 6644, 3150);
+    DEFINE_INSTANCE_METHOD_STACK(4, 1, 0, 6654, 3160);
     locals[0].data.o = __cn1ThisObject; locals[0].type = CN1_TYPE_OBJECT;     PUSH_POINTER(__NEW_java_util_Date(threadStateData)); /* NEW */
     BC_DUP(); /* DUP */
     /* CustomInvoke */java_util_Date___INIT_____long(threadStateData, SP[-1].data.o, virtual_java_util_Calendar_getTimeInMillis___R_long(threadStateData, __cn1ThisObject));     SP -= 1;
@@ -412,7 +412,7 @@ JAVA_OBJECT java_util_Calendar_getTime___R_java_util_Date(CODENAME_ONE_THREAD_ST
 
 
 JAVA_LONG java_util_Calendar_getTimeInMillis___R_long(CODENAME_ONE_THREAD_STATE, JAVA_OBJECT  __cn1ThisObject) {
-    DEFINE_INSTANCE_METHOD_STACK(2, 1, 0, 6644, 6650);
+    DEFINE_INSTANCE_METHOD_STACK(2, 1, 0, 6654, 6660);
     locals[0].data.o = __cn1ThisObject; locals[0].type = CN1_TYPE_OBJECT;     if (get_field_java_util_Calendar_isTimeSet(__cn1ThisObject)!=0) /* IFNE CustomJump */ goto label_L1320388319;
     virtual_java_util_Calendar_computeTime__(threadStateData, __cn1ThisObject); 
     set_field_java_util_Calendar_isTimeSet(threadStateData, 1 /* ICONST_1 */, __cn1ThisObject);
@@ -425,7 +425,7 @@ label_L1320388319:
 
 
 JAVA_OBJECT java_util_Calendar_getTimeZone___R_java_util_TimeZone(CODENAME_ONE_THREAD_STATE, JAVA_OBJECT  __cn1ThisObject) {
-    DEFINE_INSTANCE_METHOD_STACK(1, 1, 0, 6644, 6651);
+    DEFINE_INSTANCE_METHOD_STACK(1, 1, 0, 6654, 6661);
     locals[0].data.o = __cn1ThisObject; locals[0].type = CN1_TYPE_OBJECT;     PUSH_POINTER(get_field_java_util_Calendar_zone(__cn1ThisObject));
     releaseForReturn(threadStateData, cn1LocalsBeginInThread); 
     return POP_OBJ();
@@ -433,7 +433,7 @@ JAVA_OBJECT java_util_Calendar_getTimeZone___R_java_util_TimeZone(CODENAME_ONE_T
 
 
 JAVA_VOID java_util_Calendar_set___int_int(CODENAME_ONE_THREAD_STATE, JAVA_OBJECT  __cn1ThisObject, JAVA_INT __cn1Arg1, JAVA_INT __cn1Arg2) {
-    DEFINE_INSTANCE_METHOD_STACK(4, 3, 0, 6644, 1226);
+    DEFINE_INSTANCE_METHOD_STACK(4, 3, 0, 6654, 601);
     locals[0].data.o = __cn1ThisObject; locals[0].type = CN1_TYPE_OBJECT;     JAVA_INT ilocals_1_ = __cn1Arg1;
     JAVA_INT ilocals_2_ = __cn1Arg2;
     CN1_SET_ARRAY_ELEMENT_INT(get_field_java_util_Calendar_fields(__cn1ThisObject), ilocals_1_, ilocals_2_);
@@ -484,7 +484,7 @@ label_L680988889:
 
 
 JAVA_VOID java_util_Calendar_add___int_int(CODENAME_ONE_THREAD_STATE, JAVA_OBJECT  __cn1ThisObject, JAVA_INT __cn1Arg1, JAVA_INT __cn1Arg2) {
-    DEFINE_INSTANCE_METHOD_STACK(3, 3, 0, 6644, 1230);
+    DEFINE_INSTANCE_METHOD_STACK(3, 3, 0, 6654, 605);
     locals[0].data.o = __cn1ThisObject; locals[0].type = CN1_TYPE_OBJECT;     JAVA_INT ilocals_1_ = __cn1Arg1;
     JAVA_INT ilocals_2_ = __cn1Arg2;
     /* CustomInvoke */virtual_java_util_Calendar_addImpl___int_int(threadStateData, __cn1ThisObject, ilocals_1_, ilocals_2_); 
@@ -499,7 +499,7 @@ JAVA_VOID java_util_Calendar_addImpl___int_int(CODENAME_ONE_THREAD_STATE, JAVA_O
 
 
 JAVA_VOID java_util_Calendar_setTime___java_util_Date(CODENAME_ONE_THREAD_STATE, JAVA_OBJECT  __cn1ThisObject, JAVA_OBJECT __cn1Arg1) {
-    DEFINE_INSTANCE_METHOD_STACK(3, 2, 0, 6644, 3151);
+    DEFINE_INSTANCE_METHOD_STACK(3, 2, 0, 6654, 3161);
     locals[0].data.o = __cn1ThisObject; locals[0].type = CN1_TYPE_OBJECT;     locals[1].data.o = __cn1Arg1;
     locals[1].type = CN1_TYPE_OBJECT;
     /* CustomInvoke */virtual_java_util_Calendar_setTimeInMillis___long(threadStateData, __cn1ThisObject, virtual_java_util_Date_getTime___R_long(threadStateData, locals[1].data.o)); 
@@ -509,7 +509,7 @@ JAVA_VOID java_util_Calendar_setTime___java_util_Date(CODENAME_ONE_THREAD_STATE,
 
 
 JAVA_VOID java_util_Calendar_setTimeInMillis___long(CODENAME_ONE_THREAD_STATE, JAVA_OBJECT  __cn1ThisObject, JAVA_LONG __cn1Arg1) {
-    DEFINE_INSTANCE_METHOD_STACK(4, 3, 0, 6644, 6653);
+    DEFINE_INSTANCE_METHOD_STACK(4, 3, 0, 6654, 6663);
     locals[0].data.o = __cn1ThisObject; locals[0].type = CN1_TYPE_OBJECT;     JAVA_LONG llocals_1_ = __cn1Arg1;
     if (get_field_java_util_Calendar_isTimeSet(__cn1ThisObject)==0) /* IFEQ CustomJump */ goto label_L1511574902;
     if (get_field_java_util_Calendar_areFieldsSet(__cn1ThisObject)==0) /* IFEQ CustomJump */ goto label_L1511574902;
@@ -528,7 +528,7 @@ label_L1034094674:
 
 
 JAVA_VOID java_util_Calendar_setTimeZone___java_util_TimeZone(CODENAME_ONE_THREAD_STATE, JAVA_OBJECT  __cn1ThisObject, JAVA_OBJECT __cn1Arg1) {
-    DEFINE_INSTANCE_METHOD_STACK(2, 2, 0, 6644, 6654);
+    DEFINE_INSTANCE_METHOD_STACK(2, 2, 0, 6654, 6664);
     locals[0].data.o = __cn1ThisObject; locals[0].type = CN1_TYPE_OBJECT;     locals[1].data.o = __cn1Arg1;
     locals[1].type = CN1_TYPE_OBJECT;
     set_field_java_util_Calendar_zone(threadStateData, locals[1].data.o, __cn1ThisObject);
@@ -539,14 +539,14 @@ JAVA_VOID java_util_Calendar_setTimeZone___java_util_TimeZone(CODENAME_ONE_THREA
 
 
 JAVA_INT java_util_Calendar_getFirstDayOfWeek___R_int(CODENAME_ONE_THREAD_STATE, JAVA_OBJECT  __cn1ThisObject) {
-    DEFINE_INSTANCE_METHOD_STACK(1, 1, 0, 6644, 6655);
+    DEFINE_INSTANCE_METHOD_STACK(1, 1, 0, 6654, 6665);
     locals[0].data.o = __cn1ThisObject; locals[0].type = CN1_TYPE_OBJECT;     PUSH_INT(1); /* ICONST_1 */
     releaseForReturn(threadStateData, cn1LocalsBeginInThread); return SP[-1].data.i;
 }
 
 
 JAVA_INT java_util_Calendar_getMinimalDaysInFirstWeek___R_int(CODENAME_ONE_THREAD_STATE, JAVA_OBJECT  __cn1ThisObject) {
-    DEFINE_INSTANCE_METHOD_STACK(1, 1, 0, 6644, 6656);
+    DEFINE_INSTANCE_METHOD_STACK(1, 1, 0, 6654, 6666);
     locals[0].data.o = __cn1ThisObject; locals[0].type = CN1_TYPE_OBJECT;     PUSH_INT(get_field_java_util_Calendar_minimalDaysInFirstWeek(__cn1ThisObject));
     releaseForReturn(threadStateData, cn1LocalsBeginInThread); return SP[-1].data.i;
 }
