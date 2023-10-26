@@ -63,7 +63,7 @@ JAVA_VOID com_example_entity_Entity___INIT_____int_int_int_int(CODENAME_ONE_THRE
     volatile JAVA_INT ilocals_2_ = 0; /* y */
     volatile JAVA_INT ilocals_3_ = 0; /* width */
     volatile JAVA_INT ilocals_4_ = 0; /* height */
-    DEFINE_INSTANCE_METHOD_STACK(2, 5, 0, 10258, 205);
+    DEFINE_INSTANCE_METHOD_STACK(2, 5, 0, 10259, 205);
     locals[0].data.o = __cn1ThisObject; locals[0].type = CN1_TYPE_OBJECT;     ilocals_1_ = __cn1Arg1;
     ilocals_2_ = __cn1Arg2;
     ilocals_3_ = __cn1Arg3;
@@ -89,7 +89,7 @@ JAVA_VOID com_example_entity_Entity_initializeHitbox___int_int_int_int(CODENAME_
     volatile JAVA_INT ilocals_2_ = 0; /* y */
     volatile JAVA_INT ilocals_3_ = 0; /* width */
     volatile JAVA_INT ilocals_4_ = 0; /* height */
-    DEFINE_INSTANCE_METHOD_STACK(7, 5, 0, 10258, 10259);
+    DEFINE_INSTANCE_METHOD_STACK(7, 5, 0, 10259, 10260);
     locals[0].data.o = __cn1ThisObject; locals[0].type = CN1_TYPE_OBJECT;     ilocals_1_ = __cn1Arg1;
     ilocals_2_ = __cn1Arg2;
     ilocals_3_ = __cn1Arg3;
@@ -124,7 +124,7 @@ JAVA_INT com_example_entity_Entity_getXPosHitbox___R_int(CODENAME_ONE_THREAD_STA
 
 JAVA_VOID com_example_entity_Entity_updateHitboxSide___int(CODENAME_ONE_THREAD_STATE, JAVA_OBJECT  __cn1ThisObject, JAVA_INT __cn1Arg1) {
     volatile JAVA_INT ilocals_1_ = 0; /* newWidth */
-    DEFINE_INSTANCE_METHOD_STACK(2, 2, 0, 10258, 10263);
+    DEFINE_INSTANCE_METHOD_STACK(2, 2, 0, 10259, 10264);
     locals[0].data.o = __cn1ThisObject; locals[0].type = CN1_TYPE_OBJECT;     ilocals_1_ = __cn1Arg1;
     __CN1_DEBUG_INFO(42);
     set_field_com_example_util_Rectangle_width(threadStateData, ilocals_1_, get_field_com_example_entity_Entity_hitbox(__cn1ThisObject));

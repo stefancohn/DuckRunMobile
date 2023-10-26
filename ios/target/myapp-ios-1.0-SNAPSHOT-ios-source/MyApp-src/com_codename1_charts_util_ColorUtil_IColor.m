@@ -218,18 +218,18 @@ JAVA_VOID com_codename1_charts_util_ColorUtil_IColor___INIT_____int(CODENAME_ONE
     __CN1_DEBUG_INFO(158);
     /* VarOp.assignFrom */ ilocals_2_=(BC_IUSHR_EXPR(ilocals_1_, 24) & 255);
     __CN1_DEBUG_INFO(159);
-    if (0 /* ICONST_0 */!=ilocals_2_) /* IF_ICMPNE CustomJump */ goto label_L1422989013;
+    if (0 /* ICONST_0 */!=ilocals_2_) /* IF_ICMPNE CustomJump */ goto label_L873631725;
     __CN1_DEBUG_INFO(160);
     BC_ALOAD(0);
     PUSH_INT(255);
     set_field_com_codename1_charts_util_ColorUtil_IColor_alpha(threadStateData, POP_INT(), POP_OBJ());
-    goto label_L1884805620;
+    goto label_L284145670;
 
-label_L1422989013:
+label_L873631725:
     __CN1_DEBUG_INFO(162);
     set_field_com_codename1_charts_util_ColorUtil_IColor_alpha(threadStateData, ilocals_2_, __cn1ThisObject);
 
-label_L1884805620:
+label_L284145670:
     __CN1_DEBUG_INFO(164);
     set_field_com_codename1_charts_util_ColorUtil_IColor_red(threadStateData, (BC_IUSHR_EXPR(ilocals_1_, 16) & 255), __cn1ThisObject);
     __CN1_DEBUG_INFO(165);
@@ -319,33 +319,33 @@ JAVA_BOOLEAN com_codename1_charts_util_ColorUtil_IColor_equals___java_lang_Objec
     locals[0].data.o = __cn1ThisObject; locals[0].type = CN1_TYPE_OBJECT;     locals[1].data.o = __cn1Arg1;
     locals[1].type = CN1_TYPE_OBJECT;
     __CN1_DEBUG_INFO(196);
-    if (__cn1ThisObject!=locals[1].data.o) /* IF_ACMPNE CustomJump */ goto label_L935631445;
+    if (__cn1ThisObject!=locals[1].data.o) /* IF_ACMPNE CustomJump */ goto label_L1308514012;
     __CN1_DEBUG_INFO(197);
     releaseForReturn(threadStateData, cn1LocalsBeginInThread); return 1 /* ICONST_1 */;
 
-label_L935631445:
+label_L1308514012:
     __CN1_DEBUG_INFO(198);
-    if (JAVA_NULL /* ACONST_NULL */!=locals[1].data.o) /* IF_ACMPNE CustomJump */ goto label_L333884294;
+    if (JAVA_NULL /* ACONST_NULL */!=locals[1].data.o) /* IF_ACMPNE CustomJump */ goto label_L712147062;
     __CN1_DEBUG_INFO(199);
     releaseForReturn(threadStateData, cn1LocalsBeginInThread); return 0 /* ICONST_0 */;
 
-label_L333884294:
+label_L712147062:
     __CN1_DEBUG_INFO(200);
     BC_ALOAD(1);
     BC_INSTANCEOF(cn1_class_id_com_codename1_charts_util_ColorUtil_IColor);
-    if(POP_INT() == 0) /* IFEQ */ goto label_L1331523729;
+    if(POP_INT() == 0) /* IFEQ */ goto label_L171908914;
     __CN1_DEBUG_INFO(201);
-    if (virtual_com_codename1_charts_util_ColorUtil_IColor_hashCode___R_int(threadStateData, __cn1ThisObject)!=virtual_java_lang_Object_hashCode___R_int(threadStateData, locals[1].data.o)) /* IF_ICMPNE CustomJump */ goto label_L25921783;
+    if (virtual_com_codename1_charts_util_ColorUtil_IColor_hashCode___R_int(threadStateData, __cn1ThisObject)!=virtual_java_lang_Object_hashCode___R_int(threadStateData, locals[1].data.o)) /* IF_ICMPNE CustomJump */ goto label_L1744677371;
     PUSH_INT(1); /* ICONST_1 */
-    goto label_L311344289;
+    goto label_L1477073774;
 
-label_L25921783:
+label_L1744677371:
     PUSH_INT(0); /* ICONST_0 */
 
-label_L311344289:
+label_L1477073774:
     releaseForReturn(threadStateData, cn1LocalsBeginInThread); return SP[-1].data.i;
 
-label_L1331523729:
+label_L171908914:
     __CN1_DEBUG_INFO(203);
     releaseForReturn(threadStateData, cn1LocalsBeginInThread); return 0 /* ICONST_0 */;
 }

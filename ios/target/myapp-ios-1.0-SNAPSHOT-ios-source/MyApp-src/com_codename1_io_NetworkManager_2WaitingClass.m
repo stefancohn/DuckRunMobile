@@ -84,64 +84,64 @@ JAVA_VOID com_codename1_io_NetworkManager_2WaitingClass___INIT_____com_codename1
 
 JAVA_VOID com_codename1_io_NetworkManager_2WaitingClass_run__(CODENAME_ONE_THREAD_STATE, JAVA_OBJECT  __cn1ThisObject) {
     DEFINE_INSTANCE_METHOD_STACK(2, 2, 0, 7343, 207);
-    locals[0].data.o = __cn1ThisObject; locals[0].type = CN1_TYPE_OBJECT;     int restoreToL1371181698cn1_class_id_java_lang_InterruptedException1;
-    int tryBlockOffsetL1371181698cn1_class_id_java_lang_InterruptedException1;
-    DEFINE_CATCH_BLOCK(catch_L1371181698cn1_class_id_java_lang_InterruptedException1, label_L115584215, restoreToL1371181698cn1_class_id_java_lang_InterruptedException1);
-    int restoreToL538663125cn1_class_id_java_lang_InterruptedException2;
-    int tryBlockOffsetL538663125cn1_class_id_java_lang_InterruptedException2;
-    DEFINE_CATCH_BLOCK(catch_L538663125cn1_class_id_java_lang_InterruptedException2, label_L1438092717, restoreToL538663125cn1_class_id_java_lang_InterruptedException2);
+    locals[0].data.o = __cn1ThisObject; locals[0].type = CN1_TYPE_OBJECT;     int restoreToL778196220cn1_class_id_java_lang_InterruptedException1;
+    int tryBlockOffsetL778196220cn1_class_id_java_lang_InterruptedException1;
+    DEFINE_CATCH_BLOCK(catch_L778196220cn1_class_id_java_lang_InterruptedException1, label_L1840423520, restoreToL778196220cn1_class_id_java_lang_InterruptedException1);
+    int restoreToL833526645cn1_class_id_java_lang_InterruptedException2;
+    int tryBlockOffsetL833526645cn1_class_id_java_lang_InterruptedException2;
+    DEFINE_CATCH_BLOCK(catch_L833526645cn1_class_id_java_lang_InterruptedException2, label_L341062557, restoreToL833526645cn1_class_id_java_lang_InterruptedException2);
     __CN1_DEBUG_INFO(701);
-    if (get_field_com_codename1_io_NetworkManager_2WaitingClass_edt(__cn1ThisObject)==0) /* IFEQ CustomJump */ JUMP_TO(label_L1207229581, 0);
+    if (get_field_com_codename1_io_NetworkManager_2WaitingClass_edt(__cn1ThisObject)==0) /* IFEQ CustomJump */ JUMP_TO(label_L502851205, 0);
 
-label_L1937855448:
+label_L11221844:
     __CN1_DEBUG_INFO(702);
-    if (get_field_com_codename1_io_NetworkManager_2WaitingClass_finishedWaiting(__cn1ThisObject)!=0) /* IFNE CustomJump */ JUMP_TO(label_L1755303688, 0);
+    if (get_field_com_codename1_io_NetworkManager_2WaitingClass_finishedWaiting(__cn1ThisObject)!=0) /* IFNE CustomJump */ JUMP_TO(label_L2020751256, 0);
 
-label_L1371181698:
- tryBlockOffsetL1371181698cn1_class_id_java_lang_InterruptedException1 = threadStateData->tryBlockOffset;
-    BEGIN_TRY(cn1_class_id_java_lang_InterruptedException, catch_L1371181698cn1_class_id_java_lang_InterruptedException1);
-    restoreToL1371181698cn1_class_id_java_lang_InterruptedException1 = threadStateData->threadObjectStackOffset;
+label_L778196220:
+ tryBlockOffsetL778196220cn1_class_id_java_lang_InterruptedException1 = threadStateData->tryBlockOffset;
+    BEGIN_TRY(cn1_class_id_java_lang_InterruptedException, catch_L778196220cn1_class_id_java_lang_InterruptedException1);
+    restoreToL778196220cn1_class_id_java_lang_InterruptedException1 = threadStateData->threadObjectStackOffset;
 
     __CN1_DEBUG_INFO(704);
     /* CustomInvoke */java_lang_Thread_sleep___long(threadStateData, 30LL); 
 
-label_L1611061882:
+label_L812215348:
 END_TRY(1);    __CN1_DEBUG_INFO(707);
-    JUMP_TO(label_L1937855448, 0);
+    JUMP_TO(label_L11221844, 0);
 
-label_L115584215:
+label_L1840423520:
     __CN1_DEBUG_INFO(705);
     BC_ASTORE(1);
     __CN1_DEBUG_INFO(706);
     virtual_java_lang_InterruptedException_printStackTrace__(threadStateData, locals[1].data.o); 
     __CN1_DEBUG_INFO(707);
-    JUMP_TO(label_L1937855448, 0);
+    JUMP_TO(label_L11221844, 0);
 
-label_L1207229581:
+label_L502851205:
     __CN1_DEBUG_INFO(710);
-    if (get_field_com_codename1_io_ConnectionRequest_complete(get_field_com_codename1_io_NetworkManager_2WaitingClass_val_request(__cn1ThisObject))!=0) /* IFNE CustomJump */ JUMP_TO(label_L1755303688, 0);
+    if (get_field_com_codename1_io_ConnectionRequest_complete(get_field_com_codename1_io_NetworkManager_2WaitingClass_val_request(__cn1ThisObject))!=0) /* IFNE CustomJump */ JUMP_TO(label_L2020751256, 0);
 
-label_L538663125:
- tryBlockOffsetL538663125cn1_class_id_java_lang_InterruptedException2 = threadStateData->tryBlockOffset;
-    BEGIN_TRY(cn1_class_id_java_lang_InterruptedException, catch_L538663125cn1_class_id_java_lang_InterruptedException2);
-    restoreToL538663125cn1_class_id_java_lang_InterruptedException2 = threadStateData->threadObjectStackOffset;
+label_L833526645:
+ tryBlockOffsetL833526645cn1_class_id_java_lang_InterruptedException2 = threadStateData->tryBlockOffset;
+    BEGIN_TRY(cn1_class_id_java_lang_InterruptedException, catch_L833526645cn1_class_id_java_lang_InterruptedException2);
+    restoreToL833526645cn1_class_id_java_lang_InterruptedException2 = threadStateData->threadObjectStackOffset;
 
     __CN1_DEBUG_INFO(712);
     /* CustomInvoke */java_lang_Thread_sleep___long(threadStateData, 30LL); 
 
-label_L623960278:
+label_L232258568:
 END_TRY(1);    __CN1_DEBUG_INFO(715);
-    JUMP_TO(label_L1207229581, 0);
+    JUMP_TO(label_L502851205, 0);
 
-label_L1438092717:
+label_L341062557:
     __CN1_DEBUG_INFO(713);
     BC_ASTORE(1);
     __CN1_DEBUG_INFO(714);
     virtual_java_lang_InterruptedException_printStackTrace__(threadStateData, locals[1].data.o); 
     __CN1_DEBUG_INFO(715);
-    JUMP_TO(label_L1207229581, 0);
+    JUMP_TO(label_L502851205, 0);
 
-label_L1755303688:
+label_L2020751256:
     __CN1_DEBUG_INFO(718);
     releaseForReturnInException(threadStateData, cn1LocalsBeginInThread, methodBlockOffset); 
     return;
@@ -153,7 +153,7 @@ JAVA_VOID com_codename1_io_NetworkManager_2WaitingClass_actionPerformed___com_co
     locals[0].data.o = __cn1ThisObject; locals[0].type = CN1_TYPE_OBJECT;     locals[1].data.o = __cn1Arg1;
     locals[1].type = CN1_TYPE_OBJECT;
     __CN1_DEBUG_INFO(721);
-    if (virtual_com_codename1_io_NetworkEvent_getError___R_java_lang_Exception(threadStateData, locals[1].data.o)==JAVA_NULL) /* IFNULL CustomJump */ goto label_L439513824;
+    if (virtual_com_codename1_io_NetworkEvent_getError___R_java_lang_Exception(threadStateData, locals[1].data.o)==JAVA_NULL) /* IFNULL CustomJump */ goto label_L903227399;
     __CN1_DEBUG_INFO(722);
     set_field_com_codename1_io_NetworkManager_2WaitingClass_finishedWaiting(threadStateData, 1 /* ICONST_1 */, __cn1ThisObject);
     __CN1_DEBUG_INFO(723);
@@ -164,23 +164,23 @@ JAVA_VOID com_codename1_io_NetworkManager_2WaitingClass_actionPerformed___com_co
     releaseForReturn(threadStateData, cn1LocalsBeginInThread); 
     return;
 
-label_L439513824:
+label_L903227399:
     __CN1_DEBUG_INFO(727);
     { JAVA_OBJECT tmpResult = virtual_com_codename1_io_NetworkEvent_getConnectionRequest___R_com_codename1_io_ConnectionRequest(threadStateData, locals[1].data.o);
     PUSH_OBJ(tmpResult); }
     PUSH_POINTER(get_field_com_codename1_io_NetworkManager_2WaitingClass_val_request(__cn1ThisObject));
-    SP-=2; if((*SP).data.o != SP[1].data.o) /* IF_ACMPNE */ goto label_L2076427679;
+    SP-=2; if((*SP).data.o != SP[1].data.o) /* IF_ACMPNE */ goto label_L1874869494;
     __CN1_DEBUG_INFO(728);
-    if (virtual_com_codename1_io_NetworkEvent_getProgressType___R_int(threadStateData, locals[1].data.o)!=4/* ICONST_4 */) /* IF_ICMPNE CustomJump */ goto label_L2076427679;
+    if (virtual_com_codename1_io_NetworkEvent_getProgressType___R_int(threadStateData, locals[1].data.o)!=4/* ICONST_4 */) /* IF_ICMPNE CustomJump */ goto label_L1874869494;
     __CN1_DEBUG_INFO(729);
-    if (get_field_com_codename1_io_ConnectionRequest_retrying(get_field_com_codename1_io_NetworkManager_2WaitingClass_val_request(__cn1ThisObject))==0) /* IFEQ CustomJump */ goto label_L1840423520;
+    if (get_field_com_codename1_io_ConnectionRequest_retrying(get_field_com_codename1_io_NetworkManager_2WaitingClass_val_request(__cn1ThisObject))==0) /* IFEQ CustomJump */ goto label_L115804257;
     __CN1_DEBUG_INFO(730);
     set_field_com_codename1_io_ConnectionRequest_retrying(threadStateData, 0 /* ICONST_0 */, get_field_com_codename1_io_NetworkManager_2WaitingClass_val_request(__cn1ThisObject));
     __CN1_DEBUG_INFO(731);
     releaseForReturn(threadStateData, cn1LocalsBeginInThread); 
     return;
 
-label_L1840423520:
+label_L115804257:
     __CN1_DEBUG_INFO(733);
     set_field_com_codename1_io_NetworkManager_2WaitingClass_finishedWaiting(threadStateData, 1 /* ICONST_1 */, __cn1ThisObject);
     __CN1_DEBUG_INFO(734);
@@ -191,7 +191,7 @@ label_L1840423520:
     releaseForReturn(threadStateData, cn1LocalsBeginInThread); 
     return;
 
-label_L2076427679:
+label_L1874869494:
     __CN1_DEBUG_INFO(739);
     releaseForReturn(threadStateData, cn1LocalsBeginInThread); 
     return;

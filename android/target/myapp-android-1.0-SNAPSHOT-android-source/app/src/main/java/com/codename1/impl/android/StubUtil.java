@@ -24,8 +24,6 @@ package com.codename1.impl.android;
 
 //import com.codename1.tests.webpush.WebPushTestStub;
 
-import com.mygame.myapp.MyAppStub;
-
 /**
  * This class will be modified by the build server to return the correct Application stub class
  * for the built application.  This is used to try to minimize the amount of code that needs to be
@@ -40,7 +38,7 @@ public class StubUtil {
 
     static boolean appIsRunning() {
         if (true) {
-            return MyAppStub.isRunning();
+            return com.example.myapp.MyAppStub.isRunning();
         }
         if (true) {
             //return WebPushTestStub.isRunning();
@@ -51,7 +49,7 @@ public class StubUtil {
 
     static Class getAppStubClass() {
         if (true) {
-            return MyAppStub.class;
+            return com.example.myapp.MyAppStub.class;
         }
         if (true) {
             //return WebPushTestStub.class;
@@ -62,7 +60,7 @@ public class StubUtil {
 
     static Object getMain() {
         if (true) {
-            return MyAppStub.getAppInstance();
+            return com.example.myapp.MyAppStub.getAppInstance();
         }
         if (true) {
             //return WebPushTestStub.getAppInstance();

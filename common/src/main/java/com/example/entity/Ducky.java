@@ -139,8 +139,8 @@ import com.example.util.SaveScores;
         }
 
         public void actionsToTakeWhenDuckyDies() { //things to chagne when ducky dies
-            Game.game.changeState(Constants.SCENE_DEATH);
             SaveScores.saveScore();
+            Game.game.changeState(Constants.SCENE_DEATH);
         }
 
         private void duckyMovementAndHitbox() {
@@ -310,6 +310,18 @@ import com.example.util.SaveScores;
                 //drawHitbox(g);
             } else {
                 g.drawImage(duckAni[spriteRow][spriteLoop], (int) (hitbox.x * MyApp.WIDTH_SCALE) - xOffset, (int) (hitbox.y * MyApp.HEIGHT_SCALE), (int) (width * MyApp.WIDTH_SCALE), (int) (height * MyApp.HEIGHT_SCALE));
+                //drawHitbox(g);
+            }
+        }
+        public void drawI(Graphics g, int xOffset) {
+            if (direction == "right" || direction == "attackingRight") {
+                g.drawImage(duckAni[spriteRow][spriteLoop], ((int) (MyApp.WIDTH_SCALE) * (hitbox.x - 10) - xOffset),(int) (MyApp.HEIGHT_SCALE * hitbox.y), (int) (width * MyApp.WIDTH_SCALE), (int) (height * MyApp.HEIGHT_SCALE));
+                //drawHitbox(g);
+            } else if (direction == "left" || direction == "attackingLeft") {
+                g.drawImage(duckAni[spriteRow][spriteLoop], ((int) (MyApp.WIDTH_SCALE) * (hitbox.x - 8) - xOffset), (int) (hitbox.y * MyApp.HEIGHT_SCALE), (int) (width * MyApp.WIDTH_SCALE), (int) (height * MyApp.HEIGHT_SCALE));
+                //drawHitbox(g);
+            } else {
+                g.drawImage(duckAni[spriteRow][spriteLoop], (int) (hitbox.x * (int) (MyApp.WIDTH_SCALE)) - xOffset, (int) (hitbox.y * MyApp.HEIGHT_SCALE), (int) (width * MyApp.WIDTH_SCALE), (int) (height * MyApp.HEIGHT_SCALE));
                 //drawHitbox(g);
             }
         }

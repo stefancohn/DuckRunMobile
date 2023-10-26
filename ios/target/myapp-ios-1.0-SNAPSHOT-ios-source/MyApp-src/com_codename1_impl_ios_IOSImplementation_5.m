@@ -43,36 +43,36 @@ JAVA_VOID com_codename1_impl_ios_IOSImplementation_5___INIT____(CODENAME_ONE_THR
 
 JAVA_VOID com_codename1_impl_ios_IOSImplementation_5_run__(CODENAME_ONE_THREAD_STATE, JAVA_OBJECT  __cn1ThisObject) {
     DEFINE_INSTANCE_METHOD_STACK(2, 3, 0, 9637, 207);
-    locals[0].data.o = __cn1ThisObject; locals[0].type = CN1_TYPE_OBJECT;     int restoreToL187436120301;
-    int tryBlockOffsetL187436120301;
-    DEFINE_CATCH_BLOCK(catch_L187436120301, label_L237484673, restoreToL187436120301);
+    locals[0].data.o = __cn1ThisObject; locals[0].type = CN1_TYPE_OBJECT;     int restoreToL152251356001;
+    int tryBlockOffsetL152251356001;
+    DEFINE_CATCH_BLOCK(catch_L152251356001, label_L1998882269, restoreToL152251356001);
     __CN1_DEBUG_INFO(661);
     PUSH_OBJ(com_codename1_ui_Display_getInstance___R_com_codename1_ui_Display(threadStateData));
     { JAVA_OBJECT tmpResult = virtual_com_codename1_ui_Display_getCurrent___R_com_codename1_ui_Form(threadStateData, SP[-1].data.o);
     SP[-1].data.o = tmpResult; SP[-1].type = CN1_TYPE_OBJECT; }
     BC_ASTORE(1);
     __CN1_DEBUG_INFO(662);
-    if (locals[1].data.o==JAVA_NULL) /* IFNULL CustomJump */ JUMP_TO(label_L1412656257, 0);
+    if (locals[1].data.o==JAVA_NULL) /* IFNULL CustomJump */ JUMP_TO(label_L1511180072, 0);
     __CN1_DEBUG_INFO(663);
     /* CustomInvoke */com_codename1_impl_ios_IOSImplementation_access$402___com_codename1_impl_ios_IOSImplementation_int_R_int(threadStateData, get_static_com_codename1_impl_ios_IOSImplementation_instance(threadStateData), 0 /* ICONST_0 */); 
 
-label_L1874361203:
- tryBlockOffsetL187436120301 = threadStateData->tryBlockOffset;
-    BEGIN_TRY(0, catch_L187436120301);
-    restoreToL187436120301 = threadStateData->threadObjectStackOffset;
+label_L1522513560:
+ tryBlockOffsetL152251356001 = threadStateData->tryBlockOffset;
+    BEGIN_TRY(0, catch_L152251356001);
+    restoreToL152251356001 = threadStateData->threadObjectStackOffset;
 
     __CN1_DEBUG_INFO(665);
     virtual_com_codename1_ui_Form_revalidate__(threadStateData, locals[1].data.o); 
     __CN1_DEBUG_INFO(670);
     /* CustomInvoke */com_codename1_ui_Accessor_fixNegativeScrolls___com_codename1_ui_Form(threadStateData, locals[1].data.o); 
 
-label_L1596426482:
+label_L1640901959:
 END_TRY(1);    __CN1_DEBUG_INFO(672);
     /* CustomInvoke */com_codename1_impl_ios_IOSImplementation_access$402___com_codename1_impl_ios_IOSImplementation_int_R_int(threadStateData, get_static_com_codename1_impl_ios_IOSImplementation_instance(threadStateData), -1 /* ICONST_M1 */); 
     __CN1_DEBUG_INFO(673);
-    JUMP_TO(label_L1412656257, 0);
+    JUMP_TO(label_L1511180072, 0);
 
-label_L237484673:
+label_L1998882269:
     __CN1_DEBUG_INFO(672);
     BC_ASTORE(2);
     /* CustomInvoke */com_codename1_impl_ios_IOSImplementation_access$402___com_codename1_impl_ios_IOSImplementation_int_R_int(threadStateData, get_static_com_codename1_impl_ios_IOSImplementation_instance(threadStateData), -1 /* ICONST_M1 */); 
@@ -80,7 +80,7 @@ label_L237484673:
     BC_ALOAD(2);
     throwException(threadStateData, POP_OBJ());
 
-label_L1412656257:
+label_L1511180072:
     __CN1_DEBUG_INFO(675);
     releaseForReturnInException(threadStateData, cn1LocalsBeginInThread, methodBlockOffset); 
     return;

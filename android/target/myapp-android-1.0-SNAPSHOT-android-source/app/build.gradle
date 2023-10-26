@@ -26,9 +26,9 @@ android {
         javaMaxHeapSize "3g"
     }
     defaultConfig {
-        applicationId "com.mygame.myapp"
+        applicationId "com.example.myapp"
         minSdkVersion 15
-        targetSdkVersion 31
+        targetSdkVersion 33
         versionCode 100
         versionName "1.0"
     }
@@ -86,5 +86,5 @@ dependencies {
  implementation 'com.google.android.gms:play-services-gcm:12.0.1'
  implementation 'com.google.android.gms:play-services-location:12.0.1'
  implementation 'com.google.android.gms:play-services-maps:12.0.1'
- implementation 'com.google.android.gms:play-services-ads:12.0.1'
+ implementation 'com.google.android.gms:play-services-ads:21.0.1'
 }

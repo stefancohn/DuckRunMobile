@@ -199,13 +199,13 @@ JAVA_LONG com_codename1_contacts_Contact_getBirthday___R_long(CODENAME_ONE_THREA
 JAVA_OBJECT com_codename1_contacts_Contact_getDisplayName___R_java_lang_String(CODENAME_ONE_THREAD_STATE, JAVA_OBJECT  __cn1ThisObject) {
     DEFINE_INSTANCE_METHOD_STACK(3, 1, 0, 1538, 1541);
     locals[0].data.o = __cn1ThisObject; locals[0].type = CN1_TYPE_OBJECT;     __CN1_DEBUG_INFO(99);
-    if (get_field_com_codename1_contacts_Contact_displayName(__cn1ThisObject)==JAVA_NULL) /* IFNULL CustomJump */ goto label_L1482861352;
-    if (/* CustomInvoke */virtual_java_lang_String_equals___java_lang_Object_R_boolean(threadStateData, STRING_FROM_CONSTANT_POOL_OFFSET(289), get_field_com_codename1_contacts_Contact_displayName(__cn1ThisObject))==0) /* IFEQ CustomJump */ goto label_L555754759;
+    if (get_field_com_codename1_contacts_Contact_displayName(__cn1ThisObject)==JAVA_NULL) /* IFNULL CustomJump */ goto label_L2089917982;
+    if (/* CustomInvoke */virtual_java_lang_String_equals___java_lang_Object_R_boolean(threadStateData, STRING_FROM_CONSTANT_POOL_OFFSET(289), get_field_com_codename1_contacts_Contact_displayName(__cn1ThisObject))==0) /* IFEQ CustomJump */ goto label_L199076892;
 
-label_L1482861352:
+label_L2089917982:
     __CN1_DEBUG_INFO(100);
-    if (get_field_com_codename1_contacts_Contact_familyName(__cn1ThisObject)==JAVA_NULL) /* IFNULL CustomJump */ goto label_L1653050748;
-    if (get_field_com_codename1_contacts_Contact_firstName(__cn1ThisObject)==JAVA_NULL) /* IFNULL CustomJump */ goto label_L1653050748;
+    if (get_field_com_codename1_contacts_Contact_familyName(__cn1ThisObject)==JAVA_NULL) /* IFNULL CustomJump */ goto label_L478139104;
+    if (get_field_com_codename1_contacts_Contact_firstName(__cn1ThisObject)==JAVA_NULL) /* IFNULL CustomJump */ goto label_L478139104;
     __CN1_DEBUG_INFO(101);
     BC_ALOAD(0);
     PUSH_POINTER(__NEW_java_lang_StringBuilder(threadStateData)); /* NEW */
@@ -221,57 +221,57 @@ label_L1482861352:
     SP[-1].data.o = tmpResult; SP[-1].type = CN1_TYPE_OBJECT; }
     set_field_com_codename1_contacts_Contact_displayName(threadStateData, PEEK_OBJ(1), PEEK_OBJ(2));
     POP_MANY(2);
-    goto label_L555754759;
+    goto label_L199076892;
 
-label_L1653050748:
+label_L478139104:
     __CN1_DEBUG_INFO(102);
-    if (virtual_com_codename1_contacts_Contact_getPrimaryPhoneNumber___R_java_lang_String(threadStateData, __cn1ThisObject)==JAVA_NULL) /* IFNULL CustomJump */ goto label_L1132068394;
+    if (virtual_com_codename1_contacts_Contact_getPrimaryPhoneNumber___R_java_lang_String(threadStateData, __cn1ThisObject)==JAVA_NULL) /* IFNULL CustomJump */ goto label_L1099109905;
     __CN1_DEBUG_INFO(103);
     BC_ALOAD(0);
     { JAVA_OBJECT tmpResult = virtual_com_codename1_contacts_Contact_getPrimaryPhoneNumber___R_java_lang_String(threadStateData, __cn1ThisObject);
     PUSH_OBJ(tmpResult); }
     set_field_com_codename1_contacts_Contact_displayName(threadStateData, PEEK_OBJ(1), PEEK_OBJ(2));
     POP_MANY(2);
-    goto label_L555754759;
+    goto label_L199076892;
 
-label_L1132068394:
+label_L1099109905:
     __CN1_DEBUG_INFO(104);
-    if (virtual_com_codename1_contacts_Contact_getPrimaryEmail___R_java_lang_String(threadStateData, __cn1ThisObject)==JAVA_NULL) /* IFNULL CustomJump */ goto label_L235873926;
+    if (virtual_com_codename1_contacts_Contact_getPrimaryEmail___R_java_lang_String(threadStateData, __cn1ThisObject)==JAVA_NULL) /* IFNULL CustomJump */ goto label_L831656273;
     __CN1_DEBUG_INFO(105);
     BC_ALOAD(0);
     { JAVA_OBJECT tmpResult = virtual_com_codename1_contacts_Contact_getPrimaryEmail___R_java_lang_String(threadStateData, __cn1ThisObject);
     PUSH_OBJ(tmpResult); }
     set_field_com_codename1_contacts_Contact_displayName(threadStateData, PEEK_OBJ(1), PEEK_OBJ(2));
     POP_MANY(2);
-    goto label_L555754759;
+    goto label_L199076892;
 
-label_L235873926:
+label_L831656273:
     __CN1_DEBUG_INFO(106);
-    if (virtual_com_codename1_contacts_Contact_getFirstName___R_java_lang_String(threadStateData, __cn1ThisObject)==JAVA_NULL) /* IFNULL CustomJump */ goto label_L774320733;
+    if (virtual_com_codename1_contacts_Contact_getFirstName___R_java_lang_String(threadStateData, __cn1ThisObject)==JAVA_NULL) /* IFNULL CustomJump */ goto label_L1464460851;
     __CN1_DEBUG_INFO(107);
     BC_ALOAD(0);
     { JAVA_OBJECT tmpResult = virtual_com_codename1_contacts_Contact_getFirstName___R_java_lang_String(threadStateData, __cn1ThisObject);
     PUSH_OBJ(tmpResult); }
     set_field_com_codename1_contacts_Contact_displayName(threadStateData, PEEK_OBJ(1), PEEK_OBJ(2));
     POP_MANY(2);
-    goto label_L555754759;
+    goto label_L199076892;
 
-label_L774320733:
+label_L1464460851:
     __CN1_DEBUG_INFO(108);
-    if (virtual_com_codename1_contacts_Contact_getFamilyName___R_java_lang_String(threadStateData, __cn1ThisObject)==JAVA_NULL) /* IFNULL CustomJump */ goto label_L1888859784;
+    if (virtual_com_codename1_contacts_Contact_getFamilyName___R_java_lang_String(threadStateData, __cn1ThisObject)==JAVA_NULL) /* IFNULL CustomJump */ goto label_L902026984;
     __CN1_DEBUG_INFO(109);
     BC_ALOAD(0);
     { JAVA_OBJECT tmpResult = virtual_com_codename1_contacts_Contact_getFamilyName___R_java_lang_String(threadStateData, __cn1ThisObject);
     PUSH_OBJ(tmpResult); }
     set_field_com_codename1_contacts_Contact_displayName(threadStateData, PEEK_OBJ(1), PEEK_OBJ(2));
     POP_MANY(2);
-    goto label_L555754759;
+    goto label_L199076892;
 
-label_L1888859784:
+label_L902026984:
     __CN1_DEBUG_INFO(111);
     set_field_com_codename1_contacts_Contact_displayName(threadStateData, get_field_com_codename1_contacts_Contact_id(__cn1ThisObject), __cn1ThisObject);
 
-label_L555754759:
+label_L199076892:
     __CN1_DEBUG_INFO(114);
 
 {
@@ -349,11 +349,11 @@ JAVA_OBJECT com_codename1_contacts_Contact_getPhoto___R_com_codename1_ui_Image(C
 JAVA_OBJECT com_codename1_contacts_Contact_getPrimaryEmail___R_java_lang_String(CODENAME_ONE_THREAD_STATE, JAVA_OBJECT  __cn1ThisObject) {
     DEFINE_INSTANCE_METHOD_STACK(1, 2, 0, 1538, 1549);
     locals[0].data.o = __cn1ThisObject; locals[0].type = CN1_TYPE_OBJECT;     __CN1_DEBUG_INFO(185);
-    if (get_field_com_codename1_contacts_Contact_primaryEmail(__cn1ThisObject)!=JAVA_NULL) /* IFNONNULL CustomJump */ goto label_L2089917982;
-    if (get_field_com_codename1_contacts_Contact_emails(__cn1ThisObject)==JAVA_NULL) /* IFNULL CustomJump */ goto label_L2089917982;
+    if (get_field_com_codename1_contacts_Contact_primaryEmail(__cn1ThisObject)!=JAVA_NULL) /* IFNONNULL CustomJump */ goto label_L1823047135;
+    if (get_field_com_codename1_contacts_Contact_emails(__cn1ThisObject)==JAVA_NULL) /* IFNULL CustomJump */ goto label_L1823047135;
     __CN1_DEBUG_INFO(186);
     /* VarOp.assignFrom */ locals[1].data.o = virtual_java_util_Hashtable_values___R_java_util_Collection(threadStateData, get_field_com_codename1_contacts_Contact_emails(__cn1ThisObject));locals[1].type=CN1_TYPE_OBJECT;    __CN1_DEBUG_INFO(187);
-    if (virtual_java_util_Collection_size___R_int(threadStateData, locals[1].data.o)<=0) /* IFLE CustomJump */ goto label_L2089917982;
+    if (virtual_java_util_Collection_size___R_int(threadStateData, locals[1].data.o)<=0) /* IFLE CustomJump */ goto label_L1823047135;
     __CN1_DEBUG_INFO(188);
     { JAVA_OBJECT tmpResult = virtual_java_util_Collection_iterator___R_java_util_Iterator(threadStateData, locals[1].data.o);
     PUSH_OBJ(tmpResult); }
@@ -362,7 +362,7 @@ JAVA_OBJECT com_codename1_contacts_Contact_getPrimaryEmail___R_java_lang_String(
     releaseForReturn(threadStateData, cn1LocalsBeginInThread); 
     return POP_OBJ();
 
-label_L2089917982:
+label_L1823047135:
     __CN1_DEBUG_INFO(191);
 
 {
@@ -375,11 +375,11 @@ label_L2089917982:
 JAVA_OBJECT com_codename1_contacts_Contact_getPrimaryPhoneNumber___R_java_lang_String(CODENAME_ONE_THREAD_STATE, JAVA_OBJECT  __cn1ThisObject) {
     DEFINE_INSTANCE_METHOD_STACK(1, 2, 0, 1538, 1550);
     locals[0].data.o = __cn1ThisObject; locals[0].type = CN1_TYPE_OBJECT;     __CN1_DEBUG_INFO(200);
-    if (get_field_com_codename1_contacts_Contact_primaryPhoneNumber(__cn1ThisObject)!=JAVA_NULL) /* IFNONNULL CustomJump */ goto label_L199076892;
-    if (get_field_com_codename1_contacts_Contact_phoneNumbers(__cn1ThisObject)==JAVA_NULL) /* IFNULL CustomJump */ goto label_L199076892;
+    if (get_field_com_codename1_contacts_Contact_primaryPhoneNumber(__cn1ThisObject)!=JAVA_NULL) /* IFNONNULL CustomJump */ goto label_L1292956034;
+    if (get_field_com_codename1_contacts_Contact_phoneNumbers(__cn1ThisObject)==JAVA_NULL) /* IFNULL CustomJump */ goto label_L1292956034;
     __CN1_DEBUG_INFO(201);
     /* VarOp.assignFrom */ locals[1].data.o = virtual_java_util_Hashtable_values___R_java_util_Collection(threadStateData, get_field_com_codename1_contacts_Contact_phoneNumbers(__cn1ThisObject));locals[1].type=CN1_TYPE_OBJECT;    __CN1_DEBUG_INFO(202);
-    if (virtual_java_util_Collection_size___R_int(threadStateData, locals[1].data.o)<=0) /* IFLE CustomJump */ goto label_L199076892;
+    if (virtual_java_util_Collection_size___R_int(threadStateData, locals[1].data.o)<=0) /* IFLE CustomJump */ goto label_L1292956034;
     __CN1_DEBUG_INFO(203);
     { JAVA_OBJECT tmpResult = virtual_java_util_Collection_iterator___R_java_util_Iterator(threadStateData, locals[1].data.o);
     PUSH_OBJ(tmpResult); }
@@ -388,7 +388,7 @@ JAVA_OBJECT com_codename1_contacts_Contact_getPrimaryPhoneNumber___R_java_lang_S
     releaseForReturn(threadStateData, cn1LocalsBeginInThread); 
     return POP_OBJ();
 
-label_L199076892:
+label_L1292956034:
     __CN1_DEBUG_INFO(206);
 
 {

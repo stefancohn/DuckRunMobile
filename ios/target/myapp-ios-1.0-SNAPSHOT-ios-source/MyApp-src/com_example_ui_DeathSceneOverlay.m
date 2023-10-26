@@ -117,7 +117,7 @@ com_example_ui_DeathSceneOverlay___INIT____(threadStateData, o);
 
 
 JAVA_VOID com_example_ui_DeathSceneOverlay___INIT____(CODENAME_ONE_THREAD_STATE, JAVA_OBJECT  __cn1ThisObject) {
-    DEFINE_INSTANCE_METHOD_STACK(5, 1, 0, 10360, 205);
+    DEFINE_INSTANCE_METHOD_STACK(5, 1, 0, 10361, 205);
     locals[0].data.o = __cn1ThisObject; locals[0].type = CN1_TYPE_OBJECT;     __CN1_DEBUG_INFO(32);
     java_lang_Object___INIT____(threadStateData, __cn1ThisObject); 
     __CN1_DEBUG_INFO(14);
@@ -161,9 +161,9 @@ JAVA_VOID com_example_ui_DeathSceneOverlay___INIT____(CODENAME_ONE_THREAD_STATE,
 JAVA_VOID com_example_ui_DeathSceneOverlay_loadButtons__(CODENAME_ONE_THREAD_STATE, JAVA_OBJECT  __cn1ThisObject) {
     volatile JAVA_INT ilocals_2_ = 0; /* v2 */
     volatile JAVA_INT ilocals_3_ = 0; /* v3 */
-    DEFINE_INSTANCE_METHOD_STACK(8, 4, 0, 10360, 10361);
+    DEFINE_INSTANCE_METHOD_STACK(8, 4, 0, 10361, 10362);
     locals[0].data.o = __cn1ThisObject; locals[0].type = CN1_TYPE_OBJECT;     __CN1_DEBUG_INFO(37);
-    /* VarOp.assignFrom */ locals[1].data.o = /* CustomInvoke */com_example_util_LoadSave_getSpriteAtlas___java_lang_String_R_com_codename1_ui_Image(threadStateData, STRING_FROM_CONSTANT_POOL_OFFSET(10362));locals[1].type=CN1_TYPE_OBJECT;    __CN1_DEBUG_INFO(38);
+    /* VarOp.assignFrom */ locals[1].data.o = /* CustomInvoke */com_example_util_LoadSave_getSpriteAtlas___java_lang_String_R_com_codename1_ui_Image(threadStateData, STRING_FROM_CONSTANT_POOL_OFFSET(10363));locals[1].type=CN1_TYPE_OBJECT;    __CN1_DEBUG_INFO(38);
     /* VarOp.assignFrom */     ilocals_2_ = 0 /* ICONST_0 */; 
 
 label_L1947941827:
@@ -194,7 +194,7 @@ label_L1659309731:
 JAVA_VOID com_example_ui_DeathSceneOverlay_touchMovement___int_int(CODENAME_ONE_THREAD_STATE, JAVA_OBJECT  __cn1ThisObject, JAVA_INT __cn1Arg1, JAVA_INT __cn1Arg2) {
     volatile JAVA_INT ilocals_1_ = 0; /* x */
     volatile JAVA_INT ilocals_2_ = 0; /* y */
-    DEFINE_INSTANCE_METHOD_STACK(6, 3, 0, 10360, 10266);
+    DEFINE_INSTANCE_METHOD_STACK(6, 3, 0, 10361, 10267);
     locals[0].data.o = __cn1ThisObject; locals[0].type = CN1_TYPE_OBJECT;     ilocals_1_ = __cn1Arg1;
     ilocals_2_ = __cn1Arg2;
     __CN1_DEBUG_INFO(47);
@@ -220,7 +220,7 @@ label_L785625589:
 JAVA_VOID com_example_ui_DeathSceneOverlay_releaseMovement___int_int(CODENAME_ONE_THREAD_STATE, JAVA_OBJECT  __cn1ThisObject, JAVA_INT __cn1Arg1, JAVA_INT __cn1Arg2) {
     volatile JAVA_INT ilocals_1_ = 0; /* x */
     volatile JAVA_INT ilocals_2_ = 0; /* y */
-    DEFINE_INSTANCE_METHOD_STACK(2, 3, 0, 10360, 10363);
+    DEFINE_INSTANCE_METHOD_STACK(2, 3, 0, 10361, 10364);
     locals[0].data.o = __cn1ThisObject; locals[0].type = CN1_TYPE_OBJECT;     ilocals_1_ = __cn1Arg1;
     ilocals_2_ = __cn1Arg2;
     __CN1_DEBUG_INFO(53);
@@ -255,7 +255,7 @@ JAVA_VOID com_example_ui_DeathSceneOverlay_update__(CODENAME_ONE_THREAD_STATE, J
 
 JAVA_VOID com_example_ui_DeathSceneOverlay_draw___com_codename1_ui_Graphics(CODENAME_ONE_THREAD_STATE, JAVA_OBJECT  __cn1ThisObject, JAVA_OBJECT __cn1Arg1) {
     volatile JAVA_INT ilocals_3_ = 0; /* v3 */
-    DEFINE_INSTANCE_METHOD_STACK(6, 4, 0, 10360, 5503);
+    DEFINE_INSTANCE_METHOD_STACK(6, 4, 0, 10361, 5503);
     locals[0].data.o = __cn1ThisObject; locals[0].type = CN1_TYPE_OBJECT;     locals[1].data.o = __cn1Arg1;
     locals[1].type = CN1_TYPE_OBJECT;
     __CN1_DEBUG_INFO(66);
@@ -264,7 +264,7 @@ JAVA_VOID com_example_ui_DeathSceneOverlay_draw___com_codename1_ui_Graphics(CODE
     /* VarOp.assignFrom */ locals[2].data.o = /* CustomInvoke */com_codename1_ui_Font_createSystemFont___int_int_int_R_com_codename1_ui_Font(threadStateData, 32, 0 /* ICONST_0 */, 16);locals[2].type=CN1_TYPE_OBJECT;    __CN1_DEBUG_INFO(71);
     /* CustomInvoke */virtual_com_codename1_ui_Graphics_setFont___com_codename1_ui_Font(threadStateData, locals[1].data.o, locals[2].data.o); 
     __CN1_DEBUG_INFO(72);
-    /* CustomInvoke */virtual_com_codename1_ui_Graphics_drawString___java_lang_String_int_int(threadStateData, locals[1].data.o, STRING_FROM_CONSTANT_POOL_OFFSET(10364), get_field_com_example_ui_DeathSceneOverlay_hsX(__cn1ThisObject), get_field_com_example_ui_DeathSceneOverlay_hsY(__cn1ThisObject)); 
+    /* CustomInvoke */virtual_com_codename1_ui_Graphics_drawString___java_lang_String_int_int(threadStateData, locals[1].data.o, STRING_FROM_CONSTANT_POOL_OFFSET(10365), get_field_com_example_ui_DeathSceneOverlay_hsX(__cn1ThisObject), get_field_com_example_ui_DeathSceneOverlay_hsY(__cn1ThisObject)); 
     __CN1_DEBUG_INFO(73);
     /* VarOp.assignFrom */     ilocals_3_ = 0 /* ICONST_0 */; 
 

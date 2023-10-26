@@ -30,7 +30,7 @@ com_example_util_Bounds___INIT____(threadStateData, o);
 
 
 JAVA_VOID com_example_util_Bounds___INIT____(CODENAME_ONE_THREAD_STATE, JAVA_OBJECT  __cn1ThisObject) {
-    DEFINE_INSTANCE_METHOD_STACK(1, 1, 0, 10344, 205);
+    DEFINE_INSTANCE_METHOD_STACK(1, 1, 0, 10345, 205);
     locals[0].data.o = __cn1ThisObject; locals[0].type = CN1_TYPE_OBJECT;     __CN1_DEBUG_INFO(3);
     java_lang_Object___INIT____(threadStateData, __cn1ThisObject); 
     releaseForReturn(threadStateData, cn1LocalsBeginInThread); 
@@ -46,7 +46,7 @@ JAVA_OBJECT com_example_util_Bounds_checkBounds___int_int_int_int_int_int_R_java
     volatile JAVA_INT ilocals_4_ = 0; /* width */
     volatile JAVA_INT ilocals_5_ = 0; /* height */
     __STATIC_INITIALIZER_com_example_util_Bounds(threadStateData);
-    DEFINE_METHOD_STACK(3, 6, 0, 10344, 574);
+    DEFINE_METHOD_STACK(3, 6, 0, 10345, 574);
     ilocals_0_ = __cn1Arg1;
     ilocals_1_ = __cn1Arg2;
     ilocals_2_ = __cn1Arg3;

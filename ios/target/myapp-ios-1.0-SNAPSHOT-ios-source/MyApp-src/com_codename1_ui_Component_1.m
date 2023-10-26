@@ -76,25 +76,25 @@ JAVA_VOID com_codename1_ui_Component_1_run__(CODENAME_ONE_THREAD_STATE, JAVA_OBJ
     volatile JAVA_INT ilocals_6_ = 0; /* v6 */
     volatile JAVA_INT ilocals_7_ = 0; /* v7 */
     DEFINE_INSTANCE_METHOD_STACK(11, 13, 0, 8183, 207);
-    locals[0].data.o = __cn1ThisObject; locals[0].type = CN1_TYPE_OBJECT;     int restoreToL10044675501;
-    int tryBlockOffsetL10044675501;
-    DEFINE_CATCH_BLOCK(catch_L10044675501, label_L310014578, restoreToL10044675501);
-    int restoreToL31001457802;
-    int tryBlockOffsetL31001457802;
-    DEFINE_CATCH_BLOCK(catch_L31001457802, label_L310014578, restoreToL31001457802);
-    int restoreToL30085508903;
-    int tryBlockOffsetL30085508903;
-    DEFINE_CATCH_BLOCK(catch_L30085508903, label_L267533031, restoreToL30085508903);
-    int restoreToL26753303104;
-    int tryBlockOffsetL26753303104;
-    DEFINE_CATCH_BLOCK(catch_L26753303104, label_L267533031, restoreToL26753303104);
+    locals[0].data.o = __cn1ThisObject; locals[0].type = CN1_TYPE_OBJECT;     int restoreToL27433581401;
+    int tryBlockOffsetL27433581401;
+    DEFINE_CATCH_BLOCK(catch_L27433581401, label_L253558788, restoreToL27433581401);
+    int restoreToL25355878802;
+    int tryBlockOffsetL25355878802;
+    DEFINE_CATCH_BLOCK(catch_L25355878802, label_L253558788, restoreToL25355878802);
+    int restoreToL104038489503;
+    int tryBlockOffsetL104038489503;
+    DEFINE_CATCH_BLOCK(catch_L104038489503, label_L1850680894, restoreToL104038489503);
+    int restoreToL185068089404;
+    int tryBlockOffsetL185068089404;
+    DEFINE_CATCH_BLOCK(catch_L185068089404, label_L1850680894, restoreToL185068089404);
     __CN1_DEBUG_INFO(2519);
     /* CustomInvoke */com_codename1_ui_CN_setProperty___java_lang_String_java_lang_String(threadStateData, STRING_FROM_CONSTANT_POOL_OFFSET(8184), STRING_FROM_CONSTANT_POOL_OFFSET(267)); 
 
-label_L300855089:
- tryBlockOffsetL30085508903 = threadStateData->tryBlockOffset;
-    BEGIN_TRY(0, catch_L30085508903);
-    restoreToL30085508903 = threadStateData->threadObjectStackOffset;
+label_L1040384895:
+ tryBlockOffsetL104038489503 = threadStateData->tryBlockOffset;
+    BEGIN_TRY(0, catch_L104038489503);
+    restoreToL104038489503 = threadStateData->threadObjectStackOffset;
 
     __CN1_DEBUG_INFO(2521);
     /* VarOp.assignFrom */ locals[1].data.o = /* CustomInvoke */com_codename1_ui_Image_createImage___int_int_int_R_com_codename1_ui_Image(threadStateData, virtual_com_codename1_ui_Component_calculateShadowWidth___R_int(threadStateData, get_field_com_codename1_ui_Component_1_this_0(__cn1ThisObject)), virtual_com_codename1_ui_Component_calculateShadowHeight___R_int(threadStateData, get_field_com_codename1_ui_Component_1_this_0(__cn1ThisObject)), 0 /* ICONST_0 */);locals[1].type=CN1_TYPE_OBJECT;    __CN1_DEBUG_INFO(2522);
@@ -122,101 +122,101 @@ locals[3].type=CN1_TYPE_OBJECT;    __CN1_DEBUG_INFO(2527);
     PUSH_INT(get_field_com_codename1_ui_Component_1_val_elevation(__cn1ThisObject));
     SP--;
     switch((*SP).data.i) {
-        case 1: JUMP_TO(label_L1111173986, 1);
-        case 2: JUMP_TO(label_L729375394, 1);
-        case 3: JUMP_TO(label_L1792109661, 1);
-        case 4: JUMP_TO(label_L1961510626, 1);
-        case 5: JUMP_TO(label_L1871778598, 1);
-        case 6: JUMP_TO(label_L253558788, 1);
-        case 7: JUMP_TO(label_L1871778598, 1);
-        case 8: JUMP_TO(label_L1850680894, 1);
-        case 9: JUMP_TO(label_L1219797059, 1);
-        case 10: JUMP_TO(label_L1871778598, 1);
-        case 11: JUMP_TO(label_L1871778598, 1);
-        case 12: JUMP_TO(label_L794526288, 1);
-        case 13: JUMP_TO(label_L1871778598, 1);
-        case 14: JUMP_TO(label_L1871778598, 1);
-        case 15: JUMP_TO(label_L1871778598, 1);
-        case 16: JUMP_TO(label_L1210165919, 1);
-        case 17: JUMP_TO(label_L1871778598, 1);
-        case 18: JUMP_TO(label_L1871778598, 1);
-        case 19: JUMP_TO(label_L1871778598, 1);
-        case 20: JUMP_TO(label_L1871778598, 1);
-        case 21: JUMP_TO(label_L1871778598, 1);
-        case 22: JUMP_TO(label_L1871778598, 1);
-        case 23: JUMP_TO(label_L1871778598, 1);
-        case 24: JUMP_TO(label_L1598561139, 1);
-        default: JUMP_TO(label_L1871778598, 1);
+        case 1: JUMP_TO(label_L1219797059, 1);
+        case 2: JUMP_TO(label_L794526288, 1);
+        case 3: JUMP_TO(label_L1210165919, 1);
+        case 4: JUMP_TO(label_L1598561139, 1);
+        case 5: JUMP_TO(label_L840109665, 1);
+        case 6: JUMP_TO(label_L1093223281, 1);
+        case 7: JUMP_TO(label_L840109665, 1);
+        case 8: JUMP_TO(label_L77163673, 1);
+        case 9: JUMP_TO(label_L462777594, 1);
+        case 10: JUMP_TO(label_L840109665, 1);
+        case 11: JUMP_TO(label_L840109665, 1);
+        case 12: JUMP_TO(label_L828312047, 1);
+        case 13: JUMP_TO(label_L840109665, 1);
+        case 14: JUMP_TO(label_L840109665, 1);
+        case 15: JUMP_TO(label_L840109665, 1);
+        case 16: JUMP_TO(label_L979822206, 1);
+        case 17: JUMP_TO(label_L840109665, 1);
+        case 18: JUMP_TO(label_L840109665, 1);
+        case 19: JUMP_TO(label_L840109665, 1);
+        case 20: JUMP_TO(label_L840109665, 1);
+        case 21: JUMP_TO(label_L840109665, 1);
+        case 22: JUMP_TO(label_L840109665, 1);
+        case 23: JUMP_TO(label_L840109665, 1);
+        case 24: JUMP_TO(label_L1976870927, 1);
+        default: JUMP_TO(label_L840109665, 1);
     }
 
-label_L1111173986:
+label_L1219797059:
     __CN1_DEBUG_INFO(2541);
     /* CustomInvoke */com_codename1_ui_Component_access$000___com_codename1_ui_Component_com_codename1_ui_Graphics_com_codename1_ui_Image_int_int_int_int_int_int_int_float(threadStateData, get_field_com_codename1_ui_Component_1_this_0(__cn1ThisObject), locals[5].data.o, locals[3].data.o, ilocals_6_, ilocals_7_, 0 /* ICONST_0 */, 1 /* ICONST_1 */, 3 /* ICONST_3 */, 0 /* ICONST_0 */, 0 /* ICONST_0 */, 0.2); 
     __CN1_DEBUG_INFO(2542);
-    JUMP_TO(label_L1871778598, 1);
+    JUMP_TO(label_L840109665, 1);
 
-label_L729375394:
+label_L794526288:
     __CN1_DEBUG_INFO(2547);
     /* CustomInvoke */com_codename1_ui_Component_access$000___com_codename1_ui_Component_com_codename1_ui_Graphics_com_codename1_ui_Image_int_int_int_int_int_int_int_float(threadStateData, get_field_com_codename1_ui_Component_1_this_0(__cn1ThisObject), locals[5].data.o, locals[3].data.o, ilocals_6_, ilocals_7_, 0 /* ICONST_0 */, 1 /* ICONST_1 */, 3 /* ICONST_3 */, 0 /* ICONST_0 */, 0 /* ICONST_0 */, 0.2); 
     __CN1_DEBUG_INFO(2548);
-    JUMP_TO(label_L1871778598, 1);
+    JUMP_TO(label_L840109665, 1);
 
-label_L1792109661:
+label_L1210165919:
     __CN1_DEBUG_INFO(2552);
     /* CustomInvoke */com_codename1_ui_Component_access$000___com_codename1_ui_Component_com_codename1_ui_Graphics_com_codename1_ui_Image_int_int_int_int_int_int_int_float(threadStateData, get_field_com_codename1_ui_Component_1_this_0(__cn1ThisObject), locals[5].data.o, locals[3].data.o, ilocals_6_, ilocals_7_, 0 /* ICONST_0 */, 1 /* ICONST_1 */, 8, 0 /* ICONST_0 */, 0 /* ICONST_0 */, 0.2); 
     __CN1_DEBUG_INFO(2553);
-    JUMP_TO(label_L1871778598, 1);
+    JUMP_TO(label_L840109665, 1);
 
-label_L1961510626:
+label_L1598561139:
     __CN1_DEBUG_INFO(2563);
     /* CustomInvoke */com_codename1_ui_Component_access$000___com_codename1_ui_Component_com_codename1_ui_Graphics_com_codename1_ui_Image_int_int_int_int_int_int_int_float(threadStateData, get_field_com_codename1_ui_Component_1_this_0(__cn1ThisObject), locals[5].data.o, locals[3].data.o, ilocals_6_, ilocals_7_, 0 /* ICONST_0 */, 2 /* ICONST_2 */, 4/* ICONST_4 */, -1 /* ICONST_M1 */, 0 /* ICONST_0 */, 0.2); 
     __CN1_DEBUG_INFO(2565);
-    JUMP_TO(label_L1871778598, 1);
+    JUMP_TO(label_L840109665, 1);
 
-label_L253558788:
+label_L1093223281:
     __CN1_DEBUG_INFO(2570);
     /* CustomInvoke */com_codename1_ui_Component_access$000___com_codename1_ui_Component_com_codename1_ui_Graphics_com_codename1_ui_Image_int_int_int_int_int_int_int_float(threadStateData, get_field_com_codename1_ui_Component_1_this_0(__cn1ThisObject), locals[5].data.o, locals[3].data.o, ilocals_6_, ilocals_7_, 0 /* ICONST_0 */, 3 /* ICONST_3 */, 5 /* ICONST_5 */, -1 /* ICONST_M1 */, 0 /* ICONST_0 */, 0.2); 
     __CN1_DEBUG_INFO(2571);
-    JUMP_TO(label_L1871778598, 1);
+    JUMP_TO(label_L840109665, 1);
 
-label_L1850680894:
+label_L77163673:
     __CN1_DEBUG_INFO(2574);
     /* CustomInvoke */com_codename1_ui_Component_access$000___com_codename1_ui_Component_com_codename1_ui_Graphics_com_codename1_ui_Image_int_int_int_int_int_int_int_float(threadStateData, get_field_com_codename1_ui_Component_1_this_0(__cn1ThisObject), locals[5].data.o, locals[3].data.o, ilocals_6_, ilocals_7_, 0 /* ICONST_0 */, 8, 10, 1 /* ICONST_1 */, 0 /* ICONST_0 */, 0.14); 
     __CN1_DEBUG_INFO(2577);
-    JUMP_TO(label_L1871778598, 1);
+    JUMP_TO(label_L840109665, 1);
 
-label_L1219797059:
+label_L462777594:
     __CN1_DEBUG_INFO(2579);
     /* CustomInvoke */com_codename1_ui_Component_access$000___com_codename1_ui_Component_com_codename1_ui_Graphics_com_codename1_ui_Image_int_int_int_int_int_int_int_float(threadStateData, get_field_com_codename1_ui_Component_1_this_0(__cn1ThisObject), locals[5].data.o, locals[3].data.o, ilocals_6_, ilocals_7_, 0 /* ICONST_0 */, 9, 12, 1 /* ICONST_1 */, 0 /* ICONST_0 */, 0.14); 
     __CN1_DEBUG_INFO(2582);
-    JUMP_TO(label_L1871778598, 1);
+    JUMP_TO(label_L840109665, 1);
 
-label_L794526288:
+label_L828312047:
     __CN1_DEBUG_INFO(2585);
     /* CustomInvoke */com_codename1_ui_Component_access$000___com_codename1_ui_Component_com_codename1_ui_Graphics_com_codename1_ui_Image_int_int_int_int_int_int_int_float(threadStateData, get_field_com_codename1_ui_Component_1_this_0(__cn1ThisObject), locals[5].data.o, locals[3].data.o, ilocals_6_, ilocals_7_, 0 /* ICONST_0 */, 12, 17, 2 /* ICONST_2 */, 0 /* ICONST_0 */, 0.14); 
     __CN1_DEBUG_INFO(2588);
-    JUMP_TO(label_L1871778598, 1);
+    JUMP_TO(label_L840109665, 1);
 
-label_L1210165919:
+label_L979822206:
     __CN1_DEBUG_INFO(2591);
     /* CustomInvoke */com_codename1_ui_Component_access$000___com_codename1_ui_Component_com_codename1_ui_Graphics_com_codename1_ui_Image_int_int_int_int_int_int_int_float(threadStateData, get_field_com_codename1_ui_Component_1_this_0(__cn1ThisObject), locals[5].data.o, locals[3].data.o, ilocals_6_, ilocals_7_, 0 /* ICONST_0 */, 16, 24, 2 /* ICONST_2 */, 0 /* ICONST_0 */, 0.14); 
     __CN1_DEBUG_INFO(2594);
-    JUMP_TO(label_L1871778598, 1);
+    JUMP_TO(label_L840109665, 1);
 
-label_L1598561139:
+label_L1976870927:
     __CN1_DEBUG_INFO(2597);
     /* CustomInvoke */com_codename1_ui_Component_access$000___com_codename1_ui_Component_com_codename1_ui_Graphics_com_codename1_ui_Image_int_int_int_int_int_int_int_float(threadStateData, get_field_com_codename1_ui_Component_1_this_0(__cn1ThisObject), locals[5].data.o, locals[3].data.o, ilocals_6_, ilocals_7_, 0 /* ICONST_0 */, 24, 38, 3 /* ICONST_3 */, 0 /* ICONST_0 */, 0.14); 
 
-label_L1871778598:
+label_L840109665:
     __CN1_DEBUG_INFO(2604);
     BC_ALOAD(0);
     /* VarOp.assignFrom */ locals[10].type=CN1_TYPE_INVALID;    locals[10].data.o = __cn1ThisObject;
 locals[10].type=CN1_TYPE_OBJECT;    monitorEnter(threadStateData, POP_OBJ());
 
-label_L100446755:
- tryBlockOffsetL10044675501 = threadStateData->tryBlockOffset;
-    BEGIN_TRY(0, catch_L10044675501);
-    restoreToL10044675501 = threadStateData->threadObjectStackOffset;
+label_L274335814:
+ tryBlockOffsetL27433581401 = threadStateData->tryBlockOffset;
+    BEGIN_TRY(0, catch_L27433581401);
+    restoreToL27433581401 = threadStateData->threadObjectStackOffset;
 
     __CN1_DEBUG_INFO(2605);
     /* CustomInvoke */com_codename1_ui_Component_access$102___com_codename1_ui_Component_com_codename1_ui_Image_R_com_codename1_ui_Image(threadStateData, get_field_com_codename1_ui_Component_1_this_0(__cn1ThisObject), locals[4].data.o); 
@@ -232,46 +232,46 @@ label_L100446755:
     BC_ALOAD(10);
     monitorExit(threadStateData, POP_OBJ());
 
-label_L892681064:
-END_TRY(1);    JUMP_TO(label_L840109665, 1);
+label_L997020761:
+END_TRY(1);    JUMP_TO(label_L1167522035, 1);
 
-label_L310014578:
- tryBlockOffsetL31001457802 = threadStateData->tryBlockOffset;
-    BEGIN_TRY(0, catch_L31001457802);
-    restoreToL31001457802 = threadStateData->threadObjectStackOffset;
+label_L253558788:
+ tryBlockOffsetL25355878802 = threadStateData->tryBlockOffset;
+    BEGIN_TRY(0, catch_L25355878802);
+    restoreToL25355878802 = threadStateData->threadObjectStackOffset;
 
     BC_ASTORE(11);
     BC_ALOAD(10);
     monitorExit(threadStateData, POP_OBJ());
 
-label_L204173352:
+label_L1782705432:
 END_TRY(1);    BC_ALOAD(11);
     throwException(threadStateData, POP_OBJ());
 
-label_L840109665:
+label_L1167522035:
     __CN1_DEBUG_INFO(2612);
     PUSH_POINTER(__NEW_com_codename1_ui_Component_1_1(threadStateData)); /* NEW */
     BC_DUP(); /* DUP */
     /* CustomInvoke */com_codename1_ui_Component_1_1___INIT_____com_codename1_ui_Component_1(threadStateData, SP[-1].data.o, __cn1ThisObject);     SP -= 1;
     com_codename1_ui_CN_callSerially___java_lang_Runnable(threadStateData, SP[-1].data.o);     SP-= 1;
 
-label_L1033140959:
+label_L1110720365:
 END_TRY(1);    __CN1_DEBUG_INFO(2621);
     /* CustomInvoke */com_codename1_ui_CN_setProperty___java_lang_String_java_lang_String(threadStateData, STRING_FROM_CONSTANT_POOL_OFFSET(8184), STRING_FROM_CONSTANT_POOL_OFFSET(212)); 
     __CN1_DEBUG_INFO(2623);
     /* CustomInvoke */com_codename1_ui_Component_access$502___com_codename1_ui_Component_boolean_R_boolean(threadStateData, get_field_com_codename1_ui_Component_1_this_0(__cn1ThisObject), 0 /* ICONST_0 */); 
     __CN1_DEBUG_INFO(2624);
-    JUMP_TO(label_L1093223281, 0);
+    JUMP_TO(label_L214929887, 0);
 
-label_L267533031:
- tryBlockOffsetL26753303104 = threadStateData->tryBlockOffset;
-    BEGIN_TRY(0, catch_L26753303104);
-    restoreToL26753303104 = threadStateData->threadObjectStackOffset;
+label_L1850680894:
+ tryBlockOffsetL185068089404 = threadStateData->tryBlockOffset;
+    BEGIN_TRY(0, catch_L185068089404);
+    restoreToL185068089404 = threadStateData->threadObjectStackOffset;
 
     __CN1_DEBUG_INFO(2621);
     BC_ASTORE(12);
 
-label_L107540718:
+label_L1333825399:
 END_TRY(1);    /* CustomInvoke */com_codename1_ui_CN_setProperty___java_lang_String_java_lang_String(threadStateData, STRING_FROM_CONSTANT_POOL_OFFSET(8184), STRING_FROM_CONSTANT_POOL_OFFSET(212)); 
     __CN1_DEBUG_INFO(2623);
     /* CustomInvoke */com_codename1_ui_Component_access$502___com_codename1_ui_Component_boolean_R_boolean(threadStateData, get_field_com_codename1_ui_Component_1_this_0(__cn1ThisObject), 0 /* ICONST_0 */); 
@@ -279,7 +279,7 @@ END_TRY(1);    /* CustomInvoke */com_codename1_ui_CN_setProperty___java_lang_Str
     BC_ALOAD(12);
     throwException(threadStateData, POP_OBJ());
 
-label_L1093223281:
+label_L214929887:
     __CN1_DEBUG_INFO(2626);
     releaseForReturnInException(threadStateData, cn1LocalsBeginInThread, methodBlockOffset); 
     return;

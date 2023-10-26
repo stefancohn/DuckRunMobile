@@ -90,8 +90,8 @@ JAVA_OBJECT com_codename1_media_MediaManager_getAudioBuffer___java_lang_String_b
     __CN1_DEBUG_INFO(101);
     /* VarOp.assignFrom */ locals[3].type=CN1_TYPE_INVALID;    locals[3].data.o = JAVA_NULL /* ACONST_NULL */; 
 locals[3].type=CN1_TYPE_OBJECT;    __CN1_DEBUG_INFO(102);
-    if (ilocals_1_==0) /* IFEQ CustomJump */ goto label_L413937150;
-    if (/* CustomInvoke */virtual_java_util_Map_containsKey___java_lang_Object_R_boolean(threadStateData, get_static_com_codename1_media_MediaManager_audioBuffers(threadStateData), locals[0].data.o)!=0) /* IFNE CustomJump */ goto label_L413937150;
+    if (ilocals_1_==0) /* IFEQ CustomJump */ goto label_L828999620;
+    if (/* CustomInvoke */virtual_java_util_Map_containsKey___java_lang_Object_R_boolean(threadStateData, get_static_com_codename1_media_MediaManager_audioBuffers(threadStateData), locals[0].data.o)!=0) /* IFNE CustomJump */ goto label_L828999620;
     __CN1_DEBUG_INFO(103);
     PUSH_POINTER(__NEW_com_codename1_media_AudioBuffer(threadStateData)); /* NEW */
     BC_DUP(); /* DUP */
@@ -100,7 +100,7 @@ locals[3].type=CN1_TYPE_OBJECT;    __CN1_DEBUG_INFO(102);
     __CN1_DEBUG_INFO(104);
     /* CustomInvoke */virtual_java_util_Map_put___java_lang_Object_java_lang_Object_R_java_lang_Object(threadStateData, get_static_com_codename1_media_MediaManager_audioBuffers(threadStateData), locals[0].data.o, locals[3].data.o); 
 
-label_L413937150:
+label_L828999620:
     __CN1_DEBUG_INFO(107);
     /* VarOp.assignFrom */ locals[3].data.o = /* CustomInvoke */virtual_java_util_Map_get___java_lang_Object_R_java_lang_Object(threadStateData, get_static_com_codename1_media_MediaManager_audioBuffers(threadStateData), locals[0].data.o);locals[3].type=CN1_TYPE_OBJECT;    __CN1_DEBUG_INFO(108);
     virtual_com_codename1_media_AudioBuffer_retain___R_int(threadStateData, locals[3].data.o); 
@@ -121,15 +121,15 @@ JAVA_VOID com_codename1_media_MediaManager_releaseAudioBuffer___java_lang_String
     locals[0].type = CN1_TYPE_OBJECT;
     __CN1_DEBUG_INFO(121);
     /* VarOp.assignFrom */ locals[1].data.o = /* CustomInvoke */virtual_java_util_Map_get___java_lang_Object_R_java_lang_Object(threadStateData, get_static_com_codename1_media_MediaManager_audioBuffers(threadStateData), locals[0].data.o);locals[1].type=CN1_TYPE_OBJECT;    __CN1_DEBUG_INFO(122);
-    if (locals[1].data.o==JAVA_NULL) /* IFNULL CustomJump */ goto label_L1981638559;
+    if (locals[1].data.o==JAVA_NULL) /* IFNULL CustomJump */ goto label_L854370804;
     __CN1_DEBUG_INFO(123);
     /* VarOp.assignFrom */ ilocals_2_ = virtual_com_codename1_media_AudioBuffer_release___R_int(threadStateData, locals[1].data.o);
     __CN1_DEBUG_INFO(124);
-    if (ilocals_2_>0) /* IFGT CustomJump */ goto label_L1981638559;
+    if (ilocals_2_>0) /* IFGT CustomJump */ goto label_L854370804;
     __CN1_DEBUG_INFO(125);
     /* CustomInvoke */virtual_java_util_Map_remove___java_lang_Object_R_java_lang_Object(threadStateData, get_static_com_codename1_media_MediaManager_audioBuffers(threadStateData), locals[0].data.o); 
 
-label_L1981638559:
+label_L854370804:
     __CN1_DEBUG_INFO(128);
     releaseForReturn(threadStateData, cn1LocalsBeginInThread); 
     return;
@@ -355,17 +355,17 @@ JAVA_OBJECT com_codename1_media_MediaManager_createMediaRecorder___com_codename1
     locals[0].data.o = __cn1Arg1;
     locals[0].type = CN1_TYPE_OBJECT;
     __CN1_DEBUG_INFO(365);
-    if (virtual_com_codename1_media_MediaRecorderBuilder_isRedirectToAudioBuffer___R_boolean(threadStateData, locals[0].data.o)==0) /* IFEQ CustomJump */ goto label_L854370804;
+    if (virtual_com_codename1_media_MediaRecorderBuilder_isRedirectToAudioBuffer___R_boolean(threadStateData, locals[0].data.o)==0) /* IFEQ CustomJump */ goto label_L1299858199;
     __CN1_DEBUG_INFO(366);
     { JAVA_OBJECT tmpResult = virtual_com_codename1_media_MediaRecorderBuilder_build___R_com_codename1_media_Media(threadStateData, locals[0].data.o);
     PUSH_OBJ(tmpResult); }
     releaseForReturn(threadStateData, cn1LocalsBeginInThread); 
     return POP_OBJ();
 
-label_L854370804:
+label_L1299858199:
     __CN1_DEBUG_INFO(368);
     /* VarOp.assignFrom */ locals[1].data.o = virtual_com_codename1_media_MediaRecorderBuilder_getMimeType___R_java_lang_String(threadStateData, locals[0].data.o);locals[1].type=CN1_TYPE_OBJECT;    __CN1_DEBUG_INFO(369);
-    if (locals[1].data.o!=JAVA_NULL) /* IFNONNULL CustomJump */ goto label_L1237534847;
+    if (locals[1].data.o!=JAVA_NULL) /* IFNONNULL CustomJump */ goto label_L1595746058;
     PUSH_OBJ(com_codename1_media_MediaManager_getAvailableRecordingMimeTypes___R_java_lang_String_1ARRAY(threadStateData));
     { /* ARRAYLENGTH */
         if(SP[-1].data.o == JAVA_NULL) { 
@@ -374,7 +374,7 @@ label_L854370804:
         SP[-1].type = CN1_TYPE_INT; 
         SP[-1].data.i = (*((JAVA_ARRAY)SP[-1].data.o)).length; 
     }
-    if(POP_INT() <= 0) /* IFLE */ goto label_L1237534847;
+    if(POP_INT() <= 0) /* IFLE */ goto label_L1595746058;
     __CN1_DEBUG_INFO(370);
     PUSH_OBJ(com_codename1_media_MediaManager_getAvailableRecordingMimeTypes___R_java_lang_String_1ARRAY(threadStateData));
     PUSH_INT(0); /* ICONST_0 */
@@ -384,7 +384,7 @@ label_L854370804:
     SP[-1].type = CN1_TYPE_OBJECT; 
     BC_ASTORE(1);
 
-label_L1237534847:
+label_L1595746058:
     __CN1_DEBUG_INFO(372);
     /* VarOp.assignFrom */ locals[2].data.o = virtual_com_codename1_media_MediaRecorderBuilder_getPath___R_java_lang_String(threadStateData, locals[0].data.o);locals[2].type=CN1_TYPE_OBJECT;    __CN1_DEBUG_INFO(373);
     /* VarOp.assignFrom */     ilocals_3_ = 0 /* ICONST_0 */; 
@@ -394,25 +394,25 @@ label_L1237534847:
     __CN1_DEBUG_INFO(376);
     /* VarOp.assignFrom */     ilocals_6_ = 0 /* ICONST_0 */; 
 
-label_L884262954:
-    if (ilocals_6_>=ilocals_5_) /* IF_ICMPGE CustomJump */ goto label_L510299393;
+label_L1316845548:
+    if (ilocals_6_>=ilocals_5_) /* IF_ICMPGE CustomJump */ goto label_L131157756;
     __CN1_DEBUG_INFO(377);
     /* VarOp.assignFrom */ locals[7].type=CN1_TYPE_INVALID;locals[7].data.o=CN1_ARRAY_ELEMENT_OBJECT(locals[4].data.o, ilocals_6_);
 locals[7].type=CN1_TYPE_OBJECT;    __CN1_DEBUG_INFO(378);
-    if (/* CustomInvoke */virtual_java_lang_String_equals___java_lang_Object_R_boolean(threadStateData, locals[7].data.o, locals[1].data.o)==0) /* IFEQ CustomJump */ goto label_L1673559727;
+    if (/* CustomInvoke */virtual_java_lang_String_equals___java_lang_Object_R_boolean(threadStateData, locals[7].data.o, locals[1].data.o)==0) /* IFEQ CustomJump */ goto label_L1367405616;
     __CN1_DEBUG_INFO(379);
     /* VarOp.assignFrom */     ilocals_3_ = 1 /* ICONST_1 */; 
     __CN1_DEBUG_INFO(380);
-    goto label_L510299393;
+    goto label_L131157756;
 
-label_L1673559727:
+label_L1367405616:
     __CN1_DEBUG_INFO(376);
     BC_IINC(6, 1);
-    goto label_L884262954;
+    goto label_L1316845548;
 
-label_L510299393:
+label_L131157756:
     __CN1_DEBUG_INFO(383);
-    if (ilocals_3_!=0) /* IFNE CustomJump */ goto label_L1743257203;
+    if (ilocals_3_!=0) /* IFNE CustomJump */ goto label_L2020486238;
     __CN1_DEBUG_INFO(384);
     PUSH_POINTER(__NEW_java_lang_IllegalArgumentException(threadStateData)); /* NEW */
     BC_DUP(); /* DUP */
@@ -430,7 +430,7 @@ label_L510299393:
     java_lang_IllegalArgumentException___INIT_____java_lang_String(threadStateData, SP[-2].data.o, SP[-1].data.o);     SP-= 2;
     throwException(threadStateData, POP_OBJ());
 
-label_L1743257203:
+label_L2020486238:
     __CN1_DEBUG_INFO(389);
     PUSH_OBJ(com_codename1_ui_Display_getInstance___R_com_codename1_ui_Display(threadStateData));
     /* CustomInvoke */{ JAVA_OBJECT tmpResult = virtual_com_codename1_ui_Display_createMediaRecorder___java_lang_String_java_lang_String_R_com_codename1_media_Media(threadStateData, SP[-1].data.o, locals[2].data.o, locals[1].data.o);

@@ -244,20 +244,20 @@ JAVA_OBJECT com_codename1_capture_VideoCaptureConstraints_getQualityString___R_j
     PUSH_INT(tmpResult); }
     SP--;
     switch((*SP).data.i) {
-        case 1: goto label_L1493448513;
-        case 2: goto label_L831786347;
-        default: goto label_L1691206416;
+        case 1: goto label_L1381735924;
+        case 2: goto label_L1390222306;
+        default: goto label_L914718002;
     }
 
-label_L1493448513:
+label_L1381735924:
     __CN1_DEBUG_INFO(169);
     releaseForReturn(threadStateData, cn1LocalsBeginInThread); return STRING_FROM_CONSTANT_POOL_OFFSET(1305);
 
-label_L831786347:
+label_L1390222306:
     __CN1_DEBUG_INFO(171);
     releaseForReturn(threadStateData, cn1LocalsBeginInThread); return STRING_FROM_CONSTANT_POOL_OFFSET(1306);
 
-label_L1691206416:
+label_L914718002:
     __CN1_DEBUG_INFO(173);
     releaseForReturn(threadStateData, cn1LocalsBeginInThread); return STRING_FROM_CONSTANT_POOL_OFFSET(289);
 }
@@ -270,7 +270,7 @@ JAVA_OBJECT com_codename1_capture_VideoCaptureConstraints_getMaxFileSizeString__
     PUSH_LONG(tmpResult); }
     PUSH_LONG(0); /* LCONST_0 */
     BC_LCMP();
-    if(POP_INT() <= 0) /* IFLE */ goto label_L2102803475;
+    if(POP_INT() <= 0) /* IFLE */ goto label_L609356369;
     __CN1_DEBUG_INFO(178);
     PUSH_POINTER(__NEW_java_lang_StringBuilder(threadStateData)); /* NEW */
     BC_DUP(); /* DUP */
@@ -286,7 +286,7 @@ JAVA_OBJECT com_codename1_capture_VideoCaptureConstraints_getMaxFileSizeString__
     releaseForReturn(threadStateData, cn1LocalsBeginInThread); 
     return POP_OBJ();
 
-label_L2102803475:
+label_L609356369:
     __CN1_DEBUG_INFO(180);
     releaseForReturn(threadStateData, cn1LocalsBeginInThread); return STRING_FROM_CONSTANT_POOL_OFFSET(289);
 }
@@ -301,25 +301,25 @@ JAVA_BOOLEAN com_codename1_capture_VideoCaptureConstraints_equals___java_lang_Ob
     PUSH_OBJ(tmpResult); }
     /* LDC: 'com_codename1_capture_VideoCaptureConstraints'*/
     PUSH_POINTER((JAVA_OBJECT)&class__com_codename1_capture_VideoCaptureConstraints);
-    SP-=2; if((*SP).data.o != SP[1].data.o) /* IF_ACMPNE */ goto label_L84976327;
+    SP-=2; if((*SP).data.o != SP[1].data.o) /* IF_ACMPNE */ goto label_L719882002;
     __CN1_DEBUG_INFO(186);
     /* VarOp.assignFrom */ locals[2].type=CN1_TYPE_INVALID;    locals[2].data.o = locals[1].data.o;
 locals[2].type=CN1_TYPE_OBJECT;    __CN1_DEBUG_INFO(187);
-    if (get_field_com_codename1_capture_VideoCaptureConstraints_preferredHeight(locals[2].data.o)!=get_field_com_codename1_capture_VideoCaptureConstraints_preferredHeight(__cn1ThisObject)) /* IF_ICMPNE CustomJump */ goto label_L352192603;
-    if (get_field_com_codename1_capture_VideoCaptureConstraints_preferredWidth(locals[2].data.o)!=get_field_com_codename1_capture_VideoCaptureConstraints_preferredWidth(__cn1ThisObject)) /* IF_ICMPNE CustomJump */ goto label_L352192603;
-    if (get_field_com_codename1_capture_VideoCaptureConstraints_preferredMaxLength(locals[2].data.o)!=get_field_com_codename1_capture_VideoCaptureConstraints_preferredMaxLength(__cn1ThisObject)) /* IF_ICMPNE CustomJump */ goto label_L352192603;
-    if (get_field_com_codename1_capture_VideoCaptureConstraints_preferredQuality(locals[2].data.o)!=get_field_com_codename1_capture_VideoCaptureConstraints_preferredQuality(__cn1ThisObject)) /* IF_ICMPNE CustomJump */ goto label_L352192603;
-    if (CN1_CMP_EXPR(get_field_com_codename1_capture_VideoCaptureConstraints_preferredMaxFileSize(locals[2].data.o), get_field_com_codename1_capture_VideoCaptureConstraints_preferredMaxFileSize(__cn1ThisObject))!=0) /* IFNE CustomJump */ goto label_L352192603;
+    if (get_field_com_codename1_capture_VideoCaptureConstraints_preferredHeight(locals[2].data.o)!=get_field_com_codename1_capture_VideoCaptureConstraints_preferredHeight(__cn1ThisObject)) /* IF_ICMPNE CustomJump */ goto label_L273714086;
+    if (get_field_com_codename1_capture_VideoCaptureConstraints_preferredWidth(locals[2].data.o)!=get_field_com_codename1_capture_VideoCaptureConstraints_preferredWidth(__cn1ThisObject)) /* IF_ICMPNE CustomJump */ goto label_L273714086;
+    if (get_field_com_codename1_capture_VideoCaptureConstraints_preferredMaxLength(locals[2].data.o)!=get_field_com_codename1_capture_VideoCaptureConstraints_preferredMaxLength(__cn1ThisObject)) /* IF_ICMPNE CustomJump */ goto label_L273714086;
+    if (get_field_com_codename1_capture_VideoCaptureConstraints_preferredQuality(locals[2].data.o)!=get_field_com_codename1_capture_VideoCaptureConstraints_preferredQuality(__cn1ThisObject)) /* IF_ICMPNE CustomJump */ goto label_L273714086;
+    if (CN1_CMP_EXPR(get_field_com_codename1_capture_VideoCaptureConstraints_preferredMaxFileSize(locals[2].data.o), get_field_com_codename1_capture_VideoCaptureConstraints_preferredMaxFileSize(__cn1ThisObject))!=0) /* IFNE CustomJump */ goto label_L273714086;
     PUSH_INT(1); /* ICONST_1 */
-    goto label_L513907863;
+    goto label_L228661363;
 
-label_L352192603:
+label_L273714086:
     PUSH_INT(0); /* ICONST_0 */
 
-label_L513907863:
+label_L228661363:
     releaseForReturn(threadStateData, cn1LocalsBeginInThread); return SP[-1].data.i;
 
-label_L84976327:
+label_L719882002:
     __CN1_DEBUG_INFO(193);
     releaseForReturn(threadStateData, cn1LocalsBeginInThread); return 0 /* ICONST_0 */;
 }
@@ -404,13 +404,13 @@ JAVA_OBJECT com_codename1_capture_VideoCaptureConstraints_preferredMaxFileSize__
     DEFINE_INSTANCE_METHOD_STACK(4, 3, 0, 1298, 1311);
     locals[0].data.o = __cn1ThisObject; locals[0].type = CN1_TYPE_OBJECT;     llocals_1_ = __cn1Arg1;
     __CN1_DEBUG_INFO(246);
-    if (CN1_CMP_EXPR(get_field_com_codename1_capture_VideoCaptureConstraints_preferredMaxFileSize(__cn1ThisObject), llocals_1_)==0) /* IFEQ CustomJump */ goto label_L1381735924;
+    if (CN1_CMP_EXPR(get_field_com_codename1_capture_VideoCaptureConstraints_preferredMaxFileSize(__cn1ThisObject), llocals_1_)==0) /* IFEQ CustomJump */ goto label_L957717268;
     __CN1_DEBUG_INFO(247);
     set_field_com_codename1_capture_VideoCaptureConstraints_preferredMaxFileSize(threadStateData, llocals_1_, __cn1ThisObject);
     __CN1_DEBUG_INFO(248);
     set_field_com_codename1_capture_VideoCaptureConstraints_compiled(threadStateData, 0 /* ICONST_0 */, __cn1ThisObject);
 
-label_L1381735924:
+label_L957717268:
     __CN1_DEBUG_INFO(250);
 
 {
@@ -459,17 +459,17 @@ JAVA_BOOLEAN com_codename1_capture_VideoCaptureConstraints_isMaxLengthSupported_
     locals[0].data.o = __cn1ThisObject; locals[0].type = CN1_TYPE_OBJECT;     __CN1_DEBUG_INFO(331);
     com_codename1_capture_VideoCaptureConstraints_build___R_com_codename1_capture_VideoCaptureConstraints(threadStateData, __cn1ThisObject); 
     __CN1_DEBUG_INFO(332);
-    if (get_field_com_codename1_capture_VideoCaptureConstraints_maxLength(__cn1ThisObject)==0) /* IFEQ CustomJump */ goto label_L914718002;
-    if (get_field_com_codename1_capture_VideoCaptureConstraints_maxLength(__cn1ThisObject)!=get_field_com_codename1_capture_VideoCaptureConstraints_preferredMaxLength(__cn1ThisObject)) /* IF_ICMPNE CustomJump */ goto label_L609356369;
+    if (get_field_com_codename1_capture_VideoCaptureConstraints_maxLength(__cn1ThisObject)==0) /* IFEQ CustomJump */ goto label_L1135798235;
+    if (get_field_com_codename1_capture_VideoCaptureConstraints_maxLength(__cn1ThisObject)!=get_field_com_codename1_capture_VideoCaptureConstraints_preferredMaxLength(__cn1ThisObject)) /* IF_ICMPNE CustomJump */ goto label_L1188371806;
 
-label_L914718002:
+label_L1135798235:
     PUSH_INT(1); /* ICONST_1 */
-    goto label_L719882002;
+    goto label_L1393423275;
 
-label_L609356369:
+label_L1188371806:
     PUSH_INT(0); /* ICONST_0 */
 
-label_L719882002:
+label_L1393423275:
     releaseForReturn(threadStateData, cn1LocalsBeginInThread); return SP[-1].data.i;
 }
 
@@ -514,21 +514,21 @@ JAVA_BOOLEAN com_codename1_capture_VideoCaptureConstraints_isSizeSupported___R_b
     locals[0].data.o = __cn1ThisObject; locals[0].type = CN1_TYPE_OBJECT;     __CN1_DEBUG_INFO(391);
     com_codename1_capture_VideoCaptureConstraints_build___R_com_codename1_capture_VideoCaptureConstraints(threadStateData, __cn1ThisObject); 
     __CN1_DEBUG_INFO(392);
-    if (get_field_com_codename1_capture_VideoCaptureConstraints_preferredWidth(__cn1ThisObject)!=0) /* IFNE CustomJump */ goto label_L273714086;
-    if (get_field_com_codename1_capture_VideoCaptureConstraints_preferredHeight(__cn1ThisObject)!=0) /* IFNE CustomJump */ goto label_L273714086;
+    if (get_field_com_codename1_capture_VideoCaptureConstraints_preferredWidth(__cn1ThisObject)!=0) /* IFNE CustomJump */ goto label_L1584580650;
+    if (get_field_com_codename1_capture_VideoCaptureConstraints_preferredHeight(__cn1ThisObject)!=0) /* IFNE CustomJump */ goto label_L1584580650;
     releaseForReturn(threadStateData, cn1LocalsBeginInThread); return 1 /* ICONST_1 */;
 
-label_L273714086:
+label_L1584580650:
     __CN1_DEBUG_INFO(393);
-    if (get_field_com_codename1_capture_VideoCaptureConstraints_width(__cn1ThisObject)!=get_field_com_codename1_capture_VideoCaptureConstraints_preferredWidth(__cn1ThisObject)) /* IF_ICMPNE CustomJump */ goto label_L228661363;
-    if (get_field_com_codename1_capture_VideoCaptureConstraints_height(__cn1ThisObject)!=get_field_com_codename1_capture_VideoCaptureConstraints_preferredHeight(__cn1ThisObject)) /* IF_ICMPNE CustomJump */ goto label_L228661363;
+    if (get_field_com_codename1_capture_VideoCaptureConstraints_width(__cn1ThisObject)!=get_field_com_codename1_capture_VideoCaptureConstraints_preferredWidth(__cn1ThisObject)) /* IF_ICMPNE CustomJump */ goto label_L178941952;
+    if (get_field_com_codename1_capture_VideoCaptureConstraints_height(__cn1ThisObject)!=get_field_com_codename1_capture_VideoCaptureConstraints_preferredHeight(__cn1ThisObject)) /* IF_ICMPNE CustomJump */ goto label_L178941952;
     PUSH_INT(1); /* ICONST_1 */
-    goto label_L957717268;
+    goto label_L1694213094;
 
-label_L228661363:
+label_L178941952:
     PUSH_INT(0); /* ICONST_0 */
 
-label_L957717268:
+label_L1694213094:
     releaseForReturn(threadStateData, cn1LocalsBeginInThread); return SP[-1].data.i;
 }
 
@@ -538,13 +538,13 @@ JAVA_OBJECT com_codename1_capture_VideoCaptureConstraints_preferredWidth___int_R
     DEFINE_INSTANCE_METHOD_STACK(2, 2, 0, 1298, 1321);
     locals[0].data.o = __cn1ThisObject; locals[0].type = CN1_TYPE_OBJECT;     ilocals_1_ = __cn1Arg1;
     __CN1_DEBUG_INFO(404);
-    if (ilocals_1_==get_field_com_codename1_capture_VideoCaptureConstraints_preferredWidth(__cn1ThisObject)) /* IF_ICMPEQ CustomJump */ goto label_L1470843699;
+    if (ilocals_1_==get_field_com_codename1_capture_VideoCaptureConstraints_preferredWidth(__cn1ThisObject)) /* IF_ICMPEQ CustomJump */ goto label_L1490523257;
     __CN1_DEBUG_INFO(405);
     set_field_com_codename1_capture_VideoCaptureConstraints_preferredWidth(threadStateData, ilocals_1_, __cn1ThisObject);
     __CN1_DEBUG_INFO(406);
     set_field_com_codename1_capture_VideoCaptureConstraints_compiled(threadStateData, 0 /* ICONST_0 */, __cn1ThisObject);
 
-label_L1470843699:
+label_L1490523257:
     __CN1_DEBUG_INFO(408);
 
 {
@@ -572,13 +572,13 @@ JAVA_OBJECT com_codename1_capture_VideoCaptureConstraints_preferredHeight___int_
     DEFINE_INSTANCE_METHOD_STACK(2, 2, 0, 1298, 1322);
     locals[0].data.o = __cn1ThisObject; locals[0].type = CN1_TYPE_OBJECT;     ilocals_1_ = __cn1Arg1;
     __CN1_DEBUG_INFO(438);
-    if (ilocals_1_==get_field_com_codename1_capture_VideoCaptureConstraints_preferredHeight(__cn1ThisObject)) /* IF_ICMPEQ CustomJump */ goto label_L1135798235;
+    if (ilocals_1_==get_field_com_codename1_capture_VideoCaptureConstraints_preferredHeight(__cn1ThisObject)) /* IF_ICMPEQ CustomJump */ goto label_L271328465;
     __CN1_DEBUG_INFO(439);
     set_field_com_codename1_capture_VideoCaptureConstraints_preferredHeight(threadStateData, ilocals_1_, __cn1ThisObject);
     __CN1_DEBUG_INFO(440);
     set_field_com_codename1_capture_VideoCaptureConstraints_compiled(threadStateData, 0 /* ICONST_0 */, __cn1ThisObject);
 
-label_L1135798235:
+label_L271328465:
     __CN1_DEBUG_INFO(442);
 
 {
@@ -617,13 +617,13 @@ JAVA_OBJECT com_codename1_capture_VideoCaptureConstraints_preferredQuality___int
     DEFINE_INSTANCE_METHOD_STACK(2, 2, 0, 1298, 1325);
     locals[0].data.o = __cn1ThisObject; locals[0].type = CN1_TYPE_OBJECT;     ilocals_1_ = __cn1Arg1;
     __CN1_DEBUG_INFO(477);
-    if (ilocals_1_==get_field_com_codename1_capture_VideoCaptureConstraints_preferredQuality(__cn1ThisObject)) /* IF_ICMPEQ CustomJump */ goto label_L1188371806;
+    if (ilocals_1_==get_field_com_codename1_capture_VideoCaptureConstraints_preferredQuality(__cn1ThisObject)) /* IF_ICMPEQ CustomJump */ goto label_L1230994596;
     __CN1_DEBUG_INFO(478);
     set_field_com_codename1_capture_VideoCaptureConstraints_preferredQuality(threadStateData, ilocals_1_, __cn1ThisObject);
     __CN1_DEBUG_INFO(479);
     set_field_com_codename1_capture_VideoCaptureConstraints_compiled(threadStateData, 0 /* ICONST_0 */, __cn1ThisObject);
 
-label_L1188371806:
+label_L1230994596:
     __CN1_DEBUG_INFO(481);
 
 {
@@ -636,16 +636,16 @@ label_L1188371806:
 JAVA_OBJECT com_codename1_capture_VideoCaptureConstraints_build___R_com_codename1_capture_VideoCaptureConstraints(CODENAME_ONE_THREAD_STATE, JAVA_OBJECT  __cn1ThisObject) {
     DEFINE_INSTANCE_METHOD_STACK(3, 2, 0, 1298, 1326);
     locals[0].data.o = __cn1ThisObject; locals[0].type = CN1_TYPE_OBJECT;     __CN1_DEBUG_INFO(491);
-    if (get_field_com_codename1_capture_VideoCaptureConstraints_compiled(__cn1ThisObject)==0) /* IFEQ CustomJump */ goto label_L1393423275;
+    if (get_field_com_codename1_capture_VideoCaptureConstraints_compiled(__cn1ThisObject)==0) /* IFEQ CustomJump */ goto label_L1879180026;
 
 {
     JAVA_OBJECT ___returnValue=__cn1ThisObject;
     releaseForReturn(threadStateData, cn1LocalsBeginInThread); return ___returnValue;
 }
 
-label_L1393423275:
+label_L1879180026:
     __CN1_DEBUG_INFO(492);
-    if (get_static_com_codename1_capture_VideoCaptureConstraints_compiler(threadStateData)!=JAVA_NULL) /* IFNONNULL CustomJump */ goto label_L1584580650;
+    if (get_static_com_codename1_capture_VideoCaptureConstraints_compiler(threadStateData)!=JAVA_NULL) /* IFNONNULL CustomJump */ goto label_L336737503;
     __CN1_DEBUG_INFO(493);
     set_field_com_codename1_capture_VideoCaptureConstraints_height(threadStateData, 0 /* ICONST_0 */, __cn1ThisObject);
     __CN1_DEBUG_INFO(494);
@@ -656,9 +656,9 @@ label_L1393423275:
     set_field_com_codename1_capture_VideoCaptureConstraints_quality(threadStateData, 0 /* ICONST_0 */, __cn1ThisObject);
     __CN1_DEBUG_INFO(497);
     set_field_com_codename1_capture_VideoCaptureConstraints_maxFileSize(threadStateData, 0 /* LCONST_0 */, __cn1ThisObject);
-    goto label_L178941952;
+    goto label_L1701412896;
 
-label_L1584580650:
+label_L336737503:
     __CN1_DEBUG_INFO(499);
     /* VarOp.assignFrom */ locals[1].data.o = /* CustomInvoke */virtual_com_codename1_capture_VideoCaptureConstraints_Compiler_compile___com_codename1_capture_VideoCaptureConstraints_R_com_codename1_capture_VideoCaptureConstraints(threadStateData, get_static_com_codename1_capture_VideoCaptureConstraints_compiler(threadStateData), __cn1ThisObject);locals[1].type=CN1_TYPE_OBJECT;    __CN1_DEBUG_INFO(500);
     set_field_com_codename1_capture_VideoCaptureConstraints_width(threadStateData, get_field_com_codename1_capture_VideoCaptureConstraints_preferredWidth(locals[1].data.o), __cn1ThisObject);
@@ -671,7 +671,7 @@ label_L1584580650:
     __CN1_DEBUG_INFO(504);
     set_field_com_codename1_capture_VideoCaptureConstraints_maxFileSize(threadStateData, get_field_com_codename1_capture_VideoCaptureConstraints_preferredMaxFileSize(locals[1].data.o), __cn1ThisObject);
 
-label_L178941952:
+label_L1701412896:
     __CN1_DEBUG_INFO(506);
     set_field_com_codename1_capture_VideoCaptureConstraints_compiled(threadStateData, 1 /* ICONST_1 */, __cn1ThisObject);
     __CN1_DEBUG_INFO(507);
@@ -686,17 +686,17 @@ label_L178941952:
 JAVA_BOOLEAN com_codename1_capture_VideoCaptureConstraints_isSupported___R_boolean(CODENAME_ONE_THREAD_STATE, JAVA_OBJECT  __cn1ThisObject) {
     DEFINE_INSTANCE_METHOD_STACK(1, 1, 0, 1298, 230);
     locals[0].data.o = __cn1ThisObject; locals[0].type = CN1_TYPE_OBJECT;     __CN1_DEBUG_INFO(518);
-    if (virtual_com_codename1_capture_VideoCaptureConstraints_isSizeSupported___R_boolean(threadStateData, __cn1ThisObject)==0) /* IFEQ CustomJump */ goto label_L1694213094;
-    if (virtual_com_codename1_capture_VideoCaptureConstraints_isMaxLengthSupported___R_boolean(threadStateData, __cn1ThisObject)==0) /* IFEQ CustomJump */ goto label_L1694213094;
-    if (virtual_com_codename1_capture_VideoCaptureConstraints_isQualitySupported___R_boolean(threadStateData, __cn1ThisObject)==0) /* IFEQ CustomJump */ goto label_L1694213094;
-    if (virtual_com_codename1_capture_VideoCaptureConstraints_isMaxFileSizeSupported___R_boolean(threadStateData, __cn1ThisObject)==0) /* IFEQ CustomJump */ goto label_L1694213094;
+    if (virtual_com_codename1_capture_VideoCaptureConstraints_isSizeSupported___R_boolean(threadStateData, __cn1ThisObject)==0) /* IFEQ CustomJump */ goto label_L1466006133;
+    if (virtual_com_codename1_capture_VideoCaptureConstraints_isMaxLengthSupported___R_boolean(threadStateData, __cn1ThisObject)==0) /* IFEQ CustomJump */ goto label_L1466006133;
+    if (virtual_com_codename1_capture_VideoCaptureConstraints_isQualitySupported___R_boolean(threadStateData, __cn1ThisObject)==0) /* IFEQ CustomJump */ goto label_L1466006133;
+    if (virtual_com_codename1_capture_VideoCaptureConstraints_isMaxFileSizeSupported___R_boolean(threadStateData, __cn1ThisObject)==0) /* IFEQ CustomJump */ goto label_L1466006133;
     PUSH_INT(1); /* ICONST_1 */
-    goto label_L1490523257;
+    goto label_L932493233;
 
-label_L1694213094:
+label_L1466006133:
     PUSH_INT(0); /* ICONST_0 */
 
-label_L1490523257:
+label_L932493233:
     releaseForReturn(threadStateData, cn1LocalsBeginInThread); return SP[-1].data.i;
 }
 
@@ -704,17 +704,17 @@ label_L1490523257:
 JAVA_BOOLEAN com_codename1_capture_VideoCaptureConstraints_isQualitySupported___R_boolean(CODENAME_ONE_THREAD_STATE, JAVA_OBJECT  __cn1ThisObject) {
     DEFINE_INSTANCE_METHOD_STACK(2, 1, 0, 1298, 1327);
     locals[0].data.o = __cn1ThisObject; locals[0].type = CN1_TYPE_OBJECT;     __CN1_DEBUG_INFO(529);
-    if (get_field_com_codename1_capture_VideoCaptureConstraints_preferredQuality(__cn1ThisObject)==0) /* IFEQ CustomJump */ goto label_L271328465;
-    if (get_field_com_codename1_capture_VideoCaptureConstraints_quality(__cn1ThisObject)!=get_field_com_codename1_capture_VideoCaptureConstraints_preferredQuality(__cn1ThisObject)) /* IF_ICMPNE CustomJump */ goto label_L1230994596;
+    if (get_field_com_codename1_capture_VideoCaptureConstraints_preferredQuality(__cn1ThisObject)==0) /* IFEQ CustomJump */ goto label_L841341264;
+    if (get_field_com_codename1_capture_VideoCaptureConstraints_quality(__cn1ThisObject)!=get_field_com_codename1_capture_VideoCaptureConstraints_preferredQuality(__cn1ThisObject)) /* IF_ICMPNE CustomJump */ goto label_L467937204;
 
-label_L271328465:
+label_L841341264:
     PUSH_INT(1); /* ICONST_1 */
-    goto label_L1879180026;
+    goto label_L1191855215;
 
-label_L1230994596:
+label_L467937204:
     PUSH_INT(0); /* ICONST_0 */
 
-label_L1879180026:
+label_L1191855215:
     releaseForReturn(threadStateData, cn1LocalsBeginInThread); return SP[-1].data.i;
 }
 
@@ -722,17 +722,17 @@ label_L1879180026:
 JAVA_BOOLEAN com_codename1_capture_VideoCaptureConstraints_isMaxFileSizeSupported___R_boolean(CODENAME_ONE_THREAD_STATE, JAVA_OBJECT  __cn1ThisObject) {
     DEFINE_INSTANCE_METHOD_STACK(4, 1, 0, 1298, 1328);
     locals[0].data.o = __cn1ThisObject; locals[0].type = CN1_TYPE_OBJECT;     __CN1_DEBUG_INFO(540);
-    if (CN1_CMP_EXPR(get_field_com_codename1_capture_VideoCaptureConstraints_preferredMaxFileSize(__cn1ThisObject), 0 /* LCONST_0 */)==0) /* IFEQ CustomJump */ goto label_L336737503;
-    if (CN1_CMP_EXPR(get_field_com_codename1_capture_VideoCaptureConstraints_maxFileSize(__cn1ThisObject), get_field_com_codename1_capture_VideoCaptureConstraints_preferredMaxFileSize(__cn1ThisObject))!=0) /* IFNE CustomJump */ goto label_L1701412896;
+    if (CN1_CMP_EXPR(get_field_com_codename1_capture_VideoCaptureConstraints_preferredMaxFileSize(__cn1ThisObject), 0 /* LCONST_0 */)==0) /* IFEQ CustomJump */ goto label_L1429297664;
+    if (CN1_CMP_EXPR(get_field_com_codename1_capture_VideoCaptureConstraints_maxFileSize(__cn1ThisObject), get_field_com_codename1_capture_VideoCaptureConstraints_preferredMaxFileSize(__cn1ThisObject))!=0) /* IFNE CustomJump */ goto label_L1229121199;
 
-label_L336737503:
+label_L1429297664:
     PUSH_INT(1); /* ICONST_1 */
-    goto label_L1466006133;
+    goto label_L1939972532;
 
-label_L1701412896:
+label_L1229121199:
     PUSH_INT(0); /* ICONST_0 */
 
-label_L1466006133:
+label_L1939972532:
     releaseForReturn(threadStateData, cn1LocalsBeginInThread); return SP[-1].data.i;
 }
 

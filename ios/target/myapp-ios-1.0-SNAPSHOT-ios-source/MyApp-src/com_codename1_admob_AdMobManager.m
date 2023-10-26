@@ -51,11 +51,11 @@ JAVA_VOID com_codename1_admob_AdMobManager___INIT_____java_lang_String(CODENAME_
     set_field_com_codename1_admob_AdMobManager_admob(threadStateData, PEEK_OBJ(1), PEEK_OBJ(2));
     POP_MANY(2);
     __CN1_DEBUG_INFO(24);
-    if (get_field_com_codename1_admob_AdMobManager_admob(__cn1ThisObject)==JAVA_NULL) /* IFNULL CustomJump */ goto label_L1015676376;
+    if (get_field_com_codename1_admob_AdMobManager_admob(__cn1ThisObject)==JAVA_NULL) /* IFNULL CustomJump */ goto label_L1208371802;
     __CN1_DEBUG_INFO(25);
     /* CustomInvoke */virtual_com_codename1_admob_AdMobNative_init___java_lang_String(threadStateData, get_field_com_codename1_admob_AdMobManager_admob(__cn1ThisObject), locals[1].data.o); 
 
-label_L1015676376:
+label_L1208371802:
     __CN1_DEBUG_INFO(27);
     releaseForReturn(threadStateData, cn1LocalsBeginInThread); 
     return;
@@ -73,7 +73,7 @@ JAVA_BOOLEAN com_codename1_admob_AdMobManager_loadAd___R_boolean(CODENAME_ONE_TH
     PUSH_OBJ(com_codename1_ui_Display_getInstance___R_com_codename1_ui_Display(threadStateData));
     { JAVA_INT tmpResult = virtual_com_codename1_ui_Display_isEdt___R_boolean(threadStateData, SP[-1].data.o);
     SP[-1].data.i = tmpResult; SP[-1].type = CN1_TYPE_INT; }
-    if(POP_INT() == 0) /* IFEQ */ goto label_L1048135485;
+    if(POP_INT() == 0) /* IFEQ */ goto label_L1781227569;
     __CN1_DEBUG_INFO(49);
 
 {
@@ -81,7 +81,7 @@ JAVA_BOOLEAN com_codename1_admob_AdMobManager_loadAd___R_boolean(CODENAME_ONE_TH
     releaseForReturn(threadStateData, cn1LocalsBeginInThread); return ___returnValue;
 }
 
-label_L1048135485:
+label_L1781227569:
     __CN1_DEBUG_INFO(51);
     PUSH_OBJ(com_codename1_ui_Display_getInstance___R_com_codename1_ui_Display(threadStateData));
     PUSH_POINTER(__NEW_com_codename1_admob_AdMobManager_1(threadStateData)); /* NEW */

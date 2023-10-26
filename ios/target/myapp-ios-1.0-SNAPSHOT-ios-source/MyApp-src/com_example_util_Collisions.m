@@ -33,7 +33,7 @@ com_example_util_Collisions___INIT____(threadStateData, o);
 
 
 JAVA_VOID com_example_util_Collisions___INIT____(CODENAME_ONE_THREAD_STATE, JAVA_OBJECT  __cn1ThisObject) {
-    DEFINE_INSTANCE_METHOD_STACK(1, 1, 0, 10293, 205);
+    DEFINE_INSTANCE_METHOD_STACK(1, 1, 0, 10294, 205);
     locals[0].data.o = __cn1ThisObject; locals[0].type = CN1_TYPE_OBJECT;     __CN1_DEBUG_INFO(4);
     java_lang_Object___INIT____(threadStateData, __cn1ThisObject); 
     releaseForReturn(threadStateData, cn1LocalsBeginInThread); 
@@ -48,7 +48,7 @@ JAVA_OBJECT com_example_util_Collisions_isSolid___int_int_int_2ARRAY_R_java_lang
     volatile JAVA_INT ilocals_4_ = 0; /* v4 */
     volatile JAVA_INT ilocals_5_ = 0; /* v5 */
     __STATIC_INITIALIZER_com_example_util_Collisions(threadStateData);
-    DEFINE_METHOD_STACK(2, 6, 0, 10293, 10294);
+    DEFINE_METHOD_STACK(2, 6, 0, 10294, 10295);
     ilocals_0_ = __cn1Arg1;
     ilocals_1_ = __cn1Arg2;
     locals[2].data.o = __cn1Arg3;
@@ -111,7 +111,7 @@ JAVA_OBJECT com_example_util_Collisions_touchedLava___int_int_int_2ARRAY_R_java_
     volatile JAVA_INT ilocals_4_ = 0; /* v4 */
     volatile JAVA_INT ilocals_5_ = 0; /* v5 */
     __STATIC_INITIALIZER_com_example_util_Collisions(threadStateData);
-    DEFINE_METHOD_STACK(3, 6, 0, 10293, 10295);
+    DEFINE_METHOD_STACK(3, 6, 0, 10294, 10296);
     ilocals_0_ = __cn1Arg1;
     ilocals_1_ = __cn1Arg2;
     locals[2].data.o = __cn1Arg3;
@@ -151,7 +151,7 @@ JAVA_OBJECT com_example_util_Collisions_isOnFloor___int_int_int_int_int_2ARRAY_R
     volatile JAVA_INT ilocals_2_ = 0; /* width */
     volatile JAVA_INT ilocals_3_ = 0; /* height */
     __STATIC_INITIALIZER_com_example_util_Collisions(threadStateData);
-    DEFINE_METHOD_STACK(5, 5, 0, 10293, 10296);
+    DEFINE_METHOD_STACK(5, 5, 0, 10294, 10297);
     ilocals_0_ = __cn1Arg1;
     ilocals_1_ = __cn1Arg2;
     ilocals_2_ = __cn1Arg3;
@@ -179,7 +179,7 @@ label_L1387620926:
 JAVA_INT com_example_util_Collisions_getXPosNextToWallLeft___com_example_util_Rectangle_R_int(CODENAME_ONE_THREAD_STATE, JAVA_OBJECT __cn1Arg1) {
     volatile JAVA_INT ilocals_1_ = 0; /* v1 */
     __STATIC_INITIALIZER_com_example_util_Collisions(threadStateData);
-    DEFINE_METHOD_STACK(2, 2, 0, 10293, 10297);
+    DEFINE_METHOD_STACK(2, 2, 0, 10294, 10298);
     locals[0].data.o = __cn1Arg1;
     locals[0].type = CN1_TYPE_OBJECT;
     __CN1_DEBUG_INFO(44);
@@ -197,7 +197,7 @@ JAVA_INT com_example_util_Collisions_getXposNextToWallRightMoving___com_example_
     volatile JAVA_INT ilocals_1_ = 0; /* v1 */
     volatile JAVA_INT ilocals_2_ = 0; /* v2 */
     __STATIC_INITIALIZER_com_example_util_Collisions(threadStateData);
-    DEFINE_METHOD_STACK(2, 3, 0, 10293, 10298);
+    DEFINE_METHOD_STACK(2, 3, 0, 10294, 10299);
     locals[0].data.o = __cn1Arg1;
     locals[0].type = CN1_TYPE_OBJECT;
     __CN1_DEBUG_INFO(49);
@@ -219,7 +219,7 @@ JAVA_INT com_example_util_Collisions_getXposNextToWallRightIdleInAir___com_examp
     volatile JAVA_INT ilocals_1_ = 0; /* v1 */
     volatile JAVA_INT ilocals_2_ = 0; /* v2 */
     __STATIC_INITIALIZER_com_example_util_Collisions(threadStateData);
-    DEFINE_METHOD_STACK(2, 3, 0, 10293, 10299);
+    DEFINE_METHOD_STACK(2, 3, 0, 10294, 10300);
     locals[0].data.o = __cn1Arg1;
     locals[0].type = CN1_TYPE_OBJECT;
     __CN1_DEBUG_INFO(55);
@@ -241,7 +241,7 @@ JAVA_INT com_example_util_Collisions_getXposNextToWallRightIdle___com_example_ut
     volatile JAVA_INT ilocals_1_ = 0; /* v1 */
     volatile JAVA_INT ilocals_2_ = 0; /* v2 */
     __STATIC_INITIALIZER_com_example_util_Collisions(threadStateData);
-    DEFINE_METHOD_STACK(2, 3, 0, 10293, 10300);
+    DEFINE_METHOD_STACK(2, 3, 0, 10294, 10301);
     locals[0].data.o = __cn1Arg1;
     locals[0].type = CN1_TYPE_OBJECT;
     __CN1_DEBUG_INFO(61);
@@ -262,7 +262,7 @@ JAVA_INT com_example_util_Collisions_getXposNextToWallRightIdle___com_example_ut
 JAVA_INT com_example_util_Collisions_getYPosCeilingAbove___com_example_util_Rectangle_R_int(CODENAME_ONE_THREAD_STATE, JAVA_OBJECT __cn1Arg1) {
     volatile JAVA_INT ilocals_1_ = 0; /* v1 */
     __STATIC_INITIALIZER_com_example_util_Collisions(threadStateData);
-    DEFINE_METHOD_STACK(2, 2, 0, 10293, 10301);
+    DEFINE_METHOD_STACK(2, 2, 0, 10294, 10302);
     locals[0].data.o = __cn1Arg1;
     locals[0].type = CN1_TYPE_OBJECT;
     __CN1_DEBUG_INFO(67);
@@ -280,7 +280,7 @@ JAVA_INT com_example_util_Collisions_getYposFloorBelow___com_example_util_Rectan
     volatile JAVA_INT ilocals_1_ = 0; /* v1 */
     volatile JAVA_INT ilocals_2_ = 0; /* v2 */
     __STATIC_INITIALIZER_com_example_util_Collisions(threadStateData);
-    DEFINE_METHOD_STACK(2, 3, 0, 10293, 10302);
+    DEFINE_METHOD_STACK(2, 3, 0, 10294, 10303);
     locals[0].data.o = __cn1Arg1;
     locals[0].type = CN1_TYPE_OBJECT;
     __CN1_DEBUG_INFO(71);
@@ -300,7 +300,7 @@ JAVA_INT com_example_util_Collisions_getYposFloorBelow___com_example_util_Rectan
 
 JAVA_OBJECT com_example_util_Collisions_entityCollide___com_example_util_Rectangle_com_example_util_Rectangle_R_java_lang_Boolean(CODENAME_ONE_THREAD_STATE, JAVA_OBJECT __cn1Arg1, JAVA_OBJECT __cn1Arg2) {
     __STATIC_INITIALIZER_com_example_util_Collisions(threadStateData);
-    DEFINE_METHOD_STACK(3, 2, 0, 10293, 10303);
+    DEFINE_METHOD_STACK(3, 2, 0, 10294, 10304);
     locals[0].data.o = __cn1Arg1;
     locals[0].type = CN1_TYPE_OBJECT;
     locals[1].data.o = __cn1Arg2;
@@ -342,7 +342,7 @@ JAVA_OBJECT com_example_util_Collisions_canMoveHere___int_int_int_int_int_2ARRAY
     volatile JAVA_INT ilocals_6_ = 0; /* v6 */
     volatile JAVA_INT ilocals_7_ = 0; /* v7 */
     __STATIC_INITIALIZER_com_example_util_Collisions(threadStateData);
-    DEFINE_METHOD_STACK(3, 8, 0, 10293, 10304);
+    DEFINE_METHOD_STACK(3, 8, 0, 10294, 10305);
     ilocals_0_ = __cn1Arg1;
     ilocals_1_ = __cn1Arg2;
     ilocals_2_ = __cn1Arg3;

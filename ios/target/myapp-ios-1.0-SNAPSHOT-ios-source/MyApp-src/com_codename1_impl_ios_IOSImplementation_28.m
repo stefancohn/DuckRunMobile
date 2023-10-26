@@ -48,33 +48,33 @@ JAVA_VOID com_codename1_impl_ios_IOSImplementation_28___INIT_____java_lang_Strin
 
 JAVA_VOID com_codename1_impl_ios_IOSImplementation_28_run__(CODENAME_ONE_THREAD_STATE, JAVA_OBJECT  __cn1ThisObject) {
     DEFINE_INSTANCE_METHOD_STACK(2, 2, 0, 9551, 207);
-    locals[0].data.o = __cn1ThisObject; locals[0].type = CN1_TYPE_OBJECT;     int restoreToL1395676084cn1_class_id_java_lang_InterruptedException1;
-    int tryBlockOffsetL1395676084cn1_class_id_java_lang_InterruptedException1;
-    DEFINE_CATCH_BLOCK(catch_L1395676084cn1_class_id_java_lang_InterruptedException1, label_L1184694332, restoreToL1395676084cn1_class_id_java_lang_InterruptedException1);
+    locals[0].data.o = __cn1ThisObject; locals[0].type = CN1_TYPE_OBJECT;     int restoreToL1285290251cn1_class_id_java_lang_InterruptedException1;
+    int tryBlockOffsetL1285290251cn1_class_id_java_lang_InterruptedException1;
+    DEFINE_CATCH_BLOCK(catch_L1285290251cn1_class_id_java_lang_InterruptedException1, label_L490630452, restoreToL1285290251cn1_class_id_java_lang_InterruptedException1);
 
-label_L1395676084:
- tryBlockOffsetL1395676084cn1_class_id_java_lang_InterruptedException1 = threadStateData->tryBlockOffset;
-    BEGIN_TRY(cn1_class_id_java_lang_InterruptedException, catch_L1395676084cn1_class_id_java_lang_InterruptedException1);
-    restoreToL1395676084cn1_class_id_java_lang_InterruptedException1 = threadStateData->threadObjectStackOffset;
+label_L1285290251:
+ tryBlockOffsetL1285290251cn1_class_id_java_lang_InterruptedException1 = threadStateData->tryBlockOffset;
+    BEGIN_TRY(cn1_class_id_java_lang_InterruptedException, catch_L1285290251cn1_class_id_java_lang_InterruptedException1);
+    restoreToL1285290251cn1_class_id_java_lang_InterruptedException1 = threadStateData->threadObjectStackOffset;
 
     __CN1_DEBUG_INFO(8120);
     /* CustomInvoke */java_lang_Thread_sleep___long(threadStateData, 1500LL); 
 
-label_L567312712:
+label_L323509890:
 END_TRY(1);    __CN1_DEBUG_INFO(8122);
-    JUMP_TO(label_L1799424291, 0);
+    JUMP_TO(label_L1857007886, 0);
 
-label_L1184694332:
+label_L490630452:
     __CN1_DEBUG_INFO(8121);
     BC_ASTORE(1);
 
-label_L1799424291:
+label_L1857007886:
     __CN1_DEBUG_INFO(8124);
-    if (com_codename1_impl_ios_IOSImplementation_access$6000___R_com_codename1_push_PushCallback(threadStateData)==JAVA_NULL) /* IFNULL CustomJump */ JUMP_TO(label_L1472012329, 0);
+    if (com_codename1_impl_ios_IOSImplementation_access$6000___R_com_codename1_push_PushCallback(threadStateData)==JAVA_NULL) /* IFNULL CustomJump */ JUMP_TO(label_L648630181, 0);
     __CN1_DEBUG_INFO(8125);
     /* CustomInvoke */com_codename1_impl_ios_IOSImplementation_localNotificationReceived___java_lang_String(threadStateData, get_field_com_codename1_impl_ios_IOSImplementation_28_val_notificationId(__cn1ThisObject)); 
 
-label_L1472012329:
+label_L648630181:
     __CN1_DEBUG_INFO(8127);
     releaseForReturnInException(threadStateData, cn1LocalsBeginInThread, methodBlockOffset); 
     return;

@@ -17,7 +17,7 @@ void __GC_MARK_com_example_statemanager_Scene(CODENAME_ONE_THREAD_STATE, JAVA_OB
 
 
 JAVA_VOID com_example_statemanager_Scene___INIT____(CODENAME_ONE_THREAD_STATE, JAVA_OBJECT  __cn1ThisObject) {
-    DEFINE_INSTANCE_METHOD_STACK(1, 1, 0, 10328, 205);
+    DEFINE_INSTANCE_METHOD_STACK(1, 1, 0, 10329, 205);
     locals[0].data.o = __cn1ThisObject; locals[0].type = CN1_TYPE_OBJECT;     __CN1_DEBUG_INFO(4);
     java_lang_Object___INIT____(threadStateData, __cn1ThisObject); 
     releaseForReturn(threadStateData, cn1LocalsBeginInThread); 

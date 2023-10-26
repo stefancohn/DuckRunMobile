@@ -51,6 +51,8 @@
 	<string>1.0</string>
 	<key>GADApplicationIdentifier</key>
 	<string>ca-app-pub-9749305699775932~9916111055</string>
+	<key>GADIsAdManagerApp</key>
+	<string>true</string>
 	<key>LSRequiresIPhoneOS</key>
 	<true/>
 	<key>NSMainNibFile</key>

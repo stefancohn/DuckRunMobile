@@ -117,11 +117,11 @@ JAVA_VOID com_codename1_io_NetworkManager_AutoDetectAPN_readResponse___java_io_I
     locals[1].type = CN1_TYPE_OBJECT;
     __CN1_DEBUG_INFO(448);
     /* VarOp.assignFrom */ locals[2].data.o = /* CustomInvoke */com_codename1_io_Util_readToString___java_io_InputStream_R_java_lang_String(threadStateData, locals[1].data.o);locals[2].type=CN1_TYPE_OBJECT;    __CN1_DEBUG_INFO(449);
-    if (/* CustomInvoke */virtual_java_lang_String_equals___java_lang_Object_R_boolean(threadStateData, locals[2].data.o, STRING_FROM_CONSTANT_POOL_OFFSET(7345))!=0) /* IFNE CustomJump */ goto label_L840259832;
+    if (/* CustomInvoke */virtual_java_lang_String_equals___java_lang_Object_R_boolean(threadStateData, locals[2].data.o, STRING_FROM_CONSTANT_POOL_OFFSET(7345))!=0) /* IFNE CustomJump */ goto label_L564908963;
     __CN1_DEBUG_INFO(450);
     com_codename1_io_NetworkManager_AutoDetectAPN_retryWithDifferentAPN__(threadStateData, __cn1ThisObject); 
 
-label_L840259832:
+label_L564908963:
     __CN1_DEBUG_INFO(452);
     releaseForReturn(threadStateData, cn1LocalsBeginInThread); 
     return;
@@ -134,7 +134,7 @@ JAVA_OBJECT com_codename1_io_NetworkManager_AutoDetectAPN_nextAP___R_java_lang_S
     volatile JAVA_INT ilocals_4_ = 0; /* v4 */
     DEFINE_INSTANCE_METHOD_STACK(3, 5, 0, 7344, 7346);
     locals[0].data.o = __cn1ThisObject; locals[0].type = CN1_TYPE_OBJECT;     __CN1_DEBUG_INFO(455);
-    if (get_field_com_codename1_io_NetworkManager_AutoDetectAPN_aps(__cn1ThisObject)!=JAVA_NULL) /* IFNONNULL CustomJump */ goto label_L1788841007;
+    if (get_field_com_codename1_io_NetworkManager_AutoDetectAPN_aps(__cn1ThisObject)!=JAVA_NULL) /* IFNONNULL CustomJump */ goto label_L1834041945;
     __CN1_DEBUG_INFO(456);
     BC_ALOAD(0);
     PUSH_POINTER(__NEW_java_util_Vector(threadStateData)); /* NEW */
@@ -148,59 +148,59 @@ JAVA_OBJECT com_codename1_io_NetworkManager_AutoDetectAPN_nextAP___R_java_lang_S
     __CN1_DEBUG_INFO(459);
     /* VarOp.assignFrom */     ilocals_3_ = 0 /* ICONST_0 */; 
 
-label_L666389658:
-    if (ilocals_3_>=ilocals_2_) /* IF_ICMPGE CustomJump */ goto label_L107131289;
+label_L1886136102:
+    if (ilocals_3_>=ilocals_2_) /* IF_ICMPGE CustomJump */ goto label_L2011281484;
     __CN1_DEBUG_INFO(460);
     /* VarOp.assignFrom */ ilocals_4_ = /* CustomInvoke */virtual_com_codename1_io_NetworkManager_getAPType___java_lang_String_R_int(threadStateData, get_field_com_codename1_io_NetworkManager_AutoDetectAPN_this_0(__cn1ThisObject), CN1_ARRAY_ELEMENT_OBJECT(locals[1].data.o, ilocals_3_));
     __CN1_DEBUG_INFO(461);
-    if (ilocals_4_!=2 /* ICONST_2 */) /* IF_ICMPNE CustomJump */ goto label_L979865152;
+    if (ilocals_4_!=2 /* ICONST_2 */) /* IF_ICMPNE CustomJump */ goto label_L316204726;
     __CN1_DEBUG_INFO(462);
     /* CustomInvoke */virtual_java_util_Vector_insertElementAt___java_lang_Object_int(threadStateData, get_field_com_codename1_io_NetworkManager_AutoDetectAPN_aps(__cn1ThisObject), CN1_ARRAY_ELEMENT_OBJECT(locals[1].data.o, ilocals_3_), 0 /* ICONST_0 */); 
-    goto label_L573424492;
+    goto label_L1838225797;
 
-label_L979865152:
+label_L316204726:
     __CN1_DEBUG_INFO(464);
     (*SP).type = CN1_TYPE_INT; /* ILOAD */ 
     (*SP).data.i = ilocals_4_; 
     SP++;
     PUSH_INT(6);
-    SP-=2; if((*SP).data.i == SP[1].data.i) /* IF_ICMPEQ */ goto label_L876994034;
-    if (ilocals_4_!=4/* ICONST_4 */) /* IF_ICMPNE CustomJump */ goto label_L573424492;
+    SP-=2; if((*SP).data.i == SP[1].data.i) /* IF_ICMPEQ */ goto label_L179690980;
+    if (ilocals_4_!=4/* ICONST_4 */) /* IF_ICMPNE CustomJump */ goto label_L1838225797;
 
-label_L876994034:
+label_L179690980:
     __CN1_DEBUG_INFO(465);
     /* CustomInvoke */virtual_java_util_Vector_addElement___java_lang_Object(threadStateData, get_field_com_codename1_io_NetworkManager_AutoDetectAPN_aps(__cn1ThisObject), CN1_ARRAY_ELEMENT_OBJECT(locals[1].data.o, ilocals_3_)); 
 
-label_L573424492:
+label_L1838225797:
     __CN1_DEBUG_INFO(459);
     BC_IINC(3, 1);
-    goto label_L666389658;
+    goto label_L1886136102;
 
-label_L107131289:
+label_L2011281484:
     __CN1_DEBUG_INFO(471);
     /* VarOp.assignFrom */     ilocals_3_ = 0 /* ICONST_0 */; 
 
-label_L1834041945:
-    if (ilocals_3_>=ilocals_2_) /* IF_ICMPGE CustomJump */ goto label_L1788841007;
+label_L1089268437:
+    if (ilocals_3_>=ilocals_2_) /* IF_ICMPGE CustomJump */ goto label_L1834041945;
     __CN1_DEBUG_INFO(472);
     /* VarOp.assignFrom */ ilocals_4_ = /* CustomInvoke */virtual_com_codename1_io_NetworkManager_getAPType___java_lang_String_R_int(threadStateData, get_field_com_codename1_io_NetworkManager_AutoDetectAPN_this_0(__cn1ThisObject), CN1_ARRAY_ELEMENT_OBJECT(locals[1].data.o, ilocals_3_));
     __CN1_DEBUG_INFO(473);
-    if (ilocals_4_!=5 /* ICONST_5 */) /* IF_ICMPNE CustomJump */ goto label_L564908963;
+    if (ilocals_4_!=5 /* ICONST_5 */) /* IF_ICMPNE CustomJump */ goto label_L626295499;
     __CN1_DEBUG_INFO(474);
     /* CustomInvoke */virtual_java_util_Vector_addElement___java_lang_Object(threadStateData, get_field_com_codename1_io_NetworkManager_AutoDetectAPN_aps(__cn1ThisObject), CN1_ARRAY_ELEMENT_OBJECT(locals[1].data.o, ilocals_3_)); 
 
-label_L564908963:
+label_L626295499:
     __CN1_DEBUG_INFO(471);
     BC_IINC(3, 1);
-    goto label_L1834041945;
+    goto label_L1089268437;
 
-label_L1788841007:
+label_L1834041945:
     __CN1_DEBUG_INFO(478);
-    if (get_field_com_codename1_io_NetworkManager_AutoDetectAPN_currentAP(__cn1ThisObject)<virtual_java_util_Vector_size___R_int(threadStateData, get_field_com_codename1_io_NetworkManager_AutoDetectAPN_aps(__cn1ThisObject))) /* IF_IMPLT CustomJump */ goto label_L2011281484;
+    if (get_field_com_codename1_io_NetworkManager_AutoDetectAPN_currentAP(__cn1ThisObject)<virtual_java_util_Vector_size___R_int(threadStateData, get_field_com_codename1_io_NetworkManager_AutoDetectAPN_aps(__cn1ThisObject))) /* IF_IMPLT CustomJump */ goto label_L1678923217;
     __CN1_DEBUG_INFO(479);
     releaseForReturn(threadStateData, cn1LocalsBeginInThread); return JAVA_NULL /* ACONST_NULL */;
 
-label_L2011281484:
+label_L1678923217:
     __CN1_DEBUG_INFO(481);
     /* VarOp.assignFrom */ locals[1].data.o = /* CustomInvoke */virtual_java_util_Vector_elementAt___int_R_java_lang_Object(threadStateData, get_field_com_codename1_io_NetworkManager_AutoDetectAPN_aps(__cn1ThisObject), get_field_com_codename1_io_NetworkManager_AutoDetectAPN_currentAP(__cn1ThisObject));locals[1].type=CN1_TYPE_OBJECT;    __CN1_DEBUG_INFO(482);
     set_field_com_codename1_io_NetworkManager_AutoDetectAPN_currentAP(threadStateData, (get_field_com_codename1_io_NetworkManager_AutoDetectAPN_currentAP(__cn1ThisObject) + 1 /* ICONST_1 */), __cn1ThisObject);
@@ -217,12 +217,12 @@ JAVA_VOID com_codename1_io_NetworkManager_AutoDetectAPN_retryWithDifferentAPN__(
     DEFINE_INSTANCE_METHOD_STACK(3, 3, 0, 7344, 7347);
     locals[0].data.o = __cn1ThisObject; locals[0].type = CN1_TYPE_OBJECT;     __CN1_DEBUG_INFO(487);
     /* VarOp.assignFrom */ locals[1].data.o = com_codename1_io_NetworkManager_AutoDetectAPN_nextAP___R_java_lang_String(threadStateData, __cn1ThisObject);locals[1].type=CN1_TYPE_OBJECT;    __CN1_DEBUG_INFO(488);
-    if (locals[1].data.o!=JAVA_NULL) /* IFNONNULL CustomJump */ goto label_L316204726;
+    if (locals[1].data.o!=JAVA_NULL) /* IFNONNULL CustomJump */ goto label_L1976965986;
     __CN1_DEBUG_INFO(489);
     releaseForReturn(threadStateData, cn1LocalsBeginInThread); 
     return;
 
-label_L316204726:
+label_L1976965986:
     __CN1_DEBUG_INFO(491);
     /* CustomInvoke */virtual_com_codename1_io_NetworkManager_setCurrentAccessPoint___java_lang_String(threadStateData, get_field_com_codename1_io_NetworkManager_AutoDetectAPN_this_0(__cn1ThisObject), locals[1].data.o); 
     __CN1_DEBUG_INFO(492);

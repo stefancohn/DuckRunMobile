@@ -49,14 +49,14 @@ JAVA_VOID com_example_audio_AudioPlayer_playAudio___java_lang_String(CODENAME_ON
     DEFINE_INSTANCE_METHOD_STACK(3, 3, 0, 10239, 9250);
     locals[0].data.o = __cn1ThisObject; locals[0].type = CN1_TYPE_OBJECT;     locals[1].data.o = __cn1Arg1;
     locals[1].type = CN1_TYPE_OBJECT;
-    int restoreToL1305548441cn1_class_id_java_io_IOException1;
-    int tryBlockOffsetL1305548441cn1_class_id_java_io_IOException1;
-    DEFINE_CATCH_BLOCK(catch_L1305548441cn1_class_id_java_io_IOException1, label_L216376974, restoreToL1305548441cn1_class_id_java_io_IOException1);
+    int restoreToL1770496243cn1_class_id_java_io_IOException1;
+    int tryBlockOffsetL1770496243cn1_class_id_java_io_IOException1;
+    DEFINE_CATCH_BLOCK(catch_L1770496243cn1_class_id_java_io_IOException1, label_L481553464, restoreToL1770496243cn1_class_id_java_io_IOException1);
 
-label_L1305548441:
- tryBlockOffsetL1305548441cn1_class_id_java_io_IOException1 = threadStateData->tryBlockOffset;
-    BEGIN_TRY(cn1_class_id_java_io_IOException, catch_L1305548441cn1_class_id_java_io_IOException1);
-    restoreToL1305548441cn1_class_id_java_io_IOException1 = threadStateData->threadObjectStackOffset;
+label_L1770496243:
+ tryBlockOffsetL1770496243cn1_class_id_java_io_IOException1 = threadStateData->tryBlockOffset;
+    BEGIN_TRY(cn1_class_id_java_io_IOException, catch_L1770496243cn1_class_id_java_io_IOException1);
+    restoreToL1770496243cn1_class_id_java_io_IOException1 = threadStateData->threadObjectStackOffset;
 
     __CN1_DEBUG_INFO(11);
     PUSH_OBJ(com_codename1_ui_Display_getInstance___R_com_codename1_ui_Display(threadStateData));
@@ -78,11 +78,11 @@ label_L1305548441:
     __CN1_DEBUG_INFO(14);
     virtual_com_codename1_media_Media_play__(threadStateData, locals[2].data.o); 
 
-label_L1031820912:
+label_L509480565:
 END_TRY(1);    __CN1_DEBUG_INFO(17);
-    JUMP_TO(label_L164714495, 0);
+    JUMP_TO(label_L1076966140, 0);
 
-label_L216376974:
+label_L481553464:
     __CN1_DEBUG_INFO(15);
     BC_ASTORE(2);
     __CN1_DEBUG_INFO(16);
@@ -98,7 +98,7 @@ label_L216376974:
     SP[-1].data.o = tmpResult; SP[-1].type = CN1_TYPE_OBJECT; }
     virtual_java_io_PrintStream_println___java_lang_String(threadStateData, SP[-2].data.o, SP[-1].data.o);     SP-= 2;
 
-label_L164714495:
+label_L1076966140:
     __CN1_DEBUG_INFO(18);
     releaseForReturnInException(threadStateData, cn1LocalsBeginInThread, methodBlockOffset); 
     return;

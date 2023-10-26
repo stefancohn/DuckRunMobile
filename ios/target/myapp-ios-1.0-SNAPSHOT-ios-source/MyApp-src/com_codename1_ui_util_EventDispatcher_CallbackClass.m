@@ -90,16 +90,16 @@ JAVA_VOID com_codename1_ui_util_EventDispatcher_CallbackClass_run__(CODENAME_ONE
     PUSH_OBJ(com_codename1_ui_Display_getInstance___R_com_codename1_ui_Display(threadStateData));
     { JAVA_INT tmpResult = virtual_com_codename1_ui_Display_isEdt___R_boolean(threadStateData, SP[-1].data.o);
     SP[-1].data.i = tmpResult; SP[-1].type = CN1_TYPE_INT; }
-    if(POP_INT() != 0) /* IFNE */ goto label_L519751097;
+    if(POP_INT() != 0) /* IFNE */ goto label_L489200959;
     __CN1_DEBUG_INFO(85);
     PUSH_POINTER(__NEW_java_lang_IllegalStateException(threadStateData)); /* NEW */
     BC_DUP(); /* DUP */
     /* CustomInvoke */java_lang_IllegalStateException___INIT_____java_lang_String(threadStateData, SP[-1].data.o, STRING_FROM_CONSTANT_POOL_OFFSET(6436));     SP -= 1;
     throwException(threadStateData, POP_OBJ());
 
-label_L519751097:
+label_L489200959:
     __CN1_DEBUG_INFO(88);
-    if (get_field_com_codename1_ui_util_EventDispatcher_styleListenerArray(get_field_com_codename1_ui_util_EventDispatcher_CallbackClass_this_0(__cn1ThisObject))==0) /* IFEQ CustomJump */ goto label_L295937119;
+    if (get_field_com_codename1_ui_util_EventDispatcher_styleListenerArray(get_field_com_codename1_ui_util_EventDispatcher_CallbackClass_this_0(__cn1ThisObject))==0) /* IFEQ CustomJump */ goto label_L284427775;
     __CN1_DEBUG_INFO(89);
     /* VarOp.assignFrom */ locals[1].type=CN1_TYPE_INVALID;locals[1].data.o = get_field_com_codename1_ui_util_EventDispatcher_CallbackClass_iPendingEvent(__cn1ThisObject);
 locals[1].type=CN1_TYPE_OBJECT;    __CN1_DEBUG_INFO(90);
@@ -108,54 +108,54 @@ locals[1].type=CN1_TYPE_OBJECT;    __CN1_DEBUG_INFO(90);
     releaseForReturn(threadStateData, cn1LocalsBeginInThread); 
     return;
 
-label_L295937119:
+label_L284427775:
     __CN1_DEBUG_INFO(94);
-    if (get_field_com_codename1_ui_util_EventDispatcher_actionListenerArray(get_field_com_codename1_ui_util_EventDispatcher_CallbackClass_this_0(__cn1ThisObject))==0) /* IFEQ CustomJump */ goto label_L1769565136;
+    if (get_field_com_codename1_ui_util_EventDispatcher_actionListenerArray(get_field_com_codename1_ui_util_EventDispatcher_CallbackClass_this_0(__cn1ThisObject))==0) /* IFEQ CustomJump */ goto label_L2133325211;
     __CN1_DEBUG_INFO(95);
     /* CustomInvoke */com_codename1_ui_util_EventDispatcher_access$100___com_codename1_ui_util_EventDispatcher_com_codename1_ui_events_ActionListener_1ARRAY_com_codename1_ui_events_ActionEvent(threadStateData, get_field_com_codename1_ui_util_EventDispatcher_CallbackClass_this_0(__cn1ThisObject), get_field_com_codename1_ui_util_EventDispatcher_CallbackClass_iPending(__cn1ThisObject), get_field_com_codename1_ui_util_EventDispatcher_CallbackClass_iPendingEvent(__cn1ThisObject)); 
     __CN1_DEBUG_INFO(96);
     releaseForReturn(threadStateData, cn1LocalsBeginInThread); 
     return;
 
-label_L1769565136:
+label_L2133325211:
     __CN1_DEBUG_INFO(99);
-    if (get_field_com_codename1_ui_util_EventDispatcher_focusListenerArray(get_field_com_codename1_ui_util_EventDispatcher_CallbackClass_this_0(__cn1ThisObject))==0) /* IFEQ CustomJump */ goto label_L1088381072;
+    if (get_field_com_codename1_ui_util_EventDispatcher_focusListenerArray(get_field_com_codename1_ui_util_EventDispatcher_CallbackClass_this_0(__cn1ThisObject))==0) /* IFEQ CustomJump */ goto label_L479769835;
     __CN1_DEBUG_INFO(100);
     /* CustomInvoke */com_codename1_ui_util_EventDispatcher_access$200___com_codename1_ui_util_EventDispatcher_com_codename1_ui_events_FocusListener_1ARRAY_com_codename1_ui_Component(threadStateData, get_field_com_codename1_ui_util_EventDispatcher_CallbackClass_this_0(__cn1ThisObject), get_field_com_codename1_ui_util_EventDispatcher_CallbackClass_iPending(__cn1ThisObject), get_field_com_codename1_ui_util_EventDispatcher_CallbackClass_iPendingEvent(__cn1ThisObject)); 
     __CN1_DEBUG_INFO(101);
     releaseForReturn(threadStateData, cn1LocalsBeginInThread); 
     return;
 
-label_L1088381072:
+label_L479769835:
     __CN1_DEBUG_INFO(104);
-    if (get_field_com_codename1_ui_util_EventDispatcher_dataChangeListenerArray(get_field_com_codename1_ui_util_EventDispatcher_CallbackClass_this_0(__cn1ThisObject))==0) /* IFEQ CustomJump */ goto label_L146842175;
+    if (get_field_com_codename1_ui_util_EventDispatcher_dataChangeListenerArray(get_field_com_codename1_ui_util_EventDispatcher_CallbackClass_this_0(__cn1ThisObject))==0) /* IFEQ CustomJump */ goto label_L1166021410;
     __CN1_DEBUG_INFO(105);
     /* CustomInvoke */com_codename1_ui_util_EventDispatcher_access$300___com_codename1_ui_util_EventDispatcher_com_codename1_ui_events_DataChangedListener_1ARRAY_int_int(threadStateData, get_field_com_codename1_ui_util_EventDispatcher_CallbackClass_this_0(__cn1ThisObject), get_field_com_codename1_ui_util_EventDispatcher_CallbackClass_iPending(__cn1ThisObject), CN1_ARRAY_ELEMENT_INT(get_field_com_codename1_ui_util_EventDispatcher_CallbackClass_iPendingEvent(__cn1ThisObject), 0 /* ICONST_0 */), CN1_ARRAY_ELEMENT_INT(get_field_com_codename1_ui_util_EventDispatcher_CallbackClass_iPendingEvent(__cn1ThisObject), 1 /* ICONST_1 */)); 
     __CN1_DEBUG_INFO(106);
     releaseForReturn(threadStateData, cn1LocalsBeginInThread); 
     return;
 
-label_L146842175:
+label_L1166021410:
     __CN1_DEBUG_INFO(109);
-    if (get_field_com_codename1_ui_util_EventDispatcher_selectionListenerArray(get_field_com_codename1_ui_util_EventDispatcher_CallbackClass_this_0(__cn1ThisObject))==0) /* IFEQ CustomJump */ goto label_L72187428;
+    if (get_field_com_codename1_ui_util_EventDispatcher_selectionListenerArray(get_field_com_codename1_ui_util_EventDispatcher_CallbackClass_this_0(__cn1ThisObject))==0) /* IFEQ CustomJump */ goto label_L1969958288;
     __CN1_DEBUG_INFO(110);
     /* CustomInvoke */com_codename1_ui_util_EventDispatcher_access$400___com_codename1_ui_util_EventDispatcher_com_codename1_ui_events_SelectionListener_1ARRAY_int_int(threadStateData, get_field_com_codename1_ui_util_EventDispatcher_CallbackClass_this_0(__cn1ThisObject), get_field_com_codename1_ui_util_EventDispatcher_CallbackClass_iPending(__cn1ThisObject), CN1_ARRAY_ELEMENT_INT(get_field_com_codename1_ui_util_EventDispatcher_CallbackClass_iPendingEvent(__cn1ThisObject), 0 /* ICONST_0 */), CN1_ARRAY_ELEMENT_INT(get_field_com_codename1_ui_util_EventDispatcher_CallbackClass_iPendingEvent(__cn1ThisObject), 1 /* ICONST_1 */)); 
     __CN1_DEBUG_INFO(111);
     releaseForReturn(threadStateData, cn1LocalsBeginInThread); 
     return;
 
-label_L72187428:
+label_L1969958288:
     __CN1_DEBUG_INFO(114);
-    if (get_field_com_codename1_ui_util_EventDispatcher_scrollListenerArray(get_field_com_codename1_ui_util_EventDispatcher_CallbackClass_this_0(__cn1ThisObject))==0) /* IFEQ CustomJump */ goto label_L650687126;
+    if (get_field_com_codename1_ui_util_EventDispatcher_scrollListenerArray(get_field_com_codename1_ui_util_EventDispatcher_CallbackClass_this_0(__cn1ThisObject))==0) /* IFEQ CustomJump */ goto label_L891327883;
     __CN1_DEBUG_INFO(115);
     /* CustomInvoke */com_codename1_ui_util_EventDispatcher_access$500___com_codename1_ui_util_EventDispatcher_com_codename1_ui_events_ScrollListener_1ARRAY_int_int_int_int(threadStateData, get_field_com_codename1_ui_util_EventDispatcher_CallbackClass_this_0(__cn1ThisObject), get_field_com_codename1_ui_util_EventDispatcher_CallbackClass_iPending(__cn1ThisObject), CN1_ARRAY_ELEMENT_INT(get_field_com_codename1_ui_util_EventDispatcher_CallbackClass_iPendingEvent(__cn1ThisObject), 0 /* ICONST_0 */), CN1_ARRAY_ELEMENT_INT(get_field_com_codename1_ui_util_EventDispatcher_CallbackClass_iPendingEvent(__cn1ThisObject), 1 /* ICONST_1 */), CN1_ARRAY_ELEMENT_INT(get_field_com_codename1_ui_util_EventDispatcher_CallbackClass_iPendingEvent(__cn1ThisObject), 2 /* ICONST_2 */), CN1_ARRAY_ELEMENT_INT(get_field_com_codename1_ui_util_EventDispatcher_CallbackClass_iPendingEvent(__cn1ThisObject), 3 /* ICONST_3 */)); 
     __CN1_DEBUG_INFO(116);
     releaseForReturn(threadStateData, cn1LocalsBeginInThread); 
     return;
 
-label_L650687126:
+label_L891327883:
     __CN1_DEBUG_INFO(119);
-    if (get_field_com_codename1_ui_util_EventDispatcher_bindTargetArray(get_field_com_codename1_ui_util_EventDispatcher_CallbackClass_this_0(__cn1ThisObject))==0) /* IFEQ CustomJump */ goto label_L489200959;
+    if (get_field_com_codename1_ui_util_EventDispatcher_bindTargetArray(get_field_com_codename1_ui_util_EventDispatcher_CallbackClass_this_0(__cn1ThisObject))==0) /* IFEQ CustomJump */ goto label_L1824931880;
     __CN1_DEBUG_INFO(120);
     /* VarOp.assignFrom */ locals[1].type=CN1_TYPE_INVALID;locals[1].data.o = get_field_com_codename1_ui_util_EventDispatcher_CallbackClass_iPendingEvent(__cn1ThisObject);
 locals[1].type=CN1_TYPE_OBJECT;    __CN1_DEBUG_INFO(121);
@@ -164,7 +164,7 @@ locals[1].type=CN1_TYPE_OBJECT;    __CN1_DEBUG_INFO(121);
     releaseForReturn(threadStateData, cn1LocalsBeginInThread); 
     return;
 
-label_L489200959:
+label_L1824931880:
     __CN1_DEBUG_INFO(124);
     releaseForReturn(threadStateData, cn1LocalsBeginInThread); 
     return;

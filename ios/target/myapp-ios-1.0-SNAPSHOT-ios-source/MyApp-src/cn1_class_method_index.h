@@ -3729,7 +3729,7 @@ extern int classNameLookup[];
 // maps to offsets in the constant pool below
 extern int methodNameLookup[];
 extern int *classInstanceOf[];
-#define CN1_CONSTANT_POOL_SIZE 11301
+#define CN1_CONSTANT_POOL_SIZE 11302
 
 extern const char * const constantPool[];
 

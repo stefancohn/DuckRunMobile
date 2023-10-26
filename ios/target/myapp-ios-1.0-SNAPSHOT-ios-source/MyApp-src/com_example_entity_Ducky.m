@@ -1282,6 +1282,42 @@ label_L1251967187:
 }
 
 
+JAVA_VOID com_example_entity_Ducky_drawI___com_codename1_ui_Graphics_int(CODENAME_ONE_THREAD_STATE, JAVA_OBJECT  __cn1ThisObject, JAVA_OBJECT __cn1Arg1, JAVA_INT __cn1Arg2) {
+    volatile JAVA_INT ilocals_2_ = 0; /* xOffset */
+    DEFINE_INSTANCE_METHOD_STACK(7, 3, 0, 10241, 10257);
+    locals[0].data.o = __cn1ThisObject; locals[0].type = CN1_TYPE_OBJECT;     locals[1].data.o = __cn1Arg1;
+    locals[1].type = CN1_TYPE_OBJECT;
+    ilocals_2_ = __cn1Arg2;
+    __CN1_DEBUG_INFO(317);
+    if (get_field_com_example_entity_Ducky_direction(__cn1ThisObject)==STRING_FROM_CONSTANT_POOL_OFFSET(78)) /* IF_ACMPEQ CustomJump */ goto label_L1523084197;
+    if (get_field_com_example_entity_Ducky_direction(__cn1ThisObject)!=STRING_FROM_CONSTANT_POOL_OFFSET(10246)) /* IF_ACMPNE CustomJump */ goto label_L1818747191;
+
+label_L1523084197:
+    __CN1_DEBUG_INFO(318);
+    /* CustomInvoke */virtual_com_codename1_ui_Graphics_drawImage___com_codename1_ui_Image_int_int_int_int(threadStateData, locals[1].data.o, CN1_ARRAY_ELEMENT_OBJECT(CN1_ARRAY_ELEMENT_OBJECT(get_field_com_example_entity_Ducky_duckAni(__cn1ThisObject), get_field_com_example_entity_Ducky_spriteRow(__cn1ThisObject)), get_field_com_example_entity_Ducky_spriteLoop(__cn1ThisObject)), ((((JAVA_INT)get_static_com_example_myapp_MyApp_WIDTH_SCALE(threadStateData)) * (get_field_com_example_util_Rectangle_x(get_field_com_example_entity_Ducky_hitbox(__cn1ThisObject)) - 10)) - ilocals_2_), ((JAVA_INT)(get_static_com_example_myapp_MyApp_HEIGHT_SCALE(threadStateData) * ((JAVA_FLOAT)get_field_com_example_util_Rectangle_y(get_field_com_example_entity_Ducky_hitbox(__cn1ThisObject))))), ((JAVA_INT)(((JAVA_FLOAT)get_field_com_example_entity_Ducky_width(__cn1ThisObject)) * get_static_com_example_myapp_MyApp_WIDTH_SCALE(threadStateData))), ((JAVA_INT)(((JAVA_FLOAT)get_field_com_example_entity_Ducky_height(__cn1ThisObject)) * get_static_com_example_myapp_MyApp_HEIGHT_SCALE(threadStateData)))); 
+    goto label_L747870628;
+
+label_L1818747191:
+    __CN1_DEBUG_INFO(320);
+    if (get_field_com_example_entity_Ducky_direction(__cn1ThisObject)==STRING_FROM_CONSTANT_POOL_OFFSET(5707)) /* IF_ACMPEQ CustomJump */ goto label_L421191743;
+    if (get_field_com_example_entity_Ducky_direction(__cn1ThisObject)!=STRING_FROM_CONSTANT_POOL_OFFSET(10247)) /* IF_ACMPNE CustomJump */ goto label_L9844218;
+
+label_L421191743:
+    __CN1_DEBUG_INFO(321);
+    /* CustomInvoke */virtual_com_codename1_ui_Graphics_drawImage___com_codename1_ui_Image_int_int_int_int(threadStateData, locals[1].data.o, CN1_ARRAY_ELEMENT_OBJECT(CN1_ARRAY_ELEMENT_OBJECT(get_field_com_example_entity_Ducky_duckAni(__cn1ThisObject), get_field_com_example_entity_Ducky_spriteRow(__cn1ThisObject)), get_field_com_example_entity_Ducky_spriteLoop(__cn1ThisObject)), ((((JAVA_INT)get_static_com_example_myapp_MyApp_WIDTH_SCALE(threadStateData)) * (get_field_com_example_util_Rectangle_x(get_field_com_example_entity_Ducky_hitbox(__cn1ThisObject)) - 8)) - ilocals_2_), ((JAVA_INT)(((JAVA_FLOAT)get_field_com_example_util_Rectangle_y(get_field_com_example_entity_Ducky_hitbox(__cn1ThisObject))) * get_static_com_example_myapp_MyApp_HEIGHT_SCALE(threadStateData))), ((JAVA_INT)(((JAVA_FLOAT)get_field_com_example_entity_Ducky_width(__cn1ThisObject)) * get_static_com_example_myapp_MyApp_WIDTH_SCALE(threadStateData))), ((JAVA_INT)(((JAVA_FLOAT)get_field_com_example_entity_Ducky_height(__cn1ThisObject)) * get_static_com_example_myapp_MyApp_HEIGHT_SCALE(threadStateData)))); 
+    goto label_L747870628;
+
+label_L9844218:
+    __CN1_DEBUG_INFO(324);
+    /* CustomInvoke */virtual_com_codename1_ui_Graphics_drawImage___com_codename1_ui_Image_int_int_int_int(threadStateData, locals[1].data.o, CN1_ARRAY_ELEMENT_OBJECT(CN1_ARRAY_ELEMENT_OBJECT(get_field_com_example_entity_Ducky_duckAni(__cn1ThisObject), get_field_com_example_entity_Ducky_spriteRow(__cn1ThisObject)), get_field_com_example_entity_Ducky_spriteLoop(__cn1ThisObject)), ((get_field_com_example_util_Rectangle_x(get_field_com_example_entity_Ducky_hitbox(__cn1ThisObject)) * ((JAVA_INT)get_static_com_example_myapp_MyApp_WIDTH_SCALE(threadStateData))) - ilocals_2_), ((JAVA_INT)(((JAVA_FLOAT)get_field_com_example_util_Rectangle_y(get_field_com_example_entity_Ducky_hitbox(__cn1ThisObject))) * get_static_com_example_myapp_MyApp_HEIGHT_SCALE(threadStateData))), ((JAVA_INT)(((JAVA_FLOAT)get_field_com_example_entity_Ducky_width(__cn1ThisObject)) * get_static_com_example_myapp_MyApp_WIDTH_SCALE(threadStateData))), ((JAVA_INT)(((JAVA_FLOAT)get_field_com_example_entity_Ducky_height(__cn1ThisObject)) * get_static_com_example_myapp_MyApp_HEIGHT_SCALE(threadStateData)))); 
+
+label_L747870628:
+    __CN1_DEBUG_INFO(327);
+    releaseForReturn(threadStateData, cn1LocalsBeginInThread); 
+    return;
+}
+
+
 JAVA_VOID com_example_entity_Ducky_resetDir__(CODENAME_ONE_THREAD_STATE, JAVA_OBJECT  __cn1ThisObject) {
     return;
 }
@@ -1392,7 +1428,7 @@ void __STATIC_INITIALIZER_com_example_entity_Ducky(CODENAME_ONE_THREAD_STATE) {
         return;
     }
 
-    class__com_example_entity_Ducky.vtable = malloc(sizeof(void*) *20);
+    class__com_example_entity_Ducky.vtable = malloc(sizeof(void*) *21);
     __INIT_VTABLE_com_example_entity_Ducky(threadStateData, class__com_example_entity_Ducky.vtable);
     class__com_example_entity_Ducky.initialized = JAVA_TRUE;
     com_example_entity_Ducky___CLINIT____(threadStateData);

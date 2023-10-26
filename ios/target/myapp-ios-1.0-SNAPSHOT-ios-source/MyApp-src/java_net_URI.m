@@ -814,18 +814,18 @@ JAVA_INT java_net_URI_parseIntOption___java_lang_String_java_lang_String_R_int(C
     locals[1].type = CN1_TYPE_OBJECT;
     locals[2].data.o = __cn1Arg2;
     locals[2].type = CN1_TYPE_OBJECT;
-    int restoreToL2136310491cn1_class_id_java_lang_NumberFormatException1;
-    int tryBlockOffsetL2136310491cn1_class_id_java_lang_NumberFormatException1;
-    DEFINE_CATCH_BLOCK(catch_L2136310491cn1_class_id_java_lang_NumberFormatException1, label_L391359742, restoreToL2136310491cn1_class_id_java_lang_NumberFormatException1);
+    int restoreToL668573718cn1_class_id_java_lang_NumberFormatException1;
+    int tryBlockOffsetL668573718cn1_class_id_java_lang_NumberFormatException1;
+    DEFINE_CATCH_BLOCK(catch_L668573718cn1_class_id_java_lang_NumberFormatException1, label_L391359742, restoreToL668573718cn1_class_id_java_lang_NumberFormatException1);
 
-label_L2136310491:
- tryBlockOffsetL2136310491cn1_class_id_java_lang_NumberFormatException1 = threadStateData->tryBlockOffset;
-    BEGIN_TRY(cn1_class_id_java_lang_NumberFormatException, catch_L2136310491cn1_class_id_java_lang_NumberFormatException1);
-    restoreToL2136310491cn1_class_id_java_lang_NumberFormatException1 = threadStateData->threadObjectStackOffset;
+label_L668573718:
+ tryBlockOffsetL668573718cn1_class_id_java_lang_NumberFormatException1 = threadStateData->tryBlockOffset;
+    BEGIN_TRY(cn1_class_id_java_lang_NumberFormatException, catch_L668573718cn1_class_id_java_lang_NumberFormatException1);
+    restoreToL668573718cn1_class_id_java_lang_NumberFormatException1 = threadStateData->threadObjectStackOffset;
 
     /* CustomInvoke */PUSH_INT(java_lang_Integer_parseInt___java_lang_String_R_int(threadStateData, locals[2].data.o));
 
-label_L453637371:
+label_L1758056339:
 END_TRY(1);    releaseForReturnInException(threadStateData, cn1LocalsBeginInThread, methodBlockOffset); return SP[-1].data.i;
 
 label_L391359742:

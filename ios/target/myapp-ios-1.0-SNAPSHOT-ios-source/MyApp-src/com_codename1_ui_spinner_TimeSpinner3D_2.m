@@ -54,18 +54,18 @@ JAVA_OBJECT com_codename1_ui_spinner_TimeSpinner3D_2_format___java_lang_String_R
     DEFINE_INSTANCE_METHOD_STACK(6, 4, 0, 10159, 272);
     locals[0].data.o = __cn1ThisObject; locals[0].type = CN1_TYPE_OBJECT;     locals[1].data.o = __cn1Arg1;
     locals[1].type = CN1_TYPE_OBJECT;
-    int restoreToL849767246cn1_class_id_java_lang_Throwable1;
-    int tryBlockOffsetL849767246cn1_class_id_java_lang_Throwable1;
-    DEFINE_CATCH_BLOCK(catch_L849767246cn1_class_id_java_lang_Throwable1, label_L1279369591, restoreToL849767246cn1_class_id_java_lang_Throwable1);
+    int restoreToL310898814cn1_class_id_java_lang_Throwable1;
+    int tryBlockOffsetL310898814cn1_class_id_java_lang_Throwable1;
+    DEFINE_CATCH_BLOCK(catch_L310898814cn1_class_id_java_lang_Throwable1, label_L1150413547, restoreToL310898814cn1_class_id_java_lang_Throwable1);
     __CN1_DEBUG_INFO(101);
-    if (locals[1].data.o==JAVA_NULL) /* IFNULL CustomJump */ JUMP_TO(label_L800026186, 0);
+    if (locals[1].data.o==JAVA_NULL) /* IFNULL CustomJump */ JUMP_TO(label_L1898324000, 0);
     __CN1_DEBUG_INFO(102);
     /* VarOp.assignFrom */ locals[2].type=CN1_TYPE_INVALID;    locals[2].data.o = JAVA_NULL /* ACONST_NULL */; 
 locals[2].type=CN1_TYPE_OBJECT;
-label_L849767246:
- tryBlockOffsetL849767246cn1_class_id_java_lang_Throwable1 = threadStateData->tryBlockOffset;
-    BEGIN_TRY(cn1_class_id_java_lang_Throwable, catch_L849767246cn1_class_id_java_lang_Throwable1);
-    restoreToL849767246cn1_class_id_java_lang_Throwable1 = threadStateData->threadObjectStackOffset;
+label_L310898814:
+ tryBlockOffsetL310898814cn1_class_id_java_lang_Throwable1 = threadStateData->tryBlockOffset;
+    BEGIN_TRY(cn1_class_id_java_lang_Throwable, catch_L310898814cn1_class_id_java_lang_Throwable1);
+    restoreToL310898814cn1_class_id_java_lang_Throwable1 = threadStateData->threadObjectStackOffset;
 
     __CN1_DEBUG_INFO(104);
     PUSH_POINTER(__NEW_java_lang_Integer(threadStateData)); /* NEW */
@@ -78,20 +78,20 @@ label_L849767246:
     java_lang_Integer___INIT_____int(threadStateData, SP[-2].data.o, SP[-1].data.i);     SP-= 2;
     BC_ASTORE(2);
 
-label_L2068308189:
+label_L2135932857:
 END_TRY(1);    __CN1_DEBUG_INFO(107);
-    JUMP_TO(label_L1135281753, 0);
+    JUMP_TO(label_L1597889670, 0);
 
-label_L1279369591:
+label_L1150413547:
     __CN1_DEBUG_INFO(105);
     BC_ASTORE(3);
 
-label_L1135281753:
+label_L1597889670:
     __CN1_DEBUG_INFO(108);
-    if (locals[2].data.o==JAVA_NULL) /* IFNULL CustomJump */ JUMP_TO(label_L800026186, 0);
+    if (locals[2].data.o==JAVA_NULL) /* IFNULL CustomJump */ JUMP_TO(label_L1898324000, 0);
     BC_ALOAD(2);
     BC_INSTANCEOF(cn1_class_id_java_lang_Integer);
-    if(POP_INT() == 0) /* IFEQ */ JUMP_TO(label_L800026186, 0);
+    if(POP_INT() == 0) /* IFEQ */ JUMP_TO(label_L1898324000, 0);
     __CN1_DEBUG_INFO(109);
     /* VarOp.assignFrom */ ilocals_3_ = virtual_java_lang_Integer_intValue___R_int(threadStateData, locals[2].data.o);
     __CN1_DEBUG_INFO(110);
@@ -99,7 +99,7 @@ label_L1135281753:
     (*SP).data.i = ilocals_3_; 
     SP++;
     PUSH_INT(10);
-    SP-=2; if((*SP).data.i >= SP[1].data.i) /* IF_ICMPGE */ JUMP_TO(label_L1682524142, 0);
+    SP-=2; if((*SP).data.i >= SP[1].data.i) /* IF_ICMPGE */ JUMP_TO(label_L2027963364, 0);
     __CN1_DEBUG_INFO(111);
     PUSH_POINTER(__NEW_java_lang_StringBuilder(threadStateData)); /* NEW */
     BC_DUP(); /* DUP */
@@ -113,7 +113,7 @@ label_L1135281753:
     releaseForReturnInException(threadStateData, cn1LocalsBeginInThread, methodBlockOffset); 
     return POP_OBJ();
 
-label_L1682524142:
+label_L2027963364:
     __CN1_DEBUG_INFO(113);
     PUSH_POINTER(__NEW_java_lang_StringBuilder(threadStateData)); /* NEW */
     BC_DUP(); /* DUP */
@@ -127,7 +127,7 @@ label_L1682524142:
     releaseForReturnInException(threadStateData, cn1LocalsBeginInThread, methodBlockOffset); 
     return POP_OBJ();
 
-label_L800026186:
+label_L1898324000:
     __CN1_DEBUG_INFO(117);
     releaseForReturnInException(threadStateData, cn1LocalsBeginInThread, methodBlockOffset); return JAVA_NULL /* ACONST_NULL */;
 }

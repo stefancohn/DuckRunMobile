@@ -1,4 +1,5 @@
 package com.example.statemanager;
+import com.codename1.ui.Display;
 import com.codename1.ui.Font;
 import com.codename1.ui.Graphics;
 import java.util.Random;
@@ -102,7 +103,11 @@ public class PlayingScene extends Scene {
     @Override
     public void draw(Graphics g) {
         levelManager.draw(g, xOffset); //draw level
-        duck.draw(g, xOffset); //draw ducky
+        if (Display.getInstance().getPlatformName().equals("ios")) {
+            duck.drawI(g, xOffset); //draw ducky for ios 
+        } else {
+            duck.draw(g, xOffset); //draw ducky for android
+        }
         enemyManager.draw(g, xOffset); //draw enemies
 
         // draw game score

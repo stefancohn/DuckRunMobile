@@ -68,9 +68,9 @@ JAVA_VOID java_util_Observable_addObserver___java_util_Observer(CODENAME_ONE_THR
     DEFINE_INSTANCE_METHOD_STACK(2, 4, 0, 7243, 7244);
     locals[0].data.o = __cn1ThisObject; locals[0].type = CN1_TYPE_OBJECT;     locals[1].data.o = __cn1Arg1;
     locals[1].type = CN1_TYPE_OBJECT;
-    int restoreToL136791678601;
-    int tryBlockOffsetL136791678601;
-    DEFINE_CATCH_BLOCK(catch_L136791678601, label_L689602108, restoreToL136791678601);
+    int restoreToL16307181501;
+    int tryBlockOffsetL16307181501;
+    DEFINE_CATCH_BLOCK(catch_L16307181501, label_L689602108, restoreToL16307181501);
     int restoreToL68960210802;
     int tryBlockOffsetL68960210802;
     DEFINE_CATCH_BLOCK(catch_L68960210802, label_L689602108, restoreToL68960210802);
@@ -85,10 +85,10 @@ label_L212011969:
     /* VarOp.assignFrom */ locals[2].type=CN1_TYPE_INVALID;    locals[2].data.o = __cn1ThisObject;
 locals[2].type=CN1_TYPE_OBJECT;    monitorEnter(threadStateData, POP_OBJ());
 
-label_L1367916786:
- tryBlockOffsetL136791678601 = threadStateData->tryBlockOffset;
-    BEGIN_TRY(0, catch_L136791678601);
-    restoreToL136791678601 = threadStateData->threadObjectStackOffset;
+label_L163071815:
+ tryBlockOffsetL16307181501 = threadStateData->tryBlockOffset;
+    BEGIN_TRY(0, catch_L16307181501);
+    restoreToL16307181501 = threadStateData->threadObjectStackOffset;
 
     if (/* CustomInvoke */virtual_java_util_List_contains___java_lang_Object_R_boolean(threadStateData, get_field_java_util_Observable_observers(__cn1ThisObject), locals[1].data.o)!=0) /* IFNE CustomJump */ JUMP_TO(label_L273077527, 1);
     /* CustomInvoke */virtual_java_util_List_add___java_lang_Object_R_boolean(threadStateData, get_field_java_util_Observable_observers(__cn1ThisObject), locals[1].data.o); 
@@ -97,7 +97,7 @@ label_L273077527:
     BC_ALOAD(2);
     monitorExit(threadStateData, POP_OBJ());
 
-label_L1428481137:
+label_L309524185:
 END_TRY(1);    JUMP_TO(label_L998062648, 0);
 
 label_L689602108:
@@ -109,7 +109,7 @@ label_L689602108:
     BC_ALOAD(2);
     monitorExit(threadStateData, POP_OBJ());
 
-label_L997037308:
+label_L1353336879:
 END_TRY(1);    BC_ALOAD(3);
     throwException(threadStateData, POP_OBJ());
 
@@ -171,9 +171,9 @@ JAVA_VOID java_util_Observable_notifyObservers___java_lang_Object(CODENAME_ONE_T
     DEFINE_INSTANCE_METHOD_STACK(3, 8, 0, 7243, 7250);
     locals[0].data.o = __cn1ThisObject; locals[0].type = CN1_TYPE_OBJECT;     locals[1].data.o = __cn1Arg1;
     locals[1].type = CN1_TYPE_OBJECT;
-    int restoreToL190889581001;
-    int tryBlockOffsetL190889581001;
-    DEFINE_CATCH_BLOCK(catch_L190889581001, label_L1097619701, restoreToL190889581001);
+    int restoreToL67458439501;
+    int tryBlockOffsetL67458439501;
+    DEFINE_CATCH_BLOCK(catch_L67458439501, label_L1097619701, restoreToL67458439501);
     int restoreToL109761970102;
     int tryBlockOffsetL109761970102;
     DEFINE_CATCH_BLOCK(catch_L109761970102, label_L1097619701, restoreToL109761970102);
@@ -183,10 +183,10 @@ locals[3].type=CN1_TYPE_OBJECT;    BC_ALOAD(0);
     /* VarOp.assignFrom */ locals[4].type=CN1_TYPE_INVALID;    locals[4].data.o = __cn1ThisObject;
 locals[4].type=CN1_TYPE_OBJECT;    monitorEnter(threadStateData, POP_OBJ());
 
-label_L1908895810:
- tryBlockOffsetL190889581001 = threadStateData->tryBlockOffset;
-    BEGIN_TRY(0, catch_L190889581001);
-    restoreToL190889581001 = threadStateData->threadObjectStackOffset;
+label_L674584395:
+ tryBlockOffsetL67458439501 = threadStateData->tryBlockOffset;
+    BEGIN_TRY(0, catch_L67458439501);
+    restoreToL67458439501 = threadStateData->threadObjectStackOffset;
 
     if (virtual_java_util_Observable_hasChanged___R_boolean(threadStateData, __cn1ThisObject)==0) /* IFEQ CustomJump */ JUMP_TO(label_L1426435610, 1);
     virtual_java_util_Observable_clearChanged__(threadStateData, __cn1ThisObject); 
@@ -203,7 +203,7 @@ label_L1426435610:
     BC_ALOAD(4);
     monitorExit(threadStateData, POP_OBJ());
 
-label_L1717547480:
+label_L1677508469:
 END_TRY(1);    JUMP_TO(label_L1942828992, 0);
 
 label_L1097619701:
@@ -215,7 +215,7 @@ label_L1097619701:
     BC_ALOAD(4);
     monitorExit(threadStateData, POP_OBJ());
 
-label_L338347534:
+label_L1715296749:
 END_TRY(1);    BC_ALOAD(5);
     throwException(threadStateData, POP_OBJ());
 
